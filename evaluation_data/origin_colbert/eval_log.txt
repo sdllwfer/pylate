@@ -1,0 +1,83 @@
+nohup: ignoring input
+📂 使用自定义输出路径: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+============================================================
+📊 FollowIR 完整评测流程
+============================================================
+模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model
+数据集: Core17InstructionRetrieval Robust04InstructionRetrieval News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+备注: 短指令训练后再在FL数据集上训练 测试指标
+============================================================
+
+📌 逐数据集处理: 重排 + 评测...
+
+============================================================
+--- 处理 Core17InstructionRetrieval ---
+============================================================
+📌 重排中...
+usage: eval_followir.py [-h] [--model_path MODEL_PATH]
+                        [--output_dir OUTPUT_DIR] [--task TASK]
+                        [--device DEVICE] [--batch_size BATCH_SIZE]
+                        [--note NOTE]
+eval_followir.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir.py --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --device cuda:1 --task Core17InstructionRetrieval --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --batch_size 256 --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+
+📌 计算指标中...
+usage: eval_followir_pmr.py [-h] [--tasks TASKS [TASKS ...]] [--run_og RUN_OG]
+                            [--run_changed RUN_CHANGED] [--run_dir RUN_DIR]
+                            [--output_dir OUTPUT_DIR] [--note NOTE]
+                            [--model_path MODEL_PATH]
+eval_followir_pmr.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir_pmr.py --tasks Core17InstructionRetrieval --run_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+✅ Core17InstructionRetrieval 完成!
+
+============================================================
+--- 处理 Robust04InstructionRetrieval ---
+============================================================
+📌 重排中...
+usage: eval_followir.py [-h] [--model_path MODEL_PATH]
+                        [--output_dir OUTPUT_DIR] [--task TASK]
+                        [--device DEVICE] [--batch_size BATCH_SIZE]
+                        [--note NOTE]
+eval_followir.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir.py --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --device cuda:1 --task Robust04InstructionRetrieval --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --batch_size 256 --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+
+📌 计算指标中...
+usage: eval_followir_pmr.py [-h] [--tasks TASKS [TASKS ...]] [--run_og RUN_OG]
+                            [--run_changed RUN_CHANGED] [--run_dir RUN_DIR]
+                            [--output_dir OUTPUT_DIR] [--note NOTE]
+                            [--model_path MODEL_PATH]
+eval_followir_pmr.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir_pmr.py --tasks Robust04InstructionRetrieval --run_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+✅ Robust04InstructionRetrieval 完成!
+
+============================================================
+--- 处理 News21InstructionRetrieval ---
+============================================================
+📌 重排中...
+usage: eval_followir.py [-h] [--model_path MODEL_PATH]
+                        [--output_dir OUTPUT_DIR] [--task TASK]
+                        [--device DEVICE] [--batch_size BATCH_SIZE]
+                        [--note NOTE]
+eval_followir.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir.py --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --device cuda:1 --task News21InstructionRetrieval --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --batch_size 256 --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+
+📌 计算指标中...
+usage: eval_followir_pmr.py [-h] [--tasks TASKS [TASKS ...]] [--run_og RUN_OG]
+                            [--run_changed RUN_CHANGED] [--run_dir RUN_DIR]
+                            [--output_dir OUTPUT_DIR] [--note NOTE]
+                            [--model_path MODEL_PATH]
+eval_followir_pmr.py: error: unrecognized arguments: 测试指标
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir_pmr.py --tasks News21InstructionRetrieval --run_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --note=短指令训练后再在FL数据集上训练 测试指标` failed. (See above for error)
+✅ News21InstructionRetrieval 完成!
+
+============================================================
+✅ 评测完成!
+📁 结果目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+============================================================

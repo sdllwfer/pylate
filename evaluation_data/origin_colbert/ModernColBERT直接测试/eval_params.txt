@@ -1,0 +1,11 @@
+============================================================
+FollowIR 评估参数
+============================================================
+
+模型: lightonai/GTE-ModernColBERT-v1
+数据集: News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/huggingface_eval0228134531
+GPU设备: cuda:1
+评估时间: 2026-02-28 14:09:24
+备注: lightonai/GTE-ModernColBERT-v1 直接测试的FollowIR指标
+============================================================

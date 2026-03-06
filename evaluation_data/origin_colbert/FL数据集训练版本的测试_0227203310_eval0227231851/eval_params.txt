@@ -1,0 +1,10 @@
+============================================================
+FollowIR 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/0227203310/best_model
+数据集: News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/0227203310_eval0227231851
+GPU设备: cuda:0
+评估时间: 2026-02-27 23:42:54
+============================================================

@@ -1,0 +1,182 @@
+/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+
+Map:   0%|          | 0/10446 [00:00<?, ? examples/s]
+Map:   2%|▏         | 160/10446 [00:00<00:06, 1575.71 examples/s]
+Map:   3%|▎         | 325/10446 [00:00<00:06, 1611.08 examples/s]
+Map:   5%|▍         | 503/10446 [00:00<00:05, 1683.49 examples/s]
+Map:   6%|▋         | 677/10446 [00:00<00:05, 1701.69 examples/s]
+Map:   8%|▊         | 849/10446 [00:00<00:05, 1703.93 examples/s]
+Map:  10%|█         | 1080/10446 [00:00<00:05, 1623.37 examples/s]
+Map:  12%|█▏        | 1257/10446 [00:00<00:05, 1664.04 examples/s]
+Map:  14%|█▍        | 1440/10446 [00:00<00:05, 1710.70 examples/s]
+Map:  16%|█▌        | 1623/10446 [00:00<00:05, 1744.48 examples/s]
+Map:  17%|█▋        | 1815/10446 [00:01<00:04, 1793.49 examples/s]
+Map:  19%|█▉        | 2000/10446 [00:01<00:04, 1763.85 examples/s]
+Map:  22%|██▏       | 2259/10446 [00:01<00:04, 1743.35 examples/s]
+Map:  23%|██▎       | 2442/10446 [00:01<00:04, 1763.59 examples/s]
+Map:  26%|██▌       | 2703/10446 [00:01<00:04, 1751.92 examples/s]
+Map:  28%|██▊       | 2881/10446 [00:01<00:04, 1756.80 examples/s]
+Map:  30%|██▉       | 3127/10446 [00:01<00:04, 1712.20 examples/s]
+Map:  32%|███▏      | 3300/10446 [00:01<00:04, 1713.51 examples/s]
+Map:  34%|███▍      | 3562/10446 [00:02<00:04, 1720.30 examples/s]
+Map:  36%|███▌      | 3745/10446 [00:02<00:03, 1743.92 examples/s]
+Map:  38%|███▊      | 3928/10446 [00:02<00:03, 1763.04 examples/s]
+Map:  40%|████      | 4190/10446 [00:02<00:03, 1752.24 examples/s]
+Map:  43%|████▎     | 4459/10446 [00:02<00:03, 1763.14 examples/s]
+Map:  45%|████▌     | 4719/10446 [00:02<00:03, 1750.57 examples/s]
+Map:  47%|████▋     | 4901/10446 [00:02<00:03, 1764.83 examples/s]
+Map:  49%|████▉     | 5151/10446 [00:02<00:03, 1729.07 examples/s]
+Map:  51%|█████     | 5337/10446 [00:03<00:02, 1757.70 examples/s]
+Map:  53%|█████▎    | 5517/10446 [00:03<00:02, 1765.86 examples/s]
+Map:  55%|█████▍    | 5701/10446 [00:03<00:02, 1781.54 examples/s]
+Map:  56%|█████▋    | 5882/10446 [00:03<00:02, 1786.40 examples/s]
+Map:  59%|█████▊    | 6129/10446 [00:03<00:02, 1732.39 examples/s]
+Map:  60%|██████    | 6312/10446 [00:03<00:02, 1756.20 examples/s]
+Map:  63%|██████▎   | 6584/10446 [00:03<00:02, 1772.01 examples/s]
+Map:  66%|██████▌   | 6847/10446 [00:03<00:02, 1761.97 examples/s]
+Map:  68%|██████▊   | 7088/10446 [00:04<00:01, 1708.49 examples/s]
+Map:  70%|██████▉   | 7262/10446 [00:04<00:01, 1713.36 examples/s]
+Map:  71%|███████   | 7438/10446 [00:04<00:01, 1724.53 examples/s]
+Map:  73%|███████▎  | 7625/10446 [00:04<00:01, 1551.98 examples/s]
+Map:  75%|███████▍  | 7784/10446 [00:04<00:01, 1558.39 examples/s]
+Map:  76%|███████▋  | 7975/10446 [00:04<00:01, 1649.16 examples/s]
+Map:  79%|███████▊  | 8221/10446 [00:04<00:01, 1643.23 examples/s]
+Map:  80%|████████  | 8392/10446 [00:04<00:01, 1655.46 examples/s]
+Map:  82%|████████▏ | 8569/10446 [00:04<00:01, 1683.06 examples/s]
+Map:  84%|████████▍ | 8823/10446 [00:05<00:00, 1682.43 examples/s]
+Map:  87%|████████▋ | 9063/10446 [00:05<00:00, 1649.71 examples/s]
+Map:  88%|████████▊ | 9233/10446 [00:05<00:00, 1661.09 examples/s]
+Map:  90%|█████████ | 9415/10446 [00:05<00:00, 1699.66 examples/s]
+Map:  92%|█████████▏| 9588/10446 [00:05<00:00, 1705.06 examples/s]
+Map:  93%|█████████▎| 9767/10446 [00:05<00:00, 1725.40 examples/s]
+Map:  95%|█████████▌| 9942/10446 [00:05<00:00, 1731.24 examples/s]
+Map:  98%|█/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+
+Map:   0%|          | 0/10446 [00:00<?, ? examples/s]
+Map:   2%|▏         | 160/10446 [00:00<00:06, 1575.71 examples/s]
+Map:   3%|▎         | 325/10446 [00:00<00:06, 1611.08 examples/s]
+Map:   5%|▍         | 503/10446 [00:00<00:05, 1683.49 examples/s]
+Map:   6%|▋         | 677/10446 [00:00<00:05, 1701.69 examples/s]
+Map:   8%|▊         | 849/10446 [00:00<00:05, 1703.93 examples/s]
+Map:  10%|█         | 1080/10446 [00:00<00:05, 1623.37 examples/s]
+Map:  12%|█▏        | 1257/10446 [00:00<00:05, 1664.04 examples/s]
+Map:  14%|█▍        | 1440/10446 [00:00<00:05, 1710.70 examples/s]
+Map:  16%|█▌        | 1623/10446 [00:00<00:05, 1744.48 examples/s]
+Map:  17%|█▋        | 1815/10446 [00:01<00:04, 1793.49 examples/s]
+Map:  19%|█▉        | 2000/10446 [00:01<00:04, 1763.85 examples/s]
+Map:  22%|██▏       | 2259/10446 [00:01<00:04, 1743.35 examples/s]
+Map:  23%|██▎       | 2442/10446 [00:01<00:04, 1763.59 examples/s]
+Map:  26%|██▌       | 2703/10446 [00:01<00:04, 1751.92 examples/s]
+Map:  28%|██▊       | 2881/10446 [00:01<00:04, 1756.80 examples/s]
+Map:  30%|██▉       | 3127/10446 [00:01<00:04, 1712.20 examples/s]
+Map:  32%|███▏      | 3300/10446 [00:01<00:04, 1713.51 examples/s]
+Map:  34%|███▍      | 3562/10446 [00:02<00:04, 1720.30 examples/s]
+Map:  36%|███▌      | 3745/10446 [00:02<00:03, 1743.92 examples/s]
+Map:  38%|███▊      | 3928/10446 [00:02<00:03, 1763.04 examples/s]
+Map:  40%|████      | 4190/10446 [00:02<00:03, 1752.24 examples/s]
+Map:  43%|████▎     | 4459/10446 [00:02<00:03, 1763.14 examples/s]
+Map:  45%|████▌     | 4719/10446 [00:02<00:03, 1750.57 examples/s]
+Map:  47%|████▋     | 4901/10446 [00:02<00:03, 1764.83 examples/s]
+Map:  49%|████▉     | 5151/10446 [00:02<00:03, 1729.07 examples/s]
+Map:  51%|█████     | 5337/10446 [00:03<00:02, 1757.70 examples/s]
+Map:  53%|█████▎    | 5517/10446 [00:03<00:02, 1765.86 examples/s]
+Map:  55%|█████▍    | 5701/10446 [00:03<00:02, 1781.54 examples/s]
+Map:  56%|█████▋    | 5882/10446 [00:03<00:02, 1786.40 examples/s]
+Map:  59%|█████▊    | 6129/10446 [00:03<00:02, 1732.39 examples/s]
+Map:  60%|██████    | 6312/10446 [00:03<00:02, 1756.20 examples/s]
+Map:  63%|██████▎   | 6584/10446 [00:03<00:02, 1772.01 examples/s]
+Map:  66%|██████▌   | 6847/10446 [00:03<00:02, 1761.97 examples/s]
+Map:  68%|██████▊   | 7088/10446 [00:04<00:01, 1708.49 examples/s]
+Map:  70%|██████▉   | 7262/10446 [00:04<00:01, 1713.36 examples/s]
+Map:  71%|███████   | 7438/10446 [00:04<00:01, 1724.53 examples/s]
+Map:  73%|███████▎  | 7625/10446 [00:04<00:01, 1551.98 examples/s]
+Map:  75%|███████▍  | 7784/10446 [00:04<00:01, 1558.39 examples/s]
+Map:  76%|███████▋  | 7975/10446 [00:04<00:01, 1649.16 examples/s]
+Map:  79%|███████▊  | 8221/10446 [00:04<00:01, 1643.23 examples/s]
+Map:  80%|████████  | 8392/10446 [00:04<00:01, 1655.46 examples/s]
+Map:  82%|████████▏ | 8569/10446 [00:04<00:01, 1683.06 examples/s]
+Map:  84%|████████▍ | 8823/10446 [00:05<00:00, 1682.43 examples/s]
+Map:  87%|████████▋ | 9063/10446 [00:05<00:00, 1649.71 examples/s]
+Map:  88%|████████▊ | 9233/10446 [00:05<00:00, 1661.09 examples/s]
+Map:  90%|█████████ | 9415/10446 [00:05<00:00, 1699.66 examples/s]
+Map:  92%|█████████▏| 9588/10446 [00:05<00:00, 1705.06 examples/s]
+Map:  93%|█████████▎| 9767/10446 [00:05<00:00, 1725.40 examples/s]
+Map:  95%|█████████▌| 9942/10446 [00:05<00:00, 1731.24 examples/s]
+Map:  98%|█████████▊| 10196/10446 [00:05<00:00, 1712.50 examples/s]
+Map:  99%|█████████▉| 10372/10446 [00:06<00:00, 1722.46 examples/s]
+Map: 100%|██████████| 10446/10446 [00:06<00:00, 1713.64 examples/s]
+
+  0%|          | 0/1176 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 2211, in <module>
+    main()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 2207, in main
+    trainer.train()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 1836, in train
+    phase1_best_loss = self.train_phase1()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 1622, in train_phase1
+    trainer.train()
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 4009, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/sentence_transformers/trainer.py", line 431, in compute_loss
+    loss = loss_fn(features, labels)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luwa/Documents/pylate/scripts/training/igp_losses.py", line 333, in forward
+    inst_vec, attn_logits, attn_weights = self.probe(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luwa/Documents/pylate/pylate/models/igp/instruction_probe.py", line 104, in forward
+    context_input = torch.cat([probe, query_embeddings], dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 768 but got size 128 for tensor number 1 in the list.
+
+  0%|          | 0/1176 [00:00<?, ?it/s]
+
+████████▊| 10196/10446 [00:05<00:00, 1712.50 examples/s]
+Map:  99%|█████████▉| 10372/10446 [00:06<00:00, 1722.46 examples/s]
+Map: 100%|██████████| 10446/10446 [00:06<00:00, 1713.64 examples/s]
+
+  0%|          | 0/1176 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 2211, in <module>
+    main()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 2207, in main
+    trainer.train()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 1836, in train
+    phase1_best_loss = self.train_phase1()
+  File "/home/luwa/Documents/pylate/scripts/training/train_colbert_igp.py", line 1622, in train_phase1
+    trainer.train()
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 2328, in train
+    return inner_training_loop(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 2672, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/transformers/trainer.py", line 4009, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/sentence_transformers/trainer.py", line 431, in compute_loss
+    loss = loss_fn(features, labels)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luwa/Documents/pylate/scripts/training/igp_losses.py", line 333, in forward
+    inst_vec, attn_logits, attn_weights = self.probe(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/luwa/Documents/pylate/pylate/models/igp/instruction_probe.py", line 104, in forward
+    context_input = torch.cat([probe, query_embeddings], dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 768 but got size 128 for tensor number 1 in the list.
+
+  0%|          | 0/1176 [00:00<?, ?it/s]
+
+ERROR conda.cli.main_run:execute(127): `conda run python -u scripts/training/train_colbert_igp.py --model_name lightonai/GTE-ModernColBERT-v1 --train_data dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl --output_dir /tmp/test_igp_train --device cuda:0 --phase1_epochs 1 --phase2_epochs 0 --batch_size 8 --eval_ratio 0.1 --base_lr 1e-5 --gate_lr 1e-2 --enable_phase1 true --enable_phase2 false --enable_probe true --enable_adapter true --enable_gate true --max_ratio 0.2 --bottleneck_dim 64 --aux_loss_weight 0.1 --log_interval 5 --phase2_patience 3 --phase2_early_stop_threshold 0.01` failed. (See above for error)
+ERROR conda.cli.main_run:execute(127): `conda run python -u scripts/training/train_colbert_igp.py --model_name lightonai/GTE-ModernColBERT-v1 --train_data dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl --output_dir /tmp/test_igp_train --device cuda:0 --phase1_epochs 1 --phase2_epochs 0 --batch_size 8 --eval_ratio 0.1 --base_lr 1e-5 --gate_lr 1e-2 --enable_phase1 true --enable_phase2 false --enable_probe true --enable_adapter true --enable_gate true --max_ratio 0.2 --bottleneck_dim 64 --aux_loss_weight 0.1 --log_interval 5 --phase2_patience 3 --phase2_early_stop_threshold 0.01` failed. (See above for error)

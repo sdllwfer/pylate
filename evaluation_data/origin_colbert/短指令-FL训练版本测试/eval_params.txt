@@ -1,0 +1,11 @@
+============================================================
+FollowIR 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model
+数据集: News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+GPU设备: cuda:1
+评估时间: 2026-02-28 18:12:54
+备注: 短指令训练后再在FL数据集上训练测试指标
+============================================================

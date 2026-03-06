@@ -1,0 +1,1290 @@
+nohup: ignoring input
+📂 使用自定义输出路径: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+============================================================
+📊 FollowIR 完整评测流程
+============================================================
+模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model
+数据集: Core17InstructionRetrieval Robust04InstructionRetrieval News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+备注: 短指令训练后再在FL数据集上训练测试指标
+============================================================
+
+📌 逐数据集处理: 重排 + 评测...
+
+============================================================
+--- 处理 Core17InstructionRetrieval ---
+============================================================
+📌 重排中...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/core17-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/core17-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/core17-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/core17-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+Encoding documents (bs=256):   0%|          | 0/78 [00:00<?, ?it/s]
+Encoding documents (bs=256):   1%|▏         | 1/78 [00:04<05:46,  4.50s/it]
+Encoding documents (bs=256):   3%|▎         | 2/78 [00:07<04:39,  3.67s/it]
+Encoding documents (bs=256):   4%|▍         | 3/78 [00:10<04:16,  3.42s/it]
+Encoding documents (bs=256):   5%|▌         | 4/78 [00:13<04:03,  3.30s/it]
+Encoding documents (bs=256):   6%|▋         | 5/78 [00:16<03:55,  3.23s/it]
+Encoding documents (bs=256):   8%|▊         | 6/78 [00:20<03:49,  3.19s/it]
+Encoding documents (bs=256):   9%|▉         | 7/78 [00:23<03:44,  3.16s/it]
+Encoding documents (bs=256):  10%|█         | 8/78 [00:26<03:40,  3.15s/it]
+Encoding documents (bs=256):  12%|█▏        | 9/78 [00:29<03:36,  3.14s/it]
+Encoding documents (bs=256):  13%|█▎        | 10/78 [00:32<03:33,  3.14s/it]
+Encoding documents (bs=256):  14%|█▍        | 11/78 [00:35<03:29,  3.12s/it]
+Encoding documents (bs=256):  15%|█▌        | 12/78 [00:38<03:26,  3.12s/it]
+Encoding documents (bs=256):  17%|█▋        | 13/78 [00:41<03:22,  3.12s/it]
+Encoding documents (bs=256):  18%|█▊        | 14/78 [00:44<03:19,  3.11s/it]
+Encoding documents (bs=256):  19%|█▉        | 15/78 [00:48<03:16,  3.11s/it]
+Encoding documents (bs=256):  21%|██        | 16/78 [00:51<03:13,  3.11s/it]
+Encoding documents (bs=256):  22%|██▏       | 17/78 [00:55<03:38,  3.59s/it]
+Encoding documents (bs=256):  23%|██▎       | 18/78 [01:00<03:52,  3.88s/it]
+Encoding documents (bs=256):  24%|██▍       | 19/78 [01:05<04:02,  4.10s/it]
+Encoding documents (bs=256):  26%|██▌       | 20/78 [01:09<04:06,  4.25s/it]
+Encoding documents (bs=256):  27%|██▋       | 21/78 [01:14<04:08,  4.36s/it]
+Encoding documents (bs=256):  28%|██▊       | 22/78 [01:18<04:08,  4.44s/it]
+Encoding documents (bs=256):  29%|██▉       | 23/78 [01:23<04:06,  4.48s/it]
+Encoding documents (bs=256):  31%|███       | 24/78 [01:28<04:03,  4.51s/it]
+Encoding documents (bs=256):  32%|███▏      | 25/78 [01:32<03:59,  4.52s/it]
+Encoding documents (bs=256):  33%|███▎      | 26/78 [01:37<03:55,  4.53s/it]
+Encoding documents (bs=256):  35%|███▍      | 27/78 [01:41<03:52,  4.57s/it]
+Encoding documents (bs=256):  36%|███▌      | 28/78 [01:46<03:49,  4.59s/it]
+Encoding documents (bs=256):  37%|███▋      | 29/78 [01:51<03:45,  4.61s/it]
+Encoding documents (bs=256):  38%|███▊      | 30/78 [01:54<03:27,  4.31s/it]
+Encoding documents (bs=256):  40%|███▉      | 31/78 [01:59<03:22,  4.31s/it]
+Encoding documents (bs=256):  41%|████      | 32/78 [02:02<03:04,  4.02s/it]
+Encoding documents (bs=256):  42%|████▏     | 33/78 [02:05<02:51,  3.81s/it]
+Encoding documents (bs=256):  44%|████▎     | 34/78 [02:08<02:40,  3.65s/it]
+Encoding documents (bs=256):  45%|████▍     | 35/78 [02:13<02:51,  4.00s/it]
+Encoding documents (bs=256):  46%|████▌     | 36/78 [02:18<02:58,  4.25s/it]
+Encoding documents (bs=256):  47%|████▋     | 37/78 [02:23<03:01,  4.43s/it]
+Encoding documents (bs=256):  49%|████▊     | 38/78 [02:28<03:01,  4.55s/it]
+Encoding documents (bs=256):  50%|█████     | 39/78 [02:33<03:00,  4.63s/it]
+Encoding documents (bs=256):  51%|█████▏    | 40/78 [02:37<02:58,  4.70s/it]
+Encoding documents (bs=256):  53%|█████▎    | 41/78 [02:42<02:55,  4.74s/it]
+Encoding documents (bs=256):  54%|█████▍    | 42/78 [02:47<02:51,  4.76s/it]
+Encoding documents (bs=256):  55%|█████▌    | 43/78 [02:52<02:47,  4.79s/it]
+Encoding documents (bs=256):  56%|█████▋    | 44/78 [02:57<02:43,  4.80s/it]
+Encoding documents (bs=256):  58%|█████▊    | 45/78 [03:02<02:38,  4.81s/it]
+Encoding documents (bs=256):  59%|█████▉    | 46/78 [03:06<02:34,  4.82s/it]
+Encoding documents (bs=256):  60%|██████    | 47/78 [03:11<02:29,  4.82s/it]
+Encoding documents (bs=256):  62%|██████▏   | 48/78 [03:16<02:24,  4.82s/it]
+Encoding documents (bs=256):  63%|██████▎   | 49/78 [03:21<02:20,  4.83s/it]
+Encoding documents (bs=256):  64%|██████▍   | 50/78 [03:26<02:15,  4.83s/it]
+Encoding documents (bs=256):  65%|██████▌   | 51/78 [03:31<02:10,  4.83s/it]
+Encoding documents (bs=256):  67%|██████▋   | 52/78 [03:35<02:05,  4.83s/it]
+Encoding documents (bs=256):  68%|██████▊   | 53/78 [03:40<02:01,  4.85s/it]
+Encoding documents (bs=256):  69%|██████▉   | 54/78 [03:45<01:55,  4.82s/it]
+Encoding documents (bs=256):  71%|███████   | 55/78 [03:50<01:50,  4.82s/it]
+Encoding documents (bs=256):  72%|███████▏  | 56/78 [03:55<01:46,  4.83s/it]
+Encoding documents (bs=256):  73%|███████▎  | 57/78 [04:00<01:41,  4.82s/it]
+Encoding documents (bs=256):  74%|███████▍  | 58/78 [04:04<01:36,  4.82s/it]
+Encoding documents (bs=256):  76%|███████▌  | 59/78 [04:09<01:31,  4.82s/it]
+Encoding documents (bs=256):  77%|███████▋  | 60/78 [04:14<01:26,  4.82s/it]
+Encoding documents (bs=256):  78%|███████▊  | 61/78 [04:19<01:21,  4.82s/it]
+Encoding documents (bs=256):  79%|███████▉  | 62/78 [04:24<01:17,  4.82s/it]
+Encoding documents (bs=256):  81%|████████  | 63/78 [04:28<01:12,  4.82s/it]
+Encoding documents (bs=256):  82%|████████▏ | 64/78 [04:33<01:07,  4.82s/it]
+Encoding documents (bs=256):  83%|████████▎ | 65/78 [04:38<01:02,  4.82s/it]
+Encoding documents (bs=256):  85%|████████▍ | 66/78 [04:43<00:57,  4.82s/it]
+Encoding documents (bs=256):  86%|████████▌ | 67/78 [04:48<00:52,  4.82s/it]
+Encoding documents (bs=256):  87%|████████▋ | 68/78 [04:53<00:48,  4.82s/it]
+Encoding documents (bs=256):  88%|████████▊ | 69/78 [04:57<00:43,  4.81s/it]
+Encoding documents (bs=256):  90%|████████▉ | 70/78 [05:02<00:38,  4.81s/it]
+Encoding documents (bs=256):  91%|█████████ | 71/78 [05:07<00:33,  4.81s/it]
+Encoding documents (bs=256):  92%|█████████▏| 72/78 [05:11<00:28,  4.70s/it]
+Encoding documents (bs=256):  94%|█████████▎| 73/78 [05:16<00:23,  4.60s/it]
+Encoding documents (bs=256):  95%|█████████▍| 74/78 [05:19<00:16,  4.11s/it]
+Encoding documents (bs=256):  96%|█████████▌| 75/78 [05:21<00:10,  3.42s/it]
+Encoding documents (bs=256):  97%|█████████▋| 76/78 [05:23<00:06,  3.10s/it]
+Encoding documents (bs=256):  99%|█████████▊| 77/78 [05:24<00:02,  2.54s/it]
+Encoding documents (bs=256): 100%|██████████| 78/78 [05:24<00:00,  1.81s/it]
+Encoding documents (bs=256): 100%|██████████| 78/78 [05:24<00:00,  4.16s/it]
+
+Encoding queries (bs=256):   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  7.79it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  7.77it/s]
+
+Reranking:   0%|          | 0/20 [00:00<?, ?it/s]
+Reranking:   5%|▌         | 1/20 [00:00<00:04,  3.87it/s]
+Reranking:  10%|█         | 2/20 [00:00<00:03,  4.58it/s]
+Reranking:  15%|█▌        | 3/20 [00:00<00:03,  4.51it/s]
+Reranking:  20%|██        | 4/20 [00:00<00:03,  4.24it/s]
+Reranking:  25%|██▌       | 5/20 [00:01<00:03,  4.41it/s]
+Reranking:  30%|███       | 6/20 [00:01<00:03,  4.44it/s]
+Reranking:  35%|███▌      | 7/20 [00:01<00:02,  4.40it/s]
+Reranking:  40%|████      | 8/20 [00:01<00:02,  4.41it/s]
+Reranking:  45%|████▌     | 9/20 [00:02<00:02,  4.37it/s]
+Reranking:  50%|█████     | 10/20 [00:02<00:02,  4.49it/s]
+Reranking:  55%|█████▌    | 11/20 [00:02<00:01,  4.61it/s]
+Reranking:  60%|██████    | 12/20 [00:02<00:01,  4.62it/s]
+Reranking:  65%|██████▌   | 13/20 [00:02<00:01,  4.62it/s]
+Reranking:  70%|███████   | 14/20 [00:03<00:01,  4.22it/s]
+Reranking:  75%|███████▌  | 15/20 [00:03<00:01,  4.33it/s]
+Reranking:  80%|████████  | 16/20 [00:03<00:00,  4.36it/s]
+Reranking:  85%|████████▌ | 17/20 [00:03<00:00,  4.42it/s]
+Reranking:  90%|█████████ | 18/20 [00:04<00:00,  4.46it/s]
+Reranking:  95%|█████████▌| 19/20 [00:04<00:00,  4.46it/s]
+Reranking: 100%|██████████| 20/20 [00:04<00:00,  4.46it/s]
+Reranking: 100%|██████████| 20/20 [00:04<00:00,  4.43it/s]
+
+Encoding documents (bs=256):   0%|          | 0/78 [00:00<?, ?it/s]
+Encoding documents (bs=256):   1%|▏         | 1/78 [00:04<05:14,  4.09s/it]
+Encoding documents (bs=256):   3%|▎         | 2/78 [00:08<05:41,  4.50s/it]
+Encoding documents (bs=256):   4%|▍         | 3/78 [00:13<05:48,  4.64s/it]
+Encoding documents (bs=256):   5%|▌         | 4/78 [00:18<05:48,  4.71s/it]
+Encoding documents (bs=256):   6%|▋         | 5/78 [00:23<05:46,  4.75s/it]
+Encoding documents (bs=256):   8%|▊         | 6/78 [00:28<05:43,  4.77s/it]
+Encoding documents (bs=256):   9%|▉         | 7/78 [00:32<05:39,  4.78s/it]
+Encoding documents (bs=256):  10%|█         | 8/78 [00:37<05:35,  4.79s/it]
+Encoding documents (bs=256):  12%|█▏        | 9/78 [00:42<05:31,  4.80s/it]
+Encoding documents (bs=256):  13%|█▎        | 10/78 [00:47<05:26,  4.80s/it]
+Encoding documents (bs=256):  14%|█▍        | 11/78 [00:52<05:21,  4.81s/it]
+Encoding documents (bs=256):  15%|█▌        | 12/78 [00:57<05:17,  4.81s/it]
+Encoding documents (bs=256):  17%|█▋        | 13/78 [01:01<05:12,  4.81s/it]
+Encoding documents (bs=256):  18%|█▊        | 14/78 [01:06<05:08,  4.81s/it]
+Encoding documents (bs=256):  19%|█▉        | 15/78 [01:11<05:03,  4.81s/it]
+Encoding documents (bs=256):  21%|██        | 16/78 [01:16<04:58,  4.81s/it]
+Encoding documents (bs=256):  22%|██▏       | 17/78 [01:21<04:53,  4.81s/it]
+Encoding documents (bs=256):  23%|██▎       | 18/78 [01:25<04:48,  4.81s/it]
+Encoding documents (bs=256):  24%|██▍       | 19/78 [01:30<04:43,  4.81s/it]
+Encoding documents (bs=256):  26%|██▌       | 20/78 [01:35<04:39,  4.81s/it]
+Encoding documents (bs=256):  27%|██▋       | 21/78 [01:40<04:34,  4.82s/it]
+Encoding documents (bs=256):  28%|██▊       | 22/78 [01:45<04:29,  4.81s/it]
+Encoding documents (bs=256):  29%|██▉       | 23/78 [01:49<04:24,  4.81s/it]
+Encoding documents (bs=256):  31%|███       | 24/78 [01:54<04:19,  4.81s/it]
+Encoding documents (bs=256):  32%|███▏      | 25/78 [01:59<04:14,  4.81s/it]
+Encoding documents (bs=256):  33%|███▎      | 26/78 [02:04<04:09,  4.81s/it]
+Encoding documents (bs=256):  35%|███▍      | 27/78 [02:09<04:04,  4.80s/it]
+Encoding documents (bs=256):  36%|███▌      | 28/78 [02:13<04:00,  4.80s/it]
+Encoding documents (bs=256):  37%|███▋      | 29/78 [02:18<03:50,  4.71s/it]
+Encoding documents (bs=256):  38%|███▊      | 30/78 [02:23<03:45,  4.69s/it]
+Encoding documents (bs=256):  40%|███▉      | 31/78 [02:27<03:36,  4.61s/it]
+Encoding documents (bs=256):  41%|████      | 32/78 [02:31<03:19,  4.34s/it]
+Encoding documents (bs=256):  42%|████▏     | 33/78 [02:34<03:01,  4.03s/it]
+Encoding documents (bs=256):  44%|████▎     | 34/78 [02:37<02:47,  3.80s/it]
+Encoding documents (bs=256):  45%|████▍     | 35/78 [02:41<02:36,  3.65s/it]
+Encoding documents (bs=256):  46%|████▌     | 36/78 [02:44<02:28,  3.53s/it]
+Encoding documents (bs=256):  47%|████▋     | 37/78 [02:47<02:21,  3.45s/it]
+Encoding documents (bs=256):  49%|████▊     | 38/78 [02:50<02:15,  3.39s/it]
+Encoding documents (bs=256):  50%|█████     | 39/78 [02:54<02:10,  3.35s/it]
+Encoding documents (bs=256):  51%|█████▏    | 40/78 [02:57<02:06,  3.34s/it]
+Encoding documents (bs=256):  53%|█████▎    | 41/78 [03:00<02:02,  3.32s/it]
+Encoding documents (bs=256):  54%|█████▍    | 42/78 [03:03<01:58,  3.28s/it]
+Encoding documents (bs=256):  55%|█████▌    | 43/78 [03:07<01:55,  3.30s/it]
+Encoding documents (bs=256):  56%|█████▋    | 44/78 [03:10<01:51,  3.29s/it]
+Encoding documents (bs=256):  58%|█████▊    | 45/78 [03:13<01:48,  3.29s/it]
+Encoding documents (bs=256):  59%|█████▉    | 46/78 [03:16<01:44,  3.26s/it]
+Encoding documents (bs=256):  60%|██████    | 47/78 [03:20<01:41,  3.27s/it]
+Encoding documents (bs=256):  62%|██████▏   | 48/78 [03:23<01:37,  3.27s/it]
+Encoding documents (bs=256):  63%|██████▎   | 49/78 [03:27<01:42,  3.52s/it]
+Encoding documents (bs=256):  64%|██████▍   | 50/78 [03:32<01:48,  3.86s/it]
+Encoding documents (bs=256):  65%|██████▌   | 51/78 [03:37<01:51,  4.12s/it]
+Encoding documents (bs=256):  67%|██████▋   | 52/78 [03:41<01:51,  4.30s/it]
+Encoding documents (bs=256):  68%|██████▊   | 53/78 [03:46<01:50,  4.44s/it]
+Encoding documents (bs=256):  69%|██████▉   | 54/78 [03:51<01:48,  4.53s/it]
+Encoding documents (bs=256):  71%|███████   | 55/78 [03:55<01:45,  4.59s/it]
+Encoding documents (bs=256):  72%|███████▏  | 56/78 [04:00<01:41,  4.63s/it]
+Encoding documents (bs=256):  73%|███████▎  | 57/78 [04:05<01:37,  4.66s/it]
+Encoding documents (bs=256):  74%|███████▍  | 58/78 [04:10<01:33,  4.66s/it]
+Encoding documents (bs=256):  76%|███████▌  | 59/78 [04:14<01:28,  4.67s/it]
+Encoding documents (bs=256):  77%|███████▋  | 60/78 [04:18<01:18,  4.34s/it]
+Encoding documents (bs=256):  78%|███████▊  | 61/78 [04:21<01:07,  3.98s/it]
+Encoding documents (bs=256):  79%|███████▉  | 62/78 [04:24<00:59,  3.73s/it]
+Encoding documents (bs=256):  81%|████████  | 63/78 [04:27<00:53,  3.54s/it]
+Encoding documents (bs=256):  82%|████████▏ | 64/78 [04:31<00:51,  3.68s/it]
+Encoding documents (bs=256):  83%|████████▎ | 65/78 [04:36<00:51,  3.96s/it]
+Encoding documents (bs=256):  85%|████████▍ | 66/78 [04:40<00:49,  4.15s/it]
+Encoding documents (bs=256):  86%|████████▌ | 67/78 [04:45<00:46,  4.27s/it]
+Encoding documents (bs=256):  87%|████████▋ | 68/78 [04:50<00:43,  4.37s/it]
+Encoding documents (bs=256):  88%|████████▊ | 69/78 [04:54<00:39,  4.43s/it]
+Encoding documents (bs=256):  90%|████████▉ | 70/78 [04:59<00:35,  4.47s/it]
+Encoding documents (bs=256):  91%|█████████ | 71/78 [05:03<00:31,  4.47s/it]
+Encoding documents (bs=256):  92%|█████████▏| 72/78 [05:06<00:24,  4.05s/it]
+Encoding documents (bs=256):  94%|█████████▎| 73/78 [05:11<00:20,  4.16s/it]
+Encoding documents (bs=256):  95%|█████████▍| 74/78 [05:14<00:15,  3.86s/it]
+Encoding documents (bs=256):  96%|█████████▌| 75/78 [05:15<00:09,  3.19s/it]
+Encoding documents (bs=256):  97%|█████████▋| 76/78 [05:18<00:05,  2.98s/it]
+Encoding documents (bs=256):  99%|█████████▊| 77/78 [05:19<00:02,  2.41s/it]
+Encoding documents (bs=256): 100%|██████████| 78/78 [05:19<00:00,  1.72s/it]
+Encoding documents (bs=256): 100%|██████████| 78/78 [05:19<00:00,  4.10s/it]
+
+Encoding queries (bs=256):   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  8.34it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  8.32it/s]
+
+Reranking:   0%|          | 0/20 [00:00<?, ?it/s]
+Reranking:   5%|▌         | 1/20 [00:00<00:04,  4.15it/s]
+Reranking:  10%|█         | 2/20 [00:00<00:03,  4.87it/s]
+Reranking:  15%|█▌        | 3/20 [00:00<00:03,  4.78it/s]
+Reranking:  20%|██        | 4/20 [00:00<00:03,  4.73it/s]
+Reranking:  25%|██▌       | 5/20 [00:01<00:02,  5.04it/s]
+Reranking:  30%|███       | 6/20 [00:01<00:02,  5.04it/s]
+Reranking:  35%|███▌      | 7/20 [00:01<00:02,  4.92it/s]
+Reranking:  40%|████      | 8/20 [00:01<00:02,  4.87it/s]
+Reranking:  45%|████▌     | 9/20 [00:01<00:02,  4.86it/s]
+Reranking:  50%|█████     | 10/20 [00:02<00:02,  4.86it/s]
+Reranking:  55%|█████▌    | 11/20 [00:02<00:01,  4.93it/s]
+Reranking:  60%|██████    | 12/20 [00:02<00:01,  4.85it/s]
+Reranking:  65%|██████▌   | 13/20 [00:02<00:01,  4.78it/s]
+Reranking:  70%|███████   | 14/20 [00:02<00:01,  4.74it/s]
+Reranking:  75%|███████▌  | 15/20 [00:03<00:01,  4.72it/s]
+Reranking:  80%|████████  | 16/20 [00:03<00:00,  4.38it/s]
+Reranking:  85%|████████▌ | 17/20 [00:03<00:00,  4.43it/s]
+Reranking:  90%|█████████ | 18/20 [00:03<00:00,  4.52it/s]
+Reranking:  95%|█████████▌| 19/20 [00:04<00:00,  4.56it/s]
+Reranking: 100%|██████████| 20/20 [00:04<00:00,  4.62it/s]
+Reranking: 100%|██████████| 20/20 [00:04<00:00,  4.72it/s]
+
+📁 输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+📥 正在加载模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model on cuda:1
+   (如果是首次运行，可能需要下载模型，请耐心等待...)
+✅ 模型加载完成，耗时: 3.8秒
+📚 加载 FollowIR 评测任务: Core17InstructionRetrieval
+
+============================================================
+🚀 评测任务: Core17InstructionRetrieval
+============================================================
+📂 加载数据集: jhu-clsp/core17-instructions-mteb
+   加载 corpus...
+   ✅ 加载 19899 个文档 (4.3s)
+   加载 queries...
+   加载 instruction...
+   ✅ 加载 20 个 og 查询, 20 个 changed 查询 (7.8s)
+   加载 top_ranked...
+   ✅ 加载 20 个查询的候选文档, 平均 1000 个/查询 (9.7s)
+📂 数据加载完成，总耗时: 9.7s
+
+📊 共 20 og 查询 + 20 changed 查询, 平均 1000 候选文档
+
+--- 开始评测: Original Instructions (og) ---
+🔧 优化重排过程...
+📚 编码 19899 个文档 (batch_size=256)...
+✅ 文档编码完成，共 19899 个tensor
+📝 批量编码 20 个查询 (batch_size=256)...
+✅ 查询编码完成，共 20 个tensor
+💾 TREC Run 文件已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Core17InstructionRetrieval_og.trec
+
+--- 开始评测: Altered Instructions (changed) ---
+🔧 优化重排过程...
+📚 编码 19899 个文档 (batch_size=256)...
+✅ 文档编码完成，共 19899 个tensor
+📝 批量编码 20 个查询 (batch_size=256)...
+✅ 查询编码完成，共 20 个tensor
+💾 TREC Run 文件已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Core17InstructionRetrieval_changed.trec
+📝 参数已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/eval_params.txt
+
+============================================================
+✅ 重排完成！
+📁 结果已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+  : /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/ - TREC 文件
+   - Core17InstructionRetrieval: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/Core17InstructionRetrieval/
+
+要计算 FollowIR p-MRR 指标，请使用 FollowIR 官方脚本:
+python -m followir.evaluate --qrels path/to/qrels --run_org /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Core17InstructionRetrieval_og.trec --run_alt /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Core17InstructionRetrieval_changed.trec
+============================================================
+
+
+📌 计算指标中...
+Traceback (most recent call last):
+  File "/home/luwa/Documents/pylate/scripts/eval_followir_pmr.py", line 387, in <module>
+    main()
+  File "/home/luwa/Documents/pylate/scripts/eval_followir_pmr.py", line 370, in main
+    result = evaluate_single_task(task_name, task_path, run_og, run_changed, output_path, all_results, args.output_dir)
+  File "/home/luwa/Documents/pylate/scripts/eval_followir_pmr.py", line 300, in evaluate_single_task
+    queries_dict = load_queries_with_instructions(task_path)
+  File "/home/luwa/Documents/pylate/scripts/eval_followir_pmr.py", line 182, in load_queries_with_instructions
+    ds_q = load_dataset(task_path, 'queries', split='test')
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/load.py", line 1517, in load_dataset
+    ds = builder_instance.as_dataset(split=split, verification_mode=verification_mode, in_memory=keep_in_memory)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/builder.py", line 1052, in as_dataset
+    datasets = map_nested(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/utils/py_utils.py", line 493, in map_nested
+    mapped = function(data_struct)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/builder.py", line 1082, in _build_single_dataset
+    ds = self._as_dataset(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/builder.py", line 1156, in _as_dataset
+    dataset_kwargs = ArrowReader(cache_dir, self.info).read(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 248, in read
+    files = self.get_file_instructions(name, instructions, split_infos)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 221, in get_file_instructions
+    file_instructions = make_file_instructions(
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 130, in make_file_instructions
+    absolute_instructions = instruction.to_absolute(name2len)
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 620, in to_absolute
+    return [_rel_to_abs_instr(rel_instr, name2len) for rel_instr in self._relative_instructions]
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 620, in <listcomp>
+    return [_rel_to_abs_instr(rel_instr, name2len) for rel_instr in self._relative_instructions]
+  File "/home/luwa/.conda/envs/pylate/lib/python3.10/site-packages/datasets/arrow_reader.py", line 437, in _rel_to_abs_instr
+    raise ValueError(f'Unknown split "{split}". Should be one of {list(name2len)}.')
+ValueError: Unknown split "test". Should be one of ['queries'].
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir_pmr.py --tasks Core17InstructionRetrieval --run_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --note 短指令训练后再在FL数据集上训练测试指标` failed. (See above for error)
+============================================================
+📊 FollowIR 完整评测
+============================================================
+
+将评测以下数据集: Core17InstructionRetrieval
+
+============================================================
+📊 评测任务: Core17InstructionRetrieval
+============================================================
+
+📥 加载数据...
+✅ 加载 qrels: 40 个查询
+✅ 加载 qrel_diff: 20 个查询有变化的文档
+
+📥 加载 run 文件...
+✅ 加载 run 文件: 20 个查询
+✅ 加载 run 文件: 20 个查询
+
+🔢 计算 FollowIR 指标...
+
+🎯 p-MRR: 0.0197
+
+📊 原始指令 - nDCG@5: 0.4546, MAP@1000: 0.2527
+📊 改变指令 - nDCG@5: 0.2096, MAP@1000: 0.1449
+💾 结果已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/results_Core17InstructionRetrieval.json
+💾 指标已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/Core17InstructionRetrieval/metrics/results.json
+
+✅ Core17InstructionRetrieval 完成!
+
+============================================================
+--- 处理 Robust04InstructionRetrieval ---
+============================================================
+📌 重排中...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+Encoding documents (bs=256):   0%|          | 0/186 [00:00<?, ?it/s]
+Encoding documents (bs=256):   1%|          | 1/186 [00:04<15:03,  4.88s/it]
+Encoding documents (bs=256):   1%|          | 2/186 [00:09<14:16,  4.65s/it]
+Encoding documents (bs=256):   2%|▏         | 3/186 [00:13<13:40,  4.48s/it]
+Encoding documents (bs=256):   2%|▏         | 4/186 [00:17<12:41,  4.18s/it]
+Encoding documents (bs=256):   3%|▎         | 5/186 [00:22<13:17,  4.41s/it]
+Encoding documents (bs=256):   3%|▎         | 6/186 [00:26<13:38,  4.54s/it]
+Encoding documents (bs=256):   4%|▍         | 7/186 [00:31<13:50,  4.64s/it]
+Encoding documents (bs=256):   4%|▍         | 8/186 [00:36<13:56,  4.70s/it]
+Encoding documents (bs=256):   5%|▍         | 9/186 [00:41<13:58,  4.74s/it]
+Encoding documents (bs=256):   5%|▌         | 10/186 [00:46<13:59,  4.77s/it]
+Encoding documents (bs=256):   6%|▌         | 11/186 [00:51<13:57,  4.79s/it]
+Encoding documents (bs=256):   6%|▋         | 12/186 [00:55<13:54,  4.80s/it]
+Encoding documents (bs=256):   7%|▋         | 13/186 [01:00<13:51,  4.81s/it]
+Encoding documents (bs=256):   8%|▊         | 14/186 [01:05<13:47,  4.81s/it]
+Encoding documents (bs=256):   8%|▊         | 15/186 [01:10<13:43,  4.82s/it]
+Encoding documents (bs=256):   9%|▊         | 16/186 [01:15<13:38,  4.81s/it]
+Encoding documents (bs=256):   9%|▉         | 17/186 [01:20<13:34,  4.82s/it]
+Encoding documents (bs=256):  10%|▉         | 18/186 [01:24<13:29,  4.82s/it]
+Encoding documents (bs=256):  10%|█         | 19/186 [01:29<13:24,  4.82s/it]
+Encoding documents (bs=256):  11%|█         | 20/186 [01:34<13:19,  4.82s/it]
+Encoding documents (bs=256):  11%|█▏        | 21/186 [01:39<13:14,  4.82s/it]
+Encoding documents (bs=256):  12%|█▏        | 22/186 [01:44<13:10,  4.82s/it]
+Encoding documents (bs=256):  12%|█▏        | 23/186 [01:48<13:05,  4.82s/it]
+Encoding documents (bs=256):  13%|█▎        | 24/186 [01:53<13:02,  4.83s/it]
+Encoding documents (bs=256):  13%|█▎        | 25/186 [01:58<12:57,  4.83s/it]
+Encoding documents (bs=256):  14%|█▍        | 26/186 [02:03<12:51,  4.82s/it]
+Encoding documents (bs=256):  15%|█▍        | 27/186 [02:08<12:47,  4.83s/it]
+Encoding documents (bs=256):  15%|█▌        | 28/186 [02:13<12:41,  4.82s/it]
+Encoding documents (bs=256):  16%|█▌        | 29/186 [02:17<12:37,  4.82s/it]
+Encoding documents (bs=256):  16%|█▌        | 30/186 [02:22<12:32,  4.82s/it]
+Encoding documents (bs=256):  17%|█▋        | 31/186 [02:27<12:26,  4.82s/it]
+Encoding documents (bs=256):  17%|█▋        | 32/186 [02:32<12:22,  4.82s/it]
+Encoding documents (bs=256):  18%|█▊        | 33/186 [02:37<12:17,  4.82s/it]
+Encoding documents (bs=256):  18%|█▊        | 34/186 [02:42<12:13,  4.82s/it]
+Encoding documents (bs=256):  19%|█▉        | 35/186 [02:46<12:07,  4.82s/it]
+Encoding documents (bs=256):  19%|█▉        | 36/186 [02:51<12:02,  4.82s/it]
+Encoding documents (bs=256):  20%|█▉        | 37/186 [02:56<11:57,  4.82s/it]
+Encoding documents (bs=256):  20%|██        | 38/186 [03:01<11:52,  4.81s/it]
+Encoding documents (bs=256):  21%|██        | 39/186 [03:06<11:47,  4.81s/it]
+Encoding documents (bs=256):  22%|██▏       | 40/186 [03:10<11:43,  4.82s/it]
+Encoding documents (bs=256):  22%|██▏       | 41/186 [03:15<11:38,  4.82s/it]
+Encoding documents (bs=256):  23%|██▎       | 42/186 [03:20<11:34,  4.82s/it]
+Encoding documents (bs=256):  23%|██▎       | 43/186 [03:25<11:29,  4.82s/it]
+Encoding documents (bs=256):  24%|██▎       | 44/186 [03:30<11:24,  4.82s/it]
+Encoding documents (bs=256):  24%|██▍       | 45/186 [03:35<11:19,  4.82s/it]
+Encoding documents (bs=256):  25%|██▍       | 46/186 [03:39<11:14,  4.82s/it]
+Encoding documents (bs=256):  25%|██▌       | 47/186 [03:44<11:10,  4.82s/it]
+Encoding documents (bs=256):  26%|██▌       | 48/186 [03:49<11:05,  4.82s/it]
+Encoding documents (bs=256):  26%|██▋       | 49/186 [03:54<11:00,  4.82s/it]
+Encoding documents (bs=256):  27%|██▋       | 50/186 [03:59<10:55,  4.82s/it]
+Encoding documents (bs=256):  27%|██▋       | 51/186 [04:03<10:49,  4.81s/it]
+Encoding documents (bs=256):  28%|██▊       | 52/186 [04:08<10:44,  4.81s/it]
+Encoding documents (bs=256):  28%|██▊       | 53/186 [04:13<10:39,  4.81s/it]
+Encoding documents (bs=256):  29%|██▉       | 54/186 [04:18<10:35,  4.81s/it]
+Encoding documents (bs=256):  30%|██▉       | 55/186 [04:23<10:30,  4.81s/it]
+Encoding documents (bs=256):  30%|███       | 56/186 [04:27<10:25,  4.81s/it]
+Encoding documents (bs=256):  31%|███       | 57/186 [04:32<10:20,  4.81s/it]
+Encoding documents (bs=256):  31%|███       | 58/186 [04:36<09:16,  4.35s/it]
+Encoding documents (bs=256):  32%|███▏      | 59/186 [04:39<08:33,  4.04s/it]
+Encoding documents (bs=256):  32%|███▏      | 60/186 [04:42<07:57,  3.79s/it]
+Encoding documents (bs=256):  33%|███▎      | 61/186 [04:45<07:34,  3.64s/it]
+Encoding documents (bs=256):  33%|███▎      | 62/186 [04:49<07:17,  3.53s/it]
+Encoding documents (bs=256):  34%|███▍      | 63/186 [04:52<07:04,  3.45s/it]
+Encoding documents (bs=256):  34%|███▍      | 64/186 [04:55<06:54,  3.40s/it]
+Encoding documents (bs=256):  35%|███▍      | 65/186 [04:58<06:46,  3.36s/it]
+Encoding documents (bs=256):  35%|███▌      | 66/186 [05:02<06:40,  3.34s/it]
+Encoding documents (bs=256):  36%|███▌      | 67/186 [05:05<06:35,  3.32s/it]
+Encoding documents (bs=256):  37%|███▋      | 68/186 [05:08<06:31,  3.31s/it]
+Encoding documents (bs=256):  37%|███▋      | 69/186 [05:12<06:25,  3.30s/it]
+Encoding documents (bs=256):  38%|███▊      | 70/186 [05:15<06:23,  3.31s/it]
+Encoding documents (bs=256):  38%|███▊      | 71/186 [05:18<06:17,  3.28s/it]
+Encoding documents (bs=256):  39%|███▊      | 72/186 [05:21<06:12,  3.27s/it]
+Encoding documents (bs=256):  39%|███▉      | 73/186 [05:25<06:10,  3.28s/it]
+Encoding documents (bs=256):  40%|███▉      | 74/186 [05:28<06:07,  3.28s/it]
+Encoding documents (bs=256):  40%|████      | 75/186 [05:31<06:03,  3.27s/it]
+Encoding documents (bs=256):  41%|████      | 76/186 [05:34<05:59,  3.27s/it]
+Encoding documents (bs=256):  41%|████▏     | 77/186 [05:38<05:55,  3.26s/it]
+Encoding documents (bs=256):  42%|████▏     | 78/186 [05:41<05:51,  3.26s/it]
+Encoding documents (bs=256):  42%|████▏     | 79/186 [05:44<05:48,  3.26s/it]
+Encoding documents (bs=256):  43%|████▎     | 80/186 [05:47<05:44,  3.25s/it]
+Encoding documents (bs=256):  44%|████▎     | 81/186 [05:51<05:40,  3.25s/it]
+Encoding documents (bs=256):  44%|████▍     | 82/186 [05:54<05:37,  3.24s/it]
+Encoding documents (bs=256):  45%|████▍     | 83/186 [05:57<05:35,  3.26s/it]
+Encoding documents (bs=256):  45%|████▌     | 84/186 [06:00<05:30,  3.24s/it]
+Encoding documents (bs=256):  46%|████▌     | 85/186 [06:04<05:27,  3.24s/it]
+Encoding documents (bs=256):  46%|████▌     | 86/186 [06:07<05:19,  3.20s/it]
+Encoding documents (bs=256):  47%|████▋     | 87/186 [06:10<05:09,  3.12s/it]
+Encoding documents (bs=256):  47%|████▋     | 88/186 [06:12<04:44,  2.90s/it]
+Encoding documents (bs=256):  48%|████▊     | 89/186 [06:14<04:03,  2.51s/it]
+Encoding documents (bs=256):  48%|████▊     | 90/186 [06:15<03:35,  2.24s/it]
+Encoding documents (bs=256):  49%|████▉     | 91/186 [06:17<03:14,  2.05s/it]
+Encoding documents (bs=256):  49%|████▉     | 92/186 [06:19<03:00,  1.92s/it]
+Encoding documents (bs=256):  50%|█████     | 93/186 [06:20<02:49,  1.82s/it]
+Encoding documents (bs=256):  51%|█████     | 94/186 [06:22<02:41,  1.76s/it]
+Encoding documents (bs=256):  51%|█████     | 95/186 [06:23<02:35,  1.70s/it]
+Encoding documents (bs=256):  52%|█████▏    | 96/186 [06:25<02:30,  1.67s/it]
+Encoding documents (bs=256):  52%|█████▏    | 97/186 [06:27<02:26,  1.65s/it]
+Encoding documents (bs=256):  53%|█████▎    | 98/186 [06:28<02:23,  1.63s/it]
+Encoding documents (bs=256):  53%|█████▎    | 99/186 [06:30<02:21,  1.63s/it]
+Encoding documents (bs=256):  54%|█████▍    | 100/186 [06:31<02:18,  1.62s/it]
+Encoding documents (bs=256):  54%|█████▍    | 101/186 [06:33<02:16,  1.61s/it]
+Encoding documents (bs=256):  55%|█████▍    | 102/186 [06:35<02:14,  1.60s/it]
+Encoding documents (bs=256):  55%|█████▌    | 103/186 [06:36<02:12,  1.60s/it]
+Encoding documents (bs=256):  56%|█████▌    | 104/186 [06:38<02:10,  1.60s/it]
+Encoding documents (bs=256):  56%|█████▋    | 105/186 [06:39<02:08,  1.59s/it]
+Encoding documents (bs=256):  57%|█████▋    | 106/186 [06:41<02:07,  1.59s/it]
+Encoding documents (bs=256):  58%|█████▊    | 107/186 [06:42<02:05,  1.59s/it]
+Encoding documents (bs=256):  58%|█████▊    | 108/186 [06:44<02:03,  1.58s/it]
+Encoding documents (bs=256):  59%|█████▊    | 109/186 [06:46<02:02,  1.59s/it]
+Encoding documents (bs=256):  59%|█████▉    | 110/186 [06:47<02:00,  1.59s/it]
+Encoding documents (bs=256):  60%|█████▉    | 111/186 [06:49<01:58,  1.58s/it]
+Encoding documents (bs=256):  60%|██████    | 112/186 [06:50<01:57,  1.59s/it]
+Encoding documents (bs=256):  61%|██████    | 113/186 [06:52<01:56,  1.59s/it]
+Encoding documents (bs=256):  61%|██████▏   | 114/186 [06:54<01:54,  1.59s/it]
+Encoding documents (bs=256):  62%|██████▏   | 115/186 [06:55<01:53,  1.60s/it]
+Encoding documents (bs=256):  62%|██████▏   | 116/186 [06:57<01:51,  1.59s/it]
+Encoding documents (bs=256):  63%|██████▎   | 117/186 [06:58<01:49,  1.59s/it]
+Encoding documents (bs=256):  63%|██████▎   | 118/186 [07:00<01:48,  1.59s/it]
+Encoding documents (bs=256):  64%|██████▍   | 119/186 [07:02<01:46,  1.59s/it]
+Encoding documents (bs=256):  65%|██████▍   | 120/186 [07:03<01:44,  1.59s/it]
+Encoding documents (bs=256):  65%|██████▌   | 121/186 [07:05<01:43,  1.60s/it]
+Encoding documents (bs=256):  66%|██████▌   | 122/186 [07:06<01:42,  1.59s/it]
+Encoding documents (bs=256):  66%|██████▌   | 123/186 [07:08<01:40,  1.59s/it]
+Encoding documents (bs=256):  67%|██████▋   | 124/186 [07:09<01:39,  1.60s/it]
+Encoding documents (bs=256):  67%|██████▋   | 125/186 [07:11<01:37,  1.59s/it]
+Encoding documents (bs=256):  68%|██████▊   | 126/186 [07:13<01:35,  1.59s/it]
+Encoding documents (bs=256):  68%|██████▊   | 127/186 [07:14<01:33,  1.59s/it]
+Encoding documents (bs=256):  69%|██████▉   | 128/186 [07:16<01:32,  1.59s/it]
+Encoding documents (bs=256):  69%|██████▉   | 129/186 [07:17<01:30,  1.58s/it]
+Encoding documents (bs=256):  70%|██████▉   | 130/186 [07:19<01:28,  1.59s/it]
+Encoding documents (bs=256):  70%|███████   | 131/186 [07:21<01:27,  1.59s/it]
+Encoding documents (bs=256):  71%|███████   | 132/186 [07:22<01:25,  1.59s/it]
+Encoding documents (bs=256):  72%|███████▏  | 133/186 [07:24<01:23,  1.58s/it]
+Encoding documents (bs=256):  72%|███████▏  | 134/186 [07:25<01:22,  1.58s/it]
+Encoding documents (bs=256):  73%|███████▎  | 135/186 [07:27<01:20,  1.58s/it]
+Encoding documents (bs=256):  73%|███████▎  | 136/186 [07:28<01:18,  1.58s/it]
+Encoding documents (bs=256):  74%|███████▎  | 137/186 [07:30<01:17,  1.58s/it]
+Encoding documents (bs=256):  74%|███████▍  | 138/186 [07:32<01:15,  1.58s/it]
+Encoding documents (bs=256):  75%|███████▍  | 139/186 [07:33<01:14,  1.58s/it]
+Encoding documents (bs=256):  75%|███████▌  | 140/186 [07:35<01:13,  1.59s/it]
+Encoding documents (bs=256):  76%|███████▌  | 141/186 [07:36<01:11,  1.59s/it]
+Encoding documents (bs=256):  76%|███████▋  | 142/186 [07:38<01:09,  1.58s/it]
+Encoding documents (bs=256):  77%|███████▋  | 143/186 [07:40<01:08,  1.58s/it]
+Encoding documents (bs=256):  77%|███████▋  | 144/186 [07:41<01:07,  1.60s/it]
+Encoding documents (bs=256):  78%|███████▊  | 145/186 [07:43<01:05,  1.59s/it]
+Encoding documents (bs=256):  78%|███████▊  | 146/186 [07:44<01:03,  1.60s/it]
+Encoding documents (bs=256):  79%|███████▉  | 147/186 [07:46<01:02,  1.59s/it]
+Encoding documents (bs=256):  80%|███████▉  | 148/186 [07:48<01:00,  1.59s/it]
+Encoding documents (bs=256):  80%|████████  | 149/186 [07:49<00:58,  1.58s/it]
+Encoding documents (bs=256):  81%|████████  | 150/186 [07:51<00:56,  1.58s/it]
+Encoding documents (bs=256):  81%|████████  | 151/186 [07:52<00:55,  1.57s/it]
+Encoding documents (bs=256):  82%|████████▏ | 152/186 [07:54<00:53,  1.57s/it]
+Encoding documents (bs=256):  82%|████████▏ | 153/186 [07:55<00:51,  1.57s/it]
+Encoding documents (bs=256):  83%|████████▎ | 154/186 [07:57<00:50,  1.58s/it]
+Encoding documents (bs=256):  83%|████████▎ | 155/186 [07:59<00:49,  1.58s/it]
+Encoding documents (bs=256):  84%|████████▍ | 156/186 [08:00<00:47,  1.58s/it]
+Encoding documents (bs=256):  84%|████████▍ | 157/186 [08:02<00:45,  1.58s/it]
+Encoding documents (bs=256):  85%|████████▍ | 158/186 [08:03<00:44,  1.57s/it]
+Encoding documents (bs=256):  85%|████████▌ | 159/186 [08:05<00:42,  1.58s/it]
+Encoding documents (bs=256):  86%|████████▌ | 160/186 [08:06<00:40,  1.57s/it]
+Encoding documents (bs=256):  87%|████████▋ | 161/186 [08:08<00:39,  1.56s/it]
+Encoding documents (bs=256):  87%|████████▋ | 162/186 [08:10<00:37,  1.56s/it]
+Encoding documents (bs=256):  88%|████████▊ | 163/186 [08:11<00:35,  1.56s/it]
+Encoding documents (bs=256):  88%|████████▊ | 164/186 [08:13<00:34,  1.56s/it]
+Encoding documents (bs=256):  89%|████████▊ | 165/186 [08:14<00:32,  1.55s/it]
+Encoding documents (bs=256):  89%|████████▉ | 166/186 [08:16<00:31,  1.55s/it]
+Encoding documents (bs=256):  90%|████████▉ | 167/186 [08:17<00:29,  1.55s/it]
+Encoding documents (bs=256):  90%|█████████ | 168/186 [08:19<00:27,  1.55s/it]
+Encoding documents (bs=256):  91%|█████████ | 169/186 [08:20<00:26,  1.55s/it]
+Encoding documents (bs=256):  91%|█████████▏| 170/186 [08:22<00:24,  1.54s/it]
+Encoding documents (bs=256):  92%|█████████▏| 171/186 [08:23<00:23,  1.54s/it]
+Encoding documents (bs=256):  92%|█████████▏| 172/186 [08:25<00:21,  1.54s/it]
+Encoding documents (bs=256):  93%|█████████▎| 173/186 [08:26<00:20,  1.54s/it]
+Encoding documents (bs=256):  94%|█████████▎| 174/186 [08:28<00:17,  1.49s/it]
+Encoding documents (bs=256):  94%|█████████▍| 175/186 [08:29<00:16,  1.46s/it]
+Encoding documents (bs=256):  95%|█████████▍| 176/186 [08:31<00:13,  1.40s/it]
+Encoding documents (bs=256):  95%|█████████▌| 177/186 [08:32<00:12,  1.39s/it]
+Encoding documents (bs=256):  96%|█████████▌| 178/186 [08:33<00:11,  1.44s/it]
+Encoding documents (bs=256):  96%|█████████▌| 179/186 [08:35<00:09,  1.37s/it]
+Encoding documents (bs=256):  97%|█████████▋| 180/186 [08:36<00:08,  1.40s/it]
+Encoding documents (bs=256):  97%|█████████▋| 181/186 [08:38<00:06,  1.39s/it]
+Encoding documents (bs=256):  98%|█████████▊| 182/186 [08:39<00:05,  1.32s/it]
+Encoding documents (bs=256):  98%|█████████▊| 183/186 [08:39<00:03,  1.10s/it]
+Encoding documents (bs=256):  99%|█████████▉| 184/186 [08:40<00:01,  1.10it/s]
+Encoding documents (bs=256):  99%|█████████▉| 185/186 [08:40<00:00,  1.34it/s]
+Encoding documents (bs=256): 100%|██████████| 186/186 [08:40<00:00,  1.77it/s]
+Encoding documents (bs=256): 100%|██████████| 186/186 [08:40<00:00,  2.80s/it]
+
+Encoding queries (bs=256):   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00, 17.05it/s]
+
+Reranking:   0%|          | 0/52 [00:00<?, ?it/s]
+Reranking:   2%|▏         | 1/52 [00:00<00:11,  4.30it/s]
+Reranking:   4%|▍         | 2/52 [00:00<00:10,  4.76it/s]
+Reranking:   6%|▌         | 3/52 [00:00<00:09,  5.04it/s]
+Reranking:   8%|▊         | 4/52 [00:00<00:09,  5.24it/s]
+Reranking:  10%|▉         | 5/52 [00:00<00:08,  5.32it/s]
+Reranking:  12%|█▏        | 6/52 [00:01<00:08,  5.36it/s]
+Reranking:  13%|█▎        | 7/52 [00:01<00:08,  5.40it/s]
+Reranking:  15%|█▌        | 8/52 [00:01<00:08,  5.37it/s]
+Reranking:  17%|█▋        | 9/52 [00:01<00:07,  5.41it/s]
+Reranking:  19%|█▉        | 10/52 [00:01<00:07,  5.49it/s]
+Reranking:  21%|██        | 11/52 [00:02<00:07,  5.55it/s]
+Reranking:  23%|██▎       | 12/52 [00:02<00:07,  5.57it/s]
+Reranking:  25%|██▌       | 13/52 [00:02<00:06,  5.61it/s]
+Reranking:  27%|██▋       | 14/52 [00:02<00:06,  5.68it/s]
+Reranking:  29%|██▉       | 15/52 [00:02<00:06,  5.68it/s]
+Reranking:  31%|███       | 16/52 [00:02<00:06,  5.66it/s]
+Reranking:  33%|███▎      | 17/52 [00:03<00:06,  5.66it/s]
+Reranking:  35%|███▍      | 18/52 [00:03<00:05,  5.69it/s]
+Reranking:  37%|███▋      | 19/52 [00:03<00:05,  5.73it/s]
+Reranking:  38%|███▊      | 20/52 [00:03<00:05,  5.74it/s]
+Reranking:  40%|████      | 21/52 [00:03<00:05,  5.77it/s]
+Reranking:  42%|████▏     | 22/52 [00:03<00:05,  5.77it/s]
+Reranking:  44%|████▍     | 23/52 [00:04<00:05,  5.78it/s]
+Reranking:  46%|████▌     | 24/52 [00:04<00:04,  5.82it/s]
+Reranking:  48%|████▊     | 25/52 [00:04<00:04,  5.78it/s]
+Reranking:  50%|█████     | 26/52 [00:04<00:04,  5.80it/s]
+Reranking:  52%|█████▏    | 27/52 [00:04<00:04,  5.88it/s]
+Reranking:  54%|█████▍    | 28/52 [00:05<00:04,  5.87it/s]
+Reranking:  56%|█████▌    | 29/52 [00:05<00:03,  5.85it/s]
+Reranking:  58%|█████▊    | 30/52 [00:05<00:03,  5.88it/s]
+Reranking:  60%|█████▉    | 31/52 [00:05<00:03,  5.58it/s]
+Reranking:  62%|██████▏   | 32/52 [00:05<00:03,  5.14it/s]
+Reranking:  63%|██████▎   | 33/52 [00:05<00:03,  5.00it/s]
+Reranking:  65%|██████▌   | 34/52 [00:06<00:03,  5.18it/s]
+Reranking:  67%|██████▋   | 35/52 [00:06<00:03,  5.30it/s]
+Reranking:  69%|██████▉   | 36/52 [00:06<00:02,  5.42it/s]
+Reranking:  71%|███████   | 37/52 [00:06<00:02,  5.56it/s]
+Reranking:  73%|███████▎  | 38/52 [00:06<00:02,  5.63it/s]
+Reranking:  75%|███████▌  | 39/52 [00:07<00:02,  5.69it/s]
+Reranking:  77%|███████▋  | 40/52 [00:07<00:02,  5.35it/s]
+Reranking:  79%|███████▉  | 41/52 [00:07<00:02,  5.38it/s]
+Reranking:  81%|████████  | 42/52 [00:07<00:01,  5.55it/s]
+Reranking:  83%|████████▎ | 43/52 [00:07<00:01,  5.64it/s]
+Reranking:  85%|████████▍ | 44/52 [00:07<00:01,  5.72it/s]
+Reranking:  87%|████████▋ | 45/52 [00:08<00:01,  5.81it/s]
+Reranking:  88%|████████▊ | 46/52 [00:08<00:01,  5.82it/s]
+Reranking:  90%|█████████ | 47/52 [00:08<00:00,  5.83it/s]
+Reranking:  92%|█████████▏| 48/52 [00:08<00:00,  5.78it/s]
+Reranking:  94%|█████████▍| 49/52 [00:08<00:00,  5.75it/s]
+Reranking:  96%|█████████▌| 50/52 [00:08<00:00,  5.76it/s]
+Reranking:  98%|█████████▊| 51/52 [00:09<00:00,  5.74it/s]
+Reranking: 100%|██████████| 52/52 [00:09<00:00,  5.69it/s]
+Reranking: 100%|██████████| 52/52 [00:09<00:00,  5.58it/s]
+
+Encoding documents (bs=256):   0%|          | 0/186 [00:00<?, ?it/s]
+Encoding documents (bs=256):   1%|          | 1/186 [00:01<04:57,  1.61s/it]
+Encoding documents (bs=256):   1%|          | 2/186 [00:03<04:51,  1.59s/it]
+Encoding documents (bs=256):   2%|▏         | 3/186 [00:04<04:49,  1.58s/it]
+Encoding documents (bs=256):   2%|▏         | 4/186 [00:06<04:46,  1.58s/it]
+Encoding documents (bs=256):   3%|▎         | 5/186 [00:07<04:44,  1.57s/it]
+Encoding documents (bs=256):   3%|▎         | 6/186 [00:09<04:42,  1.57s/it]
+Encoding documents (bs=256):   4%|▍         | 7/186 [00:11<04:40,  1.57s/it]
+Encoding documents (bs=256):   4%|▍         | 8/186 [00:12<04:39,  1.57s/it]
+Encoding documents (bs=256):   5%|▍         | 9/186 [00:14<04:37,  1.57s/it]
+Encoding documents (bs=256):   5%|▌         | 10/186 [00:15<04:35,  1.57s/it]
+Encoding documents (bs=256):   6%|▌         | 11/186 [00:17<04:33,  1.56s/it]
+Encoding documents (bs=256):   6%|▋         | 12/186 [00:18<04:32,  1.56s/it]
+Encoding documents (bs=256):   7%|▋         | 13/186 [00:20<04:30,  1.57s/it]
+Encoding documents (bs=256):   8%|▊         | 14/186 [00:21<04:29,  1.57s/it]
+Encoding documents (bs=256):   8%|▊         | 15/186 [00:23<04:27,  1.57s/it]
+Encoding documents (bs=256):   9%|▊         | 16/186 [00:25<04:26,  1.57s/it]
+Encoding documents (bs=256):   9%|▉         | 17/186 [00:26<04:24,  1.57s/it]
+Encoding documents (bs=256):  10%|▉         | 18/186 [00:28<04:22,  1.57s/it]
+Encoding documents (bs=256):  10%|█         | 19/186 [00:29<04:21,  1.56s/it]
+Encoding documents (bs=256):  11%|█         | 20/186 [00:31<04:19,  1.56s/it]
+Encoding documents (bs=256):  11%|█▏        | 21/186 [00:32<04:18,  1.56s/it]
+Encoding documents (bs=256):  12%|█▏        | 22/186 [00:34<04:17,  1.57s/it]
+Encoding documents (bs=256):  12%|█▏        | 23/186 [00:36<04:15,  1.57s/it]
+Encoding documents (bs=256):  13%|█▎        | 24/186 [00:37<04:13,  1.57s/it]
+Encoding documents (bs=256):  13%|█▎        | 25/186 [00:39<04:12,  1.57s/it]
+Encoding documents (bs=256):  14%|█▍        | 26/186 [00:40<04:10,  1.57s/it]
+Encoding documents (bs=256):  15%|█▍        | 27/186 [00:42<04:08,  1.57s/it]
+Encoding documents (bs=256):  15%|█▌        | 28/186 [00:43<04:07,  1.57s/it]
+Encoding documents (bs=256):  16%|█▌        | 29/186 [00:45<04:06,  1.57s/it]
+Encoding documents (bs=256):  16%|█▌        | 30/186 [00:47<04:05,  1.57s/it]
+Encoding documents (bs=256):  17%|█▋        | 31/186 [00:48<04:03,  1.57s/it]
+Encoding documents (bs=256):  17%|█▋        | 32/186 [00:50<04:02,  1.57s/it]
+Encoding documents (bs=256):  18%|█▊        | 33/186 [00:51<04:00,  1.57s/it]
+Encoding documents (bs=256):  18%|█▊        | 34/186 [00:53<03:59,  1.58s/it]
+Encoding documents (bs=256):  19%|█▉        | 35/186 [00:54<03:57,  1.58s/it]
+Encoding documents (bs=256):  19%|█▉        | 36/186 [00:56<03:56,  1.58s/it]
+Encoding documents (bs=256):  20%|█▉        | 37/186 [00:58<03:54,  1.57s/it]
+Encoding documents (bs=256):  20%|██        | 38/186 [00:59<03:52,  1.57s/it]
+Encoding documents (bs=256):  21%|██        | 39/186 [01:01<03:51,  1.58s/it]
+Encoding documents (bs=256):  22%|██▏       | 40/186 [01:02<03:50,  1.58s/it]
+Encoding documents (bs=256):  22%|██▏       | 41/186 [01:04<03:48,  1.57s/it]
+Encoding documents (bs=256):  23%|██▎       | 42/186 [01:05<03:46,  1.57s/it]
+Encoding documents (bs=256):  23%|██▎       | 43/186 [01:07<03:44,  1.57s/it]
+Encoding documents (bs=256):  24%|██▎       | 44/186 [01:09<03:43,  1.57s/it]
+Encoding documents (bs=256):  24%|██▍       | 45/186 [01:10<03:41,  1.57s/it]
+Encoding documents (bs=256):  25%|██▍       | 46/186 [01:12<03:40,  1.57s/it]
+Encoding documents (bs=256):  25%|██▌       | 47/186 [01:14<03:53,  1.68s/it]
+Encoding documents (bs=256):  26%|██▌       | 48/186 [01:15<03:48,  1.65s/it]
+Encoding documents (bs=256):  26%|██▋       | 49/186 [01:17<03:43,  1.63s/it]
+Encoding documents (bs=256):  27%|██▋       | 50/186 [01:18<03:39,  1.61s/it]
+Encoding documents (bs=256):  27%|██▋       | 51/186 [01:20<03:35,  1.60s/it]
+Encoding documents (bs=256):  28%|██▊       | 52/186 [01:22<03:33,  1.59s/it]
+Encoding documents (bs=256):  28%|██▊       | 53/186 [01:23<03:30,  1.59s/it]
+Encoding documents (bs=256):  29%|██▉       | 54/186 [01:25<03:28,  1.58s/it]
+Encoding documents (bs=256):  30%|██▉       | 55/186 [01:26<03:27,  1.58s/it]
+Encoding documents (bs=256):  30%|███       | 56/186 [01:28<03:25,  1.58s/it]
+Encoding documents (bs=256):  31%|███       | 57/186 [01:29<03:23,  1.58s/it]
+Encoding documents (bs=256):  31%|███       | 58/186 [01:31<03:21,  1.58s/it]
+Encoding documents (bs=256):  32%|███▏      | 59/186 [01:33<03:19,  1.57s/it]
+Encoding documents (bs=256):  32%|███▏      | 60/186 [01:34<03:18,  1.57s/it]
+Encoding documents (bs=256):  33%|███▎      | 61/186 [01:36<03:16,  1.57s/it]
+Encoding documents (bs=256):  33%|███▎      | 62/186 [01:37<03:15,  1.57s/it]
+Encoding documents (bs=256):  34%|███▍      | 63/186 [01:39<03:13,  1.57s/it]
+Encoding documents (bs=256):  34%|███▍      | 64/186 [01:40<03:13,  1.59s/it]
+Encoding documents (bs=256):  35%|███▍      | 65/186 [01:42<03:11,  1.58s/it]
+Encoding documents (bs=256):  35%|███▌      | 66/186 [01:44<03:09,  1.58s/it]
+Encoding documents (bs=256):  36%|███▌      | 67/186 [01:45<03:07,  1.58s/it]
+Encoding documents (bs=256):  37%|███▋      | 68/186 [01:47<03:06,  1.58s/it]
+Encoding documents (bs=256):  37%|███▋      | 69/186 [01:48<03:05,  1.58s/it]
+Encoding documents (bs=256):  38%|███▊      | 70/186 [01:50<03:03,  1.58s/it]
+Encoding documents (bs=256):  38%|███▊      | 71/186 [01:52<03:01,  1.58s/it]
+Encoding documents (bs=256):  39%|███▊      | 72/186 [01:53<02:59,  1.57s/it]
+Encoding documents (bs=256):  39%|███▉      | 73/186 [01:55<02:57,  1.57s/it]
+Encoding documents (bs=256):  40%|███▉      | 74/186 [01:56<02:56,  1.57s/it]
+Encoding documents (bs=256):  40%|████      | 75/186 [01:58<02:54,  1.57s/it]
+Encoding documents (bs=256):  41%|████      | 76/186 [01:59<02:52,  1.57s/it]
+Encoding documents (bs=256):  41%|████▏     | 77/186 [02:01<02:51,  1.57s/it]
+Encoding documents (bs=256):  42%|████▏     | 78/186 [02:03<02:49,  1.57s/it]
+Encoding documents (bs=256):  42%|████▏     | 79/186 [02:04<02:48,  1.57s/it]
+Encoding documents (bs=256):  43%|████▎     | 80/186 [02:06<02:47,  1.58s/it]
+Encoding documents (bs=256):  44%|████▎     | 81/186 [02:07<02:45,  1.58s/it]
+Encoding documents (bs=256):  44%|████▍     | 82/186 [02:09<02:44,  1.58s/it]
+Encoding documents (bs=256):  45%|████▍     | 83/186 [02:10<02:42,  1.57s/it]
+Encoding documents (bs=256):  45%|████▌     | 84/186 [02:12<02:40,  1.57s/it]
+Encoding documents (bs=256):  46%|████▌     | 85/186 [02:14<02:39,  1.57s/it]
+Encoding documents (bs=256):  46%|████▌     | 86/186 [02:15<02:37,  1.58s/it]
+Encoding documents (bs=256):  47%|████▋     | 87/186 [02:17<02:35,  1.57s/it]
+Encoding documents (bs=256):  47%|████▋     | 88/186 [02:18<02:34,  1.58s/it]
+Encoding documents (bs=256):  48%|████▊     | 89/186 [02:20<02:32,  1.58s/it]
+Encoding documents (bs=256):  48%|████▊     | 90/186 [02:21<02:31,  1.58s/it]
+Encoding documents (bs=256):  49%|████▉     | 91/186 [02:23<02:29,  1.57s/it]
+Encoding documents (bs=256):  49%|████▉     | 92/186 [02:25<02:28,  1.57s/it]
+Encoding documents (bs=256):  50%|█████     | 93/186 [02:26<02:26,  1.58s/it]
+Encoding documents (bs=256):  51%|█████     | 94/186 [02:28<02:24,  1.58s/it]
+Encoding documents (bs=256):  51%|█████     | 95/186 [02:29<02:23,  1.57s/it]
+Encoding documents (bs=256):  52%|█████▏    | 96/186 [02:31<02:21,  1.57s/it]
+Encoding documents (bs=256):  52%|█████▏    | 97/186 [02:32<02:20,  1.57s/it]
+Encoding documents (bs=256):  53%|█████▎    | 98/186 [02:34<02:18,  1.57s/it]
+Encoding documents (bs=256):  53%|█████▎    | 99/186 [02:36<02:17,  1.58s/it]
+Encoding documents (bs=256):  54%|█████▍    | 100/186 [02:37<02:15,  1.57s/it]
+Encoding documents (bs=256):  54%|█████▍    | 101/186 [02:39<02:13,  1.58s/it]
+Encoding documents (bs=256):  55%|█████▍    | 102/186 [02:40<02:12,  1.57s/it]
+Encoding documents (bs=256):  55%|█████▌    | 103/186 [02:42<02:10,  1.58s/it]
+Encoding documents (bs=256):  56%|█████▌    | 104/186 [02:43<02:08,  1.57s/it]
+Encoding documents (bs=256):  56%|█████▋    | 105/186 [02:45<02:07,  1.57s/it]
+Encoding documents (bs=256):  57%|█████▋    | 106/186 [02:47<02:06,  1.58s/it]
+Encoding documents (bs=256):  58%|█████▊    | 107/186 [02:48<02:04,  1.58s/it]
+Encoding documents (bs=256):  58%|█████▊    | 108/186 [02:50<02:02,  1.57s/it]
+Encoding documents (bs=256):  59%|█████▊    | 109/186 [02:51<02:01,  1.58s/it]
+Encoding documents (bs=256):  59%|█████▉    | 110/186 [02:53<02:00,  1.58s/it]
+Encoding documents (bs=256):  60%|█████▉    | 111/186 [02:55<01:58,  1.58s/it]
+Encoding documents (bs=256):  60%|██████    | 112/186 [02:56<01:57,  1.59s/it]
+Encoding documents (bs=256):  61%|██████    | 113/186 [02:58<01:55,  1.58s/it]
+Encoding documents (bs=256):  61%|██████▏   | 114/186 [02:59<01:53,  1.58s/it]
+Encoding documents (bs=256):  62%|██████▏   | 115/186 [03:01<01:52,  1.58s/it]
+Encoding documents (bs=256):  62%|██████▏   | 116/186 [03:02<01:50,  1.58s/it]
+Encoding documents (bs=256):  63%|██████▎   | 117/186 [03:04<01:48,  1.58s/it]
+Encoding documents (bs=256):  63%|██████▎   | 118/186 [03:07<02:17,  2.02s/it]
+Encoding documents (bs=256):  64%|██████▍   | 119/186 [03:10<02:33,  2.29s/it]
+Encoding documents (bs=256):  65%|██████▍   | 120/186 [03:13<02:47,  2.54s/it]
+Encoding documents (bs=256):  65%|██████▌   | 121/186 [03:16<02:55,  2.71s/it]
+Encoding documents (bs=256):  66%|██████▌   | 122/186 [03:19<03:00,  2.83s/it]
+Encoding documents (bs=256):  66%|██████▌   | 123/186 [03:22<03:03,  2.91s/it]
+Encoding documents (bs=256):  67%|██████▋   | 124/186 [03:26<03:04,  2.97s/it]
+Encoding documents (bs=256):  67%|██████▋   | 125/186 [03:29<03:03,  3.01s/it]
+Encoding documents (bs=256):  68%|██████▊   | 126/186 [03:32<03:02,  3.04s/it]
+Encoding documents (bs=256):  68%|██████▊   | 127/186 [03:35<03:00,  3.06s/it]
+Encoding documents (bs=256):  69%|██████▉   | 128/186 [03:38<02:58,  3.07s/it]
+Encoding documents (bs=256):  69%|██████▉   | 129/186 [03:41<02:55,  3.08s/it]
+Encoding documents (bs=256):  70%|██████▉   | 130/186 [03:44<02:53,  3.09s/it]
+Encoding documents (bs=256):  70%|███████   | 131/186 [03:47<02:50,  3.10s/it]
+Encoding documents (bs=256):  71%|███████   | 132/186 [03:50<02:47,  3.10s/it]
+Encoding documents (bs=256):  72%|███████▏  | 133/186 [03:53<02:44,  3.10s/it]
+Encoding documents (bs=256):  72%|███████▏  | 134/186 [03:57<02:41,  3.10s/it]
+Encoding documents (bs=256):  73%|███████▎  | 135/186 [04:00<02:38,  3.10s/it]
+Encoding documents (bs=256):  73%|███████▎  | 136/186 [04:03<02:35,  3.10s/it]
+Encoding documents (bs=256):  74%|███████▎  | 137/186 [04:06<02:32,  3.11s/it]
+Encoding documents (bs=256):  74%|███████▍  | 138/186 [04:09<02:29,  3.10s/it]
+Encoding documents (bs=256):  75%|███████▍  | 139/186 [04:12<02:26,  3.11s/it]
+Encoding documents (bs=256):  75%|███████▌  | 140/186 [04:15<02:22,  3.11s/it]
+Encoding documents (bs=256):  76%|███████▌  | 141/186 [04:18<02:19,  3.10s/it]
+Encoding documents (bs=256):  76%|███████▋  | 142/186 [04:21<02:16,  3.10s/it]
+Encoding documents (bs=256):  77%|███████▋  | 143/186 [04:25<02:13,  3.10s/it]
+Encoding documents (bs=256):  77%|███████▋  | 144/186 [04:28<02:10,  3.11s/it]
+Encoding documents (bs=256):  78%|███████▊  | 145/186 [04:31<02:07,  3.11s/it]
+Encoding documents (bs=256):  78%|███████▊  | 146/186 [04:34<02:04,  3.11s/it]
+Encoding documents (bs=256):  79%|███████▉  | 147/186 [04:37<02:01,  3.11s/it]
+Encoding documents (bs=256):  80%|███████▉  | 148/186 [04:40<01:58,  3.11s/it]
+Encoding documents (bs=256):  80%|████████  | 149/186 [04:43<01:55,  3.11s/it]
+Encoding documents (bs=256):  81%|████████  | 150/186 [04:46<01:51,  3.11s/it]
+Encoding documents (bs=256):  81%|████████  | 151/186 [04:49<01:48,  3.11s/it]
+Encoding documents (bs=256):  82%|████████▏ | 152/186 [04:53<01:45,  3.11s/it]
+Encoding documents (bs=256):  82%|████████▏ | 153/186 [04:56<01:42,  3.11s/it]
+Encoding documents (bs=256):  83%|████████▎ | 154/186 [04:59<01:39,  3.10s/it]
+Encoding documents (bs=256):  83%|████████▎ | 155/186 [05:02<01:35,  3.10s/it]
+Encoding documents (bs=256):  84%|████████▍ | 156/186 [05:05<01:33,  3.10s/it]
+Encoding documents (bs=256):  84%|████████▍ | 157/186 [05:08<01:30,  3.10s/it]
+Encoding documents (bs=256):  85%|████████▍ | 158/186 [05:11<01:26,  3.10s/it]
+Encoding documents (bs=256):  85%|████████▌ | 159/186 [05:14<01:23,  3.10s/it]
+Encoding documents (bs=256):  86%|████████▌ | 160/186 [05:17<01:20,  3.10s/it]
+Encoding documents (bs=256):  87%|████████▋ | 161/186 [05:20<01:17,  3.09s/it]
+Encoding documents (bs=256):  87%|████████▋ | 162/186 [05:23<01:14,  3.09s/it]
+Encoding documents (bs=256):  88%|████████▊ | 163/186 [05:27<01:11,  3.09s/it]
+Encoding documents (bs=256):  88%|████████▊ | 164/186 [05:30<01:07,  3.09s/it]
+Encoding documents (bs=256):  89%|████████▊ | 165/186 [05:33<01:04,  3.09s/it]
+Encoding documents (bs=256):  89%|████████▉ | 166/186 [05:36<01:01,  3.09s/it]
+Encoding documents (bs=256):  90%|████████▉ | 167/186 [05:39<00:58,  3.09s/it]
+Encoding documents (bs=256):  90%|█████████ | 168/186 [05:42<00:54,  3.01s/it]
+Encoding documents (bs=256):  91%|█████████ | 169/186 [05:45<00:50,  2.95s/it]
+Encoding documents (bs=256):  91%|█████████▏| 170/186 [05:48<00:48,  3.02s/it]
+Encoding documents (bs=256):  92%|█████████▏| 171/186 [05:51<00:46,  3.09s/it]
+Encoding documents (bs=256):  92%|█████████▏| 172/186 [05:54<00:43,  3.14s/it]
+Encoding documents (bs=256):  93%|█████████▎| 173/186 [05:58<00:41,  3.18s/it]
+Encoding documents (bs=256):  94%|█████████▎| 174/186 [06:01<00:37,  3.14s/it]
+Encoding documents (bs=256):  94%|█████████▍| 175/186 [06:04<00:34,  3.12s/it]
+Encoding documents (bs=256):  95%|█████████▍| 176/186 [06:07<00:30,  3.06s/it]
+Encoding documents (bs=256):  95%|█████████▌| 177/186 [06:10<00:27,  3.06s/it]
+Encoding documents (bs=256):  96%|█████████▌| 178/186 [06:13<00:24,  3.11s/it]
+Encoding documents (bs=256):  96%|█████████▌| 179/186 [06:16<00:21,  3.04s/it]
+Encoding documents (bs=256):  97%|█████████▋| 180/186 [06:19<00:18,  3.07s/it]
+Encoding documents (bs=256):  97%|█████████▋| 181/186 [06:22<00:15,  3.04s/it]
+Encoding documents (bs=256):  98%|█████████▊| 182/186 [06:25<00:11,  2.95s/it]
+Encoding documents (bs=256):  98%|█████████▊| 183/186 [06:26<00:07,  2.45s/it]
+Encoding documents (bs=256):  99%|█████████▉| 184/186 [06:27<00:04,  2.11s/it]
+Encoding documents (bs=256):  99%|█████████▉| 185/186 [06:28<00:01,  1.79s/it]
+Encoding documents (bs=256): 100%|██████████| 186/186 [06:29<00:00,  1.44s/it]
+Encoding documents (bs=256): 100%|██████████| 186/186 [06:29<00:00,  2.09s/it]
+
+Encoding queries (bs=256):   0%|          | 0/1 [00:00<?, ?it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]
+Encoding queries (bs=256): 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]
+
+Reranking:   0%|          | 0/52 [00:00<?, ?it/s]
+Reranking:   2%|▏         | 1/52 [00:00<00:13,  3.90it/s]
+Reranking:   4%|▍         | 2/52 [00:00<00:11,  4.47it/s]
+Reranking:   6%|▌         | 3/52 [00:00<00:11,  4.25it/s]
+Reranking:   8%|▊         | 4/52 [00:00<00:10,  4.57it/s]
+Reranking:  10%|▉         | 5/52 [00:01<00:09,  4.79it/s]
+Reranking:  12%|█▏        | 6/52 [00:01<00:09,  4.94it/s]
+Reranking:  13%|█▎        | 7/52 [00:01<00:08,  5.08it/s]
+Reranking:  15%|█▌        | 8/52 [00:01<00:08,  5.17it/s]
+Reranking:  17%|█▋        | 9/52 [00:01<00:08,  5.00it/s]
+Reranking:  19%|█▉        | 10/52 [00:02<00:08,  5.06it/s]
+Reranking:  21%|██        | 11/52 [00:02<00:08,  5.04it/s]
+Reranking:  23%|██▎       | 12/52 [00:02<00:07,  5.04it/s]
+Reranking:  25%|██▌       | 13/52 [00:02<00:07,  5.12it/s]
+Reranking:  27%|██▋       | 14/52 [00:02<00:07,  5.15it/s]
+Reranking:  29%|██▉       | 15/52 [00:03<00:07,  5.18it/s]
+Reranking:  31%|███       | 16/52 [00:03<00:06,  5.25it/s]
+Reranking:  33%|███▎      | 17/52 [00:03<00:06,  5.09it/s]
+Reranking:  35%|███▍      | 18/52 [00:03<00:06,  5.12it/s]
+Reranking:  37%|███▋      | 19/52 [00:03<00:06,  5.21it/s]
+Reranking:  38%|███▊      | 20/52 [00:03<00:06,  5.25it/s]
+Reranking:  40%|████      | 21/52 [00:04<00:05,  5.29it/s]
+Reranking:  42%|████▏     | 22/52 [00:04<00:05,  5.30it/s]
+Reranking:  44%|████▍     | 23/52 [00:04<00:05,  5.34it/s]
+Reranking:  46%|████▌     | 24/52 [00:04<00:05,  5.40it/s]
+Reranking:  48%|████▊     | 25/52 [00:04<00:04,  5.43it/s]
+Reranking:  50%|█████     | 26/52 [00:05<00:04,  5.32it/s]
+Reranking:  52%|█████▏    | 27/52 [00:05<00:04,  5.47it/s]
+Reranking:  54%|█████▍    | 28/52 [00:05<00:04,  5.48it/s]
+Reranking:  56%|█████▌    | 29/52 [00:05<00:04,  5.41it/s]
+Reranking:  58%|█████▊    | 30/52 [00:05<00:04,  5.38it/s]
+Reranking:  60%|█████▉    | 31/52 [00:06<00:03,  5.37it/s]
+Reranking:  62%|██████▏   | 32/52 [00:06<00:03,  5.38it/s]
+Reranking:  63%|██████▎   | 33/52 [00:06<00:03,  5.42it/s]
+Reranking:  65%|██████▌   | 34/52 [00:06<00:03,  5.29it/s]
+Reranking:  67%|██████▋   | 35/52 [00:06<00:03,  5.32it/s]
+Reranking:  69%|██████▉   | 36/52 [00:06<00:02,  5.36it/s]
+Reranking:  71%|███████   | 37/52 [00:07<00:02,  5.41it/s]
+Reranking:  73%|███████▎  | 38/52 [00:07<00:02,  5.40it/s]
+Reranking:  75%|███████▌  | 39/52 [00:07<00:02,  5.44it/s]
+Reranking:  77%|███████▋  | 40/52 [00:07<00:02,  5.43it/s]
+Reranking:  79%|███████▉  | 41/52 [00:07<00:02,  5.43it/s]
+Reranking:  81%|████████  | 42/52 [00:08<00:01,  5.40it/s]
+Reranking:  83%|████████▎ | 43/52 [00:08<00:01,  5.32it/s]
+Reranking:  85%|████████▍ | 44/52 [00:08<00:01,  5.27it/s]
+Reranking:  87%|████████▋ | 45/52 [00:08<00:01,  5.28it/s]
+Reranking:  88%|████████▊ | 46/52 [00:08<00:01,  5.25it/s]
+Reranking:  90%|█████████ | 47/52 [00:09<00:00,  5.28it/s]
+Reranking:  92%|█████████▏| 48/52 [00:09<00:00,  5.25it/s]
+Reranking:  94%|█████████▍| 49/52 [00:09<00:00,  5.20it/s]
+Reranking:  96%|█████████▌| 50/52 [00:09<00:00,  5.22it/s]
+Reranking:  98%|█████████▊| 51/52 [00:09<00:00,  4.87it/s]
+Reranking: 100%|██████████| 52/52 [00:10<00:00,  4.74it/s]
+Reranking: 100%|██████████| 52/52 [00:10<00:00,  5.17it/s]
+
+📁 输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+📥 正在加载模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model on cuda:1
+   (如果是首次运行，可能需要下载模型，请耐心等待...)
+✅ 模型加载完成，耗时: 2.1秒
+📚 加载 FollowIR 评测任务: Robust04InstructionRetrieval
+
+============================================================
+🚀 评测任务: Robust04InstructionRetrieval
+============================================================
+📂 加载数据集: jhu-clsp/robust04-instructions-mteb
+   加载 corpus...
+   ✅ 加载 47492 个文档 (6.9s)
+   加载 queries...
+   加载 instruction...
+   ✅ 加载 52 个 og 查询, 52 个 changed 查询 (13.0s)
+   加载 top_ranked...
+   ✅ 加载 52 个查询的候选文档, 平均 1000 个/查询 (16.4s)
+📂 数据加载完成，总耗时: 16.4s
+
+📊 共 52 og 查询 + 52 changed 查询, 平均 1000 候选文档
+
+--- 开始评测: Original Instructions (og) ---
+🔧 优化重排过程...
+📚 编码 47492 个文档 (batch_size=256)...
+✅ 文档编码完成，共 47492 个tensor
+📝 批量编码 52 个查询 (batch_size=256)...
+✅ 查询编码完成，共 52 个tensor
+💾 TREC Run 文件已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Robust04InstructionRetrieval_og.trec
+
+--- 开始评测: Altered Instructions (changed) ---
+🔧 优化重排过程...
+📚 编码 47492 个文档 (batch_size=256)...
+✅ 文档编码完成，共 47492 个tensor
+📝 批量编码 52 个查询 (batch_size=256)...
+✅ 查询编码完成，共 52 个tensor
+💾 TREC Run 文件已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Robust04InstructionRetrieval_changed.trec
+📝 参数已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/eval_params.txt
+
+============================================================
+✅ 重排完成！
+📁 结果已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+  : /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/ - TREC 文件
+   - Robust04InstructionRetrieval: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/Robust04InstructionRetrieval/
+
+要计算 FollowIR p-MRR 指标，请使用 FollowIR 官方脚本:
+python -m followir.evaluate --qrels path/to/qrels --run_org /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Robust04InstructionRetrieval_og.trec --run_alt /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/trec/run_Robust04InstructionRetrieval_changed.trec
+============================================================
+
+
+📌 计算指标中...
+============================================================
+📊 FollowIR 完整评测
+============================================================
+
+将评测以下数据集: Robust04InstructionRetrieval
+
+============================================================
+📊 评测任务: Robust04InstructionRetrieval
+============================================================
+
+📥 加载数据...
+✅ 加载 qrels: 104 个查询
+✅ 加载 qrel_diff: 52 个查询有变化的文档
+
+📥 加载 run 文件...
+✅ 加载 run 文件: 52 个查询
+✅ 加载 run 文件: 52 个查询
+
+🔢 计算 FollowIR 指标...
+
+🎯 p-MRR: 0.0327
+
+📊 原始指令 - nDCG@5: 0.3849, MAP@1000: 0.2454
+📊 改变指令 - nDCG@5: 0.2102, MAP@1000: 0.1797
+💾 结果已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/results_Robust04InstructionRetrieval.json
+💾 指标已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/Robust04InstructionRetrieval/metrics/results.json
+✅ 加载查询: 104 个
+
+📋 诊断报告已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/diagnostic/diagnostic_Robust04InstructionRetrieval.txt
+
+====================================================================================================
+📋 FollowIR 诊断报告 - 按 p-MRR 排序 (低到高)
+====================================================================================================
+
+排名     查询ID         p-MRR        查询内容 (前100字符)                                                                   
+--------------------------------------------------------------------------------------------------------------
+1      659          -0.201392                                                                                    
+2      604          -0.190575                                                                                    
+3      338          -0.122807                                                                                    
+4      638          -0.094879                                                                                    
+5      601          -0.084559                                                                                    
+6      632          -0.081770                                                                                    
+7      315          -0.063917                                                                                    
+8      687          -0.028088                                                                                    
+9      432          -0.000272                                                                                    
+10     305          0.000000                                                                                     
+11     327          0.000000                                                                                     
+12     342          0.000000                                                                                     
+13     344          0.000000                                                                                     
+14     345          0.000000                                                                                     
+15     369          0.000000                                                                                     
+16     373          0.000000                                                                                     
+17     409          0.000000                                                                                     
+18     410          0.000000                                                                                     
+19     445          0.000000                                                                                     
+20     605          0.000000                                                                                     
+21     607          0.000000                                                                                     
+22     608          0.000000                                                                                     
+23     611          0.000000                                                                                     
+24     617          0.000000                                                                                     
+25     626          0.000000                                                                                     
+26     629          0.000000                                                                                     
+27     641          0.000000                                                                                     
+28     646          0.000000                                                                                     
+29     655          0.000000                                                                                     
+30     682          0.000000                                                                                     
+31     686          0.000000                                                                                     
+32     689          0.000000                                                                                     
+33     647          0.021386                                                                                     
+34     678          0.029591                                                                                     
+35     621          0.040170                                                                                     
+36     642          0.048684                                                                                     
+37     309          0.051732                                                                                     
+38     669          0.052186                                                                                     
+39     358          0.066023                                                                                     
+40     670          0.069554                                                                                     
+41     421          0.079559                                                                                     
+42     697          0.099543                                                                                     
+43     397          0.118084                                                                                     
+44     633          0.124309                                                                                     
+45     652          0.184345                                                                                     
+46     661          0.188589                                                                                     
+47     636          0.193287                                                                                     
+48     663          0.214516                                                                                     
+49     668          0.219145                                                                                     
+50     643          0.231403                                                                                     
+51     308          0.243444                                                                                     
+52     681          0.295382                                                                                     
+
+--------------------------------------------------------------------------------------------------------------
+总计     52           平均: 0.032744
+====================================================================================================
+📋 详细JSON已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/diagnostic/diagnostic_Robust04InstructionRetrieval_details.json
+📝 汇总已更新: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/results_summary.json
+
+============================================================
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/robust04-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+
+✅ Robust04InstructionRetrieval 完成!
+
+============================================================
+--- 处理 News21InstructionRetrieval ---
+============================================================
+📌 重排中...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+Encoding documents (bs=256):   0%|          | 0/121 [00:00<?, ?it/s]
+Encoding documents (bs=256):   1%|          | 1/121 [00:05<10:37,  5.31s/it]
+Encoding documents (bs=256):   2%|▏         | 2/121 [00:09<09:46,  4.93s/it]
+Encoding documents (bs=256):   2%|▏         | 3/121 [00:14<09:27,  4.81s/it]
+Encoding documents (bs=256):   3%|▎         | 4/121 [00:19<09:18,  4.77s/it]
+Encoding documents (bs=256):   4%|▍         | 5/121 [00:23<09:07,  4.72s/it]
+Encoding documents (bs=256):   5%|▍         | 6/121 [00:28<09:00,  4.70s/it]
+Encoding documents (bs=256):   6%|▌         | 7/121 [00:33<08:53,  4.68s/it]
+Encoding documents (bs=256):   7%|▋         | 8/121 [00:37<08:47,  4.67s/it]
+Encoding documents (bs=256):   7%|▋         | 9/121 [00:42<08:41,  4.66s/it]
+Encoding documents (bs=256):   8%|▊         | 10/121 [00:47<08:36,  4.66s/it]
+Encoding documents (bs=256):   9%|▉         | 11/121 [00:51<08:33,  4.67s/it]
+Encoding documents (bs=256):  10%|▉         | 12/121 [00:56<08:31,  4.69s/it]
+Encoding documents (bs=256):  11%|█         | 13/121 [01:01<08:30,  4.73s/it]
+Encoding documents (bs=256):  12%|█▏        | 14/121 [01:06<08:29,  4.76s/it]
+Encoding documents (bs=256):  12%|█▏        | 15/121 [01:11<08:26,  4.78s/it]
+Encoding documents (bs=256):  13%|█▎        | 16/121 [01:15<08:23,  4.80s/it]
+Encoding documents (bs=256):  14%|█▍        | 17/121 [01:20<08:19,  4.80s/it]
+Encoding documents (bs=256):  15%|█▍        | 18/121 [01:25<08:15,  4.81s/it]
+Encoding documents (bs=256):  16%|█▌        | 19/121 [01:30<08:10,  4.81s/it]
+Encoding documents (bs=256):  17%|█▋        | 20/121 [01:35<08:06,  4.82s/it]
+Encoding documents (bs=256):  17%|█▋        | 21/121 [01:40<08:02,  4.82s/it]
+Encoding documents (bs=256):  18%|█▊        | 22/121 [01:44<07:57,  4.82s/it]
+Encoding documents (bs=256):  19%|█▉        | 23/121 [01:49<07:52,  4.82s/it]
+Encoding documents (bs=256):  20%|█▉        | 24/121 [01:54<07:48,  4.83s/it]
+Encoding documents (bs=256):  21%|██        | 25/121 [01:59<07:43,  4.83s/it]
+Encoding documents (bs=256):  21%|██▏       | 26/121 [02:04<07:39,  4.83s/it]
+Encoding documents (bs=256):  22%|██▏       | 27/121 [02:09<07:34,  4.83s/it]
+Encoding documents (bs=256):  23%|██▎       | 28/121 [02:13<07:28,  4.83s/it]
+Encoding documents (bs=256):  24%|██▍       | 29/121 [02:18<07:23,  4.82s/it]
+Encoding documents (bs=256):  25%|██▍       | 30/121 [02:23<07:18,  4.81s/it]
+Encoding documents (bs=256):  26%|██▌       | 31/121 [02:28<07:13,  4.82s/it]
+Encoding documents (bs=256):  26%|██▋       | 32/121 [02:33<07:08,  4.81s/it]
+Encoding documents (bs=256):  27%|██▋       | 33/121 [02:37<07:03,  4.82s/it]
+Encoding documents (bs=256):  28%|██▊       | 34/121 [02:42<06:59,  4.82s/it]
+Encoding documents (bs=256):  29%|██▉       | 35/121 [02:47<06:54,  4.82s/it]
+Encoding documents (bs=256):  30%|██▉       | 36/121 [02:52<06:49,  4.81s/it]
+Encoding documents (bs=256):  31%|███       | 37/121 [02:57<06:44,  4.81s/it]
+Encoding documents (bs=256):  31%|███▏      | 38/121 [03:02<06:39,  4.81s/it]
+Encoding documents (bs=256):  32%|███▏      | 39/121 [03:06<06:34,  4.82s/it]
+Encoding documents (bs=256):  33%|███▎      | 40/121 [03:11<06:30,  4.82s/it]
+Encoding documents (bs=256):  34%|███▍      | 41/121 [03:16<06:25,  4.82s/it]
+Encoding documents (bs=256):  35%|███▍      | 42/121 [03:21<06:20,  4.82s/it]
+Encoding documents (bs=256):  36%|███▌      | 43/121 [03:26<06:16,  4.82s/it]
+Encoding documents (bs=256):  36%|███▋      | 44/121 [03:30<06:11,  4.82s/it]
+Encoding documents (bs=256):  37%|███▋      | 45/121 [03:35<06:06,  4.82s/it]
+Encoding documents (bs=256):  38%|███▊      | 46/121 [03:40<06:01,  4.82s/it]
+Encoding documents (bs=256):  39%|███▉      | 47/121 [03:45<05:56,  4.82s/it]
+Encoding documents (bs=256):  40%|███▉      | 48/121 [03:50<05:52,  4.82s/it]
+Encoding documents (bs=256):  40%|████      | 49/121 [03:55<05:46,  4.82s/it]
+Encoding documents (bs=256):  41%|████▏     | 50/121 [03:59<05:41,  4.81s/it]
+Encoding documents (bs=256):  42%|████▏     | 51/121 [04:04<05:37,  4.82s/it]
+Encoding documents (bs=256):  43%|████▎     | 52/121 [04:09<05:31,  4.81s/it]
+Encoding documents (bs=256):  44%|████▍     | 53/121 [04:14<05:27,  4.81s/it]
+Encoding documents (bs=256):  45%|████▍     | 54/121 [04:19<05:22,  4.81s/it]
+Encoding documents (bs=256):  45%|████▌     | 55/121 [04:23<05:11,  4.72s/it]
+Encoding documents (bs=256):  46%|████▋     | 56/121 [04:28<05:02,  4.66s/it]
+Encoding documents (bs=256):  47%|████▋     | 57/121 [04:32<04:57,  4.64s/it]
+Encoding documents (bs=256):  48%|████▊     | 58/121 [04:36<04:35,  4.37s/it]
+Encoding documents (bs=256):  49%|████▉     | 59/121 [04:39<04:10,  4.04s/it]
+Encoding documents (bs=256):  50%|████▉     | 60/121 [04:43<03:52,  3.82s/it]
+Encoding documents (bs=256):  50%|█████     | 61/121 [04:46<03:38,  3.64s/it]
+Encoding documents (bs=256):  51%|█████     | 62/121 [04:49<03:27,  3.52s/it]
+Encoding documents (bs=256):  52%|█████▏    | 63/121 [04:52<03:13,  3.34s/it]
+Encoding documents (bs=256):  53%|█████▎    | 64/121 [04:55<03:03,  3.22s/it]
+Encoding documents (bs=256):  54%|█████▎    | 65/121 [04:58<02:57,  3.17s/it]
+Encoding documents (bs=256):  55%|█████▍    | 66/121 [05:00<02:37,  2.87s/it]
+Encoding documents (bs=256):  55%|█████▌    | 67/121 [05:02<02:14,  2.49s/it]
+Encoding documents (bs=256):  56%|█████▌    | 68/121 [05:03<01:58,  2.23s/it]
+Encoding documents (bs=256):  57%|█████▋    | 69/121 [05:05<01:46,  2.04s/it]
+Encoding documents (bs=256):  58%|█████▊    | 70/121 [05:07<01:37,  1.92s/it]
+Encoding documents (bs=256):  59%|█████▊    | 71/121 [05:08<01:31,  1.83s/it]
+Encoding documents (bs=256):  60%|█████▉    | 72/121 [05:11<01:51,  2.27s/it]
+Encoding documents (bs=256):  60%|██████    | 73/121 [05:15<02:02,  2.56s/it]
+Encoding documents (bs=256):  61%|██████    | 74/121 [05:18<02:09,  2.76s/it]
+Encoding documents (bs=256):  62%|██████▏   | 75/121 [05:21<02:14,  2.93s/it]
+Encoding documents (bs=256):  63%|██████▎   | 76/121 [05:24<02:15,  3.02s/it]
+Encoding documents (bs=256):  64%|██████▎   | 77/121 [05:28<02:15,  3.09s/it]
+Encoding documents (bs=256):  64%|██████▍   | 78/121 [05:31<02:14,  3.13s/it]
+Encoding documents (bs=256):  65%|██████▌   | 79/121 [05:36<02:32,  3.63s/it]
+Encoding documents (bs=256):  66%|██████▌   | 80/121 [05:41<02:43,  3.98s/it]
+Encoding documents (bs=256):  67%|██████▋   | 81/121 [05:45<02:50,  4.25s/it]
+Encoding documents (bs=256):  68%|██████▊   | 82/121 [05:50<02:52,  4.42s/it]
+Encoding documents (bs=256):  69%|██████▊   | 83/121 [05:55<02:52,  4.54s/it]
+Encoding documents (bs=256):  69%|██████▉   | 84/121 [06:00<02:50,  4.61s/it]
+Encoding documents (bs=256):  70%|███████   | 85/121 [06:05<02:48,  4.67s/it]
+Encoding documents (bs=256):  71%|███████   | 86/121 [06:09<02:45,  4.72s/it]
+Encoding documents (bs=256):  72%|███████▏  | 87/121 [06:14<02:41,  4.75s/it]
+Encoding documents (bs=256):  73%|███████▎  | 88/121 [06:19<02:37,  4.77s/it]
+Encoding documents (bs=256):  74%|███████▎  | 89/121 [06:24<02:33,  4.79s/it]
+Encoding documents (bs=256):  74%|███████▍  | 90/121 [06:29<02:28,  4.80s/it]
+Encoding documents (bs=256):  75%|███████▌  | 91/121 [06:34<02:24,  4.80s/it]
+Encoding documents (bs=256):  76%|███████▌  | 92/121 [06:38<02:19,  4.81s/it]
+Encoding documents (bs=256):  77%|███████▋  | 93/121 [06:43<02:15,  4.82s/it]
+Encoding documents (bs=256):  78%|███████▊  | 94/121 [06:48<02:10,  4.82s/it]
+Encoding documents (bs=256):  79%|███████▊  | 95/121 [06:53<02:05,  4.82s/it]
+Encoding documents (bs=256):  79%|███████▉  | 96/121 [06:58<02:00,  4.82s/it]
+Encoding documents (bs=256):  80%|████████  | 97/121 [07:02<01:55,  4.81s/it]
+Encoding documents (bs=256):  81%|████████  | 98/121 [07:07<01:50,  4.81s/it]
+Encoding documents (bs=256):  82%|████████▏ | 99/121 [07:12<01:45,  4.81s/it]
+Encoding documents (bs=256):  83%|████████▎ | 100/121 [07:15<01:31,  4.34s/it]
+Encoding documents (bs=256):  83%|████████▎ | 101/121 [07:19<01:20,  4.04s/it]
+Encoding documents (bs=256):  84%|████████▍ | 102/121 [07:22<01:12,  3.80s/it]
+Encoding documents (bs=256):  85%|████████▌ | 103/121 [07:25<01:05,  3.64s/it]
+Encoding documents (bs=256):  86%|████████▌ | 104/121 [07:28<00:59,  3.52s/it]
+Encoding documents (bs=256):  87%|████████▋ | 105/121 [07:32<00:55,  3.44s/it]
+Encoding documents (bs=256):  88%|████████▊ | 106/121 [07:35<00:50,  3.38s/it]
+Encoding documents (bs=256):  88%|████████▊ | 107/121 [07:38<00:46,  3.34s/it]
+Encoding documents (bs=256):  89%|████████▉ | 108/121 [07:41<00:43,  3.31s/it]
+Encoding documents (bs=256):  90%|█████████ | 109/121 [07:45<00:39,  3.30s/it]
+Encoding documents (bs=256):  91%|█████████ | 110/121 [07:48<00:36,  3.28s/it]
+Encoding documents (bs=256):  92%|█████████▏| 111/121 [07:51<00:32,  3.27s/it]
+Encoding documents (bs=256):  93%|█████████▎| 112/121 [07:54<00:29,  3.26s/it]
+Encoding documents (bs=256):  93%|█████████▎| 113/121 [07:58<00:25,  3.25s/it]
+Encoding documents (bs=256):  94%|█████████▍| 114/121 [08:02<00:25,  3.67s/it]Terminated
+
+ERROR conda.cli.main_run:execute(127): `conda run python scripts/eval_followir.py --model_path /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model --device cuda:1 --task News21InstructionRetrieval --output_dir /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试 --batch_size 256 --note 短指令训练后再在FL数据集上训练测试指标` failed. (See above for error)
+📁 输出目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+📥 正在加载模型: /home/luwa/Documents/pylate/output/colbert_finetune_followir/短指令检查点训FollowIR数据集/best_model on cuda:1
+   (如果是首次运行，可能需要下载模型，请耐心等待...)
+✅ 模型加载完成，耗时: 1.9秒
+📚 加载 FollowIR 评测任务: News21InstructionRetrieval
+
+============================================================
+🚀 评测任务: News21InstructionRetrieval
+============================================================
+📂 加载数据集: jhu-clsp/news21-instructions-mteb
+   加载 corpus...
+   ✅ 加载 30921 个文档 (4.4s)
+   加载 queries...
+   加载 instruction...
+   ✅ 加载 32 个 og 查询, 32 个 changed 查询 (7.7s)
+   加载 top_ranked...
+   ✅ 加载 32 个查询的候选文档, 平均 1000 个/查询 (9.4s)
+📂 数据加载完成，总耗时: 9.4s
+
+📊 共 32 og 查询 + 32 changed 查询, 平均 1000 候选文档
+
+--- 开始评测: Original Instructions (og) ---
+🔧 优化重排过程...
+📚 编码 30921 个文档 (batch_size=256)...
+
+
+📌 计算指标中...
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+`trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'jhu-clsp/news21-instructions-mteb' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+
+============================================================
+📊 FollowIR 完整评测
+============================================================
+
+将评测以下数据集: News21InstructionRetrieval
+
+============================================================
+📊 评测任务: News21InstructionRetrieval
+============================================================
+
+📥 加载数据...
+✅ 加载 qrels: 64 个查询
+✅ 加载 qrel_diff: 32 个查询有变化的文档
+
+📥 加载 run 文件...
+✅ 加载 run 文件: 32 个查询
+✅ 加载 run 文件: 32 个查询
+
+🔢 计算 FollowIR 指标...
+
+🎯 p-MRR: 0.0014
+
+📊 原始指令 - nDCG@5: 0.3499, MAP@1000: 0.3276
+📊 改变指令 - nDCG@5: 0.1771, MAP@1000: 0.1870
+💾 结果已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/results_News21InstructionRetrieval.json
+💾 指标已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/News21InstructionRetrieval/metrics/results.json
+✅ 加载查询: 64 个
+
+📋 诊断报告已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/diagnostic/diagnostic_News21InstructionRetrieval.txt
+
+====================================================================================================
+📋 FollowIR 诊断报告 - 按 p-MRR 排序 (低到高)
+====================================================================================================
+
+排名     查询ID         p-MRR        查询内容 (前100字符)                                                                   
+--------------------------------------------------------------------------------------------------------------
+1      946          -0.047198                                                                                    
+2      952          -0.016414                                                                                    
+3      937          0.000000                                                                                     
+4      938          0.000000                                                                                     
+5      939          0.000000                                                                                     
+6      944          0.000000                                                                                     
+7      947          0.000000                                                                                     
+8      948          0.000000                                                                                     
+9      949          0.000000                                                                                     
+10     950          0.000000                                                                                     
+11     951          0.000000                                                                                     
+12     954          0.000000                                                                                     
+13     956          0.000000                                                                                     
+14     957          0.000000                                                                                     
+15     958          0.000000                                                                                     
+16     959          0.000000                                                                                     
+17     960          0.000000                                                                                     
+18     961          0.000000                                                                                     
+19     962          0.000000                                                                                     
+20     964          0.000000                                                                                     
+21     965          0.000000                                                                                     
+22     966          0.000000                                                                                     
+23     969          0.000000                                                                                     
+24     970          0.000000                                                                                     
+25     972          0.000000                                                                                     
+26     973          0.000000                                                                                     
+27     976          0.000000                                                                                     
+28     982          0.000000                                                                                     
+29     985          0.000000                                                                                     
+30     943          0.019312                                                                                     
+31     941          0.027709                                                                                     
+32     984          0.061061                                                                                     
+
+--------------------------------------------------------------------------------------------------------------
+总计     32           平均: 0.001390
+====================================================================================================
+📋 详细JSON已保存至: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/diagnostic/diagnostic_News21InstructionRetrieval_details.json
+📝 汇总已更新: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试/results_summary.json
+
+============================================================
+
+✅ News21InstructionRetrieval 完成!
+
+============================================================
+✅ 评测完成!
+📁 结果目录: /home/luwa/Documents/pylate/evaluation_data/followir/短指令-FL训练版本测试
+============================================================

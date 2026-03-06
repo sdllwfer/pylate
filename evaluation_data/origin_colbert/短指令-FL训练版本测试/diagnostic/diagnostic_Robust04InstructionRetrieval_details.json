@@ -1,0 +1,262 @@
+{
+  "659": {
+    "pmrr": -0.20139220736235658,
+    "query": "",
+    "instruction": ""
+  },
+  "604": {
+    "pmrr": -0.1905752826047235,
+    "query": "",
+    "instruction": ""
+  },
+  "338": {
+    "pmrr": -0.1228070175438597,
+    "query": "",
+    "instruction": ""
+  },
+  "638": {
+    "pmrr": -0.09487910731696925,
+    "query": "",
+    "instruction": ""
+  },
+  "601": {
+    "pmrr": -0.08455882352941169,
+    "query": "",
+    "instruction": ""
+  },
+  "632": {
+    "pmrr": -0.08176956350424254,
+    "query": "",
+    "instruction": ""
+  },
+  "315": {
+    "pmrr": -0.0639170572102226,
+    "query": "",
+    "instruction": ""
+  },
+  "687": {
+    "pmrr": -0.028087734784207282,
+    "query": "",
+    "instruction": ""
+  },
+  "432": {
+    "pmrr": -0.0002717006496385114,
+    "query": "",
+    "instruction": ""
+  },
+  "305": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "327": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "342": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "344": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "345": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "369": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "373": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "409": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "410": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "445": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "605": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "607": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "608": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "611": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "617": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "626": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "629": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "641": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "646": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "655": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "682": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "686": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "689": {
+    "pmrr": 0.0,
+    "query": "",
+    "instruction": ""
+  },
+  "647": {
+    "pmrr": 0.02138646450668235,
+    "query": "",
+    "instruction": ""
+  },
+  "678": {
+    "pmrr": 0.02959102502260804,
+    "query": "",
+    "instruction": ""
+  },
+  "621": {
+    "pmrr": 0.04017003238268559,
+    "query": "",
+    "instruction": ""
+  },
+  "642": {
+    "pmrr": 0.048683888629651964,
+    "query": "",
+    "instruction": ""
+  },
+  "309": {
+    "pmrr": 0.05173223722842041,
+    "query": "",
+    "instruction": ""
+  },
+  "669": {
+    "pmrr": 0.05218582018474486,
+    "query": "",
+    "instruction": ""
+  },
+  "358": {
+    "pmrr": 0.06602331998108531,
+    "query": "",
+    "instruction": ""
+  },
+  "670": {
+    "pmrr": 0.06955359529537555,
+    "query": "",
+    "instruction": ""
+  },
+  "421": {
+    "pmrr": 0.07955857825313789,
+    "query": "",
+    "instruction": ""
+  },
+  "697": {
+    "pmrr": 0.09954330727061997,
+    "query": "",
+    "instruction": ""
+  },
+  "397": {
+    "pmrr": 0.11808404773123016,
+    "query": "",
+    "instruction": ""
+  },
+  "633": {
+    "pmrr": 0.12430923045024421,
+    "query": "",
+    "instruction": ""
+  },
+  "652": {
+    "pmrr": 0.18434503043359302,
+    "query": "",
+    "instruction": ""
+  },
+  "661": {
+    "pmrr": 0.18858895263532777,
+    "query": "",
+    "instruction": ""
+  },
+  "636": {
+    "pmrr": 0.19328674721370195,
+    "query": "",
+    "instruction": ""
+  },
+  "663": {
+    "pmrr": 0.21451628608987777,
+    "query": "",
+    "instruction": ""
+  },
+  "668": {
+    "pmrr": 0.21914450777312208,
+    "query": "",
+    "instruction": ""
+  },
+  "643": {
+    "pmrr": 0.2314030131826742,
+    "query": "",
+    "instruction": ""
+  },
+  "308": {
+    "pmrr": 0.24344405594405588,
+    "query": "",
+    "instruction": ""
+  },
+  "681": {
+    "pmrr": 0.29538157807370846,
+    "query": "",
+    "instruction": ""
+  }
+}
