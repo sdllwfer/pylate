@@ -96,7 +96,8 @@ class InstructionProbe(nn.Module):
         batch_size, seq_len, hidden_size = query_embeddings.shape
         
         # 1. 扩展探针 token 到 batch 大小 [batch_size, 1, hidden_size]
-        probe = self.probe_token.expand(batch_size, -1, -1)
+        # 确保 probe_token 在与 query_embeddings 相同的设备上
+        probe = self.probe_token.expand(batch_size, -1, -1).to(query_embeddings.device)
         
         # 2. 使用上下文编码器处理输入
         # 将探针作为第一个 token，与输入序列拼接

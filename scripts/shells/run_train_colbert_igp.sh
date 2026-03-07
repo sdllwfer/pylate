@@ -23,8 +23,8 @@ MODEL_NAME="lightonai/ColBERT-Zero"
 TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
 # 输出目录 (基础目录，会在此目录下创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_allphase_newmodule_maxratio0.2"
-NOTE="ColBERT-Zero-短指令训练-全阶段训练-门控最大比例0.2-加入模块"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2_maxratio0.2-bs64"
+NOTE="ColBERT-Zero-门控最大比例0.2-bs64"
 # GPU 设备编号 (0, 1, 2, 3)
 CUDA_VISIBLE_DEVICES="0"
 # ============================
@@ -39,16 +39,16 @@ ENABLE_GATE=true
 # 门控最大比率 (防止指令破坏原语义，建议 0.1-0.3)
 MAX_RATIO=0.2
 # Adapter 瓶颈维度 (建议 32-128)
-BOTTLENECK_DIM=64
+BOTTLENECK_DIM=128
 # 辅助损失权重
-AUX_LOSS_WEIGHT=0.1
+AUX_LOSS_WEIGHT=0
 # 损失记录间隔 (每多少个step记录一次，用于生成更细致的损失曲线，设为0则记录每个step)
 LOG_INTERVAL=10
 # ============================
 # 训练参数
 # ============================
 # 是否启用 Phase 1 (Probe Warm-up)
-ENABLE_PHASE1=true
+ENABLE_PHASE1=false
 # 是否启用 Phase 2 (Joint Training)
 ENABLE_PHASE2=true
 # Phase 1 检查点路径 (为空则从头训练)
@@ -59,18 +59,18 @@ PHASE2_CHECKPOINT=""
 # Phase 1 训练轮数 (Probe Warm-up)
 PHASE1_EPOCHS=10
 # Phase 2 训练轮数 (Joint Training)
-PHASE2_EPOCHS=20
+PHASE2_EPOCHS=100
 # 批次大小
-BATCH_SIZE=32
+BATCH_SIZE=64
 # 验证集比例
 EVAL_RATIO=0.01
-# 基础学习率 (BERT/Probe/Adapter)
-BASE_LR=1e-5
+# 基础学习率 (BERT/Probe/Adapter) - 增加学习率以加速收敛
+BASE_LR=2e-5
 # 门控学习率 (建议 1e-2 到 1e-1，确保门控激活)
-GATE_LR=1e-2
-# Phase 2 早停配置
-PHASE2_PATIENCE=5
-PHASE2_EARLY_STOP_THRESHOLD=0.005
+GATE_LR=5e-2
+# Phase 2 早停配置 - 降低阈值让训练更充分
+PHASE2_PATIENCE=20
+PHASE2_EARLY_STOP_THRESHOLD=0.0001
 # 检查点保存配置 (设为空则自动使用 epoch 总数)
 SAVE_TOTAL_LIMIT=""
 # ==============================

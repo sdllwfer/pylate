@@ -77,7 +77,7 @@ from pylate.models.igp import (
 import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from data_utils import DataLoader, DataConverter, IGPColBERTCollator
-from igp_losses import IGPAuxLoss
+from igp_losses import IGPAuxLoss, IGPLoss
 
 
 class IGPColBERTWrapper(nn.Module):
@@ -85,8 +85,12 @@ class IGPColBERTWrapper(nn.Module):
     IGP 包装器：集成 Adapter 和 Gate 到 ColBERT 模型
     
     在 ColBERT 的 token embeddings 输出后注入 instruction 信息：
-    1. 使用 Adapter 处理 embeddings
-    2. 使用 Gate 融合原始 embeddings 和指令增强 embeddings
+    1. 使用 Probe 从 Query 中提取指令向量
+    2. 使用 Adapter 计算指令偏移量 (delta)
+    3. 使用 Gate 控制偏移量的应用强度
+    4. 最终生成增强后的 Query Embeddings
+    
+    参考实现: colbert_igp.py 中的 ColBERT_IGP 类
     """
     
     def __init__(
@@ -95,6 +99,10 @@ class IGPColBERTWrapper(nn.Module):
         probe: InstructionProbe = None,
         adapter: IGPAdapter = None,
         gate: RatioGate = None,
+        freeze_base: bool = True,
+        freeze_probe: bool = False,
+        freeze_adapter: bool = False,
+        freeze_gate: bool = False,
     ):
         super().__init__()
         self.base_model = base_model
@@ -102,73 +110,354 @@ class IGPColBERTWrapper(nn.Module):
         self.adapter = adapter
         self.gate = gate
         
-        # 禁用 base_model 的梯度
-        for param in self.base_model.parameters():
-            param.requires_grad = False
-    
-    def forward(self, **kwargs):
-        """前向传播：先获取 embeddings，然后应用 Adapter 和 Gate"""
-        # 原始前向传播
-        output = self.base_model(**kwargs)
-        
-        # 如果没有 IGP 模块，直接返回
-        if self.probe is None and self.adapter is None and self.gate is None:
-            return output
-        
-        # 获取 input_ids 和 attention_mask
-        input_ids = kwargs.get('input_ids')
-        attention_mask = kwargs.get('attention_mask')
-        
-        if input_ids is None:
-            return output
-        
-        # 获取原始 word embeddings (768D)
-        word_embeddings = self.base_model[0].auto_model.embeddings(input_ids)
-        
-        inst_vec = None
-        
-        # 1. 使用 Probe 生成指令向量
+        # 将 IGP 模块移动到与 base_model 相同的设备
+        device = next(base_model.parameters()).device
         if self.probe is not None:
-            inst_vec, attn_logits, attn_weights = self.probe(
-                word_embeddings,
-                attention_mask
+            self.probe = self.probe.to(device)
+        if self.adapter is not None:
+            self.adapter = self.adapter.to(device)
+        if self.gate is not None:
+            self.gate = self.gate.to(device)
+        
+        # 确保 base_model 也在正确的设备上
+        self.base_model = self.base_model.to(device)
+        
+        # 控制各模块的梯度
+        self._set_gradients(
+            freeze_base=freeze_base,
+            freeze_probe=freeze_probe,
+            freeze_adapter=freeze_adapter,
+            freeze_gate=freeze_gate,
+        )
+    
+    def _set_gradients(
+        self,
+        freeze_base: bool = True,
+        freeze_probe: bool = False,
+        freeze_adapter: bool = False,
+        freeze_gate: bool = False,
+    ):
+        """设置各模块的梯度状态"""
+        # Base model
+        for param in self.base_model.parameters():
+            param.requires_grad = not freeze_base
+        
+        # Probe
+        if self.probe is not None:
+            for param in self.probe.parameters():
+                param.requires_grad = not freeze_probe
+        
+        # Adapter
+        if self.adapter is not None:
+            for param in self.adapter.parameters():
+                param.requires_grad = not freeze_adapter
+        
+        # Gate
+        if self.gate is not None:
+            for param in self.gate.parameters():
+                param.requires_grad = not freeze_gate
+        
+        # 打印状态
+        print(f"[IGPColBERTWrapper] 梯度状态:")
+        print(f"   Base model: {'冻结' if freeze_base else '可训练'}")
+        print(f"   Probe: {'冻结' if freeze_probe else '可训练'}")
+        print(f"   Adapter: {'冻结' if freeze_adapter else '可训练'}")
+        print(f"   Gate: {'冻结' if freeze_gate else '可训练'}")
+    
+    def set_phase1_mode(self):
+        """Phase 1: 只训练 Probe，冻结其他所有参数"""
+        self._set_gradients(
+            freeze_base=True,
+            freeze_probe=False,  # 只训练 Probe
+            freeze_adapter=True,
+            freeze_gate=True,
+        )
+    
+    def set_phase2_mode(self):
+        """Phase 2: 联合训练所有 IGP 模块，冻结 Base"""
+        self._set_gradients(
+            freeze_base=True,    # Base 始终冻结
+            freeze_probe=False,  # 训练 Probe
+            freeze_adapter=False, # 训练 Adapter
+            freeze_gate=False,   # 训练 Gate
+        )
+    
+    def forward(
+        self, 
+        query_input_ids=None, 
+        query_attention_mask=None,
+        pos_doc_input_ids=None,
+        pos_doc_attention_mask=None,
+        neg_doc_input_ids=None,
+        neg_doc_attention_mask=None,
+        instruction_mask=None,
+        **kwargs
+    ):
+        """
+        前向传播：应用 IGP 模块生成增强的 Query Embeddings
+        
+        流程:
+        1. 获取 Query 的原始 embeddings (768维)
+        2. Probe 提取指令向量 inst_vec
+        3. Adapter 计算 delta (偏移量)
+        4. Gate 控制偏移强度，生成最终 Q_final
+        5. 归一化并返回
+        """
+        # 如果没有 IGP 模块，直接返回 base_model 的输出
+        if self.probe is None and self.adapter is None and self.gate is None:
+            return self.base_model(
+                query_input_ids=query_input_ids,
+                query_attention_mask=query_attention_mask,
+                pos_doc_input_ids=pos_doc_input_ids,
+                pos_doc_attention_mask=pos_doc_attention_mask,
+                neg_doc_input_ids=neg_doc_input_ids,
+                neg_doc_attention_mask=neg_doc_attention_mask,
+                **kwargs
             )
         
-        # 2. 使用 Gate 融合
-        if self.gate is not None and inst_vec is not None:
-            # 获取原始 sentence embedding (用于 gate 融合)
-            token_embeddings = output.get('token_embeddings', output.get('embeddings'))
-            if token_embeddings is not None:
-                # 对 sequence 做 mean pooling 得到句子表示
-                if attention_mask is not None:
-                    mask_expanded = attention_mask.unsqueeze(-1).float()
-                    original_vec = (token_embeddings * mask_expanded).sum(dim=1) / mask_expanded.sum(dim=1).clamp(min=1)
-                else:
-                    original_vec = token_embeddings.mean(dim=1)
-                
-                # Gate 融合
-                fused_vec, current_ratio = self.gate(original_vec, inst_vec)
-                
-                # 将融合向量广播回 sequence 维度
-                # 这里我们不直接修改 embeddings，而是让 adapter 处理
-                # 保存 inst_vec 供 adapter 使用
+        # ========== 1. 获取 Query 的原始 embeddings (768维) ==========
+        # 使用 base_model[0] (Transformer 层) 获取 embeddings，而不是投影后的
+        query_features = {'input_ids': query_input_ids, 'attention_mask': query_attention_mask}
+        query_out = self.base_model[0](query_features)
+        Q_hidden = query_out['token_embeddings']  # [batch, seq, 768]
         
-        # 3. 使用 Adapter 处理 embeddings (可选，修改 token embeddings)
+        # ========== 2. Probe: 提取指令向量 (在 768 维空间操作) ==========
+        inst_vec = None
+        attn_logits = None
+        if self.probe is not None:
+            inst_vec, attn_logits, _ = self.probe(Q_hidden, query_attention_mask)
+        
+        # ========== 3. Adapter: 计算 delta (在 768 维空间操作) ==========
+        adapter_output = None
+        delta = None
+        Q_hat = Q_hidden
         if self.adapter is not None and inst_vec is not None:
-            # Adapter 会在 IGPLoss 中被调用，这里只做简单处理
-            # 实际使用在 loss 计算时
-            pass
+            # 使用 IGPAdapter.forward 方法，包含 layer_norm 和残差连接
+            # concat_dim="hidden" 表示在 hidden 维度拼接，每个 token 都能看到指令向量
+            adapter_output, delta = self.adapter(Q_hidden, inst_vec, concat_dim="hidden")
         
-        return output
+        # ========== 4. Gate: 弹性门控 (在 768 维空间操作) ==========
+        gate_ratio = torch.tensor(0.0, device=Q_hidden.device)  # 初始化为 tensor
+        if self.gate is not None and delta is not None:
+            if instruction_mask is not None:
+                # 生成 shift_mask: 锁定 Query 部分 (非指令部分)
+                # Query(1) - Instruction(1) = PureQuery(1)
+                raw_mask = (query_attention_mask.float() - instruction_mask.float()).clamp(min=0)
+                
+                # 对齐长度 (处理 CLS 切片问题)
+                seq_len_q = Q_hidden.shape[1]
+                seq_len_mask = raw_mask.shape[1]
+                if seq_len_q == seq_len_mask - 1:
+                    align_mask = raw_mask[:, 1:]  # 去掉 CLS
+                else:
+                    min_len = min(seq_len_q, seq_len_mask)
+                    align_mask = raw_mask[:, :min_len]
+                
+                shift_mask = align_mask.unsqueeze(-1).to(Q_hidden.device)  # [batch, seq, 1]
+                
+                # 计算 Query 范数 (只在 Query 部分计算)
+                q_vec = Q_hidden * shift_mask
+                q_norm = torch.norm(q_vec, p=2, dim=-1, keepdim=True) + 1e-8
+                
+                # Delta 单位方向
+                delta_unit = F.normalize(delta, p=2, dim=-1)
+                
+                # 弹性比例: sigmoid(ratio_gate) * max_ratio
+                max_ratio = self.gate.max_ratio if hasattr(self.gate, 'max_ratio') else 0.2
+                if hasattr(self.gate, 'ratio_gate'):
+                    current_ratio = torch.sigmoid(self.gate.ratio_gate) * max_ratio
+                else:
+                    current_ratio = max_ratio * 0.5
+                gate_ratio = current_ratio  # 保持为 tensor，不要调用 .item()
+                
+                # 弹性偏移: 方向 * (Q长度 * 比例)
+                effective_delta = delta_unit * (q_norm * current_ratio)
+                effective_delta = effective_delta * shift_mask  # 只在 Query 部分应用
+                
+                # 在 768 维空间完成指令特征的融合
+                Q_hat = Q_hidden + effective_delta
+            else:
+                # 当 instruction_mask 为 None 时，直接使用 adapter_output (包含 layer_norm 和残差连接)
+                # 这样可以确保梯度能够流动到 Adapter 的所有参数（包括 layer_norm）
+                Q_hat = adapter_output if adapter_output is not None else Q_hidden + delta
+        
+        # ========== 5. 投影到 ColBERT 维度并归一化 (768维 -> 128维) ==========
+        # 使用 base_model[1] (Dense 层) 进行投影
+        # Dense 层期望字典输入
+        features = {"token_embeddings": Q_hat}
+        projected_features = self.base_model[1](features)
+        Q_projected = projected_features["token_embeddings"]
+        
+        # ColBERT 必须的 L2 归一化
+        Q_final = F.normalize(Q_projected, p=2, dim=-1)
+        
+        # 返回结果字典，包含增强后的 embeddings 和辅助信息
+        result = {
+            'token_embeddings': Q_final,
+            'inst_vec': inst_vec,
+            'attn_logits': attn_logits,
+            'gate_ratio': gate_ratio,
+        }
+        
+        return result
+    
+    def encode(
+        self,
+        sentences,
+        is_query: bool = True,
+        instruction_mask=None,
+        **kwargs
+    ):
+        """
+        编码句子，支持 IGP 处理
+        
+        参数:
+            sentences: 待编码的文本或文本列表
+            is_query: 是否为查询（查询会使用 IGP，文档不使用）
+            instruction_mask: 指令掩码（可选）
+            **kwargs: 其他 encode 参数
+        
+        返回:
+            embeddings: token embeddings 列表
+        """
+        # 如果不是查询，或者没有 IGP 模块，直接使用 base_model.encode
+        if not is_query or (self.probe is None and self.adapter is None and self.gate is None):
+            return self.base_model.encode(sentences, is_query=is_query, **kwargs)
+        
+        # 对于查询，使用 IGP 处理
+        # 1. 先使用 base_model 的 tokenizer 获取 input_ids
+        from sentence_transformers import SentenceTransformer
+        
+        # 确保 sentences 是列表
+        if isinstance(sentences, str):
+            sentences = [sentences]
+        
+        # 获取 tokenizer
+        tokenizer = self.base_model.tokenizer
+        
+        # 编码文本
+        encoded = tokenizer(
+            sentences,
+            padding=True,
+            truncation=True,
+            max_length=512,
+            return_tensors='pt'
+        )
+        
+        input_ids = encoded['input_ids'].to(self.base_model.device)
+        attention_mask = encoded['attention_mask'].to(self.base_model.device)
+        
+        # 如果没有提供 instruction_mask，尝试自动检测
+        if instruction_mask is None:
+            instruction_mask = self._auto_detect_instruction_mask(input_ids, attention_mask)
+        else:
+            # 确保 instruction_mask 也在正确的设备上
+            instruction_mask = instruction_mask.to(self.base_model.device)
+        
+        # 2. 调用 forward 获取增强后的 embeddings
+        with torch.no_grad():
+            result = self.forward(
+                query_input_ids=input_ids,
+                query_attention_mask=attention_mask,
+                instruction_mask=instruction_mask,
+            )
+        
+        # 3. 转换为 ColBERT 格式的 embeddings 列表
+        token_embeddings = result['token_embeddings']
+        
+        # 转换为列表格式（每个元素是变长的 tensor）
+        embeddings_list = []
+        for i in range(token_embeddings.size(0)):
+            # 获取有效的 token（非 padding）
+            valid_mask = attention_mask[i].bool()
+            valid_embeddings = token_embeddings[i][valid_mask]
+            embeddings_list.append(valid_embeddings.cpu())
+        
+        return embeddings_list
+    
+    def _auto_detect_instruction_mask(self, input_ids, attention_mask):
+        """自动检测指令掩码（基于 SEP token）"""
+        batch_size, seq_len = input_ids.shape
+        instruction_mask = torch.zeros(batch_size, seq_len, dtype=torch.float, device=input_ids.device)
+        
+        sep_id = self.base_model.tokenizer.sep_token_id
+        
+        for i in range(batch_size):
+            sep_positions = (input_ids[i] == sep_id).nonzero(as_tuple=True)[0]
+            if len(sep_positions) > 0:
+                first_sep = sep_positions[0].item()
+                # SEP 之后的 token 标记为指令
+                instruction_mask[i, first_sep + 1:] = 1.0
+        
+        return instruction_mask
     
     def get_instruction_vector(self, input_ids, attention_mask):
-        """获取指令向量（供 IGPLoss 使用）"""
+        """获取指令向量（供外部使用）"""
         if self.probe is None:
             return None
         
-        word_embeddings = self.base_model[0].auto_model.embeddings(input_ids)
-        inst_vec, attn_logits, attn_weights = self.probe(word_embeddings, attention_mask)
+        query_features = {'input_ids': input_ids, 'attention_mask': attention_mask}
+        query_out = self.base_model[0](query_features)
+        Q_hidden = query_out['token_embeddings']
+        
+        inst_vec, _, _ = self.probe(Q_hidden, attention_mask)
         return inst_vec
+    
+    def tokenize(self, texts, is_query=True, pad=False, task=None, **kwargs):
+        """
+        Tokenize 文本，代理到 base_model 的 tokenize 方法
+        
+        参数:
+            texts: 待 tokenize 的文本列表
+            is_query: 是否为查询
+            pad: 是否填充
+            task: 任务名称（兼容参数）
+            **kwargs: 其他参数
+        
+        返回:
+            dict: tokenized 输出
+        """
+        return self.base_model.tokenize(texts, is_query=is_query, pad=pad, task=task, **kwargs)
+    
+    @property
+    def tokenizer(self):
+        """获取 tokenizer，代理到 base_model"""
+        return self.base_model.tokenizer
+    
+    @property
+    def device(self):
+        """获取设备"""
+        return next(self.base_model.parameters()).device
+    
+    def __iter__(self):
+        """使模型可迭代，代理到 base_model"""
+        return iter(self.base_model)
+    
+    def __len__(self):
+        """返回模型模块数量"""
+        return len(self.base_model)
+    
+    def __getitem__(self, idx):
+        """支持索引访问"""
+        return self.base_model[idx]
+    
+    @property
+    def model_card_data(self):
+        """获取 model_card_data，代理到 base_model"""
+        return self.base_model.model_card_data
+    
+    @model_card_data.setter
+    def model_card_data(self, value):
+        """设置 model_card_data，代理到 base_model"""
+        self.base_model.model_card_data = value
+    
+    def save_pretrained(self, output_dir: str, **kwargs):
+        """保存模型，代理到 base_model"""
+        self.base_model.save_pretrained(output_dir, **kwargs)
+    
+    def save(self, output_dir: str, **kwargs):
+        """保存模型（兼容方法），代理到 base_model"""
+        self.base_model.save_pretrained(output_dir, **kwargs)
 
 
 class EarlyStoppingCallback(TrainerCallback):
@@ -323,6 +612,34 @@ class Phase2EarlyStoppingCallback(TrainerCallback):
                 self.should_stop = True
 
 
+class IGPColBERTTrainer(SentenceTransformerTrainer):
+    """自定义 IGP ColBERT Trainer
+    
+    确保训练和验证时都使用 IGP 模块计算损失
+    """
+    
+    def __init__(self, *args, loss=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        # 保存自定义损失函数到 self.loss，覆盖父类的损失
+        if loss is not None:
+            self.loss = loss
+    
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
+        """计算损失 - 训练和验证都使用 IGP 损失"""
+        # 使用父类的 collect_features 方法处理输入
+        features, labels = self.collect_features(inputs)
+        loss = self.loss(features, labels)
+        return (loss, {}) if return_outputs else loss
+    
+    def prediction_step(self, model, inputs, prediction_loss_only=False, ignore_keys=None):
+        """预测步骤 - 确保验证时使用 IGP 损失"""
+        with torch.no_grad():
+            # 使用父类的 collect_features 方法处理输入
+            features, labels = self.collect_features(inputs)
+            loss = self.loss(features, labels)
+            return (loss, None, None)
+
+
 class IGPTrainingCallbacks:
     """IGP训练回调集合"""
     
@@ -373,12 +690,24 @@ class LossTracker(TrainerCallback):
         self.reg_losses = []
         self.gate_ratios = []
         
+        # 新增：训练 loss 累积变量（用于计算 epoch 平均）
+        self.epoch_loss_sum = 0.0
+        self.epoch_loss_count = 0
+        
         os.makedirs(output_dir, exist_ok=True)
     
     def on_log(self, args, state, control, logs=None, **kwargs):
         if logs is not None:
             if 'loss' in logs:
-                self.current_train_loss = logs.get('loss')
+                loss_val = logs.get('loss')
+                self.current_train_loss = loss_val
+                # 累积 loss 用于计算 epoch 平均
+                if torch.is_tensor(loss_val):
+                    self.epoch_loss_sum += loss_val.item()
+                else:
+                    self.epoch_loss_sum += loss_val
+                self.epoch_loss_count += 1
+                
                 if 'step' in logs:
                     step = logs.get('step', self.current_step)
                     self.batch_losses.append({
@@ -444,9 +773,18 @@ class LossTracker(TrainerCallback):
         
         if epoch not in self.epochs:
             self.epochs.append(epoch)
-            if self.current_train_loss is not None:
+            # 使用 epoch 平均 loss 而不是最后一个 logging step 的 loss
+            if self.epoch_loss_count > 0:
+                epoch_avg_loss = self.epoch_loss_sum / self.epoch_loss_count
+                self.train_losses.append(epoch_avg_loss)
+                self.train_steps.append(state.global_step)
+                print(f"\n📊 Epoch {epoch} 平均训练损失: {epoch_avg_loss:.6f} (基于 {self.epoch_loss_count} 个 batch)")
+            elif self.current_train_loss is not None:
                 self.train_losses.append(self.current_train_loss)
                 self.train_steps.append(state.global_step)
+            # 重置累积变量
+            self.epoch_loss_sum = 0.0
+            self.epoch_loss_count = 0
             self.current_train_loss = None
         
         self._save_history()
@@ -669,7 +1007,10 @@ class BestModelCallback(TrainerCallback):
 
 
 class EpochCheckpointCallback(TrainerCallback):
-    """自定义回调：每个epoch完成后保存checkpoint，按epoch编号命名"""
+    """自定义回调：每个epoch完成后保存checkpoint，按epoch编号命名
+    
+    检查点保存到 checkpoints/ 子目录中
+    """
     
     def __init__(self, output_dir, model, phase_name="training", igp_modules=None):
         self.output_dir = output_dir
@@ -677,11 +1018,16 @@ class EpochCheckpointCallback(TrainerCallback):
         self.phase_name = phase_name
         self.igp_modules = igp_modules
         self.saved_checkpoints = []
+        # 创建 checkpoints 子目录
+        self.checkpoints_dir = os.path.join(self.output_dir, "checkpoints")
+        os.makedirs(self.checkpoints_dir, exist_ok=True)
     
     def on_epoch_end(self, args, state, control, **kwargs):
         epoch = int(state.epoch) if state.epoch else 0
         if epoch > 0:
-            checkpoint_dir = os.path.join(self.output_dir, f"checkpoint-{epoch}")
+            # 保存到 checkpoints/ 子目录
+            checkpoint_dir = os.path.join(self.checkpoints_dir, f"checkpoint-{epoch}")
+            os.makedirs(checkpoint_dir, exist_ok=True)
             self.model.save(checkpoint_dir)
             
             if self.igp_modules is not None:
@@ -948,9 +1294,9 @@ class EpochCheckpointCallback(TrainerCallback):
 #         """获取上一次前向传播的各项损失值"""
 #         return getattr(self, '_last_losses', {})
 
-class IGPLoss(nn.Module):
+class IGPLossLocal(nn.Module):
     """
-    IGP 组合损失
+    IGP 组合损失 (本地版本)
     
     结合对比损失和辅助损失 (BCE Loss for instruction detection)
     同时应用 Adapter 和 Gate 到模型输出
@@ -977,12 +1323,27 @@ class IGPLoss(nn.Module):
         self.temperature = 0.1  # 用于缩放 logits
     
     def forward(self, sentence_features: list, labels: Optional[torch.Tensor] = None) -> torch.Tensor:
-        query_features = sentence_features[0]
-        pos_features = sentence_features[1]
-        neg_features = sentence_features[2]
+        if isinstance(sentence_features, dict):
+            query_features = {
+                'input_ids': sentence_features.get('input_ids'),
+                'attention_mask': sentence_features.get('attention_mask'),
+                'token_labels': sentence_features.get('token_labels'),
+            }
+            pos_features = {
+                'input_ids': sentence_features.get('positive_input_ids'),
+                'attention_mask': sentence_features.get('positive_attention_mask'),
+            }
+            neg_features = {
+                'input_ids': sentence_features.get('negative_input_ids'),
+                'attention_mask': sentence_features.get('negative_attention_mask'),
+            }
+        else:
+            query_features = sentence_features[0]
+            pos_features = sentence_features[1]
+            neg_features = sentence_features[2]
         
         query_attention_mask = query_features.get('attention_mask')
-        instruction_mask = query_features.get('instruction_mask')
+        instruction_mask = query_features.get('instruction_mask') or query_features.get('token_labels')
         
         # ========== 1. 获取基础表示 (保持 768 维) ==========
         # 【修复维度报错】：获取大模型 Transformer 层的输出 (768维)，而不是投影后的 128维
@@ -1001,7 +1362,7 @@ class IGPLoss(nn.Module):
             inst_vec, attn_logits, _ = self.probe(Q_hidden, query_attention_mask)
         
         # ========== 3. 辅助损失: 指令检测 ==========
-        aux_loss = torch.tensor(0.0, device=Q_hidden.device)
+        aux_loss = torch.tensor(0.0, device=Q_hidden.device, requires_grad=True)
         if instruction_mask is not None and query_attention_mask is not None and attn_logits is not None:
             seq_len = Q_hidden.shape[1]
             if instruction_mask.shape[1] > seq_len:
@@ -1079,7 +1440,7 @@ class IGPLoss(nn.Module):
         rank_loss = self.rank_loss_fn(scores, rank_labels)
         
         # ========== 8. 正则化损失 ==========
-        reg_loss = torch.tensor(0.0, device=rank_loss.device)
+        reg_loss = torch.tensor(0.0, device=rank_loss.device, requires_grad=True)
         if delta is not None:
             delta_norm = torch.norm(delta, p=2, dim=-1)
             excess = torch.clamp(delta_norm - 1.0, min=0)
@@ -1089,9 +1450,17 @@ class IGPLoss(nn.Module):
         is_phase1 = False
         if self.adapter is not None:
             is_phase1 = not next(self.adapter.parameters()).requires_grad
-            
+        
+        # 确保损失连接到计算图（即使值为0）
         if is_phase1:
-            total_loss = aux_loss
+            # Phase 1: 如果 aux_loss 为0，使用一个虚拟损失确保梯度流动
+            # 注意：不能使用 .item()，否则会断开计算图
+            if inst_vec is not None:
+                # 使用 inst_vec 的 L2 范数作为虚拟损失，确保 probe 有梯度
+                dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
+                total_loss = aux_loss + dummy_loss
+            else:
+                total_loss = aux_loss
         else:
             total_loss = rank_loss + aux_loss * self.aux_loss_weight + reg_loss
         
@@ -1163,6 +1532,7 @@ class IGPTrainer:
         phase1_checkpoint: str = None,
         phase2_checkpoint: str = None,
         log_interval: int = 10,
+        gradient_accumulation_steps: int = 1,
     ):
         self.model_name = model_name
         self.train_data_path = train_data_path
@@ -1189,6 +1559,7 @@ class IGPTrainer:
         self.phase1_checkpoint = phase1_checkpoint
         self.phase2_checkpoint = phase2_checkpoint
         self.log_interval = log_interval
+        self.gradient_accumulation_steps = gradient_accumulation_steps
         
         # 加载数据和模型
         self.train_dataset = None
@@ -1234,8 +1605,8 @@ class IGPTrainer:
     
     def load_model(self):
         """加载基础模型"""
-        print(f"📥 加载基础模型: {self.model_name}")
-        self.base_model = models.ColBERT(model_name_or_path=self.model_name)
+        print(f"📥 加载基础模型: {self.model_name} on {self.device}")
+        self.base_model = models.ColBERT(model_name_or_path=self.model_name, device=self.device)
         
         # 重置 IGP 模块状态，确保重新初始化
         self.probe = None
@@ -1246,34 +1617,49 @@ class IGPTrainer:
         self._init_igp_modules_from_base_model()
     
     def _init_igp_modules_from_base_model(self):
-        """从基础模型初始化 IGP 模块"""
+        """从基础模型初始化 IGP 模块
+        
+        注意: IGP 模块在 768 维空间操作 (underlying_hidden_size)，
+        而不是在 128 维的投影后空间 (actual_embedding_size)。
+        这是因为 IGP 需要在投影前注入指令信息。
+        """
         underlying_hidden_size = self.base_model[0].get_word_embedding_dimension()
-        actual_embedding_size = self.base_model[-1].out_features
+        
+        # ColBERT 结构: [0]=LM, [1]=Linear(投影到embedding_size), [-1]=Pool
+        # 需要用 [1] 获取 Linear 层的 out_features
+        if hasattr(self.base_model[1], 'out_features'):
+            actual_embedding_size = self.base_model[1].out_features
+        else:
+            actual_embedding_size = underlying_hidden_size
         
         print(f"[DEBUG] IGP 模块初始化:")
         print(f"   底层编码器 hidden_size: {underlying_hidden_size}")
         print(f"   实际输出 embedding_size: {actual_embedding_size}")
+        print(f"   ⚠️ IGP 模块使用 underlying_hidden_size ({underlying_hidden_size}) 进行初始化")
+        
+        # IGP 模块在 768 维空间操作
+        igp_hidden_size = underlying_hidden_size
         
         if self.enable_probe and self.probe is None:
             self.probe = InstructionProbe(
-                hidden_size=actual_embedding_size,
+                hidden_size=igp_hidden_size,
                 num_heads=8,
                 dropout=0.1,
             )
-            print(f"✅ InstructionProbe 初始化完成 (hidden_size={actual_embedding_size})")
+            print(f"✅ InstructionProbe 初始化完成 (hidden_size={igp_hidden_size})")
         
         if self.enable_adapter and self.adapter is None:
             self.adapter = IGPAdapter(
-                hidden_size=actual_embedding_size,
+                hidden_size=igp_hidden_size,
                 bottleneck_dim=self.bottleneck_dim,
                 dropout=0.1,
-                input_dim=actual_embedding_size,
+                input_dim=igp_hidden_size * 2,  # 拼接 Query 和 Inst_vec
             )
-            print(f"✅ IGPAdapter 初始化完成 (bottleneck_dim={self.bottleneck_dim}, input_dim={actual_embedding_size})")
+            print(f"✅ IGPAdapter 初始化完成 (bottleneck_dim={self.bottleneck_dim}, input_dim={igp_hidden_size * 2})")
         
         if self.enable_gate and self.gate is None:
             self.gate = RatioGate(
-                hidden_size=actual_embedding_size,
+                hidden_size=igp_hidden_size,
                 max_ratio=self.max_ratio,
                 use_dynamic=False,
             )
@@ -1323,8 +1709,8 @@ class IGPTrainer:
         
         # 加载模型
         try:
-            self.base_model = models.ColBERT(checkpoint_path)
-            print(f"✅ 检查点模型已加载")
+            self.base_model = models.ColBERT(checkpoint_path, device=self.device)
+            print(f"✅ 检查点模型已加载到 {self.device}")
         except Exception as e:
             print(f"❌ 检查点加载失败: 模型加载错误")
             print(f"   错误: {str(e)}")
@@ -1505,8 +1891,15 @@ class IGPTrainer:
         print("🚀 Phase 1: 探针热身 (Probe Warm-up)")
         print("=" * 60)
         
-        # Phase 1: 冻结除 probe 外的所有参数，确保 probe 可训练
-        self.freeze_all_except_probe()
+        # ========== 创建 IGPColBERTWrapper 作为训练模型 ==========
+        # Phase 1: 只训练 Probe，冻结其他所有参数
+        igp_model = IGPColBERTWrapper(
+            base_model=self.base_model,
+            probe=self.probe,
+            adapter=None,  # Phase 1 不使用 Adapter
+            gate=None,     # Phase 1 不使用 Gate
+        )
+        igp_model.set_phase1_mode()  # 设置 Phase 1 的梯度状态
         
         # 配置训练参数
         training_args = SentenceTransformerTrainingArguments(
@@ -1519,71 +1912,38 @@ class IGPTrainer:
             bf16=False,
             logging_steps=10,
             eval_strategy="epoch",
-            save_strategy="epoch",
-            save_total_limit=self.save_total_limit if hasattr(self, 'save_total_limit') and self.save_total_limit else 0,
-            load_best_model_at_end=True,
+            save_strategy="no",  # 禁用自动保存，使用自定义的 EpochCheckpointCallback
+            load_best_model_at_end=False,  # 禁用自动加载最佳模型
             metric_for_best_model="eval_loss",
             greater_is_better=False,
             warmup_ratio=0.1,
             dataloader_num_workers=4,
         )
-        
-        # 基础损失
-        base_loss = losses.Contrastive(model=self.base_model)
-        
-        # Phase 1: 使用专门的 Phase1 loss，只训练 probe
+
+        # Phase 1: 只使用 Aux Loss 训练 Probe
         from igp_losses import IGPLossPhase1
         
-        class IGPLossPhase1Wrapper(nn.Module):
-            """包装 Phase1 loss，返回标量 loss"""
-            def __init__(self, igp_loss):
-                super().__init__()
-                self.igp_loss = igp_loss
-            
-            def forward(self, features, labels=None):
-                loss, info = self.igp_loss(features, labels)
-                if self.training:
-                    print(f"[Loss Info] {info}")
-                return loss
-        
-        igp_loss = IGPLossPhase1Wrapper(IGPLossPhase1(
-            base_model=self.base_model,
+        igp_loss = IGPLossPhase1(
+            base_model=igp_model,  # 传入 IGPColBERTWrapper
             probe=self.probe,
             aux_loss_weight=self.aux_loss_weight,
-        ))
+        )
         
-        # 使用参数分组学习率：base_model 极小，probe 较大
+        # 使用参数分组学习率：只优化 Probe 参数
         param_groups = []
-        
-        # 收集 probe 参数（如果 probe 是 base_model 的 submodule，需要排除）
-        probe_param_ids = set(id(p) for p in self.probe.parameters()) if self.probe else set()
-        
-        # 打印调试信息
-        print(f"\n[DEBUG] 构建参数组:")
-        print(f"   self.probe 参数数量: {len(probe_param_ids)}")
-        
-        # 基础模型参数 (使用极小学习率) - 排除 probe 参数
-        base_params = []
-        for name, param in self.base_model.named_parameters():
-            if id(param) not in probe_param_ids:
-                base_params.append(param)
-        if base_params:
-            param_groups.append({
-                'params': base_params,
-                'lr': self.base_lr * 0.01,
-            })
         
         # Probe 参数 (使用大学习率)
         if self.probe is not None:
-            probe_params = list(self.probe.parameters())
+            probe_params = [p for p in self.probe.parameters() if p.requires_grad]
             if probe_params:
                 param_groups.append({
                     'params': probe_params,
                     'lr': self.base_lr * 10,  # 显著提高学习率
                 })
+                print(f"[Phase 1] Probe 参数: {len(probe_params)} 个, lr={self.base_lr * 10}")
         
         if not param_groups:
-            raise ValueError("优化器参数组为空！")
+            raise ValueError("Phase 1: 没有可训练的参数！")
         
         optimizer = torch.optim.AdamW(param_groups)
         
@@ -1618,19 +1978,21 @@ class IGPTrainer:
         checkpoint_callback_p1 = EpochCheckpointCallback(phase1_output_dir, self.base_model, phase_name="phase1", igp_modules=igp_modules_p1)
         
         # 创建训练器
-        trainer = SentenceTransformerTrainer(
-            model=self.base_model,
+        # 注意：传入 igp_model 作为模型，它会调用 Probe 提取指令向量
+        # 通过 optimizers 参数传递自定义优化器，避免被覆盖
+        # 使用 IGPColBERTTrainer 确保验证时也使用 IGP 损失
+        trainer = IGPColBERTTrainer(
+            model=igp_model,  # 使用 IGPColBERTWrapper 作为模型
             args=training_args,
             train_dataset=self.train_dataset,
             eval_dataset=self.eval_dataset,
-            loss=igp_loss,
-            data_collator=IGPColBERTCollator(tokenizer=self.base_model.tokenizer, max_query_length=32),
+            loss=igp_loss,  # 传入自定义损失函数
+            data_collator=None,
             callbacks=[early_stopping_callback, loss_tracker_p1, best_model_callback_p1, checkpoint_callback_p1],
+            optimizers=(optimizer, None),  # 传递自定义优化器，scheduler 为 None
         )
-        trainer.optimizer = optimizer
         
         print("📊 开始 Phase 1 训练...")
-        print(f"   基础模型学习率: {self.base_lr * 0.01}")
         print(f"   Probe 学习率: {self.base_lr * 10}")
         print(f"   早停配置: patience=3, threshold=0.25")
         trainer.train()
@@ -1676,22 +2038,32 @@ class IGPTrainer:
             bf16=False,
             logging_steps=10,
             eval_strategy="epoch",
-            save_strategy="epoch",
-            save_total_limit=self.save_total_limit if hasattr(self, 'save_total_limit') and self.save_total_limit else 0,
-            load_best_model_at_end=True,
+            save_strategy="no",  # 禁用自动保存，使用自定义的 EpochCheckpointCallback
+            load_best_model_at_end=False,  # 禁用自动加载最佳模型，避免覆盖训练后的参数
             metric_for_best_model="eval_loss",
             greater_is_better=False,
             warmup_ratio=0.1,
             dataloader_num_workers=4,
+            gradient_accumulation_steps=getattr(self, 'gradient_accumulation_steps', 1),
         )
+        
+        # ========== 创建 IGPColBERTWrapper 作为训练模型 ==========
+        # Phase 1: 只训练 Probe，冻结其他所有参数
+        igp_model = IGPColBERTWrapper(
+            base_model=self.base_model,
+            probe=self.probe,
+            adapter=self.adapter,
+            gate=self.gate,
+        )
+        igp_model.set_phase2_mode()  # 设置 Phase 2 的梯度状态
         
         # 基础损失
         base_loss = losses.Contrastive(model=self.base_model)
         
-        # IGP 损失 (集成 Probe, Adapter, Gate)
+        # IGP 损失 (只负责计算损失，IGP 模块调用在 Model.forward 中)
         igp_loss = IGPLoss(
             base_loss=base_loss,
-            base_model=self.base_model,
+            base_model=igp_model,  # 传入 IGPColBERTWrapper
             probe=self.probe,
             adapter=self.adapter,
             gate=self.gate,
@@ -1701,45 +2073,52 @@ class IGPTrainer:
         # 创建优化器，为门控分配独立学习率
         param_groups = []
         
-        # 基础模型参数 (使用基础学习率)
-        base_params = []
-        for name, param in self.base_model.named_parameters():
-            if param.requires_grad:
-                base_params.append(param)
-        if base_params:
-            param_groups.append({
-                'params': base_params,
-                'lr': self.base_lr,
-            })
-        
+        # 基础模型参数 (冻结，不加入优化器)
         # Probe 参数 (使用基础学习率)
         if self.probe is not None:
-            probe_params = list(self.probe.parameters())
+            probe_params = [p for p in self.probe.parameters() if p.requires_grad]
             if probe_params:
                 param_groups.append({
                     'params': probe_params,
                     'lr': self.base_lr,
                 })
+                print(f"[Phase 2] Probe 参数: {len(probe_params)} 个, lr={self.base_lr}")
         
         # Adapter 参数 (使用基础学习率)
         if self.adapter is not None:
-            adapter_params = list(self.adapter.parameters())
+            adapter_params = [p for p in self.adapter.parameters() if p.requires_grad]
             if adapter_params:
                 param_groups.append({
                     'params': adapter_params,
                     'lr': self.base_lr,
                 })
+                print(f"[Phase 2] Adapter 参数: {len(adapter_params)} 个, lr={self.base_lr}")
         
         # Gate 参数 (使用大学习率)
         if self.gate is not None:
-            gate_params = list(self.gate.parameters())
+            gate_params = [p for p in self.gate.parameters() if p.requires_grad]
             if gate_params:
                 param_groups.append({
                     'params': gate_params,
                     'lr': self.gate_lr,  # 大学习率，确保门控能被激活
                 })
+                print(f"[Phase 2] Gate 参数: {len(gate_params)} 个, lr={self.gate_lr}")
+        
+        if not param_groups:
+            raise ValueError("Phase 2: 没有可训练的参数！")
         
         optimizer = torch.optim.AdamW(param_groups)
+        
+        # 创建学习率调度器 (warmup + cosine decay)
+        from transformers import get_cosine_schedule_with_warmup
+        num_training_steps = len(self.train_dataset) // self.batch_size * self.phase2_epochs
+        num_warmup_steps = int(num_training_steps * 0.1)  # 10% warmup
+        scheduler = get_cosine_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=num_warmup_steps,
+            num_training_steps=num_training_steps,
+        )
+        print(f"[Phase 2] 学习率调度器: warmup_steps={num_warmup_steps}, total_steps={num_training_steps}")
         
         # 创建 Phase 2 输出目录
         phase2_output_dir = os.path.join(self.output_dir, "phase2")
@@ -1757,16 +2136,19 @@ class IGPTrainer:
         )
         
         # 创建训练器
-        trainer = SentenceTransformerTrainer(
-            model=self.base_model,
+        # 注意：传入 igp_model 作为模型，它会调用 IGP 模块
+        # 通过 optimizers 参数传递自定义优化器，避免被覆盖
+        # 使用 IGPColBERTTrainer 确保验证时也使用 IGP 损失
+        trainer = IGPColBERTTrainer(
+            model=igp_model,  # 使用 IGPColBERTWrapper 作为模型
             args=training_args,
             train_dataset=self.train_dataset,
             eval_dataset=self.eval_dataset,
-            loss=igp_loss,
-            data_collator=IGPColBERTCollator(tokenizer=self.base_model.tokenizer, max_query_length=32),
+            loss=igp_loss,  # 传入自定义损失函数
+            data_collator=None,
             callbacks=[loss_tracker_p2, best_model_callback_p2, phase2_early_stopping, checkpoint_callback_p2],
+            optimizers=(optimizer, scheduler),  # 传递自定义优化器和调度器
         )
-        trainer.optimizer = optimizer
         
         print(f"📊 开始 Phase 2 训练...")
         print(f"   基础模型学习率: {self.base_lr}")
@@ -1810,15 +2192,11 @@ class IGPTrainer:
         
         # Phase 2 独立训练模式验证
         if not self.enable_phase1 and self.enable_phase2:
-            print("\n⚠️ Phase 2 独立训练模式")
-            if not self.phase1_checkpoint:
-                print("\n" + "=" * 60)
-                print("❌ 错误: Phase 2 独立训练需要指定 Phase 1 检查点路径")
-                print("=" * 60)
-                print("请使用 --phase1_checkpoint 参数指定 Phase 1 的检查点路径")
-                print("例如: --phase1_checkpoint /path/to/phase1/checkpoint-N")
-                raise ValueError("Phase 2 独立训练需要 Phase 1 检查点")
-            print(f"✅ Phase 1 检查点已指定: {self.phase1_checkpoint}")
+            print("\n⚠️ Phase 2 独立训练模式 (跳过 Phase 1)")
+            if self.phase1_checkpoint:
+                print(f"✅ Phase 1 检查点已指定: {self.phase1_checkpoint}")
+            else:
+                print("   将使用随机初始化的 IGP 模块")
         
         # 当启用 Phase2 且跳过 Phase1 时，需要先加载模型
         if self.enable_phase2 and not self.enable_phase1 and self.phase1_checkpoint:
@@ -2055,13 +2433,16 @@ def load_followir_train_data(data_path):
                 for pos_doc in positives:
                     for neg_doc in negatives:
                         data_list.append({
-                            'query': query,
-                            'document': pos_doc,
+                            'anchor': query,
+                            'positive': pos_doc,
                             'negative': neg_doc,
                         })
     
     print(f"✅ 加载了 {len(data_list)} 个训练样本")
-    return Dataset.from_list(data_list)
+    dataset = Dataset.from_list(data_list)
+    # 确保列顺序符合预期: anchor, positive, negative
+    dataset = dataset.select_columns(['anchor', 'positive', 'negative'])
+    return dataset
 
 
 def main():
@@ -2087,6 +2468,8 @@ def main():
                         help='Phase 2 训练轮数')
     parser.add_argument('--batch_size', type=int, default=16,
                         help='批次大小')
+    parser.add_argument('--gradient_accumulation_steps', type=int, default=1,
+                        help='梯度累积步数 (等效batch size = batch_size * gradient_accumulation_steps)')
     parser.add_argument('--eval_ratio', type=float, default=0.1,
                         help='验证集比例')
     parser.add_argument('--base_lr', type=float, default=1e-5,
@@ -2146,7 +2529,10 @@ def main():
         args.save_total_limit = max(total_epochs, 3)  # 至少保留3个
     
     # 设置设备
+    # 注意：如果已经通过环境变量设置了 CUDA_VISIBLE_DEVICES，这里会覆盖它
     os.environ['CUDA_VISIBLE_DEVICES'] = args.device.split(':')[-1]
+    # 内部统一使用 cuda:0
+    args.device = 'cuda:0'
     
     # 创建输出目录 - 直接使用用户指定的路径
     output_dir = args.output_dir
@@ -2230,6 +2616,7 @@ def main():
         phase1_checkpoint=args.phase1_checkpoint,
         phase2_checkpoint=args.phase2_checkpoint,
         log_interval=args.log_interval,
+        gradient_accumulation_steps=args.gradient_accumulation_steps,
     )
     
     trainer.train()

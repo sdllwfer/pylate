@@ -14,6 +14,7 @@ Phase 2 (Joint Training):
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from typing import Optional, Dict, Any, Tuple, Iterable
 
 
@@ -142,27 +143,30 @@ class IGPAdapterLoss:
 
 class IGPLoss(nn.Module):
     """
-    IGP 组合损失
+    IGP 损失函数
     
-    集成 Probe、Adapter、Gate 到对比损失计算中。
+    负责计算对比损失 (Ranking Loss) 和辅助损失 (Aux Loss)。
+    
+    注意: IGP 模块 (Probe/Adapter/Gate) 的调用已移到 Model.forward() 中，
+    这里只负责从模型输出中提取结果并计算损失。
     
     流程:
-        1. 获取 query_embeddings
-        2. Probe 生成 instruction_vector
-        3. Adapter 注入指令知识
-        4. Gate 融合原始和增强表示
-        5. 使用增强后的 embeddings 计算对比损失
-        6. 计算 Aux Loss (仅当 instruction_mask 可用)
+        1. 从 base_model (IGPColBERTWrapper) 获取增强后的 embeddings
+        2. 计算对比损失 (Ranking Loss)
+        3. 计算辅助损失 (Aux Loss，如果提供了 attn_logits)
+        4. 计算正则化损失 (Reg Loss，如果提供了 delta)
+        5. 返回总损失
     """
     
     def __init__(
         self,
         base_loss: nn.Module,
         base_model: nn.Module,
-        probe,
-        adapter,
-        gate,
+        probe=None,
+        adapter=None,
+        gate=None,
         aux_loss_weight: float = 0.1,
+        reg_coeff: float = 0.05,
     ):
         super().__init__()
         self.base_loss = base_loss
@@ -171,114 +175,173 @@ class IGPLoss(nn.Module):
         self.adapter = adapter
         self.gate = gate
         self.aux_loss_weight = aux_loss_weight
+        self.reg_coeff = reg_coeff
         self.aux_loss_fn = IGPAuxLoss()
+        self.rank_loss_fn = nn.CrossEntropyLoss()
+        self.temperature = 0.05  # ColBERT 通常使用更小的温度
     
     def forward(
         self,
         sentence_features: Iterable[dict[str, torch.Tensor]],
         labels: Optional[torch.Tensor] = None,
-    ) -> Tuple[torch.Tensor, Dict[str, Any]]:
+    ) -> torch.Tensor:
         """
         IGP 损失前向传播
         
         Args:
-            sentence_features: [query_features, positive_features, negative_features]
-            labels: 标签
+            sentence_features: 输入特征列表 [query, positive, negative]
             
         Returns:
-            (total_loss, info_dict)
+            total_loss: 总损失 (rank_loss + aux_loss + reg_loss)
         """
-        query_features = sentence_features[0]
-        positive_features = sentence_features[1]
-        negative_features = sentence_features[2]
+        if isinstance(sentence_features, dict):
+            # 处理字典格式（来自 collator）
+            query_features = {
+                'input_ids': sentence_features.get('sentence_0_input_ids'),
+                'attention_mask': sentence_features.get('sentence_0_attention_mask'),
+                'token_labels': sentence_features.get('sentence_0_token_labels'),
+                'instruction_mask': sentence_features.get('sentence_0_instruction_mask'),
+            }
+            positive_features = {
+                'input_ids': sentence_features.get('sentence_1_input_ids'),
+                'attention_mask': sentence_features.get('sentence_1_attention_mask'),
+            }
+            negative_features = {
+                'input_ids': sentence_features.get('sentence_2_input_ids'),
+                'attention_mask': sentence_features.get('sentence_2_attention_mask'),
+            }
+        elif isinstance(sentence_features, (list, tuple)) and len(sentence_features) >= 3:
+            # 处理列表格式（来自 collect_features）
+            # features[0] = query, features[1] = positive, features[2] = negative
+            query_features = sentence_features[0]
+            positive_features = sentence_features[1]
+            negative_features = sentence_features[2]
+        else:
+            raise ValueError(f"Unsupported sentence_features type: {type(sentence_features)}")
         
-        query_embeddings = self._get_embeddings(query_features)
+        query_attention_mask = query_features.get('attention_mask')
+        # token_labels 用于标识 instruction 部分 (1=instruction, 0=query)
+        instruction_mask = query_features.get('token_labels')
+        
+        # ========== 1. 调用 base_model (IGPColBERTWrapper) 获取增强后的 embeddings ==========
+        # base_model 的 forward 已经应用了 Probe/Adapter/Gate
+        query_result = self.base_model(
+            query_input_ids=query_features.get('input_ids'),
+            query_attention_mask=query_attention_mask,
+            instruction_mask=instruction_mask,
+        )
+        
+        # 从结果中提取增强后的 embeddings 和辅助信息
+        query_embeddings = query_result['token_embeddings']  # 已经应用了 IGP 模块
+        attn_logits = query_result.get('attn_logits')  # 用于 aux_loss
+        gate_ratio = query_result.get('gate_ratio', 0.0)  # 用于日志
+        
+        # 获取正负样本 embeddings (不使用 IGP，直接走 base_model[0])
         positive_embeddings = self._get_embeddings(positive_features)
         negative_embeddings = self._get_embeddings(negative_features)
         
-        token_labels = query_features.get('token_labels')
-        query_attention_mask = query_features.get('attention_mask')
+        # ========== 2. 计算对比损失 (Ranking Loss) ==========
+        # 使用 ColBERT 的 Late Interaction (MaxSim) 机制
+        # 归一化
+        query_embeddings = F.normalize(query_embeddings, p=2, dim=-1)
+        positive_embeddings = F.normalize(positive_embeddings, p=2, dim=-1)
+        negative_embeddings = F.normalize(negative_embeddings, p=2, dim=-1)
         
-        inst_vec = None
-        attn_logits = None
-        attn_weights = None
-        gate_ratio = None
-        adapter_output = None
+        # ColBERT Late Interaction: 对每个 query token，找到最相似的 doc token
+        # 然后求和得到最终分数
+        def colbert_score(Q, D):
+            # Q: [batch, q_len, dim], D: [batch, d_len, dim]
+            # 计算所有 query-doc token 对的相似度
+            sim = torch.matmul(Q, D.transpose(-2, -1))  # [batch, q_len, d_len]
+            # 对每个 query token，取最大相似度
+            max_sim = sim.max(dim=-1)[0]  # [batch, q_len]
+            # 求和得到最终分数
+            return max_sim.sum(dim=-1)  # [batch]
         
-        instruction_mask = query_features.get('instruction_mask')
+        # 计算正负样本分数
+        pos_score = colbert_score(query_embeddings, positive_embeddings)
+        neg_score = colbert_score(query_embeddings, negative_embeddings)
         
-        if self.probe is not None:
-            inst_vec, attn_logits, attn_weights = self.probe(
-                query_embeddings,
-                query_attention_mask
-            )
+        # 拼接分数用于 CrossEntropy
+        scores = torch.stack([pos_score, neg_score], dim=-1)  # [batch, 2]
         
-        if self.adapter is not None and inst_vec is not None:
-            adapter_output = self.adapter(
-                query_embeddings,
-                instruction_vector=inst_vec
-            )
-            enhanced_embeddings = adapter_output
-        else:
-            enhanced_embeddings = query_embeddings
+        # CrossEntropy Loss (正样本的 label 是 0)
+        rank_labels = torch.zeros(scores.size(0), dtype=torch.long, device=scores.device)
+        rank_loss = F.cross_entropy(scores / self.temperature, rank_labels)
         
-        if self.gate is not None and inst_vec is not None:
-            fused_embeddings, gate_ratio = self.gate(
-                original_vec=query_embeddings,
-                instruction_vec=inst_vec.unsqueeze(1).expand(-1, query_embeddings.size(1), -1) if inst_vec.dim() == 2 else inst_vec
-            )
-            final_embeddings = fused_embeddings
-        else:
-            final_embeddings = enhanced_embeddings
-        
-        final_embeddings = torch.nn.functional.normalize(final_embeddings, p=2, dim=-1)
-        positive_embeddings = torch.nn.functional.normalize(positive_embeddings, p=2, dim=-1)
-        negative_embeddings = torch.nn.functional.normalize(negative_embeddings, p=2, dim=-1)
-        
-        sentence_features_enhanced = [
-            {'token_embeddings': final_embeddings, 'attention_mask': query_attention_mask},
-            {'token_embeddings': positive_embeddings, 'attention_mask': positive_features.get('attention_mask')},
-            {'token_embeddings': negative_embeddings, 'attention_mask': negative_features.get('attention_mask')},
-        ]
-        
-        rank_loss = self.base_loss.base_loss.compute_score(
-            sentence_features_enhanced,
-            temperature=self.base_loss.temperature if hasattr(self.base_loss, 'temperature') else 1.0,
-        )
-        
-        if hasattr(self.base_loss, 'gather_across_devices') and self.base_loss.gather_across_devices:
-            batch_size = final_embeddings.size(0)
-            rank_loss = rank_loss.view(batch_size, -1).mean(-1)
-        
-        if rank_loss.dim() > 0:
-            rank_loss = rank_loss.mean()
-        
+        # ========== 3. 计算辅助损失 (Aux Loss) ==========
+        # 如果 aux_loss_weight 为 0，跳过 Aux Loss 计算
         aux_loss = torch.tensor(0.0, device=rank_loss.device)
-        if attn_logits is not None and instruction_mask is not None and query_attention_mask is not None:
-            aux_loss = self.aux_loss_fn.compute(
-                attn_logits,
-                instruction_mask,
-                query_attention_mask
-            )
+        inst_vec = query_result.get('inst_vec')
         
-        total_loss = rank_loss + aux_loss * self.aux_loss_weight
+        if self.aux_loss_weight > 0:
+            aux_loss = torch.tensor(0.0, device=rank_loss.device, requires_grad=True)
+            
+            if attn_logits is not None and instruction_mask is not None and query_attention_mask is not None:
+                # 对齐 mask 长度
+                seq_len = attn_logits.shape[1]
+                if instruction_mask.shape[1] > seq_len:
+                    target_mask = instruction_mask[:, 1:1+seq_len]
+                else:
+                    target_mask = instruction_mask[:, :seq_len]
+                target_mask = target_mask[:, :seq_len].float()
+                
+                aux_loss = self.aux_loss_fn.compute(
+                    attn_logits,
+                    target_mask,
+                    query_attention_mask
+                )
         
-        info = {
-            'rank_loss': rank_loss.item() if torch.is_tensor(rank_loss) else rank_loss,
-            'aux_loss': aux_loss.item() if torch.is_tensor(aux_loss) else aux_loss,
-            'total_loss': total_loss.item() if torch.is_tensor(total_loss) else total_loss,
-            'gate_ratio': gate_ratio.item() if gate_ratio is not None and torch.is_tensor(gate_ratio) else (gate_ratio if gate_ratio else 0),
-            'inst_vec_mean': inst_vec.mean().item() if inst_vec is not None and torch.is_tensor(inst_vec) else 0,
-            'attn_weights_mean': attn_weights.mean().item() if attn_weights is not None and torch.is_tensor(attn_weights) else 0,
+        # ========== 4. 计算正则化损失 (Reg Loss) ==========
+        # 约束 delta 范数，防止数值爆炸
+        reg_loss = torch.tensor(0.0, device=rank_loss.device, requires_grad=True)
+        # 注意: delta 的计算在 Model.forward 中，这里可以通过梯度惩罚实现
+        # 或者通过 L2 正则化约束 query_embeddings 的变化
+        
+        # ========== 5. 计算总损失 ==========
+        # 添加虚拟损失确保梯度流动到 IGP 模块
+        # 无论 aux_loss_weight 是否为 0，都需要确保梯度能够流动
+        dummy_loss = torch.tensor(0.0, device=rank_loss.device)
+        if inst_vec is not None:
+            dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
+        
+        # 添加 gate_ratio 的虚拟损失（确保 Gate 模块的梯度流动）
+        if gate_ratio is not None and isinstance(gate_ratio, torch.Tensor):
+            gate_dummy = gate_ratio * 0.01
+        else:
+            gate_dummy = torch.tensor(0.0, device=rank_loss.device)
+        
+        total_loss = rank_loss + aux_loss * self.aux_loss_weight + reg_loss * self.reg_coeff + dummy_loss + gate_dummy
+        
+        # 保存各项损失用于日志
+        # 将 gate_ratio 转换为 float（如果是 tensor）
+        gate_ratio_val = gate_ratio.item() if isinstance(gate_ratio, torch.Tensor) else gate_ratio
+        self._last_losses = {
+            'rank_loss': rank_loss.item(),
+            'aux_loss': aux_loss.item(),
+            'reg_loss': reg_loss.item(),
+            'gate_ratio': gate_ratio_val,
+            'total_loss': total_loss.item(),
         }
         
-        return total_loss, info
+        return total_loss
     
     def _get_embeddings(self, features: dict[str, torch.Tensor]) -> torch.Tensor:
-        """获取 embeddings"""
-        result = self.base_model(features)
-        embeddings = result["token_embeddings"]
-        return embeddings
+        """获取 embeddings (不使用 IGP，直接走 base_model[0] 并投影到 128 维)"""
+        # 对于正负样本，不使用 IGP 模块，直接获取 embeddings
+        result = self.base_model.base_model[0](features)
+        embeddings = result["token_embeddings"]  # 768维
+        
+        # 投影到 128 维 (使用 base_model[1] - Dense 层)
+        features_dict = {"token_embeddings": embeddings}
+        projected = self.base_model.base_model[1](features_dict)
+        embeddings_128 = projected["token_embeddings"]
+        
+        return embeddings_128
+    
+    def get_last_losses(self) -> dict:
+        """获取上一次前向传播的各项损失值"""
+        return getattr(self, '_last_losses', {})
 
 
 class IGPLossPhase1(nn.Module):
@@ -287,6 +350,9 @@ class IGPLossPhase1(nn.Module):
     
     仅训练 Probe 识别指令的能力，不进行对比学习。
     冻结其他所有参数。
+    
+    注意: 使用 IGPColBERTWrapper 作为 base_model，
+    Probe 的调用在 Model.forward 中完成。
     """
     
     def __init__(
@@ -296,7 +362,7 @@ class IGPLossPhase1(nn.Module):
         aux_loss_weight: float = 1.0,
     ):
         super().__init__()
-        self.base_model = base_model
+        self.base_model = base_model  # IGPColBERTWrapper
         self.probe = probe
         self.aux_loss_weight = aux_loss_weight
         self.aux_loss_fn = IGPAuxLoss()
@@ -305,22 +371,28 @@ class IGPLossPhase1(nn.Module):
         self,
         sentence_features: Iterable[dict[str, torch.Tensor]],
         labels: Optional[torch.Tensor] = None,
-    ) -> Tuple[torch.Tensor, Dict[str, Any]]:
+    ) -> torch.Tensor:
         """
         Phase 1 前向传播
         
         Args:
-            sentence_features: ColBERT 输出的特征列表
+            sentence_features: 输入特征列表
             labels: 标签 (不使用)
             
         Returns:
-            (loss, info_dict)
+            total_loss: 辅助损失
         """
-        query_features = sentence_features[0]
+        if isinstance(sentence_features, dict):
+            query_features = {
+                'input_ids': sentence_features.get('input_ids'),
+                'attention_mask': sentence_features.get('attention_mask'),
+                'token_labels': sentence_features.get('token_labels'),
+                'instruction_mask': sentence_features.get('instruction_mask'),
+            }
+        else:
+            query_features = sentence_features[0]
         
-        query_embeddings = self.base_model(query_features)["token_embeddings"]
         query_attention_mask = query_features.get('attention_mask')
-        
         instruction_mask = query_features.get('instruction_mask')
         
         if instruction_mask is None:
@@ -329,50 +401,53 @@ class IGPLossPhase1(nn.Module):
         if instruction_mask is None:
             instruction_mask = query_features.get('labels')
         
-        if instruction_mask is None:
-            input_ids = query_features.get('input_ids')
-            if input_ids is not None and query_attention_mask is not None:
-                batch_size, seq_len = input_ids.shape
-                sep_id = self.base_model.tokenizer.sep_token_id
-                
-                instruction_mask = torch.zeros(batch_size, seq_len, dtype=torch.float, device=input_ids.device)
-                
-                for i in range(batch_size):
-                    sep_positions = (input_ids[i] == sep_id).nonzero(as_tuple=True)[0]
-                    
-                    if len(sep_positions) > 0:
-                        first_sep = sep_positions[0].item()
-                        instruction_mask[i, first_sep + 1:] = 1.0
-        
-        # 确保 query_embeddings 参与梯度计算
-        query_embeddings = query_embeddings.float()
-        
-        inst_vec, attn_logits, attn_weights = self.probe(
-            query_embeddings,
-            query_attention_mask
+        # 调用 base_model (IGPColBERTWrapper) 获取结果
+        # 它会调用 Probe 提取指令向量
+        result = self.base_model(
+            query_input_ids=query_features.get('input_ids'),
+            query_attention_mask=query_attention_mask,
+            instruction_mask=instruction_mask,
         )
         
-        if instruction_mask is not None and query_attention_mask is not None:
+        # 从结果中提取 attn_logits (用于 aux_loss)
+        attn_logits = result.get('attn_logits')
+        
+        # 计算辅助损失
+        device = query_attention_mask.device if query_attention_mask is not None else torch.device('cpu')
+        
+        # 如果 aux_loss_weight 为 0，返回 0 损失（不训练 Probe）
+        if self.aux_loss_weight <= 0:
+            return torch.tensor(0.0, device=device, requires_grad=True)
+        
+        aux_loss = torch.tensor(0.0, device=device, requires_grad=True)
+        
+        # 获取 inst_vec 用于虚拟损失（确保梯度流动）
+        inst_vec = result.get('inst_vec')
+        
+        if attn_logits is not None and instruction_mask is not None and query_attention_mask is not None:
+            # 对齐 mask 长度
+            seq_len = attn_logits.shape[1]
+            if instruction_mask.shape[1] > seq_len:
+                target_mask = instruction_mask[:, 1:1+seq_len]
+            else:
+                target_mask = instruction_mask[:, :seq_len]
+            target_mask = target_mask[:, :seq_len].float()
+            
             aux_loss = self.aux_loss_fn.compute(
-                attn_logits, 
-                instruction_mask, 
+                attn_logits,
+                target_mask,
                 query_attention_mask
             )
+        
+        # 确保损失连接到计算图（即使 aux_loss 为 0）
+        # 使用 inst_vec 的 L2 范数作为虚拟损失，确保 probe 有梯度
+        if inst_vec is not None:
+            dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
+            total_loss = (aux_loss + dummy_loss) * self.aux_loss_weight
         else:
-            aux_loss = torch.tensor(0.0, device=query_embeddings.device, requires_grad=True)
+            total_loss = aux_loss * self.aux_loss_weight
         
-        aux_loss_weight = torch.tensor(self.aux_loss_weight, device=aux_loss.device, dtype=aux_loss.dtype)
-        total_loss = aux_loss * aux_loss_weight
-        
-        info = {
-            'aux_loss': aux_loss.item() if torch.is_tensor(aux_loss) else aux_loss,
-            'inst_vec_mean': inst_vec.mean().item() if torch.is_tensor(inst_vec) else 0,
-            'attn_weights_mean': attn_weights.mean().item() if torch.is_tensor(attn_weights) else 0,
-            'attn_weights_max': attn_weights.max().item() if torch.is_tensor(attn_weights) else 0,
-            'attn_weights_min': attn_weights.min().item() if torch.is_tensor(attn_weights) else 0,
-        }
-        
-        return total_loss, info
+        return total_loss
 
 
 class IGPLossPhase2(nn.Module):
@@ -400,6 +475,7 @@ class IGPLossPhase2(nn.Module):
         self.gate = gate
         self.aux_loss_weight = aux_loss_weight
         self.aux_loss_fn = IGPAuxLoss()
+        self.temperature = 0.1
     
     def forward(
         self,
@@ -460,23 +536,17 @@ class IGPLossPhase2(nn.Module):
         positive_embeddings = torch.nn.functional.normalize(positive_embeddings, p=2, dim=-1)
         negative_embeddings = torch.nn.functional.normalize(negative_embeddings, p=2, dim=-1)
         
-        sentence_features_enhanced = [
-            {'token_embeddings': final_embeddings, 'attention_mask': query_attention_mask},
-            {'token_embeddings': positive_embeddings, 'attention_mask': positive_features.get('attention_mask')},
-            {'token_embeddings': negative_embeddings, 'attention_mask': negative_features.get('attention_mask')},
-        ]
+        query_emb = final_embeddings.mean(dim=1)
+        pos_emb = positive_embeddings.mean(dim=1)
+        neg_emb = negative_embeddings.mean(dim=1)
         
-        rank_loss = self.base_loss.base_loss.compute_score(
-            sentence_features_enhanced,
-            temperature=self.base_loss.temperature if hasattr(self.base_loss, 'temperature') else 1.0,
-        )
+        scores = torch.cat([
+            torch.sum(query_emb * pos_emb, dim=-1, keepdim=True),
+            torch.sum(query_emb * neg_emb, dim=-1, keepdim=True),
+        ], dim=-1)
         
-        if hasattr(self.base_loss, 'gather_across_devices') and self.base_loss.gather_across_devices:
-            batch_size = final_embeddings.size(0)
-            rank_loss = rank_loss.view(batch_size, -1).mean(-1)
-        
-        if rank_loss.dim() > 0:
-            rank_loss = rank_loss.mean()
+        labels = torch.zeros(scores.size(0), dtype=torch.long, device=scores.device)
+        rank_loss = F.cross_entropy(scores / self.temperature, labels)
         
         if instruction_mask is not None and query_attention_mask is not None:
             aux_loss = self.aux_loss_fn.compute(
@@ -489,16 +559,7 @@ class IGPLossPhase2(nn.Module):
         
         total_loss = rank_loss + aux_loss * self.aux_loss_weight
         
-        info = {
-            'rank_loss': rank_loss.item() if torch.is_tensor(rank_loss) else rank_loss,
-            'aux_loss': aux_loss.item() if torch.is_tensor(aux_loss) else aux_loss,
-            'total_loss': total_loss.item() if torch.is_tensor(total_loss) else total_loss,
-            'gate_ratio': gate_ratio.item() if gate_ratio is not None and torch.is_tensor(gate_ratio) else (gate_ratio if gate_ratio else 0),
-            'inst_vec_mean': inst_vec.mean().item() if torch.is_tensor(inst_vec) else 0,
-            'attn_weights_mean': attn_weights.mean().item() if torch.is_tensor(attn_weights) else 0,
-        }
-        
-        return total_loss, info
+        return total_loss
 
 
 class IGPLossSimple(nn.Module):

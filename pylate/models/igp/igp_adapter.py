@@ -39,12 +39,12 @@ class IGPAdapter(nn.Module):
         self.hidden_size = hidden_size
         self.bottleneck_dim = bottleneck_dim
         
-        # 如果没有指定 input_dim，默认是 hidden_size (用于残差连接模式)
-        # 如果指定了 input_dim，使用 input_dim * 2 (用于 [Query, Inst] 拼接模式)
+        # 如果没有指定 input_dim，默认是 hidden_size
+        # 如果指定了 input_dim，使用 input_dim (用于 [Query, Inst] 拼接后的维度)
         effective_input_dim = input_dim if input_dim is not None else hidden_size
         
-        # 下投影层: input_dim * 2 -> bottleneck_dim (支持 [Query, Inst] 拼接)
-        self.down_project = nn.Linear(effective_input_dim * 2, bottleneck_dim)
+        # 下投影层: input_dim -> bottleneck_dim
+        self.down_project = nn.Linear(effective_input_dim, bottleneck_dim)
         
         # 上投影层: bottleneck_dim -> hidden_size
         self.up_project = nn.Linear(bottleneck_dim, hidden_size)
@@ -72,6 +72,7 @@ class IGPAdapter(nn.Module):
         self,
         hidden_states: torch.Tensor,
         instruction_vector: Optional[torch.Tensor] = None,
+        concat_dim: str = "hidden",  # "hidden" 或 "seq"
     ) -> Tuple[torch.Tensor, torch.Tensor]:
         """
         前向传播
@@ -83,6 +84,8 @@ class IGPAdapter(nn.Module):
         参数:
             hidden_states: 隐藏状态 [batch_size, seq_len, hidden_size]
             instruction_vector: 指令向量 [batch_size, hidden_size]，可选
+            concat_dim: 拼接维度，"hidden" 表示在 hidden 维度拼接（每个 token 都能看到指令），
+                       "seq" 表示在 seq_len 维度拼接（只有最后一个位置能看到指令）
         
         返回:
             output: 输出 [batch_size, seq_len, hidden_size]
@@ -93,11 +96,19 @@ class IGPAdapter(nn.Module):
         
         # 如果提供了指令向量，按照方案拼接 [Query, Inst]
         if instruction_vector is not None:
-            # 扩展指令向量到序列维度
-            # [batch_size, hidden_size] -> [batch_size, 1, hidden_size]
-            inst_vec_expanded = instruction_vector.unsqueeze(1)
-            # 拼接: [batch_size, seq_len+1, hidden_size]
-            combined = torch.cat([hidden_states, inst_vec_expanded], dim=1)
+            if concat_dim == "seq":
+                # 方式1: 在 seq_len 维度拼接
+                # [batch_size, hidden_size] -> [batch_size, 1, hidden_size]
+                inst_vec_expanded = instruction_vector.unsqueeze(1)
+                # 拼接: [batch_size, seq_len+1, hidden_size]
+                combined = torch.cat([hidden_states, inst_vec_expanded], dim=1)
+            else:  # concat_dim == "hidden"
+                # 方式2: 在 hidden 维度拼接（推荐）
+                # 每个 token 都能看到完整的指令向量
+                # [batch_size, hidden_size] -> [batch_size, seq_len, hidden_size]
+                inst_vec_expanded = instruction_vector.unsqueeze(1).expand(-1, hidden_states.size(1), -1)
+                # 拼接: [batch_size, seq_len, hidden_size*2]
+                combined = torch.cat([hidden_states, inst_vec_expanded], dim=-1)
         else:
             combined = hidden_states
         
@@ -106,18 +117,20 @@ class IGPAdapter(nn.Module):
         combined_bottleneck = self.activation(combined_bottleneck)
         combined_bottleneck = self.dropout(combined_bottleneck)
         
-        # 上投影 (只取前 seq_len 个位置)
+        # 上投影
         combined_output = self.up_project(combined_bottleneck)
         combined_output = self.dropout(combined_output)
         
-        # 只取原始序列长度的输出
-        output = combined_output[:, :hidden_states.size(1), :]
-        
-        # 计算 delta（偏移向量）
-        delta = output - residual
+        # 如果在 seq_len 维度拼接，只取前 seq_len 个位置
+        if instruction_vector is not None and concat_dim == "seq":
+            combined_output = combined_output[:, :hidden_states.size(1), :]
         
         # LayerNorm 和残差连接
-        output = self.layer_norm(output + residual)
+        output = self.layer_norm(combined_output + residual)
+        
+        # 计算 delta（偏移向量）- 使用经过 layer_norm 的 output
+        # 这样 delta 的梯度可以流动到 layer_norm 的参数
+        delta = output - residual
         
         return output, delta
 

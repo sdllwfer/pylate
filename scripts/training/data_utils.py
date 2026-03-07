@@ -60,6 +60,11 @@ class IGPColBERTCollator:
             query_text = item.get('query', '')
             instruction_text = item.get('instruction', '')
             
+            # 端到端训练：不分割 query，保持完整查询
+            # Probe 模块需要自己学习识别指令部分
+            # 如果没有单独的 instruction 字段，保持 token_labels 全为 0
+            # 模型需要自己学习哪些 token 是指令
+            
             q_tokens = self.tokenizer.encode(query_text, add_special_tokens=False)
             
             i_tokens = []
@@ -101,16 +106,18 @@ class IGPColBERTCollator:
         pos_tokens = self.tokenizer(positives, padding=True, truncation=True, max_length=512, return_tensors='pt')
         neg_tokens = self.tokenizer(negatives, padding=True, truncation=True, max_length=512, return_tensors='pt')
         
+        # 使用 SentenceTransformerTrainer 期望的格式
+        # sentence_0 = query (with instruction), sentence_1 = positive, sentence_2 = negative
         batch = {
-            'input_ids': padded_q_ids,
-            'attention_mask': padded_q_attn,
-            'labels': padded_q_labels_expanded,
+            'sentence_0_input_ids': padded_q_ids,
+            'sentence_0_attention_mask': padded_q_attn,
+            'sentence_0_token_labels': padded_q_labels_expanded,
             
-            'positive_input_ids': pos_tokens['input_ids'],
-            'positive_attention_mask': pos_tokens['attention_mask'],
+            'sentence_1_input_ids': pos_tokens['input_ids'],
+            'sentence_1_attention_mask': pos_tokens['attention_mask'],
             
-            'negative_input_ids': neg_tokens['input_ids'],
-            'negative_attention_mask': neg_tokens['attention_mask'],
+            'sentence_2_input_ids': neg_tokens['input_ids'],
+            'sentence_2_attention_mask': neg_tokens['attention_mask'],
         }
         
         return batch
@@ -226,16 +233,18 @@ class DataLoader:
                 for pos in positives:
                     for neg in negatives:
                         expanded.append({
-                            'query': query,
-                            'instruction': instruction,
-                            'instruction_substring': instruction_substring,
+                            'anchor': query,
                             'positive': pos,
                             'negative': neg,
+                            'instruction': instruction,
+                            'instruction_substring': instruction_substring,
                         })
             
             data = expanded
         
         dataset = Dataset.from_list(data)
+        # 确保列顺序符合预期: anchor, positive, negative
+        dataset = dataset.select_columns(['anchor', 'positive', 'negative', 'instruction', 'instruction_substring'])
         
         stats = {
             'total_raw': len(data),

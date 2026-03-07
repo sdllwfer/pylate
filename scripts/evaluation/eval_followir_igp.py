@@ -7,8 +7,8 @@ ColBERT-IGP 评测脚本
 import os
 
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
-os.environ["HF_HUB_OFFLINE"] = "1"
-os.environ["HF_DATASETS_OFFLINE"] = "1"
+# os.environ["HF_HUB_OFFLINE"] = "1"
+# os.environ["HF_DATASETS_OFFLINE"] = "1"
 
 import sys
 
@@ -42,7 +42,11 @@ def load_igp_model(model_path: str, device: str = "cuda"):
     import time
     start = time.time()
 
-    model = models.ColBERT(model_name_or_path=model_path, device=device)
+    base_model = models.ColBERT(model_name_or_path=model_path, device=device)
+    
+    igp_probe = None
+    igp_adapter = None
+    igp_gate = None
 
     igp_info_path = os.path.join(model_path, "igp_info.json")
     if os.path.exists(igp_info_path):
@@ -53,38 +57,79 @@ def load_igp_model(model_path: str, device: str = "cuda"):
         modules = igp_info.get('modules', {})
         config = igp_info.get('config', {})
 
-        hidden_size = model[0].get_word_embedding_dimension()
+        # 获取实际的 embedding 维度
+        # 注意: IGP 模块在 768 维空间操作 (underlying_hidden_size)
+        underlying_hidden_size = base_model[0].get_word_embedding_dimension()
+        if hasattr(base_model[1], 'out_features'):
+            embedding_size = base_model[1].out_features
+        else:
+            embedding_size = underlying_hidden_size
+        
+        # IGP 模块使用 underlying_hidden_size (768)
+        igp_hidden_size = underlying_hidden_size
+        print(f"   底层编码器 hidden_size: {underlying_hidden_size}")
+        print(f"   实际输出 embedding_size: {embedding_size}")
+        print(f"   ⚠️ IGP 模块使用 underlying_hidden_size ({igp_hidden_size})")
 
         if 'probe' in modules and config.get('enable_probe'):
             probe_path = os.path.join(model_path, modules['probe'])
             if os.path.exists(probe_path):
                 from pylate.models.igp.instruction_probe import InstructionProbe
-                probe = InstructionProbe(hidden_size=hidden_size, num_heads=8, dropout=0.1)
-                probe.load_state_dict(torch.load(probe_path, map_location=device))
-                model.probe = probe
-                print(f"   ✅ Probe 参数已加载")
+                try:
+                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
+                    igp_probe.load_state_dict(torch.load(probe_path, map_location=device))
+                    print(f"   ✅ Probe 参数已加载 (hidden_size={igp_hidden_size})")
+                except RuntimeError as e:
+                    print(f"   ⚠️ Probe 参数加载失败 (维度不匹配): {e}")
+                    print(f"   ℹ️ 将使用随机初始化的 Probe")
+                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
 
         if 'adapter' in modules and config.get('enable_adapter'):
             adapter_path = os.path.join(model_path, modules['adapter'])
             if os.path.exists(adapter_path):
                 from pylate.models.igp.igp_adapter import IGPAdapter
-                adapter = IGPAdapter(hidden_size=hidden_size, bottleneck_dim=128, dropout=0.1)
-                adapter.load_state_dict(torch.load(adapter_path, map_location=device))
-                model.adapter = adapter
-                print(f"   ✅ Adapter 参数已加载")
+                igp_adapter = IGPAdapter(
+                    hidden_size=igp_hidden_size, 
+                    bottleneck_dim=128, 
+                    dropout=0.1,
+                    input_dim=igp_hidden_size * 2,  # 拼接 Query 和 Inst_vec
+                )
+                igp_adapter.load_state_dict(torch.load(adapter_path, map_location=device))
+                print(f"   ✅ Adapter 参数已加载 (hidden_size={igp_hidden_size})")
 
         if 'gate' in modules and config.get('enable_gate'):
             gate_path = os.path.join(model_path, modules['gate'])
             if os.path.exists(gate_path):
                 from pylate.models.igp.ratio_gate import RatioGate
-                gate = RatioGate(hidden_size=hidden_size, max_ratio=0.2, use_dynamic=False)
-                gate.load_state_dict(torch.load(gate_path, map_location=device))
-                model.gate = gate
-                print(f"   ✅ Gate 参数已加载")
+                igp_gate = RatioGate(hidden_size=igp_hidden_size, max_ratio=0.2, use_dynamic=False)
+                igp_gate.load_state_dict(torch.load(gate_path, map_location=device))
+                print(f"   ✅ Gate 参数已加载 (hidden_size={igp_hidden_size})")
 
+        # 使用 IGPColBERTWrapper 包装模型
+        if igp_probe is not None or igp_adapter is not None or igp_gate is not None:
+            from pylate.models.igp.igp_adapter import IGPAdapter
+            from pylate.models.igp.ratio_gate import RatioGate
+            from pylate.models.igp.instruction_probe import InstructionProbe
+            
+            # 导入 Wrapper
+            import sys
+            sys.path.insert(0, '/home/luwa/Documents/pylate/scripts/training')
+            from train_colbert_igp import IGPColBERTWrapper
+            
+            model = IGPColBERTWrapper(
+                base_model=base_model,
+                probe=igp_probe,
+                adapter=igp_adapter,
+                gate=igp_gate,
+            )
+            print(f"   ✅ 使用 IGPColBERTWrapper 进行推理")
+        else:
+            model = base_model
+            
         print(f"   ✅ IGP 模块加载完成")
     else:
         print(f"   ⚠️ 未检测到 IGP 模块配置，将使用标准 ColBERT 模型")
+        model = base_model
 
     print(f"✅ 模型加载完成，耗时: {time.time() - start:.1f}秒")
     return model
