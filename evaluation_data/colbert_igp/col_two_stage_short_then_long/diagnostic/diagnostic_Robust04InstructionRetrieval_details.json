@@ -1,0 +1,4854 @@
+{
+  "659": {
+    "rank": 1,
+    "pmrr": -0.5201602101602102,
+    "query": "What standards do cruise ships use for health and safety maintenance?",
+    "instruction": "Relevant documents refer to health and safety practices and standards for recreational cruise ships.  Not relevant are standards for small pleasure craft or commercial freight ships, tankers, etc.  Documents referring to a specific ship's problems are not relevant.",
+    "full_text": "What standards do cruise ships use for health and safety maintenance? Relevant documents refer to health and safety practices and standards for recreational cruise ships.  Not relevant are standards for small pleasure craft or commercial freight ships, tankers, etc.  Documents referring to a specific ship's problems are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT933-5667_3",
+        "original_rank": 308,
+        "new_rank": 173,
+        "score": -0.4383116883116882
+      },
+      {
+        "doc_id": "LA020490-0186_1",
+        "original_rank": 33,
+        "new_rank": 3,
+        "score": -0.9090909090909091
+      },
+      {
+        "doc_id": "LA022689-0155_2",
+        "original_rank": 182,
+        "new_rank": 60,
+        "score": -0.6703296703296703
+      },
+      {
+        "doc_id": "LA090990-0124_0",
+        "original_rank": 15,
+        "new_rank": 8,
+        "score": -0.4666666666666667
+      },
+      {
+        "doc_id": "LA120290-0076_0",
+        "original_rank": 378,
+        "new_rank": 334,
+        "score": -0.1164021164021165
+      }
+    ],
+    "debug_info": {}
+  },
+  "643": {
+    "rank": 2,
+    "pmrr": -0.5161428571428571,
+    "query": "What harm have power dams in the Pacific northwest caused to salmon fisheries?",
+    "instruction": "To be relevant, a document must include at least one negative impact of dams on the salmon population in the U.S. Pacific northwest.",
+    "full_text": "What harm have power dams in the Pacific northwest caused to salmon fisheries? To be relevant, a document must include at least one negative impact of dams on the salmon population in the U.S. Pacific northwest.",
+    "doc_details": [
+      {
+        "doc_id": "FR940104-0-00042_1",
+        "original_rank": 500,
+        "new_rank": 341,
+        "score": -0.31799999999999995
+      },
+      {
+        "doc_id": "LA082890-0051_0",
+        "original_rank": 42,
+        "new_rank": 12,
+        "score": -0.7142857142857143
+      }
+    ],
+    "debug_info": {}
+  },
+  "646": {
+    "rank": 3,
+    "pmrr": -0.4736842105263158,
+    "query": "Find documents that discuss an increase in the number of people receiving food stamp benefits.",
+    "instruction": "Documents that discuss changes in the law allowing more eligible food stamp recipients are relevant.  Documents that imply that a certain group of people, such as immigrants, will be eligible for food stamps are also relevant.",
+    "full_text": "Find documents that discuss an increase in the number of people receiving food stamp benefits. Documents that discuss changes in the law allowing more eligible food stamp recipients are relevant.  Documents that imply that a certain group of people, such as immigrants, will be eligible for food stamps are also relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FR940111-0-00003_1",
+        "original_rank": 57,
+        "new_rank": 30,
+        "score": -0.4736842105263158
+      }
+    ],
+    "debug_info": {}
+  },
+  "344": {
+    "rank": 4,
+    "pmrr": -0.45677040478840975,
+    "query": "The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses.  What steps have been taken world-wide by those  bearing the cost of E-mail to prevent excesses?",
+    "instruction": "To be relevant, a document will concern dissatisfaction by  an entity paying for the cost of electronic mail.  Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.",
+    "full_text": "The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses.  What steps have been taken world-wide by those  bearing the cost of E-mail to prevent excesses? To be relevant, a document will concern dissatisfaction by  an entity paying for the cost of electronic mail.  Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.",
+    "doc_details": [
+      {
+        "doc_id": "FT922-1463_0",
+        "original_rank": 6,
+        "new_rank": 2,
+        "score": -0.6666666666666667
+      },
+      {
+        "doc_id": "FT942-12165_3",
+        "original_rank": 97,
+        "new_rank": 67,
+        "score": -0.30927835051546393
+      },
+      {
+        "doc_id": "LA120190-0068_0",
+        "original_rank": 71,
+        "new_rank": 43,
+        "score": -0.3943661971830986
+      }
+    ],
+    "debug_info": {}
+  },
+  "345": {
+    "rank": 5,
+    "pmrr": -0.4008151213800198,
+    "query": "Health studies primarily in the U.S. have caused reductions in tobacco sales here, but the economic impact has caused U.S. tobacco companies to look overseas for customers. What impact have the health and economic factors had overseas?",
+    "instruction": "To be relevant, an item will discuss either an increase or  decrease in the sales of U.S. tobacco products overseas, and attribute this to health findings or more aggressive marketing by U.S. companies or the foreign companies they own or cooperate with.",
+    "full_text": "Health studies primarily in the U.S. have caused reductions in tobacco sales here, but the economic impact has caused U.S. tobacco companies to look overseas for customers. What impact have the health and economic factors had overseas? To be relevant, an item will discuss either an increase or  decrease in the sales of U.S. tobacco products overseas, and attribute this to health findings or more aggressive marketing by U.S. companies or the foreign companies they own or cooperate with.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-28015_0",
+        "original_rank": 264,
+        "new_rank": 155,
+        "score": -0.41287878787878785
+      },
+      {
+        "doc_id": "FT911-1006_1",
+        "original_rank": 477,
+        "new_rank": 407,
+        "score": -0.14675052410901457
+      },
+      {
+        "doc_id": "FT921-11387_0",
+        "original_rank": 58,
+        "new_rank": 18,
+        "score": -0.6896551724137931
+      },
+      {
+        "doc_id": "FT921-16023_0",
+        "original_rank": 785,
+        "new_rank": 614,
+        "score": -0.21783439490445866
+      },
+      {
+        "doc_id": "FT922-5785_0",
+        "original_rank": 980,
+        "new_rank": 955,
+        "score": -0.025510204081632626
+      },
+      {
+        "doc_id": "FT923-4661_0",
+        "original_rank": 795,
+        "new_rank": 674,
+        "score": -0.1522012578616353
+      },
+      {
+        "doc_id": "FT931-16417_0",
+        "original_rank": 531,
+        "new_rank": 368,
+        "score": -0.3069679849340866
+      },
+      {
+        "doc_id": "FT932-11887_0",
+        "original_rank": 225,
+        "new_rank": 97,
+        "score": -0.5688888888888889
+      },
+      {
+        "doc_id": "FT932-13912_0",
+        "original_rank": 484,
+        "new_rank": 268,
+        "score": -0.44628099173553715
+      },
+      {
+        "doc_id": "FT933-608_0",
+        "original_rank": 265,
+        "new_rank": 111,
+        "score": -0.5811320754716981
+      },
+      {
+        "doc_id": "FT934-13045_0",
+        "original_rank": 28,
+        "new_rank": 13,
+        "score": -0.5357142857142858
+      },
+      {
+        "doc_id": "FT934-5874_0",
+        "original_rank": 724,
+        "new_rank": 519,
+        "score": -0.28314917127071826
+      },
+      {
+        "doc_id": "FT941-17680_0",
+        "original_rank": 84,
+        "new_rank": 26,
+        "score": -0.6904761904761905
+      },
+      {
+        "doc_id": "FT942-13859_0",
+        "original_rank": 256,
+        "new_rank": 139,
+        "score": -0.45703125
+      },
+      {
+        "doc_id": "FT942-14426_0",
+        "original_rank": 428,
+        "new_rank": 218,
+        "score": -0.49065420560747675
+      },
+      {
+        "doc_id": "FT942-2078_0",
+        "original_rank": 530,
+        "new_rank": 365,
+        "score": -0.3113207547169812
+      },
+      {
+        "doc_id": "FT942-2081_0",
+        "original_rank": 696,
+        "new_rank": 502,
+        "score": -0.27873563218390807
+      },
+      {
+        "doc_id": "FT943-11789_0",
+        "original_rank": 62,
+        "new_rank": 20,
+        "score": -0.6774193548387097
+      },
+      {
+        "doc_id": "FT943-12012_0",
+        "original_rank": 102,
+        "new_rank": 36,
+        "score": -0.6470588235294117
+      },
+      {
+        "doc_id": "FT943-14694_0",
+        "original_rank": 296,
+        "new_rank": 150,
+        "score": -0.4932432432432432
+      },
+      {
+        "doc_id": "FT944-15211_0",
+        "original_rank": 182,
+        "new_rank": 71,
+        "score": -0.6098901098901099
+      },
+      {
+        "doc_id": "FT944-9537_0",
+        "original_rank": 791,
+        "new_rank": 636,
+        "score": -0.19595448798988624
+      },
+      {
+        "doc_id": "LA021890-0196_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "621": {
+    "rank": 6,
+    "pmrr": -0.36000766859794275,
+    "query": "What are the arguments for and against Great Britain's approval of women being ordained as Church of England priests?",
+    "instruction": "Documents primarily about voting on the matter by church officials and the British parliament are relevant.",
+    "full_text": "What are the arguments for and against Great Britain's approval of women being ordained as Church of England priests? Documents primarily about voting on the matter by church officials and the British parliament are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT921-11838_0",
+        "original_rank": 283,
+        "new_rank": 241,
+        "score": -0.14840989399293292
+      },
+      {
+        "doc_id": "FT921-11847_0",
+        "original_rank": 392,
+        "new_rank": 329,
+        "score": -0.1607142857142858
+      },
+      {
+        "doc_id": "FT921-11857_0",
+        "original_rank": 393,
+        "new_rank": 328,
+        "score": -0.1653944020356234
+      },
+      {
+        "doc_id": "FT921-7364_4",
+        "original_rank": 17,
+        "new_rank": 20,
+        "score": 0.1499999999999999
+      },
+      {
+        "doc_id": "FT924-4560_0",
+        "original_rank": 183,
+        "new_rank": 112,
+        "score": -0.3879781420765027
+      },
+      {
+        "doc_id": "FT924-7590_0",
+        "original_rank": 61,
+        "new_rank": 29,
+        "score": -0.5245901639344261
+      },
+      {
+        "doc_id": "FT924-8156_0",
+        "original_rank": 7,
+        "new_rank": 5,
+        "score": -0.2857142857142858
+      },
+      {
+        "doc_id": "FT924-9001_2",
+        "original_rank": 19,
+        "new_rank": 10,
+        "score": -0.4736842105263158
+      },
+      {
+        "doc_id": "FT931-9901_0",
+        "original_rank": 30,
+        "new_rank": 19,
+        "score": -0.3666666666666666
+      },
+      {
+        "doc_id": "FT932-2151_0",
+        "original_rank": 880,
+        "new_rank": 785,
+        "score": -0.10795454545454541
+      },
+      {
+        "doc_id": "FT932-6456_0",
+        "original_rank": 59,
+        "new_rank": 26,
+        "score": -0.5593220338983051
+      },
+      {
+        "doc_id": "FT933-12089_0",
+        "original_rank": 42,
+        "new_rank": 21,
+        "score": -0.5
+      },
+      {
+        "doc_id": "FT933-9689_0",
+        "original_rank": 23,
+        "new_rank": 11,
+        "score": -0.5217391304347827
+      },
+      {
+        "doc_id": "FT934-11863_0",
+        "original_rank": 20,
+        "new_rank": 15,
+        "score": -0.25
+      },
+      {
+        "doc_id": "FT934-3058_2",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT934-408_7",
+        "original_rank": 41,
+        "new_rank": 25,
+        "score": -0.3902439024390244
+      },
+      {
+        "doc_id": "FT941-6743_0",
+        "original_rank": 100,
+        "new_rank": 33,
+        "score": -0.6699999999999999
+      },
+      {
+        "doc_id": "FT941-7795_0",
+        "original_rank": 243,
+        "new_rank": 110,
+        "score": -0.5473251028806584
+      },
+      {
+        "doc_id": "FT941-7858_0",
+        "original_rank": 34,
+        "new_rank": 22,
+        "score": -0.3529411764705883
+      },
+      {
+        "doc_id": "FT941-8007_0",
+        "original_rank": 5,
+        "new_rank": 3,
+        "score": -0.3999999999999999
+      },
+      {
+        "doc_id": "FT941-8192_2",
+        "original_rank": 16,
+        "new_rank": 7,
+        "score": -0.5625
+      },
+      {
+        "doc_id": "FT942-132_0",
+        "original_rank": 196,
+        "new_rank": 82,
+        "score": -0.5816326530612246
+      },
+      {
+        "doc_id": "FT942-2917_0",
+        "original_rank": 341,
+        "new_rank": 158,
+        "score": -0.5366568914956011
+      },
+      {
+        "doc_id": "FT943-15291_0",
+        "original_rank": 637,
+        "new_rank": 431,
+        "score": -0.32339089481946615
+      },
+      {
+        "doc_id": "LA110789-0149_0",
+        "original_rank": 3,
+        "new_rank": 2,
+        "score": -0.33333333333333337
+      }
+    ],
+    "debug_info": {}
+  },
+  "410": {
+    "rank": 7,
+    "pmrr": -0.2521171381760944,
+    "query": "Who is involved in the Schengen agreement to eliminate border controls in Western Europe and what do they hope to accomplish?",
+    "instruction": "Relevant documents will contain any information about the actions of signatories of the Schengen agreement such as: measures to eliminate border controls (removal of traffic obstacles, lifting of traffic restrictions); implementation of the information system data bank that contains unified visa issuance procedures; or strengthening of border controls at the external borders of the treaty area in exchange for  free movement at the internal borders.  Discussions of border  crossovers for business purposes are not relevant.",
+    "full_text": "Who is involved in the Schengen agreement to eliminate border controls in Western Europe and what do they hope to accomplish? Relevant documents will contain any information about the actions of signatories of the Schengen agreement such as: measures to eliminate border controls (removal of traffic obstacles, lifting of traffic restrictions); implementation of the information system data bank that contains unified visa issuance procedures; or strengthening of border controls at the external borders of the treaty area in exchange for  free movement at the internal borders.  Discussions of border  crossovers for business purposes are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-19523_2",
+        "original_rank": 8,
+        "new_rank": 4,
+        "score": -0.5
+      },
+      {
+        "doc_id": "FBIS3-19679_0",
+        "original_rank": 54,
+        "new_rank": 41,
+        "score": -0.2407407407407408
+      },
+      {
+        "doc_id": "FBIS3-20175_1",
+        "original_rank": 23,
+        "new_rank": 19,
+        "score": -0.17391304347826086
+      },
+      {
+        "doc_id": "FBIS3-20176_0",
+        "original_rank": 246,
+        "new_rank": 176,
+        "score": -0.2845528455284553
+      },
+      {
+        "doc_id": "FT921-9293_0",
+        "original_rank": 36,
+        "new_rank": 26,
+        "score": -0.2777777777777779
+      },
+      {
+        "doc_id": "FT922-751_0",
+        "original_rank": 27,
+        "new_rank": 22,
+        "score": -0.18518518518518523
+      },
+      {
+        "doc_id": "FT932-6660_1",
+        "original_rank": 130,
+        "new_rank": 90,
+        "score": -0.3076923076923077
+      },
+      {
+        "doc_id": "FT934-14160_0",
+        "original_rank": 179,
+        "new_rank": 133,
+        "score": -0.25698324022346364
+      },
+      {
+        "doc_id": "FT934-15886_0",
+        "original_rank": 141,
+        "new_rank": 123,
+        "score": -0.12765957446808518
+      },
+      {
+        "doc_id": "LA121589-0087_0",
+        "original_rank": 6,
+        "new_rank": 5,
+        "score": -0.16666666666666674
+      }
+    ],
+    "debug_info": {}
+  },
+  "689": {
+    "rank": 8,
+    "pmrr": -0.2333455273254649,
+    "query": "To which countries does the U.S. provide aid to support family planning, and for which countries has the U.S. refused or limited support?",
+    "instruction": "Relevant documents indicate where U.S. aid supports family planning or where such aid has been denied. Discussions of why aid for family planning has been refused are also relevant.  Documents that mention U.S. aid to countries, but not specifically for family planning are not relevant. Descriptions of funds for family planning in the U.S. itself are not relevant.",
+    "full_text": "To which countries does the U.S. provide aid to support family planning, and for which countries has the U.S. refused or limited support? Relevant documents indicate where U.S. aid supports family planning or where such aid has been denied. Discussions of why aid for family planning has been refused are also relevant.  Documents that mention U.S. aid to countries, but not specifically for family planning are not relevant. Descriptions of funds for family planning in the U.S. itself are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-20435_3",
+        "original_rank": 817,
+        "new_rank": 806,
+        "score": -0.0134638922888618
+      },
+      {
+        "doc_id": "FT922-10401_2",
+        "original_rank": 27,
+        "new_rank": 18,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "LA092089-0140_0",
+        "original_rank": 194,
+        "new_rank": 133,
+        "score": -0.31443298969072164
+      },
+      {
+        "doc_id": "LA111589-0014_0",
+        "original_rank": 5,
+        "new_rank": 6,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "LA111789-0154_0",
+        "original_rank": 12,
+        "new_rank": 11,
+        "score": -0.08333333333333337
+      },
+      {
+        "doc_id": "LA112089-0025_0",
+        "original_rank": 3,
+        "new_rank": 2,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "LA112589-0006_0",
+        "original_rank": 31,
+        "new_rank": 24,
+        "score": -0.22580645161290325
+      },
+      {
+        "doc_id": "LA113089-0210_0",
+        "original_rank": 55,
+        "new_rank": 34,
+        "score": -0.38181818181818183
+      },
+      {
+        "doc_id": "LA120389-0056_0",
+        "original_rank": 46,
+        "new_rank": 28,
+        "score": -0.3913043478260869
+      },
+      {
+        "doc_id": "LA120389-0058_0",
+        "original_rank": 42,
+        "new_rank": 31,
+        "score": -0.261904761904762
+      },
+      {
+        "doc_id": "LA120389-0062_1",
+        "original_rank": 76,
+        "new_rank": 46,
+        "score": -0.39473684210526316
+      }
+    ],
+    "debug_info": {}
+  },
+  "445": {
+    "rank": 9,
+    "pmrr": -0.22807003229555306,
+    "query": "What other countries besides the United States are considering  or have approved women as clergy persons?",
+    "instruction": "To be relevant, a document must indicate either a country  where a woman has been installed as clergy or a country that is considering such an installation.  The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).",
+    "full_text": "What other countries besides the United States are considering  or have approved women as clergy persons? To be relevant, a document must indicate either a country  where a woman has been installed as clergy or a country that is considering such an installation.  The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).",
+    "doc_details": [
+      {
+        "doc_id": "FT921-11838_0",
+        "original_rank": 916,
+        "new_rank": 884,
+        "score": -0.03493449781659397
+      },
+      {
+        "doc_id": "FT921-11847_0",
+        "original_rank": 967,
+        "new_rank": 951,
+        "score": -0.016546018614270852
+      },
+      {
+        "doc_id": "FT921-11857_0",
+        "original_rank": 968,
+        "new_rank": 952,
+        "score": -0.016528925619834656
+      },
+      {
+        "doc_id": "FT921-7364_3",
+        "original_rank": 57,
+        "new_rank": 69,
+        "score": 0.17391304347826086
+      },
+      {
+        "doc_id": "FT924-4560_0",
+        "original_rank": 962,
+        "new_rank": 928,
+        "score": -0.03534303534303529
+      },
+      {
+        "doc_id": "FT924-7590_0",
+        "original_rank": 782,
+        "new_rank": 637,
+        "score": -0.1854219948849105
+      },
+      {
+        "doc_id": "FT924-8156_0",
+        "original_rank": 141,
+        "new_rank": 82,
+        "score": -0.4184397163120568
+      },
+      {
+        "doc_id": "FT924-9001_5",
+        "original_rank": 45,
+        "new_rank": 16,
+        "score": -0.6444444444444444
+      },
+      {
+        "doc_id": "FT931-9901_0",
+        "original_rank": 292,
+        "new_rank": 173,
+        "score": -0.40753424657534243
+      },
+      {
+        "doc_id": "FT932-2151_0",
+        "original_rank": 966,
+        "new_rank": 947,
+        "score": -0.01966873706004124
+      },
+      {
+        "doc_id": "FT932-6456_0",
+        "original_rank": 855,
+        "new_rank": 700,
+        "score": -0.18128654970760227
+      },
+      {
+        "doc_id": "FT933-12089_5",
+        "original_rank": 850,
+        "new_rank": 717,
+        "score": -0.15647058823529414
+      },
+      {
+        "doc_id": "FT933-9689_0",
+        "original_rank": 793,
+        "new_rank": 627,
+        "score": -0.2093316519546028
+      },
+      {
+        "doc_id": "FT934-11863_0",
+        "original_rank": 796,
+        "new_rank": 662,
+        "score": -0.16834170854271358
+      },
+      {
+        "doc_id": "FT934-3058_2",
+        "original_rank": 55,
+        "new_rank": 22,
+        "score": -0.6000000000000001
+      },
+      {
+        "doc_id": "FT934-408_7",
+        "original_rank": 237,
+        "new_rank": 162,
+        "score": -0.31645569620253167
+      },
+      {
+        "doc_id": "FT941-6743_0",
+        "original_rank": 787,
+        "new_rank": 621,
+        "score": -0.21092757306226173
+      },
+      {
+        "doc_id": "FT941-7795_0",
+        "original_rank": 795,
+        "new_rank": 654,
+        "score": -0.1773584905660378
+      },
+      {
+        "doc_id": "FT941-7858_0",
+        "original_rank": 36,
+        "new_rank": 19,
+        "score": -0.4722222222222222
+      },
+      {
+        "doc_id": "FT941-8007_0",
+        "original_rank": 153,
+        "new_rank": 92,
+        "score": -0.39869281045751626
+      },
+      {
+        "doc_id": "FT941-8192_2",
+        "original_rank": 262,
+        "new_rank": 150,
+        "score": -0.4274809160305344
+      },
+      {
+        "doc_id": "FT942-132_0",
+        "original_rank": 904,
+        "new_rank": 822,
+        "score": -0.09070796460177
+      },
+      {
+        "doc_id": "FT942-2917_0",
+        "original_rank": 515,
+        "new_rank": 357,
+        "score": -0.3067961165048544
+      },
+      {
+        "doc_id": "FT943-15291_0",
+        "original_rank": 945,
+        "new_rank": 908,
+        "score": -0.03915343915343916
+      },
+      {
+        "doc_id": "FT943-9241_1",
+        "original_rank": 647,
+        "new_rank": 426,
+        "score": -0.3415765069551777
+      }
+    ],
+    "debug_info": {}
+  },
+  "338": {
+    "rank": 10,
+    "pmrr": -0.2142857142857143,
+    "query": "What adverse effects have people experienced while taking  aspirin repeatedly?",
+    "instruction": "A relevant document should identify any adverse effects  experienced from the repeated use of aspirin. Possible  effects might include intestinal bleeding, inflammation  of the stomach, or various forms of ulcers. The purpose  of the individual's repeated aspirin use should also  be stated.",
+    "full_text": "What adverse effects have people experienced while taking  aspirin repeatedly? A relevant document should identify any adverse effects  experienced from the repeated use of aspirin. Possible  effects might include intestinal bleeding, inflammation  of the stomach, or various forms of ulcers. The purpose  of the individual's repeated aspirin use should also  be stated.",
+    "doc_details": [
+      {
+        "doc_id": "FR940822-0-00067_103",
+        "original_rank": 28,
+        "new_rank": 22,
+        "score": -0.2142857142857143
+      }
+    ],
+    "debug_info": {}
+  },
+  "607": {
+    "rank": 11,
+    "pmrr": -0.15486960644855383,
+    "query": "What progress is being made in the effort to map and sequence the human genetic code?",
+    "instruction": "Documents must discuss specific progress in mapping the human genome.  Documents that simply describe applications of the research, such as using DNA in criminal cases, using the genetic code to treat disease, or creating genetically engineered organisms are irrelevant.",
+    "full_text": "What progress is being made in the effort to map and sequence the human genetic code? Documents must discuss specific progress in mapping the human genome.  Documents that simply describe applications of the research, such as using DNA in criminal cases, using the genetic code to treat disease, or creating genetically engineered organisms are irrelevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT934-1290_0",
+        "original_rank": 6,
+        "new_rank": 9,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "FT934-2039_0",
+        "original_rank": 19,
+        "new_rank": 13,
+        "score": -0.3157894736842106
+      },
+      {
+        "doc_id": "FT941-15246_2",
+        "original_rank": 55,
+        "new_rank": 33,
+        "score": -0.4
+      },
+      {
+        "doc_id": "FT942-3637_0",
+        "original_rank": 33,
+        "new_rank": 37,
+        "score": 0.10810810810810811
+      },
+      {
+        "doc_id": "LA062589-0077_0",
+        "original_rank": 4,
+        "new_rank": 2,
+        "score": -0.5
+      }
+    ],
+    "debug_info": {}
+  },
+  "409": {
+    "rank": 12,
+    "pmrr": -0.1492088608858686,
+    "query": "What legal actions have resulted from the destruction of Pan Am Flight 103 over Lockerbie, Scotland, on December 21, 1988?",
+    "instruction": "Documents describing any charges, claims, or fines  presented to or imposed by any court or tribunal are relevant, but documents that discuss charges made in diplomatic jousting are not relevant.",
+    "full_text": "What legal actions have resulted from the destruction of Pan Am Flight 103 over Lockerbie, Scotland, on December 21, 1988? Documents describing any charges, claims, or fines  presented to or imposed by any court or tribunal are relevant, but documents that discuss charges made in diplomatic jousting are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT921-209_0",
+        "original_rank": 58,
+        "new_rank": 41,
+        "score": -0.2931034482758621
+      },
+      {
+        "doc_id": "FT921-2687_0",
+        "original_rank": 3,
+        "new_rank": 4,
+        "score": 0.25
+      },
+      {
+        "doc_id": "FT921-714_0",
+        "original_rank": 165,
+        "new_rank": 145,
+        "score": -0.12121212121212122
+      },
+      {
+        "doc_id": "FT921-717_0",
+        "original_rank": 59,
+        "new_rank": 48,
+        "score": -0.18644067796610164
+      },
+      {
+        "doc_id": "FT921-969_1",
+        "original_rank": 55,
+        "new_rank": 57,
+        "score": 0.03508771929824561
+      },
+      {
+        "doc_id": "FT922-12839_0",
+        "original_rank": 34,
+        "new_rank": 26,
+        "score": -0.23529411764705888
+      },
+      {
+        "doc_id": "FT922-12921_0",
+        "original_rank": 81,
+        "new_rank": 71,
+        "score": -0.1234567901234569
+      },
+      {
+        "doc_id": "FT922-13723_0",
+        "original_rank": 760,
+        "new_rank": 690,
+        "score": -0.0921052631578948
+      },
+      {
+        "doc_id": "FT922-14616_0",
+        "original_rank": 19,
+        "new_rank": 12,
+        "score": -0.368421052631579
+      },
+      {
+        "doc_id": "FT922-15449_1",
+        "original_rank": 14,
+        "new_rank": 9,
+        "score": -0.3571428571428571
+      }
+    ],
+    "debug_info": {}
+  },
+  "669": {
+    "rank": 13,
+    "pmrr": -0.1076392712163506,
+    "query": "What were the causes for the Islamic Revolution relative to relations with the U.S.?",
+    "instruction": "Relevant documents must discuss the reasons that relations between the Islamic world and the United States have deteriorated.",
+    "full_text": "What were the causes for the Islamic Revolution relative to relations with the U.S.? Relevant documents must discuss the reasons that relations between the Islamic world and the United States have deteriorated.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-13222_22",
+        "original_rank": 939,
+        "new_rank": 833,
+        "score": -0.11288604898828525
+      },
+      {
+        "doc_id": "FBIS3-13223_11",
+        "original_rank": 674,
+        "new_rank": 744,
+        "score": 0.09408602150537626
+      },
+      {
+        "doc_id": "FBIS3-13226_14",
+        "original_rank": 373,
+        "new_rank": 349,
+        "score": -0.06434316353887393
+      },
+      {
+        "doc_id": "FBIS3-13428_4",
+        "original_rank": 635,
+        "new_rank": 590,
+        "score": -0.07086614173228345
+      },
+      {
+        "doc_id": "FBIS3-13613_4",
+        "original_rank": 19,
+        "new_rank": 12,
+        "score": -0.368421052631579
+      },
+      {
+        "doc_id": "FBIS3-34439_7",
+        "original_rank": 162,
+        "new_rank": 234,
+        "score": 0.3076923076923076
+      },
+      {
+        "doc_id": "FBIS3-34619_0",
+        "original_rank": 103,
+        "new_rank": 72,
+        "score": -0.30097087378640774
+      },
+      {
+        "doc_id": "FBIS3-34775_0",
+        "original_rank": 117,
+        "new_rank": 82,
+        "score": -0.2991452991452991
+      },
+      {
+        "doc_id": "FBIS3-54439_16",
+        "original_rank": 26,
+        "new_rank": 14,
+        "score": -0.46153846153846145
+      },
+      {
+        "doc_id": "FBIS4-12674_0",
+        "original_rank": 8,
+        "new_rank": 10,
+        "score": 0.19999999999999996
+      }
+    ],
+    "debug_info": {}
+  },
+  "647": {
+    "rank": 14,
+    "pmrr": -0.10451488306547882,
+    "query": "Has the use of windmill technology to generate electricity been economically productive?",
+    "instruction": "A relevant document will contain a comparison of the costs of generating electricity through the use of windmills to other more conventional means of generation.",
+    "full_text": "Has the use of windmill technology to generate electricity been economically productive? A relevant document will contain a comparison of the costs of generating electricity through the use of windmills to other more conventional means of generation.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-41958_11",
+        "original_rank": 1,
+        "new_rank": 2,
+        "score": 0.5
+      },
+      {
+        "doc_id": "FBIS3-59624_2",
+        "original_rank": 47,
+        "new_rank": 74,
+        "score": 0.3648648648648648
+      },
+      {
+        "doc_id": "FBIS4-47519_0",
+        "original_rank": 5,
+        "new_rank": 3,
+        "score": -0.3999999999999999
+      },
+      {
+        "doc_id": "FT924-7244_1",
+        "original_rank": 74,
+        "new_rank": 95,
+        "score": 0.2210526315789474
+      },
+      {
+        "doc_id": "FT924-9345_4",
+        "original_rank": 89,
+        "new_rank": 67,
+        "score": -0.2471910112359551
+      },
+      {
+        "doc_id": "FT931-8438_1",
+        "original_rank": 166,
+        "new_rank": 79,
+        "score": -0.5240963855421686
+      },
+      {
+        "doc_id": "FT932-1872_2",
+        "original_rank": 58,
+        "new_rank": 48,
+        "score": -0.1724137931034483
+      },
+      {
+        "doc_id": "FT933-7095_1",
+        "original_rank": 25,
+        "new_rank": 12,
+        "score": -0.52
+      },
+      {
+        "doc_id": "FT933-7096_1",
+        "original_rank": 11,
+        "new_rank": 11,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT933-7813_1",
+        "original_rank": 24,
+        "new_rank": 13,
+        "score": -0.45833333333333337
+      },
+      {
+        "doc_id": "FT934-929_2",
+        "original_rank": 93,
+        "new_rank": 90,
+        "score": -0.032258064516129004
+      },
+      {
+        "doc_id": "LA110490-0015_1",
+        "original_rank": 19,
+        "new_rank": 14,
+        "score": -0.26315789473684215
+      },
+      {
+        "doc_id": "LA110890-0070_0",
+        "original_rank": 67,
+        "new_rank": 81,
+        "score": 0.1728395061728395
+      }
+    ],
+    "debug_info": {}
+  },
+  "626": {
+    "rank": 15,
+    "pmrr": -0.10100959178394146,
+    "query": "Find reports of human stampedes that have resulted in 20 or more deaths.",
+    "instruction": "Documents that mention people being killed by animal stampedes are not relevant.  Relevant documents could mention human stampedes in any public place such as a sporting event, bar, restaurant or entertainment event.",
+    "full_text": "Find reports of human stampedes that have resulted in 20 or more deaths. Documents that mention people being killed by animal stampedes are not relevant.  Relevant documents could mention human stampedes in any public place such as a sporting event, bar, restaurant or entertainment event.",
+    "doc_details": [
+      {
+        "doc_id": "FT931-14000_0",
+        "original_rank": 369,
+        "new_rank": 396,
+        "score": 0.06818181818181812
+      },
+      {
+        "doc_id": "FT931-17135_0",
+        "original_rank": 266,
+        "new_rank": 189,
+        "score": -0.2894736842105263
+      },
+      {
+        "doc_id": "FT941-8535_0",
+        "original_rank": 783,
+        "new_rank": 719,
+        "score": -0.08173690932311617
+      }
+    ],
+    "debug_info": {}
+  },
+  "638": {
+    "rank": 16,
+    "pmrr": -0.08657084481035039,
+    "query": "Find documents that discuss freed prisoners who have been wrongfully convicted based on faulty forensic evidence, poor police work, or false testimony.",
+    "instruction": "Documents about political prisoners who were freed because of incompetent prosecutions are relevant.   However, documents that discuss prisoners who are pardoned or released on bond when their convictions are overturned are not relevant, nor are documents about prisoners freed to make a political statement or prisoners freed for an exchange.",
+    "full_text": "Find documents that discuss freed prisoners who have been wrongfully convicted based on faulty forensic evidence, poor police work, or false testimony. Documents about political prisoners who were freed because of incompetent prosecutions are relevant.   However, documents that discuss prisoners who are pardoned or released on bond when their convictions are overturned are not relevant, nor are documents about prisoners freed to make a political statement or prisoners freed for an exchange.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-21781_1",
+        "original_rank": 209,
+        "new_rank": 167,
+        "score": -0.2009569377990431
+      },
+      {
+        "doc_id": "FT921-5967_0",
+        "original_rank": 957,
+        "new_rank": 940,
+        "score": -0.017763845350052154
+      },
+      {
+        "doc_id": "FT922-4315_0",
+        "original_rank": 489,
+        "new_rank": 436,
+        "score": -0.10838445807770958
+      },
+      {
+        "doc_id": "FT922-8629_0",
+        "original_rank": 210,
+        "new_rank": 199,
+        "score": -0.052380952380952306
+      },
+      {
+        "doc_id": "FT922-8653_0",
+        "original_rank": 923,
+        "new_rank": 883,
+        "score": -0.04333694474539551
+      },
+      {
+        "doc_id": "FT923-10485_0",
+        "original_rank": 986,
+        "new_rank": 988,
+        "score": 0.002024291497975672
+      },
+      {
+        "doc_id": "FT923-10692_0",
+        "original_rank": 908,
+        "new_rank": 881,
+        "score": -0.029735682819383102
+      },
+      {
+        "doc_id": "FT923-12626_2",
+        "original_rank": 941,
+        "new_rank": 945,
+        "score": 0.004232804232804144
+      },
+      {
+        "doc_id": "FT923-12656_0",
+        "original_rank": 848,
+        "new_rank": 820,
+        "score": -0.03301886792452835
+      },
+      {
+        "doc_id": "FT932-14027_0",
+        "original_rank": 728,
+        "new_rank": 662,
+        "score": -0.09065934065934056
+      },
+      {
+        "doc_id": "FT933-15798_0",
+        "original_rank": 362,
+        "new_rank": 418,
+        "score": 0.13397129186602874
+      },
+      {
+        "doc_id": "FT941-8028_0",
+        "original_rank": 302,
+        "new_rank": 257,
+        "score": -0.14900662251655628
+      },
+      {
+        "doc_id": "FT942-13988_1",
+        "original_rank": 258,
+        "new_rank": 240,
+        "score": -0.06976744186046513
+      },
+      {
+        "doc_id": "FT942-5293_0",
+        "original_rank": 866,
+        "new_rank": 874,
+        "score": 0.009153318077803174
+      },
+      {
+        "doc_id": "LA030189-0042_0",
+        "original_rank": 834,
+        "new_rank": 764,
+        "score": -0.08393285371702652
+      },
+      {
+        "doc_id": "LA032089-0100_0",
+        "original_rank": 423,
+        "new_rank": 340,
+        "score": -0.19621749408983458
+      },
+      {
+        "doc_id": "LA032289-0026_0",
+        "original_rank": 20,
+        "new_rank": 17,
+        "score": -0.1499999999999999
+      },
+      {
+        "doc_id": "LA092289-0100_3",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA102089-0062_0",
+        "original_rank": 19,
+        "new_rank": 19,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA120890-0066_0",
+        "original_rank": 143,
+        "new_rank": 105,
+        "score": -0.26573426573426584
+      },
+      {
+        "doc_id": "LA121489-0145_0",
+        "original_rank": 347,
+        "new_rank": 319,
+        "score": -0.0806916426512968
+      },
+      {
+        "doc_id": "LA121689-0082_2",
+        "original_rank": 170,
+        "new_rank": 88,
+        "score": -0.48235294117647065
+      }
+    ],
+    "debug_info": {}
+  },
+  "309": {
+    "rank": 17,
+    "pmrr": -0.08175935641832816,
+    "query": "Evidence that rap music has a negative effect on young people.",
+    "instruction": "The lyrics to Rap music are replete with words which degrade women, glorify drug abuse, the killing of policemen and even romanticize suicide.  A crusade was begun a few years ago in which the music industry was asked \"to clean up its act\"  because of the detrimental effect it was having upon teenagers.   There were some instances in which teenagers, who demonstrated  no sign of internal strife, committed suicide.  The only clues to their self-destruction were notes found near the bodies with lyrics from Rap songs relating to suicide.  A relevant item  should include any psychological study, evidence, poll,  documentation, or psychological opinion that Rap music has a  deleterious effect upon young people and has led to a discernible change in personality, life style, crime, alteration of personality or any other negative effect upon the psyche, mores, and culture of teenagers.",
+    "full_text": "Evidence that rap music has a negative effect on young people. The lyrics to Rap music are replete with words which degrade women, glorify drug abuse, the killing of policemen and even romanticize suicide.  A crusade was begun a few years ago in which the music industry was asked \"to clean up its act\"  because of the detrimental effect it was having upon teenagers.   There were some instances in which teenagers, who demonstrated  no sign of internal strife, committed suicide.  The only clues to their self-destruction were notes found near the bodies with lyrics from Rap songs relating to suicide.  A relevant item  should include any psychological study, evidence, poll,  documentation, or psychological opinion that Rap music has a  deleterious effect upon young people and has led to a discernible change in personality, life style, crime, alteration of personality or any other negative effect upon the psyche, mores, and culture of teenagers.",
+    "doc_details": [
+      {
+        "doc_id": "LA082590-0096_4",
+        "original_rank": 6,
+        "new_rank": 5,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "LA122390-0022_4",
+        "original_rank": 950,
+        "new_rank": 953,
+        "score": 0.0031479538300104304
+      }
+    ],
+    "debug_info": {}
+  },
+  "641": {
+    "rank": 18,
+    "pmrr": -0.0718606168448417,
+    "query": "What was the impact of the Exxon Valdez oil spill on the marine life and wildlife of the area?",
+    "instruction": "Relevant documents must have some specific detail, such as types of animals, the kinds of problems found, and outcome (such as number of animals saved or dead).",
+    "full_text": "What was the impact of the Exxon Valdez oil spill on the marine life and wildlife of the area? Relevant documents must have some specific detail, such as types of animals, the kinds of problems found, and outcome (such as number of animals saved or dead).",
+    "doc_details": [
+      {
+        "doc_id": "FT943-6371_3",
+        "original_rank": 85,
+        "new_rank": 90,
+        "score": 0.05555555555555547
+      },
+      {
+        "doc_id": "LA021090-0056_0",
+        "original_rank": 73,
+        "new_rank": 51,
+        "score": -0.3013698630136986
+      },
+      {
+        "doc_id": "LA031890-0181_4",
+        "original_rank": 6,
+        "new_rank": 7,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "LA032590-0075_4",
+        "original_rank": 975,
+        "new_rank": 977,
+        "score": 0.0020470829068577334
+      },
+      {
+        "doc_id": "LA032789-0038_2",
+        "original_rank": 20,
+        "new_rank": 12,
+        "score": -0.3999999999999999
+      },
+      {
+        "doc_id": "LA040289-0083_0",
+        "original_rank": 109,
+        "new_rank": 73,
+        "score": -0.3302752293577981
+      },
+      {
+        "doc_id": "LA040689-0056_1",
+        "original_rank": 34,
+        "new_rank": 15,
+        "score": -0.5588235294117647
+      },
+      {
+        "doc_id": "LA041489-0054_0",
+        "original_rank": 35,
+        "new_rank": 24,
+        "score": -0.3142857142857143
+      },
+      {
+        "doc_id": "LA041589-0048_0",
+        "original_rank": 88,
+        "new_rank": 84,
+        "score": -0.045454545454545414
+      },
+      {
+        "doc_id": "LA041689-0032_0",
+        "original_rank": 26,
+        "new_rank": 37,
+        "score": 0.29729729729729726
+      },
+      {
+        "doc_id": "LA041989-0065_0",
+        "original_rank": 126,
+        "new_rank": 125,
+        "score": -0.00793650793650802
+      },
+      {
+        "doc_id": "LA041989-0067_1",
+        "original_rank": 110,
+        "new_rank": 101,
+        "score": -0.0818181818181819
+      },
+      {
+        "doc_id": "LA060589-0044_0",
+        "original_rank": 50,
+        "new_rank": 42,
+        "score": -0.15999999999999992
+      },
+      {
+        "doc_id": "LA061189-0073_1",
+        "original_rank": 58,
+        "new_rank": 86,
+        "score": 0.32558139534883723
+      },
+      {
+        "doc_id": "LA062589-0156_2",
+        "original_rank": 212,
+        "new_rank": 230,
+        "score": 0.07826086956521738
+      },
+      {
+        "doc_id": "LA071289-0001_2",
+        "original_rank": 65,
+        "new_rank": 62,
+        "score": -0.0461538461538461
+      },
+      {
+        "doc_id": "LA071389-0001_4",
+        "original_rank": 141,
+        "new_rank": 107,
+        "score": -0.24113475177304966
+      },
+      {
+        "doc_id": "LA071489-0033_2",
+        "original_rank": 436,
+        "new_rank": 342,
+        "score": -0.2155963302752293
+      },
+      {
+        "doc_id": "LA082189-0047_2",
+        "original_rank": 22,
+        "new_rank": 39,
+        "score": 0.4358974358974359
+      }
+    ],
+    "debug_info": {}
+  },
+  "636": {
+    "rank": 19,
+    "pmrr": -0.05182117906716595,
+    "query": "Find documents that discuss reasons why people may be exempted from serving on a jury.",
+    "instruction": "A relevant document must include a specific reason that provides an exemption or list an occupation that causes exemption from jury duty.",
+    "full_text": "Find documents that discuss reasons why people may be exempted from serving on a jury. A relevant document must include a specific reason that provides an exemption or list an occupation that causes exemption from jury duty.",
+    "doc_details": [
+      {
+        "doc_id": "LA020389-0128_3",
+        "original_rank": 273,
+        "new_rank": 262,
+        "score": -0.04029304029304026
+      },
+      {
+        "doc_id": "LA021789-0063_0",
+        "original_rank": 271,
+        "new_rank": 337,
+        "score": 0.19584569732937684
+      },
+      {
+        "doc_id": "LA022489-0111_0",
+        "original_rank": 278,
+        "new_rank": 161,
+        "score": -0.4208633093525179
+      },
+      {
+        "doc_id": "LA070389-0035_4",
+        "original_rank": 961,
+        "new_rank": 967,
+        "score": 0.006204756980351611
+      },
+      {
+        "doc_id": "LA092990-0004_1",
+        "original_rank": 490,
+        "new_rank": 490,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "617": {
+    "rank": 20,
+    "pmrr": -0.0508767788462937,
+    "query": "What effect has the reduction of Russian support had on the Cuban economy?",
+    "instruction": "Relevant documents must contain information specific to how the reduction of Russian support has affected the Cuban economy. Documents referring to the state of the Cuban economy but not mentioning Russia are irrelevant, as are documents describing joint Russo-Cuban projects.",
+    "full_text": "What effect has the reduction of Russian support had on the Cuban economy? Relevant documents must contain information specific to how the reduction of Russian support has affected the Cuban economy. Documents referring to the state of the Cuban economy but not mentioning Russia are irrelevant, as are documents describing joint Russo-Cuban projects.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-10463_2",
+        "original_rank": 429,
+        "new_rank": 420,
+        "score": -0.020979020979021046
+      },
+      {
+        "doc_id": "FBIS3-10778_0",
+        "original_rank": 88,
+        "new_rank": 82,
+        "score": -0.06818181818181823
+      },
+      {
+        "doc_id": "FBIS3-51138_0",
+        "original_rank": 20,
+        "new_rank": 19,
+        "score": -0.04999999999999993
+      },
+      {
+        "doc_id": "FBIS3-51400_2",
+        "original_rank": 19,
+        "new_rank": 20,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "FBIS3-6941_3",
+        "original_rank": 162,
+        "new_rank": 154,
+        "score": -0.049382716049382824
+      },
+      {
+        "doc_id": "FBIS4-57777_0",
+        "original_rank": 240,
+        "new_rank": 245,
+        "score": 0.020408163265306034
+      },
+      {
+        "doc_id": "FT923-10781_2",
+        "original_rank": 31,
+        "new_rank": 32,
+        "score": 0.03125
+      },
+      {
+        "doc_id": "FT923-13351_1",
+        "original_rank": 341,
+        "new_rank": 312,
+        "score": -0.08504398826979465
+      },
+      {
+        "doc_id": "FT923-1460_1",
+        "original_rank": 200,
+        "new_rank": 141,
+        "score": -0.29499999999999993
+      },
+      {
+        "doc_id": "FT924-11537_0",
+        "original_rank": 72,
+        "new_rank": 55,
+        "score": -0.23611111111111116
+      },
+      {
+        "doc_id": "FT924-8185_1",
+        "original_rank": 323,
+        "new_rank": 291,
+        "score": -0.09907120743034048
+      },
+      {
+        "doc_id": "FT924-874_0",
+        "original_rank": 238,
+        "new_rank": 255,
+        "score": 0.06666666666666665
+      },
+      {
+        "doc_id": "FT924-9832_0",
+        "original_rank": 55,
+        "new_rank": 56,
+        "score": 0.017857142857142905
+      },
+      {
+        "doc_id": "FT932-13253_2",
+        "original_rank": 192,
+        "new_rank": 190,
+        "score": -0.01041666666666674
+      },
+      {
+        "doc_id": "FT933-12676_2",
+        "original_rank": 511,
+        "new_rank": 429,
+        "score": -0.16046966731898238
+      },
+      {
+        "doc_id": "FT934-4579_0",
+        "original_rank": 275,
+        "new_rank": 270,
+        "score": -0.018181818181818188
+      },
+      {
+        "doc_id": "FT934-9895_0",
+        "original_rank": 444,
+        "new_rank": 443,
+        "score": -0.0022522522522522292
+      },
+      {
+        "doc_id": "FT943-2583_1",
+        "original_rank": 145,
+        "new_rank": 112,
+        "score": -0.22758620689655173
+      },
+      {
+        "doc_id": "FT943-6027_0",
+        "original_rank": 793,
+        "new_rank": 742,
+        "score": -0.06431273644388402
+      },
+      {
+        "doc_id": "FT943-8122_1",
+        "original_rank": 627,
+        "new_rank": 528,
+        "score": -0.1578947368421053
+      },
+      {
+        "doc_id": "FT944-11926_1",
+        "original_rank": 494,
+        "new_rank": 500,
+        "score": 0.01200000000000001
+      },
+      {
+        "doc_id": "FT944-5430_4",
+        "original_rank": 392,
+        "new_rank": 465,
+        "score": 0.15698924731182784
+      },
+      {
+        "doc_id": "LA072790-0054_1",
+        "original_rank": 221,
+        "new_rank": 212,
+        "score": -0.040723981900452344
+      },
+      {
+        "doc_id": "LA093090-0185_0",
+        "original_rank": 332,
+        "new_rank": 287,
+        "score": -0.1355421686746987
+      },
+      {
+        "doc_id": "LA101490-0033_0",
+        "original_rank": 183,
+        "new_rank": 202,
+        "score": 0.09405940594059403
+      }
+    ],
+    "debug_info": {}
+  },
+  "327": {
+    "rank": 21,
+    "pmrr": -0.044501111008339714,
+    "query": "Identify a country or a city where there is evidence of human slavery being practiced in the eighties or nineties.",
+    "instruction": "A relevant document would present evidence of current slavery practices being carried out.  It would identify a specific country or city and give some information on who the slaves are, or who was buying or selling them, and for what purposes they were being used.  References to slavery being carried out several years ago would not be relevant.",
+    "full_text": "Identify a country or a city where there is evidence of human slavery being practiced in the eighties or nineties. A relevant document would present evidence of current slavery practices being carried out.  It would identify a specific country or city and give some information on who the slaves are, or who was buying or selling them, and for what purposes they were being used.  References to slavery being carried out several years ago would not be relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT924-1107_2",
+        "original_rank": 167,
+        "new_rank": 189,
+        "score": 0.1164021164021165
+      },
+      {
+        "doc_id": "FT931-5001_0",
+        "original_rank": 359,
+        "new_rank": 183,
+        "score": -0.4902506963788301
+      },
+      {
+        "doc_id": "FT932-4843_0",
+        "original_rank": 999,
+        "new_rank": 999,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA062190-0015_0",
+        "original_rank": 11,
+        "new_rank": 13,
+        "score": 0.15384615384615385
+      },
+      {
+        "doc_id": "LA073090-0093_0",
+        "original_rank": 799,
+        "new_rank": 797,
+        "score": -0.0025031289111387967
+      }
+    ],
+    "debug_info": {}
+  },
+  "397": {
+    "rank": 22,
+    "pmrr": -0.036268630594066036,
+    "query": "Identify documents that discuss the reasons for  automobile recalls.",
+    "instruction": "A relevant document will specify major or minor reasons  for automobile recalls by car manufacturers.  Documents  that discuss truck recalls are not relevant.",
+    "full_text": "Identify documents that discuss the reasons for  automobile recalls. A relevant document will specify major or minor reasons  for automobile recalls by car manufacturers.  Documents  that discuss truck recalls are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT911-242_0",
+        "original_rank": 264,
+        "new_rank": 220,
+        "score": -0.16666666666666663
+      },
+      {
+        "doc_id": "FT922-13759_0",
+        "original_rank": 974,
+        "new_rank": 966,
+        "score": -0.008213552361396315
+      },
+      {
+        "doc_id": "FT924-5855_0",
+        "original_rank": 992,
+        "new_rank": 994,
+        "score": 0.002012072434607548
+      },
+      {
+        "doc_id": "FT933-9208_0",
+        "original_rank": 552,
+        "new_rank": 530,
+        "score": -0.03985507246376807
+      },
+      {
+        "doc_id": "FT941-14983_0",
+        "original_rank": 993,
+        "new_rank": 993,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA020890-0157_0",
+        "original_rank": 973,
+        "new_rank": 971,
+        "score": -0.0020554984583760483
+      },
+      {
+        "doc_id": "LA052890-0061_0",
+        "original_rank": 739,
+        "new_rank": 768,
+        "score": 0.03776041666666674
+      },
+      {
+        "doc_id": "LA060490-0081_0",
+        "original_rank": 867,
+        "new_rank": 868,
+        "score": 0.0011520737327189723
+      },
+      {
+        "doc_id": "LA061090-0062_0",
+        "original_rank": 271,
+        "new_rank": 214,
+        "score": -0.21033210332103314
+      },
+      {
+        "doc_id": "LA072390-0100_0",
+        "original_rank": 876,
+        "new_rank": 876,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA072390-0101_0",
+        "original_rank": 839,
+        "new_rank": 857,
+        "score": 0.02100350058343059
+      },
+      {
+        "doc_id": "LA100789-0148_1",
+        "original_rank": 197,
+        "new_rank": 174,
+        "score": -0.11675126903553301
+      },
+      {
+        "doc_id": "LA110890-0248_0",
+        "original_rank": 413,
+        "new_rank": 389,
+        "score": -0.05811138014527839
+      },
+      {
+        "doc_id": "LA111290-0111_0",
+        "original_rank": 809,
+        "new_rank": 836,
+        "score": 0.03229665071770327
+      }
+    ],
+    "debug_info": {}
+  },
+  "432": {
+    "rank": 23,
+    "pmrr": -0.031335121625292964,
+    "query": "Do police departments use \"profiling\" to stop motorists?",
+    "instruction": "A relevant document will report or discuss police department  criteria for identifying motorists considered likely to be carrying contraband.  Documents discussing the detention of individuals by foreign security forces are not relevant.",
+    "full_text": "Do police departments use \"profiling\" to stop motorists? A relevant document will report or discuss police department  criteria for identifying motorists considered likely to be carrying contraband.  Documents discussing the detention of individuals by foreign security forces are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-60148_0",
+        "original_rank": 310,
+        "new_rank": 266,
+        "score": -0.14193548387096766
+      },
+      {
+        "doc_id": "FBIS3-60191_0",
+        "original_rank": 774,
+        "new_rank": 787,
+        "score": 0.016518424396442133
+      },
+      {
+        "doc_id": "FBIS4-21286_0",
+        "original_rank": 338,
+        "new_rank": 316,
+        "score": -0.0650887573964497
+      },
+      {
+        "doc_id": "FBIS4-45353_0",
+        "original_rank": 477,
+        "new_rank": 447,
+        "score": -0.06289308176100616
+      },
+      {
+        "doc_id": "FBIS4-45354_0",
+        "original_rank": 593,
+        "new_rank": 586,
+        "score": -0.01180438448566612
+      },
+      {
+        "doc_id": "LA011689-0002_1",
+        "original_rank": 960,
+        "new_rank": 961,
+        "score": 0.0010405827263266776
+      },
+      {
+        "doc_id": "LA011889-0067_4",
+        "original_rank": 332,
+        "new_rank": 365,
+        "score": 0.09041095890410966
+      },
+      {
+        "doc_id": "LA011989-0006_3",
+        "original_rank": 89,
+        "new_rank": 64,
+        "score": -0.2808988764044944
+      },
+      {
+        "doc_id": "LA011989-0012_1",
+        "original_rank": 41,
+        "new_rank": 44,
+        "score": 0.06818181818181823
+      },
+      {
+        "doc_id": "LA020289-0104_1",
+        "original_rank": 432,
+        "new_rank": 446,
+        "score": 0.03139013452914796
+      },
+      {
+        "doc_id": "LA030489-0068_2",
+        "original_rank": 851,
+        "new_rank": 833,
+        "score": -0.021151586368977626
+      },
+      {
+        "doc_id": "LA052589-0076_0",
+        "original_rank": 739,
+        "new_rank": 721,
+        "score": -0.024357239512855178
+      },
+      {
+        "doc_id": "LA061989-0019_2",
+        "original_rank": 425,
+        "new_rank": 488,
+        "score": 0.12909836065573754
+      },
+      {
+        "doc_id": "LA110289-0147_0",
+        "original_rank": 311,
+        "new_rank": 259,
+        "score": -0.16720257234726688
+      }
+    ],
+    "debug_info": {}
+  },
+  "315": {
+    "rank": 24,
+    "pmrr": -0.029923976575175135,
+    "query": "How many fatal highway accidents are there each  year that are not resolved as to cause.",
+    "instruction": "A relevant document will contain data relating to  highway accidents where the cause of the accident  cannot be determined.  Typical of such accidents  would be those where one vehicle \"suddenly swerves  into oncoming traffic.\"",
+    "full_text": "How many fatal highway accidents are there each  year that are not resolved as to cause. A relevant document will contain data relating to  highway accidents where the cause of the accident  cannot be determined.  Typical of such accidents  would be those where one vehicle \"suddenly swerves  into oncoming traffic.\"",
+    "doc_details": [
+      {
+        "doc_id": "LA011590-0065_0",
+        "original_rank": 703,
+        "new_rank": 642,
+        "score": -0.08677098150782359
+      },
+      {
+        "doc_id": "LA012290-0074_0",
+        "original_rank": 976,
+        "new_rank": 972,
+        "score": -0.004098360655737765
+      },
+      {
+        "doc_id": "LA031790-0027_0",
+        "original_rank": 608,
+        "new_rank": 622,
+        "score": 0.022508038585209
+      },
+      {
+        "doc_id": "LA050790-0050_0",
+        "original_rank": 563,
+        "new_rank": 516,
+        "score": -0.08348134991119005
+      },
+      {
+        "doc_id": "LA070290-0090_0",
+        "original_rank": 863,
+        "new_rank": 779,
+        "score": -0.09733487833140209
+      },
+      {
+        "doc_id": "LA070890-0064_0",
+        "original_rank": 750,
+        "new_rank": 738,
+        "score": -0.016000000000000014
+      },
+      {
+        "doc_id": "LA072589-0129_0",
+        "original_rank": 757,
+        "new_rank": 748,
+        "score": -0.011889035667106973
+      },
+      {
+        "doc_id": "LA080489-0023_0",
+        "original_rank": 736,
+        "new_rank": 698,
+        "score": -0.05163043478260865
+      },
+      {
+        "doc_id": "LA081289-0023_0",
+        "original_rank": 483,
+        "new_rank": 471,
+        "score": -0.024844720496894346
+      },
+      {
+        "doc_id": "LA082289-0035_0",
+        "original_rank": 984,
+        "new_rank": 979,
+        "score": -0.005081300813008061
+      },
+      {
+        "doc_id": "LA082490-0144_0",
+        "original_rank": 786,
+        "new_rank": 781,
+        "score": -0.006361323155216203
+      },
+      {
+        "doc_id": "LA102190-0181_0",
+        "original_rank": 914,
+        "new_rank": 896,
+        "score": -0.01969365426695846
+      },
+      {
+        "doc_id": "LA111189-0013_0",
+        "original_rank": 923,
+        "new_rank": 919,
+        "score": -0.004333694474539573
+      }
+    ],
+    "debug_info": {}
+  },
+  "682": {
+    "rank": 25,
+    "pmrr": -0.027253461087014024,
+    "query": "What is being done to teach English to recently admitted adult immigrants?",
+    "instruction": "Descriptions of any program to teach English to adult immigrants are relevant, as are proposals to establish such programs. Testing programs and programs targeting only children are not relevant.",
+    "full_text": "What is being done to teach English to recently admitted adult immigrants? Descriptions of any program to teach English to adult immigrants are relevant, as are proposals to establish such programs. Testing programs and programs targeting only children are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FR940318-2-00138_3",
+        "original_rank": 13,
+        "new_rank": 18,
+        "score": 0.2777777777777779
+      },
+      {
+        "doc_id": "LA012390-0142_3",
+        "original_rank": 569,
+        "new_rank": 650,
+        "score": 0.12461538461538457
+      },
+      {
+        "doc_id": "LA020890-0182_0",
+        "original_rank": 338,
+        "new_rank": 258,
+        "score": -0.23668639053254437
+      },
+      {
+        "doc_id": "LA030890-0016_3",
+        "original_rank": 401,
+        "new_rank": 426,
+        "score": 0.05868544600938963
+      },
+      {
+        "doc_id": "LA031190-0209_0",
+        "original_rank": 125,
+        "new_rank": 115,
+        "score": -0.07999999999999996
+      },
+      {
+        "doc_id": "LA031990-0075_0",
+        "original_rank": 307,
+        "new_rank": 318,
+        "score": 0.03459119496855345
+      },
+      {
+        "doc_id": "LA032290-0170_0",
+        "original_rank": 389,
+        "new_rank": 341,
+        "score": -0.12339331619537286
+      },
+      {
+        "doc_id": "LA041290-0211_3",
+        "original_rank": 87,
+        "new_rank": 64,
+        "score": -0.26436781609195403
+      },
+      {
+        "doc_id": "LA052090-0034_1",
+        "original_rank": 244,
+        "new_rank": 192,
+        "score": -0.21311475409836056
+      },
+      {
+        "doc_id": "LA060290-0115_1",
+        "original_rank": 62,
+        "new_rank": 108,
+        "score": 0.42592592592592593
+      },
+      {
+        "doc_id": "LA060390-0196_0",
+        "original_rank": 295,
+        "new_rank": 300,
+        "score": 0.016666666666666607
+      },
+      {
+        "doc_id": "LA060790-0202_0",
+        "original_rank": 250,
+        "new_rank": 299,
+        "score": 0.16387959866220736
+      },
+      {
+        "doc_id": "LA062290-0075_0",
+        "original_rank": 415,
+        "new_rank": 391,
+        "score": -0.05783132530120483
+      },
+      {
+        "doc_id": "LA070390-0137_0",
+        "original_rank": 81,
+        "new_rank": 56,
+        "score": -0.308641975308642
+      },
+      {
+        "doc_id": "LA072290-0046_3",
+        "original_rank": 69,
+        "new_rank": 104,
+        "score": 0.33653846153846156
+      },
+      {
+        "doc_id": "LA082390-0106_0",
+        "original_rank": 897,
+        "new_rank": 847,
+        "score": -0.055741360089186176
+      },
+      {
+        "doc_id": "LA082690-0027_3",
+        "original_rank": 115,
+        "new_rank": 151,
+        "score": 0.23841059602649006
+      },
+      {
+        "doc_id": "LA092090-0182_1",
+        "original_rank": 517,
+        "new_rank": 550,
+        "score": 0.06000000000000005
+      },
+      {
+        "doc_id": "LA101890-0104_0",
+        "original_rank": 483,
+        "new_rank": 360,
+        "score": -0.2546583850931676
+      },
+      {
+        "doc_id": "LA110790-0052_0",
+        "original_rank": 304,
+        "new_rank": 257,
+        "score": -0.1546052631578948
+      },
+      {
+        "doc_id": "LA111790-0164_1",
+        "original_rank": 198,
+        "new_rank": 231,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "LA111990-0105_0",
+        "original_rank": 105,
+        "new_rank": 78,
+        "score": -0.257142857142857
+      },
+      {
+        "doc_id": "LA112390-0010_0",
+        "original_rank": 117,
+        "new_rank": 57,
+        "score": -0.5128205128205128
+      },
+      {
+        "doc_id": "LA113090-0004_0",
+        "original_rank": 63,
+        "new_rank": 45,
+        "score": -0.2857142857142858
+      },
+      {
+        "doc_id": "LA122389-0132_0",
+        "original_rank": 262,
+        "new_rank": 216,
+        "score": -0.17557251908396942
+      },
+      {
+        "doc_id": "LA122790-0153_1",
+        "original_rank": 59,
+        "new_rank": 97,
+        "score": 0.3917525773195877
+      }
+    ],
+    "debug_info": {}
+  },
+  "608": {
+    "rank": 26,
+    "pmrr": -0.02291263467502506,
+    "query": "Find articles that discuss the pros and cons of taxing U.S. social security benefits.",
+    "instruction": "Only documents that discuss income tax on social security benefits in the U.S. are relevant.  Documents that discuss the social security tax itself or other countries' taxation are irrelevant.",
+    "full_text": "Find articles that discuss the pros and cons of taxing U.S. social security benefits. Only documents that discuss income tax on social security benefits in the U.S. are relevant.  Documents that discuss the social security tax itself or other countries' taxation are irrelevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT931-8547_4",
+        "original_rank": 16,
+        "new_rank": 11,
+        "score": -0.3125
+      },
+      {
+        "doc_id": "FT943-9223_1",
+        "original_rank": 89,
+        "new_rank": 89,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA010389-0054_0",
+        "original_rank": 608,
+        "new_rank": 598,
+        "score": -0.016447368421052655
+      },
+      {
+        "doc_id": "LA010789-0040_2",
+        "original_rank": 587,
+        "new_rank": 653,
+        "score": 0.10107197549770286
+      },
+      {
+        "doc_id": "LA042389-0158_0",
+        "original_rank": 468,
+        "new_rank": 455,
+        "score": -0.02777777777777768
+      },
+      {
+        "doc_id": "LA051189-0052_3",
+        "original_rank": 171,
+        "new_rank": 173,
+        "score": 0.011560693641618491
+      },
+      {
+        "doc_id": "LA051489-0046_0",
+        "original_rank": 41,
+        "new_rank": 30,
+        "score": -0.2682926829268293
+      },
+      {
+        "doc_id": "LA070190-0047_0",
+        "original_rank": 260,
+        "new_rank": 237,
+        "score": -0.08846153846153837
+      },
+      {
+        "doc_id": "LA070790-0019_0",
+        "original_rank": 305,
+        "new_rank": 312,
+        "score": 0.022435897435897467
+      },
+      {
+        "doc_id": "LA070790-0021_0",
+        "original_rank": 469,
+        "new_rank": 467,
+        "score": -0.004264392324093924
+      },
+      {
+        "doc_id": "LA090689-0110_1",
+        "original_rank": 2,
+        "new_rank": 3,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "LA100390-0056_2",
+        "original_rank": 820,
+        "new_rank": 799,
+        "score": -0.025609756097561
+      }
+    ],
+    "debug_info": {}
+  },
+  "632": {
+    "rank": 27,
+    "pmrr": -0.0036150510274629774,
+    "query": "What are the major tin mining countries in southeast Asia?",
+    "instruction": "Relevant document contain information about tin mining in southeast Asia. Countries considered to be in southeast Asia include China, Malaysia, Indonesia, Viet Nam, Burma, Thailand and Laos.",
+    "full_text": "What are the major tin mining countries in southeast Asia? Relevant document contain information about tin mining in southeast Asia. Countries considered to be in southeast Asia include China, Malaysia, Indonesia, Viet Nam, Burma, Thailand and Laos.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS4-20472_92",
+        "original_rank": 904,
+        "new_rank": 879,
+        "score": -0.027654867256637128
+      },
+      {
+        "doc_id": "FBIS4-30124_0",
+        "original_rank": 294,
+        "new_rank": 215,
+        "score": -0.26870748299319724
+      },
+      {
+        "doc_id": "FBIS4-44914_11",
+        "original_rank": 310,
+        "new_rank": 322,
+        "score": 0.037267080745341685
+      },
+      {
+        "doc_id": "FBIS4-5383_0",
+        "original_rank": 314,
+        "new_rank": 255,
+        "score": -0.18789808917197448
+      },
+      {
+        "doc_id": "FT911-3028_0",
+        "original_rank": 522,
+        "new_rank": 553,
+        "score": 0.05605786618444841
+      },
+      {
+        "doc_id": "FT921-4835_1",
+        "original_rank": 549,
+        "new_rank": 575,
+        "score": 0.045217391304347765
+      },
+      {
+        "doc_id": "FT922-4450_0",
+        "original_rank": 954,
+        "new_rank": 955,
+        "score": 0.0010471204188481353
+      },
+      {
+        "doc_id": "FT922-5564_0",
+        "original_rank": 122,
+        "new_rank": 130,
+        "score": 0.06153846153846154
+      },
+      {
+        "doc_id": "FT922-5642_0",
+        "original_rank": 778,
+        "new_rank": 767,
+        "score": -0.014138817480719879
+      },
+      {
+        "doc_id": "FT922-7758_1",
+        "original_rank": 869,
+        "new_rank": 871,
+        "score": 0.0022962112514350874
+      },
+      {
+        "doc_id": "FT922-8181_0",
+        "original_rank": 286,
+        "new_rank": 297,
+        "score": 0.03703703703703709
+      },
+      {
+        "doc_id": "FT922-8667_1",
+        "original_rank": 680,
+        "new_rank": 692,
+        "score": 0.017341040462427793
+      },
+      {
+        "doc_id": "FT923-13931_0",
+        "original_rank": 744,
+        "new_rank": 739,
+        "score": -0.006720430107526876
+      },
+      {
+        "doc_id": "FT923-3450_2",
+        "original_rank": 615,
+        "new_rank": 578,
+        "score": -0.06016260162601628
+      },
+      {
+        "doc_id": "FT923-8113_0",
+        "original_rank": 79,
+        "new_rank": 91,
+        "score": 0.13186813186813173
+      },
+      {
+        "doc_id": "FT923-8983_0",
+        "original_rank": 200,
+        "new_rank": 179,
+        "score": -0.10499999999999998
+      },
+      {
+        "doc_id": "FT931-345_1",
+        "original_rank": 141,
+        "new_rank": 134,
+        "score": -0.049645390070921946
+      },
+      {
+        "doc_id": "FT932-11184_1",
+        "original_rank": 229,
+        "new_rank": 233,
+        "score": 0.01716738197424883
+      },
+      {
+        "doc_id": "FT932-2680_0",
+        "original_rank": 782,
+        "new_rank": 782,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT932-3859_2",
+        "original_rank": 743,
+        "new_rank": 715,
+        "score": -0.037685060565275874
+      },
+      {
+        "doc_id": "FT932-8569_2",
+        "original_rank": 382,
+        "new_rank": 377,
+        "score": -0.01308900523560197
+      },
+      {
+        "doc_id": "FT933-12360_2",
+        "original_rank": 776,
+        "new_rank": 796,
+        "score": 0.025125628140703515
+      },
+      {
+        "doc_id": "FT933-12460_0",
+        "original_rank": 636,
+        "new_rank": 646,
+        "score": 0.015479876160990669
+      },
+      {
+        "doc_id": "FT933-5293_0",
+        "original_rank": 192,
+        "new_rank": 209,
+        "score": 0.08133971291866027
+      },
+      {
+        "doc_id": "FT933-5549_0",
+        "original_rank": 866,
+        "new_rank": 875,
+        "score": 0.010285714285714231
+      },
+      {
+        "doc_id": "FT933-5995_2",
+        "original_rank": 468,
+        "new_rank": 470,
+        "score": 0.004255319148936287
+      },
+      {
+        "doc_id": "FT934-12248_1",
+        "original_rank": 606,
+        "new_rank": 605,
+        "score": -0.0016501650165016146
+      },
+      {
+        "doc_id": "FT934-12249_0",
+        "original_rank": 312,
+        "new_rank": 366,
+        "score": 0.14754098360655732
+      },
+      {
+        "doc_id": "FT934-12498_1",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT934-13160_0",
+        "original_rank": 834,
+        "new_rank": 826,
+        "score": -0.009592326139088891
+      },
+      {
+        "doc_id": "FT934-13428_0",
+        "original_rank": 546,
+        "new_rank": 549,
+        "score": 0.005464480874316946
+      },
+      {
+        "doc_id": "FT941-15450_0",
+        "original_rank": 784,
+        "new_rank": 789,
+        "score": 0.006337135614702172
+      },
+      {
+        "doc_id": "FT941-3351_0",
+        "original_rank": 756,
+        "new_rank": 710,
+        "score": -0.060846560846560926
+      },
+      {
+        "doc_id": "FT942-12610_1",
+        "original_rank": 573,
+        "new_rank": 558,
+        "score": -0.02617801047120416
+      },
+      {
+        "doc_id": "FT942-9756_0",
+        "original_rank": 270,
+        "new_rank": 280,
+        "score": 0.03571428571428581
+      },
+      {
+        "doc_id": "FT943-9143_1",
+        "original_rank": 801,
+        "new_rank": 797,
+        "score": -0.004993757802746468
+      },
+      {
+        "doc_id": "FT944-10411_0",
+        "original_rank": 547,
+        "new_rank": 548,
+        "score": 0.0018248175182482562
+      }
+    ],
+    "debug_info": {}
+  },
+  "342": {
+    "rank": 28,
+    "pmrr": -0.0008548872511801919,
+    "query": "The end of the Cold War seems to have intensified economic competition and has started to generate  serious friction between nations as attempts are  made by diplomatic personnel to acquire sensitive trade and technology information or to obtain  information on highly classified industrial projects. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.",
+    "instruction": "Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.  Of interest would be  the country(s) involved, the information hopefully  acquired, or if the exposure resulted in expulsion  of diplomatic personnel.",
+    "full_text": "The end of the Cold War seems to have intensified economic competition and has started to generate  serious friction between nations as attempts are  made by diplomatic personnel to acquire sensitive trade and technology information or to obtain  information on highly classified industrial projects. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.  Of interest would be  the country(s) involved, the information hopefully  acquired, or if the exposure resulted in expulsion  of diplomatic personnel.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-19264_2",
+        "original_rank": 25,
+        "new_rank": 26,
+        "score": 0.038461538461538436
+      },
+      {
+        "doc_id": "FBIS4-36856_0",
+        "original_rank": 910,
+        "new_rank": 883,
+        "score": -0.029670329670329787
+      },
+      {
+        "doc_id": "FBIS4-36917_0",
+        "original_rank": 911,
+        "new_rank": 882,
+        "score": -0.03183315038419321
+      },
+      {
+        "doc_id": "LA042889-0174_0",
+        "original_rank": 998,
+        "new_rank": 996,
+        "score": -0.002004008016032066
+      },
+      {
+        "doc_id": "LA050689-0089_0",
+        "original_rank": 660,
+        "new_rank": 674,
+        "score": 0.020771513353115667
+      }
+    ],
+    "debug_info": {}
+  },
+  "629": {
+    "rank": 29,
+    "pmrr": 0.005482797903850534,
+    "query": "What is the incidence of violent attacks on abortion clinics and the doctors and staff of the clinics by anti-abortionists?",
+    "instruction": "Documents describing bombings and arson attacks on an abortion clinic, or other violent, destructive actions, are relevant.  Violent attacks on doctors and staff, including shootings, are also relevant. Reports of attempted attacks are relevant.   Reports of non-violent activities such as trespassing, picketing, etc. are irrelevant.",
+    "full_text": "What is the incidence of violent attacks on abortion clinics and the doctors and staff of the clinics by anti-abortionists? Documents describing bombings and arson attacks on an abortion clinic, or other violent, destructive actions, are relevant.  Violent attacks on doctors and staff, including shootings, are also relevant. Reports of attempted attacks are relevant.   Reports of non-violent activities such as trespassing, picketing, etc. are irrelevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT931-4191_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT944-4849_0",
+        "original_rank": 952,
+        "new_rank": 969,
+        "score": 0.01754385964912286
+      },
+      {
+        "doc_id": "LA020289-0076_1",
+        "original_rank": 21,
+        "new_rank": 18,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "LA072289-0045_1",
+        "original_rank": 51,
+        "new_rank": 55,
+        "score": 0.07272727272727275
+      },
+      {
+        "doc_id": "LA082090-0070_0",
+        "original_rank": 23,
+        "new_rank": 25,
+        "score": 0.07999999999999996
+      }
+    ],
+    "debug_info": {}
+  },
+  "681": {
+    "rank": 30,
+    "pmrr": 0.008169189629223462,
+    "query": "Where are wind power installations located?",
+    "instruction": "Documents must provide the location of specific wind power installations.  Descriptions of wind power installations, applications to construct installations, and arguments  for/against wind power are all not relevant.",
+    "full_text": "Where are wind power installations located? Documents must provide the location of specific wind power installations.  Descriptions of wind power installations, applications to construct installations, and arguments  for/against wind power are all not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-20661_1",
+        "original_rank": 172,
+        "new_rank": 170,
+        "score": -0.011627906976744207
+      },
+      {
+        "doc_id": "FBIS3-20671_1",
+        "original_rank": 60,
+        "new_rank": 53,
+        "score": -0.1166666666666667
+      },
+      {
+        "doc_id": "FBIS3-60230_1",
+        "original_rank": 168,
+        "new_rank": 166,
+        "score": -0.011904761904761973
+      },
+      {
+        "doc_id": "FBIS4-66377_11",
+        "original_rank": 231,
+        "new_rank": 302,
+        "score": 0.23509933774834435
+      },
+      {
+        "doc_id": "FBIS4-66612_1",
+        "original_rank": 259,
+        "new_rank": 245,
+        "score": -0.05405405405405417
+      }
+    ],
+    "debug_info": {}
+  },
+  "611": {
+    "rank": 31,
+    "pmrr": 0.011997553196799062,
+    "query": "What violent activities have Kurds, or members of the Workers Party of Kurdistan (PKK), carried out in Germany?",
+    "instruction": "Relevant documents contain information on the types of violent, destructive, or terroristic activities perpetrated by Kurds or members of the Workers Party of Kurdistan (PKK) in Germany. Information on whom or what is targeted by these kinds of acts is also relevant.  Relevant activities include: killing or wounding of individuals; destruction or burning of property; and rioting. Relevant activities must be both attributed to Kurds or the PKK and occur in Germany.  Violence by Kurds or the PKK against other Kurds or PKK members is relevant if it occurs in Germany, though self immolation is irrelevant.  Peaceful demonstrations in Germany are irrelevant.",
+    "full_text": "What violent activities have Kurds, or members of the Workers Party of Kurdistan (PKK), carried out in Germany? Relevant documents contain information on the types of violent, destructive, or terroristic activities perpetrated by Kurds or members of the Workers Party of Kurdistan (PKK) in Germany. Information on whom or what is targeted by these kinds of acts is also relevant.  Relevant activities include: killing or wounding of individuals; destruction or burning of property; and rioting. Relevant activities must be both attributed to Kurds or the PKK and occur in Germany.  Violence by Kurds or the PKK against other Kurds or PKK members is relevant if it occurs in Germany, though self immolation is irrelevant.  Peaceful demonstrations in Germany are irrelevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-18686_0",
+        "original_rank": 276,
+        "new_rank": 295,
+        "score": 0.06440677966101693
+      },
+      {
+        "doc_id": "FBIS3-19811_0",
+        "original_rank": 337,
+        "new_rank": 349,
+        "score": 0.034383954154727836
+      },
+      {
+        "doc_id": "FBIS3-19897_1",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS3-20084_0",
+        "original_rank": 36,
+        "new_rank": 42,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "FBIS3-20188_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS3-39929_0",
+        "original_rank": 45,
+        "new_rank": 48,
+        "score": 0.06250000000000011
+      },
+      {
+        "doc_id": "FBIS3-60900_0",
+        "original_rank": 18,
+        "new_rank": 19,
+        "score": 0.052631578947368474
+      },
+      {
+        "doc_id": "FBIS4-18301_0",
+        "original_rank": 479,
+        "new_rank": 477,
+        "score": -0.00417536534446783
+      },
+      {
+        "doc_id": "FBIS4-18401_0",
+        "original_rank": 137,
+        "new_rank": 139,
+        "score": 0.014388489208633004
+      },
+      {
+        "doc_id": "FBIS4-18641_0",
+        "original_rank": 660,
+        "new_rank": 655,
+        "score": -0.007575757575757569
+      },
+      {
+        "doc_id": "FBIS4-18658_0",
+        "original_rank": 901,
+        "new_rank": 902,
+        "score": 0.0011086474501108556
+      },
+      {
+        "doc_id": "FBIS4-18761_0",
+        "original_rank": 183,
+        "new_rank": 176,
+        "score": -0.03825136612021862
+      },
+      {
+        "doc_id": "FBIS4-19518_0",
+        "original_rank": 25,
+        "new_rank": 22,
+        "score": -0.12
+      },
+      {
+        "doc_id": "FBIS4-19584_2",
+        "original_rank": 71,
+        "new_rank": 71,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS4-19938_0",
+        "original_rank": 621,
+        "new_rank": 609,
+        "score": -0.019323671497584516
+      },
+      {
+        "doc_id": "FBIS4-42321_0",
+        "original_rank": 7,
+        "new_rank": 9,
+        "score": 0.2222222222222222
+      },
+      {
+        "doc_id": "FBIS4-46313_2",
+        "original_rank": 20,
+        "new_rank": 20,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS4-64663_0",
+        "original_rank": 526,
+        "new_rank": 550,
+        "score": 0.043636363636363584
+      },
+      {
+        "doc_id": "FBIS4-68077_0",
+        "original_rank": 527,
+        "new_rank": 549,
+        "score": 0.04007285974499086
+      },
+      {
+        "doc_id": "FT932-1002_0",
+        "original_rank": 79,
+        "new_rank": 77,
+        "score": -0.025316455696202667
+      },
+      {
+        "doc_id": "FT932-873_0",
+        "original_rank": 119,
+        "new_rank": 121,
+        "score": 0.016528925619834656
+      },
+      {
+        "doc_id": "FT934-10522_0",
+        "original_rank": 17,
+        "new_rank": 16,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "FT941-2362_0",
+        "original_rank": 68,
+        "new_rank": 67,
+        "score": -0.014705882352941124
+      },
+      {
+        "doc_id": "FT941-2364_0",
+        "original_rank": 86,
+        "new_rank": 82,
+        "score": -0.04651162790697683
+      },
+      {
+        "doc_id": "FT941-2520_0",
+        "original_rank": 937,
+        "new_rank": 937,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT943-16653_0",
+        "original_rank": 880,
+        "new_rank": 877,
+        "score": -0.003409090909091028
+      },
+      {
+        "doc_id": "FT944-4306_1",
+        "original_rank": 214,
+        "new_rank": 207,
+        "score": -0.032710280373831835
+      }
+    ],
+    "debug_info": {}
+  },
+  "687": {
+    "rank": 32,
+    "pmrr": 0.012409602772153342,
+    "query": "What businesses and industries form the basis of the economy of Northern Ireland?",
+    "instruction": "Relevant documents name at least one business or industry that is a major employer in Northern Ireland.  Documents about unemployment or industry closing are not relevant.",
+    "full_text": "What businesses and industries form the basis of the economy of Northern Ireland? Relevant documents name at least one business or industry that is a major employer in Northern Ireland.  Documents about unemployment or industry closing are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FT921-12195_0",
+        "original_rank": 379,
+        "new_rank": 385,
+        "score": 0.01558441558441559
+      },
+      {
+        "doc_id": "FT922-8302_0",
+        "original_rank": 52,
+        "new_rank": 135,
+        "score": 0.6148148148148148
+      },
+      {
+        "doc_id": "FT923-1766_1",
+        "original_rank": 61,
+        "new_rank": 65,
+        "score": 0.06153846153846154
+      },
+      {
+        "doc_id": "FT924-12351_0",
+        "original_rank": 719,
+        "new_rank": 762,
+        "score": 0.05643044619422566
+      },
+      {
+        "doc_id": "FT924-2507_0",
+        "original_rank": 899,
+        "new_rank": 873,
+        "score": -0.028921023359288145
+      },
+      {
+        "doc_id": "FT933-4353_3",
+        "original_rank": 350,
+        "new_rank": 275,
+        "score": -0.2142857142857143
+      },
+      {
+        "doc_id": "FT933-4357_6",
+        "original_rank": 2,
+        "new_rank": 4,
+        "score": 0.5
+      },
+      {
+        "doc_id": "FT933-724_0",
+        "original_rank": 190,
+        "new_rank": 146,
+        "score": -0.231578947368421
+      },
+      {
+        "doc_id": "FT941-6388_0",
+        "original_rank": 286,
+        "new_rank": 258,
+        "score": -0.09790209790209792
+      },
+      {
+        "doc_id": "FT942-7316_0",
+        "original_rank": 118,
+        "new_rank": 52,
+        "score": -0.5593220338983051
+      },
+      {
+        "doc_id": "FT943-3202_0",
+        "original_rank": 288,
+        "new_rank": 362,
+        "score": 0.20441988950276246
+      },
+      {
+        "doc_id": "FT943-3204_1",
+        "original_rank": 387,
+        "new_rank": 416,
+        "score": 0.06971153846153844
+      },
+      {
+        "doc_id": "FT943-3205_3",
+        "original_rank": 17,
+        "new_rank": 14,
+        "score": -0.17647058823529405
+      },
+      {
+        "doc_id": "FT944-3034_3",
+        "original_rank": 127,
+        "new_rank": 129,
+        "score": 0.015503875968992276
+      },
+      {
+        "doc_id": "FT944-3035_0",
+        "original_rank": 438,
+        "new_rank": 419,
+        "score": -0.04337899543379009
+      }
+    ],
+    "debug_info": {}
+  },
+  "305": {
+    "rank": 33,
+    "pmrr": 0.017543770473059002,
+    "query": "Which are the most crashworthy, and least crashworthy,  passenger vehicles?",
+    "instruction": "A relevant document will contain information on the  crashworthiness of a given vehicle or vehicles that  can be used to draw a comparison with other vehicles.   The document will have to describe/compare vehicles,  not drivers.  For instance, it should be expected  that vehicles preferred by 16-25 year-olds would be  involved in more crashes, because that age group is involved in more crashes.  I would view number of  fatalities per 100 crashes to be more revealing of  a vehicle's crashworthiness than the number of crashes per 100,000 miles, for example.",
+    "full_text": "Which are the most crashworthy, and least crashworthy,  passenger vehicles? A relevant document will contain information on the  crashworthiness of a given vehicle or vehicles that  can be used to draw a comparison with other vehicles.   The document will have to describe/compare vehicles,  not drivers.  For instance, it should be expected  that vehicles preferred by 16-25 year-olds would be  involved in more crashes, because that age group is involved in more crashes.  I would view number of  fatalities per 100 crashes to be more revealing of  a vehicle's crashworthiness than the number of crashes per 100,000 miles, for example.",
+    "doc_details": [
+      {
+        "doc_id": "FT944-15615_1",
+        "original_rank": 204,
+        "new_rank": 192,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "FT944-5300_0",
+        "original_rank": 368,
+        "new_rank": 335,
+        "score": -0.08967391304347827
+      },
+      {
+        "doc_id": "LA012590-0229_0",
+        "original_rank": 910,
+        "new_rank": 909,
+        "score": -0.001098901098901095
+      },
+      {
+        "doc_id": "LA020590-0088_0",
+        "original_rank": 736,
+        "new_rank": 733,
+        "score": -0.0040760869565217295
+      },
+      {
+        "doc_id": "LA021089-0176_0",
+        "original_rank": 590,
+        "new_rank": 641,
+        "score": 0.07956318252730099
+      },
+      {
+        "doc_id": "LA021189-0138_0",
+        "original_rank": 820,
+        "new_rank": 835,
+        "score": 0.017964071856287456
+      },
+      {
+        "doc_id": "LA021289-0208_0",
+        "original_rank": 965,
+        "new_rank": 965,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA021790-0136_0",
+        "original_rank": 751,
+        "new_rank": 789,
+        "score": 0.04816223067173653
+      },
+      {
+        "doc_id": "LA031689-0177_1",
+        "original_rank": 13,
+        "new_rank": 14,
+        "score": 0.07142857142857151
+      },
+      {
+        "doc_id": "LA032390-0172_0",
+        "original_rank": 878,
+        "new_rank": 898,
+        "score": 0.022271714922049046
+      },
+      {
+        "doc_id": "LA042790-0172_0",
+        "original_rank": 363,
+        "new_rank": 376,
+        "score": 0.03457446808510645
+      },
+      {
+        "doc_id": "LA051689-0139_0",
+        "original_rank": 699,
+        "new_rank": 685,
+        "score": -0.02002861230329034
+      },
+      {
+        "doc_id": "LA052190-0048_0",
+        "original_rank": 904,
+        "new_rank": 904,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA072189-0048_0",
+        "original_rank": 1000,
+        "new_rank": 1000,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA072790-0141_2",
+        "original_rank": 602,
+        "new_rank": 647,
+        "score": 0.06955177743431229
+      },
+      {
+        "doc_id": "LA081089-0193_0",
+        "original_rank": 583,
+        "new_rank": 623,
+        "score": 0.0642054574638844
+      },
+      {
+        "doc_id": "LA091389-0119_0",
+        "original_rank": 319,
+        "new_rank": 332,
+        "score": 0.03915662650602403
+      },
+      {
+        "doc_id": "LA091589-0101_0",
+        "original_rank": 883,
+        "new_rank": 891,
+        "score": 0.008978675645342271
+      },
+      {
+        "doc_id": "LA091989-0105_0",
+        "original_rank": 851,
+        "new_rank": 847,
+        "score": -0.004700352526439411
+      },
+      {
+        "doc_id": "LA092289-0167_0",
+        "original_rank": 884,
+        "new_rank": 883,
+        "score": -0.0011312217194570096
+      },
+      {
+        "doc_id": "LA100589-0024_0",
+        "original_rank": 953,
+        "new_rank": 955,
+        "score": 0.0020942408376962707
+      },
+      {
+        "doc_id": "LA101190-0218_0",
+        "original_rank": 208,
+        "new_rank": 230,
+        "score": 0.09565217391304348
+      },
+      {
+        "doc_id": "LA111189-0013_0",
+        "original_rank": 955,
+        "new_rank": 956,
+        "score": 0.0010460251046027214
+      },
+      {
+        "doc_id": "LA112590-0109_0",
+        "original_rank": 829,
+        "new_rank": 833,
+        "score": 0.004801920768307322
+      },
+      {
+        "doc_id": "LA120189-0179_0",
+        "original_rank": 606,
+        "new_rank": 656,
+        "score": 0.07621951219512191
+      },
+      {
+        "doc_id": "LA122989-0063_0",
+        "original_rank": 696,
+        "new_rank": 696,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "652": {
+    "rank": 34,
+    "pmrr": 0.021773533401282904,
+    "query": "What was the OIC's involvement in the Balkans in 1990-94?",
+    "instruction": "Relevant documents describe the role the OIC played in the Balkan region.  Also relevant are documents reflecting the Balkans' players (nations, groups) positions pro or con regarding OIC involvement.",
+    "full_text": "What was the OIC's involvement in the Balkans in 1990-94? Relevant documents describe the role the OIC played in the Balkan region.  Also relevant are documents reflecting the Balkans' players (nations, groups) positions pro or con regarding OIC involvement.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-28521_0",
+        "original_rank": 146,
+        "new_rank": 212,
+        "score": 0.3113207547169812
+      },
+      {
+        "doc_id": "FBIS3-28810_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS3-29716_0",
+        "original_rank": 163,
+        "new_rank": 218,
+        "score": 0.2522935779816513
+      },
+      {
+        "doc_id": "FBIS3-34183_0",
+        "original_rank": 525,
+        "new_rank": 454,
+        "score": -0.13523809523809527
+      },
+      {
+        "doc_id": "FBIS3-34645_0",
+        "original_rank": 78,
+        "new_rank": 111,
+        "score": 0.29729729729729726
+      },
+      {
+        "doc_id": "FBIS3-35305_0",
+        "original_rank": 41,
+        "new_rank": 53,
+        "score": 0.2264150943396227
+      },
+      {
+        "doc_id": "FBIS3-39993_0",
+        "original_rank": 287,
+        "new_rank": 303,
+        "score": 0.05280528052805278
+      },
+      {
+        "doc_id": "FBIS3-48896_0",
+        "original_rank": 558,
+        "new_rank": 477,
+        "score": -0.14516129032258074
+      },
+      {
+        "doc_id": "FBIS3-49654_3",
+        "original_rank": 601,
+        "new_rank": 528,
+        "score": -0.12146422628951747
+      },
+      {
+        "doc_id": "FBIS3-50383_0",
+        "original_rank": 290,
+        "new_rank": 270,
+        "score": -0.06896551724137934
+      },
+      {
+        "doc_id": "FBIS3-53334_0",
+        "original_rank": 668,
+        "new_rank": 664,
+        "score": -0.0059880239520957446
+      },
+      {
+        "doc_id": "FBIS3-53464_0",
+        "original_rank": 302,
+        "new_rank": 307,
+        "score": 0.016286644951140072
+      },
+      {
+        "doc_id": "FBIS3-53465_0",
+        "original_rank": 227,
+        "new_rank": 186,
+        "score": -0.1806167400881057
+      },
+      {
+        "doc_id": "FBIS3-53699_0",
+        "original_rank": 781,
+        "new_rank": 737,
+        "score": -0.05633802816901401
+      },
+      {
+        "doc_id": "FBIS3-53700_0",
+        "original_rank": 9,
+        "new_rank": 11,
+        "score": 0.18181818181818177
+      },
+      {
+        "doc_id": "FBIS3-54502_0",
+        "original_rank": 233,
+        "new_rank": 194,
+        "score": -0.16738197424892698
+      },
+      {
+        "doc_id": "FBIS3-54503_0",
+        "original_rank": 294,
+        "new_rank": 255,
+        "score": -0.13265306122448983
+      },
+      {
+        "doc_id": "FBIS3-8721_0",
+        "original_rank": 7,
+        "new_rank": 7,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FBIS4-13183_0",
+        "original_rank": 446,
+        "new_rank": 374,
+        "score": -0.16143497757847525
+      },
+      {
+        "doc_id": "FBIS4-13263_2",
+        "original_rank": 405,
+        "new_rank": 293,
+        "score": -0.27654320987654324
+      },
+      {
+        "doc_id": "FBIS4-13317_0",
+        "original_rank": 682,
+        "new_rank": 639,
+        "score": -0.06304985337243407
+      },
+      {
+        "doc_id": "FBIS4-13598_0",
+        "original_rank": 189,
+        "new_rank": 260,
+        "score": 0.273076923076923
+      },
+      {
+        "doc_id": "FBIS4-13976_0",
+        "original_rank": 415,
+        "new_rank": 475,
+        "score": 0.12631578947368427
+      },
+      {
+        "doc_id": "FBIS4-13983_0",
+        "original_rank": 916,
+        "new_rank": 910,
+        "score": -0.0065502183406114245
+      },
+      {
+        "doc_id": "FBIS4-14006_0",
+        "original_rank": 716,
+        "new_rank": 657,
+        "score": -0.08240223463687146
+      },
+      {
+        "doc_id": "FBIS4-52372_0",
+        "original_rank": 173,
+        "new_rank": 203,
+        "score": 0.14778325123152702
+      },
+      {
+        "doc_id": "FBIS4-55009_0",
+        "original_rank": 828,
+        "new_rank": 754,
+        "score": -0.08937198067632846
+      },
+      {
+        "doc_id": "FBIS4-58470_0",
+        "original_rank": 29,
+        "new_rank": 40,
+        "score": 0.2749999999999999
+      },
+      {
+        "doc_id": "FBIS4-9279_0",
+        "original_rank": 56,
+        "new_rank": 67,
+        "score": 0.16417910447761186
+      }
+    ],
+    "debug_info": {}
+  },
+  "373": {
+    "rank": 35,
+    "pmrr": 0.02272121721444321,
+    "query": "Identify documents that discuss the concerns of the United States regarding the export of  encryption equipment.",
+    "instruction": "Documents that merely mention the name of a company or group that produces encryption equipment but does not mention the exportation and/or commercial exploitation of the encryption equipment are not relevant.  Documents  which refer to governmental access into the encryption  systems for the purposes of counter-intelligence or  anti-crime activities are relevant.",
+    "full_text": "Identify documents that discuss the concerns of the United States regarding the export of  encryption equipment. Documents that merely mention the name of a company or group that produces encryption equipment but does not mention the exportation and/or commercial exploitation of the encryption equipment are not relevant.  Documents  which refer to governmental access into the encryption  systems for the purposes of counter-intelligence or  anti-crime activities are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FR940323-2-00145_2",
+        "original_rank": 974,
+        "new_rank": 968,
+        "score": -0.006160164271047264
+      },
+      {
+        "doc_id": "FR940513-2-00063_2",
+        "original_rank": 7,
+        "new_rank": 12,
+        "score": 0.41666666666666663
+      },
+      {
+        "doc_id": "FR940516-0-00056_0",
+        "original_rank": 86,
+        "new_rank": 85,
+        "score": -0.011627906976744207
+      },
+      {
+        "doc_id": "FR940617-2-00008_0",
+        "original_rank": 254,
+        "new_rank": 244,
+        "score": -0.03937007874015752
+      },
+      {
+        "doc_id": "FR940902-0-00008_0",
+        "original_rank": 3,
+        "new_rank": 11,
+        "score": 0.7272727272727273
+      },
+      {
+        "doc_id": "FR940902-0-00009_1",
+        "original_rank": 14,
+        "new_rank": 24,
+        "score": 0.41666666666666663
+      },
+      {
+        "doc_id": "FR940902-0-00010_1",
+        "original_rank": 69,
+        "new_rank": 103,
+        "score": 0.33009708737864085
+      },
+      {
+        "doc_id": "FR941019-2-00004_0",
+        "original_rank": 100,
+        "new_rank": 68,
+        "score": -0.31999999999999995
+      },
+      {
+        "doc_id": "FT922-2528_0",
+        "original_rank": 581,
+        "new_rank": 549,
+        "score": -0.05507745266781405
+      },
+      {
+        "doc_id": "FT923-4778_0",
+        "original_rank": 912,
+        "new_rank": 897,
+        "score": -0.016447368421052655
+      },
+      {
+        "doc_id": "FT933-265_0",
+        "original_rank": 594,
+        "new_rank": 594,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT933-6518_0",
+        "original_rank": 234,
+        "new_rank": 198,
+        "score": -0.15384615384615385
+      },
+      {
+        "doc_id": "FT941-10834_0",
+        "original_rank": 144,
+        "new_rank": 165,
+        "score": 0.1272727272727272
+      },
+      {
+        "doc_id": "FT941-3295_1",
+        "original_rank": 123,
+        "new_rank": 94,
+        "score": -0.2357723577235772
+      },
+      {
+        "doc_id": "FT941-7374_0",
+        "original_rank": 488,
+        "new_rank": 395,
+        "score": -0.19057377049180324
+      },
+      {
+        "doc_id": "FT942-16368_0",
+        "original_rank": 118,
+        "new_rank": 148,
+        "score": 0.20270270270270263
+      },
+      {
+        "doc_id": "FT943-12969_0",
+        "original_rank": 465,
+        "new_rank": 310,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "FT943-12981_0",
+        "original_rank": 23,
+        "new_rank": 21,
+        "score": -0.08695652173913038
+      },
+      {
+        "doc_id": "FT943-5307_2",
+        "original_rank": 11,
+        "new_rank": 14,
+        "score": 0.2142857142857143
+      },
+      {
+        "doc_id": "LA060790-0163_3",
+        "original_rank": 120,
+        "new_rank": 64,
+        "score": -0.4666666666666667
+      },
+      {
+        "doc_id": "LA061990-0020_2",
+        "original_rank": 288,
+        "new_rank": 274,
+        "score": -0.04861111111111116
+      },
+      {
+        "doc_id": "LA062490-0162_1",
+        "original_rank": 430,
+        "new_rank": 443,
+        "score": 0.029345372460496733
+      }
+    ],
+    "debug_info": {}
+  },
+  "605": {
+    "rank": 36,
+    "pmrr": 0.02808785064314064,
+    "query": "What are the pros and cons of Great Britain's universal health care system?",
+    "instruction": "Documents that discuss recommendations for change or list criticisms of the current system are relevant.  Documents about an individual's experience with the health care system in Great Britain are irrelevant unless the document also contains a specific recommendation or criticism.",
+    "full_text": "What are the pros and cons of Great Britain's universal health care system? Documents that discuss recommendations for change or list criticisms of the current system are relevant.  Documents about an individual's experience with the health care system in Great Britain are irrelevant unless the document also contains a specific recommendation or criticism.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-22585_0",
+        "original_rank": 252,
+        "new_rank": 251,
+        "score": -0.003968253968253954
+      },
+      {
+        "doc_id": "FT911-1088_0",
+        "original_rank": 405,
+        "new_rank": 434,
+        "score": 0.06682027649769584
+      },
+      {
+        "doc_id": "FT911-252_0",
+        "original_rank": 74,
+        "new_rank": 111,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "FT911-2956_1",
+        "original_rank": 71,
+        "new_rank": 44,
+        "score": -0.3802816901408451
+      },
+      {
+        "doc_id": "FT911-870_0",
+        "original_rank": 129,
+        "new_rank": 148,
+        "score": 0.1283783783783783
+      },
+      {
+        "doc_id": "FT921-11809_0",
+        "original_rank": 670,
+        "new_rank": 657,
+        "score": -0.01940298507462679
+      },
+      {
+        "doc_id": "FT921-4423_1",
+        "original_rank": 416,
+        "new_rank": 417,
+        "score": 0.0023980815347722784
+      },
+      {
+        "doc_id": "FT921-704_0",
+        "original_rank": 835,
+        "new_rank": 848,
+        "score": 0.015330188679245293
+      },
+      {
+        "doc_id": "FT921-7527_0",
+        "original_rank": 234,
+        "new_rank": 249,
+        "score": 0.06024096385542188
+      },
+      {
+        "doc_id": "FT921-7536_1",
+        "original_rank": 47,
+        "new_rank": 46,
+        "score": -0.021276595744680882
+      },
+      {
+        "doc_id": "FT921-7582_0",
+        "original_rank": 374,
+        "new_rank": 385,
+        "score": 0.02857142857142847
+      },
+      {
+        "doc_id": "FT921-956_1",
+        "original_rank": 30,
+        "new_rank": 30,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT921-9578_0",
+        "original_rank": 394,
+        "new_rank": 391,
+        "score": -0.0076142131979697325
+      },
+      {
+        "doc_id": "FT922-1093_1",
+        "original_rank": 78,
+        "new_rank": 83,
+        "score": 0.06024096385542166
+      },
+      {
+        "doc_id": "FT922-12186_6",
+        "original_rank": 258,
+        "new_rank": 292,
+        "score": 0.11643835616438358
+      },
+      {
+        "doc_id": "FT922-13837_0",
+        "original_rank": 986,
+        "new_rank": 988,
+        "score": 0.002024291497975672
+      },
+      {
+        "doc_id": "FT922-8918_3",
+        "original_rank": 655,
+        "new_rank": 614,
+        "score": -0.0625954198473283
+      },
+      {
+        "doc_id": "FT923-14555_1",
+        "original_rank": 381,
+        "new_rank": 382,
+        "score": 0.002617801047120394
+      },
+      {
+        "doc_id": "FT923-4512_0",
+        "original_rank": 633,
+        "new_rank": 642,
+        "score": 0.014018691588785104
+      },
+      {
+        "doc_id": "FT923-4846_1",
+        "original_rank": 535,
+        "new_rank": 550,
+        "score": 0.027272727272727337
+      },
+      {
+        "doc_id": "FT923-6382_1",
+        "original_rank": 544,
+        "new_rank": 558,
+        "score": 0.02508960573476704
+      },
+      {
+        "doc_id": "FT924-14438_1",
+        "original_rank": 718,
+        "new_rank": 732,
+        "score": 0.01912568306010931
+      },
+      {
+        "doc_id": "FT924-15553_1",
+        "original_rank": 573,
+        "new_rank": 570,
+        "score": -0.005235602094240788
+      },
+      {
+        "doc_id": "FT924-16069_0",
+        "original_rank": 513,
+        "new_rank": 572,
+        "score": 0.10314685314685312
+      },
+      {
+        "doc_id": "FT924-2065_0",
+        "original_rank": 81,
+        "new_rank": 88,
+        "score": 0.07954545454545447
+      },
+      {
+        "doc_id": "FT924-7958_1",
+        "original_rank": 111,
+        "new_rank": 126,
+        "score": 0.11904761904761907
+      },
+      {
+        "doc_id": "FT931-11882_0",
+        "original_rank": 479,
+        "new_rank": 497,
+        "score": 0.03621730382293742
+      },
+      {
+        "doc_id": "FT931-13918_0",
+        "original_rank": 890,
+        "new_rank": 891,
+        "score": 0.001122334455667784
+      },
+      {
+        "doc_id": "FT931-13927_0",
+        "original_rank": 888,
+        "new_rank": 880,
+        "score": -0.009009009009008917
+      },
+      {
+        "doc_id": "FT931-6132_0",
+        "original_rank": 259,
+        "new_rank": 267,
+        "score": 0.029962546816479363
+      },
+      {
+        "doc_id": "FT931-8666_0",
+        "original_rank": 75,
+        "new_rank": 85,
+        "score": 0.11764705882352944
+      },
+      {
+        "doc_id": "FT931-8924_0",
+        "original_rank": 298,
+        "new_rank": 320,
+        "score": 0.06874999999999998
+      },
+      {
+        "doc_id": "FT934-3749_0",
+        "original_rank": 981,
+        "new_rank": 981,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT941-16914_0",
+        "original_rank": 166,
+        "new_rank": 165,
+        "score": -0.0060240963855421326
+      },
+      {
+        "doc_id": "FT942-13474_3",
+        "original_rank": 556,
+        "new_rank": 575,
+        "score": 0.03304347826086962
+      },
+      {
+        "doc_id": "FT942-14832_0",
+        "original_rank": 814,
+        "new_rank": 831,
+        "score": 0.020457280385078214
+      },
+      {
+        "doc_id": "FT943-11624_0",
+        "original_rank": 122,
+        "new_rank": 107,
+        "score": -0.12295081967213106
+      },
+      {
+        "doc_id": "FT943-14051_0",
+        "original_rank": 73,
+        "new_rank": 76,
+        "score": 0.03947368421052633
+      },
+      {
+        "doc_id": "FT943-15565_0",
+        "original_rank": 190,
+        "new_rank": 197,
+        "score": 0.035532994923857975
+      },
+      {
+        "doc_id": "FT943-16394_0",
+        "original_rank": 347,
+        "new_rank": 378,
+        "score": 0.08201058201058198
+      },
+      {
+        "doc_id": "FT943-4045_0",
+        "original_rank": 313,
+        "new_rank": 333,
+        "score": 0.06006006006006004
+      },
+      {
+        "doc_id": "FT944-6249_1",
+        "original_rank": 756,
+        "new_rank": 753,
+        "score": -0.003968253968253954
+      },
+      {
+        "doc_id": "FT944-9377_0",
+        "original_rank": 273,
+        "new_rank": 311,
+        "score": 0.12218649517684887
+      }
+    ],
+    "debug_info": {}
+  },
+  "358": {
+    "rank": 37,
+    "pmrr": 0.04388371203370119,
+    "query": "What role does blood-alcohol level play in  automobile accident fatalities?",
+    "instruction": "Relevant documents must contain information on automobile accidents in which there was a  fatality and the blood-alcohol level of the driver of the vehicle must be identified.",
+    "full_text": "What role does blood-alcohol level play in  automobile accident fatalities? Relevant documents must contain information on automobile accidents in which there was a  fatality and the blood-alcohol level of the driver of the vehicle must be identified.",
+    "doc_details": [
+      {
+        "doc_id": "LA011089-0095_3",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA011289-0070_1",
+        "original_rank": 9,
+        "new_rank": 20,
+        "score": 0.5499999999999999
+      },
+      {
+        "doc_id": "LA013089-0044_0",
+        "original_rank": 179,
+        "new_rank": 157,
+        "score": -0.12290502793296088
+      },
+      {
+        "doc_id": "LA013089-0100_0",
+        "original_rank": 145,
+        "new_rank": 107,
+        "score": -0.26206896551724135
+      },
+      {
+        "doc_id": "LA013189-0058_1",
+        "original_rank": 829,
+        "new_rank": 870,
+        "score": 0.047126436781609105
+      },
+      {
+        "doc_id": "LA020289-0091_0",
+        "original_rank": 37,
+        "new_rank": 26,
+        "score": -0.29729729729729726
+      },
+      {
+        "doc_id": "LA030889-0034_1",
+        "original_rank": 4,
+        "new_rank": 14,
+        "score": 0.7142857142857143
+      },
+      {
+        "doc_id": "LA031889-0124_0",
+        "original_rank": 16,
+        "new_rank": 16,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA040689-0027_0",
+        "original_rank": 6,
+        "new_rank": 9,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "LA040789-0022_0",
+        "original_rank": 24,
+        "new_rank": 24,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA042590-0030_0",
+        "original_rank": 49,
+        "new_rank": 45,
+        "score": -0.08163265306122458
+      },
+      {
+        "doc_id": "LA042889-0069_0",
+        "original_rank": 61,
+        "new_rank": 85,
+        "score": 0.2823529411764706
+      },
+      {
+        "doc_id": "LA050389-0065_0",
+        "original_rank": 100,
+        "new_rank": 102,
+        "score": 0.019607843137254943
+      },
+      {
+        "doc_id": "LA050389-0106_2",
+        "original_rank": 402,
+        "new_rank": 507,
+        "score": 0.20710059171597628
+      },
+      {
+        "doc_id": "LA050990-0062_0",
+        "original_rank": 25,
+        "new_rank": 34,
+        "score": 0.26470588235294124
+      },
+      {
+        "doc_id": "LA051889-0059_2",
+        "original_rank": 22,
+        "new_rank": 29,
+        "score": 0.24137931034482762
+      },
+      {
+        "doc_id": "LA060189-0147_0",
+        "original_rank": 64,
+        "new_rank": 80,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "LA061490-0039_1",
+        "original_rank": 63,
+        "new_rank": 64,
+        "score": 0.015625
+      },
+      {
+        "doc_id": "LA062290-0055_1",
+        "original_rank": 629,
+        "new_rank": 672,
+        "score": 0.06398809523809534
+      },
+      {
+        "doc_id": "LA072789-0134_2",
+        "original_rank": 251,
+        "new_rank": 314,
+        "score": 0.2006369426751592
+      },
+      {
+        "doc_id": "LA081189-0092_0",
+        "original_rank": 36,
+        "new_rank": 27,
+        "score": -0.25
+      },
+      {
+        "doc_id": "LA081789-0031_0",
+        "original_rank": 92,
+        "new_rank": 88,
+        "score": -0.0434782608695653
+      },
+      {
+        "doc_id": "LA091389-0008_0",
+        "original_rank": 44,
+        "new_rank": 56,
+        "score": 0.2142857142857143
+      },
+      {
+        "doc_id": "LA091689-0078_0",
+        "original_rank": 18,
+        "new_rank": 21,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "LA092789-0026_0",
+        "original_rank": 23,
+        "new_rank": 23,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA092789-0070_0",
+        "original_rank": 321,
+        "new_rank": 300,
+        "score": -0.06542056074766367
+      },
+      {
+        "doc_id": "LA101090-0043_0",
+        "original_rank": 5,
+        "new_rank": 4,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "LA101290-0077_0",
+        "original_rank": 7,
+        "new_rank": 7,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA101989-0014_0",
+        "original_rank": 12,
+        "new_rank": 5,
+        "score": -0.5833333333333334
+      },
+      {
+        "doc_id": "LA110890-0049_0",
+        "original_rank": 26,
+        "new_rank": 22,
+        "score": -0.15384615384615385
+      },
+      {
+        "doc_id": "LA110989-0177_0",
+        "original_rank": 68,
+        "new_rank": 60,
+        "score": -0.11764705882352944
+      },
+      {
+        "doc_id": "LA120789-0024_0",
+        "original_rank": 110,
+        "new_rank": 106,
+        "score": -0.036363636363636376
+      },
+      {
+        "doc_id": "LA122389-0007_1",
+        "original_rank": 71,
+        "new_rank": 99,
+        "score": 0.28282828282828276
+      },
+      {
+        "doc_id": "LA122389-0013_0",
+        "original_rank": 54,
+        "new_rank": 50,
+        "score": -0.07407407407407418
+      }
+    ],
+    "debug_info": {}
+  },
+  "421": {
+    "rank": 38,
+    "pmrr": 0.04476340059910589,
+    "query": "How is the disposal of industrial waste being accomplished by industrial management throughout the world?",
+    "instruction": "Documents that discuss the disposal, storage, or management of industrial waste---both standard and hazardous---are relevant.  However, documents that discuss disposal or storage of nuclear or radioactive waste, or the illegal shipment or dumping of waste to avoid legal disposal methods are not relevant.",
+    "full_text": "How is the disposal of industrial waste being accomplished by industrial management throughout the world? Documents that discuss the disposal, storage, or management of industrial waste---both standard and hazardous---are relevant.  However, documents that discuss disposal or storage of nuclear or radioactive waste, or the illegal shipment or dumping of waste to avoid legal disposal methods are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-41576_0",
+        "original_rank": 91,
+        "new_rank": 59,
+        "score": -0.3516483516483516
+      },
+      {
+        "doc_id": "FBIS3-41646_0",
+        "original_rank": 583,
+        "new_rank": 591,
+        "score": 0.013536379018612488
+      },
+      {
+        "doc_id": "FBIS3-4717_0",
+        "original_rank": 325,
+        "new_rank": 343,
+        "score": 0.05247813411078717
+      },
+      {
+        "doc_id": "FBIS3-60325_0",
+        "original_rank": 350,
+        "new_rank": 388,
+        "score": 0.09793814432989689
+      },
+      {
+        "doc_id": "FBIS4-21427_0",
+        "original_rank": 378,
+        "new_rank": 363,
+        "score": -0.039682539682539764
+      },
+      {
+        "doc_id": "FBIS4-27645_1",
+        "original_rank": 274,
+        "new_rank": 291,
+        "score": 0.05841924398625431
+      },
+      {
+        "doc_id": "FBIS4-44724_1",
+        "original_rank": 294,
+        "new_rank": 354,
+        "score": 0.1694915254237288
+      },
+      {
+        "doc_id": "FBIS4-45748_1",
+        "original_rank": 264,
+        "new_rank": 278,
+        "score": 0.05035971223021585
+      },
+      {
+        "doc_id": "FBIS4-45750_0",
+        "original_rank": 352,
+        "new_rank": 359,
+        "score": 0.01949860724233987
+      },
+      {
+        "doc_id": "FR940118-1-00039_3",
+        "original_rank": 309,
+        "new_rank": 299,
+        "score": -0.032362459546925515
+      },
+      {
+        "doc_id": "FR940511-1-00077_2",
+        "original_rank": 117,
+        "new_rank": 125,
+        "score": 0.06400000000000006
+      },
+      {
+        "doc_id": "FR941013-1-00068_1",
+        "original_rank": 14,
+        "new_rank": 22,
+        "score": 0.36363636363636354
+      },
+      {
+        "doc_id": "FT921-3525_0",
+        "original_rank": 766,
+        "new_rank": 776,
+        "score": 0.012886597938144395
+      },
+      {
+        "doc_id": "FT922-1206_0",
+        "original_rank": 434,
+        "new_rank": 475,
+        "score": 0.08631578947368423
+      },
+      {
+        "doc_id": "FT923-13224_0",
+        "original_rank": 740,
+        "new_rank": 750,
+        "score": 0.01333333333333342
+      },
+      {
+        "doc_id": "FT924-8720_0",
+        "original_rank": 498,
+        "new_rank": 462,
+        "score": -0.07228915662650615
+      },
+      {
+        "doc_id": "FT932-2384_2",
+        "original_rank": 864,
+        "new_rank": 867,
+        "score": 0.0034602076124566894
+      },
+      {
+        "doc_id": "FT934-17401_0",
+        "original_rank": 417,
+        "new_rank": 465,
+        "score": 0.10322580645161283
+      },
+      {
+        "doc_id": "FT934-17408_0",
+        "original_rank": 284,
+        "new_rank": 329,
+        "score": 0.13677811550151975
+      },
+      {
+        "doc_id": "FT941-428_0",
+        "original_rank": 727,
+        "new_rank": 738,
+        "score": 0.01490514905149054
+      },
+      {
+        "doc_id": "FT943-6184_2",
+        "original_rank": 475,
+        "new_rank": 495,
+        "score": 0.04040404040404033
+      },
+      {
+        "doc_id": "LA022890-0016_0",
+        "original_rank": 909,
+        "new_rank": 912,
+        "score": 0.003289473684210509
+      },
+      {
+        "doc_id": "LA051790-0029_1",
+        "original_rank": 741,
+        "new_rank": 780,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "LA080389-0074_2",
+        "original_rank": 355,
+        "new_rank": 407,
+        "score": 0.12776412776412782
+      },
+      {
+        "doc_id": "LA081089-0038_0",
+        "original_rank": 430,
+        "new_rank": 484,
+        "score": 0.11157024793388426
+      },
+      {
+        "doc_id": "LA091290-0106_0",
+        "original_rank": 491,
+        "new_rank": 526,
+        "score": 0.06653992395437258
+      }
+    ],
+    "debug_info": {}
+  },
+  "369": {
+    "rank": 39,
+    "pmrr": 0.04492878309913012,
+    "query": "What are the causes and treatments of anorexia nervosa and bulimia?",
+    "instruction": "A relevant document will describe the causes of the  eating disorders, anorexia nervosa or bulimia. Documents that describe symptoms including the taking of  laxatives, self-induced vomiting and excessive exercise  are relevant.  Discussions of the treatment of the  disorders are also relevant.",
+    "full_text": "What are the causes and treatments of anorexia nervosa and bulimia? A relevant document will describe the causes of the  eating disorders, anorexia nervosa or bulimia. Documents that describe symptoms including the taking of  laxatives, self-induced vomiting and excessive exercise  are relevant.  Discussions of the treatment of the  disorders are also relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FR940323-2-00082_2",
+        "original_rank": 951,
+        "new_rank": 950,
+        "score": -0.001051524710830698
+      },
+      {
+        "doc_id": "LA042590-0171_1",
+        "original_rank": 10,
+        "new_rank": 11,
+        "score": 0.09090909090909094
+      }
+    ],
+    "debug_info": {}
+  },
+  "308": {
+    "rank": 40,
+    "pmrr": 0.06351902173913043,
+    "query": "What are the advantages and/or disadvantages of tooth implants?",
+    "instruction": "A tooth replacement procedure, begun in the 1960s by Doctor Branemark, is becoming more widely used today.  It involves  the replacement of a lost tooth/teeth by an implantation  process which secures the fabricated tooth to a titanium post with an adhesive resulting in a stable and sturdy denture  almost like the original.  A relevant document will include  any clinical experiment, report, study, paper, or medical  discussion which describes the advantages or disadvantages of  tooth implant(s), conditions under which such a procedure is  favorable, denture comfort and function compared to false teeth,  bridge, or plate and comparative cost differential.",
+    "full_text": "What are the advantages and/or disadvantages of tooth implants? A tooth replacement procedure, begun in the 1960s by Doctor Branemark, is becoming more widely used today.  It involves  the replacement of a lost tooth/teeth by an implantation  process which secures the fabricated tooth to a titanium post with an adhesive resulting in a stable and sturdy denture  almost like the original.  A relevant document will include  any clinical experiment, report, study, paper, or medical  discussion which describes the advantages or disadvantages of  tooth implant(s), conditions under which such a procedure is  favorable, denture comfort and function compared to false teeth,  bridge, or plate and comparative cost differential.",
+    "doc_details": [
+      {
+        "doc_id": "FT933-5179_0",
+        "original_rank": 19,
+        "new_rank": 23,
+        "score": 0.17391304347826086
+      },
+      {
+        "doc_id": "FT944-17268_1",
+        "original_rank": 64,
+        "new_rank": 61,
+        "score": -0.046875
+      }
+    ],
+    "debug_info": {}
+  },
+  "633": {
+    "rank": 41,
+    "pmrr": 0.10955239927673922,
+    "query": "What is the history of the Welsh devolution movement?",
+    "instruction": "Relevant documents contain information about some aspect of the Welsh devolution movement.",
+    "full_text": "What is the history of the Welsh devolution movement? Relevant documents contain information about some aspect of the Welsh devolution movement.",
+    "doc_details": [
+      {
+        "doc_id": "FT921-2060_0",
+        "original_rank": 228,
+        "new_rank": 232,
+        "score": 0.01724137931034475
+      },
+      {
+        "doc_id": "FT921-5498_0",
+        "original_rank": 405,
+        "new_rank": 422,
+        "score": 0.040284360189573376
+      },
+      {
+        "doc_id": "FT922-14828_0",
+        "original_rank": 391,
+        "new_rank": 402,
+        "score": 0.027363184079602143
+      },
+      {
+        "doc_id": "FT923-2677_3",
+        "original_rank": 210,
+        "new_rank": 224,
+        "score": 0.06250000000000011
+      },
+      {
+        "doc_id": "FT934-11493_0",
+        "original_rank": 76,
+        "new_rank": 68,
+        "score": -0.10526315789473684
+      },
+      {
+        "doc_id": "FT934-7576_0",
+        "original_rank": 320,
+        "new_rank": 445,
+        "score": 0.2808988764044944
+      },
+      {
+        "doc_id": "FT934-7579_0",
+        "original_rank": 332,
+        "new_rank": 433,
+        "score": 0.233256351039261
+      },
+      {
+        "doc_id": "FT941-10079_0",
+        "original_rank": 709,
+        "new_rank": 675,
+        "score": -0.04795486600846255
+      },
+      {
+        "doc_id": "FT943-240_0",
+        "original_rank": 344,
+        "new_rank": 380,
+        "score": 0.09473684210526312
+      },
+      {
+        "doc_id": "FT944-2417_0",
+        "original_rank": 104,
+        "new_rank": 149,
+        "score": 0.30201342281879195
+      },
+      {
+        "doc_id": "FT944-2579_0",
+        "original_rank": 105,
+        "new_rank": 150,
+        "score": 0.30000000000000004
+      }
+    ],
+    "debug_info": {}
+  },
+  "686": {
+    "rank": 42,
+    "pmrr": 0.11169170938859206,
+    "query": "What are the negative impacts of Argentina's policy of pegging their peso to the U.S. dollar?",
+    "instruction": "Documents must identify problems that have been created due to the pegging of the peso to the dollar. Documents that mention pegging but do not identify problems in the Argentine economy are not relevant.",
+    "full_text": "What are the negative impacts of Argentina's policy of pegging their peso to the U.S. dollar? Documents must identify problems that have been created due to the pegging of the peso to the dollar. Documents that mention pegging but do not identify problems in the Argentine economy are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-51035_1",
+        "original_rank": 123,
+        "new_rank": 127,
+        "score": 0.03149606299212615
+      },
+      {
+        "doc_id": "FBIS4-34797_0",
+        "original_rank": 107,
+        "new_rank": 126,
+        "score": 0.1507936507936508
+      },
+      {
+        "doc_id": "FBIS4-57729_1",
+        "original_rank": 141,
+        "new_rank": 159,
+        "score": 0.1132075471698113
+      },
+      {
+        "doc_id": "FT921-10279_0",
+        "original_rank": 7,
+        "new_rank": 6,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "FT921-5274_0",
+        "original_rank": 1,
+        "new_rank": 2,
+        "score": 0.5
+      },
+      {
+        "doc_id": "FT921-9160_0",
+        "original_rank": 420,
+        "new_rank": 463,
+        "score": 0.09287257019438444
+      },
+      {
+        "doc_id": "FT924-1431_0",
+        "original_rank": 8,
+        "new_rank": 12,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "FT924-7163_0",
+        "original_rank": 18,
+        "new_rank": 18,
+        "score": 0.0
+      },
+      {
+        "doc_id": "FT931-16216_0",
+        "original_rank": 342,
+        "new_rank": 360,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "FT931-16819_0",
+        "original_rank": 29,
+        "new_rank": 34,
+        "score": 0.1470588235294118
+      },
+      {
+        "doc_id": "FT932-6573_0",
+        "original_rank": 82,
+        "new_rank": 91,
+        "score": 0.09890109890109888
+      },
+      {
+        "doc_id": "FT944-727_0",
+        "original_rank": 159,
+        "new_rank": 174,
+        "score": 0.0862068965517242
+      },
+      {
+        "doc_id": "LA121989-0118_0",
+        "original_rank": 776,
+        "new_rank": 769,
+        "score": -0.00902061855670111
+      }
+    ],
+    "debug_info": {}
+  },
+  "663": {
+    "rank": 43,
+    "pmrr": 0.1180681133212779,
+    "query": "What were the health effects of Vietnam veterans' exposure to Agent Orange?",
+    "instruction": "Only U.S. veterans' outcomes are relevant.  Information on studies without results included are not relevant.",
+    "full_text": "What were the health effects of Vietnam veterans' exposure to Agent Orange? Only U.S. veterans' outcomes are relevant.  Information on studies without results included are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "LA050989-0122_1",
+        "original_rank": 4,
+        "new_rank": 6,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "LA060989-0123_0",
+        "original_rank": 21,
+        "new_rank": 19,
+        "score": -0.09523809523809523
+      },
+      {
+        "doc_id": "LA071889-0157_0",
+        "original_rank": 92,
+        "new_rank": 92,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA111689-0041_0",
+        "original_rank": 121,
+        "new_rank": 158,
+        "score": 0.23417721518987344
+      }
+    ],
+    "debug_info": {}
+  },
+  "601": {
+    "rank": 44,
+    "pmrr": 0.1428571428571429,
+    "query": "What is the effect of Turkish river control projects on Iraqi water resources?",
+    "instruction": "A relevant document will deal specifically with water issues between Turkey and Iraq.  Other political and economic concerns between the two countries (e.g. the Kurds or water to Syria, Israel and Lebanon) are not relevant.",
+    "full_text": "What is the effect of Turkish river control projects on Iraqi water resources? A relevant document will deal specifically with water issues between Turkey and Iraq.  Other political and economic concerns between the two countries (e.g. the Kurds or water to Syria, Israel and Lebanon) are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS4-45772_1",
+        "original_rank": 18,
+        "new_rank": 21,
+        "score": 0.1428571428571429
+      }
+    ],
+    "debug_info": {}
+  },
+  "642": {
+    "rank": 45,
+    "pmrr": 0.15717136110886762,
+    "query": "What happened to protesters arrested in connection with the Tiananmen Square demonstrations in Beijing in the spring of 1989?",
+    "instruction": "Documents must be attributed to the Tiananmen Square demonstrations to be relevant: documents about protests elsewhere in response to Tiananmen Square are not relevant.  Specific names, etc. are not necessary for a document to be relevant.",
+    "full_text": "What happened to protesters arrested in connection with the Tiananmen Square demonstrations in Beijing in the spring of 1989? Documents must be attributed to the Tiananmen Square demonstrations to be relevant: documents about protests elsewhere in response to Tiananmen Square are not relevant.  Specific names, etc. are not necessary for a document to be relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-1941_0",
+        "original_rank": 93,
+        "new_rank": 123,
+        "score": 0.24390243902439024
+      },
+      {
+        "doc_id": "FBIS3-2738_0",
+        "original_rank": 33,
+        "new_rank": 40,
+        "score": 0.17499999999999993
+      },
+      {
+        "doc_id": "FBIS3-44870_0",
+        "original_rank": 170,
+        "new_rank": 210,
+        "score": 0.19047619047619035
+      },
+      {
+        "doc_id": "FBIS3-45274_0",
+        "original_rank": 84,
+        "new_rank": 100,
+        "score": 0.15999999999999992
+      },
+      {
+        "doc_id": "FBIS3-45741_0",
+        "original_rank": 100,
+        "new_rank": 118,
+        "score": 0.15254237288135597
+      },
+      {
+        "doc_id": "FBIS4-42362_0",
+        "original_rank": 202,
+        "new_rank": 254,
+        "score": 0.20472440944881887
+      },
+      {
+        "doc_id": "FBIS4-49925_0",
+        "original_rank": 97,
+        "new_rank": 122,
+        "score": 0.20491803278688514
+      },
+      {
+        "doc_id": "FBIS4-65665_1",
+        "original_rank": 72,
+        "new_rank": 98,
+        "score": 0.26530612244897966
+      },
+      {
+        "doc_id": "FT924-5589_0",
+        "original_rank": 370,
+        "new_rank": 402,
+        "score": 0.07960199004975133
+      },
+      {
+        "doc_id": "FT933-6350_0",
+        "original_rank": 438,
+        "new_rank": 448,
+        "score": 0.022321428571428603
+      },
+      {
+        "doc_id": "FT934-7668_2",
+        "original_rank": 42,
+        "new_rank": 60,
+        "score": 0.29999999999999993
+      },
+      {
+        "doc_id": "FT942-13543_0",
+        "original_rank": 283,
+        "new_rank": 335,
+        "score": 0.15522388059701486
+      },
+      {
+        "doc_id": "LA062189-0044_0",
+        "original_rank": 514,
+        "new_rank": 539,
+        "score": 0.04638218923933213
+      },
+      {
+        "doc_id": "LA062589-0191_0",
+        "original_rank": 1000,
+        "new_rank": 1000,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "670": {
+    "rank": 46,
+    "pmrr": 0.1703360260131567,
+    "query": "Why is there such apathy in U.S. elections?",
+    "instruction": "Relevant documents must provide reasons for poor turnout at U.S. elections.",
+    "full_text": "Why is there such apathy in U.S. elections? Relevant documents must provide reasons for poor turnout at U.S. elections.",
+    "doc_details": [
+      {
+        "doc_id": "FT922-12817_1",
+        "original_rank": 104,
+        "new_rank": 134,
+        "score": 0.22388059701492546
+      },
+      {
+        "doc_id": "FT944-15616_0",
+        "original_rank": 320,
+        "new_rank": 479,
+        "score": 0.3319415448851776
+      },
+      {
+        "doc_id": "LA042489-0014_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA060889-0135_0",
+        "original_rank": 4,
+        "new_rank": 4,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LA101890-0011_1",
+        "original_rank": 238,
+        "new_rank": 338,
+        "score": 0.29585798816568043
+      }
+    ],
+    "debug_info": {}
+  },
+  "661": {
+    "rank": 47,
+    "pmrr": 0.1901992088240324,
+    "query": "What are the causes and treatments for melanoma?",
+    "instruction": "Relevant documents describe causes, diagnosis, and/or treatment of melanoma.  Articles on research being conducted that could lead to diagnosis or treatment are also relevant.  Articles on other diseases, including other skin cancers, are not relevant.",
+    "full_text": "What are the causes and treatments for melanoma? Relevant documents describe causes, diagnosis, and/or treatment of melanoma.  Articles on research being conducted that could lead to diagnosis or treatment are also relevant.  Articles on other diseases, including other skin cancers, are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS4-67639_1",
+        "original_rank": 19,
+        "new_rank": 51,
+        "score": 0.6274509803921569
+      },
+      {
+        "doc_id": "FBIS4-67640_1",
+        "original_rank": 584,
+        "new_rank": 539,
+        "score": -0.07705479452054798
+      },
+      {
+        "doc_id": "FR940124-1-00010_1",
+        "original_rank": 451,
+        "new_rank": 462,
+        "score": 0.023809523809523836
+      },
+      {
+        "doc_id": "FT923-10771_0",
+        "original_rank": 499,
+        "new_rank": 535,
+        "score": 0.06728971962616814
+      },
+      {
+        "doc_id": "FT923-12060_2",
+        "original_rank": 164,
+        "new_rank": 187,
+        "score": 0.12299465240641716
+      },
+      {
+        "doc_id": "FT931-6595_0",
+        "original_rank": 57,
+        "new_rank": 60,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "FT931-8183_0",
+        "original_rank": 860,
+        "new_rank": 799,
+        "score": -0.07093023255813957
+      },
+      {
+        "doc_id": "FT933-10912_0",
+        "original_rank": 52,
+        "new_rank": 80,
+        "score": 0.35
+      },
+      {
+        "doc_id": "FT941-1421_0",
+        "original_rank": 226,
+        "new_rank": 272,
+        "score": 0.16911764705882348
+      },
+      {
+        "doc_id": "FT944-10864_0",
+        "original_rank": 218,
+        "new_rank": 289,
+        "score": 0.24567474048442905
+      },
+      {
+        "doc_id": "FT944-3522_0",
+        "original_rank": 88,
+        "new_rank": 186,
+        "score": 0.5268817204301075
+      },
+      {
+        "doc_id": "LA010590-0158_5",
+        "original_rank": 559,
+        "new_rank": 619,
+        "score": 0.0969305331179321
+      },
+      {
+        "doc_id": "LA011589-0120_0",
+        "original_rank": 74,
+        "new_rank": 195,
+        "score": 0.6205128205128205
+      },
+      {
+        "doc_id": "LA041689-0006_1",
+        "original_rank": 328,
+        "new_rank": 423,
+        "score": 0.22458628841607564
+      },
+      {
+        "doc_id": "LA042390-0089_0",
+        "original_rank": 33,
+        "new_rank": 26,
+        "score": -0.21212121212121215
+      },
+      {
+        "doc_id": "LA042990-0188_2",
+        "original_rank": 458,
+        "new_rank": 501,
+        "score": 0.0858283433133733
+      },
+      {
+        "doc_id": "LA050790-0059_2",
+        "original_rank": 185,
+        "new_rank": 259,
+        "score": 0.2857142857142857
+      },
+      {
+        "doc_id": "LA051789-0093_0",
+        "original_rank": 343,
+        "new_rank": 461,
+        "score": 0.2559652928416486
+      },
+      {
+        "doc_id": "LA052590-0118_3",
+        "original_rank": 610,
+        "new_rank": 708,
+        "score": 0.1384180790960452
+      },
+      {
+        "doc_id": "LA052989-0031_0",
+        "original_rank": 303,
+        "new_rank": 369,
+        "score": 0.17886178861788615
+      },
+      {
+        "doc_id": "LA070389-0031_3",
+        "original_rank": 385,
+        "new_rank": 420,
+        "score": 0.08333333333333326
+      },
+      {
+        "doc_id": "LA080190-0001_1",
+        "original_rank": 7,
+        "new_rank": 9,
+        "score": 0.2222222222222222
+      },
+      {
+        "doc_id": "LA081390-0075_1",
+        "original_rank": 49,
+        "new_rank": 100,
+        "score": 0.51
+      },
+      {
+        "doc_id": "LA082589-0056_4",
+        "original_rank": 416,
+        "new_rank": 463,
+        "score": 0.10151187904967607
+      },
+      {
+        "doc_id": "LA102989-0050_1",
+        "original_rank": 3,
+        "new_rank": 4,
+        "score": 0.25
+      },
+      {
+        "doc_id": "LA111990-0034_0",
+        "original_rank": 41,
+        "new_rank": 44,
+        "score": 0.06818181818181823
+      }
+    ],
+    "debug_info": {}
+  },
+  "668": {
+    "rank": 48,
+    "pmrr": 0.21209463372033924,
+    "query": "What is the relationship between poverty and disease?",
+    "instruction": "Documents that do not link poverty to diseases directly but mention a link between poverty and health care are relevant. Documents that simply mention poverty and disease but do not draw a connection are not relevant.",
+    "full_text": "What is the relationship between poverty and disease? Documents that do not link poverty to diseases directly but mention a link between poverty and health care are relevant. Documents that simply mention poverty and disease but do not draw a connection are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FBIS3-11179_3",
+        "original_rank": 751,
+        "new_rank": 801,
+        "score": 0.062421972534332126
+      },
+      {
+        "doc_id": "FBIS3-21668_4",
+        "original_rank": 48,
+        "new_rank": 91,
+        "score": 0.4725274725274724
+      },
+      {
+        "doc_id": "FBIS3-22474_0",
+        "original_rank": 86,
+        "new_rank": 181,
+        "score": 0.5248618784530387
+      },
+      {
+        "doc_id": "FBIS3-22481_0",
+        "original_rank": 146,
+        "new_rank": 209,
+        "score": 0.3014354066985646
+      },
+      {
+        "doc_id": "FBIS3-41833_0",
+        "original_rank": 2,
+        "new_rank": 1,
+        "score": -0.5
+      },
+      {
+        "doc_id": "FBIS3-50615_0",
+        "original_rank": 31,
+        "new_rank": 45,
+        "score": 0.3111111111111111
+      },
+      {
+        "doc_id": "FBIS4-33007_1",
+        "original_rank": 232,
+        "new_rank": 332,
+        "score": 0.3012048192771084
+      },
+      {
+        "doc_id": "FBIS4-45864_0",
+        "original_rank": 160,
+        "new_rank": 142,
+        "score": -0.11249999999999993
+      },
+      {
+        "doc_id": "FBIS4-50959_0",
+        "original_rank": 228,
+        "new_rank": 250,
+        "score": 0.08799999999999997
+      },
+      {
+        "doc_id": "FBIS4-56381_1",
+        "original_rank": 579,
+        "new_rank": 634,
+        "score": 0.08675078864353314
+      },
+      {
+        "doc_id": "FBIS4-56390_1",
+        "original_rank": 98,
+        "new_rank": 163,
+        "score": 0.39877300613496924
+      },
+      {
+        "doc_id": "FR940128-2-00144_3",
+        "original_rank": 18,
+        "new_rank": 15,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "FT923-14112_0",
+        "original_rank": 1,
+        "new_rank": 2,
+        "score": 0.5
+      },
+      {
+        "doc_id": "FT924-8051_0",
+        "original_rank": 70,
+        "new_rank": 93,
+        "score": 0.24731182795698914
+      },
+      {
+        "doc_id": "FT924-8064_1",
+        "original_rank": 49,
+        "new_rank": 72,
+        "score": 0.3194444444444444
+      },
+      {
+        "doc_id": "FT931-12199_0",
+        "original_rank": 128,
+        "new_rank": 238,
+        "score": 0.46218487394957986
+      },
+      {
+        "doc_id": "FT932-1927_0",
+        "original_rank": 488,
+        "new_rank": 517,
+        "score": 0.05609284332688591
+      },
+      {
+        "doc_id": "FT933-7438_0",
+        "original_rank": 464,
+        "new_rank": 610,
+        "score": 0.239344262295082
+      },
+      {
+        "doc_id": "FT943-5083_0",
+        "original_rank": 9,
+        "new_rank": 16,
+        "score": 0.4375
+      }
+    ],
+    "debug_info": {}
+  },
+  "697": {
+    "rank": 49,
+    "pmrr": 0.26733885661656526,
+    "query": "What are working conditions and pay for U.S. air traffic controllers?",
+    "instruction": "Relevant documents tell something about working conditions or pay for American controllers.  Documents about foreign controllers or an individual controller are not relevant.",
+    "full_text": "What are working conditions and pay for U.S. air traffic controllers? Relevant documents tell something about working conditions or pay for American controllers.  Documents about foreign controllers or an individual controller are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "FR940302-1-00031_4",
+        "original_rank": 556,
+        "new_rank": 607,
+        "score": 0.08401976935749589
+      },
+      {
+        "doc_id": "FR940418-1-00007_2",
+        "original_rank": 147,
+        "new_rank": 160,
+        "score": 0.08124999999999993
+      },
+      {
+        "doc_id": "FR940429-1-00011_1",
+        "original_rank": 120,
+        "new_rank": 135,
+        "score": 0.11111111111111105
+      },
+      {
+        "doc_id": "FR940825-1-00008_1",
+        "original_rank": 112,
+        "new_rank": 114,
+        "score": 0.01754385964912286
+      },
+      {
+        "doc_id": "FR940825-1-00145_1",
+        "original_rank": 317,
+        "new_rank": 404,
+        "score": 0.21534653465346532
+      },
+      {
+        "doc_id": "FR940825-1-00146_1",
+        "original_rank": 884,
+        "new_rank": 883,
+        "score": -0.0011312217194570096
+      },
+      {
+        "doc_id": "FT922-13947_2",
+        "original_rank": 32,
+        "new_rank": 54,
+        "score": 0.40740740740740744
+      },
+      {
+        "doc_id": "FT931-9280_0",
+        "original_rank": 96,
+        "new_rank": 123,
+        "score": 0.21951219512195108
+      },
+      {
+        "doc_id": "FT931-9288_0",
+        "original_rank": 97,
+        "new_rank": 126,
+        "score": 0.23015873015873023
+      },
+      {
+        "doc_id": "FT942-4327_0",
+        "original_rank": 71,
+        "new_rank": 146,
+        "score": 0.5136986301369864
+      },
+      {
+        "doc_id": "FT943-9077_2",
+        "original_rank": 128,
+        "new_rank": 211,
+        "score": 0.39336492890995256
+      },
+      {
+        "doc_id": "FT943-9113_1",
+        "original_rank": 148,
+        "new_rank": 230,
+        "score": 0.35652173913043483
+      },
+      {
+        "doc_id": "LA030789-0098_1",
+        "original_rank": 134,
+        "new_rank": 193,
+        "score": 0.30569948186528495
+      },
+      {
+        "doc_id": "LA031089-0073_0",
+        "original_rank": 34,
+        "new_rank": 40,
+        "score": 0.1499999999999999
+      },
+      {
+        "doc_id": "LA040990-0061_0",
+        "original_rank": 521,
+        "new_rank": 658,
+        "score": 0.20820668693009114
+      },
+      {
+        "doc_id": "LA041689-0217_0",
+        "original_rank": 116,
+        "new_rank": 139,
+        "score": 0.16546762589928055
+      },
+      {
+        "doc_id": "LA042990-0022_3",
+        "original_rank": 431,
+        "new_rank": 573,
+        "score": 0.24781849912739962
+      },
+      {
+        "doc_id": "LA043090-0116_0",
+        "original_rank": 15,
+        "new_rank": 30,
+        "score": 0.5
+      },
+      {
+        "doc_id": "LA051789-0058_2",
+        "original_rank": 190,
+        "new_rank": 237,
+        "score": 0.19831223628691985
+      },
+      {
+        "doc_id": "LA052589-0119_1",
+        "original_rank": 1,
+        "new_rank": 3,
+        "score": 0.6666666666666667
+      },
+      {
+        "doc_id": "LA052689-0090_3",
+        "original_rank": 103,
+        "new_rank": 154,
+        "score": 0.3311688311688311
+      },
+      {
+        "doc_id": "LA052689-0137_2",
+        "original_rank": 63,
+        "new_rank": 82,
+        "score": 0.23170731707317072
+      },
+      {
+        "doc_id": "LA061989-0099_0",
+        "original_rank": 23,
+        "new_rank": 31,
+        "score": 0.25806451612903225
+      },
+      {
+        "doc_id": "LA070790-0009_0",
+        "original_rank": 356,
+        "new_rank": 449,
+        "score": 0.20712694877505566
+      },
+      {
+        "doc_id": "LA071289-0042_1",
+        "original_rank": 3,
+        "new_rank": 7,
+        "score": 0.5714285714285714
+      },
+      {
+        "doc_id": "LA091689-0065_0",
+        "original_rank": 25,
+        "new_rank": 43,
+        "score": 0.41860465116279066
+      },
+      {
+        "doc_id": "LA091690-0231_1",
+        "original_rank": 997,
+        "new_rank": 996,
+        "score": -0.0010030090270811698
+      },
+      {
+        "doc_id": "LA092190-0121_0",
+        "original_rank": 439,
+        "new_rank": 569,
+        "score": 0.22847100175746926
+      },
+      {
+        "doc_id": "LA092990-0081_0",
+        "original_rank": 26,
+        "new_rank": 49,
+        "score": 0.4693877551020409
+      },
+      {
+        "doc_id": "LA101090-0125_2",
+        "original_rank": 85,
+        "new_rank": 111,
+        "score": 0.23423423423423428
+      }
+    ],
+    "debug_info": {}
+  },
+  "655": {
+    "rank": 50,
+    "pmrr": 0.29291044776119407,
+    "query": "How is Attention Deficit Disorder (ADD) diagnosed and treated in young children?",
+    "instruction": "Relevant documents specifically address diagnosis and/or treatment of ADD.  Simple definitions and descriptions of ADD are not relevant. Documents that discuss studies that could lead to treatment are relevant.",
+    "full_text": "How is Attention Deficit Disorder (ADD) diagnosed and treated in young children? Relevant documents specifically address diagnosis and/or treatment of ADD.  Simple definitions and descriptions of ADD are not relevant. Documents that discuss studies that could lead to treatment are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "LA032390-0166_1",
+        "original_rank": 42,
+        "new_rank": 48,
+        "score": 0.125
+      },
+      {
+        "doc_id": "LA053190-0199_0",
+        "original_rank": 50,
+        "new_rank": 67,
+        "score": 0.25373134328358216
+      },
+      {
+        "doc_id": "LA111590-0041_0",
+        "original_rank": 3,
+        "new_rank": 6,
+        "score": 0.5
+      }
+    ],
+    "debug_info": {}
+  },
+  "604": {
+    "rank": 51,
+    "pmrr": 0.31525099814977114,
+    "query": "What evidence is there to link tick-borne Lyme disease with arthritis?",
+    "instruction": "Documents providing evidence to support or refute the connection between Lyme disease and arthritis are relevant.  Documents discussing Lyme disease and inflammatory joint disorder are also relevant.",
+    "full_text": "What evidence is there to link tick-borne Lyme disease with arthritis? Documents providing evidence to support or refute the connection between Lyme disease and arthritis are relevant.  Documents discussing Lyme disease and inflammatory joint disorder are also relevant.",
+    "doc_details": [
+      {
+        "doc_id": "LA073090-0058_0",
+        "original_rank": 7,
+        "new_rank": 9,
+        "score": 0.2222222222222222
+      },
+      {
+        "doc_id": "LA091890-0087_3",
+        "original_rank": 975,
+        "new_rank": 978,
+        "score": 0.0030674846625765584
+      },
+      {
+        "doc_id": "LA111390-0102_3",
+        "original_rank": 5,
+        "new_rank": 7,
+        "score": 0.2857142857142858
+      },
+      {
+        "doc_id": "LA112789-0001_1",
+        "original_rank": 1,
+        "new_rank": 4,
+        "score": 0.75
+      }
+    ],
+    "debug_info": {}
+  },
+  "678": {
+    "rank": 52,
+    "pmrr": 0.323851769962089,
+    "query": "Find information on joint/shared custody's impact on children.",
+    "instruction": "Both economic and emotional impacts on children of divorce are relevant.  Impact on parents is not relevant unless directly connected to the children involved.",
+    "full_text": "Find information on joint/shared custody's impact on children. Both economic and emotional impacts on children of divorce are relevant.  Impact on parents is not relevant unless directly connected to the children involved.",
+    "doc_details": [
+      {
+        "doc_id": "LA030290-0149_4",
+        "original_rank": 585,
+        "new_rank": 652,
+        "score": 0.10276073619631898
+      },
+      {
+        "doc_id": "LA030390-0154_3",
+        "original_rank": 187,
+        "new_rank": 314,
+        "score": 0.40445859872611456
+      },
+      {
+        "doc_id": "LA031690-0158_0",
+        "original_rank": 29,
+        "new_rank": 48,
+        "score": 0.39583333333333337
+      },
+      {
+        "doc_id": "LA040989-0151_1",
+        "original_rank": 44,
+        "new_rank": 94,
+        "score": 0.5319148936170213
+      },
+      {
+        "doc_id": "LA042790-0136_0",
+        "original_rank": 114,
+        "new_rank": 260,
+        "score": 0.5615384615384615
+      },
+      {
+        "doc_id": "LA071490-0054_1",
+        "original_rank": 112,
+        "new_rank": 220,
+        "score": 0.49090909090909085
+      },
+      {
+        "doc_id": "LA071590-0106_1",
+        "original_rank": 988,
+        "new_rank": 985,
+        "score": -0.0030364372469635637
+      },
+      {
+        "doc_id": "LA092790-0022_0",
+        "original_rank": 545,
+        "new_rank": 678,
+        "score": 0.19616519174041303
+      },
+      {
+        "doc_id": "LA102889-0160_0",
+        "original_rank": 118,
+        "new_rank": 166,
+        "score": 0.28915662650602403
+      },
+      {
+        "doc_id": "LA110389-0049_0",
+        "original_rank": 136,
+        "new_rank": 186,
+        "score": 0.26881720430107525
+      }
+    ],
+    "debug_info": {}
+  }
+}

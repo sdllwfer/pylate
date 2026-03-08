@@ -307,7 +307,7 @@ class IGPLoss(nn.Module):
         
         # 添加 gate_ratio 的虚拟损失（确保 Gate 模块的梯度流动）
         if gate_ratio is not None and isinstance(gate_ratio, torch.Tensor):
-            gate_dummy = gate_ratio * 0.01
+            gate_dummy = gate_ratio.mean() * 0.01
         else:
             gate_dummy = torch.tensor(0.0, device=rank_loss.device)
         
@@ -315,7 +315,11 @@ class IGPLoss(nn.Module):
         
         # 保存各项损失用于日志
         # 将 gate_ratio 转换为 float（如果是 tensor）
-        gate_ratio_val = gate_ratio.item() if isinstance(gate_ratio, torch.Tensor) else gate_ratio
+        if isinstance(gate_ratio, torch.Tensor):
+            # gate_ratio 可能是 [batch_size] 或标量，统一取平均
+            gate_ratio_val = gate_ratio.mean().item()
+        else:
+            gate_ratio_val = gate_ratio
         self._last_losses = {
             'rank_loss': rank_loss.item(),
             'aux_loss': aux_loss.item(),

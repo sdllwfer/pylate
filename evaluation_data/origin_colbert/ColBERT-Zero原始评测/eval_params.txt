@@ -1,0 +1,11 @@
+============================================================
+FollowIR 评估参数
+============================================================
+
+模型: lightonai/ColBERT-Zero
+数据集: News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/origin_colbert/ColBERT-Zero原始评测
+GPU设备: cuda:2
+评估时间: 2026-03-08 19:34:20
+备注: ColBERT-Zero直接评测
+============================================================

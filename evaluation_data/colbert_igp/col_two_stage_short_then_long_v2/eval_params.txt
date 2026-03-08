@@ -1,0 +1,11 @@
+============================================================
+ColBERT-IGP 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_igp_train/col_two_stage_short_then_long_v2/stage2_long_data/final_model_20260308_144406
+数据集: News21InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_two_stage_short_then_long_v2
+GPU设备: cuda:0
+评估时间: 2026-03-08 20:00:10
+备注: V2端到端模型评测
+============================================================

@@ -18,23 +18,23 @@ MODEL_NAME="lightonai/ColBERT-Zero"
 
 # 阶段1: 短数据集（有明确 instruction 字段）
 # SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
-SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed/phase1_short_long_mixed.jsonl"
+SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase1_short_long_mixed.jsonl"
 SHORT_EPOCHS=50
 SHORT_BATCH_SIZE=64
 
 # 阶段2: 长数据集（端到端学习）
 # LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/colbert_train_final.jsonl"
-LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed/phase2_long_only.jsonl"
+LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase2_long_only.jsonl"
 LONG_EPOCHS=100
 LONG_BATCH_SIZE=64
 
 # 输出目录
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_长短混合_两阶段"
-NOTE="v1-两阶段训练-长短混合数据集先训练再单纯长数据集微调-MAX_RATIO=0.2-数据增强加上无指令版本"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_长短混合_两阶段_动态门控"
+NOTE="v1-两阶段训练-长短混合数据集先训练再单纯长数据集微调-MAX_RATIO=0.2-数据增强加上无指令版本-动态门控"
 
 # GPU 设备编号
-CUDA_VISIBLE_DEVICES="0"
+CUDA_VISIBLE_DEVICES="1"
 
 # ============================
 # IGP 模块参数
