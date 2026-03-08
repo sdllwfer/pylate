@@ -28,11 +28,11 @@ LONG_BATCH_SIZE=64
 
 # 输出目录
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_two_stage_short_then_long"
-NOTE="两阶段训练-短数据集先训练-再长数据集微调"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.5"
+NOTE="v1-两阶段训练-短数据集先训练再长数据集微调-MAX_RATIO=0.5"
 
 # GPU 设备编号
-CUDA_VISIBLE_DEVICES="0"
+CUDA_VISIBLE_DEVICES="1"
 
 # ============================
 # IGP 模块参数
@@ -40,7 +40,7 @@ CUDA_VISIBLE_DEVICES="0"
 ENABLE_PROBE=true
 ENABLE_ADAPTER=true
 ENABLE_GATE=true
-MAX_RATIO=0.2
+MAX_RATIO=0.5
 BOTTLENECK_DIM=128
 AUX_LOSS_WEIGHT=0
 LOG_INTERVAL=10

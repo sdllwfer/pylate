@@ -1,5 +1,5 @@
 """
-ColBERT-IGP 两阶段训练脚本
+ColBERT-IGP V2 两阶段训练脚本（增加参数量版本）
 
 实现 "Probe Warm-up" + "Joint Training" 两阶段训练策略。
 
@@ -235,8 +235,8 @@ class IGPColBERTWrapper(nn.Module):
         delta = None
         Q_hat = Q_hidden
         if self.adapter is not None and inst_vec is not None:
-            # 使用 IGPAdapter.forward 方法，包含 layer_norm 和残差连接
-            # concat_dim="hidden" 表示在 hidden 维度拼接，每个 token 都能看到指令向量
+            # 使用 IGPAdapterV2.forward 方法
+            # V2 版本支持 3D 输入，返回 (output, delta)
             adapter_output, delta = self.adapter(Q_hidden, inst_vec, concat_dim="hidden")
         
         # ========== 4. Gate: 弹性门控 (在 768 维空间操作) ==========
@@ -1577,8 +1577,8 @@ class IGPTrainer:
         enable_adapter: bool = True,
         enable_gate: bool = True,
         max_ratio: float = 0.2,
-        bottleneck_dim: int = 64,
-        probe_num_layers: int = 2,
+        bottleneck_dim: int = 512,
+        probe_num_layers: int = 6,
         aux_loss_weight: float = 0.1,
         phase2_patience: int = 3,
         phase2_early_stop_threshold: float = 0.001,
@@ -1696,7 +1696,7 @@ class IGPTrainer:
         igp_hidden_size = underlying_hidden_size
         
         if self.enable_probe and self.probe is None:
-            self.probe = InstructionProbe(
+            self.probe = InstructionProbeV2(
                 hidden_size=igp_hidden_size,
                 num_heads=8,
                 num_layers=self.probe_num_layers,
@@ -1705,19 +1705,18 @@ class IGPTrainer:
             print(f"✅ InstructionProbe 初始化完成 (hidden_size={igp_hidden_size}, num_layers={self.probe_num_layers})")
         
         if self.enable_adapter and self.adapter is None:
-            self.adapter = IGPAdapter(
+            self.adapter = IGPAdapterV2(
                 hidden_size=igp_hidden_size,
                 bottleneck_dim=self.bottleneck_dim,
+                num_layers=3,
                 dropout=0.1,
-                input_dim=igp_hidden_size * 2,  # 拼接 Query 和 Inst_vec
             )
             print(f"✅ IGPAdapter 初始化完成 (bottleneck_dim={self.bottleneck_dim}, input_dim={igp_hidden_size * 2})")
         
         if self.enable_gate and self.gate is None:
-            self.gate = RatioGate(
+            self.gate = RatioGateV2(
                 hidden_size=igp_hidden_size,
                 max_ratio=self.max_ratio,
-                use_dynamic=False,
             )
             print(f"✅ RatioGate 初始化完成 (max_ratio={self.max_ratio})")
     
@@ -1819,10 +1818,11 @@ class IGPTrainer:
             probe_path = os.path.join(checkpoint_path, modules['probe'])
             if os.path.exists(probe_path):
                 if self.probe is None:
-                    from pylate.models.igp import InstructionProbe
-                    self.probe = InstructionProbe(
+                    from pylate.models.igp import InstructionProbeV2
+                    self.probe = InstructionProbeV2(
                         hidden_size=hidden_size,
                         num_heads=8,
+                        num_layers=self.probe_num_layers,
                         dropout=0.1,
                     )
                 self.probe.load_state_dict(torch.load(probe_path, map_location='cpu'))
@@ -1832,12 +1832,12 @@ class IGPTrainer:
             adapter_path = os.path.join(checkpoint_path, modules['adapter'])
             if os.path.exists(adapter_path):
                 if self.adapter is None:
-                    from pylate.models.igp import IGPAdapter
-                    self.adapter = IGPAdapter(
+                    from pylate.models.igp import IGPAdapterV2
+                    self.adapter = IGPAdapterV2(
                         hidden_size=hidden_size,
                         bottleneck_dim=self.bottleneck_dim,
+                        num_layers=3,
                         dropout=0.1,
-                        input_dim=hidden_size,
                     )
                 self.adapter.load_state_dict(torch.load(adapter_path, map_location='cpu'))
                 print(f"   ✅ Adapter 参数已加载")
@@ -1846,11 +1846,10 @@ class IGPTrainer:
             gate_path = os.path.join(checkpoint_path, modules['gate'])
             if os.path.exists(gate_path):
                 if self.gate is None:
-                    from pylate.models.igp import RatioGate
-                    self.gate = RatioGate(
+                    from pylate.models.igp import RatioGateV2
+                    self.gate = RatioGateV2(
                         hidden_size=hidden_size,
                         max_ratio=self.max_ratio,
-                        use_dynamic=False,
                     )
                 self.gate.load_state_dict(torch.load(gate_path, map_location='cpu'))
                 print(f"   ✅ Gate 参数已加载")
@@ -2548,9 +2547,9 @@ def main():
                        default=True, help='启用 RatioGate')
     parser.add_argument('--max_ratio', type=float, default=0.2,
                         help='门控最大比率')
-    parser.add_argument('--bottleneck_dim', type=int, default=64,
+    parser.add_argument('--bottleneck_dim', type=int, default=512,
                         help='Adapter 瓶颈维度')
-    parser.add_argument('--probe_num_layers', type=int, default=2,
+    parser.add_argument('--probe_num_layers', type=int, default=6,
                         help='InstructionProbe 编码器层数')
     parser.add_argument('--aux_loss_weight', type=float, default=0.1,
                         help='辅助损失权重')

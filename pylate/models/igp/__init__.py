@@ -7,6 +7,7 @@ IGP Modules - 指令引导探针模块集合
 - InstructionProbe: 指令引导探针模块
 - IGPAdapter: IGP 适配器模块
 - RatioGate: 门控机制模块
+- V2 版本: 增加参数量的改进版本
 
 使用示例:
     from pylate.models.igp import InstructionProbe, IGPAdapter, RatioGate
@@ -20,6 +21,11 @@ from .instruction_probe import InstructionProbe, InstructionProbeConfig
 from .igp_adapter import IGPAdapter, IGPAdapterConfig
 from .ratio_gate import RatioGate, RatioGateConfig
 
+# V2 版本（增加参数量）
+from .instruction_probe_v2 import InstructionProbeV2
+from .igp_adapter_v2 import IGPAdapterV2
+from .ratio_gate_v2 import RatioGateV2
+
 __all__ = [
     'InstructionProbe',
     'InstructionProbeConfig',
@@ -27,4 +33,7 @@ __all__ = [
     'IGPAdapterConfig', 
     'RatioGate',
     'RatioGateConfig',
+    'InstructionProbeV2',
+    'IGPAdapterV2',
+    'RatioGateV2',
 ]

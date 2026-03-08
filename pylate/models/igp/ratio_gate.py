@@ -40,7 +40,7 @@ class RatioGate(nn.Module):
         self.use_dynamic = use_dynamic
         
         # 可学习的门控参数 (初始值为 0，sigmoid(0) = 0.5，初始比率 = 0.5 * max_ratio)
-        self.ratio_gate = nn.Parameter(torch.tensor(0.0))
+        self.ratio_gate = nn.Parameter(torch.zeros(1))
         
         if use_dynamic:
             # 动态门控: 基于输入预测门控值

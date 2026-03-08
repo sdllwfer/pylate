@@ -20,12 +20,66 @@ if conda_env != 'pylate':
 
 import argparse
 import json
+import numpy as np
 from collections import defaultdict
 from datetime import datetime
 
 import mteb
 from datasets import load_dataset
 from mteb._evaluators.retrieval_metrics import evaluate_p_mrr_change
+
+
+def load_debug_info(base_output_dir, task_name):
+    """加载IGP调试信息"""
+    debug_info = {}
+    
+    # 尝试加载 og 和 changed 的调试信息
+    og_debug_path = os.path.join(base_output_dir, task_name, "debug_info", "og", "igp_debug_info.json")
+    changed_debug_path = os.path.join(base_output_dir, task_name, "debug_info", "changed", "igp_debug_info.json")
+    
+    # 也尝试从其他路径加载
+    if not os.path.exists(og_debug_path):
+        og_debug_path = os.path.join(base_output_dir, "debug_info", "og", "igp_debug_info.json")
+    if not os.path.exists(changed_debug_path):
+        changed_debug_path = os.path.join(base_output_dir, "debug_info", "changed", "igp_debug_info.json")
+    
+    try:
+        if os.path.exists(og_debug_path):
+            with open(og_debug_path, 'r', encoding='utf-8') as f:
+                og_data = json.load(f)
+            print(f"✅ 加载 OG 调试信息: {len(og_data)} 个查询")
+        else:
+            og_data = {}
+            print(f"⚠️ 未找到 OG 调试信息: {og_debug_path}")
+        
+        if os.path.exists(changed_debug_path):
+            with open(changed_debug_path, 'r', encoding='utf-8') as f:
+                changed_data = json.load(f)
+            print(f"✅ 加载 Changed 调试信息: {len(changed_data)} 个查询")
+        else:
+            changed_data = {}
+            print(f"⚠️ 未找到 Changed 调试信息: {changed_debug_path}")
+        
+        # 合并 og 和 changed 的调试信息，按基础 qid 组织
+        all_qids = set(og_data.keys()) | set(changed_data.keys())
+        for qid in all_qids:
+            base_qid = qid.replace('-og', '').replace('-changed', '')
+            if base_qid not in debug_info:
+                debug_info[base_qid] = {}
+            
+            if qid in og_data:
+                debug_info[base_qid]['og'] = og_data[qid]
+            if qid in changed_data:
+                debug_info[base_qid]['changed'] = changed_data[qid]
+        
+        if debug_info:
+            print(f"✅ 合并调试信息: {len(debug_info)} 个基础查询")
+        
+    except Exception as e:
+        print(f"⚠️ 加载调试信息失败: {e}")
+        debug_info = {}
+    
+    return debug_info
 
 FOLLOWIR_TASKS = {
     "Core17InstructionRetrieval": "jhu-clsp/core17-instructions-mteb",
@@ -97,8 +151,8 @@ def calculate_query_pmrr(results_og, results_changed, changed_qrels, queries_dic
     return qid_pmrr, qid_details
 
 
-def generate_diagnostic_report(qid_pmrr, output_path, queries_dict=None):
-    """生成诊断报告，按 p-MRR 从低到高排序"""
+def generate_diagnostic_report(qid_pmrr, qid_details, output_path, queries_dict=None, changed_qrels=None, debug_info=None):
+    """生成诊断报告，按 p-MRR 从低到高排序，包含详细查询内容和IGP调试信息"""
     sorted_qids = sorted(qid_pmrr.items(), key=lambda x: x[1])
     
     report_lines = []
@@ -106,20 +160,108 @@ def generate_diagnostic_report(qid_pmrr, output_path, queries_dict=None):
     report_lines.append("📋 FollowIR 诊断报告 - 按 p-MRR 排序 (低到高)")
     report_lines.append("=" * 100)
     report_lines.append("")
-    report_lines.append(f"{'排名':<6} {'查询ID':<12} {'p-MRR':<12} {'查询内容 (前100字符)':<80}")
-    report_lines.append("-" * 110)
     
     for rank, (qid, pmrr) in enumerate(sorted_qids, start=1):
-        query_text = ""
+        report_lines.append("-" * 100)
+        report_lines.append(f"【排名 {rank}】查询ID: {qid} | p-MRR: {pmrr:.6f}")
+        report_lines.append("-" * 100)
+        
+        # 输出查询内容
         if queries_dict and qid in queries_dict:
             query_info = queries_dict[qid]
-            query_text = query_info.get('full_text', query_info.get('query', ''))[:100]
+            query_text = query_info.get('query', '')
+            instruction = query_info.get('instruction', '')
+            full_text = query_info.get('full_text', '')
+            
+            report_lines.append(f"📌 查询内容:")
+            report_lines.append(f"   {query_text}")
+            report_lines.append("")
+            
+            if instruction:
+                report_lines.append(f"📌 指令内容:")
+                report_lines.append(f"   {instruction}")
+                report_lines.append("")
+            
+            report_lines.append(f"📌 完整查询 (Query + Instruction):")
+            report_lines.append(f"   {full_text}")
+            report_lines.append("")
         
-        report_lines.append(f"{rank:<6} {qid:<12} {pmrr:<12.6f} {query_text:<80}")
+        # 输出IGP调试信息
+        if debug_info and qid in debug_info:
+            og_info = debug_info[qid].get('og', {})
+            changed_info = debug_info[qid].get('changed', {})
+            
+            # OG 调试信息
+            if og_info:
+                report_lines.append(f"🔍 [OG] IGP 调试信息:")
+                
+                # 输出 debug_stats
+                og_stats = og_info.get('debug_stats', {})
+                if og_stats:
+                    report_lines.append(f"   Gate Ratio: {og_stats.get('gate_ratio', 'N/A'):.4f}")
+                    report_lines.append(f"   指令向量范数: {og_stats.get('inst_vec_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   Delta 范数: {og_stats.get('delta_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   原始 Query 范数: {og_stats.get('Q_hidden_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   增强后 Query 范数: {og_stats.get('Q_hat_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   范数变化比例: {og_stats.get('norm_change_ratio', 'N/A'):.2f}%")
+                
+                # 探针关注词
+                attn_logits = og_info.get('attn_logits', [])
+                token_texts = og_info.get('token_texts', [])
+                if attn_logits and token_texts:
+                    # 获取注意力最高的15个词
+                    attn_array = np.array(attn_logits)
+                    if len(attn_array) == len(token_texts):
+                        top_indices = np.argsort(attn_array)[-15:][::-1]
+                        top_tokens = [token_texts[i] for i in top_indices if i < len(token_texts)]
+                        report_lines.append(f"   探针关注词 Top-15: {', '.join(top_tokens)}")
+                report_lines.append("")
+            
+            # Changed 调试信息
+            if changed_info:
+                report_lines.append(f"🔍 [Changed] IGP 调试信息:")
+                
+                # 输出 debug_stats
+                changed_stats = changed_info.get('debug_stats', {})
+                if changed_stats:
+                    report_lines.append(f"   Gate Ratio: {changed_stats.get('gate_ratio', 'N/A'):.4f}")
+                    report_lines.append(f"   指令向量范数: {changed_stats.get('inst_vec_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   Delta 范数: {changed_stats.get('delta_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   原始 Query 范数: {changed_stats.get('Q_hidden_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   增强后 Query 范数: {changed_stats.get('Q_hat_norm', 'N/A'):.4f}")
+                    report_lines.append(f"   范数变化比例: {changed_stats.get('norm_change_ratio', 'N/A'):.2f}%")
+                
+                attn_logits = changed_info.get('attn_logits', [])
+                token_texts = changed_info.get('token_texts', [])
+                if attn_logits and token_texts:
+                    attn_array = np.array(attn_logits)
+                    if len(attn_array) == len(token_texts):
+                        top_indices = np.argsort(attn_array)[-15:][::-1]
+                        top_tokens = [token_texts[i] for i in top_indices if i < len(token_texts)]
+                        report_lines.append(f"   探针关注词 Top-15: {', '.join(top_tokens)}")
+                report_lines.append("")
+        
+        # 输出发生变化的文档详情
+        if qid in qid_details and qid_details[qid]:
+            report_lines.append(f"📌 相关文档变化详情:")
+            for doc_info in qid_details[qid]:
+                doc_id = doc_info.get('doc_id', 'N/A')
+                orig_rank = doc_info.get('original_rank', 'N/A')
+                new_rank = doc_info.get('new_rank', 'N/A')
+                score = doc_info.get('score', 0)
+                report_lines.append(f"   文档ID: {doc_id}")
+                report_lines.append(f"      原始排名: {orig_rank} -> 新排名: {new_rank} | 得分: {score:.4f}")
+            report_lines.append("")
+        
+        # 输出发生变化的文档列表
+        if changed_qrels and qid in changed_qrels:
+            report_lines.append(f"📌 所有发生相关性变化的文档: {changed_qrels[qid]}")
+            report_lines.append("")
+        
+        report_lines.append("")
     
-    report_lines.append("")
-    report_lines.append("-" * 110)
-    report_lines.append(f"{'总计':<6} {len(qid_pmrr):<12} 平均: {sum(qid_pmrr.values())/len(qid_pmrr):.6f}")
+    report_lines.append("-" * 100)
+    report_lines.append(f"{'总计':<6} {len(qid_pmrr):<12} 平均 p-MRR: {sum(qid_pmrr.values())/len(qid_pmrr):.6f}")
     report_lines.append("=" * 100)
     
     report_text = "\n".join(report_lines)
@@ -128,17 +270,21 @@ def generate_diagnostic_report(qid_pmrr, output_path, queries_dict=None):
         f.write(report_text)
     
     print(f"\n📋 诊断报告已保存至: {output_path}")
-    print("\n" + report_text)
     
+    # 同时保存JSON格式，方便程序处理
     if queries_dict:
         json_path = output_path.replace('.txt', '_details.json')
         json_data = {
             qid: {
+                'rank': rank,
                 'pmrr': pmrr,
                 'query': queries_dict.get(qid, {}).get('query', ''),
                 'instruction': queries_dict.get(qid, {}).get('instruction', ''),
+                'full_text': queries_dict.get(qid, {}).get('full_text', ''),
+                'doc_details': qid_details.get(qid, []),
+                'debug_info': debug_info.get(qid, {}) if debug_info else {},
             }
-            for qid, pmrr in sorted_qids
+            for rank, (qid, pmrr) in enumerate(sorted_qids, start=1)
         }
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(json_data, f, indent=2, ensure_ascii=False)
@@ -181,13 +327,14 @@ def load_qrel_diff(task_path):
 
 
 def load_queries_with_instructions(task_path):
-    """加载查询文本和指令"""
+    """加载查询文本和指令，支持带后缀的qid (如 310-og, 310-changed)"""
     ds_q = load_dataset(task_path, 'queries', trust_remote_code=True)
     ds_inst = load_dataset(task_path, 'instruction', trust_remote_code=True)
     
     q_split = 'queries' if 'queries' in ds_q else list(ds_q.keys())[0]
     i_split = 'instruction' if 'instruction' in ds_inst else list(ds_inst.keys())[0]
     
+    # 构建指令字典 - 键可以是带后缀的 (如 310-og)
     instruction_dict = {}
     for item in ds_inst[i_split]:
         qid = item.get('query-id', '')
@@ -197,7 +344,17 @@ def load_queries_with_instructions(task_path):
     for item in ds_q[q_split]:
         qid = item.get('_id', item.get('query-id', ''))
         query_text = item.get('text', '')
+        
+        # 尝试获取指令，先尝试完整qid，再尝试基础qid
         instruction = instruction_dict.get(qid, '')
+        if not instruction:
+            # 尝试基础qid (移除 -og 或 -changed 后缀)
+            base_qid = qid.replace('-og', '').replace('-changed', '')
+            # 尝试用基础qid + 后缀查找
+            if qid.endswith('-og'):
+                instruction = instruction_dict.get(f"{base_qid}-og", '')
+            elif qid.endswith('-changed'):
+                instruction = instruction_dict.get(f"{base_qid}-changed", '')
         
         queries_dict[qid] = {
             'query': query_text,
@@ -205,7 +362,17 @@ def load_queries_with_instructions(task_path):
             'full_text': f"{query_text} {instruction}".strip()
         }
     
-    print(f"✅ 加载查询: {len(queries_dict)} 个")
+    # 同时创建基础qid的映射，方便诊断报告查找
+    base_queries_dict = {}
+    for qid, info in queries_dict.items():
+        base_qid = qid.replace('-og', '').replace('-changed', '')
+        if base_qid not in base_queries_dict:
+            base_queries_dict[base_qid] = info
+    
+    # 合并两个字典
+    queries_dict.update(base_queries_dict)
+    
+    print(f"✅ 加载查询: {len(queries_dict)} 个 (包含基础qid和带后缀qid)")
     return queries_dict
 
 
@@ -305,12 +472,21 @@ def evaluate_single_task(task_name, task_path, run_og, run_changed, output_path=
         diagnostic_path = os.path.join(diagnostic_dir, f"diagnostic_{task_name}.txt")
         queries_dict = load_queries_with_instructions(task_path)
         qid_pmrr, qid_details = calculate_query_pmrr(results_og, results_changed, changed_qrels, queries_dict)
-        generate_diagnostic_report(qid_pmrr, diagnostic_path, queries_dict)
+        
+        # 加载IGP调试信息
+        debug_info = load_debug_info(base_output_dir, task_name)
+        
+        generate_diagnostic_report(qid_pmrr, qid_details, diagnostic_path, queries_dict, changed_qrels, debug_info)
     elif output_path:
         diagnostic_path = output_path.replace(f"results_{task_name}.json", f"diagnostic_{task_name}.txt")
         queries_dict = load_queries_with_instructions(task_path)
         qid_pmrr, qid_details = calculate_query_pmrr(results_og, results_changed, changed_qrels, queries_dict)
-        generate_diagnostic_report(qid_pmrr, diagnostic_path, queries_dict)
+        
+        # 尝试从输出目录加载调试信息
+        base_output_dir = os.path.dirname(os.path.dirname(output_path))
+        debug_info = load_debug_info(base_output_dir, task_name)
+        
+        generate_diagnostic_report(qid_pmrr, qid_details, diagnostic_path, queries_dict, changed_qrels, debug_info)
     
     if all_results is not None:
         all_results[task_name] = result

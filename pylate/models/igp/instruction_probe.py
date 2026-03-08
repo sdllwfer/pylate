@@ -32,12 +32,14 @@ class InstructionProbe(nn.Module):
         self,
         hidden_size: int = 768,
         num_heads: int = 8,
+        num_layers: int = 2,
         dropout: float = 0.1,
     ):
         super().__init__()
         
         self.hidden_size = hidden_size
         self.num_heads = num_heads
+        self.num_layers = num_layers
         self.head_dim = hidden_size // num_heads
         
         # 验证维度兼容性
@@ -59,7 +61,7 @@ class InstructionProbe(nn.Module):
         )
         self.context_encoder = nn.TransformerEncoder(
             encoder_layer,
-            num_layers=2,
+            num_layers=num_layers,
             norm=nn.LayerNorm(hidden_size),
         )
         

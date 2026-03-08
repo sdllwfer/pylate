@@ -1,5 +1,5 @@
 """
-ColBERT-IGP 评测脚本
+ColBERT-IGP V2 评测脚本（增加参数量版本）
 利用 pylate.rank.rerank 进行指令重排，并输出标准评测文件
 支持加载 IGP 模块参数 (probe, adapter, gate)
 """
@@ -74,47 +74,47 @@ def load_igp_model(model_path: str, device: str = "cuda"):
         if 'probe' in modules and config.get('enable_probe'):
             probe_path = os.path.join(model_path, modules['probe'])
             if os.path.exists(probe_path):
-                from pylate.models.igp.instruction_probe import InstructionProbe
+                from pylate.models.igp.instruction_probe_v2 import InstructionProbeV2
                 try:
-                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
+                    igp_probe = InstructionProbeV2(hidden_size=igp_hidden_size, num_heads=8, num_layers=6, dropout=0.1)
                     igp_probe.load_state_dict(torch.load(probe_path, map_location=device, weights_only=True))
-                    print(f"   ✅ Probe 参数已加载 (hidden_size={igp_hidden_size})")
+                    print(f"   ✅ Probe V2 参数已加载 (hidden_size={igp_hidden_size}, num_layers=6)")
                 except RuntimeError as e:
-                    print(f"   ⚠️ Probe 参数加载失败 (维度不匹配): {e}")
-                    print(f"   ℹ️ 将使用随机初始化的 Probe")
-                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
+                    print(f"   ⚠️ Probe V2 参数加载失败 (维度不匹配): {e}")
+                    print(f"   ℹ️ 将使用随机初始化的 Probe V2")
+                    igp_probe = InstructionProbeV2(hidden_size=igp_hidden_size, num_heads=8, num_layers=6, dropout=0.1)
 
         if 'adapter' in modules and config.get('enable_adapter'):
             adapter_path = os.path.join(model_path, modules['adapter'])
             if os.path.exists(adapter_path):
-                from pylate.models.igp.igp_adapter import IGPAdapter
-                igp_adapter = IGPAdapter(
+                from pylate.models.igp.igp_adapter_v2 import IGPAdapterV2
+                igp_adapter = IGPAdapterV2(
                     hidden_size=igp_hidden_size, 
-                    bottleneck_dim=128, 
+                    bottleneck_dim=512, 
+                    num_layers=3,
                     dropout=0.1,
-                    input_dim=igp_hidden_size * 2,  # 拼接 Query 和 Inst_vec
                 )
                 igp_adapter.load_state_dict(torch.load(adapter_path, map_location=device, weights_only=True))
-                print(f"   ✅ Adapter 参数已加载 (hidden_size={igp_hidden_size})")
+                print(f"   ✅ Adapter V2 参数已加载 (hidden_size={igp_hidden_size}, bottleneck_dim=512)")
 
         if 'gate' in modules and config.get('enable_gate'):
             gate_path = os.path.join(model_path, modules['gate'])
             if os.path.exists(gate_path):
-                from pylate.models.igp.ratio_gate import RatioGate
-                igp_gate = RatioGate(hidden_size=igp_hidden_size, max_ratio=0.2, use_dynamic=False)
+                from pylate.models.igp.ratio_gate_v2 import RatioGateV2
+                igp_gate = RatioGateV2(hidden_size=igp_hidden_size, max_ratio=0.2)
                 igp_gate.load_state_dict(torch.load(gate_path, map_location=device, weights_only=True))
-                print(f"   ✅ Gate 参数已加载 (hidden_size={igp_hidden_size})")
+                print(f"   ✅ Gate V2 参数已加载 (hidden_size={igp_hidden_size})")
 
         # 使用 IGPColBERTWrapper 包装模型
         if igp_probe is not None or igp_adapter is not None or igp_gate is not None:
-            from pylate.models.igp.igp_adapter import IGPAdapter
-            from pylate.models.igp.ratio_gate import RatioGate
-            from pylate.models.igp.instruction_probe import InstructionProbe
+            from pylate.models.igp.igp_adapter_v2 import IGPAdapterV2
+            from pylate.models.igp.ratio_gate_v2 import RatioGateV2
+            from pylate.models.igp.instruction_probe_v2 import InstructionProbeV2
             
             # 导入 Wrapper
             import sys
             sys.path.insert(0, '/home/luwa/Documents/pylate/scripts/training')
-            from train_colbert_igp import IGPColBERTWrapper
+            from train_colbert_igp_v2 import IGPColBERTWrapper
             
             model = IGPColBERTWrapper(
                 base_model=base_model,
@@ -381,16 +381,16 @@ def main():
     task_dir = os.path.join(output_dir, task.metadata.name)
     os.makedirs(task_dir, exist_ok=True)
 
-    # 准备调试信息目录
-    debug_output_dir = os.path.join(task_dir, 'debug_info')
-    os.makedirs(debug_output_dir, exist_ok=True)
-    
+    # 设置调试信息保存目录
+    debug_dir = os.path.join(output_dir, "debug_info")
+    os.makedirs(debug_dir, exist_ok=True)
+
     print("\n--- 开始评测: Original Instructions (og) ---")
     results_og, debug_info_og = batch_rerank(
         model, q_og, corpus, candidates, 
         batch_size=args.batch_size,
         save_debug_info=True,
-        debug_output_dir=debug_output_dir
+        debug_output_dir=os.path.join(debug_dir, "og")
     )
     run_og_path = os.path.join(trec_dir, f"run_{task.metadata.name}_og.trec")
     save_to_trec_format(results_og, run_og_path)
@@ -400,29 +400,10 @@ def main():
         model, q_changed, corpus, candidates, 
         batch_size=args.batch_size,
         save_debug_info=True,
-        debug_output_dir=debug_output_dir
+        debug_output_dir=os.path.join(debug_dir, "changed")
     )
     run_changed_path = os.path.join(trec_dir, f"run_{task.metadata.name}_changed.trec")
     save_to_trec_format(results_changed, run_changed_path)
-    
-    # 合并 og 和 changed 的调试信息
-    debug_info_combined = {}
-    for qid, info in debug_info_og.items():
-        base_qid = qid.replace('-og', '')
-        if base_qid not in debug_info_combined:
-            debug_info_combined[base_qid] = {}
-        debug_info_combined[base_qid]['og'] = info
-    for qid, info in debug_info_changed.items():
-        base_qid = qid.replace('-changed', '')
-        if base_qid not in debug_info_combined:
-            debug_info_combined[base_qid] = {}
-        debug_info_combined[base_qid]['changed'] = info
-    
-    # 保存合并后的调试信息
-    debug_file = os.path.join(debug_output_dir, 'igp_debug_info_combined.json')
-    with open(debug_file, 'w', encoding='utf-8') as f:
-        json.dump(debug_info_combined, f, indent=2, ensure_ascii=False)
-    print(f"💾 合并的 IGP 调试信息已保存至: {debug_file}")
 
     params_file = os.path.join(output_dir, "eval_params.txt")
     with open(params_file, 'w', encoding='utf-8') as f:
