@@ -1714,12 +1714,11 @@ class IGPTrainer:
             print(f"✅ IGPAdapter 初始化完成 (bottleneck_dim={self.bottleneck_dim}, input_dim={igp_hidden_size * 2})")
         
         if self.enable_gate and self.gate is None:
-            self.gate = RatioGate(
+            self.gate = RatioGateV2(
                 hidden_size=igp_hidden_size,
                 max_ratio=self.max_ratio,
-                use_dynamic=False,
             )
-            print(f"✅ RatioGate 初始化完成 (max_ratio={self.max_ratio})")
+            print(f"✅ RatioGateV2 初始化完成 (max_ratio={self.max_ratio})")
     
     def load_checkpoint(self, checkpoint_path: str, phase: str = "phase1"):
         """
@@ -1846,11 +1845,10 @@ class IGPTrainer:
             gate_path = os.path.join(checkpoint_path, modules['gate'])
             if os.path.exists(gate_path):
                 if self.gate is None:
-                    from pylate.models.igp import RatioGate
-                    self.gate = RatioGate(
+                    from pylate.models.igp import RatioGateV2
+                    self.gate = RatioGateV2(
                         hidden_size=hidden_size,
                         max_ratio=self.max_ratio,
-                        use_dynamic=False,
                     )
                 self.gate.load_state_dict(torch.load(gate_path, map_location='cpu'))
                 print(f"   ✅ Gate 参数已加载")

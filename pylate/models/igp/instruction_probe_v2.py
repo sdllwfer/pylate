@@ -87,6 +87,9 @@ class InstructionProbeV2(nn.Module):
         self.k_proj = nn.Linear(hidden_size, hidden_size)
         self.v_proj = nn.Linear(hidden_size, hidden_size)
         
+        # 温度参数，控制注意力分布的锐度
+        self.temperature = nn.Parameter(torch.ones(1) * 0.5)
+        
     def forward(self, query_embeddings, attention_mask):
         """
         前向传播
@@ -129,9 +132,10 @@ class InstructionProbeV2(nn.Module):
         scores = torch.bmm(Q, K.transpose(1, 2)) / math.sqrt(self.head_dim)
         mask = attention_mask.unsqueeze(1).float()
         scores = scores.masked_fill(mask == 0, -1e9)
-        
+
         attn_logits = scores.squeeze(1)
-        attn_weights = torch.sigmoid(attn_logits)
+        # 使用带温度的 softmax，温度越小分布越尖锐
+        attn_weights = torch.softmax(attn_logits / self.temperature.abs(), dim=-1)
         
         attn_weights_expanded = attn_weights.unsqueeze(-1)
         inst_vec = torch.sum(attn_weights_expanded * V, dim=1)

@@ -2,11 +2,12 @@
 InstructionProbe Module - 指令引导探针模块
 
 该模块用于从输入序列中提取指令特征，通过可学习的探针 token 与上下文进行注意力交互，
-生成指令向量 (inst_vec)。使用 Sigmoid 激活而非 Softmax，以保留多词指令的概率分布。
+生成指令向量 (inst_vec)。使用带温度的 Softmax 激活，可以更好地处理长指令。
 
 设计规范:
 - 不使用 nn.MultiheadAttention (Softmax 会稀释多词指令概率)
 - 手动计算点积注意力
+- 使用可学习的温度参数控制注意力分布锐度
 - 返回 inst_vec, attn_logits, attn_weights 三个值
 """
 
@@ -68,6 +69,9 @@ class InstructionProbe(nn.Module):
         # 输出投影和 LayerNorm
         self.output_proj = nn.Linear(hidden_size, hidden_size)
         self.layer_norm = nn.LayerNorm(hidden_size)
+        
+        # 温度参数，控制注意力分布的锐度
+        self.temperature = nn.Parameter(torch.ones(1) * 0.5)
         
         # 初始化
         self._init_weights()
@@ -149,8 +153,9 @@ class InstructionProbe(nn.Module):
         # 5. 获取未归一化的 logits
         attn_logits = scores.squeeze(1)  # [batch_size, seq_len]
         
-        # 6. Sigmoid 激活获取权重 (不使用 Softmax，以保留多词指令概率)
-        attn_weights = torch.sigmoid(attn_logits)  # [batch_size, seq_len]
+        # 6. 使用带温度的 Softmax 激活获取权重
+        # 温度参数控制分布锐度，温度越小越尖锐，有助于聚焦长指令的关键信息
+        attn_weights = torch.softmax(attn_logits / self.temperature.abs(), dim=-1)  # [batch_size, seq_len]
         
         # 7. 加权求和获取指令向量
         # 扩展权重以匹配 V 的维度

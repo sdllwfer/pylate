@@ -23,7 +23,7 @@ echo "✅ Python 路径: $(which python)"
 # 整合了重排和评测过程，只需配置以下参数即可运行
 # ========== 配置参数 ==========
 # 模型路径 (IGP模型检查点目录)
-MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_two_stage_short_then_long/stage2_long_data/phase2/best_model_phase2_20260308_140133"
+MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.5/stage2_long_data/phase2/best_model_phase2_20260308_193208"
 # GPU 设备编号 (0, 1, 2, 3)
 CUDA_VISIBLE_DEVICES="1"
 # 要评测的数据集 (可用: Core17InstructionRetrieval Robust04InstructionRetrieval News21InstructionRetrieval)
@@ -32,9 +32,9 @@ TASKS=("Core17InstructionRetrieval" "Robust04InstructionRetrieval" "News21Instru
 BATCH_SIZE=128
 # 输出目录 (会自动创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/evaluation_data/colbert_igp"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_two_stage_short_then_long"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_max0.5"
 # 自定义输出路径 (可选)
-NOTE='端到端模型评测-v1-短长训练-best_model'
+NOTE='端到端模型评测-v1-短长训练-best_model-max0.5'
 # ==============================
 
 # 从模型路径中提取时间戳
@@ -84,9 +84,9 @@ for task in "${TASKS[@]}"; do
     
     # 步骤 1: 重排生成 TREC 文件
     echo ""
-    echo -e "\033[44m\033[97m============================================================\033[0m"
-    echo -e "\033[44m\033[97m  步骤 1/2: 运行重排产生 TREC 结果文件                      \033[0m"
-    echo -e "\033[44m\033[97m============================================================\033[0m"
+    echo -e "\033[48;5;208m\033[97m============================================================\033[0m"
+    echo -e "\033[48;5;208m\033[97m  步骤 1/2: 运行重排产生 TREC 结果文件                      \033[0m"
+    echo -e "\033[48;5;208m\033[97m============================================================\033[0m"
     python -u -m eval_followir_igp \
         --model_path "${MODEL_PATH}" \
         --output_dir "${OUTPUT_DIR}" \
@@ -151,14 +151,19 @@ echo "📊 生成汇总结果"
 echo "============================================================"
 
 if [ ${#all_results[@]} -gt 0 ]; then
-    python -c "
+    # 构建 Python 列表字符串
+    tasks_list="$(printf "'%s', " "${all_results[@]}")"
+    tasks_list="[${tasks_list%, }]"
+    
+    python << PYEOF
 import json
 import os
 
 all_results = {}
 output_dir = '${OUTPUT_DIR}'
+tasks = ${tasks_list}
 
-for task in ${all_results[@]}:
+for task in tasks:
     result_file = os.path.join(output_dir, f'results_{task}.json')
     if os.path.exists(result_file):
         with open(result_file) as f:
@@ -170,10 +175,10 @@ if all_results:
         json.dump(all_results, f, indent=2)
     print(f'💾 汇总结果已保存至: {summary_path}')
     
-    print('\\n📊 汇总 p-MRR:')
+    print('\n📊 汇总 p-MRR:')
     for task_name, result in all_results.items():
-        print(f'  {task_name}: {result.get(\"p-MRR\", 0):.4f}')
-"
+        print(f'  {task_name}: {result.get("p-MRR", 0):.4f}')
+PYEOF
 fi
 
 echo ""

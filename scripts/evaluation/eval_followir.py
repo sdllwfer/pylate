@@ -52,18 +52,18 @@ def load_data_pairwise(task):
     
     try:
         print("   加载 corpus...")
-        ds_c = datasets.load_dataset(path, 'corpus', trust_remote_code=True)
+        ds_c = datasets.load_dataset(path, 'corpus')
         c_split = 'corpus' if 'corpus' in ds_c else 'train'
         for d in ds_c[c_split]:
             corpus[str(d.get('_id', d.get('id')))] = {'text': str(d.get('text', ''))}
         print(f"   ✅ 加载 {len(corpus)} 个文档 ({time.time()-t0:.1f}s)")
         
         print("   加载 queries...")
-        ds_q = datasets.load_dataset(path, 'queries', trust_remote_code=True)
+        ds_q = datasets.load_dataset(path, 'queries')
         q_split = 'queries' if 'queries' in ds_q else 'train'
         
         print("   加载 instruction...")
-        ds_inst = datasets.load_dataset(path, 'instruction', trust_remote_code=True)
+        ds_inst = datasets.load_dataset(path, 'instruction')
         i_split = 'instruction' if 'instruction' in ds_inst else 'train'
         
         instruction_dict = {}
@@ -86,7 +86,7 @@ def load_data_pairwise(task):
         
         try:
             print("   加载 top_ranked...")
-            ds_top = datasets.load_dataset(path, 'top_ranked', trust_remote_code=True)
+            ds_top = datasets.load_dataset(path, 'top_ranked')
             available_splits = list(ds_top.keys())
             t_split = available_splits[0] if available_splits else None
             if t_split:

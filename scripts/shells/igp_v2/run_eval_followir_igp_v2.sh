@@ -83,9 +83,9 @@ for task in "${TASKS[@]}"; do
     
     # 步骤 1: 重排生成 TREC 文件
     echo ""
-    echo -e "\033[44m\033[97m============================================================\033[0m"
-    echo -e "\033[44m\033[97m  步骤 1/2: 运行重排产生 TREC 结果文件                      \033[0m"
-    echo -e "\033[44m\033[97m============================================================\033[0m"
+    echo -e "\033[48;5;208m\033[97m============================================================\033[0m"
+    echo -e "\033[48;5;208m\033[97m  步骤 1/2: 运行重排产生 TREC 结果文件                      \033[0m"
+    echo -e "\033[48;5;208m\033[97m============================================================\033[0m"
     python -u -m eval_followir_igp_v2 \
         --model_path "${MODEL_PATH}" \
         --output_dir "${OUTPUT_DIR}" \
@@ -150,14 +150,15 @@ echo "📊 生成汇总结果"
 echo "============================================================"
 
 if [ ${#all_results[@]} -gt 0 ]; then
-    python -c "
+    python << PYEOF
 import json
 import os
 
 all_results = {}
 output_dir = '${OUTPUT_DIR}'
+tasks = ['$(IFS="','"; echo "${all_results[*]}")']
 
-for task in ${all_results[@]}:
+for task in tasks:
     result_file = os.path.join(output_dir, f'results_{task}.json')
     if os.path.exists(result_file):
         with open(result_file) as f:
@@ -169,10 +170,10 @@ if all_results:
         json.dump(all_results, f, indent=2)
     print(f'💾 汇总结果已保存至: {summary_path}')
     
-    print('\\n📊 汇总 p-MRR:')
+    print('\n📊 汇总 p-MRR:')
     for task_name, result in all_results.items():
-        print(f'  {task_name}: {result.get(\"p-MRR\", 0):.4f}')
-"
+        print(f'  {task_name}: {result.get("p-MRR", 0):.4f}')
+PYEOF
 fi
 
 echo ""

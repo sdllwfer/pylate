@@ -220,16 +220,25 @@ class DataLoader:
                     
                     data.append(item)
         
+        # 收集所有文档用于随机采样负例
+        all_documents = []
+        for item in data:
+            all_documents.extend(item.get('pos', []))
+            all_documents.extend(item.get('neg', []))
+
         if expand_pairs:
             expanded = []
             for item in data:
                 query = item.get('query', '')
                 instruction = item.get('instruction', '')
                 instruction_substring = item.get('instruction_substring', '')
-                
+
                 positives = item.get('pos', [])
                 negatives = item.get('neg', [])
-                
+
+                # 1. 添加带指令的样本（changed）
+                # 正例：符合指令的文档
+                # 负例：违反指令的文档
                 for pos in positives:
                     for neg in negatives:
                         expanded.append({
@@ -239,7 +248,30 @@ class DataLoader:
                             'instruction': instruction,
                             'instruction_substring': instruction_substring,
                         })
-            
+
+                # 2. 添加无指令的样本（original）
+                # 去掉指令约束后，原先的 pos 和 neg 都变成正例（都是相关文档）
+                # 从其他查询中采样真正的负例
+                if len(positives) > 0 and len(negatives) > 0:
+                    # 合并所有相关文档作为正例
+                    all_relevant_docs = positives + negatives
+
+                    # 从全局文档池中采样负例（排除当前查询的相关文档）
+                    current_docs = set(all_relevant_docs)
+                    global_neg_candidates = [doc for doc in all_documents if doc not in current_docs]
+
+                    if len(global_neg_candidates) > 0:
+                        for rel_doc in all_relevant_docs:
+                            # 随机选择一个全局负例
+                            random_neg = random.choice(global_neg_candidates)
+                            expanded.append({
+                                'anchor': query,
+                                'positive': rel_doc,
+                                'negative': random_neg,
+                                'instruction': '',  # 空指令
+                                'instruction_substring': '',
+                            })
+
             data = expanded
         
         dataset = Dataset.from_list(data)

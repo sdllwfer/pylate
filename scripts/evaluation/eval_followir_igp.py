@@ -411,12 +411,22 @@ def main():
         base_qid = qid.replace('-og', '')
         if base_qid not in debug_info_combined:
             debug_info_combined[base_qid] = {}
-        debug_info_combined[base_qid]['og'] = info
+        # 转换 numpy 数组为列表
+        debug_info_combined[base_qid]['og'] = {
+            'token_texts': info['token_texts'],
+            'attn_logits': info['attn_logits'].tolist() if info['attn_logits'] is not None else None,
+            'debug_stats': info.get('debug_stats', {}),
+        }
     for qid, info in debug_info_changed.items():
         base_qid = qid.replace('-changed', '')
         if base_qid not in debug_info_combined:
             debug_info_combined[base_qid] = {}
-        debug_info_combined[base_qid]['changed'] = info
+        # 转换 numpy 数组为列表
+        debug_info_combined[base_qid]['changed'] = {
+            'token_texts': info['token_texts'],
+            'attn_logits': info['attn_logits'].tolist() if info['attn_logits'] is not None else None,
+            'debug_stats': info.get('debug_stats', {}),
+        }
     
     # 保存合并后的调试信息
     debug_file = os.path.join(debug_output_dir, 'igp_debug_info_combined.json')

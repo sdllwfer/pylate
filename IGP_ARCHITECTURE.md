@@ -313,3 +313,161 @@ checkpoint-{epoch}
 - `checkpoint-1` - 第 1 个 epoch 完成后
 - `checkpoint-5` - 第 5 个 epoch 完成后
 - `checkpoint-10` - 第 10 个 epoch 完成后
+
+---
+
+## 8. 更新日志
+
+### 2025-03-08 重大更新
+
+#### 8.1 IGP V2 模型架构 (新增)
+
+为提升模型表达能力，新增 **IGP V2** 版本，主要改进：
+
+**文件结构更新**:
+```
+pylate/models/igp/
+├── __init__.py                    # 更新: 导出V2模块
+├── instruction_probe.py           # V1版本 (保留)
+├── instruction_probe_v2.py        # 新增: 增强版探针
+├── igp_adapter.py                 # V1版本 (保留)
+├── igp_adapter_v2.py              # 新增: 增加参数量版Adapter
+├── ratio_gate.py                  # V1版本 (保留)
+└── ratio_gate_v2.py               # 新增: 改进门控机制
+```
+
+**V2模块改进**:
+
+| 模块 | V1 | V2改进 |
+|------|-----|--------|
+| InstructionProbe | 单层Transformer | 多层Transformer + 更复杂的注意力机制 |
+| IGPAdapter | bottleneck_dim=64 | 增加中间层维度，提升表达能力 |
+| RatioGate | 简单sigmoid | 更精细的门控控制逻辑 |
+
+**V2训练脚本**:
+- `scripts/training/train_colbert_igp_v2.py` - 端到端V2训练
+- `scripts/shells/igp_v2/run_train_colbert_igp_v2.sh` - V2单阶段训练
+- `scripts/shells/igp_v2/run_train_colbert_igp_v2_two_stage.sh` - V2两阶段训练
+
+#### 8.2 诊断报告功能 (新增)
+
+为便于模型调试和坏例分析，新增详细的诊断报告功能：
+
+**调试信息收集**:
+- `return_debug_info` 参数: 在encode方法中启用调试信息收集
+- 收集字段:
+  - `gate_ratio`: 门控比例
+  - `inst_vec_norm`: 指令向量范数
+  - `delta_norm`: Delta偏移量范数
+  - `Q_hidden_norm`: 原始Query范数
+  - `Q_hat_norm`: 增强后Query范数
+  - `norm_change_ratio`: 范数变化百分比
+  - `attn_logits`: 探针注意力分数
+  - `token_texts`: Token文本列表
+
+**诊断报告生成**:
+- 按p-MRR从低到高排序，优先展示表现差的查询
+- 每个查询包含:
+  - 查询内容、指令内容、完整文本
+  - OG和Changed的IGP调试信息对比
+  - 探针关注词Top-15（注意力最高的token）
+  - 相关文档的变化情况
+
+**相关文件**:
+- `scripts/evaluation/eval_followir_igp_v2.py` - V2评估脚本（支持调试信息）
+- `scripts/evaluation/eval_followir_pmr.py` - 更新: 生成详细诊断报告
+
+#### 8.3 评估流程优化
+
+**流式评估模式**:
+- 每完成一个数据集的重排，立即计算指标
+- 无需等待所有数据集完成即可查看结果
+- 便于及时发现问题并中断评估
+
+**可配置Batch Size**:
+- 支持通过 `BATCH_SIZE` 环境变量调整批处理大小
+- 充分利用GPU显存，提升编码速度
+- 默认128，可根据显存调整为256或更高
+
+**Shell脚本改进**:
+- 修复conda环境激活问题
+- 添加彩色步骤提示（蓝色=重排，绿色=计算指标）
+- 修复括号导致的语法错误
+
+**脚本组织重构**:
+```
+scripts/shells/
+├── igp_v1/                        # V1版本脚本
+│   ├── run_eval_followir_igp.sh
+│   ├── run_train_colbert_igp.sh
+│   ├── run_train_colbert_igp_nohup.sh
+│   └── run_train_colbert_igp_two_stage.sh
+├── igp_v2/                        # V2版本脚本
+│   ├── run_eval_followir_igp_v2.sh
+│   ├── run_train_colbert_igp_v2.sh
+│   └── run_train_colbert_igp_v2_two_stage.sh
+└── origin/                        # 原始脚本备份
+    ├── manage_train.sh
+    ├── run_eval_followir.sh
+    ├── run_train_colbert.sh
+    ├── run_train_followir.sh
+    └── run_train_followir_nohup.sh
+```
+
+#### 8.4 Bug修复
+
+1. **torch.load FutureWarning修复**:
+   - 添加 `weights_only=True` 参数
+   - 消除PyTorch安全警告
+
+2. **诊断报告查询内容为空修复**:
+   - 修复qid格式不匹配问题（base qid vs qid with suffix）
+   - 确保查询内容正确显示
+
+3. **移除废弃字段**:
+   - 移除诊断报告中的`instruction_mask`相关字段
+   - 端到端训练不再使用指令掩码
+
+#### 8.5 使用示例
+
+**V2模型训练**:
+```bash
+# 编辑配置
+vim scripts/shells/igp_v2/run_train_colbert_igp_v2_two_stage.sh
+
+# 修改以下参数
+MODEL_NAME="lightonai/GTE-ModernColBERT-v1"
+DATASET_NAME="your_dataset"
+CUDA_VISIBLE_DEVICES="0"
+BATCH_SIZE=32
+
+# 运行训练
+bash scripts/shells/igp_v2/run_train_colbert_igp_v2_two_stage.sh
+```
+
+**V2模型评估**:
+```bash
+# 编辑配置
+vim scripts/shells/igp_v2/run_eval_followir_igp_v2.sh
+
+# 修改以下参数
+MODEL_PATH="/path/to/v2/model"
+CUDA_VISIBLE_DEVICES="0"
+BATCH_SIZE=256
+
+# 运行评估
+bash scripts/shells/igp_v2/run_eval_followir_igp_v2.sh
+```
+
+**查看诊断报告**:
+```bash
+# 评估完成后，诊断报告位于
+ls evaluation_data/colbert_igp/{model_name}/{task_name}/diagnostic/
+
+# 例如
+cat evaluation_data/colbert_igp/col_two_stage_short_then_long_v2/diagnostic/diagnostic_Core17InstructionRetrieval.txt
+```
+
+---
+
+*文档最后更新: 2025-03-08*
