@@ -186,60 +186,41 @@ class IGPColBERTWrapper(nn.Module):
                 adapter_output = adapter_result
                 delta = adapter_output - Q_hidden
         
-        # ========== 4. Gate: 弹性门控 (在 768 维空间操作) ==========
-        gate_ratio = torch.tensor(0.0, device=Q_hidden.device)  # 初始化为 tensor
-        if self.gate is not None and delta is not None and inst_vec is not None:
-            # 生成 shift_mask: 锁定 Query 部分 (非指令部分)
-            # Query(1) - Instruction(1) = PureQuery(1)
-            if instruction_mask is not None:
-                raw_mask = (query_attention_mask.float() - instruction_mask.float()).clamp(min=0)
-            else:
-                # 如果没有 instruction_mask，假设所有位置都是 Query
-                raw_mask = query_attention_mask.float()
+        # ========== 4. Gate: 全局感知门控 (在 768 维空间操作) ==========
+        gate_ratio = torch.tensor(0.0, device=Q_hidden.device)
+        gate_penalty = torch.tensor(0.0, device=Q_hidden.device)
+        
+        if self.gate is not None and inst_vec is not None:
+            # 计算 Query 的全局表示: [batch, seq, dim] -> [batch, dim]
+            Q_global = Q_hidden.mean(dim=1)
             
-            # 对齐长度 (处理 CLS 切片问题)
-            seq_len_q = Q_hidden.shape[1]
-            seq_len_mask = raw_mask.shape[1]
-            if seq_len_q == seq_len_mask - 1:
-                align_mask = raw_mask[:, 1:]  # 去掉 CLS
-            else:
-                min_len = min(seq_len_q, seq_len_mask)
-                align_mask = raw_mask[:, :min_len]
+            # 使用门控网络根据 Q_global 预测门控比例
+            # gate_logits: [batch, 1]
+            gate_logits = self.gate(Q_global)
             
-            shift_mask = align_mask.unsqueeze(-1).to(Q_hidden.device)  # [batch, seq, 1]
+            # 硬约束: current_ratio = max_ratio * sigmoid(gate_logits)
+            # max_ratio 默认为 0.2
+            max_ratio = getattr(self.gate, 'max_ratio', 0.2)
+            current_ratio = max_ratio * torch.sigmoid(gate_logits)  # [batch, 1]
             
-            # 计算 Query 向量 (只在 Query 部分计算，用于 Gate 输入)
-            q_vec = Q_hidden * shift_mask
+            # 保存门控比例用于监控
+            gate_ratio = current_ratio.squeeze(-1)  # [batch]
             
-            # 对 Query 向量进行平均池化，得到句子级别的 query 表示
-            # 使用 shift_mask 进行加权平均
-            q_sum = (q_vec * shift_mask).sum(dim=1)  # [batch, hidden]
-            q_count = shift_mask.sum(dim=1).clamp(min=1)  # [batch, 1]
-            query_pooled = q_sum / q_count  # [batch, hidden]
+            # 计算 L1 稀疏惩罚项 (gate_penalty)
+            gate_penalty = current_ratio.abs().mean()  # 标量，保留梯度
             
-            # 调用 Gate 的 forward 方法计算动态 gate ratio
-            # RatioGateV2/V3 输入: query_pooled [batch, hidden], inst_vec [batch, hidden]
-            # 输出: gate_ratio [batch]
-            gate_ratio = self.gate(query_pooled, inst_vec)  # [batch]
+            # 执行加权融合: Q_hat = Q_origin + current_ratio * inst_vec
+            # current_ratio: [batch, 1] -> [batch, 1, 1]
+            # inst_vec: [batch, dim] -> [batch, 1, dim]
+            current_ratio_expanded = current_ratio.unsqueeze(-1)  # [batch, 1, 1]
+            inst_vec_expanded = inst_vec.unsqueeze(1)  # [batch, 1, dim]
             
-            # 计算 Query 范数 (只在 Query 部分计算)
-            q_norm = torch.norm(q_vec, p=2, dim=-1, keepdim=True) + 1e-8
-            
-            # Delta 单位方向
-            delta_unit = F.normalize(delta, p=2, dim=-1)
-            
-            # 将 gate_ratio [batch] 扩展到 [batch, seq_len, 1]
-            gate_ratio_expanded = gate_ratio.unsqueeze(-1).unsqueeze(-1)  # [batch, 1, 1]
-            
-            # 弹性偏移: 方向 * (Q长度 * 比例)
-            effective_delta = delta_unit * (q_norm * gate_ratio_expanded)
-            effective_delta = effective_delta * shift_mask  # 只在 Query 部分应用
-            
-            # 在 768 维空间完成指令特征的融合
-            Q_hat = Q_hidden + effective_delta
+            Q_hat = Q_hidden + current_ratio_expanded * inst_vec_expanded
         elif delta is not None:
             # 当没有 Gate 但有 delta 时，直接使用 adapter_output
             Q_hat = adapter_output if adapter_output is not None else Q_hidden + delta
+        else:
+            Q_hat = Q_hidden
         
         # ========== 5. 投影到 ColBERT 维度并归一化 (768维 -> 128维) ==========
         # 使用 base_model[1] (Dense 层) 进行投影
@@ -279,6 +260,7 @@ class IGPColBERTWrapper(nn.Module):
             'inst_vec': inst_vec,
             'attn_logits': attn_logits,
             'gate_ratio': gate_ratio,
+            'gate_penalty': gate_penalty,
             'debug_stats': debug_stats,
         }
         

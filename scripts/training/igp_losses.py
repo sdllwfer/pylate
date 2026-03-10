@@ -237,6 +237,7 @@ class IGPLoss(nn.Module):
         query_embeddings = query_result['token_embeddings']  # 已经应用了 IGP 模块
         attn_logits = query_result.get('attn_logits')  # 用于 aux_loss
         gate_ratio = query_result.get('gate_ratio', 0.0)  # 用于日志
+        gate_penalty = query_result.get('gate_penalty', torch.tensor(0.0, device=rank_loss.device))  # L1稀疏惩罚
         
         # 获取正负样本 embeddings (不使用 IGP，直接走 base_model[0])
         positive_embeddings = self._get_embeddings(positive_features)
@@ -301,11 +302,12 @@ class IGPLoss(nn.Module):
         # 或者通过 L2 正则化约束 query_embeddings 的变化
         
         # ========== 5. 计算门控L1稀疏正则化损失 ==========
-        # 强制门控在无指令时趋向于0，实现"按需开启"
-        gate_l1_loss = torch.tensor(0.0, device=rank_loss.device)
-        if self.gate_l1_coeff > 0 and gate_ratio is not None and isinstance(gate_ratio, torch.Tensor):
-            # L1惩罚：门控值的绝对值均值
-            gate_l1_loss = gate_ratio.abs().mean()
+        # 使用 wrapper 中计算的 gate_penalty (L1稀疏惩罚)
+        # gate_penalty 已经是当前 batch 中 current_ratio 绝对值的平均值
+        if isinstance(gate_penalty, torch.Tensor):
+            gate_l1_loss = gate_penalty
+        else:
+            gate_l1_loss = torch.tensor(0.0, device=rank_loss.device)
         
         # ========== 6. 计算总损失 ==========
         # 添加虚拟损失确保梯度流动到 IGP 模块
@@ -314,17 +316,13 @@ class IGPLoss(nn.Module):
         if inst_vec is not None:
             dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
         
-        # 添加 gate_ratio 的虚拟损失（确保 Gate 模块的梯度流动）
-        if gate_ratio is not None and isinstance(gate_ratio, torch.Tensor):
-            gate_dummy = gate_ratio.mean() * 0.01
-        else:
-            gate_dummy = torch.tensor(0.0, device=rank_loss.device)
-        
+        # 总损失 = Rank_Loss + 0.01 * gate_penalty
+        # gate_penalty 来自 wrapper 的 L1 稀疏惩罚
         total_loss = (rank_loss + 
                      aux_loss * self.aux_loss_weight + 
                      reg_loss * self.reg_coeff + 
                      gate_l1_loss * self.gate_l1_coeff +  # L1稀疏正则
-                     dummy_loss + gate_dummy)
+                     dummy_loss)
         
         # 保存各项损失用于日志
         # 将 gate_ratio 转换为 float（如果是 tensor）
