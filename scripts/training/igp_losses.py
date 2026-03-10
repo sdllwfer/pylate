@@ -238,7 +238,7 @@ class IGPLoss(nn.Module):
         query_embeddings = query_result['token_embeddings']  # 已经应用了 IGP 模块
         attn_logits = query_result.get('attn_logits')  # 用于 aux_loss
         gate_ratio = query_result.get('gate_ratio', 0.0)  # 用于日志
-        gate_loss = query_result.get('gate_loss', torch.tensor(0.0, device=rank_loss.device))  # 门控监督损失
+        gate_loss = query_result.get('gate_loss', torch.tensor(0.0, device=query_embeddings.device))  # 门控监督损失
         
         # 获取正负样本 embeddings (不使用 IGP，直接走 base_model[0])
         positive_embeddings = self._get_embeddings(positive_features)
