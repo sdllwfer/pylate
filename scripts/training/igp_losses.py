@@ -167,7 +167,8 @@ class IGPLoss(nn.Module):
         gate=None,
         aux_loss_weight: float = 0.1,
         reg_coeff: float = 0.05,
-        gate_l1_coeff: float = 0.01,  # L1稀疏正则化系数
+        gate_l1_coeff: float = 0.01,  # 兼容旧参数，实际不再使用
+        lambda_gate: float = 1.0,  # 门控监督损失权重
     ):
         super().__init__()
         self.base_loss = base_loss
@@ -177,7 +178,7 @@ class IGPLoss(nn.Module):
         self.gate = gate
         self.aux_loss_weight = aux_loss_weight
         self.reg_coeff = reg_coeff
-        self.gate_l1_coeff = gate_l1_coeff  # L1稀疏正则化系数
+        self.lambda_gate = lambda_gate  # 门控监督损失权重
         self.aux_loss_fn = IGPAuxLoss()
         self.rank_loss_fn = nn.CrossEntropyLoss()
         self.temperature = 0.05  # ColBERT 通常使用更小的温度
@@ -237,7 +238,7 @@ class IGPLoss(nn.Module):
         query_embeddings = query_result['token_embeddings']  # 已经应用了 IGP 模块
         attn_logits = query_result.get('attn_logits')  # 用于 aux_loss
         gate_ratio = query_result.get('gate_ratio', 0.0)  # 用于日志
-        gate_penalty = query_result.get('gate_penalty', torch.tensor(0.0, device=rank_loss.device))  # L1稀疏惩罚
+        gate_loss = query_result.get('gate_loss', torch.tensor(0.0, device=rank_loss.device))  # 门控监督损失
         
         # 获取正负样本 embeddings (不使用 IGP，直接走 base_model[0])
         positive_embeddings = self._get_embeddings(positive_features)
@@ -301,13 +302,9 @@ class IGPLoss(nn.Module):
         # 注意: delta 的计算在 Model.forward 中，这里可以通过梯度惩罚实现
         # 或者通过 L2 正则化约束 query_embeddings 的变化
         
-        # ========== 5. 计算门控L1稀疏正则化损失 ==========
-        # 使用 wrapper 中计算的 gate_penalty (L1稀疏惩罚)
-        # gate_penalty 已经是当前 batch 中 current_ratio 绝对值的平均值
-        if isinstance(gate_penalty, torch.Tensor):
-            gate_l1_loss = gate_penalty
-        else:
-            gate_l1_loss = torch.tensor(0.0, device=rank_loss.device)
+        # ========== 5. 计算门控监督损失 ==========
+        # 使用 wrapper 中计算的 gate_loss (BCEWithLogitsLoss)
+        # gate_loss 已经是当前 batch 的监督损失
         
         # ========== 6. 计算总损失 ==========
         # 添加虚拟损失确保梯度流动到 IGP 模块
@@ -316,12 +313,13 @@ class IGPLoss(nn.Module):
         if inst_vec is not None:
             dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
         
-        # 总损失 = Rank_Loss + 0.01 * gate_penalty
-        # gate_penalty 来自 wrapper 的 L1 稀疏惩罚
+        # 总损失 = Rank_Loss + lambda_gate * gate_loss
+        # lambda_gate 默认为 1.0
+        lambda_gate = getattr(self, 'lambda_gate', 1.0)
         total_loss = (rank_loss + 
                      aux_loss * self.aux_loss_weight + 
                      reg_loss * self.reg_coeff + 
-                     gate_l1_loss * self.gate_l1_coeff +  # L1稀疏正则
+                     gate_loss * lambda_gate +  # 门控监督损失
                      dummy_loss)
         
         # 保存各项损失用于日志
@@ -335,7 +333,7 @@ class IGPLoss(nn.Module):
             'rank_loss': rank_loss.item(),
             'aux_loss': aux_loss.item(),
             'reg_loss': reg_loss.item(),
-            'gate_l1_loss': gate_l1_loss.item(),  # L1稀疏正则损失
+            'gate_loss': gate_loss.item(),  # 门控监督损失
             'gate_ratio': gate_ratio_val,
             'total_loss': total_loss.item(),
         }

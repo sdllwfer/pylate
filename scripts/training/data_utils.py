@@ -103,6 +103,16 @@ class IGPColBERTCollator:
         positives = [f.get('positive', f.get('pos', [''])[0] if isinstance(f.get('pos'), list) else f.get('pos', '')) for f in features]
         negatives = [f.get('negative', f.get('neg', [''])[0] if isinstance(f.get('neg'), list) else f.get('neg', '')) for f in features]
         
+        # 生成 has_instruction_label: 1.0=有指令, 0.0=无指令
+        has_instruction_list = []
+        for item in features:
+            instruction_text = item.get('instruction', '')
+            if instruction_text and instruction_text.strip():
+                has_instruction_list.append(1.0)
+            else:
+                has_instruction_list.append(0.0)
+        has_instruction_labels = torch.tensor(has_instruction_list, dtype=torch.float).unsqueeze(-1)
+        
         pos_tokens = self.tokenizer(positives, padding=True, truncation=True, max_length=512, return_tensors='pt')
         neg_tokens = self.tokenizer(negatives, padding=True, truncation=True, max_length=512, return_tensors='pt')
         
@@ -112,6 +122,7 @@ class IGPColBERTCollator:
             'sentence_0_input_ids': padded_q_ids,
             'sentence_0_attention_mask': padded_q_attn,
             'sentence_0_token_labels': padded_q_labels_expanded,
+            'has_instruction_label': has_instruction_labels,
             
             'sentence_1_input_ids': pos_tokens['input_ids'],
             'sentence_1_attention_mask': pos_tokens['attention_mask'],

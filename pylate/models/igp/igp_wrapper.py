@@ -126,6 +126,7 @@ class IGPColBERTWrapper(nn.Module):
         neg_doc_input_ids=None,
         neg_doc_attention_mask=None,
         instruction_mask=None,
+        has_instruction_label=None,
         **kwargs
     ):
         """
@@ -189,6 +190,7 @@ class IGPColBERTWrapper(nn.Module):
         # ========== 4. Gate: 全局感知门控 (在 768 维空间操作) ==========
         gate_ratio = torch.tensor(0.0, device=Q_hidden.device)
         gate_penalty = torch.tensor(0.0, device=Q_hidden.device)
+        gate_loss = torch.tensor(0.0, device=Q_hidden.device)
         
         if self.gate is not None and inst_vec is not None:
             # 计算 Query 的全局表示: [batch, seq, dim] -> [batch, dim]
@@ -206,8 +208,12 @@ class IGPColBERTWrapper(nn.Module):
             # 保存门控比例用于监控
             gate_ratio = current_ratio.squeeze(-1)  # [batch]
             
-            # 计算 L1 稀疏惩罚项 (gate_penalty)
-            gate_penalty = current_ratio.abs().mean()  # 标量，保留梯度
+            # 【新增】计算门控监督损失
+            if has_instruction_label is not None:
+                # 使用 BCEWithLogitsLoss 监督门控得分
+                # gate_logits 已经是 logit 形式，不需要 sigmoid
+                bce_loss = torch.nn.BCEWithLogitsLoss()
+                gate_loss = bce_loss(gate_logits, has_instruction_label)
             
             # 执行加权融合: Q_hat = Q_origin + current_ratio * inst_vec
             # current_ratio: [batch, 1] -> [batch, 1, 1]
@@ -260,7 +266,7 @@ class IGPColBERTWrapper(nn.Module):
             'inst_vec': inst_vec,
             'attn_logits': attn_logits,
             'gate_ratio': gate_ratio,
-            'gate_penalty': gate_penalty,
+            'gate_loss': gate_loss,
             'debug_stats': debug_stats,
         }
         

@@ -1168,7 +1168,8 @@ class IGPTrainer:
         bottleneck_dim: int = 64,
         probe_num_layers: int = 2,
         aux_loss_weight: float = 0.1,
-        gate_l1_coeff: float = 0.01,  # 门控L1稀疏正则化系数
+        gate_l1_coeff: float = 0.01,  # 兼容旧参数，实际不再使用
+        lambda_gate: float = 1.0,  # 门控监督损失权重
         phase2_patience: int = 3,
         phase2_early_stop_threshold: float = 0.001,
         save_total_limit: int = 3,
@@ -1198,7 +1199,8 @@ class IGPTrainer:
         self.bottleneck_dim = bottleneck_dim
         self.probe_num_layers = probe_num_layers
         self.aux_loss_weight = aux_loss_weight
-        self.gate_l1_coeff = gate_l1_coeff  # 门控L1稀疏正则化系数
+        self.gate_l1_coeff = gate_l1_coeff  # 兼容旧参数，实际不再使用
+        self.lambda_gate = lambda_gate  # 门控监督损失权重
         self.phase2_patience = phase2_patience
         self.phase2_early_stop_threshold = phase2_early_stop_threshold
         self.phase1_checkpoint = phase1_checkpoint
@@ -1743,7 +1745,8 @@ class IGPTrainer:
             adapter=self.adapter,
             gate=self.gate,
             aux_loss_weight=self.aux_loss_weight,
-            gate_l1_coeff=self.gate_l1_coeff,  # L1稀疏正则化系数
+            gate_l1_coeff=self.gate_l1_coeff,  # 兼容旧参数，实际不再使用
+            lambda_gate=self.lambda_gate,  # 门控监督损失权重
         )
         
         # 创建优化器，为门控分配独立学习率
@@ -2181,7 +2184,9 @@ def main():
     parser.add_argument('--aux_loss_weight', type=float, default=0.1,
                         help='辅助损失权重')
     parser.add_argument('--gate_l1_coeff', type=float, default=0.01,
-                        help='门控L1稀疏正则化系数 (默认0.01，长指令数据有instruction字段，可以正常使用)')
+                        help='兼容旧参数，实际不再使用')
+    parser.add_argument('--lambda_gate', type=float, default=1.0,
+                        help='门控监督损失权重 (默认1.0，建议范围0.5-2.0)')
     parser.add_argument('--log_interval', type=int, default=10,
                         help='损失记录间隔 (每多少个step记录一次，用于生成更细致的损失曲线，设为0则记录每个step)')
     
@@ -2293,7 +2298,8 @@ def main():
         bottleneck_dim=args.bottleneck_dim,
         probe_num_layers=args.probe_num_layers,
         aux_loss_weight=args.aux_loss_weight,
-        gate_l1_coeff=args.gate_l1_coeff,  # 门控L1稀疏正则化系数
+        gate_l1_coeff=args.gate_l1_coeff,  # 兼容旧参数，实际不再使用
+        lambda_gate=args.lambda_gate,  # 门控监督损失权重
         phase2_patience=args.phase2_patience,
         phase2_early_stop_threshold=args.phase2_early_stop_threshold,
         save_total_limit=args.save_total_limit,
