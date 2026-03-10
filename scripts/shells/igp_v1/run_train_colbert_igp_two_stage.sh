@@ -1,7 +1,14 @@
 #!/bin/bash
+
+# 设置 CUDA 设备（在 conda activate 之前）
+export CUDA_VISIBLE_DEVICES="3"
+
 # 激活 conda 环境
 eval "$(conda shell.bash hook)"
 conda activate pylate
+
+# 调试：打印 CUDA 环境变量
+echo "[DEBUG] CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 
 # 设置无缓冲输出
 export PYTHONUNBUFFERED=1
@@ -18,23 +25,21 @@ MODEL_NAME="lightonai/ColBERT-Zero"
 
 # 阶段1: 短数据集（有明确 instruction 字段）
 # SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
-SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase1_short_long_mixed.jsonl"
-SHORT_EPOCHS=50
+# SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase1_short_long_mixed.jsonl"
+SHORT_TRAIN_DATA="dataset/colbert_data/mixed_short_long/mixed_short50%_long50%.jsonl"
+SHORT_EPOCHS=60
 SHORT_BATCH_SIZE=64
 
 # 阶段2: 长数据集（端到端学习）
-# LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/colbert_train_final.jsonl"
-LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase2_long_only.jsonl"
+LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/train_data_igp.jsonl"
+# LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase2_long_only.jsonl"
 LONG_EPOCHS=100
 LONG_BATCH_SIZE=64
 
 # 输出目录
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_长短混合_两阶段_动态门控"
-NOTE="v1-两阶段训练-长短混合数据集先训练再单纯长数据集微调-MAX_RATIO=0.2-数据增强加上无指令版本-动态门控"
-
-# GPU 设备编号
-CUDA_VISIBLE_DEVICES="1"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_修复正则化损失"
+NOTE="v1-两阶段训练-短指令增强数据集先训练，再单纯长数据集-MAX_RATIO=0.2-数据增强加上无指令版本-动态门控V3-修复显存差距过大的原因-probe增加为三层-修复了正则化损失无法区分FL数据集中的有无instruction的问题"
 
 # ============================
 # IGP 模块参数
@@ -44,6 +49,7 @@ ENABLE_ADAPTER=true
 ENABLE_GATE=true
 MAX_RATIO=0.2
 BOTTLENECK_DIM=128
+PROBE_NUM_LAYERS=3
 AUX_LOSS_WEIGHT=0
 LOG_INTERVAL=10
 
@@ -130,6 +136,7 @@ python scripts/training/train_colbert_igp.py \
     --enable_gate ${ENABLE_GATE} \
     --max_ratio ${MAX_RATIO} \
     --bottleneck_dim ${BOTTLENECK_DIM} \
+    --probe_num_layers ${PROBE_NUM_LAYERS} \
     --aux_loss_weight ${AUX_LOSS_WEIGHT} \
     --phase2_patience ${PHASE2_PATIENCE} \
     --phase2_early_stop_threshold ${PHASE2_EARLY_STOP_THRESHOLD} \
@@ -140,6 +147,12 @@ python scripts/training/train_colbert_igp.py \
 
 STAGE1_EXIT_CODE=${PIPESTATUS[0]}
 
+echo ""
+echo "[DEBUG] ============================================"
+echo "[DEBUG] 阶段1已结束"
+echo "[DEBUG] 退出码: ${STAGE1_EXIT_CODE}"
+echo "[DEBUG] ============================================"
+
 if [ ${STAGE1_EXIT_CODE} -ne 0 ]; then
     echo "❌ 阶段1训练失败，退出码: ${STAGE1_EXIT_CODE}"
     exit ${STAGE1_EXIT_CODE}
@@ -147,6 +160,25 @@ fi
 
 echo ""
 echo "✅ 阶段1训练完成"
+echo ""
+
+# 验证阶段1输出
+if [ ! -d "${STAGE1_OUTPUT}/phase2" ]; then
+    echo "❌ 错误: 阶段1输出目录不存在: ${STAGE1_OUTPUT}/phase2"
+    exit 1
+fi
+
+# 查找阶段1的模型
+STAGE1_MODEL_COUNT=$(find "${STAGE1_OUTPUT}" -type d \( -name "best_model_*" -o -name "final_model_*" \) | wc -l)
+if [ ${STAGE1_MODEL_COUNT} -eq 0 ]; then
+    echo "❌ 错误: 阶段1没有保存任何模型"
+    exit 1
+fi
+
+echo "📊 阶段1已保存 ${STAGE1_MODEL_COUNT} 个模型"
+echo ""
+echo "[DEBUG] 等待2秒后启动阶段2..."
+sleep 2
 echo ""
 
 # ============================
@@ -186,6 +218,7 @@ python scripts/training/train_colbert_igp.py \
     --enable_gate ${ENABLE_GATE} \
     --max_ratio ${MAX_RATIO} \
     --bottleneck_dim ${BOTTLENECK_DIM} \
+    --probe_num_layers ${PROBE_NUM_LAYERS} \
     --aux_loss_weight ${AUX_LOSS_WEIGHT} \
     --phase2_patience ${PHASE2_PATIENCE} \
     --phase2_early_stop_threshold ${PHASE2_EARLY_STOP_THRESHOLD} \
@@ -195,6 +228,12 @@ python scripts/training/train_colbert_igp.py \
     2>&1 | tee "${STAGE2_OUTPUT}/training_stage2.log"
 
 STAGE2_EXIT_CODE=${PIPESTATUS[0]}
+
+echo ""
+echo "[DEBUG] ============================================"
+echo "[DEBUG] 阶段2已结束"
+echo "[DEBUG] 退出码: ${STAGE2_EXIT_CODE}"
+echo "[DEBUG] ============================================"
 
 if [ ${STAGE2_EXIT_CODE} -ne 0 ]; then
     echo "❌ 阶段2训练失败，退出码: ${STAGE2_EXIT_CODE}"

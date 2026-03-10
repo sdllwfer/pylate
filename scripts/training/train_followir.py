@@ -58,40 +58,58 @@ class LossRecorderCallback(TrainerCallback):
         self.train_losses = []
         self.eval_losses = []
         self.epochs = []
-        self.current_train_loss = None
+        self.current_epoch_train_losses = []  # 收集当前epoch的所有训练损失
     
     def on_log(self, args, state, control, logs=None, **kwargs):
+        """在每个logging step被调用"""
         if logs is not None and 'loss' in logs:
-            self.current_train_loss = logs.get('loss')
+            # 收集当前step的训练损失
+            self.current_epoch_train_losses.append(logs.get('loss'))
     
     def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        """在验证时被调用"""
         if metrics is not None and 'eval_loss' in metrics:
             eval_loss = metrics.get('eval_loss')
             epoch = int(state.epoch)
             
-            while len(self.eval_losses) < epoch:
+            # 确保eval_losses列表足够长
+            while len(self.eval_losses) < len(self.epochs):
                 self.eval_losses.append(None)
             
-            if epoch > 0:
-                self.eval_losses[epoch - 1] = eval_loss
+            # 找到当前epoch对应的索引
+            if epoch in self.epochs:
+                idx = self.epochs.index(epoch)
+                self.eval_losses[idx] = eval_loss
             
             self._save_csv()
             self._plot_losses()
             print(f"\n📊 验证损失已记录: epoch={epoch}, eval_loss={eval_loss:.6f}")
     
     def on_epoch_end(self, args, state, control, **kwargs):
-        metrics = kwargs.get('metrics', {})
-        
+        """在每个epoch结束时被调用"""
         epoch = int(state.epoch)
         
+        # 计算当前epoch的平均训练损失
+        if self.current_epoch_train_losses:
+            avg_train_loss = sum(self.current_epoch_train_losses) / len(self.current_epoch_train_losses)
+            self.current_epoch_train_losses = []  # 清空，为下一个epoch准备
+        else:
+            avg_train_loss = None
+        
+        # 记录epoch和训练损失
         if epoch not in self.epochs:
             self.epochs.append(epoch)
-            if self.current_train_loss is not None:
-                self.train_losses.append(self.current_train_loss)
-            self.current_train_loss = None
+            self.train_losses.append(avg_train_loss)
+        else:
+            # 如果已经存在，更新训练损失
+            idx = self.epochs.index(epoch)
+            self.train_losses[idx] = avg_train_loss
         
         self._save_csv()
         self._plot_losses()
+        
+        if avg_train_loss is not None:
+            print(f"📊 Epoch {epoch} 平均训练损失: {avg_train_loss:.6f}")
     
     def _save_csv(self):
         csv_path = os.path.join(self.output_dir, "loss_history.csv")

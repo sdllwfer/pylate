@@ -8,23 +8,24 @@ conda activate pylate
 
 # ========== 配置参数 ==========
 # 模型路径 (基座模型)
-MODEL_NAME="lightonai/GTE-ModernColBERT-v1"
+MODEL_NAME="lightonai/ColBERT-Zero"
 
 # 训练数据路径
-TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/colbert_train_final.jsonl"
+TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/no_instruction_train.jsonl"
 
 # 输出目录 (基础目录，会在此目录下创建时间戳子目录)
-OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_finetune_followir"
-CUSTOM_OUTPUT_PATH=""
+OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/no_instruction_test"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/no_instruction_test_test"
 
-NOTE="短指令训练的最佳模型，在FollowIR数据集上训一下看看能不能提升效果"
+
+NOTE="测试模型在无指令样本上的训练损失收敛情况"
 
 # GPU 设备编号 (0, 1, 2, 3)
-CUDA_VISIBLE_DEVICES="0"
+CUDA_VISIBLE_DEVICES="1"
 
 # 训练参数
-NUM_EPOCHS=10
-BATCH_SIZE=16
+NUM_EPOCHS=50
+BATCH_SIZE=8
 LEARNING_RATE=1e-5
 
 # 从检查点继续训练 (填检查点路径，如: /path/to/checkpoint-405，设为空字符串或不填则从头训练)

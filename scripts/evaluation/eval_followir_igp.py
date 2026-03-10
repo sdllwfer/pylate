@@ -100,21 +100,36 @@ def load_igp_model(model_path: str, device: str = "cuda"):
         if 'gate' in modules and config.get('enable_gate'):
             gate_path = os.path.join(model_path, modules['gate'])
             if os.path.exists(gate_path):
-                from pylate.models.igp.ratio_gate import RatioGate
-                igp_gate = RatioGate(hidden_size=igp_hidden_size, max_ratio=0.2, use_dynamic=False)
-                igp_gate.load_state_dict(torch.load(gate_path, map_location=device, weights_only=True))
-                print(f"   ✅ Gate 参数已加载 (hidden_size={igp_hidden_size})")
+                # 先尝试加载 state_dict 来判断门控类型
+                gate_state_dict = torch.load(gate_path, map_location=device, weights_only=True)
+                
+                # 检查 state_dict 的键来判断门控类型
+                # RatioGateV3: dynamic_gate.0.weight (2层MLP)
+                # RatioGateV2: gate_mlp.0.weight (3层MLP)
+                # RatioGate: ratio_gate (单个参数)
+                if any(k.startswith('dynamic_gate.') for k in gate_state_dict.keys()):
+                    # 使用 RatioGateV3 (动态感知门控，带L1稀疏正则)
+                    from pylate.models.igp.ratio_gate_v3 import RatioGateV3
+                    igp_gate = RatioGateV3(hidden_size=igp_hidden_size, max_ratio=0.2)
+                    igp_gate.load_state_dict(gate_state_dict)
+                    print(f"   ✅ Gate 参数已加载 (RatioGateV3-动态感知, hidden_size={igp_hidden_size})")
+                elif any(k.startswith('gate_mlp.') for k in gate_state_dict.keys()):
+                    # 使用 RatioGateV2 (动态门控)
+                    from pylate.models.igp.ratio_gate_v2 import RatioGateV2
+                    igp_gate = RatioGateV2(hidden_size=igp_hidden_size, max_ratio=0.2)
+                    igp_gate.load_state_dict(gate_state_dict)
+                    print(f"   ✅ Gate 参数已加载 (RatioGateV2, hidden_size={igp_hidden_size})")
+                else:
+                    # 使用 RatioGate (静态门控)
+                    from pylate.models.igp.ratio_gate import RatioGate
+                    igp_gate = RatioGate(hidden_size=igp_hidden_size, max_ratio=0.2, use_dynamic=False)
+                    igp_gate.load_state_dict(gate_state_dict)
+                    print(f"   ✅ Gate 参数已加载 (RatioGate, hidden_size={igp_hidden_size})")
 
         # 使用 IGPColBERTWrapper 包装模型
         if igp_probe is not None or igp_adapter is not None or igp_gate is not None:
-            from pylate.models.igp.igp_adapter import IGPAdapter
-            from pylate.models.igp.ratio_gate import RatioGate
-            from pylate.models.igp.instruction_probe import InstructionProbe
-            
-            # 导入 Wrapper
-            import sys
-            sys.path.insert(0, '/home/luwa/Documents/pylate/scripts/training')
-            from train_colbert_igp import IGPColBERTWrapper
+            # 使用 pylate 提供的 IGPColBERTWrapper
+            from pylate.models.igp import IGPColBERTWrapper
             
             model = IGPColBERTWrapper(
                 base_model=base_model,

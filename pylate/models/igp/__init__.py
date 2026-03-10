@@ -26,6 +26,12 @@ from .instruction_probe_v2 import InstructionProbeV2
 from .igp_adapter_v2 import IGPAdapterV2
 from .ratio_gate_v2 import RatioGateV2
 
+# V3 版本（动态感知门控，带L1稀疏正则）
+from .ratio_gate_v3 import RatioGateV3
+
+# IGP Wrapper
+from .igp_wrapper import IGPColBERTWrapper
+
 __all__ = [
     'InstructionProbe',
     'InstructionProbeConfig',
@@ -36,4 +42,6 @@ __all__ = [
     'InstructionProbeV2',
     'IGPAdapterV2',
     'RatioGateV2',
+    'RatioGateV3',
+    'IGPColBERTWrapper',
 ]

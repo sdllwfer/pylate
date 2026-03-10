@@ -167,6 +167,7 @@ class IGPLoss(nn.Module):
         gate=None,
         aux_loss_weight: float = 0.1,
         reg_coeff: float = 0.05,
+        gate_l1_coeff: float = 0.01,  # L1稀疏正则化系数
     ):
         super().__init__()
         self.base_loss = base_loss
@@ -176,6 +177,7 @@ class IGPLoss(nn.Module):
         self.gate = gate
         self.aux_loss_weight = aux_loss_weight
         self.reg_coeff = reg_coeff
+        self.gate_l1_coeff = gate_l1_coeff  # L1稀疏正则化系数
         self.aux_loss_fn = IGPAuxLoss()
         self.rank_loss_fn = nn.CrossEntropyLoss()
         self.temperature = 0.05  # ColBERT 通常使用更小的温度
@@ -298,7 +300,14 @@ class IGPLoss(nn.Module):
         # 注意: delta 的计算在 Model.forward 中，这里可以通过梯度惩罚实现
         # 或者通过 L2 正则化约束 query_embeddings 的变化
         
-        # ========== 5. 计算总损失 ==========
+        # ========== 5. 计算门控L1稀疏正则化损失 ==========
+        # 强制门控在无指令时趋向于0，实现"按需开启"
+        gate_l1_loss = torch.tensor(0.0, device=rank_loss.device)
+        if self.gate_l1_coeff > 0 and gate_ratio is not None and isinstance(gate_ratio, torch.Tensor):
+            # L1惩罚：门控值的绝对值均值
+            gate_l1_loss = gate_ratio.abs().mean()
+        
+        # ========== 6. 计算总损失 ==========
         # 添加虚拟损失确保梯度流动到 IGP 模块
         # 无论 aux_loss_weight 是否为 0，都需要确保梯度能够流动
         dummy_loss = torch.tensor(0.0, device=rank_loss.device)
@@ -311,7 +320,11 @@ class IGPLoss(nn.Module):
         else:
             gate_dummy = torch.tensor(0.0, device=rank_loss.device)
         
-        total_loss = rank_loss + aux_loss * self.aux_loss_weight + reg_loss * self.reg_coeff + dummy_loss + gate_dummy
+        total_loss = (rank_loss + 
+                     aux_loss * self.aux_loss_weight + 
+                     reg_loss * self.reg_coeff + 
+                     gate_l1_loss * self.gate_l1_coeff +  # L1稀疏正则
+                     dummy_loss + gate_dummy)
         
         # 保存各项损失用于日志
         # 将 gate_ratio 转换为 float（如果是 tensor）
@@ -324,6 +337,7 @@ class IGPLoss(nn.Module):
             'rank_loss': rank_loss.item(),
             'aux_loss': aux_loss.item(),
             'reg_loss': reg_loss.item(),
+            'gate_l1_loss': gate_l1_loss.item(),  # L1稀疏正则损失
             'gate_ratio': gate_ratio_val,
             'total_loss': total_loss.item(),
         }
