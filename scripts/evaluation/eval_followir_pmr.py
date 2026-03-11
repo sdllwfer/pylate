@@ -33,15 +33,32 @@ def load_debug_info(base_output_dir, task_name):
     """加载IGP调试信息"""
     debug_info = {}
     
-    # 尝试加载 og 和 changed 的调试信息
-    og_debug_path = os.path.join(base_output_dir, task_name, "debug_info", "og", "igp_debug_info.json")
-    changed_debug_path = os.path.join(base_output_dir, task_name, "debug_info", "changed", "igp_debug_info.json")
+    # 尝试多种路径组合
+    possible_paths = [
+        # 路径1: {base_output_dir}/{task_name}/debug_info/og/
+        os.path.join(base_output_dir, task_name, "debug_info", "og", "igp_debug_info.json"),
+        os.path.join(base_output_dir, task_name, "debug_info", "changed", "igp_debug_info.json"),
+        # 路径2: {base_output_dir}/debug_info/og/
+        os.path.join(base_output_dir, "debug_info", "og", "igp_debug_info.json"),
+        os.path.join(base_output_dir, "debug_info", "changed", "igp_debug_info.json"),
+        # 路径3: {base_output_dir}/../debug_info/og/ (相对路径)
+        os.path.join(base_output_dir, "..", "debug_info", "og", "igp_debug_info.json"),
+        os.path.join(base_output_dir, "..", "debug_info", "changed", "igp_debug_info.json"),
+    ]
     
-    # 也尝试从其他路径加载
-    if not os.path.exists(og_debug_path):
-        og_debug_path = os.path.join(base_output_dir, "debug_info", "og", "igp_debug_info.json")
-    if not os.path.exists(changed_debug_path):
-        changed_debug_path = os.path.join(base_output_dir, "debug_info", "changed", "igp_debug_info.json")
+    og_debug_path = possible_paths[0]
+    changed_debug_path = possible_paths[1]
+    
+    # 遍历查找实际存在的路径
+    for i in range(0, len(possible_paths), 2):
+        if os.path.exists(possible_paths[i]):
+            og_debug_path = possible_paths[i]
+            break
+    
+    for i in range(1, len(possible_paths), 2):
+        if os.path.exists(possible_paths[i]):
+            changed_debug_path = possible_paths[i]
+            break
     
     try:
         if os.path.exists(og_debug_path):
