@@ -23,18 +23,18 @@ echo "✅ Python 路径: $(which python)"
 # 整合了重排和评测过程，只需配置以下参数即可运行
 # ========== 配置参数 ==========
 # 模型路径 (IGP模型检查点目录)
-MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_长短混合_两阶段/stage1_short_data/phase2/best_model_phase2_20260308_222534"
+MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控/stage1_short_data/phase2/best_model_phase2_20260310_194056"
 # GPU 设备编号 (0, 1, 2, 3)
-CUDA_VISIBLE_DEVICES="1"
+CUDA_VISIBLE_DEVICES="0"
 # 要评测的数据集 (可用: Core17InstructionRetrieval Robust04InstructionRetrieval News21InstructionRetrieval)
 TASKS=("Core17InstructionRetrieval" "Robust04InstructionRetrieval" "News21InstructionRetrieval")
 # 批处理大小 (根据GPU显存调整，默认64，可增大到128或256)
 BATCH_SIZE=128
 # 输出目录 (会自动创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/evaluation_data/colbert_igp"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_max0.2_长短混合_只有一阶段"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_有监督训练门控"
 # 自定义输出路径 (可选)
-NOTE='端到端模型评测-v1-短长混合-bestmodel-max0.2-只有第一阶段训练'
+NOTE='端到端模型评测-v1-有监督训练门控'
 # ==============================
 
 # 从模型路径中提取时间戳
@@ -93,6 +93,7 @@ for task in "${TASKS[@]}"; do
         --device "cuda:${CUDA_VISIBLE_DEVICES}" \
         --task "${task}" \
         --batch_size "${BATCH_SIZE}" \
+        --probe_num_layers 3 \
         --note "${NOTE}"
     
     if [ $? -ne 0 ]; then

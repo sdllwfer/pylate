@@ -35,8 +35,14 @@ import mteb
 from pylate import models, rank
 
 
-def load_igp_model(model_path: str, device: str = "cuda"):
-    """加载支持 IGP 的 ColBERT 模型"""
+def load_igp_model(model_path: str, device: str = "cuda", probe_num_layers: int = 2):
+    """加载支持 IGP 的 ColBERT 模型
+    
+    Args:
+        model_path: 模型路径
+        device: 设备
+        probe_num_layers: Probe 层数（必须与训练时一致）
+    """
     print(f"📥 正在加载 IGP 模型: {model_path} on {device}")
     print(f"   (如果是首次运行，可能需要下载模型，请耐心等待...)")
     import time
@@ -76,13 +82,13 @@ def load_igp_model(model_path: str, device: str = "cuda"):
             if os.path.exists(probe_path):
                 from pylate.models.igp.instruction_probe import InstructionProbe
                 try:
-                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
+                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, num_layers=probe_num_layers, dropout=0.1)
                     igp_probe.load_state_dict(torch.load(probe_path, map_location=device, weights_only=True))
-                    print(f"   ✅ Probe 参数已加载 (hidden_size={igp_hidden_size})")
+                    print(f"   ✅ Probe 参数已加载 (hidden_size={igp_hidden_size}, num_layers={probe_num_layers})")
                 except RuntimeError as e:
                     print(f"   ⚠️ Probe 参数加载失败 (维度不匹配): {e}")
                     print(f"   ℹ️ 将使用随机初始化的 Probe")
-                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, dropout=0.1)
+                    igp_probe = InstructionProbe(hidden_size=igp_hidden_size, num_heads=8, num_layers=probe_num_layers, dropout=0.1)
 
         if 'adapter' in modules and config.get('enable_adapter'):
             adapter_path = os.path.join(model_path, modules['adapter'])
@@ -359,6 +365,7 @@ def main():
     parser.add_argument('--task', type=str, default='Core17InstructionRetrieval')
     parser.add_argument('--device', type=str, default='cuda', help='GPU device (e.g., cuda:0, cuda:1)')
     parser.add_argument('--batch_size', type=int, default=64, help='批处理大小，用于编码文档和查询')
+    parser.add_argument('--probe_num_layers', type=int, default=2, help='Probe 层数（必须与训练时一致）')
     parser.add_argument('--note', type=str, default='', help='备注信息，会记录到参数文件中')
     args = parser.parse_args()
 
@@ -372,7 +379,7 @@ def main():
     print(f"📁 输出目录: {output_dir}")
     os.makedirs(output_dir, exist_ok=True)
 
-    model = load_igp_model(args.model_path, device=args.device)
+    model = load_igp_model(args.model_path, device=args.device, probe_num_layers=args.probe_num_layers)
 
     print(f"📚 加载 FollowIR 评测任务: {args.task}")
     task = mteb.get_task(args.task)
