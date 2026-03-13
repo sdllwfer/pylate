@@ -23,18 +23,18 @@ echo "✅ Python 路径: $(which python)"
 # 整合了重排和评测过程，只需配置以下参数即可运行
 # ========== 配置参数 ==========
 # 模型路径 (IGP模型检查点目录)
-MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控/stage1_short_data/phase2/best_model_phase2_20260310_194056"
+MODEL_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控/stage2_long_data/phase2/checkpoints/checkpoint-10"
 # GPU 设备编号 (0, 1, 2, 3)
 CUDA_VISIBLE_DEVICES="0"
 # 要评测的数据集 (可用: Core17InstructionRetrieval Robust04InstructionRetrieval News21InstructionRetrieval)
 TASKS=("Core17InstructionRetrieval" "Robust04InstructionRetrieval" "News21InstructionRetrieval")
 # 批处理大小 (根据GPU显存调整，默认64，可增大到128或256)
-BATCH_SIZE=128
+BATCH_SIZE=512
 # 输出目录 (会自动创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/evaluation_data/colbert_igp"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_有监督训练门控"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_有监督训练门控_stage2_checkpoint-10"
 # 自定义输出路径 (可选)
-NOTE='端到端模型评测-v1-有监督训练门控'
+NOTE='端到端模型评测-v1-有监督训练门控-stage2的最佳模型-checkpoint-10(ck2准确率低了)'
 # ==============================
 
 # 从模型路径中提取时间戳

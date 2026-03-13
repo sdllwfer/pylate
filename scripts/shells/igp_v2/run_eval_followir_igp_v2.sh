@@ -154,24 +154,55 @@ if [ ${#all_results[@]} -gt 0 ]; then
 import json
 import os
 
-all_results = {}
 output_dir = '${OUTPUT_DIR}'
-tasks = ['$(IFS="','"; echo "${all_results[*]}")']
+# 直接从输出目录扫描已有的 results_*.json 文件
+all_results = {}
+if os.path.exists(output_dir):
+    for filename in os.listdir(output_dir):
+        if filename.startswith('results_') and filename.endswith('.json') and filename != 'results_summary.json':
+            task = filename[len('results_'):-len('.json')]
+            result_file = os.path.join(output_dir, filename)
+            try:
+                with open(result_file) as f:
+                    all_results[task] = json.load(f)
+            except:
+                pass
 
-for task in tasks:
-    result_file = os.path.join(output_dir, f'results_{task}.json')
-    if os.path.exists(result_file):
-        with open(result_file) as f:
-            all_results[task] = json.load(f)
+def simplify_result(result):
+    """精简结果字段"""
+    simplified = {
+        'task': result.get('task'),
+        'p-MRR': result.get('p-MRR')
+    }
+    
+    # 精简 original 和 changed 字段
+    for key in ['original', 'changed']:
+        if key in result:
+            simplified[key] = {}
+            # 保留 ndcg_at_1,3,5,10,100
+            for metric in ['ndcg_at_1', 'ndcg_at_3', 'ndcg_at_5', 'ndcg_at_10', 'ndcg_at_100']:
+                if metric in result[key]:
+                    simplified[key][metric] = result[key][metric]
+            # 保留 map_at_1,3,5,10
+            for metric in ['map_at_1', 'map_at_3', 'map_at_5', 'map_at_10']:
+                if metric in result[key]:
+                    simplified[key][metric] = result[key][metric]
+    
+    return simplified
 
 if all_results:
+    # 精简每个结果
+    simplified_results = {}
+    for task, result in all_results.items():
+        simplified_results[task] = simplify_result(result)
+    
     summary_path = os.path.join(output_dir, 'results_summary.json')
     with open(summary_path, 'w') as f:
-        json.dump(all_results, f, indent=2)
-    print(f'💾 汇总结果已保存至: {summary_path}')
+        json.dump(simplified_results, f, indent=2)
+    print(f'💾 精简后的汇总结果已保存至: {summary_path}')
     
     print('\n📊 汇总 p-MRR:')
-    for task_name, result in all_results.items():
+    for task_name, result in simplified_results.items():
         print(f'  {task_name}: {result.get("p-MRR", 0):.4f}')
 PYEOF
 fi
@@ -194,8 +225,14 @@ for task, metrics in results.items():
     print(f'  {task}:')
     print(f'    p-MRR: {metrics.get(\"p-MRR\", 0):.4f}')
     if 'original' in metrics:
+        print(f'    og nDCG@1: {metrics[\"original\"].get(\"ndcg_at_1\", 0):.4f}')
         print(f'    og nDCG@5: {metrics[\"original\"].get(\"ndcg_at_5\", 0):.4f}')
+        print(f'    og map@1: {metrics[\"original\"].get(\"map_at_1\", 0):.4f}')
+        print(f'    og map@5: {metrics[\"original\"].get(\"map_at_5\", 0):.4f}')
     if 'changed' in metrics:
+        print(f'    changed nDCG@1: {metrics[\"changed\"].get(\"ndcg_at_1\", 0):.4f}')
         print(f'    changed nDCG@5: {metrics[\"changed\"].get(\"ndcg_at_5\", 0):.4f}')
+        print(f'    changed map@1: {metrics[\"changed\"].get(\"map_at_1\", 0):.4f}')
+        print(f'    changed map@5: {metrics[\"changed\"].get(\"map_at_5\", 0):.4f}')
 "
 fi

@@ -20,13 +20,14 @@ export PYTHONUNBUFFERED=1
 MODEL_NAME="lightonai/ColBERT-Zero"
 # 训练数据路径
 # TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/colbert_train_final.jsonl"
-TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
+# TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
+TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/overfit_test_data/train_overfit_mixed_instructions.jsonl"
 # 输出目录 (基础目录，会在此目录下创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2_maxratio0.2-bs64"
-NOTE="ColBERT-Zero-门控最大比例0.2-bs64"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2long_overfit"
+NOTE="ColBERT-Zero-门控最大比例0.2-bs64-在原来的第二阶段长指令训练的最佳模型继续在测试集的抽取数据集上训练"
 # GPU 设备编号 (0, 1, 2, 3)
-CUDA_VISIBLE_DEVICES="0"
+CUDA_VISIBLE_DEVICES="1"
 # ============================
 # IGP 模块参数
 # ============================
@@ -40,6 +41,8 @@ ENABLE_GATE=true
 MAX_RATIO=0.2
 # Adapter 瓶颈维度 (建议 32-128)
 BOTTLENECK_DIM=128
+# Probe 层数 (2 或 3)
+PROBE_NUM_LAYERS=3
 # 辅助损失权重
 AUX_LOSS_WEIGHT=0
 # 损失记录间隔 (每多少个step记录一次，用于生成更细致的损失曲线，设为0则记录每个step)
@@ -133,6 +136,7 @@ python -u scripts/training/train_colbert_igp.py \
     --enable_gate ${ENABLE_GATE} \
     --max_ratio ${MAX_RATIO} \
     --bottleneck_dim ${BOTTLENECK_DIM} \
+    --probe_num_layers ${PROBE_NUM_LAYERS} \
     --aux_loss_weight ${AUX_LOSS_WEIGHT} \
     --log_interval ${LOG_INTERVAL} \
     --phase2_patience ${PHASE2_PATIENCE} \
