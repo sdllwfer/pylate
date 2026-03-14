@@ -1,0 +1,2335 @@
+====================================================================================================
+📋 FollowIR 诊断报告 - 按 p-MRR 排序 (低到高)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+【排名 1】查询ID: 643 | p-MRR: -0.546780
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What harm have power dams in the Pacific northwest caused to salmon fisheries?
+
+📌 指令内容:
+   To be relevant, a document must include at least one negative impact of dams on the salmon population in the U.S. Pacific northwest.
+
+📌 完整查询 (Query + Instruction):
+   What harm have power dams in the Pacific northwest caused to salmon fisheries? To be relevant, a document must include at least one negative impact of dams on the salmon population in the U.S. Pacific northwest.
+
+📌 相关文档变化详情:
+   文档ID: FR940104-0-00042_1
+      原始排名: 486 -> 新排名: 269 | 得分: -0.4465
+   文档ID: LA082890-0051_0
+      原始排名: 17 -> 新排名: 6 | 得分: -0.6471
+
+📌 所有发生相关性变化的文档: ['FR940104-0-00042_1', 'LA082890-0051_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 2】查询ID: 659 | p-MRR: -0.531846
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What standards do cruise ships use for health and safety maintenance?
+
+📌 指令内容:
+   Relevant documents refer to health and safety practices and standards for recreational cruise ships.  Not relevant are standards for small pleasure craft or commercial freight ships, tankers, etc.  Documents referring to a specific ship's problems are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What standards do cruise ships use for health and safety maintenance? Relevant documents refer to health and safety practices and standards for recreational cruise ships.  Not relevant are standards for small pleasure craft or commercial freight ships, tankers, etc.  Documents referring to a specific ship's problems are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT933-5667_3
+      原始排名: 364 -> 新排名: 205 | 得分: -0.4368
+   文档ID: LA020490-0186_1
+      原始排名: 24 -> 新排名: 1 | 得分: -0.9583
+   文档ID: LA022689-0155_2
+      原始排名: 179 -> 新排名: 67 | 得分: -0.6257
+   文档ID: LA090990-0124_0
+      原始排名: 12 -> 新排名: 7 | 得分: -0.4167
+   文档ID: LA120290-0076_0
+      原始排名: 221 -> 新排名: 172 | 得分: -0.2217
+
+📌 所有发生相关性变化的文档: ['FT933-5667_3', 'LA020490-0186_1', 'LA022689-0155_2', 'LA090990-0124_0', 'LA120290-0076_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 3】查询ID: 345 | p-MRR: -0.404491
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Health studies primarily in the U.S. have caused reductions in tobacco sales here, but the economic impact has caused U.S. tobacco companies to look overseas for customers. What impact have the health and economic factors had overseas?
+
+📌 指令内容:
+   To be relevant, an item will discuss either an increase or  decrease in the sales of U.S. tobacco products overseas, and attribute this to health findings or more aggressive marketing by U.S. companies or the foreign companies they own or cooperate with.
+
+📌 完整查询 (Query + Instruction):
+   Health studies primarily in the U.S. have caused reductions in tobacco sales here, but the economic impact has caused U.S. tobacco companies to look overseas for customers. What impact have the health and economic factors had overseas? To be relevant, an item will discuss either an increase or  decrease in the sales of U.S. tobacco products overseas, and attribute this to health findings or more aggressive marketing by U.S. companies or the foreign companies they own or cooperate with.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-28015_0
+      原始排名: 199 -> 新排名: 117 | 得分: -0.4121
+   文档ID: FT911-1006_1
+      原始排名: 651 -> 新排名: 576 | 得分: -0.1152
+   文档ID: FT921-11387_0
+      原始排名: 79 -> 新排名: 26 | 得分: -0.6709
+   文档ID: FT921-16023_0
+      原始排名: 676 -> 新排名: 499 | 得分: -0.2618
+   文档ID: FT922-5785_0
+      原始排名: 955 -> 新排名: 920 | 得分: -0.0366
+   文档ID: FT923-4661_0
+      原始排名: 710 -> 新排名: 564 | 得分: -0.2056
+   文档ID: FT931-16417_0
+      原始排名: 533 -> 新排名: 394 | 得分: -0.2608
+   文档ID: FT932-11887_0
+      原始排名: 197 -> 新排名: 101 | 得分: -0.4873
+   文档ID: FT932-13912_0
+      原始排名: 402 -> 新排名: 230 | 得分: -0.4279
+   文档ID: FT933-608_0
+      原始排名: 247 -> 新排名: 114 | 得分: -0.5385
+   文档ID: FT934-13045_0
+      原始排名: 44 -> 新排名: 14 | 得分: -0.6818
+   文档ID: FT934-5874_0
+      原始排名: 685 -> 新排名: 482 | 得分: -0.2964
+   文档ID: FT941-17680_0
+      原始排名: 63 -> 新排名: 15 | 得分: -0.7619
+   文档ID: FT942-13859_0
+      原始排名: 164 -> 新排名: 88 | 得分: -0.4634
+   文档ID: FT942-14426_0
+      原始排名: 492 -> 新排名: 282 | 得分: -0.4268
+   文档ID: FT942-2078_0
+      原始排名: 550 -> 新排名: 423 | 得分: -0.2309
+   文档ID: FT942-2081_0
+      原始排名: 697 -> 新排名: 525 | 得分: -0.2468
+   文档ID: FT943-11789_0
+      原始排名: 54 -> 新排名: 11 | 得分: -0.7963
+   文档ID: FT943-12012_0
+      原始排名: 107 -> 新排名: 38 | 得分: -0.6449
+   文档ID: FT943-14694_0
+      原始排名: 160 -> 新排名: 80 | 得分: -0.5000
+   文档ID: FT944-15211_0
+      原始排名: 98 -> 新排名: 35 | 得分: -0.6429
+   文档ID: FT944-9537_0
+      原始排名: 776 -> 新排名: 625 | 得分: -0.1946
+   文档ID: LA021890-0196_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['FBIS3-28015_0', 'FT911-1006_1', 'FT921-11387_0', 'FT921-16023_0', 'FT922-5785_0', 'FT923-4661_0', 'FT931-16417_0', 'FT932-11887_0', 'FT932-13912_0', 'FT933-608_0', 'FT934-13045_0', 'FT934-5874_0', 'FT941-17680_0', 'FT942-13859_0', 'FT942-14426_0', 'FT942-2078_0', 'FT942-2081_0', 'FT943-11789_0', 'FT943-12012_0', 'FT943-14694_0', 'FT944-15211_0', 'FT944-9537_0', 'LA021890-0196_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 4】查询ID: 621 | p-MRR: -0.390300
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the arguments for and against Great Britain's approval of women being ordained as Church of England priests?
+
+📌 指令内容:
+   Documents primarily about voting on the matter by church officials and the British parliament are relevant.
+
+📌 完整查询 (Query + Instruction):
+   What are the arguments for and against Great Britain's approval of women being ordained as Church of England priests? Documents primarily about voting on the matter by church officials and the British parliament are relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT921-11838_0
+      原始排名: 526 -> 新排名: 464 | 得分: -0.1179
+   文档ID: FT921-11847_0
+      原始排名: 664 -> 新排名: 610 | 得分: -0.0813
+   文档ID: FT921-11857_0
+      原始排名: 665 -> 新排名: 611 | 得分: -0.0812
+   文档ID: FT921-7364_4
+      原始排名: 13 -> 新排名: 15 | 得分: 0.1333
+   文档ID: FT924-4560_0
+      原始排名: 492 -> 新排名: 327 | 得分: -0.3354
+   文档ID: FT924-7590_0
+      原始排名: 106 -> 新排名: 29 | 得分: -0.7264
+   文档ID: FT924-8156_0
+      原始排名: 6 -> 新排名: 3 | 得分: -0.5000
+   文档ID: FT924-9001_2
+      原始排名: 16 -> 新排名: 12 | 得分: -0.2500
+   文档ID: FT931-9901_0
+      原始排名: 24 -> 新排名: 11 | 得分: -0.5417
+   文档ID: FT932-2151_0
+      原始排名: 951 -> 新排名: 909 | 得分: -0.0442
+   文档ID: FT932-6456_0
+      原始排名: 135 -> 新排名: 38 | 得分: -0.7185
+   文档ID: FT933-12089_0
+      原始排名: 88 -> 新排名: 40 | 得分: -0.5455
+   文档ID: FT933-9689_0
+      原始排名: 41 -> 新排名: 17 | 得分: -0.5854
+   文档ID: FT934-11863_0
+      原始排名: 32 -> 新排名: 22 | 得分: -0.3125
+   文档ID: FT934-3058_2
+      原始排名: 2 -> 新排名: 1 | 得分: -0.5000
+   文档ID: FT934-408_7
+      原始排名: 100 -> 新排名: 42 | 得分: -0.5800
+   文档ID: FT941-6743_0
+      原始排名: 204 -> 新排名: 65 | 得分: -0.6814
+   文档ID: FT941-7795_0
+      原始排名: 600 -> 新排名: 390 | 得分: -0.3500
+   文档ID: FT941-7858_0
+      原始排名: 42 -> 新排名: 21 | 得分: -0.5000
+   文档ID: FT941-8007_0
+      原始排名: 10 -> 新排名: 6 | 得分: -0.4000
+   文档ID: FT941-8192_2
+      原始排名: 15 -> 新排名: 7 | 得分: -0.5333
+   文档ID: FT942-132_0
+      原始排名: 347 -> 新排名: 170 | 得分: -0.5101
+   文档ID: FT942-2917_0
+      原始排名: 490 -> 新排名: 255 | 得分: -0.4796
+   文档ID: FT943-15291_0
+      原始排名: 873 -> 新排名: 713 | 得分: -0.1833
+   文档ID: LA110789-0149_0
+      原始排名: 3 -> 新排名: 2 | 得分: -0.3333
+
+📌 所有发生相关性变化的文档: ['FT921-11838_0', 'FT921-11847_0', 'FT921-11857_0', 'FT921-7364_4', 'FT924-4560_0', 'FT924-7590_0', 'FT924-8156_0', 'FT924-9001_2', 'FT931-9901_0', 'FT932-2151_0', 'FT932-6456_0', 'FT933-12089_0', 'FT933-9689_0', 'FT934-11863_0', 'FT934-3058_2', 'FT934-408_7', 'FT941-6743_0', 'FT941-7795_0', 'FT941-7858_0', 'FT941-8007_0', 'FT941-8192_2', 'FT942-132_0', 'FT942-2917_0', 'FT943-15291_0', 'LA110789-0149_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 5】查询ID: 344 | p-MRR: -0.381375
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses.  What steps have been taken world-wide by those  bearing the cost of E-mail to prevent excesses?
+
+📌 指令内容:
+   To be relevant, a document will concern dissatisfaction by  an entity paying for the cost of electronic mail.  Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.
+
+📌 完整查询 (Query + Instruction):
+   The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses.  What steps have been taken world-wide by those  bearing the cost of E-mail to prevent excesses? To be relevant, a document will concern dissatisfaction by  an entity paying for the cost of electronic mail.  Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.
+
+📌 相关文档变化详情:
+   文档ID: FT922-1463_0
+      原始排名: 19 -> 新排名: 6 | 得分: -0.6842
+   文档ID: FT942-12165_3
+      原始排名: 79 -> 新排名: 69 | 得分: -0.1266
+   文档ID: LA120190-0068_0
+      原始排名: 156 -> 新排名: 104 | 得分: -0.3333
+
+📌 所有发生相关性变化的文档: ['FT922-1463_0', 'FT942-12165_3', 'LA120190-0068_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 6】查询ID: 646 | p-MRR: -0.359375
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find documents that discuss an increase in the number of people receiving food stamp benefits.
+
+📌 指令内容:
+   Documents that discuss changes in the law allowing more eligible food stamp recipients are relevant.  Documents that imply that a certain group of people, such as immigrants, will be eligible for food stamps are also relevant.
+
+📌 完整查询 (Query + Instruction):
+   Find documents that discuss an increase in the number of people receiving food stamp benefits. Documents that discuss changes in the law allowing more eligible food stamp recipients are relevant.  Documents that imply that a certain group of people, such as immigrants, will be eligible for food stamps are also relevant.
+
+📌 相关文档变化详情:
+   文档ID: FR940111-0-00003_1
+      原始排名: 64 -> 新排名: 41 | 得分: -0.3594
+
+📌 所有发生相关性变化的文档: ['FR940111-0-00003_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 7】查询ID: 338 | p-MRR: -0.266667
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What adverse effects have people experienced while taking  aspirin repeatedly?
+
+📌 指令内容:
+   A relevant document should identify any adverse effects  experienced from the repeated use of aspirin. Possible  effects might include intestinal bleeding, inflammation  of the stomach, or various forms of ulcers. The purpose  of the individual's repeated aspirin use should also  be stated.
+
+📌 完整查询 (Query + Instruction):
+   What adverse effects have people experienced while taking  aspirin repeatedly? A relevant document should identify any adverse effects  experienced from the repeated use of aspirin. Possible  effects might include intestinal bleeding, inflammation  of the stomach, or various forms of ulcers. The purpose  of the individual's repeated aspirin use should also  be stated.
+
+📌 相关文档变化详情:
+   文档ID: FR940822-0-00067_103
+      原始排名: 30 -> 新排名: 22 | 得分: -0.2667
+
+📌 所有发生相关性变化的文档: ['FR940822-0-00067_103']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 8】查询ID: 410 | p-MRR: -0.259979
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Who is involved in the Schengen agreement to eliminate border controls in Western Europe and what do they hope to accomplish?
+
+📌 指令内容:
+   Relevant documents will contain any information about the actions of signatories of the Schengen agreement such as: measures to eliminate border controls (removal of traffic obstacles, lifting of traffic restrictions); implementation of the information system data bank that contains unified visa issuance procedures; or strengthening of border controls at the external borders of the treaty area in exchange for  free movement at the internal borders.  Discussions of border  crossovers for business purposes are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   Who is involved in the Schengen agreement to eliminate border controls in Western Europe and what do they hope to accomplish? Relevant documents will contain any information about the actions of signatories of the Schengen agreement such as: measures to eliminate border controls (removal of traffic obstacles, lifting of traffic restrictions); implementation of the information system data bank that contains unified visa issuance procedures; or strengthening of border controls at the external borders of the treaty area in exchange for  free movement at the internal borders.  Discussions of border  crossovers for business purposes are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-19523_2
+      原始排名: 6 -> 新排名: 4 | 得分: -0.3333
+   文档ID: FBIS3-19679_0
+      原始排名: 99 -> 新排名: 66 | 得分: -0.3333
+   文档ID: FBIS3-20175_1
+      原始排名: 31 -> 新排名: 21 | 得分: -0.3226
+   文档ID: FBIS3-20176_0
+      原始排名: 481 -> 新排名: 391 | 得分: -0.1871
+   文档ID: FT921-9293_0
+      原始排名: 35 -> 新排名: 25 | 得分: -0.2857
+   文档ID: FT922-751_0
+      原始排名: 14 -> 新排名: 10 | 得分: -0.2857
+   文档ID: FT932-6660_1
+      原始排名: 115 -> 新排名: 74 | 得分: -0.3565
+   文档ID: FT934-14160_0
+      原始排名: 256 -> 新排名: 199 | 得分: -0.2227
+   文档ID: FT934-15886_0
+      原始排名: 230 -> 新排名: 196 | 得分: -0.1478
+   文档ID: LA121589-0087_0
+      原始排名: 8 -> 新排名: 7 | 得分: -0.1250
+
+📌 所有发生相关性变化的文档: ['FBIS3-19523_2', 'FBIS3-19679_0', 'FBIS3-20175_1', 'FBIS3-20176_0', 'FT921-9293_0', 'FT922-751_0', 'FT932-6660_1', 'FT934-14160_0', 'FT934-15886_0', 'LA121589-0087_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 9】查询ID: 689 | p-MRR: -0.216694
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   To which countries does the U.S. provide aid to support family planning, and for which countries has the U.S. refused or limited support?
+
+📌 指令内容:
+   Relevant documents indicate where U.S. aid supports family planning or where such aid has been denied. Discussions of why aid for family planning has been refused are also relevant.  Documents that mention U.S. aid to countries, but not specifically for family planning are not relevant. Descriptions of funds for family planning in the U.S. itself are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   To which countries does the U.S. provide aid to support family planning, and for which countries has the U.S. refused or limited support? Relevant documents indicate where U.S. aid supports family planning or where such aid has been denied. Discussions of why aid for family planning has been refused are also relevant.  Documents that mention U.S. aid to countries, but not specifically for family planning are not relevant. Descriptions of funds for family planning in the U.S. itself are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-20435_3
+      原始排名: 707 -> 新排名: 691 | 得分: -0.0226
+   文档ID: FT922-10401_2
+      原始排名: 69 -> 新排名: 45 | 得分: -0.3478
+   文档ID: LA092089-0140_0
+      原始排名: 234 -> 新排名: 184 | 得分: -0.2137
+   文档ID: LA111589-0014_0
+      原始排名: 6 -> 新排名: 6 | 得分: 0.0000
+   文档ID: LA111789-0154_0
+      原始排名: 15 -> 新排名: 10 | 得分: -0.3333
+   文档ID: LA112089-0025_0
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+   文档ID: LA112589-0006_0
+      原始排名: 57 -> 新排名: 37 | 得分: -0.3509
+   文档ID: LA113089-0210_0
+      原始排名: 113 -> 新排名: 78 | 得分: -0.3097
+   文档ID: LA120389-0056_0
+      原始排名: 117 -> 新排名: 79 | 得分: -0.3248
+   文档ID: LA120389-0058_0
+      原始排名: 96 -> 新排名: 72 | 得分: -0.2500
+   文档ID: LA120389-0062_1
+      原始排名: 143 -> 新排名: 110 | 得分: -0.2308
+
+📌 所有发生相关性变化的文档: ['FBIS3-20435_3', 'FT922-10401_2', 'LA092089-0140_0', 'LA111589-0014_0', 'LA111789-0154_0', 'LA112089-0025_0', 'LA112589-0006_0', 'LA113089-0210_0', 'LA120389-0056_0', 'LA120389-0058_0', 'LA120389-0062_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 10】查询ID: 445 | p-MRR: -0.178122
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What other countries besides the United States are considering  or have approved women as clergy persons?
+
+📌 指令内容:
+   To be relevant, a document must indicate either a country  where a woman has been installed as clergy or a country that is considering such an installation.  The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).
+
+📌 完整查询 (Query + Instruction):
+   What other countries besides the United States are considering  or have approved women as clergy persons? To be relevant, a document must indicate either a country  where a woman has been installed as clergy or a country that is considering such an installation.  The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).
+
+📌 相关文档变化详情:
+   文档ID: FT921-11838_0
+      原始排名: 964 -> 新排名: 960 | 得分: -0.0041
+   文档ID: FT921-11847_0
+      原始排名: 982 -> 新排名: 978 | 得分: -0.0041
+   文档ID: FT921-11857_0
+      原始排名: 983 -> 新排名: 979 | 得分: -0.0041
+   文档ID: FT921-7364_3
+      原始排名: 134 -> 新排名: 132 | 得分: -0.0149
+   文档ID: FT924-4560_0
+      原始排名: 988 -> 新排名: 980 | 得分: -0.0081
+   文档ID: FT924-7590_0
+      原始排名: 871 -> 新排名: 783 | 得分: -0.1010
+   文档ID: FT924-8156_0
+      原始排名: 234 -> 新排名: 138 | 得分: -0.4103
+   文档ID: FT924-9001_5
+      原始排名: 84 -> 新排名: 28 | 得分: -0.6667
+   文档ID: FT931-9901_0
+      原始排名: 337 -> 新排名: 190 | 得分: -0.4362
+   文档ID: FT932-2151_0
+      原始排名: 975 -> 新排名: 971 | 得分: -0.0041
+   文档ID: FT932-6456_0
+      原始排名: 908 -> 新排名: 844 | 得分: -0.0705
+   文档ID: FT933-12089_5
+      原始排名: 876 -> 新排名: 802 | 得分: -0.0845
+   文档ID: FT933-9689_0
+      原始排名: 888 -> 新排名: 826 | 得分: -0.0698
+   文档ID: FT934-11863_0
+      原始排名: 858 -> 新排名: 788 | 得分: -0.0816
+   文档ID: FT934-3058_2
+      原始排名: 209 -> 新排名: 93 | 得分: -0.5550
+   文档ID: FT934-408_7
+      原始排名: 506 -> 新排名: 392 | 得分: -0.2253
+   文档ID: FT941-6743_0
+      原始排名: 873 -> 新排名: 778 | 得分: -0.1088
+   文档ID: FT941-7795_0
+      原始排名: 942 -> 新排名: 900 | 得分: -0.0446
+   文档ID: FT941-7858_0
+      原始排名: 70 -> 新排名: 40 | 得分: -0.4286
+   文档ID: FT941-8007_0
+      原始排名: 370 -> 新排名: 226 | 得分: -0.3892
+   文档ID: FT941-8192_2
+      原始排名: 483 -> 新排名: 315 | 得分: -0.3478
+   文档ID: FT942-132_0
+      原始排名: 958 -> 新排名: 919 | 得分: -0.0407
+   文档ID: FT942-2917_0
+      原始排名: 767 -> 新排名: 642 | 得分: -0.1630
+   文档ID: FT943-15291_0
+      原始排名: 977 -> 新排名: 970 | 得分: -0.0072
+   文档ID: FT943-9241_1
+      原始排名: 809 -> 新排名: 661 | 得分: -0.1829
+
+📌 所有发生相关性变化的文档: ['FT921-11838_0', 'FT921-11847_0', 'FT921-11857_0', 'FT921-7364_3', 'FT924-4560_0', 'FT924-7590_0', 'FT924-8156_0', 'FT924-9001_5', 'FT931-9901_0', 'FT932-2151_0', 'FT932-6456_0', 'FT933-12089_5', 'FT933-9689_0', 'FT934-11863_0', 'FT934-3058_2', 'FT934-408_7', 'FT941-6743_0', 'FT941-7795_0', 'FT941-7858_0', 'FT941-8007_0', 'FT941-8192_2', 'FT942-132_0', 'FT942-2917_0', 'FT943-15291_0', 'FT943-9241_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 11】查询ID: 409 | p-MRR: -0.158459
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What legal actions have resulted from the destruction of Pan Am Flight 103 over Lockerbie, Scotland, on December 21, 1988?
+
+📌 指令内容:
+   Documents describing any charges, claims, or fines  presented to or imposed by any court or tribunal are relevant, but documents that discuss charges made in diplomatic jousting are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What legal actions have resulted from the destruction of Pan Am Flight 103 over Lockerbie, Scotland, on December 21, 1988? Documents describing any charges, claims, or fines  presented to or imposed by any court or tribunal are relevant, but documents that discuss charges made in diplomatic jousting are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT921-209_0
+      原始排名: 78 -> 新排名: 70 | 得分: -0.1026
+   文档ID: FT921-2687_0
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+   文档ID: FT921-714_0
+      原始排名: 151 -> 新排名: 132 | 得分: -0.1258
+   文档ID: FT921-717_0
+      原始排名: 67 -> 新排名: 53 | 得分: -0.2090
+   文档ID: FT921-969_1
+      原始排名: 36 -> 新排名: 39 | 得分: 0.0769
+   文档ID: FT922-12839_0
+      原始排名: 32 -> 新排名: 21 | 得分: -0.3438
+   文档ID: FT922-12921_0
+      原始排名: 62 -> 新排名: 49 | 得分: -0.2097
+   文档ID: FT922-13723_0
+      原始排名: 834 -> 新排名: 775 | 得分: -0.0707
+   文档ID: FT922-14616_0
+      原始排名: 20 -> 新排名: 14 | 得分: -0.3000
+   文档ID: FT922-15449_1
+      原始排名: 10 -> 新排名: 7 | 得分: -0.3000
+
+📌 所有发生相关性变化的文档: ['FT921-209_0', 'FT921-2687_0', 'FT921-714_0', 'FT921-717_0', 'FT921-969_1', 'FT922-12839_0', 'FT922-12921_0', 'FT922-13723_0', 'FT922-14616_0', 'FT922-15449_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 12】查询ID: 681 | p-MRR: -0.132538
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Where are wind power installations located?
+
+📌 指令内容:
+   Documents must provide the location of specific wind power installations.  Descriptions of wind power installations, applications to construct installations, and arguments  for/against wind power are all not relevant.
+
+📌 完整查询 (Query + Instruction):
+   Where are wind power installations located? Documents must provide the location of specific wind power installations.  Descriptions of wind power installations, applications to construct installations, and arguments  for/against wind power are all not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-20661_1
+      原始排名: 149 -> 新排名: 124 | 得分: -0.1678
+   文档ID: FBIS3-20671_1
+      原始排名: 58 -> 新排名: 39 | 得分: -0.3276
+   文档ID: FBIS3-60230_1
+      原始排名: 141 -> 新排名: 115 | 得分: -0.1844
+   文档ID: FBIS4-66377_11
+      原始排名: 157 -> 新排名: 183 | 得分: 0.1421
+   文档ID: FBIS4-66612_1
+      原始排名: 240 -> 新排名: 210 | 得分: -0.1250
+
+📌 所有发生相关性变化的文档: ['FBIS3-20661_1', 'FBIS3-20671_1', 'FBIS3-60230_1', 'FBIS4-66377_11', 'FBIS4-66612_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 13】查询ID: 626 | p-MRR: -0.119509
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find reports of human stampedes that have resulted in 20 or more deaths.
+
+📌 指令内容:
+   Documents that mention people being killed by animal stampedes are not relevant.  Relevant documents could mention human stampedes in any public place such as a sporting event, bar, restaurant or entertainment event.
+
+📌 完整查询 (Query + Instruction):
+   Find reports of human stampedes that have resulted in 20 or more deaths. Documents that mention people being killed by animal stampedes are not relevant.  Relevant documents could mention human stampedes in any public place such as a sporting event, bar, restaurant or entertainment event.
+
+📌 相关文档变化详情:
+   文档ID: FT931-14000_0
+      原始排名: 583 -> 新排名: 590 | 得分: 0.0119
+   文档ID: FT931-17135_0
+      原始排名: 406 -> 新排名: 280 | 得分: -0.3103
+   文档ID: FT941-8535_0
+      原始排名: 866 -> 新排名: 814 | 得分: -0.0600
+
+📌 所有发生相关性变化的文档: ['FT931-14000_0', 'FT931-17135_0', 'FT941-8535_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 14】查询ID: 327 | p-MRR: -0.109152
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify a country or a city where there is evidence of human slavery being practiced in the eighties or nineties.
+
+📌 指令内容:
+   A relevant document would present evidence of current slavery practices being carried out.  It would identify a specific country or city and give some information on who the slaves are, or who was buying or selling them, and for what purposes they were being used.  References to slavery being carried out several years ago would not be relevant.
+
+📌 完整查询 (Query + Instruction):
+   Identify a country or a city where there is evidence of human slavery being practiced in the eighties or nineties. A relevant document would present evidence of current slavery practices being carried out.  It would identify a specific country or city and give some information on who the slaves are, or who was buying or selling them, and for what purposes they were being used.  References to slavery being carried out several years ago would not be relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT924-1107_2
+      原始排名: 152 -> 新排名: 156 | 得分: 0.0256
+   文档ID: FT931-5001_0
+      原始排名: 542 -> 新排名: 349 | 得分: -0.3561
+   文档ID: FT932-4843_0
+      原始排名: 999 -> 新排名: 999 | 得分: 0.0000
+   文档ID: LA062190-0015_0
+      原始排名: 40 -> 新排名: 32 | 得分: -0.2000
+   文档ID: LA073090-0093_0
+      原始排名: 849 -> 新排名: 836 | 得分: -0.0153
+
+📌 所有发生相关性变化的文档: ['FT924-1107_2', 'FT931-5001_0', 'FT932-4843_0', 'LA062190-0015_0', 'LA073090-0093_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 15】查询ID: 607 | p-MRR: -0.081758
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What progress is being made in the effort to map and sequence the human genetic code?
+
+📌 指令内容:
+   Documents must discuss specific progress in mapping the human genome.  Documents that simply describe applications of the research, such as using DNA in criminal cases, using the genetic code to treat disease, or creating genetically engineered organisms are irrelevant.
+
+📌 完整查询 (Query + Instruction):
+   What progress is being made in the effort to map and sequence the human genetic code? Documents must discuss specific progress in mapping the human genome.  Documents that simply describe applications of the research, such as using DNA in criminal cases, using the genetic code to treat disease, or creating genetically engineered organisms are irrelevant.
+
+📌 相关文档变化详情:
+   文档ID: FT934-1290_0
+      原始排名: 6 -> 新排名: 3 | 得分: -0.5000
+   文档ID: FT934-2039_0
+      原始排名: 21 -> 新排名: 15 | 得分: -0.2857
+   文档ID: FT941-15246_2
+      原始排名: 60 -> 新排名: 48 | 得分: -0.2000
+   文档ID: FT942-3637_0
+      原始排名: 24 -> 新排名: 26 | 得分: 0.0769
+   文档ID: LA062589-0077_0
+      原始排名: 1 -> 新排名: 2 | 得分: 0.5000
+
+📌 所有发生相关性变化的文档: ['FT934-1290_0', 'FT934-2039_0', 'FT941-15246_2', 'FT942-3637_0', 'LA062589-0077_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 16】查询ID: 647 | p-MRR: -0.076937
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Has the use of windmill technology to generate electricity been economically productive?
+
+📌 指令内容:
+   A relevant document will contain a comparison of the costs of generating electricity through the use of windmills to other more conventional means of generation.
+
+📌 完整查询 (Query + Instruction):
+   Has the use of windmill technology to generate electricity been economically productive? A relevant document will contain a comparison of the costs of generating electricity through the use of windmills to other more conventional means of generation.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-41958_11
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: FBIS3-59624_2
+      原始排名: 53 -> 新排名: 79 | 得分: 0.3291
+   文档ID: FBIS4-47519_0
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+   文档ID: FT924-7244_1
+      原始排名: 68 -> 新排名: 90 | 得分: 0.2444
+   文档ID: FT924-9345_4
+      原始排名: 107 -> 新排名: 85 | 得分: -0.2056
+   文档ID: FT931-8438_1
+      原始排名: 399 -> 新排名: 257 | 得分: -0.3559
+   文档ID: FT932-1872_2
+      原始排名: 118 -> 新排名: 108 | 得分: -0.0847
+   文档ID: FT933-7095_1
+      原始排名: 32 -> 新排名: 22 | 得分: -0.3125
+   文档ID: FT933-7096_1
+      原始排名: 25 -> 新排名: 23 | 得分: -0.0800
+   文档ID: FT933-7813_1
+      原始排名: 21 -> 新排名: 10 | 得分: -0.5238
+   文档ID: FT934-929_2
+      原始排名: 150 -> 新排名: 176 | 得分: 0.1477
+   文档ID: LA110490-0015_1
+      原始排名: 14 -> 新排名: 8 | 得分: -0.4286
+   文档ID: LA110890-0070_0
+      原始排名: 65 -> 新排名: 89 | 得分: 0.2697
+
+📌 所有发生相关性变化的文档: ['FBIS3-41958_11', 'FBIS3-59624_2', 'FBIS4-47519_0', 'FT924-7244_1', 'FT924-9345_4', 'FT931-8438_1', 'FT932-1872_2', 'FT933-7095_1', 'FT933-7096_1', 'FT933-7813_1', 'FT934-929_2', 'LA110490-0015_1', 'LA110890-0070_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 17】查询ID: 617 | p-MRR: -0.075648
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What effect has the reduction of Russian support had on the Cuban economy?
+
+📌 指令内容:
+   Relevant documents must contain information specific to how the reduction of Russian support has affected the Cuban economy. Documents referring to the state of the Cuban economy but not mentioning Russia are irrelevant, as are documents describing joint Russo-Cuban projects.
+
+📌 完整查询 (Query + Instruction):
+   What effect has the reduction of Russian support had on the Cuban economy? Relevant documents must contain information specific to how the reduction of Russian support has affected the Cuban economy. Documents referring to the state of the Cuban economy but not mentioning Russia are irrelevant, as are documents describing joint Russo-Cuban projects.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-10463_2
+      原始排名: 485 -> 新排名: 477 | 得分: -0.0165
+   文档ID: FBIS3-10778_0
+      原始排名: 93 -> 新排名: 73 | 得分: -0.2151
+   文档ID: FBIS3-51138_0
+      原始排名: 22 -> 新排名: 16 | 得分: -0.2727
+   文档ID: FBIS3-51400_2
+      原始排名: 18 -> 新排名: 20 | 得分: 0.1000
+   文档ID: FBIS3-6941_3
+      原始排名: 217 -> 新排名: 211 | 得分: -0.0276
+   文档ID: FBIS4-57777_0
+      原始排名: 274 -> 新排名: 274 | 得分: 0.0000
+   文档ID: FT923-10781_2
+      原始排名: 62 -> 新排名: 67 | 得分: 0.0746
+   文档ID: FT923-13351_1
+      原始排名: 452 -> 新排名: 401 | 得分: -0.1128
+   文档ID: FT923-1460_1
+      原始排名: 369 -> 新排名: 282 | 得分: -0.2358
+   文档ID: FT924-11537_0
+      原始排名: 174 -> 新排名: 126 | 得分: -0.2759
+   文档ID: FT924-8185_1
+      原始排名: 323 -> 新排名: 266 | 得分: -0.1765
+   文档ID: FT924-874_0
+      原始排名: 367 -> 新排名: 368 | 得分: 0.0027
+   文档ID: FT924-9832_0
+      原始排名: 42 -> 新排名: 41 | 得分: -0.0238
+   文档ID: FT932-13253_2
+      原始排名: 226 -> 新排名: 205 | 得分: -0.0929
+   文档ID: FT933-12676_2
+      原始排名: 635 -> 新排名: 585 | 得分: -0.0787
+   文档ID: FT934-4579_0
+      原始排名: 346 -> 新排名: 338 | 得分: -0.0231
+   文档ID: FT934-9895_0
+      原始排名: 437 -> 新排名: 445 | 得分: 0.0180
+   文档ID: FT943-2583_1
+      原始排名: 212 -> 新排名: 186 | 得分: -0.1226
+   文档ID: FT943-6027_0
+      原始排名: 858 -> 新排名: 823 | 得分: -0.0408
+   文档ID: FT943-8122_1
+      原始排名: 671 -> 新排名: 583 | 得分: -0.1311
+   文档ID: FT944-11926_1
+      原始排名: 584 -> 新排名: 587 | 得分: 0.0051
+   文档ID: FT944-5430_4
+      原始排名: 541 -> 新排名: 594 | 得分: 0.0892
+   文档ID: LA072790-0054_1
+      原始排名: 337 -> 新排名: 283 | 得分: -0.1602
+   文档ID: LA093090-0185_0
+      原始排名: 476 -> 新排名: 391 | 得分: -0.1786
+   文档ID: LA101490-0033_0
+      原始排名: 250 -> 新排名: 251 | 得分: 0.0040
+
+📌 所有发生相关性变化的文档: ['FBIS3-10463_2', 'FBIS3-10778_0', 'FBIS3-51138_0', 'FBIS3-51400_2', 'FBIS3-6941_3', 'FBIS4-57777_0', 'FT923-10781_2', 'FT923-13351_1', 'FT923-1460_1', 'FT924-11537_0', 'FT924-8185_1', 'FT924-874_0', 'FT924-9832_0', 'FT932-13253_2', 'FT933-12676_2', 'FT934-4579_0', 'FT934-9895_0', 'FT943-2583_1', 'FT943-6027_0', 'FT943-8122_1', 'FT944-11926_1', 'FT944-5430_4', 'LA072790-0054_1', 'LA093090-0185_0', 'LA101490-0033_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 18】查询ID: 629 | p-MRR: -0.072278
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is the incidence of violent attacks on abortion clinics and the doctors and staff of the clinics by anti-abortionists?
+
+📌 指令内容:
+   Documents describing bombings and arson attacks on an abortion clinic, or other violent, destructive actions, are relevant.  Violent attacks on doctors and staff, including shootings, are also relevant. Reports of attempted attacks are relevant.   Reports of non-violent activities such as trespassing, picketing, etc. are irrelevant.
+
+📌 完整查询 (Query + Instruction):
+   What is the incidence of violent attacks on abortion clinics and the doctors and staff of the clinics by anti-abortionists? Documents describing bombings and arson attacks on an abortion clinic, or other violent, destructive actions, are relevant.  Violent attacks on doctors and staff, including shootings, are also relevant. Reports of attempted attacks are relevant.   Reports of non-violent activities such as trespassing, picketing, etc. are irrelevant.
+
+📌 相关文档变化详情:
+   文档ID: FT931-4191_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: FT944-4849_0
+      原始排名: 987 -> 新排名: 991 | 得分: 0.0040
+   文档ID: LA020289-0076_1
+      原始排名: 20 -> 新排名: 15 | 得分: -0.2500
+   文档ID: LA072289-0045_1
+      原始排名: 53 -> 新排名: 50 | 得分: -0.0566
+   文档ID: LA082090-0070_0
+      原始排名: 34 -> 新排名: 32 | 得分: -0.0588
+
+📌 所有发生相关性变化的文档: ['FT931-4191_0', 'FT944-4849_0', 'LA020289-0076_1', 'LA072289-0045_1', 'LA082090-0070_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 19】查询ID: 636 | p-MRR: -0.071878
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find documents that discuss reasons why people may be exempted from serving on a jury.
+
+📌 指令内容:
+   A relevant document must include a specific reason that provides an exemption or list an occupation that causes exemption from jury duty.
+
+📌 完整查询 (Query + Instruction):
+   Find documents that discuss reasons why people may be exempted from serving on a jury. A relevant document must include a specific reason that provides an exemption or list an occupation that causes exemption from jury duty.
+
+📌 相关文档变化详情:
+   文档ID: LA020389-0128_3
+      原始排名: 257 -> 新排名: 254 | 得分: -0.0117
+   文档ID: LA021789-0063_0
+      原始排名: 423 -> 新排名: 533 | 得分: 0.2064
+   文档ID: LA022489-0111_0
+      原始排名: 129 -> 新排名: 64 | 得分: -0.5039
+   文档ID: LA070389-0035_4
+      原始排名: 941 -> 新排名: 952 | 得分: 0.0116
+   文档ID: LA092990-0004_1
+      原始排名: 259 -> 新排名: 243 | 得分: -0.0618
+
+📌 所有发生相关性变化的文档: ['LA020389-0128_3', 'LA021789-0063_0', 'LA022489-0111_0', 'LA070389-0035_4', 'LA092990-0004_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 20】查询ID: 397 | p-MRR: -0.071025
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify documents that discuss the reasons for  automobile recalls.
+
+📌 指令内容:
+   A relevant document will specify major or minor reasons  for automobile recalls by car manufacturers.  Documents  that discuss truck recalls are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   Identify documents that discuss the reasons for  automobile recalls. A relevant document will specify major or minor reasons  for automobile recalls by car manufacturers.  Documents  that discuss truck recalls are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT911-242_0
+      原始排名: 84 -> 新排名: 74 | 得分: -0.1190
+   文档ID: FT922-13759_0
+      原始排名: 965 -> 新排名: 957 | 得分: -0.0083
+   文档ID: FT924-5855_0
+      原始排名: 996 -> 新排名: 996 | 得分: 0.0000
+   文档ID: FT933-9208_0
+      原始排名: 312 -> 新排名: 287 | 得分: -0.0801
+   文档ID: FT941-14983_0
+      原始排名: 993 -> 新排名: 994 | 得分: 0.0010
+   文档ID: LA020890-0157_0
+      原始排名: 982 -> 新排名: 982 | 得分: 0.0000
+   文档ID: LA052890-0061_0
+      原始排名: 833 -> 新排名: 828 | 得分: -0.0060
+   文档ID: LA060490-0081_0
+      原始排名: 930 -> 新排名: 917 | 得分: -0.0140
+   文档ID: LA061090-0062_0
+      原始排名: 144 -> 新排名: 100 | 得分: -0.3056
+   文档ID: LA072390-0100_0
+      原始排名: 794 -> 新排名: 777 | 得分: -0.0214
+   文档ID: LA072390-0101_0
+      原始排名: 919 -> 新排名: 911 | 得分: -0.0087
+   文档ID: LA100789-0148_1
+      原始排名: 67 -> 新排名: 42 | 得分: -0.3731
+   文档ID: LA110890-0248_0
+      原始排名: 648 -> 新排名: 602 | 得分: -0.0710
+   文档ID: LA111290-0111_0
+      原始排名: 915 -> 新排名: 926 | 得分: 0.0119
+
+📌 所有发生相关性变化的文档: ['FT911-242_0', 'FT922-13759_0', 'FT924-5855_0', 'FT933-9208_0', 'FT941-14983_0', 'LA020890-0157_0', 'LA052890-0061_0', 'LA060490-0081_0', 'LA061090-0062_0', 'LA072390-0100_0', 'LA072390-0101_0', 'LA100789-0148_1', 'LA110890-0248_0', 'LA111290-0111_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 21】查询ID: 638 | p-MRR: -0.052009
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find documents that discuss freed prisoners who have been wrongfully convicted based on faulty forensic evidence, poor police work, or false testimony.
+
+📌 指令内容:
+   Documents about political prisoners who were freed because of incompetent prosecutions are relevant.   However, documents that discuss prisoners who are pardoned or released on bond when their convictions are overturned are not relevant, nor are documents about prisoners freed to make a political statement or prisoners freed for an exchange.
+
+📌 完整查询 (Query + Instruction):
+   Find documents that discuss freed prisoners who have been wrongfully convicted based on faulty forensic evidence, poor police work, or false testimony. Documents about political prisoners who were freed because of incompetent prosecutions are relevant.   However, documents that discuss prisoners who are pardoned or released on bond when their convictions are overturned are not relevant, nor are documents about prisoners freed to make a political statement or prisoners freed for an exchange.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-21781_1
+      原始排名: 123 -> 新排名: 110 | 得分: -0.1057
+   文档ID: FT921-5967_0
+      原始排名: 968 -> 新排名: 962 | 得分: -0.0062
+   文档ID: FT922-4315_0
+      原始排名: 427 -> 新排名: 362 | 得分: -0.1522
+   文档ID: FT922-8629_0
+      原始排名: 177 -> 新排名: 172 | 得分: -0.0282
+   文档ID: FT922-8653_0
+      原始排名: 936 -> 新排名: 899 | 得分: -0.0395
+   文档ID: FT923-10485_0
+      原始排名: 986 -> 新排名: 989 | 得分: 0.0030
+   文档ID: FT923-10692_0
+      原始排名: 816 -> 新排名: 758 | 得分: -0.0711
+   文档ID: FT923-12626_2
+      原始排名: 871 -> 新排名: 866 | 得分: -0.0057
+   文档ID: FT923-12656_0
+      原始排名: 695 -> 新排名: 649 | 得分: -0.0662
+   文档ID: FT932-14027_0
+      原始排名: 727 -> 新排名: 655 | 得分: -0.0990
+   文档ID: FT933-15798_0
+      原始排名: 442 -> 新排名: 457 | 得分: 0.0328
+   文档ID: FT941-8028_0
+      原始排名: 297 -> 新排名: 255 | 得分: -0.1414
+   文档ID: FT942-13988_1
+      原始排名: 280 -> 新排名: 271 | 得分: -0.0321
+   文档ID: FT942-5293_0
+      原始排名: 868 -> 新排名: 870 | 得分: 0.0023
+   文档ID: LA030189-0042_0
+      原始排名: 743 -> 新排名: 677 | 得分: -0.0888
+   文档ID: LA032089-0100_0
+      原始排名: 400 -> 新排名: 356 | 得分: -0.1100
+   文档ID: LA032289-0026_0
+      原始排名: 24 -> 新排名: 22 | 得分: -0.0833
+   文档ID: LA092289-0100_3
+      原始排名: 1 -> 新排名: 2 | 得分: 0.5000
+   文档ID: LA102089-0062_0
+      原始排名: 14 -> 新排名: 12 | 得分: -0.1429
+   文档ID: LA120890-0066_0
+      原始排名: 142 -> 新排名: 109 | 得分: -0.2324
+   文档ID: LA121489-0145_0
+      原始排名: 281 -> 新排名: 286 | 得分: 0.0175
+   文档ID: LA121689-0082_2
+      原始排名: 217 -> 新排名: 153 | 得分: -0.2949
+
+📌 所有发生相关性变化的文档: ['FBIS3-21781_1', 'FT921-5967_0', 'FT922-4315_0', 'FT922-8629_0', 'FT922-8653_0', 'FT923-10485_0', 'FT923-10692_0', 'FT923-12626_2', 'FT923-12656_0', 'FT932-14027_0', 'FT933-15798_0', 'FT941-8028_0', 'FT942-13988_1', 'FT942-5293_0', 'LA030189-0042_0', 'LA032089-0100_0', 'LA032289-0026_0', 'LA092289-0100_3', 'LA102089-0062_0', 'LA120890-0066_0', 'LA121489-0145_0', 'LA121689-0082_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 22】查询ID: 641 | p-MRR: -0.051219
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What was the impact of the Exxon Valdez oil spill on the marine life and wildlife of the area?
+
+📌 指令内容:
+   Relevant documents must have some specific detail, such as types of animals, the kinds of problems found, and outcome (such as number of animals saved or dead).
+
+📌 完整查询 (Query + Instruction):
+   What was the impact of the Exxon Valdez oil spill on the marine life and wildlife of the area? Relevant documents must have some specific detail, such as types of animals, the kinds of problems found, and outcome (such as number of animals saved or dead).
+
+📌 相关文档变化详情:
+   文档ID: FT943-6371_3
+      原始排名: 72 -> 新排名: 82 | 得分: 0.1220
+   文档ID: LA021090-0056_0
+      原始排名: 80 -> 新排名: 49 | 得分: -0.3875
+   文档ID: LA031890-0181_4
+      原始排名: 10 -> 新排名: 9 | 得分: -0.1000
+   文档ID: LA032590-0075_4
+      原始排名: 961 -> 新排名: 963 | 得分: 0.0021
+   文档ID: LA032789-0038_2
+      原始排名: 30 -> 新排名: 31 | 得分: 0.0323
+   文档ID: LA040289-0083_0
+      原始排名: 118 -> 新排名: 69 | 得分: -0.4153
+   文档ID: LA040689-0056_1
+      原始排名: 51 -> 新排名: 42 | 得分: -0.1765
+   文档ID: LA041489-0054_0
+      原始排名: 28 -> 新排名: 21 | 得分: -0.2500
+   文档ID: LA041589-0048_0
+      原始排名: 57 -> 新排名: 54 | 得分: -0.0526
+   文档ID: LA041689-0032_0
+      原始排名: 36 -> 新排名: 46 | 得分: 0.2174
+   文档ID: LA041989-0065_0
+      原始排名: 146 -> 新排名: 158 | 得分: 0.0759
+   文档ID: LA041989-0067_1
+      原始排名: 97 -> 新排名: 93 | 得分: -0.0412
+   文档ID: LA060589-0044_0
+      原始排名: 131 -> 新排名: 126 | 得分: -0.0382
+   文档ID: LA061189-0073_1
+      原始排名: 42 -> 新排名: 66 | 得分: 0.3636
+   文档ID: LA062589-0156_2
+      原始排名: 239 -> 新排名: 247 | 得分: 0.0324
+   文档ID: LA071289-0001_2
+      原始排名: 75 -> 新排名: 63 | 得分: -0.1600
+   文档ID: LA071389-0001_4
+      原始排名: 153 -> 新排名: 115 | 得分: -0.2484
+   文档ID: LA071489-0033_2
+      原始排名: 492 -> 新排名: 394 | 得分: -0.1992
+   文档ID: LA082189-0047_2
+      原始排名: 24 -> 新排名: 32 | 得分: 0.2500
+
+📌 所有发生相关性变化的文档: ['FT943-6371_3', 'LA021090-0056_0', 'LA031890-0181_4', 'LA032590-0075_4', 'LA032789-0038_2', 'LA040289-0083_0', 'LA040689-0056_1', 'LA041489-0054_0', 'LA041589-0048_0', 'LA041689-0032_0', 'LA041989-0065_0', 'LA041989-0067_1', 'LA060589-0044_0', 'LA061189-0073_1', 'LA062589-0156_2', 'LA071289-0001_2', 'LA071389-0001_4', 'LA071489-0033_2', 'LA082189-0047_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 23】查询ID: 601 | p-MRR: -0.045455
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is the effect of Turkish river control projects on Iraqi water resources?
+
+📌 指令内容:
+   A relevant document will deal specifically with water issues between Turkey and Iraq.  Other political and economic concerns between the two countries (e.g. the Kurds or water to Syria, Israel and Lebanon) are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What is the effect of Turkish river control projects on Iraqi water resources? A relevant document will deal specifically with water issues between Turkey and Iraq.  Other political and economic concerns between the two countries (e.g. the Kurds or water to Syria, Israel and Lebanon) are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS4-45772_1
+      原始排名: 22 -> 新排名: 21 | 得分: -0.0455
+
+📌 所有发生相关性变化的文档: ['FBIS4-45772_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 24】查询ID: 342 | p-MRR: -0.024651
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   The end of the Cold War seems to have intensified economic competition and has started to generate  serious friction between nations as attempts are  made by diplomatic personnel to acquire sensitive trade and technology information or to obtain  information on highly classified industrial projects. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.
+
+📌 指令内容:
+   Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.  Of interest would be  the country(s) involved, the information hopefully  acquired, or if the exposure resulted in expulsion  of diplomatic personnel.
+
+📌 完整查询 (Query + Instruction):
+   The end of the Cold War seems to have intensified economic competition and has started to generate  serious friction between nations as attempts are  made by diplomatic personnel to acquire sensitive trade and technology information or to obtain  information on highly classified industrial projects. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature. Identify instances where attempts have been made  by personnel with diplomatic status to obtain  information of this nature.  Of interest would be  the country(s) involved, the information hopefully  acquired, or if the exposure resulted in expulsion  of diplomatic personnel.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-19264_2
+      原始排名: 81 -> 新排名: 71 | 得分: -0.1235
+   文档ID: FBIS4-36856_0
+      原始排名: 980 -> 新排名: 963 | 得分: -0.0173
+   文档ID: FBIS4-36917_0
+      原始排名: 979 -> 新排名: 964 | 得分: -0.0153
+   文档ID: LA042889-0174_0
+      原始排名: 999 -> 新排名: 998 | 得分: -0.0010
+   文档ID: LA050689-0089_0
+      原始排名: 656 -> 新排名: 679 | 得分: 0.0339
+
+📌 所有发生相关性变化的文档: ['FBIS3-19264_2', 'FBIS4-36856_0', 'FBIS4-36917_0', 'LA042889-0174_0', 'LA050689-0089_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 25】查询ID: 611 | p-MRR: -0.021605
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What violent activities have Kurds, or members of the Workers Party of Kurdistan (PKK), carried out in Germany?
+
+📌 指令内容:
+   Relevant documents contain information on the types of violent, destructive, or terroristic activities perpetrated by Kurds or members of the Workers Party of Kurdistan (PKK) in Germany. Information on whom or what is targeted by these kinds of acts is also relevant.  Relevant activities include: killing or wounding of individuals; destruction or burning of property; and rioting. Relevant activities must be both attributed to Kurds or the PKK and occur in Germany.  Violence by Kurds or the PKK against other Kurds or PKK members is relevant if it occurs in Germany, though self immolation is irrelevant.  Peaceful demonstrations in Germany are irrelevant.
+
+📌 完整查询 (Query + Instruction):
+   What violent activities have Kurds, or members of the Workers Party of Kurdistan (PKK), carried out in Germany? Relevant documents contain information on the types of violent, destructive, or terroristic activities perpetrated by Kurds or members of the Workers Party of Kurdistan (PKK) in Germany. Information on whom or what is targeted by these kinds of acts is also relevant.  Relevant activities include: killing or wounding of individuals; destruction or burning of property; and rioting. Relevant activities must be both attributed to Kurds or the PKK and occur in Germany.  Violence by Kurds or the PKK against other Kurds or PKK members is relevant if it occurs in Germany, though self immolation is irrelevant.  Peaceful demonstrations in Germany are irrelevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-18686_0
+      原始排名: 362 -> 新排名: 370 | 得分: 0.0216
+   文档ID: FBIS3-19811_0
+      原始排名: 417 -> 新排名: 422 | 得分: 0.0118
+   文档ID: FBIS3-19897_1
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+   文档ID: FBIS3-20084_0
+      原始排名: 55 -> 新排名: 56 | 得分: 0.0179
+   文档ID: FBIS3-20188_0
+      原始排名: 1 -> 新排名: 2 | 得分: 0.5000
+   文档ID: FBIS3-39929_0
+      原始排名: 47 -> 新排名: 50 | 得分: 0.0600
+   文档ID: FBIS3-60900_0
+      原始排名: 12 -> 新排名: 11 | 得分: -0.0833
+   文档ID: FBIS4-18301_0
+      原始排名: 580 -> 新排名: 583 | 得分: 0.0051
+   文档ID: FBIS4-18401_0
+      原始排名: 234 -> 新排名: 229 | 得分: -0.0214
+   文档ID: FBIS4-18641_0
+      原始排名: 676 -> 新排名: 657 | 得分: -0.0281
+   文档ID: FBIS4-18658_0
+      原始排名: 934 -> 新排名: 934 | 得分: 0.0000
+   文档ID: FBIS4-18761_0
+      原始排名: 277 -> 新排名: 241 | 得分: -0.1300
+   文档ID: FBIS4-19518_0
+      原始排名: 8 -> 新排名: 5 | 得分: -0.3750
+   文档ID: FBIS4-19584_2
+      原始排名: 87 -> 新排名: 89 | 得分: 0.0225
+   文档ID: FBIS4-19938_0
+      原始排名: 679 -> 新排名: 663 | 得分: -0.0236
+   文档ID: FBIS4-42321_0
+      原始排名: 5 -> 新排名: 6 | 得分: 0.1667
+   文档ID: FBIS4-46313_2
+      原始排名: 20 -> 新排名: 19 | 得分: -0.0500
+   文档ID: FBIS4-64663_0
+      原始排名: 632 -> 新排名: 641 | 得分: 0.0140
+   文档ID: FBIS4-68077_0
+      原始排名: 631 -> 新排名: 640 | 得分: 0.0141
+   文档ID: FT932-1002_0
+      原始排名: 67 -> 新排名: 62 | 得分: -0.0746
+   文档ID: FT932-873_0
+      原始排名: 176 -> 新排名: 162 | 得分: -0.0795
+   文档ID: FT934-10522_0
+      原始排名: 9 -> 新排名: 7 | 得分: -0.2222
+   文档ID: FT941-2362_0
+      原始排名: 68 -> 新排名: 59 | 得分: -0.1324
+   文档ID: FT941-2364_0
+      原始排名: 146 -> 新排名: 122 | 得分: -0.1644
+   文档ID: FT941-2520_0
+      原始排名: 958 -> 新排名: 958 | 得分: 0.0000
+   文档ID: FT943-16653_0
+      原始排名: 943 -> 新排名: 940 | 得分: -0.0032
+   文档ID: FT944-4306_1
+      原始排名: 170 -> 新排名: 165 | 得分: -0.0294
+
+📌 所有发生相关性变化的文档: ['FBIS3-18686_0', 'FBIS3-19811_0', 'FBIS3-19897_1', 'FBIS3-20084_0', 'FBIS3-20188_0', 'FBIS3-39929_0', 'FBIS3-60900_0', 'FBIS4-18301_0', 'FBIS4-18401_0', 'FBIS4-18641_0', 'FBIS4-18658_0', 'FBIS4-18761_0', 'FBIS4-19518_0', 'FBIS4-19584_2', 'FBIS4-19938_0', 'FBIS4-42321_0', 'FBIS4-46313_2', 'FBIS4-64663_0', 'FBIS4-68077_0', 'FT932-1002_0', 'FT932-873_0', 'FT934-10522_0', 'FT941-2362_0', 'FT941-2364_0', 'FT941-2520_0', 'FT943-16653_0', 'FT944-4306_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 26】查询ID: 315 | p-MRR: -0.020244
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How many fatal highway accidents are there each  year that are not resolved as to cause.
+
+📌 指令内容:
+   A relevant document will contain data relating to  highway accidents where the cause of the accident  cannot be determined.  Typical of such accidents  would be those where one vehicle "suddenly swerves  into oncoming traffic."
+
+📌 完整查询 (Query + Instruction):
+   How many fatal highway accidents are there each  year that are not resolved as to cause. A relevant document will contain data relating to  highway accidents where the cause of the accident  cannot be determined.  Typical of such accidents  would be those where one vehicle "suddenly swerves  into oncoming traffic."
+
+📌 相关文档变化详情:
+   文档ID: LA011590-0065_0
+      原始排名: 701 -> 新排名: 619 | 得分: -0.1170
+   文档ID: LA012290-0074_0
+      原始排名: 966 -> 新排名: 959 | 得分: -0.0072
+   文档ID: LA031790-0027_0
+      原始排名: 639 -> 新排名: 671 | 得分: 0.0477
+   文档ID: LA050790-0050_0
+      原始排名: 647 -> 新排名: 629 | 得分: -0.0278
+   文档ID: LA070290-0090_0
+      原始排名: 822 -> 新排名: 727 | 得分: -0.1156
+   文档ID: LA070890-0064_0
+      原始排名: 830 -> 新排名: 837 | 得分: 0.0084
+   文档ID: LA072589-0129_0
+      原始排名: 754 -> 新排名: 759 | 得分: 0.0066
+   文档ID: LA080489-0023_0
+      原始排名: 804 -> 新排名: 797 | 得分: -0.0087
+   文档ID: LA081289-0023_0
+      原始排名: 505 -> 新排名: 495 | 得分: -0.0198
+   文档ID: LA082289-0035_0
+      原始排名: 979 -> 新排名: 977 | 得分: -0.0020
+   文档ID: LA082490-0144_0
+      原始排名: 838 -> 新排名: 838 | 得分: 0.0000
+   文档ID: LA102190-0181_0
+      原始排名: 903 -> 新排名: 880 | 得分: -0.0255
+   文档ID: LA111189-0013_0
+      原始排名: 918 -> 新排名: 916 | 得分: -0.0022
+
+📌 所有发生相关性变化的文档: ['LA011590-0065_0', 'LA012290-0074_0', 'LA031790-0027_0', 'LA050790-0050_0', 'LA070290-0090_0', 'LA070890-0064_0', 'LA072589-0129_0', 'LA080489-0023_0', 'LA081289-0023_0', 'LA082289-0035_0', 'LA082490-0144_0', 'LA102190-0181_0', 'LA111189-0013_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 27】查询ID: 608 | p-MRR: -0.019194
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find articles that discuss the pros and cons of taxing U.S. social security benefits.
+
+📌 指令内容:
+   Only documents that discuss income tax on social security benefits in the U.S. are relevant.  Documents that discuss the social security tax itself or other countries' taxation are irrelevant.
+
+📌 完整查询 (Query + Instruction):
+   Find articles that discuss the pros and cons of taxing U.S. social security benefits. Only documents that discuss income tax on social security benefits in the U.S. are relevant.  Documents that discuss the social security tax itself or other countries' taxation are irrelevant.
+
+📌 相关文档变化详情:
+   文档ID: FT931-8547_4
+      原始排名: 32 -> 新排名: 24 | 得分: -0.2500
+   文档ID: FT943-9223_1
+      原始排名: 128 -> 新排名: 127 | 得分: -0.0078
+   文档ID: LA010389-0054_0
+      原始排名: 817 -> 新排名: 790 | 得分: -0.0330
+   文档ID: LA010789-0040_2
+      原始排名: 581 -> 新排名: 631 | 得分: 0.0792
+   文档ID: LA042389-0158_0
+      原始排名: 670 -> 新排名: 638 | 得分: -0.0478
+   文档ID: LA051189-0052_3
+      原始排名: 170 -> 新排名: 176 | 得分: 0.0341
+   文档ID: LA051489-0046_0
+      原始排名: 34 -> 新排名: 31 | 得分: -0.0882
+   文档ID: LA070190-0047_0
+      原始排名: 202 -> 新排名: 163 | 得分: -0.1931
+   文档ID: LA070790-0019_0
+      原始排名: 369 -> 新排名: 361 | 得分: -0.0217
+   文档ID: LA070790-0021_0
+      原始排名: 512 -> 新排名: 513 | 得分: 0.0019
+   文档ID: LA090689-0110_1
+      原始排名: 4 -> 新排名: 6 | 得分: 0.3333
+   文档ID: LA100390-0056_2
+      原始排名: 750 -> 新排名: 722 | 得分: -0.0373
+
+📌 所有发生相关性变化的文档: ['FT931-8547_4', 'FT943-9223_1', 'LA010389-0054_0', 'LA010789-0040_2', 'LA042389-0158_0', 'LA051189-0052_3', 'LA051489-0046_0', 'LA070190-0047_0', 'LA070790-0019_0', 'LA070790-0021_0', 'LA090689-0110_1', 'LA100390-0056_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 28】查询ID: 432 | p-MRR: -0.017452
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Do police departments use "profiling" to stop motorists?
+
+📌 指令内容:
+   A relevant document will report or discuss police department  criteria for identifying motorists considered likely to be carrying contraband.  Documents discussing the detention of individuals by foreign security forces are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   Do police departments use "profiling" to stop motorists? A relevant document will report or discuss police department  criteria for identifying motorists considered likely to be carrying contraband.  Documents discussing the detention of individuals by foreign security forces are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-60148_0
+      原始排名: 166 -> 新排名: 126 | 得分: -0.2410
+   文档ID: FBIS3-60191_0
+      原始排名: 657 -> 新排名: 690 | 得分: 0.0478
+   文档ID: FBIS4-21286_0
+      原始排名: 193 -> 新排名: 193 | 得分: 0.0000
+   文档ID: FBIS4-45353_0
+      原始排名: 585 -> 新排名: 596 | 得分: 0.0185
+   文档ID: FBIS4-45354_0
+      原始排名: 503 -> 新排名: 482 | 得分: -0.0417
+   文档ID: LA011689-0002_1
+      原始排名: 921 -> 新排名: 925 | 得分: 0.0043
+   文档ID: LA011889-0067_4
+      原始排名: 243 -> 新排名: 269 | 得分: 0.0967
+   文档ID: LA011989-0006_3
+      原始排名: 153 -> 新排名: 123 | 得分: -0.1961
+   文档ID: LA011989-0012_1
+      原始排名: 30 -> 新排名: 29 | 得分: -0.0333
+   文档ID: LA020289-0104_1
+      原始排名: 417 -> 新排名: 441 | 得分: 0.0544
+   文档ID: LA030489-0068_2
+      原始排名: 842 -> 新排名: 832 | 得分: -0.0119
+   文档ID: LA052589-0076_0
+      原始排名: 711 -> 新排名: 722 | 得分: 0.0152
+   文档ID: LA061989-0019_2
+      原始排名: 491 -> 新排名: 549 | 得分: 0.1056
+   文档ID: LA110289-0147_0
+      原始排名: 318 -> 新排名: 298 | 得分: -0.0629
+
+📌 所有发生相关性变化的文档: ['FBIS3-60148_0', 'FBIS3-60191_0', 'FBIS4-21286_0', 'FBIS4-45353_0', 'FBIS4-45354_0', 'LA011689-0002_1', 'LA011889-0067_4', 'LA011989-0006_3', 'LA011989-0012_1', 'LA020289-0104_1', 'LA030489-0068_2', 'LA052589-0076_0', 'LA061989-0019_2', 'LA110289-0147_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 29】查询ID: 305 | p-MRR: -0.012858
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Which are the most crashworthy, and least crashworthy,  passenger vehicles?
+
+📌 指令内容:
+   A relevant document will contain information on the  crashworthiness of a given vehicle or vehicles that  can be used to draw a comparison with other vehicles.   The document will have to describe/compare vehicles,  not drivers.  For instance, it should be expected  that vehicles preferred by 16-25 year-olds would be  involved in more crashes, because that age group is involved in more crashes.  I would view number of  fatalities per 100 crashes to be more revealing of  a vehicle's crashworthiness than the number of crashes per 100,000 miles, for example.
+
+📌 完整查询 (Query + Instruction):
+   Which are the most crashworthy, and least crashworthy,  passenger vehicles? A relevant document will contain information on the  crashworthiness of a given vehicle or vehicles that  can be used to draw a comparison with other vehicles.   The document will have to describe/compare vehicles,  not drivers.  For instance, it should be expected  that vehicles preferred by 16-25 year-olds would be  involved in more crashes, because that age group is involved in more crashes.  I would view number of  fatalities per 100 crashes to be more revealing of  a vehicle's crashworthiness than the number of crashes per 100,000 miles, for example.
+
+📌 相关文档变化详情:
+   文档ID: FT944-15615_1
+      原始排名: 220 -> 新排名: 185 | 得分: -0.1591
+   文档ID: FT944-5300_0
+      原始排名: 430 -> 新排名: 372 | 得分: -0.1349
+   文档ID: LA012590-0229_0
+      原始排名: 922 -> 新排名: 920 | 得分: -0.0022
+   文档ID: LA020590-0088_0
+      原始排名: 844 -> 新排名: 835 | 得分: -0.0107
+   文档ID: LA021089-0176_0
+      原始排名: 704 -> 新排名: 703 | 得分: -0.0014
+   文档ID: LA021189-0138_0
+      原始排名: 853 -> 新排名: 867 | 得分: 0.0161
+   文档ID: LA021289-0208_0
+      原始排名: 976 -> 新排名: 976 | 得分: 0.0000
+   文档ID: LA021790-0136_0
+      原始排名: 782 -> 新排名: 785 | 得分: 0.0038
+   文档ID: LA031689-0177_1
+      原始排名: 10 -> 新排名: 10 | 得分: 0.0000
+   文档ID: LA032390-0172_0
+      原始排名: 878 -> 新排名: 886 | 得分: 0.0090
+   文档ID: LA042790-0172_0
+      原始排名: 288 -> 新排名: 274 | 得分: -0.0486
+   文档ID: LA051689-0139_0
+      原始排名: 666 -> 新排名: 627 | 得分: -0.0586
+   文档ID: LA052190-0048_0
+      原始排名: 928 -> 新排名: 924 | 得分: -0.0043
+   文档ID: LA072189-0048_0
+      原始排名: 1000 -> 新排名: 1000 | 得分: 0.0000
+   文档ID: LA072790-0141_2
+      原始排名: 559 -> 新排名: 598 | 得分: 0.0652
+   文档ID: LA081089-0193_0
+      原始排名: 597 -> 新排名: 584 | 得分: -0.0218
+   文档ID: LA091389-0119_0
+      原始排名: 314 -> 新排名: 302 | 得分: -0.0382
+   文档ID: LA091589-0101_0
+      原始排名: 888 -> 新排名: 890 | 得分: 0.0022
+   文档ID: LA091989-0105_0
+      原始排名: 854 -> 新排名: 845 | 得分: -0.0105
+   文档ID: LA092289-0167_0
+      原始排名: 890 -> 新排名: 891 | 得分: 0.0011
+   文档ID: LA100589-0024_0
+      原始排名: 962 -> 新排名: 964 | 得分: 0.0021
+   文档ID: LA101190-0218_0
+      原始排名: 137 -> 新排名: 137 | 得分: 0.0000
+   文档ID: LA111189-0013_0
+      原始排名: 957 -> 新排名: 956 | 得分: -0.0010
+   文档ID: LA112590-0109_0
+      原始排名: 796 -> 新排名: 806 | 得分: 0.0124
+   文档ID: LA120189-0179_0
+      原始排名: 596 -> 新排名: 625 | 得分: 0.0464
+   文档ID: LA122989-0063_0
+      原始排名: 673 -> 新排名: 672 | 得分: -0.0015
+
+📌 所有发生相关性变化的文档: ['FT944-15615_1', 'FT944-5300_0', 'LA012590-0229_0', 'LA020590-0088_0', 'LA021089-0176_0', 'LA021189-0138_0', 'LA021289-0208_0', 'LA021790-0136_0', 'LA031689-0177_1', 'LA032390-0172_0', 'LA042790-0172_0', 'LA051689-0139_0', 'LA052190-0048_0', 'LA072189-0048_0', 'LA072790-0141_2', 'LA081089-0193_0', 'LA091389-0119_0', 'LA091589-0101_0', 'LA091989-0105_0', 'LA092289-0167_0', 'LA100589-0024_0', 'LA101190-0218_0', 'LA111189-0013_0', 'LA112590-0109_0', 'LA120189-0179_0', 'LA122989-0063_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 30】查询ID: 682 | p-MRR: -0.001316
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is being done to teach English to recently admitted adult immigrants?
+
+📌 指令内容:
+   Descriptions of any program to teach English to adult immigrants are relevant, as are proposals to establish such programs. Testing programs and programs targeting only children are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What is being done to teach English to recently admitted adult immigrants? Descriptions of any program to teach English to adult immigrants are relevant, as are proposals to establish such programs. Testing programs and programs targeting only children are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FR940318-2-00138_3
+      原始排名: 26 -> 新排名: 49 | 得分: 0.4694
+   文档ID: LA012390-0142_3
+      原始排名: 399 -> 新排名: 515 | 得分: 0.2252
+   文档ID: LA020890-0182_0
+      原始排名: 265 -> 新排名: 212 | 得分: -0.2000
+   文档ID: LA030890-0016_3
+      原始排名: 298 -> 新排名: 330 | 得分: 0.0970
+   文档ID: LA031190-0209_0
+      原始排名: 82 -> 新排名: 86 | 得分: 0.0465
+   文档ID: LA031990-0075_0
+      原始排名: 333 -> 新排名: 339 | 得分: 0.0177
+   文档ID: LA032290-0170_0
+      原始排名: 285 -> 新排名: 232 | 得分: -0.1860
+   文档ID: LA041290-0211_3
+      原始排名: 93 -> 新排名: 68 | 得分: -0.2688
+   文档ID: LA052090-0034_1
+      原始排名: 259 -> 新排名: 208 | 得分: -0.1969
+   文档ID: LA060290-0115_1
+      原始排名: 31 -> 新排名: 61 | 得分: 0.4918
+   文档ID: LA060390-0196_0
+      原始排名: 222 -> 新排名: 218 | 得分: -0.0180
+   文档ID: LA060790-0202_0
+      原始排名: 288 -> 新排名: 337 | 得分: 0.1454
+   文档ID: LA062290-0075_0
+      原始排名: 404 -> 新排名: 394 | 得分: -0.0248
+   文档ID: LA070390-0137_0
+      原始排名: 20 -> 新排名: 15 | 得分: -0.2500
+   文档ID: LA072290-0046_3
+      原始排名: 61 -> 新排名: 106 | 得分: 0.4245
+   文档ID: LA082390-0106_0
+      原始排名: 983 -> 新排名: 960 | 得分: -0.0234
+   文档ID: LA082690-0027_3
+      原始排名: 163 -> 新排名: 199 | 得分: 0.1809
+   文档ID: LA092090-0182_1
+      原始排名: 409 -> 新排名: 462 | 得分: 0.1147
+   文档ID: LA101890-0104_0
+      原始排名: 462 -> 新排名: 378 | 得分: -0.1818
+   文档ID: LA110790-0052_0
+      原始排名: 269 -> 新排名: 240 | 得分: -0.1078
+   文档ID: LA111790-0164_1
+      原始排名: 88 -> 新排名: 112 | 得分: 0.2143
+   文档ID: LA111990-0105_0
+      原始排名: 44 -> 新排名: 30 | 得分: -0.3182
+   文档ID: LA112390-0010_0
+      原始排名: 102 -> 新排名: 59 | 得分: -0.4216
+   文档ID: LA113090-0004_0
+      原始排名: 87 -> 新排名: 56 | 得分: -0.3563
+   文档ID: LA122389-0132_0
+      原始排名: 167 -> 新排名: 117 | 得分: -0.2994
+   文档ID: LA122790-0153_1
+      原始排名: 56 -> 新排名: 92 | 得分: 0.3913
+
+📌 所有发生相关性变化的文档: ['FR940318-2-00138_3', 'LA012390-0142_3', 'LA020890-0182_0', 'LA030890-0016_3', 'LA031190-0209_0', 'LA031990-0075_0', 'LA032290-0170_0', 'LA041290-0211_3', 'LA052090-0034_1', 'LA060290-0115_1', 'LA060390-0196_0', 'LA060790-0202_0', 'LA062290-0075_0', 'LA070390-0137_0', 'LA072290-0046_3', 'LA082390-0106_0', 'LA082690-0027_3', 'LA092090-0182_1', 'LA101890-0104_0', 'LA110790-0052_0', 'LA111790-0164_1', 'LA111990-0105_0', 'LA112390-0010_0', 'LA113090-0004_0', 'LA122389-0132_0', 'LA122790-0153_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 31】查询ID: 687 | p-MRR: -0.000497
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What businesses and industries form the basis of the economy of Northern Ireland?
+
+📌 指令内容:
+   Relevant documents name at least one business or industry that is a major employer in Northern Ireland.  Documents about unemployment or industry closing are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What businesses and industries form the basis of the economy of Northern Ireland? Relevant documents name at least one business or industry that is a major employer in Northern Ireland.  Documents about unemployment or industry closing are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FT921-12195_0
+      原始排名: 401 -> 新排名: 374 | 得分: -0.0673
+   文档ID: FT922-8302_0
+      原始排名: 24 -> 新排名: 66 | 得分: 0.6364
+   文档ID: FT923-1766_1
+      原始排名: 135 -> 新排名: 161 | 得分: 0.1615
+   文档ID: FT924-12351_0
+      原始排名: 638 -> 新排名: 671 | 得分: 0.0492
+   文档ID: FT924-2507_0
+      原始排名: 916 -> 新排名: 873 | 得分: -0.0469
+   文档ID: FT933-4353_3
+      原始排名: 299 -> 新排名: 218 | 得分: -0.2709
+   文档ID: FT933-4357_6
+      原始排名: 2 -> 新排名: 3 | 得分: 0.3333
+   文档ID: FT933-724_0
+      原始排名: 53 -> 新排名: 21 | 得分: -0.6038
+   文档ID: FT941-6388_0
+      原始排名: 312 -> 新排名: 278 | 得分: -0.1090
+   文档ID: FT942-7316_0
+      原始排名: 72 -> 新排名: 31 | 得分: -0.5694
+   文档ID: FT943-3202_0
+      原始排名: 288 -> 新排名: 360 | 得分: 0.2000
+   文档ID: FT943-3204_1
+      原始排名: 224 -> 新排名: 245 | 得分: 0.0857
+   文档ID: FT943-3205_3
+      原始排名: 4 -> 新排名: 5 | 得分: 0.2000
+   文档ID: FT944-3034_3
+      原始排名: 170 -> 新排名: 193 | 得分: 0.1192
+   文档ID: FT944-3035_0
+      原始排名: 375 -> 新排名: 328 | 得分: -0.1253
+
+📌 所有发生相关性变化的文档: ['FT921-12195_0', 'FT922-8302_0', 'FT923-1766_1', 'FT924-12351_0', 'FT924-2507_0', 'FT933-4353_3', 'FT933-4357_6', 'FT933-724_0', 'FT941-6388_0', 'FT942-7316_0', 'FT943-3202_0', 'FT943-3204_1', 'FT943-3205_3', 'FT944-3034_3', 'FT944-3035_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 32】查询ID: 369 | p-MRR: 0.001025
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the causes and treatments of anorexia nervosa and bulimia?
+
+📌 指令内容:
+   A relevant document will describe the causes of the  eating disorders, anorexia nervosa or bulimia. Documents that describe symptoms including the taking of  laxatives, self-induced vomiting and excessive exercise  are relevant.  Discussions of the treatment of the  disorders are also relevant.
+
+📌 完整查询 (Query + Instruction):
+   What are the causes and treatments of anorexia nervosa and bulimia? A relevant document will describe the causes of the  eating disorders, anorexia nervosa or bulimia. Documents that describe symptoms including the taking of  laxatives, self-induced vomiting and excessive exercise  are relevant.  Discussions of the treatment of the  disorders are also relevant.
+
+📌 相关文档变化详情:
+   文档ID: FR940323-2-00082_2
+      原始排名: 974 -> 新排名: 976 | 得分: 0.0020
+   文档ID: LA042590-0171_1
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['FR940323-2-00082_2', 'LA042590-0171_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 33】查询ID: 669 | p-MRR: 0.001136
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What were the causes for the Islamic Revolution relative to relations with the U.S.?
+
+📌 指令内容:
+   Relevant documents must discuss the reasons that relations between the Islamic world and the United States have deteriorated.
+
+📌 完整查询 (Query + Instruction):
+   What were the causes for the Islamic Revolution relative to relations with the U.S.? Relevant documents must discuss the reasons that relations between the Islamic world and the United States have deteriorated.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-13222_22
+      原始排名: 922 -> 新排名: 825 | 得分: -0.1052
+   文档ID: FBIS3-13223_11
+      原始排名: 600 -> 新排名: 674 | 得分: 0.1098
+   文档ID: FBIS3-13226_14
+      原始排名: 253 -> 新排名: 258 | 得分: 0.0194
+   文档ID: FBIS3-13428_4
+      原始排名: 554 -> 新排名: 511 | 得分: -0.0776
+   文档ID: FBIS3-13613_4
+      原始排名: 27 -> 新排名: 22 | 得分: -0.1852
+   文档ID: FBIS3-34439_7
+      原始排名: 161 -> 新排名: 224 | 得分: 0.2812
+   文档ID: FBIS3-34619_0
+      原始排名: 74 -> 新排名: 48 | 得分: -0.3514
+   文档ID: FBIS3-34775_0
+      原始排名: 95 -> 新排名: 63 | 得分: -0.3368
+   文档ID: FBIS3-54439_16
+      原始排名: 33 -> 新排名: 35 | 得分: 0.0571
+   文档ID: FBIS4-12674_0
+      原始排名: 2 -> 新排名: 5 | 得分: 0.6000
+
+📌 所有发生相关性变化的文档: ['FBIS3-13222_22', 'FBIS3-13223_11', 'FBIS3-13226_14', 'FBIS3-13428_4', 'FBIS3-13613_4', 'FBIS3-34439_7', 'FBIS3-34619_0', 'FBIS3-34775_0', 'FBIS3-54439_16', 'FBIS4-12674_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 34】查询ID: 632 | p-MRR: 0.005155
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the major tin mining countries in southeast Asia?
+
+📌 指令内容:
+   Relevant document contain information about tin mining in southeast Asia. Countries considered to be in southeast Asia include China, Malaysia, Indonesia, Viet Nam, Burma, Thailand and Laos.
+
+📌 完整查询 (Query + Instruction):
+   What are the major tin mining countries in southeast Asia? Relevant document contain information about tin mining in southeast Asia. Countries considered to be in southeast Asia include China, Malaysia, Indonesia, Viet Nam, Burma, Thailand and Laos.
+
+📌 相关文档变化详情:
+   文档ID: FBIS4-20472_92
+      原始排名: 915 -> 新排名: 893 | 得分: -0.0240
+   文档ID: FBIS4-30124_0
+      原始排名: 183 -> 新排名: 137 | 得分: -0.2514
+   文档ID: FBIS4-44914_11
+      原始排名: 223 -> 新排名: 214 | 得分: -0.0404
+   文档ID: FBIS4-5383_0
+      原始排名: 261 -> 新排名: 185 | 得分: -0.2912
+   文档ID: FT911-3028_0
+      原始排名: 571 -> 新排名: 609 | 得分: 0.0624
+   文档ID: FT921-4835_1
+      原始排名: 505 -> 新排名: 543 | 得分: 0.0700
+   文档ID: FT922-4450_0
+      原始排名: 973 -> 新排名: 976 | 得分: 0.0031
+   文档ID: FT922-5564_0
+      原始排名: 111 -> 新排名: 126 | 得分: 0.1190
+   文档ID: FT922-5642_0
+      原始排名: 782 -> 新排名: 783 | 得分: 0.0013
+   文档ID: FT922-7758_1
+      原始排名: 901 -> 新排名: 907 | 得分: 0.0066
+   文档ID: FT922-8181_0
+      原始排名: 405 -> 新排名: 429 | 得分: 0.0559
+   文档ID: FT922-8667_1
+      原始排名: 671 -> 新排名: 668 | 得分: -0.0045
+   文档ID: FT923-13931_0
+      原始排名: 780 -> 新排名: 785 | 得分: 0.0064
+   文档ID: FT923-3450_2
+      原始排名: 576 -> 新排名: 552 | 得分: -0.0417
+   文档ID: FT923-8113_0
+      原始排名: 113 -> 新排名: 141 | 得分: 0.1986
+   文档ID: FT923-8983_0
+      原始排名: 142 -> 新排名: 149 | 得分: 0.0470
+   文档ID: FT931-345_1
+      原始排名: 182 -> 新排名: 191 | 得分: 0.0471
+   文档ID: FT932-11184_1
+      原始排名: 247 -> 新排名: 259 | 得分: 0.0463
+   文档ID: FT932-2680_0
+      原始排名: 819 -> 新排名: 818 | 得分: -0.0012
+   文档ID: FT932-3859_2
+      原始排名: 733 -> 新排名: 717 | 得分: -0.0218
+   文档ID: FT932-8569_2
+      原始排名: 431 -> 新排名: 434 | 得分: 0.0069
+   文档ID: FT933-12360_2
+      原始排名: 863 -> 新排名: 871 | 得分: 0.0092
+   文档ID: FT933-12460_0
+      原始排名: 719 -> 新排名: 725 | 得分: 0.0083
+   文档ID: FT933-5293_0
+      原始排名: 256 -> 新排名: 296 | 得分: 0.1351
+   文档ID: FT933-5549_0
+      原始排名: 882 -> 新排名: 888 | 得分: 0.0068
+   文档ID: FT933-5995_2
+      原始排名: 502 -> 新排名: 504 | 得分: 0.0040
+   文档ID: FT934-12248_1
+      原始排名: 581 -> 新排名: 584 | 得分: 0.0051
+   文档ID: FT934-12249_0
+      原始排名: 353 -> 新排名: 379 | 得分: 0.0686
+   文档ID: FT934-12498_1
+      原始排名: 7 -> 新排名: 7 | 得分: 0.0000
+   文档ID: FT934-13160_0
+      原始排名: 880 -> 新排名: 864 | 得分: -0.0182
+   文档ID: FT934-13428_0
+      原始排名: 551 -> 新排名: 559 | 得分: 0.0143
+   文档ID: FT941-15450_0
+      原始排名: 815 -> 新排名: 829 | 得分: 0.0169
+   文档ID: FT941-3351_0
+      原始排名: 794 -> 新排名: 755 | 得分: -0.0491
+   文档ID: FT942-12610_1
+      原始排名: 567 -> 新排名: 563 | 得分: -0.0071
+   文档ID: FT942-9756_0
+      原始排名: 372 -> 新排名: 367 | 得分: -0.0134
+   文档ID: FT943-9143_1
+      原始排名: 834 -> 新排名: 837 | 得分: 0.0036
+   文档ID: FT944-10411_0
+      原始排名: 647 -> 新排名: 655 | 得分: 0.0122
+
+📌 所有发生相关性变化的文档: ['FBIS4-20472_92', 'FBIS4-30124_0', 'FBIS4-44914_11', 'FBIS4-5383_0', 'FT911-3028_0', 'FT921-4835_1', 'FT922-4450_0', 'FT922-5564_0', 'FT922-5642_0', 'FT922-7758_1', 'FT922-8181_0', 'FT922-8667_1', 'FT923-13931_0', 'FT923-3450_2', 'FT923-8113_0', 'FT923-8983_0', 'FT931-345_1', 'FT932-11184_1', 'FT932-2680_0', 'FT932-3859_2', 'FT932-8569_2', 'FT933-12360_2', 'FT933-12460_0', 'FT933-5293_0', 'FT933-5549_0', 'FT933-5995_2', 'FT934-12248_1', 'FT934-12249_0', 'FT934-12498_1', 'FT934-13160_0', 'FT934-13428_0', 'FT941-15450_0', 'FT941-3351_0', 'FT942-12610_1', 'FT942-9756_0', 'FT943-9143_1', 'FT944-10411_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 35】查询ID: 652 | p-MRR: 0.006195
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What was the OIC's involvement in the Balkans in 1990-94?
+
+📌 指令内容:
+   Relevant documents describe the role the OIC played in the Balkan region.  Also relevant are documents reflecting the Balkans' players (nations, groups) positions pro or con regarding OIC involvement.
+
+📌 完整查询 (Query + Instruction):
+   What was the OIC's involvement in the Balkans in 1990-94? Relevant documents describe the role the OIC played in the Balkan region.  Also relevant are documents reflecting the Balkans' players (nations, groups) positions pro or con regarding OIC involvement.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-28521_0
+      原始排名: 157 -> 新排名: 223 | 得分: 0.2960
+   文档ID: FBIS3-28810_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: FBIS3-29716_0
+      原始排名: 217 -> 新排名: 263 | 得分: 0.1749
+   文档ID: FBIS3-34183_0
+      原始排名: 642 -> 新排名: 538 | 得分: -0.1620
+   文档ID: FBIS3-34645_0
+      原始排名: 138 -> 新排名: 170 | 得分: 0.1882
+   文档ID: FBIS3-35305_0
+      原始排名: 34 -> 新排名: 48 | 得分: 0.2917
+   文档ID: FBIS3-39993_0
+      原始排名: 358 -> 新排名: 367 | 得分: 0.0245
+   文档ID: FBIS3-48896_0
+      原始排名: 636 -> 新排名: 544 | 得分: -0.1447
+   文档ID: FBIS3-49654_3
+      原始排名: 473 -> 新排名: 433 | 得分: -0.0846
+   文档ID: FBIS3-50383_0
+      原始排名: 284 -> 新排名: 275 | 得分: -0.0317
+   文档ID: FBIS3-53334_0
+      原始排名: 758 -> 新排名: 727 | 得分: -0.0409
+   文档ID: FBIS3-53464_0
+      原始排名: 357 -> 新排名: 337 | 得分: -0.0560
+   文档ID: FBIS3-53465_0
+      原始排名: 240 -> 新排名: 184 | 得分: -0.2333
+   文档ID: FBIS3-53699_0
+      原始排名: 836 -> 新排名: 802 | 得分: -0.0407
+   文档ID: FBIS3-53700_0
+      原始排名: 7 -> 新排名: 10 | 得分: 0.3000
+   文档ID: FBIS3-54502_0
+      原始排名: 180 -> 新排名: 152 | 得分: -0.1556
+   文档ID: FBIS3-54503_0
+      原始排名: 344 -> 新排名: 300 | 得分: -0.1279
+   文档ID: FBIS3-8721_0
+      原始排名: 5 -> 新排名: 6 | 得分: 0.1667
+   文档ID: FBIS4-13183_0
+      原始排名: 435 -> 新排名: 346 | 得分: -0.2046
+   文档ID: FBIS4-13263_2
+      原始排名: 533 -> 新排名: 391 | 得分: -0.2664
+   文档ID: FBIS4-13317_0
+      原始排名: 634 -> 新排名: 624 | 得分: -0.0158
+   文档ID: FBIS4-13598_0
+      原始排名: 258 -> 新排名: 334 | 得分: 0.2275
+   文档ID: FBIS4-13976_0
+      原始排名: 593 -> 新排名: 623 | 得分: 0.0482
+   文档ID: FBIS4-13983_0
+      原始排名: 946 -> 新排名: 938 | 得分: -0.0085
+   文档ID: FBIS4-14006_0
+      原始排名: 816 -> 新排名: 741 | 得分: -0.0919
+   文档ID: FBIS4-52372_0
+      原始排名: 104 -> 新排名: 132 | 得分: 0.2121
+   文档ID: FBIS4-55009_0
+      原始排名: 735 -> 新排名: 688 | 得分: -0.0639
+   文档ID: FBIS4-58470_0
+      原始排名: 21 -> 新排名: 21 | 得分: 0.0000
+   文档ID: FBIS4-9279_0
+      原始排名: 46 -> 新排名: 45 | 得分: -0.0217
+
+📌 所有发生相关性变化的文档: ['FBIS3-28521_0', 'FBIS3-28810_0', 'FBIS3-29716_0', 'FBIS3-34183_0', 'FBIS3-34645_0', 'FBIS3-35305_0', 'FBIS3-39993_0', 'FBIS3-48896_0', 'FBIS3-49654_3', 'FBIS3-50383_0', 'FBIS3-53334_0', 'FBIS3-53464_0', 'FBIS3-53465_0', 'FBIS3-53699_0', 'FBIS3-53700_0', 'FBIS3-54502_0', 'FBIS3-54503_0', 'FBIS3-8721_0', 'FBIS4-13183_0', 'FBIS4-13263_2', 'FBIS4-13317_0', 'FBIS4-13598_0', 'FBIS4-13976_0', 'FBIS4-13983_0', 'FBIS4-14006_0', 'FBIS4-52372_0', 'FBIS4-55009_0', 'FBIS4-58470_0', 'FBIS4-9279_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 36】查询ID: 605 | p-MRR: 0.008642
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the pros and cons of Great Britain's universal health care system?
+
+📌 指令内容:
+   Documents that discuss recommendations for change or list criticisms of the current system are relevant.  Documents about an individual's experience with the health care system in Great Britain are irrelevant unless the document also contains a specific recommendation or criticism.
+
+📌 完整查询 (Query + Instruction):
+   What are the pros and cons of Great Britain's universal health care system? Documents that discuss recommendations for change or list criticisms of the current system are relevant.  Documents about an individual's experience with the health care system in Great Britain are irrelevant unless the document also contains a specific recommendation or criticism.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-22585_0
+      原始排名: 212 -> 新排名: 209 | 得分: -0.0142
+   文档ID: FT911-1088_0
+      原始排名: 360 -> 新排名: 393 | 得分: 0.0840
+   文档ID: FT911-252_0
+      原始排名: 42 -> 新排名: 75 | 得分: 0.4400
+   文档ID: FT911-2956_1
+      原始排名: 112 -> 新排名: 77 | 得分: -0.3125
+   文档ID: FT911-870_0
+      原始排名: 147 -> 新排名: 146 | 得分: -0.0068
+   文档ID: FT921-11809_0
+      原始排名: 762 -> 新排名: 760 | 得分: -0.0026
+   文档ID: FT921-4423_1
+      原始排名: 352 -> 新排名: 351 | 得分: -0.0028
+   文档ID: FT921-704_0
+      原始排名: 807 -> 新排名: 824 | 得分: 0.0206
+   文档ID: FT921-7527_0
+      原始排名: 133 -> 新排名: 130 | 得分: -0.0226
+   文档ID: FT921-7536_1
+      原始排名: 51 -> 新排名: 44 | 得分: -0.1373
+   文档ID: FT921-7582_0
+      原始排名: 319 -> 新排名: 326 | 得分: 0.0215
+   文档ID: FT921-956_1
+      原始排名: 32 -> 新排名: 27 | 得分: -0.1562
+   文档ID: FT921-9578_0
+      原始排名: 379 -> 新排名: 394 | 得分: 0.0381
+   文档ID: FT922-1093_1
+      原始排名: 79 -> 新排名: 72 | 得分: -0.0886
+   文档ID: FT922-12186_6
+      原始排名: 452 -> 新排名: 495 | 得分: 0.0869
+   文档ID: FT922-13837_0
+      原始排名: 978 -> 新排名: 981 | 得分: 0.0031
+   文档ID: FT922-8918_3
+      原始排名: 632 -> 新排名: 599 | 得分: -0.0522
+   文档ID: FT923-14555_1
+      原始排名: 315 -> 新排名: 316 | 得分: 0.0032
+   文档ID: FT923-4512_0
+      原始排名: 555 -> 新排名: 560 | 得分: 0.0089
+   文档ID: FT923-4846_1
+      原始排名: 573 -> 新排名: 587 | 得分: 0.0239
+   文档ID: FT923-6382_1
+      原始排名: 551 -> 新排名: 546 | 得分: -0.0091
+   文档ID: FT924-14438_1
+      原始排名: 664 -> 新排名: 681 | 得分: 0.0250
+   文档ID: FT924-15553_1
+      原始排名: 486 -> 新排名: 473 | 得分: -0.0267
+   文档ID: FT924-16069_0
+      原始排名: 602 -> 新排名: 653 | 得分: 0.0781
+   文档ID: FT924-2065_0
+      原始排名: 48 -> 新排名: 42 | 得分: -0.1250
+   文档ID: FT924-7958_1
+      原始排名: 93 -> 新排名: 104 | 得分: 0.1058
+   文档ID: FT931-11882_0
+      原始排名: 361 -> 新排名: 372 | 得分: 0.0296
+   文档ID: FT931-13918_0
+      原始排名: 942 -> 新排名: 935 | 得分: -0.0074
+   文档ID: FT931-13927_0
+      原始排名: 943 -> 新排名: 936 | 得分: -0.0074
+   文档ID: FT931-6132_0
+      原始排名: 191 -> 新排名: 204 | 得分: 0.0637
+   文档ID: FT931-8666_0
+      原始排名: 61 -> 新排名: 64 | 得分: 0.0469
+   文档ID: FT931-8924_0
+      原始排名: 275 -> 新排名: 279 | 得分: 0.0143
+   文档ID: FT934-3749_0
+      原始排名: 981 -> 新排名: 985 | 得分: 0.0041
+   文档ID: FT941-16914_0
+      原始排名: 158 -> 新排名: 152 | 得分: -0.0380
+   文档ID: FT942-13474_3
+      原始排名: 378 -> 新排名: 387 | 得分: 0.0233
+   文档ID: FT942-14832_0
+      原始排名: 896 -> 新排名: 902 | 得分: 0.0067
+   文档ID: FT943-11624_0
+      原始排名: 130 -> 新排名: 120 | 得分: -0.0769
+   文档ID: FT943-14051_0
+      原始排名: 67 -> 新排名: 65 | 得分: -0.0299
+   文档ID: FT943-15565_0
+      原始排名: 230 -> 新排名: 246 | 得分: 0.0650
+   文档ID: FT943-16394_0
+      原始排名: 347 -> 新排名: 376 | 得分: 0.0771
+   文档ID: FT943-4045_0
+      原始排名: 359 -> 新排名: 397 | 得分: 0.0957
+   文档ID: FT944-6249_1
+      原始排名: 585 -> 新排名: 581 | 得分: -0.0068
+   文档ID: FT944-9377_0
+      原始排名: 269 -> 新排名: 309 | 得分: 0.1294
+
+📌 所有发生相关性变化的文档: ['FBIS3-22585_0', 'FT911-1088_0', 'FT911-252_0', 'FT911-2956_1', 'FT911-870_0', 'FT921-11809_0', 'FT921-4423_1', 'FT921-704_0', 'FT921-7527_0', 'FT921-7536_1', 'FT921-7582_0', 'FT921-956_1', 'FT921-9578_0', 'FT922-1093_1', 'FT922-12186_6', 'FT922-13837_0', 'FT922-8918_3', 'FT923-14555_1', 'FT923-4512_0', 'FT923-4846_1', 'FT923-6382_1', 'FT924-14438_1', 'FT924-15553_1', 'FT924-16069_0', 'FT924-2065_0', 'FT924-7958_1', 'FT931-11882_0', 'FT931-13918_0', 'FT931-13927_0', 'FT931-6132_0', 'FT931-8666_0', 'FT931-8924_0', 'FT934-3749_0', 'FT941-16914_0', 'FT942-13474_3', 'FT942-14832_0', 'FT943-11624_0', 'FT943-14051_0', 'FT943-15565_0', 'FT943-16394_0', 'FT943-4045_0', 'FT944-6249_1', 'FT944-9377_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 37】查询ID: 655 | p-MRR: 0.023256
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How is Attention Deficit Disorder (ADD) diagnosed and treated in young children?
+
+📌 指令内容:
+   Relevant documents specifically address diagnosis and/or treatment of ADD.  Simple definitions and descriptions of ADD are not relevant. Documents that discuss studies that could lead to treatment are relevant.
+
+📌 完整查询 (Query + Instruction):
+   How is Attention Deficit Disorder (ADD) diagnosed and treated in young children? Relevant documents specifically address diagnosis and/or treatment of ADD.  Simple definitions and descriptions of ADD are not relevant. Documents that discuss studies that could lead to treatment are relevant.
+
+📌 相关文档变化详情:
+   文档ID: LA032390-0166_1
+      原始排名: 43 -> 新排名: 37 | 得分: -0.1395
+   文档ID: LA053190-0199_0
+      原始排名: 34 -> 新排名: 43 | 得分: 0.2093
+   文档ID: LA111590-0041_0
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['LA032390-0166_1', 'LA053190-0199_0', 'LA111590-0041_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 38】查询ID: 358 | p-MRR: 0.042031
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What role does blood-alcohol level play in  automobile accident fatalities?
+
+📌 指令内容:
+   Relevant documents must contain information on automobile accidents in which there was a  fatality and the blood-alcohol level of the driver of the vehicle must be identified.
+
+📌 完整查询 (Query + Instruction):
+   What role does blood-alcohol level play in  automobile accident fatalities? Relevant documents must contain information on automobile accidents in which there was a  fatality and the blood-alcohol level of the driver of the vehicle must be identified.
+
+📌 相关文档变化详情:
+   文档ID: LA011089-0095_3
+      原始排名: 5 -> 新排名: 4 | 得分: -0.2000
+   文档ID: LA011289-0070_1
+      原始排名: 1 -> 新排名: 8 | 得分: 0.8750
+   文档ID: LA013089-0044_0
+      原始排名: 106 -> 新排名: 88 | 得分: -0.1698
+   文档ID: LA013089-0100_0
+      原始排名: 109 -> 新排名: 84 | 得分: -0.2294
+   文档ID: LA013189-0058_1
+      原始排名: 779 -> 新排名: 822 | 得分: 0.0523
+   文档ID: LA020289-0091_0
+      原始排名: 22 -> 新排名: 16 | 得分: -0.2727
+   文档ID: LA030889-0034_1
+      原始排名: 4 -> 新排名: 9 | 得分: 0.5556
+   文档ID: LA031889-0124_0
+      原始排名: 6 -> 新排名: 6 | 得分: 0.0000
+   文档ID: LA040689-0027_0
+      原始排名: 11 -> 新排名: 12 | 得分: 0.0833
+   文档ID: LA040789-0022_0
+      原始排名: 16 -> 新排名: 17 | 得分: 0.0588
+   文档ID: LA042590-0030_0
+      原始排名: 35 -> 新排名: 30 | 得分: -0.1429
+   文档ID: LA042889-0069_0
+      原始排名: 62 -> 新排名: 78 | 得分: 0.2051
+   文档ID: LA050389-0065_0
+      原始排名: 49 -> 新排名: 49 | 得分: 0.0000
+   文档ID: LA050389-0106_2
+      原始排名: 388 -> 新排名: 478 | 得分: 0.1883
+   文档ID: LA050990-0062_0
+      原始排名: 13 -> 新排名: 21 | 得分: 0.3810
+   文档ID: LA051889-0059_2
+      原始排名: 12 -> 新排名: 20 | 得分: 0.4000
+   文档ID: LA060189-0147_0
+      原始排名: 47 -> 新排名: 58 | 得分: 0.1897
+   文档ID: LA061490-0039_1
+      原始排名: 27 -> 新排名: 36 | 得分: 0.2500
+   文档ID: LA062290-0055_1
+      原始排名: 510 -> 新排名: 546 | 得分: 0.0659
+   文档ID: LA072789-0134_2
+      原始排名: 212 -> 新排名: 254 | 得分: 0.1654
+   文档ID: LA081189-0092_0
+      原始排名: 20 -> 新排名: 14 | 得分: -0.3000
+   文档ID: LA081789-0031_0
+      原始排名: 61 -> 新排名: 55 | 得分: -0.0984
+   文档ID: LA091389-0008_0
+      原始排名: 38 -> 新排名: 50 | 得分: 0.2400
+   文档ID: LA091689-0078_0
+      原始排名: 9 -> 新排名: 11 | 得分: 0.1818
+   文档ID: LA092789-0026_0
+      原始排名: 21 -> 新排名: 22 | 得分: 0.0455
+   文档ID: LA092789-0070_0
+      原始排名: 467 -> 新排名: 455 | 得分: -0.0257
+   文档ID: LA101090-0043_0
+      原始排名: 2 -> 新排名: 1 | 得分: -0.5000
+   文档ID: LA101290-0077_0
+      原始排名: 8 -> 新排名: 7 | 得分: -0.1250
+   文档ID: LA101989-0014_0
+      原始排名: 7 -> 新排名: 3 | 得分: -0.5714
+   文档ID: LA110890-0049_0
+      原始排名: 10 -> 新排名: 10 | 得分: 0.0000
+   文档ID: LA110989-0177_0
+      原始排名: 67 -> 新排名: 52 | 得分: -0.2239
+   文档ID: LA120789-0024_0
+      原始排名: 58 -> 新排名: 63 | 得分: 0.0794
+   文档ID: LA122389-0007_1
+      原始排名: 43 -> 新排名: 59 | 得分: 0.2712
+   文档ID: LA122389-0013_0
+      原始排名: 24 -> 新排名: 24 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['LA011089-0095_3', 'LA011289-0070_1', 'LA013089-0044_0', 'LA013089-0100_0', 'LA013189-0058_1', 'LA020289-0091_0', 'LA030889-0034_1', 'LA031889-0124_0', 'LA040689-0027_0', 'LA040789-0022_0', 'LA042590-0030_0', 'LA042889-0069_0', 'LA050389-0065_0', 'LA050389-0106_2', 'LA050990-0062_0', 'LA051889-0059_2', 'LA060189-0147_0', 'LA061490-0039_1', 'LA062290-0055_1', 'LA072789-0134_2', 'LA081189-0092_0', 'LA081789-0031_0', 'LA091389-0008_0', 'LA091689-0078_0', 'LA092789-0026_0', 'LA092789-0070_0', 'LA101090-0043_0', 'LA101290-0077_0', 'LA101989-0014_0', 'LA110890-0049_0', 'LA110989-0177_0', 'LA120789-0024_0', 'LA122389-0007_1', 'LA122389-0013_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 39】查询ID: 421 | p-MRR: 0.059911
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How is the disposal of industrial waste being accomplished by industrial management throughout the world?
+
+📌 指令内容:
+   Documents that discuss the disposal, storage, or management of industrial waste---both standard and hazardous---are relevant.  However, documents that discuss disposal or storage of nuclear or radioactive waste, or the illegal shipment or dumping of waste to avoid legal disposal methods are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   How is the disposal of industrial waste being accomplished by industrial management throughout the world? Documents that discuss the disposal, storage, or management of industrial waste---both standard and hazardous---are relevant.  However, documents that discuss disposal or storage of nuclear or radioactive waste, or the illegal shipment or dumping of waste to avoid legal disposal methods are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-41576_0
+      原始排名: 80 -> 新排名: 62 | 得分: -0.2250
+   文档ID: FBIS3-41646_0
+      原始排名: 570 -> 新排名: 596 | 得分: 0.0436
+   文档ID: FBIS3-4717_0
+      原始排名: 337 -> 新排名: 364 | 得分: 0.0742
+   文档ID: FBIS3-60325_0
+      原始排名: 413 -> 新排名: 455 | 得分: 0.0923
+   文档ID: FBIS4-21427_0
+      原始排名: 376 -> 新排名: 373 | 得分: -0.0080
+   文档ID: FBIS4-27645_1
+      原始排名: 262 -> 新排名: 288 | 得分: 0.0903
+   文档ID: FBIS4-44724_1
+      原始排名: 320 -> 新排名: 383 | 得分: 0.1645
+   文档ID: FBIS4-45748_1
+      原始排名: 251 -> 新排名: 268 | 得分: 0.0634
+   文档ID: FBIS4-45750_0
+      原始排名: 343 -> 新排名: 374 | 得分: 0.0829
+   文档ID: FR940118-1-00039_3
+      原始排名: 231 -> 新排名: 239 | 得分: 0.0335
+   文档ID: FR940511-1-00077_2
+      原始排名: 74 -> 新排名: 82 | 得分: 0.0976
+   文档ID: FR941013-1-00068_1
+      原始排名: 38 -> 新排名: 49 | 得分: 0.2245
+   文档ID: FT921-3525_0
+      原始排名: 782 -> 新排名: 798 | 得分: 0.0201
+   文档ID: FT922-1206_0
+      原始排名: 529 -> 新排名: 559 | 得分: 0.0537
+   文档ID: FT923-13224_0
+      原始排名: 751 -> 新排名: 762 | 得分: 0.0144
+   文档ID: FT924-8720_0
+      原始排名: 545 -> 新排名: 512 | 得分: -0.0606
+   文档ID: FT932-2384_2
+      原始排名: 871 -> 新排名: 887 | 得分: 0.0180
+   文档ID: FT934-17401_0
+      原始排名: 485 -> 新排名: 539 | 得分: 0.1002
+   文档ID: FT934-17408_0
+      原始排名: 339 -> 新排名: 398 | 得分: 0.1482
+   文档ID: FT941-428_0
+      原始排名: 716 -> 新排名: 710 | 得分: -0.0084
+   文档ID: FT943-6184_2
+      原始排名: 345 -> 新排名: 380 | 得分: 0.0921
+   文档ID: LA022890-0016_0
+      原始排名: 883 -> 新排名: 892 | 得分: 0.0101
+   文档ID: LA051790-0029_1
+      原始排名: 692 -> 新排名: 728 | 得分: 0.0495
+   文档ID: LA080389-0074_2
+      原始排名: 282 -> 新排名: 330 | 得分: 0.1455
+   文档ID: LA081089-0038_0
+      原始排名: 301 -> 新排名: 357 | 得分: 0.1569
+   文档ID: LA091290-0106_0
+      原始排名: 478 -> 新排名: 522 | 得分: 0.0843
+
+📌 所有发生相关性变化的文档: ['FBIS3-41576_0', 'FBIS3-41646_0', 'FBIS3-4717_0', 'FBIS3-60325_0', 'FBIS4-21427_0', 'FBIS4-27645_1', 'FBIS4-44724_1', 'FBIS4-45748_1', 'FBIS4-45750_0', 'FR940118-1-00039_3', 'FR940511-1-00077_2', 'FR941013-1-00068_1', 'FT921-3525_0', 'FT922-1206_0', 'FT923-13224_0', 'FT924-8720_0', 'FT932-2384_2', 'FT934-17401_0', 'FT934-17408_0', 'FT941-428_0', 'FT943-6184_2', 'LA022890-0016_0', 'LA051790-0029_1', 'LA080389-0074_2', 'LA081089-0038_0', 'LA091290-0106_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 40】查询ID: 373 | p-MRR: 0.059962
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify documents that discuss the concerns of the United States regarding the export of  encryption equipment.
+
+📌 指令内容:
+   Documents that merely mention the name of a company or group that produces encryption equipment but does not mention the exportation and/or commercial exploitation of the encryption equipment are not relevant.  Documents  which refer to governmental access into the encryption  systems for the purposes of counter-intelligence or  anti-crime activities are relevant.
+
+📌 完整查询 (Query + Instruction):
+   Identify documents that discuss the concerns of the United States regarding the export of  encryption equipment. Documents that merely mention the name of a company or group that produces encryption equipment but does not mention the exportation and/or commercial exploitation of the encryption equipment are not relevant.  Documents  which refer to governmental access into the encryption  systems for the purposes of counter-intelligence or  anti-crime activities are relevant.
+
+📌 相关文档变化详情:
+   文档ID: FR940323-2-00145_2
+      原始排名: 952 -> 新排名: 939 | 得分: -0.0137
+   文档ID: FR940513-2-00063_2
+      原始排名: 12 -> 新排名: 12 | 得分: 0.0000
+   文档ID: FR940516-0-00056_0
+      原始排名: 134 -> 新排名: 136 | 得分: 0.0147
+   文档ID: FR940617-2-00008_0
+      原始排名: 155 -> 新排名: 123 | 得分: -0.2065
+   文档ID: FR940902-0-00008_0
+      原始排名: 3 -> 新排名: 10 | 得分: 0.7000
+   文档ID: FR940902-0-00009_1
+      原始排名: 28 -> 新排名: 53 | 得分: 0.4717
+   文档ID: FR940902-0-00010_1
+      原始排名: 327 -> 新排名: 383 | 得分: 0.1462
+   文档ID: FR941019-2-00004_0
+      原始排名: 68 -> 新排名: 55 | 得分: -0.1912
+   文档ID: FT922-2528_0
+      原始排名: 359 -> 新排名: 334 | 得分: -0.0696
+   文档ID: FT923-4778_0
+      原始排名: 915 -> 新排名: 892 | 得分: -0.0251
+   文档ID: FT933-265_0
+      原始排名: 496 -> 新排名: 458 | 得分: -0.0766
+   文档ID: FT933-6518_0
+      原始排名: 244 -> 新排名: 199 | 得分: -0.1844
+   文档ID: FT941-10834_0
+      原始排名: 228 -> 新排名: 292 | 得分: 0.2192
+   文档ID: FT941-3295_1
+      原始排名: 63 -> 新排名: 67 | 得分: 0.0597
+   文档ID: FT941-7374_0
+      原始排名: 566 -> 新排名: 525 | 得分: -0.0724
+   文档ID: FT942-16368_0
+      原始排名: 130 -> 新排名: 167 | 得分: 0.2216
+   文档ID: FT943-12969_0
+      原始排名: 674 -> 新排名: 617 | 得分: -0.0846
+   文档ID: FT943-12981_0
+      原始排名: 52 -> 新排名: 51 | 得分: -0.0192
+   文档ID: FT943-5307_2
+      原始排名: 4 -> 新排名: 11 | 得分: 0.6364
+   文档ID: LA060790-0163_3
+      原始排名: 107 -> 新排名: 80 | 得分: -0.2523
+   文档ID: LA061990-0020_2
+      原始排名: 252 -> 新排名: 250 | 得分: -0.0079
+   文档ID: LA062490-0162_1
+      原始排名: 479 -> 新排名: 506 | 得分: 0.0534
+
+📌 所有发生相关性变化的文档: ['FR940323-2-00145_2', 'FR940513-2-00063_2', 'FR940516-0-00056_0', 'FR940617-2-00008_0', 'FR940902-0-00008_0', 'FR940902-0-00009_1', 'FR940902-0-00010_1', 'FR941019-2-00004_0', 'FT922-2528_0', 'FT923-4778_0', 'FT933-265_0', 'FT933-6518_0', 'FT941-10834_0', 'FT941-3295_1', 'FT941-7374_0', 'FT942-16368_0', 'FT943-12969_0', 'FT943-12981_0', 'FT943-5307_2', 'LA060790-0163_3', 'LA061990-0020_2', 'LA062490-0162_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 41】查询ID: 686 | p-MRR: 0.068328
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the negative impacts of Argentina's policy of pegging their peso to the U.S. dollar?
+
+📌 指令内容:
+   Documents must identify problems that have been created due to the pegging of the peso to the dollar. Documents that mention pegging but do not identify problems in the Argentine economy are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What are the negative impacts of Argentina's policy of pegging their peso to the U.S. dollar? Documents must identify problems that have been created due to the pegging of the peso to the dollar. Documents that mention pegging but do not identify problems in the Argentine economy are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-51035_1
+      原始排名: 113 -> 新排名: 116 | 得分: 0.0259
+   文档ID: FBIS4-34797_0
+      原始排名: 102 -> 新排名: 111 | 得分: 0.0811
+   文档ID: FBIS4-57729_1
+      原始排名: 142 -> 新排名: 161 | 得分: 0.1180
+   文档ID: FT921-10279_0
+      原始排名: 6 -> 新排名: 6 | 得分: 0.0000
+   文档ID: FT921-5274_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: FT921-9160_0
+      原始排名: 690 -> 新排名: 741 | 得分: 0.0688
+   文档ID: FT924-1431_0
+      原始排名: 8 -> 新排名: 10 | 得分: 0.2000
+   文档ID: FT924-7163_0
+      原始排名: 21 -> 新排名: 22 | 得分: 0.0455
+   文档ID: FT931-16216_0
+      原始排名: 378 -> 新排名: 386 | 得分: 0.0207
+   文档ID: FT931-16819_0
+      原始排名: 49 -> 新排名: 61 | 得分: 0.1967
+   文档ID: FT932-6573_0
+      原始排名: 97 -> 新排名: 104 | 得分: 0.0673
+   文档ID: FT944-727_0
+      原始排名: 185 -> 新排名: 196 | 得分: 0.0561
+   文档ID: LA121989-0118_0
+      原始排名: 852 -> 新排名: 859 | 得分: 0.0081
+
+📌 所有发生相关性变化的文档: ['FBIS3-51035_1', 'FBIS4-34797_0', 'FBIS4-57729_1', 'FT921-10279_0', 'FT921-5274_0', 'FT921-9160_0', 'FT924-1431_0', 'FT924-7163_0', 'FT931-16216_0', 'FT931-16819_0', 'FT932-6573_0', 'FT944-727_0', 'LA121989-0118_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 42】查询ID: 309 | p-MRR: 0.075613
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Evidence that rap music has a negative effect on young people.
+
+📌 指令内容:
+   The lyrics to Rap music are replete with words which degrade women, glorify drug abuse, the killing of policemen and even romanticize suicide.  A crusade was begun a few years ago in which the music industry was asked "to clean up its act"  because of the detrimental effect it was having upon teenagers.   There were some instances in which teenagers, who demonstrated  no sign of internal strife, committed suicide.  The only clues to their self-destruction were notes found near the bodies with lyrics from Rap songs relating to suicide.  A relevant item  should include any psychological study, evidence, poll,  documentation, or psychological opinion that Rap music has a  deleterious effect upon young people and has led to a discernible change in personality, life style, crime, alteration of personality or any other negative effect upon the psyche, mores, and culture of teenagers.
+
+📌 完整查询 (Query + Instruction):
+   Evidence that rap music has a negative effect on young people. The lyrics to Rap music are replete with words which degrade women, glorify drug abuse, the killing of policemen and even romanticize suicide.  A crusade was begun a few years ago in which the music industry was asked "to clean up its act"  because of the detrimental effect it was having upon teenagers.   There were some instances in which teenagers, who demonstrated  no sign of internal strife, committed suicide.  The only clues to their self-destruction were notes found near the bodies with lyrics from Rap songs relating to suicide.  A relevant item  should include any psychological study, evidence, poll,  documentation, or psychological opinion that Rap music has a  deleterious effect upon young people and has led to a discernible change in personality, life style, crime, alteration of personality or any other negative effect upon the psyche, mores, and culture of teenagers.
+
+📌 相关文档变化详情:
+   文档ID: LA082590-0096_4
+      原始排名: 6 -> 新排名: 7 | 得分: 0.1429
+   文档ID: LA122390-0022_4
+      原始排名: 948 -> 新排名: 956 | 得分: 0.0084
+
+📌 所有发生相关性变化的文档: ['LA082590-0096_4', 'LA122390-0022_4']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 43】查询ID: 663 | p-MRR: 0.088607
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What were the health effects of Vietnam veterans' exposure to Agent Orange?
+
+📌 指令内容:
+   Only U.S. veterans' outcomes are relevant.  Information on studies without results included are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What were the health effects of Vietnam veterans' exposure to Agent Orange? Only U.S. veterans' outcomes are relevant.  Information on studies without results included are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: LA050989-0122_1
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+   文档ID: LA060989-0123_0
+      原始排名: 22 -> 新排名: 25 | 得分: 0.1200
+   文档ID: LA071889-0157_0
+      原始排名: 165 -> 新排名: 151 | 得分: -0.0848
+   文档ID: LA111689-0041_0
+      原始排名: 113 -> 新排名: 166 | 得分: 0.3193
+
+📌 所有发生相关性变化的文档: ['LA050989-0122_1', 'LA060989-0123_0', 'LA071889-0157_0', 'LA111689-0041_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 44】查询ID: 308 | p-MRR: 0.113272
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the advantages and/or disadvantages of tooth implants?
+
+📌 指令内容:
+   A tooth replacement procedure, begun in the 1960s by Doctor Branemark, is becoming more widely used today.  It involves  the replacement of a lost tooth/teeth by an implantation  process which secures the fabricated tooth to a titanium post with an adhesive resulting in a stable and sturdy denture  almost like the original.  A relevant document will include  any clinical experiment, report, study, paper, or medical  discussion which describes the advantages or disadvantages of  tooth implant(s), conditions under which such a procedure is  favorable, denture comfort and function compared to false teeth,  bridge, or plate and comparative cost differential.
+
+📌 完整查询 (Query + Instruction):
+   What are the advantages and/or disadvantages of tooth implants? A tooth replacement procedure, begun in the 1960s by Doctor Branemark, is becoming more widely used today.  It involves  the replacement of a lost tooth/teeth by an implantation  process which secures the fabricated tooth to a titanium post with an adhesive resulting in a stable and sturdy denture  almost like the original.  A relevant document will include  any clinical experiment, report, study, paper, or medical  discussion which describes the advantages or disadvantages of  tooth implant(s), conditions under which such a procedure is  favorable, denture comfort and function compared to false teeth,  bridge, or plate and comparative cost differential.
+
+📌 相关文档变化详情:
+   文档ID: FT933-5179_0
+      原始排名: 18 -> 新排名: 19 | 得分: 0.0526
+   文档ID: FT944-17268_1
+      原始排名: 19 -> 新排名: 23 | 得分: 0.1739
+
+📌 所有发生相关性变化的文档: ['FT933-5179_0', 'FT944-17268_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 45】查询ID: 642 | p-MRR: 0.140974
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What happened to protesters arrested in connection with the Tiananmen Square demonstrations in Beijing in the spring of 1989?
+
+📌 指令内容:
+   Documents must be attributed to the Tiananmen Square demonstrations to be relevant: documents about protests elsewhere in response to Tiananmen Square are not relevant.  Specific names, etc. are not necessary for a document to be relevant.
+
+📌 完整查询 (Query + Instruction):
+   What happened to protesters arrested in connection with the Tiananmen Square demonstrations in Beijing in the spring of 1989? Documents must be attributed to the Tiananmen Square demonstrations to be relevant: documents about protests elsewhere in response to Tiananmen Square are not relevant.  Specific names, etc. are not necessary for a document to be relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-1941_0
+      原始排名: 70 -> 新排名: 85 | 得分: 0.1765
+   文档ID: FBIS3-2738_0
+      原始排名: 25 -> 新排名: 30 | 得分: 0.1667
+   文档ID: FBIS3-44870_0
+      原始排名: 117 -> 新排名: 142 | 得分: 0.1761
+   文档ID: FBIS3-45274_0
+      原始排名: 87 -> 新排名: 106 | 得分: 0.1792
+   文档ID: FBIS3-45741_0
+      原始排名: 79 -> 新排名: 97 | 得分: 0.1856
+   文档ID: FBIS4-42362_0
+      原始排名: 204 -> 新排名: 255 | 得分: 0.2000
+   文档ID: FBIS4-49925_0
+      原始排名: 77 -> 新排名: 92 | 得分: 0.1630
+   文档ID: FBIS4-65665_1
+      原始排名: 68 -> 新排名: 87 | 得分: 0.2184
+   文档ID: FT924-5589_0
+      原始排名: 402 -> 新排名: 421 | 得分: 0.0451
+   文档ID: FT933-6350_0
+      原始排名: 501 -> 新排名: 525 | 得分: 0.0457
+   文档ID: FT934-7668_2
+      原始排名: 120 -> 新排名: 147 | 得分: 0.1837
+   文档ID: FT942-13543_0
+      原始排名: 262 -> 新排名: 318 | 得分: 0.1761
+   文档ID: LA062189-0044_0
+      原始排名: 622 -> 新排名: 660 | 得分: 0.0576
+   文档ID: LA062589-0191_0
+      原始排名: 1000 -> 新排名: 1000 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['FBIS3-1941_0', 'FBIS3-2738_0', 'FBIS3-44870_0', 'FBIS3-45274_0', 'FBIS3-45741_0', 'FBIS4-42362_0', 'FBIS4-49925_0', 'FBIS4-65665_1', 'FT924-5589_0', 'FT933-6350_0', 'FT934-7668_2', 'FT942-13543_0', 'LA062189-0044_0', 'LA062589-0191_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 46】查询ID: 670 | p-MRR: 0.149631
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Why is there such apathy in U.S. elections?
+
+📌 指令内容:
+   Relevant documents must provide reasons for poor turnout at U.S. elections.
+
+📌 完整查询 (Query + Instruction):
+   Why is there such apathy in U.S. elections? Relevant documents must provide reasons for poor turnout at U.S. elections.
+
+📌 相关文档变化详情:
+   文档ID: FT922-12817_1
+      原始排名: 180 -> 新排名: 231 | 得分: 0.2208
+   文档ID: FT944-15616_0
+      原始排名: 245 -> 新排名: 409 | 得分: 0.4010
+   文档ID: LA042489-0014_1
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: LA060889-0135_0
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+   文档ID: LA101890-0011_1
+      原始排名: 546 -> 新排名: 625 | 得分: 0.1264
+
+📌 所有发生相关性变化的文档: ['FT922-12817_1', 'FT944-15616_0', 'LA042489-0014_1', 'LA060889-0135_0', 'LA101890-0011_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 47】查询ID: 661 | p-MRR: 0.165954
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are the causes and treatments for melanoma?
+
+📌 指令内容:
+   Relevant documents describe causes, diagnosis, and/or treatment of melanoma.  Articles on research being conducted that could lead to diagnosis or treatment are also relevant.  Articles on other diseases, including other skin cancers, are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What are the causes and treatments for melanoma? Relevant documents describe causes, diagnosis, and/or treatment of melanoma.  Articles on research being conducted that could lead to diagnosis or treatment are also relevant.  Articles on other diseases, including other skin cancers, are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS4-67639_1
+      原始排名: 21 -> 新排名: 52 | 得分: 0.5962
+   文档ID: FBIS4-67640_1
+      原始排名: 575 -> 新排名: 575 | 得分: 0.0000
+   文档ID: FR940124-1-00010_1
+      原始排名: 477 -> 新排名: 481 | 得分: 0.0083
+   文档ID: FT923-10771_0
+      原始排名: 526 -> 新排名: 562 | 得分: 0.0641
+   文档ID: FT923-12060_2
+      原始排名: 159 -> 新排名: 192 | 得分: 0.1719
+   文档ID: FT931-6595_0
+      原始排名: 34 -> 新排名: 40 | 得分: 0.1500
+   文档ID: FT931-8183_0
+      原始排名: 840 -> 新排名: 806 | 得分: -0.0405
+   文档ID: FT933-10912_0
+      原始排名: 93 -> 新排名: 133 | 得分: 0.3008
+   文档ID: FT941-1421_0
+      原始排名: 290 -> 新排名: 363 | 得分: 0.2011
+   文档ID: FT944-10864_0
+      原始排名: 129 -> 新排名: 202 | 得分: 0.3614
+   文档ID: FT944-3522_0
+      原始排名: 115 -> 新排名: 229 | 得分: 0.4978
+   文档ID: LA010590-0158_5
+      原始排名: 551 -> 新排名: 574 | 得分: 0.0401
+   文档ID: LA011589-0120_0
+      原始排名: 80 -> 新排名: 191 | 得分: 0.5812
+   文档ID: LA041689-0006_1
+      原始排名: 330 -> 新排名: 413 | 得分: 0.2010
+   文档ID: LA042390-0089_0
+      原始排名: 18 -> 新排名: 10 | 得分: -0.4444
+   文档ID: LA042990-0188_2
+      原始排名: 431 -> 新排名: 470 | 得分: 0.0830
+   文档ID: LA050790-0059_2
+      原始排名: 166 -> 新排名: 224 | 得分: 0.2589
+   文档ID: LA051789-0093_0
+      原始排名: 416 -> 新排名: 492 | 得分: 0.1545
+   文档ID: LA052590-0118_3
+      原始排名: 752 -> 新排名: 799 | 得分: 0.0588
+   文档ID: LA052989-0031_0
+      原始排名: 183 -> 新排名: 246 | 得分: 0.2561
+   文档ID: LA070389-0031_3
+      原始排名: 453 -> 新排名: 502 | 得分: 0.0976
+   文档ID: LA080190-0001_1
+      原始排名: 6 -> 新排名: 7 | 得分: 0.1429
+   文档ID: LA081390-0075_1
+      原始排名: 26 -> 新排名: 63 | 得分: 0.5873
+   文档ID: LA082589-0056_4
+      原始排名: 423 -> 新排名: 455 | 得分: 0.0703
+   文档ID: LA102989-0050_1
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: LA111990-0034_0
+      原始排名: 12 -> 新排名: 11 | 得分: -0.0833
+
+📌 所有发生相关性变化的文档: ['FBIS4-67639_1', 'FBIS4-67640_1', 'FR940124-1-00010_1', 'FT923-10771_0', 'FT923-12060_2', 'FT931-6595_0', 'FT931-8183_0', 'FT933-10912_0', 'FT941-1421_0', 'FT944-10864_0', 'FT944-3522_0', 'LA010590-0158_5', 'LA011589-0120_0', 'LA041689-0006_1', 'LA042390-0089_0', 'LA042990-0188_2', 'LA050790-0059_2', 'LA051789-0093_0', 'LA052590-0118_3', 'LA052989-0031_0', 'LA070389-0031_3', 'LA080190-0001_1', 'LA081390-0075_1', 'LA082589-0056_4', 'LA102989-0050_1', 'LA111990-0034_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 48】查询ID: 633 | p-MRR: 0.186579
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is the history of the Welsh devolution movement?
+
+📌 指令内容:
+   Relevant documents contain information about some aspect of the Welsh devolution movement.
+
+📌 完整查询 (Query + Instruction):
+   What is the history of the Welsh devolution movement? Relevant documents contain information about some aspect of the Welsh devolution movement.
+
+📌 相关文档变化详情:
+   文档ID: FT921-2060_0
+      原始排名: 117 -> 新排名: 145 | 得分: 0.1931
+   文档ID: FT921-5498_0
+      原始排名: 412 -> 新排名: 498 | 得分: 0.1727
+   文档ID: FT922-14828_0
+      原始排名: 484 -> 新排名: 483 | 得分: -0.0021
+   文档ID: FT923-2677_3
+      原始排名: 192 -> 新排名: 240 | 得分: 0.2000
+   文档ID: FT934-11493_0
+      原始排名: 63 -> 新排名: 66 | 得分: 0.0455
+   文档ID: FT934-7576_0
+      原始排名: 244 -> 新排名: 377 | 得分: 0.3528
+   文档ID: FT934-7579_0
+      原始排名: 303 -> 新排名: 429 | 得分: 0.2937
+   文档ID: FT941-10079_0
+      原始排名: 813 -> 新排名: 796 | 得分: -0.0209
+   文档ID: FT943-240_0
+      原始排名: 400 -> 新排名: 422 | 得分: 0.0521
+   文档ID: FT944-2417_0
+      原始排名: 65 -> 新排名: 104 | 得分: 0.3750
+   文档ID: FT944-2579_0
+      原始排名: 64 -> 新排名: 105 | 得分: 0.3905
+
+📌 所有发生相关性变化的文档: ['FT921-2060_0', 'FT921-5498_0', 'FT922-14828_0', 'FT923-2677_3', 'FT934-11493_0', 'FT934-7576_0', 'FT934-7579_0', 'FT941-10079_0', 'FT943-240_0', 'FT944-2417_0', 'FT944-2579_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 49】查询ID: 697 | p-MRR: 0.214432
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What are working conditions and pay for U.S. air traffic controllers?
+
+📌 指令内容:
+   Relevant documents tell something about working conditions or pay for American controllers.  Documents about foreign controllers or an individual controller are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What are working conditions and pay for U.S. air traffic controllers? Relevant documents tell something about working conditions or pay for American controllers.  Documents about foreign controllers or an individual controller are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FR940302-1-00031_4
+      原始排名: 488 -> 新排名: 559 | 得分: 0.1270
+   文档ID: FR940418-1-00007_2
+      原始排名: 172 -> 新排名: 175 | 得分: 0.0171
+   文档ID: FR940429-1-00011_1
+      原始排名: 200 -> 新排名: 229 | 得分: 0.1266
+   文档ID: FR940825-1-00008_1
+      原始排名: 149 -> 新排名: 153 | 得分: 0.0261
+   文档ID: FR940825-1-00145_1
+      原始排名: 389 -> 新排名: 497 | 得分: 0.2173
+   文档ID: FR940825-1-00146_1
+      原始排名: 938 -> 新排名: 948 | 得分: 0.0105
+   文档ID: FT922-13947_2
+      原始排名: 75 -> 新排名: 84 | 得分: 0.1071
+   文档ID: FT931-9280_0
+      原始排名: 144 -> 新排名: 160 | 得分: 0.1000
+   文档ID: FT931-9288_0
+      原始排名: 150 -> 新排名: 169 | 得分: 0.1124
+   文档ID: FT942-4327_0
+      原始排名: 89 -> 新排名: 150 | 得分: 0.4067
+   文档ID: FT943-9077_2
+      原始排名: 124 -> 新排名: 206 | 得分: 0.3981
+   文档ID: FT943-9113_1
+      原始排名: 137 -> 新排名: 210 | 得分: 0.3476
+   文档ID: LA030789-0098_1
+      原始排名: 121 -> 新排名: 157 | 得分: 0.2293
+   文档ID: LA031089-0073_0
+      原始排名: 25 -> 新排名: 32 | 得分: 0.2188
+   文档ID: LA040990-0061_0
+      原始排名: 450 -> 新排名: 575 | 得分: 0.2174
+   文档ID: LA041689-0217_0
+      原始排名: 68 -> 新排名: 93 | 得分: 0.2688
+   文档ID: LA042990-0022_3
+      原始排名: 413 -> 新排名: 574 | 得分: 0.2805
+   文档ID: LA043090-0116_0
+      原始排名: 23 -> 新排名: 36 | 得分: 0.3611
+   文档ID: LA051789-0058_2
+      原始排名: 223 -> 新排名: 264 | 得分: 0.1553
+   文档ID: LA052589-0119_1
+      原始排名: 3 -> 新排名: 5 | 得分: 0.4000
+   文档ID: LA052689-0090_3
+      原始排名: 79 -> 新排名: 121 | 得分: 0.3471
+   文档ID: LA052689-0137_2
+      原始排名: 33 -> 新排名: 48 | 得分: 0.3125
+   文档ID: LA061989-0099_0
+      原始排名: 16 -> 新排名: 25 | 得分: 0.3600
+   文档ID: LA070790-0009_0
+      原始排名: 160 -> 新排名: 195 | 得分: 0.1795
+   文档ID: LA071289-0042_1
+      原始排名: 4 -> 新排名: 6 | 得分: 0.3333
+   文档ID: LA091689-0065_0
+      原始排名: 29 -> 新排名: 43 | 得分: 0.3256
+   文档ID: LA091690-0231_1
+      原始排名: 990 -> 新排名: 990 | 得分: 0.0000
+   文档ID: LA092190-0121_0
+      原始排名: 547 -> 新排名: 628 | 得分: 0.1290
+   文档ID: LA092990-0081_0
+      原始排名: 48 -> 新排名: 63 | 得分: 0.2381
+   文档ID: LA101090-0125_2
+      原始排名: 115 -> 新排名: 125 | 得分: 0.0800
+
+📌 所有发生相关性变化的文档: ['FR940302-1-00031_4', 'FR940418-1-00007_2', 'FR940429-1-00011_1', 'FR940825-1-00008_1', 'FR940825-1-00145_1', 'FR940825-1-00146_1', 'FT922-13947_2', 'FT931-9280_0', 'FT931-9288_0', 'FT942-4327_0', 'FT943-9077_2', 'FT943-9113_1', 'LA030789-0098_1', 'LA031089-0073_0', 'LA040990-0061_0', 'LA041689-0217_0', 'LA042990-0022_3', 'LA043090-0116_0', 'LA051789-0058_2', 'LA052589-0119_1', 'LA052689-0090_3', 'LA052689-0137_2', 'LA061989-0099_0', 'LA070790-0009_0', 'LA071289-0042_1', 'LA091689-0065_0', 'LA091690-0231_1', 'LA092190-0121_0', 'LA092990-0081_0', 'LA101090-0125_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 50】查询ID: 668 | p-MRR: 0.216652
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is the relationship between poverty and disease?
+
+📌 指令内容:
+   Documents that do not link poverty to diseases directly but mention a link between poverty and health care are relevant. Documents that simply mention poverty and disease but do not draw a connection are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What is the relationship between poverty and disease? Documents that do not link poverty to diseases directly but mention a link between poverty and health care are relevant. Documents that simply mention poverty and disease but do not draw a connection are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: FBIS3-11179_3
+      原始排名: 656 -> 新排名: 700 | 得分: 0.0629
+   文档ID: FBIS3-21668_4
+      原始排名: 26 -> 新排名: 50 | 得分: 0.4800
+   文档ID: FBIS3-22474_0
+      原始排名: 74 -> 新排名: 134 | 得分: 0.4478
+   文档ID: FBIS3-22481_0
+      原始排名: 45 -> 新排名: 79 | 得分: 0.4304
+   文档ID: FBIS3-41833_0
+      原始排名: 3 -> 新排名: 1 | 得分: -0.6667
+   文档ID: FBIS3-50615_0
+      原始排名: 8 -> 新排名: 12 | 得分: 0.3333
+   文档ID: FBIS4-33007_1
+      原始排名: 204 -> 新排名: 278 | 得分: 0.2662
+   文档ID: FBIS4-45864_0
+      原始排名: 179 -> 新排名: 144 | 得分: -0.1955
+   文档ID: FBIS4-50959_0
+      原始排名: 66 -> 新排名: 80 | 得分: 0.1750
+   文档ID: FBIS4-56381_1
+      原始排名: 662 -> 新排名: 651 | 得分: -0.0166
+   文档ID: FBIS4-56390_1
+      原始排名: 102 -> 新排名: 147 | 得分: 0.3061
+   文档ID: FR940128-2-00144_3
+      原始排名: 12 -> 新排名: 15 | 得分: 0.2000
+   文档ID: FT923-14112_0
+      原始排名: 1 -> 新排名: 3 | 得分: 0.6667
+   文档ID: FT924-8051_0
+      原始排名: 63 -> 新排名: 90 | 得分: 0.3000
+   文档ID: FT924-8064_1
+      原始排名: 41 -> 新排名: 54 | 得分: 0.2407
+   文档ID: FT931-12199_0
+      原始排名: 319 -> 新排名: 470 | 得分: 0.3213
+   文档ID: FT932-1927_0
+      原始排名: 425 -> 新排名: 431 | 得分: 0.0139
+   文档ID: FT933-7438_0
+      原始排名: 549 -> 新排名: 691 | 得分: 0.2055
+   文档ID: FT943-5083_0
+      原始排名: 10 -> 新排名: 22 | 得分: 0.5455
+
+📌 所有发生相关性变化的文档: ['FBIS3-11179_3', 'FBIS3-21668_4', 'FBIS3-22474_0', 'FBIS3-22481_0', 'FBIS3-41833_0', 'FBIS3-50615_0', 'FBIS4-33007_1', 'FBIS4-45864_0', 'FBIS4-50959_0', 'FBIS4-56381_1', 'FBIS4-56390_1', 'FR940128-2-00144_3', 'FT923-14112_0', 'FT924-8051_0', 'FT924-8064_1', 'FT931-12199_0', 'FT932-1927_0', 'FT933-7438_0', 'FT943-5083_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 51】查询ID: 678 | p-MRR: 0.227350
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find information on joint/shared custody's impact on children.
+
+📌 指令内容:
+   Both economic and emotional impacts on children of divorce are relevant.  Impact on parents is not relevant unless directly connected to the children involved.
+
+📌 完整查询 (Query + Instruction):
+   Find information on joint/shared custody's impact on children. Both economic and emotional impacts on children of divorce are relevant.  Impact on parents is not relevant unless directly connected to the children involved.
+
+📌 相关文档变化详情:
+   文档ID: LA030290-0149_4
+      原始排名: 407 -> 新排名: 462 | 得分: 0.1190
+   文档ID: LA030390-0154_3
+      原始排名: 212 -> 新排名: 305 | 得分: 0.3049
+   文档ID: LA031690-0158_0
+      原始排名: 26 -> 新排名: 35 | 得分: 0.2571
+   文档ID: LA040989-0151_1
+      原始排名: 42 -> 新排名: 47 | 得分: 0.1064
+   文档ID: LA042790-0136_0
+      原始排名: 91 -> 新排名: 186 | 得分: 0.5108
+   文档ID: LA071490-0054_1
+      原始排名: 102 -> 新排名: 148 | 得分: 0.3108
+   文档ID: LA071590-0106_1
+      原始排名: 978 -> 新排名: 979 | 得分: 0.0010
+   文档ID: LA092790-0022_0
+      原始排名: 324 -> 新排名: 443 | 得分: 0.2686
+   文档ID: LA102889-0160_0
+      原始排名: 168 -> 新排名: 209 | 得分: 0.1962
+   文档ID: LA110389-0049_0
+      原始排名: 117 -> 新排名: 146 | 得分: 0.1986
+
+📌 所有发生相关性变化的文档: ['LA030290-0149_4', 'LA030390-0154_3', 'LA031690-0158_0', 'LA040989-0151_1', 'LA042790-0136_0', 'LA071490-0054_1', 'LA071590-0106_1', 'LA092790-0022_0', 'LA102889-0160_0', 'LA110389-0049_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 52】查询ID: 604 | p-MRR: 0.386446
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What evidence is there to link tick-borne Lyme disease with arthritis?
+
+📌 指令内容:
+   Documents providing evidence to support or refute the connection between Lyme disease and arthritis are relevant.  Documents discussing Lyme disease and inflammatory joint disorder are also relevant.
+
+📌 完整查询 (Query + Instruction):
+   What evidence is there to link tick-borne Lyme disease with arthritis? Documents providing evidence to support or refute the connection between Lyme disease and arthritis are relevant.  Documents discussing Lyme disease and inflammatory joint disorder are also relevant.
+
+📌 相关文档变化详情:
+   文档ID: LA073090-0058_0
+      原始排名: 3 -> 新排名: 7 | 得分: 0.5714
+   文档ID: LA091890-0087_3
+      原始排名: 936 -> 新排名: 938 | 得分: 0.0021
+   文档ID: LA111390-0102_3
+      原始排名: 7 -> 新排名: 9 | 得分: 0.2222
+   文档ID: LA112789-0001_1
+      原始排名: 1 -> 新排名: 4 | 得分: 0.7500
+
+📌 所有发生相关性变化的文档: ['LA073090-0058_0', 'LA091890-0087_3', 'LA111390-0102_3', 'LA112789-0001_1']
+
+
+----------------------------------------------------------------------------------------------------
+总计     52           平均 p-MRR: -0.048657
+====================================================================================================

@@ -1,0 +1,4336 @@
+{
+  "984": {
+    "rank": 1,
+    "pmrr": -0.33974358974358976,
+    "query": "Lidl grocery store begins operations in US.",
+    "instruction": "The German discount grocery chain began operations in northern Virginia in 2015.  Of interest are the grocer's plans to expand and compete with traditional grocery stores.",
+    "full_text": "Lidl grocery store begins operations in US. The German discount grocery chain began operations in northern Virginia in 2015.  Of interest are the grocer's plans to expand and compete with traditional grocery stores.",
+    "doc_details": [
+      {
+        "doc_id": "30ce3e0e-3fd2-11e7-adba-394ee67a7582_3",
+        "original_rank": 26,
+        "new_rank": 21,
+        "score": -0.19230769230769218
+      },
+      {
+        "doc_id": "bd9d66fb2e1f5607712c7b506f3d72ca_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "ca253e85398d4f5e8b669b22b4d074db_0",
+        "original_rank": 3,
+        "new_rank": 1,
+        "score": -0.6666666666666667
+      },
+      {
+        "doc_id": "f0bb03abd8ed6a1d18cd65238d94cd1a_4",
+        "original_rank": 8,
+        "new_rank": 4,
+        "score": -0.5
+      }
+    ],
+    "debug_info": {}
+  },
+  "946": {
+    "rank": 2,
+    "pmrr": -0.2510339015044199,
+    "query": "The site of a murder in northwest DC is for sale.",
+    "instruction": "The upper northwest DC mansion where three members of the Savopoulos  family and their housekeeper Figueroa were murdered in October 2015 is for sale.  Describe the size of the mansion, its condition, the sale price, the listing agent, and the buyer.  Also of interest is whether the buyer moved into the house as is or completely refurbished the residence.  Sale of comparable homes on Woodland Drive NW are pertinent. Details of the murder and subsequent trial are not relevant.",
+    "full_text": "The site of a murder in northwest DC is for sale. The upper northwest DC mansion where three members of the Savopoulos  family and their housekeeper Figueroa were murdered in October 2015 is for sale.  Describe the size of the mansion, its condition, the sale price, the listing agent, and the buyer.  Also of interest is whether the buyer moved into the house as is or completely refurbished the residence.  Sale of comparable homes on Woodland Drive NW are pertinent. Details of the murder and subsequent trial are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "0bbe1b42d4c045902cc333406d563a5a_2",
+        "original_rank": 503,
+        "new_rank": 386,
+        "score": -0.23260437375745535
+      },
+      {
+        "doc_id": "382ed3f036bc550e7e11e85d43d9fab9_0",
+        "original_rank": 52,
+        "new_rank": 39,
+        "score": -0.2499999999999999
+      },
+      {
+        "doc_id": "3a2dbe70-7de1-11e5-beba-927fd8634498_0",
+        "original_rank": 2,
+        "new_rank": 1,
+        "score": -0.5
+      },
+      {
+        "doc_id": "9ee07b6f885b8df5d67433d3aa8488fc_3",
+        "original_rank": 242,
+        "new_rank": 266,
+        "score": 0.09022556390977454
+      },
+      {
+        "doc_id": "D7Z7SSPUDZGTZDXZ5OD7GAH2NI_1",
+        "original_rank": 215,
+        "new_rank": 137,
+        "score": -0.3627906976744186
+      }
+    ],
+    "debug_info": {}
+  },
+  "961": {
+    "rank": 3,
+    "pmrr": -0.1744877344877345,
+    "query": "I'm interested in details about panda cub Bao Bao's upcoming departure to China.",
+    "instruction": "The National Zoo's panda cub, Bao Bao, will be sent to China. I'm looking for information regarding the reasons and timing of her departure. Events planned by the Zoo to celebrate the cub's departure are relevant. Community and media reactions to her leaving are relevant as well.",
+    "full_text": "I'm interested in details about panda cub Bao Bao's upcoming departure to China. The National Zoo's panda cub, Bao Bao, will be sent to China. I'm looking for information regarding the reasons and timing of her departure. Events planned by the Zoo to celebrate the cub's departure are relevant. Community and media reactions to her leaving are relevant as well.",
+    "doc_details": [
+      {
+        "doc_id": "00d3dede-ec7b-11e6-9662-6eedf1627882_0",
+        "original_rank": 3,
+        "new_rank": 2,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "0fd3a7b4-f18c-11e6-8d72-263470bf0401_0",
+        "original_rank": 9,
+        "new_rank": 8,
+        "score": -0.11111111111111116
+      },
+      {
+        "doc_id": "2f5cc3e0-f853-11e6-9845-576c69081518_0",
+        "original_rank": 75,
+        "new_rank": 60,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "33f15760-96e5-11e6-9b7c-57290af48a49_0",
+        "original_rank": 44,
+        "new_rank": 29,
+        "score": -0.34090909090909083
+      },
+      {
+        "doc_id": "49e72bb4f1c16e04f2223f734fcbd999_0",
+        "original_rank": 4,
+        "new_rank": 3,
+        "score": -0.25
+      },
+      {
+        "doc_id": "6CPAGMEWZUI6NOZJX4TQDW7AUM_0",
+        "original_rank": 5,
+        "new_rank": 4,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "7838e5f6-eee1-11e6-9973-c5efb7ccfb0d_3",
+        "original_rank": 12,
+        "new_rank": 10,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "8788226c-dda0-11e6-acdf-14da832ae861_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "ba966789e1353f87d7637daa940ced83_0",
+        "original_rank": 6,
+        "new_rank": 7,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "f09e0330-96cd-11e6-bb29-bf2701dbe0a3_0",
+        "original_rank": 7,
+        "new_rank": 5,
+        "score": -0.2857142857142858
+      }
+    ],
+    "debug_info": {}
+  },
+  "941": {
+    "rank": 4,
+    "pmrr": -0.11126845030788408,
+    "query": "Are there any 3-star Michelin restaurants in the DC region?",
+    "instruction": "The first ever Michelin guide for the Washington, DC area came out in 2016.  Name the restaurants in the DC region that have won 3 stars since then.  Identify their chefs/owners and their cuisines.   Only Michelin ratings are pertinent; Bib Gourmand ratings are not.",
+    "full_text": "Are there any 3-star Michelin restaurants in the DC region? The first ever Michelin guide for the Washington, DC area came out in 2016.  Name the restaurants in the DC region that have won 3 stars since then.  Identify their chefs/owners and their cuisines.   Only Michelin ratings are pertinent; Bib Gourmand ratings are not.",
+    "doc_details": [
+      {
+        "doc_id": "30af5bf5bfd00bde0f8b4ec734cde50d_1",
+        "original_rank": 12,
+        "new_rank": 15,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "3CPX2AMLEND5ZEC42VZRMYHC6U_0",
+        "original_rank": 15,
+        "new_rank": 10,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "3fb750de-90c0-11e6-9c52-0b10449e33c4_0",
+        "original_rank": 4,
+        "new_rank": 5,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "54QR4KUKSFBCXJRGNBCHAQVRDQ_0",
+        "original_rank": 7,
+        "new_rank": 4,
+        "score": -0.4285714285714286
+      },
+      {
+        "doc_id": "65e8ab99e1dbc782e33a8ade56ade4fb_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "7a31584ff1dba57400ebe5c4b15929c2_5",
+        "original_rank": 18,
+        "new_rank": 11,
+        "score": -0.38888888888888895
+      },
+      {
+        "doc_id": "9ef2ec02959af660c7cefc0f30808aae_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "DW5QT4F47YI6RPTQKK6RD7QYV4_6",
+        "original_rank": 700,
+        "new_rank": 656,
+        "score": -0.06285714285714294
+      },
+      {
+        "doc_id": "HIOB2WIOOVFVFF5QHOO4D2SVAE_6",
+        "original_rank": 60,
+        "new_rank": 72,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "a31fd85d5c2f09e6869558281e28ec4d_0",
+        "original_rank": 5,
+        "new_rank": 6,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "b4176e85e6b97b62dfb40f62368e9349_0",
+        "original_rank": 43,
+        "new_rank": 24,
+        "score": -0.4418604651162791
+      },
+      {
+        "doc_id": "ba50aa60-506a-11e7-be25-3a519335381c_3",
+        "original_rank": 46,
+        "new_rank": 27,
+        "score": -0.4130434782608695
+      }
+    ],
+    "debug_info": {}
+  },
+  "976": {
+    "rank": 5,
+    "pmrr": -0.08553753830694803,
+    "query": "I'm looking for information about the prevalence of marathon runners who cheat.",
+    "instruction": "A 61-year old runner was discovered to have cheated in the Marine Corps Marathon. I am looking for information about other cases of cheating in marathon races.  Documents with information describing methods of determining cheating has occurred, reactions of accused cheaters and any consequences they received are all relevant. Information about individual cheaters discovered and the possible prevalence of marathon cheating also is of interest.",
+    "full_text": "I'm looking for information about the prevalence of marathon runners who cheat. A 61-year old runner was discovered to have cheated in the Marine Corps Marathon. I am looking for information about other cases of cheating in marathon races.  Documents with information describing methods of determining cheating has occurred, reactions of accused cheaters and any consequences they received are all relevant. Information about individual cheaters discovered and the possible prevalence of marathon cheating also is of interest.",
+    "doc_details": [
+      {
+        "doc_id": "7976638793ed205dfea1dc19b6952eb1_0",
+        "original_rank": 19,
+        "new_rank": 20,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "NOYFKS5AAZGWVDZ2JVDPZKQD3M_2",
+        "original_rank": 8,
+        "new_rank": 8,
+        "score": 0.0
+      },
+      {
+        "doc_id": "VPNZQNS25JAZTMJ3EFFCW2CQ54_1",
+        "original_rank": 203,
+        "new_rank": 188,
+        "score": -0.07389162561576357
+      },
+      {
+        "doc_id": "YUVS5IR7QZF7LGROPOOWMQZFZY_0",
+        "original_rank": 23,
+        "new_rank": 19,
+        "score": -0.17391304347826086
+      },
+      {
+        "doc_id": "d0daf2842cd77adfc68602513610bff1_0",
+        "original_rank": 24,
+        "new_rank": 18,
+        "score": -0.25
+      },
+      {
+        "doc_id": "e4152bf4-a271-11e4-91fc-7dff95a14458_2",
+        "original_rank": 214,
+        "new_rank": 200,
+        "score": -0.06542056074766367
+      }
+    ],
+    "debug_info": {}
+  },
+  "943": {
+    "rank": 6,
+    "pmrr": -0.06719277377357415,
+    "query": "Discuss the commercial status of quantum computing in the US.",
+    "instruction": "The US has made significant investments in quantum computing.  Describe the commercial aspects of this technology in the US to include what companies are involved and where the research and development is taking place.  Commercial use of quantum computing technology also is of interest. Quantum computing efforts outside the US are not relevant. US government funding and legislation is not relevant nor is any information related to US national security.",
+    "full_text": "Discuss the commercial status of quantum computing in the US. The US has made significant investments in quantum computing.  Describe the commercial aspects of this technology in the US to include what companies are involved and where the research and development is taking place.  Commercial use of quantum computing technology also is of interest. Quantum computing efforts outside the US are not relevant. US government funding and legislation is not relevant nor is any information related to US national security.",
+    "doc_details": [
+      {
+        "doc_id": "04b6776e-cdef-11e6-a87f-b917067331bb_0",
+        "original_rank": 27,
+        "new_rank": 25,
+        "score": -0.07407407407407418
+      },
+      {
+        "doc_id": "23264f102d9ce68c126312d4a63564d2_0",
+        "original_rank": 875,
+        "new_rank": 869,
+        "score": -0.006857142857142784
+      },
+      {
+        "doc_id": "243b5b576d83a86f1d84c1f78777db81_1",
+        "original_rank": 944,
+        "new_rank": 942,
+        "score": -0.0021186440677966045
+      },
+      {
+        "doc_id": "2c329000-97d2-11e1-9516-795fa6469f51_2",
+        "original_rank": 32,
+        "new_rank": 28,
+        "score": -0.125
+      },
+      {
+        "doc_id": "34999e92-f7dd-11e3-a3a5-42be35962a52_4",
+        "original_rank": 153,
+        "new_rank": 159,
+        "score": 0.037735849056603765
+      },
+      {
+        "doc_id": "4ec8fa68-e5ce-11e3-8f90-73e071f3d637_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "4f552506-d23c-11e3-937f-d3026234b51c_2",
+        "original_rank": 347,
+        "new_rank": 355,
+        "score": 0.022535211267605493
+      },
+      {
+        "doc_id": "5150365c-1311-11e2-ba83-a7a396e6b2a7_1",
+        "original_rank": 656,
+        "new_rank": 610,
+        "score": -0.07012195121951215
+      },
+      {
+        "doc_id": "7232fd58a1c1063f60d2425357105ca3_2",
+        "original_rank": 70,
+        "new_rank": 46,
+        "score": -0.34285714285714286
+      },
+      {
+        "doc_id": "72fc6c12-dba1-11e3-b745-87d39690c5c0_0",
+        "original_rank": 361,
+        "new_rank": 276,
+        "score": -0.23545706371191133
+      },
+      {
+        "doc_id": "739cbae46bc6655d737175ec851ddc33_1",
+        "original_rank": 346,
+        "new_rank": 306,
+        "score": -0.11560693641618502
+      },
+      {
+        "doc_id": "7c6d381a-a0f9-11e1-9483-dda3022ddee6_0",
+        "original_rank": 569,
+        "new_rank": 471,
+        "score": -0.17223198594024614
+      },
+      {
+        "doc_id": "843ce60f00b6740ff483f5b2dcbb766f_1",
+        "original_rank": 591,
+        "new_rank": 573,
+        "score": -0.030456852791878264
+      },
+      {
+        "doc_id": "8f72385d2b8474cfd5db0046bda226d4_3",
+        "original_rank": 352,
+        "new_rank": 330,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "8fff297e-7195-11e3-8def-a33011492df2_4",
+        "original_rank": 89,
+        "new_rank": 82,
+        "score": -0.07865168539325851
+      },
+      {
+        "doc_id": "9db067f8-a61b-11e3-84d4-e59b1709222c_0",
+        "original_rank": 33,
+        "new_rank": 34,
+        "score": 0.02941176470588236
+      },
+      {
+        "doc_id": "9e6be125c61b3d2f4cf10ddf9a4a5dd6_1",
+        "original_rank": 385,
+        "new_rank": 382,
+        "score": -0.007792207792207906
+      },
+      {
+        "doc_id": "AUTBHMTQRVDEHHDCO4YPHJXOCQ_7",
+        "original_rank": 58,
+        "new_rank": 56,
+        "score": -0.03448275862068961
+      },
+      {
+        "doc_id": "J4IF4YWWB5HQNOJ3MO7MWMI6LA_5",
+        "original_rank": 8,
+        "new_rank": 7,
+        "score": -0.125
+      },
+      {
+        "doc_id": "NNHDM6D664I6RNTAJUHZ6A2R6E_1",
+        "original_rank": 305,
+        "new_rank": 278,
+        "score": -0.08852459016393444
+      },
+      {
+        "doc_id": "UYZH5IQWMBF5TB77IXKCOTBQEU_5",
+        "original_rank": 22,
+        "new_rank": 31,
+        "score": 0.29032258064516137
+      },
+      {
+        "doc_id": "a9915d52e05d722585b42c8461d5b01e_0",
+        "original_rank": 340,
+        "new_rank": 320,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "b91beac2-da40-11e3-8009-71de85b9c527_0",
+        "original_rank": 416,
+        "new_rank": 327,
+        "score": -0.2139423076923077
+      },
+      {
+        "doc_id": "c2deb8ce-7ed9-11e6-8d13-d7c704ef9fd9_1",
+        "original_rank": 171,
+        "new_rank": 146,
+        "score": -0.14619883040935677
+      },
+      {
+        "doc_id": "cb3453ec-66e9-11e1-ad1b-84e7c463da1d_4",
+        "original_rank": 871,
+        "new_rank": 855,
+        "score": -0.018369690011481032
+      },
+      {
+        "doc_id": "e1ee124e-6f68-11e1-b747-ee64265ae6c6_2",
+        "original_rank": 775,
+        "new_rank": 756,
+        "score": -0.02451612903225797
+      },
+      {
+        "doc_id": "e4681b48-ecfe-11e4-a55f-38924fca94f9_2",
+        "original_rank": 7,
+        "new_rank": 5,
+        "score": -0.2857142857142858
+      },
+      {
+        "doc_id": "fbe7d73452177d400ea44b16d909d495_2",
+        "original_rank": 716,
+        "new_rank": 760,
+        "score": 0.05789473684210533
+      }
+    ],
+    "debug_info": {}
+  },
+  "939": {
+    "rank": 7,
+    "pmrr": -0.04334351643875458,
+    "query": "How Brexit will impact Ireland facts and fiction",
+    "instruction": "I am planning to travel to Ireland and want to understand the impact of Brexit on Ireland, including the impact on currency exchange and imports and exports.  I am also interested in Irish perceptions of Brexit and supposed impacts, whether they are real or not.  What is transpiring in Ireland due to Brexit?  I'm not interested in the politics of Britain in the sense of how they got to Brexit.",
+    "full_text": "How Brexit will impact Ireland facts and fiction I am planning to travel to Ireland and want to understand the impact of Brexit on Ireland, including the impact on currency exchange and imports and exports.  I am also interested in Irish perceptions of Brexit and supposed impacts, whether they are real or not.  What is transpiring in Ireland due to Brexit?  I'm not interested in the politics of Britain in the sense of how they got to Brexit.",
+    "doc_details": [
+      {
+        "doc_id": "2IKD6FHYVMI6RBSCZFYYUJLMXU_5",
+        "original_rank": 16,
+        "new_rank": 17,
+        "score": 0.05882352941176472
+      },
+      {
+        "doc_id": "3TEGHZHPPAI6TO362IBG5YGBTE_1",
+        "original_rank": 362,
+        "new_rank": 323,
+        "score": -0.10773480662983437
+      },
+      {
+        "doc_id": "43MII4XPQII6TO362IBG5YGBTE_2",
+        "original_rank": 563,
+        "new_rank": 498,
+        "score": -0.11545293072824148
+      },
+      {
+        "doc_id": "6HHCQ7XQJEI6TO362IBG5YGBTE_3",
+        "original_rank": 213,
+        "new_rank": 209,
+        "score": -0.018779342723004633
+      },
+      {
+        "doc_id": "6MLW3TAAWFFFZLXBHCHMJQKBPM_0",
+        "original_rank": 584,
+        "new_rank": 618,
+        "score": 0.055016181229773364
+      },
+      {
+        "doc_id": "BOLJFNCU5VDOXMFNZHW6VLZ224_0",
+        "original_rank": 95,
+        "new_rank": 105,
+        "score": 0.09523809523809512
+      },
+      {
+        "doc_id": "BXDDJEXYV4I6RBSCZFYYUJLMXU_0",
+        "original_rank": 211,
+        "new_rank": 168,
+        "score": -0.20379146919431268
+      },
+      {
+        "doc_id": "CJFEEWXIA4I6RKJZSRU7CFTPTU_5",
+        "original_rank": 403,
+        "new_rank": 419,
+        "score": 0.038186157517899666
+      },
+      {
+        "doc_id": "GOV3KUQZPEI6TKAEYNLWNOPSGQ_1",
+        "original_rank": 340,
+        "new_rank": 285,
+        "score": -0.16176470588235292
+      },
+      {
+        "doc_id": "JC7TGBT6FUI6TMPTWIZ74WAR54_5",
+        "original_rank": 190,
+        "new_rank": 146,
+        "score": -0.231578947368421
+      },
+      {
+        "doc_id": "JDKNM7RFPAI6TAP5W6YF2W7NSA_4",
+        "original_rank": 744,
+        "new_rank": 755,
+        "score": 0.014569536423841178
+      },
+      {
+        "doc_id": "LYIIB3EMEYI6RHKZ3TGCYDFLZ4_2",
+        "original_rank": 443,
+        "new_rank": 449,
+        "score": 0.013363028953229383
+      },
+      {
+        "doc_id": "M3V4UOQ75EI6TJ2ZFOCUDO56EA_1",
+        "original_rank": 482,
+        "new_rank": 433,
+        "score": -0.10165975103734437
+      },
+      {
+        "doc_id": "MRO2KKXJFQI6RBCJD7ZGGYE2GE_2",
+        "original_rank": 278,
+        "new_rank": 247,
+        "score": -0.11151079136690645
+      },
+      {
+        "doc_id": "OFR7FIXILEI6RBCJD7ZGGYE2GE_3",
+        "original_rank": 35,
+        "new_rank": 42,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "SSG3RKAAOJGT5EESZKGCMKA4IY_0",
+        "original_rank": 119,
+        "new_rank": 116,
+        "score": -0.025210084033613467
+      },
+      {
+        "doc_id": "YDCDWPBJQAI6TEDOTVK3MRI6WQ_1",
+        "original_rank": 466,
+        "new_rank": 453,
+        "score": -0.027896995708154515
+      },
+      {
+        "doc_id": "ce0bf51ba52f097728e018507b6d4f2d_3",
+        "original_rank": 120,
+        "new_rank": 106,
+        "score": -0.1166666666666667
+      }
+    ],
+    "debug_info": {}
+  },
+  "951": {
+    "rank": 8,
+    "pmrr": -0.03528335851669123,
+    "query": "Issues with US military recruitment",
+    "instruction": "A current issue with US military recruitment is the 2016 suspension of the Military Accessions Vital to the National Interest (MAVNI), a recruitment program for non-permanent residents with high-demand skills from medicine to languages. Critics state that America has not kept its promise of service in exchange for US citizenship and that scrutiny of immigrants' background checks are unfairly keeping them from serving. As more women enlist, their roles in the US military are ever evolving as policies change allowing them to serve in combat roles.  A loss of trade-related jobs is increasing the number of applicants for US military recruiters.",
+    "full_text": "Issues with US military recruitment A current issue with US military recruitment is the 2016 suspension of the Military Accessions Vital to the National Interest (MAVNI), a recruitment program for non-permanent residents with high-demand skills from medicine to languages. Critics state that America has not kept its promise of service in exchange for US citizenship and that scrutiny of immigrants' background checks are unfairly keeping them from serving. As more women enlist, their roles in the US military are ever evolving as policies change allowing them to serve in combat roles.  A loss of trade-related jobs is increasing the number of applicants for US military recruiters.",
+    "doc_details": [
+      {
+        "doc_id": "07fc8bb8-d3f2-11e5-b195-2e29a4e13425_2",
+        "original_rank": 405,
+        "new_rank": 339,
+        "score": -0.16296296296296298
+      },
+      {
+        "doc_id": "2da5542fcb14b8e2eb76a50690700751_1",
+        "original_rank": 47,
+        "new_rank": 63,
+        "score": 0.25396825396825395
+      },
+      {
+        "doc_id": "3XLROTICINCOLLVMIXUMZYO724_3",
+        "original_rank": 630,
+        "new_rank": 648,
+        "score": 0.02777777777777779
+      },
+      {
+        "doc_id": "3b32f4b74b476e69f3de18be1aa045f1_4",
+        "original_rank": 486,
+        "new_rank": 471,
+        "score": -0.030864197530864113
+      },
+      {
+        "doc_id": "44f81098-ffa9-11e2-9a3e-916de805f65d_3",
+        "original_rank": 334,
+        "new_rank": 289,
+        "score": -0.1347305389221557
+      },
+      {
+        "doc_id": "463a9a846715d597a5fbc2324f6c131b_1",
+        "original_rank": 202,
+        "new_rank": 224,
+        "score": 0.09821428571428581
+      },
+      {
+        "doc_id": "50510583f5cdd8f1aaaf0cd621e37a8f_2",
+        "original_rank": 408,
+        "new_rank": 369,
+        "score": -0.09558823529411764
+      },
+      {
+        "doc_id": "5dfc04ed68248d9755fc3247dba28763_3",
+        "original_rank": 49,
+        "new_rank": 67,
+        "score": 0.26865671641791045
+      },
+      {
+        "doc_id": "6415371e-723a-11e7-803f-a6c989606ac7_2",
+        "original_rank": 538,
+        "new_rank": 445,
+        "score": -0.17286245353159857
+      },
+      {
+        "doc_id": "702a9f633f3a387669dbf5f635447887_0",
+        "original_rank": 581,
+        "new_rank": 509,
+        "score": -0.12392426850258165
+      },
+      {
+        "doc_id": "7047115870d7910b42bc779541f5deb5_1",
+        "original_rank": 106,
+        "new_rank": 84,
+        "score": -0.2075471698113207
+      },
+      {
+        "doc_id": "70ec7ff18b4f16ea4e25382c52f6a32d_0",
+        "original_rank": 983,
+        "new_rank": 977,
+        "score": -0.006103763987792554
+      },
+      {
+        "doc_id": "DDVKX2EZKNHSRFSBXLML4Z6S5E_0",
+        "original_rank": 438,
+        "new_rank": 372,
+        "score": -0.15068493150684947
+      },
+      {
+        "doc_id": "DO3BEBYKTRFUTHNUNUQHMUDUSY_1",
+        "original_rank": 165,
+        "new_rank": 217,
+        "score": 0.23963133640552992
+      },
+      {
+        "doc_id": "FG4BDRWJ24I6TIP6ZJDORVLTYA_0",
+        "original_rank": 27,
+        "new_rank": 24,
+        "score": -0.11111111111111116
+      },
+      {
+        "doc_id": "GMEDEUUZXQI6RNQLDSEX6F7BQU_3",
+        "original_rank": 56,
+        "new_rank": 49,
+        "score": -0.125
+      },
+      {
+        "doc_id": "GXZR22ONHJD3ZNDU4I7WP2UX4I_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "HKCYA6HXIII6RBR2RFZBEBSG4A_1",
+        "original_rank": 14,
+        "new_rank": 14,
+        "score": 0.0
+      },
+      {
+        "doc_id": "HWGTPJWSJVAFBJBPDII25KURGQ_4",
+        "original_rank": 2,
+        "new_rank": 3,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "RWQRIQ274BBCLNPVM6RNAAN6OU_3",
+        "original_rank": 819,
+        "new_rank": 797,
+        "score": -0.026862026862026767
+      },
+      {
+        "doc_id": "SO6D7CQQE4I6TBH42WGDHVWIY4_1",
+        "original_rank": 476,
+        "new_rank": 380,
+        "score": -0.20168067226890762
+      },
+      {
+        "doc_id": "U4PQHDBLHJHWHNQJ7G2HD4F6CI_0",
+        "original_rank": 15,
+        "new_rank": 13,
+        "score": -0.13333333333333341
+      },
+      {
+        "doc_id": "UNYADXYATBC43GXD4GF7GEB3YY_0",
+        "original_rank": 28,
+        "new_rank": 23,
+        "score": -0.1785714285714286
+      },
+      {
+        "doc_id": "XB6JD7OLAJEN3AFJQJEYYWZMUA_3",
+        "original_rank": 100,
+        "new_rank": 74,
+        "score": -0.26
+      },
+      {
+        "doc_id": "a6ecf1066a645c8786c0c15757ea33cc_6",
+        "original_rank": 186,
+        "new_rank": 196,
+        "score": 0.051020408163265474
+      },
+      {
+        "doc_id": "e66abe85f799551144e4d8987326aa2e_2",
+        "original_rank": 19,
+        "new_rank": 16,
+        "score": -0.1578947368421053
+      },
+      {
+        "doc_id": "f1dbccb8-3e04-11e1-861f-2c3eff5ce2df_1",
+        "original_rank": 484,
+        "new_rank": 603,
+        "score": 0.19734660033167495
+      },
+      {
+        "doc_id": "fe9b054a-298d-11e5-a5ea-cf74396e59ec_3",
+        "original_rank": 348,
+        "new_rank": 286,
+        "score": -0.17816091954022995
+      }
+    ],
+    "debug_info": {}
+  },
+  "973": {
+    "rank": 9,
+    "pmrr": -0.02600904700282975,
+    "query": "How is The National Zoo affected during shutdowns?",
+    "instruction": "The National Zoo can be affected in various ways during a government shutdown. Before the COVID-19 shutdown at the zoo, there have been other shutdowns in which the animals still have to be cared for. Many of the animals are effected in  various ways since they are used to more people visiting them.",
+    "full_text": "How is The National Zoo affected during shutdowns? The National Zoo can be affected in various ways during a government shutdown. Before the COVID-19 shutdown at the zoo, there have been other shutdowns in which the animals still have to be cared for. Many of the animals are effected in  various ways since they are used to more people visiting them.",
+    "doc_details": [
+      {
+        "doc_id": "0d34a480-254e-11e3-ad0d-b7c8d2a594b9_0",
+        "original_rank": 103,
+        "new_rank": 113,
+        "score": 0.08849557522123885
+      },
+      {
+        "doc_id": "2daad4ba-7b7a-11e2-a044-676856536b40_0",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "365b9afe2a27ce6919a3dd522eb1b245_0",
+        "original_rank": 301,
+        "new_rank": 250,
+        "score": -0.16943521594684385
+      },
+      {
+        "doc_id": "3TDG7GAPOMI6TAY7HKRMFPSMXU_2",
+        "original_rank": 28,
+        "new_rank": 24,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "56d53344a8f381ebde7f7fa25b615186_0",
+        "original_rank": 47,
+        "new_rank": 34,
+        "score": -0.276595744680851
+      },
+      {
+        "doc_id": "6QZNONQOVEI6TAY7HKRMFPSMXU_2",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "93b1aa96-3712-11e3-80c6-7e6dd8d22d8f_1",
+        "original_rank": 125,
+        "new_rank": 148,
+        "score": 0.15540540540540537
+      },
+      {
+        "doc_id": "9ceed5785b083eb42528beeb64ad77a2_0",
+        "original_rank": 140,
+        "new_rank": 123,
+        "score": -0.12142857142857155
+      },
+      {
+        "doc_id": "FU365BSCGVAR3DUZWY7625MSSY_3",
+        "original_rank": 40,
+        "new_rank": 44,
+        "score": 0.09090909090909094
+      },
+      {
+        "doc_id": "NSPTKIPIORBFHMEDDRQAQE27M4_0",
+        "original_rank": 60,
+        "new_rank": 51,
+        "score": -0.15000000000000002
+      },
+      {
+        "doc_id": "NUSUEZRDKII6TLKTQJCIMKADCE_2",
+        "original_rank": 12,
+        "new_rank": 15,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "PA3WJHX32EI6PLMM5S5WEAMTSM_0",
+        "original_rank": 5,
+        "new_rank": 5,
+        "score": 0.0
+      },
+      {
+        "doc_id": "PDNOTAQQIUI6TBH42WGDHVWIY4_1",
+        "original_rank": 21,
+        "new_rank": 23,
+        "score": 0.08695652173913038
+      },
+      {
+        "doc_id": "XOW2WVQLUMI6TBNWIHAP4DC3R4_0",
+        "original_rank": 41,
+        "new_rank": 46,
+        "score": 0.10869565217391308
+      },
+      {
+        "doc_id": "YWBTZ2RKNEI6XD5CA3T4XMKFYA_0",
+        "original_rank": 336,
+        "new_rank": 294,
+        "score": -0.125
+      },
+      {
+        "doc_id": "dd8506d74b6aaf0079327be51bc05886_7",
+        "original_rank": 31,
+        "new_rank": 26,
+        "score": -0.16129032258064524
+      }
+    ],
+    "debug_info": {}
+  },
+  "970": {
+    "rank": 10,
+    "pmrr": -0.021626134881197037,
+    "query": "Provide information regarding the possibility of sabotage being responsible for the SpaceX Falcon 9 explosion.",
+    "instruction": "I am interested in information concerning the possibility that sabotage might have been responsible for the September 2016 explosion of a SpaceX Falcon 9 rocket.  Details of the explosion itself and any observations are relevant. Details of the investigation into the explosion, including evidence pointing toward or away from sabotage, and any conclusions are all relevant.",
+    "full_text": "Provide information regarding the possibility of sabotage being responsible for the SpaceX Falcon 9 explosion. I am interested in information concerning the possibility that sabotage might have been responsible for the September 2016 explosion of a SpaceX Falcon 9 rocket.  Details of the explosion itself and any observations are relevant. Details of the investigation into the explosion, including evidence pointing toward or away from sabotage, and any conclusions are all relevant.",
+    "doc_details": [
+      {
+        "doc_id": "07ed8f757925e59b14d3e9134df01e56_0",
+        "original_rank": 6,
+        "new_rank": 5,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "09e8745d-1ea7-41d7-be16-e2b19bd5f087_8",
+        "original_rank": 30,
+        "new_rank": 26,
+        "score": -0.13333333333333341
+      },
+      {
+        "doc_id": "2ac82815e1ce575576ac6ae94a2544d7_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "3d2557ddfa8db1eee7bd84a79c493846_0",
+        "original_rank": 28,
+        "new_rank": 24,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "45d212369067b6d64148c1a2c830176b_0",
+        "original_rank": 4,
+        "new_rank": 4,
+        "score": 0.0
+      },
+      {
+        "doc_id": "7AILDAR45QI6RJ6R4TX6YY4J6A_5",
+        "original_rank": 110,
+        "new_rank": 116,
+        "score": 0.051724137931034475
+      },
+      {
+        "doc_id": "8f289ea2378b6b2022d57c459cf6aa15_1",
+        "original_rank": 29,
+        "new_rank": 25,
+        "score": -0.13793103448275867
+      },
+      {
+        "doc_id": "MJXG6AVGIYI6RJSWSQ7O7K25V4_3",
+        "original_rank": 37,
+        "new_rank": 29,
+        "score": -0.21621621621621612
+      },
+      {
+        "doc_id": "OA6O2JPM6RHWBIYRGJQV22CTYI_2",
+        "original_rank": 59,
+        "new_rank": 72,
+        "score": 0.18055555555555558
+      },
+      {
+        "doc_id": "aba9c420acf9e9f03fa1abb0165c04a7_2",
+        "original_rank": 45,
+        "new_rank": 38,
+        "score": -0.15555555555555545
+      },
+      {
+        "doc_id": "b1e732791aa1e7e4ab8e10c6cf980a7c_0",
+        "original_rank": 7,
+        "new_rank": 6,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "b80ba7fd5de804579658e15df00ccc3b_2",
+        "original_rank": 91,
+        "new_rank": 128,
+        "score": 0.2890625
+      },
+      {
+        "doc_id": "ba5e86e7ed1f70bdbf2264f0147484f5_1",
+        "original_rank": 22,
+        "new_rank": 21,
+        "score": -0.045454545454545414
+      },
+      {
+        "doc_id": "dd94c4cd792ad6c30d21f64b3e8c1360_1",
+        "original_rank": 35,
+        "new_rank": 43,
+        "score": 0.18604651162790697
+      },
+      {
+        "doc_id": "fe8f96ac9d95cb36f641b75fd1678705_2",
+        "original_rank": 49,
+        "new_rank": 55,
+        "score": 0.10909090909090902
+      }
+    ],
+    "debug_info": {}
+  },
+  "958": {
+    "rank": 11,
+    "pmrr": -0.0179400857054439,
+    "query": "How have plant-based foods been re-branded and positioned for mainstream grocery stores?",
+    "instruction": "Several factors have contributed to the current plant-based trend, formerly vegan. Among them are the rise in wellness culture, scientific findings of increased cancers from eating too much red and processed meats, environmental concerns, and marketing tools used by the vegan community. Concern for the future of world's food supply and the impact of climate change are other factors which have contributed to the plant-based trend.",
+    "full_text": "How have plant-based foods been re-branded and positioned for mainstream grocery stores? Several factors have contributed to the current plant-based trend, formerly vegan. Among them are the rise in wellness culture, scientific findings of increased cancers from eating too much red and processed meats, environmental concerns, and marketing tools used by the vegan community. Concern for the future of world's food supply and the impact of climate change are other factors which have contributed to the plant-based trend.",
+    "doc_details": [
+      {
+        "doc_id": "3422eeb1fb66fcafdeb07e49f8b07b02_0",
+        "original_rank": 104,
+        "new_rank": 101,
+        "score": -0.028846153846153855
+      },
+      {
+        "doc_id": "3fcc9f597a69258a12e3db23256201c4_3",
+        "original_rank": 102,
+        "new_rank": 76,
+        "score": -0.2549019607843137
+      },
+      {
+        "doc_id": "5ZMGPACH3FH3VLKJG6II2RFTDU_8",
+        "original_rank": 5,
+        "new_rank": 6,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "769884e6-0e9b-11e4-b8e5-d0de80767fc2_1",
+        "original_rank": 331,
+        "new_rank": 398,
+        "score": 0.16834170854271358
+      },
+      {
+        "doc_id": "9d2610aa-3d57-11e6-80bc-d06711fd2125_1",
+        "original_rank": 47,
+        "new_rank": 60,
+        "score": 0.21666666666666667
+      },
+      {
+        "doc_id": "AHU2FKBJMAI6TMAR3BIAMRG4TA_2",
+        "original_rank": 139,
+        "new_rank": 136,
+        "score": -0.021582733812949617
+      },
+      {
+        "doc_id": "BOWYYN6K7FCJLE55DKX4VGBI44_1",
+        "original_rank": 68,
+        "new_rank": 67,
+        "score": -0.014705882352941124
+      },
+      {
+        "doc_id": "DUCIOIFQMAI6RIQLL5HYIQUWMY_1",
+        "original_rank": 181,
+        "new_rank": 154,
+        "score": -0.1491712707182321
+      },
+      {
+        "doc_id": "EPJNNB5DD5CLHGSFQ7MCYGVVUI_2",
+        "original_rank": 133,
+        "new_rank": 106,
+        "score": -0.20300751879699253
+      },
+      {
+        "doc_id": "EPQI7W4YDFD4XMPJ6Z2LU34364_1",
+        "original_rank": 29,
+        "new_rank": 25,
+        "score": -0.13793103448275867
+      },
+      {
+        "doc_id": "FESCIEEPY5BTLHXQUTBYV7CI54_6",
+        "original_rank": 27,
+        "new_rank": 23,
+        "score": -0.14814814814814814
+      },
+      {
+        "doc_id": "GKG5WMYEEND6NL73AUTKSHYORE_1",
+        "original_rank": 53,
+        "new_rank": 45,
+        "score": -0.15094339622641517
+      },
+      {
+        "doc_id": "OKMDNMD5NEI6TJNTGTZ634JVDY_0",
+        "original_rank": 82,
+        "new_rank": 82,
+        "score": 0.0
+      },
+      {
+        "doc_id": "Q65ZBBK7NNE55AYSQGDCYNB66Q_2",
+        "original_rank": 122,
+        "new_rank": 129,
+        "score": 0.054263565891472965
+      },
+      {
+        "doc_id": "UUOSXHH75YI6TC5LB7BATYDFVA_5",
+        "original_rank": 22,
+        "new_rank": 28,
+        "score": 0.2142857142857143
+      },
+      {
+        "doc_id": "X6FLUFDLTZHOZAGLPVHSEKGSUE_2",
+        "original_rank": 113,
+        "new_rank": 94,
+        "score": -0.16814159292035402
+      },
+      {
+        "doc_id": "e13ac7ce-51e1-11e1-8973-35d66bdb2cb8_3",
+        "original_rank": 234,
+        "new_rank": 276,
+        "score": 0.15217391304347838
+      }
+    ],
+    "debug_info": {}
+  },
+  "972": {
+    "rank": 12,
+    "pmrr": -0.017120911227735503,
+    "query": "Japan is backing it's magnetic-levitation railroad technology in the US.",
+    "instruction": "The Japanese government has promoted it's high-speed maglev rail technology in the US for years, in particular for a project between Baltimore and Washington.  Discuss Japan's role in building this segment and why it is promoting this technology.",
+    "full_text": "Japan is backing it's magnetic-levitation railroad technology in the US. The Japanese government has promoted it's high-speed maglev rail technology in the US for years, in particular for a project between Baltimore and Washington.  Discuss Japan's role in building this segment and why it is promoting this technology.",
+    "doc_details": [
+      {
+        "doc_id": "2UBDRUQM7EI6RCYNRELAEIDPW4_2",
+        "original_rank": 12,
+        "new_rank": 12,
+        "score": 0.0
+      },
+      {
+        "doc_id": "3542f2f2-e62e-11e1-8f62-58260e3940a0_0",
+        "original_rank": 38,
+        "new_rank": 33,
+        "score": -0.13157894736842113
+      },
+      {
+        "doc_id": "55EQ5YHBCII6PCPI5XWBMN4QCA_1",
+        "original_rank": 6,
+        "new_rank": 5,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "66656864-ee36-11e6-9973-c5efb7ccfb0d_2",
+        "original_rank": 117,
+        "new_rank": 177,
+        "score": 0.3389830508474577
+      },
+      {
+        "doc_id": "73QCWLEO4JD35MLID3OALKYJJU_31",
+        "original_rank": 18,
+        "new_rank": 15,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "8d6c3f94608119237d85eceae47052d5_1",
+        "original_rank": 21,
+        "new_rank": 17,
+        "score": -0.19047619047619047
+      },
+      {
+        "doc_id": "NSSHQOAXCUI6RNUBFVGUMKQZEE_3",
+        "original_rank": 20,
+        "new_rank": 19,
+        "score": -0.04999999999999993
+      },
+      {
+        "doc_id": "PDIKFPHI6II6RKJZSRU7CFTPTU_0",
+        "original_rank": 8,
+        "new_rank": 9,
+        "score": 0.11111111111111116
+      },
+      {
+        "doc_id": "add13df0-3dfd-4d02-97aa-4390f4dd56fe_2",
+        "original_rank": 23,
+        "new_rank": 32,
+        "score": 0.28125
+      },
+      {
+        "doc_id": "b9d09e40-cbd1-11e3-93eb-6c0037dde2ad_2",
+        "original_rank": 14,
+        "new_rank": 13,
+        "score": -0.07142857142857151
+      },
+      {
+        "doc_id": "ba5602a05a1c80e1e19e63be3541b490_0",
+        "original_rank": 7,
+        "new_rank": 6,
+        "score": -0.1428571428571429
+      }
+    ],
+    "debug_info": {}
+  },
+  "938": {
+    "rank": 13,
+    "pmrr": -0.01659403162432867,
+    "query": "Find information about COVID-19 variants and how they differ from the main outbreak.",
+    "instruction": "COVID-19 variants appear to transmit faster and are fueling outbreaks from the U.K. to South Africa. The U.K. variant of the COVID-19 virus, which contains 17 mutations, appears to be a more highly transmissible form of the virus and is showing up in at least 19 countries around the world.  The South Africa variant is being seen in 4 other countries. Both variants seem to be more contagious but there is no evidence that they cause more severe illness.",
+    "full_text": "Find information about COVID-19 variants and how they differ from the main outbreak. COVID-19 variants appear to transmit faster and are fueling outbreaks from the U.K. to South Africa. The U.K. variant of the COVID-19 virus, which contains 17 mutations, appears to be a more highly transmissible form of the virus and is showing up in at least 19 countries around the world.  The South Africa variant is being seen in 4 other countries. Both variants seem to be more contagious but there is no evidence that they cause more severe illness.",
+    "doc_details": [
+      {
+        "doc_id": "3296c98f-9c25-41cc-a630-5964d0562972_0",
+        "original_rank": 210,
+        "new_rank": 187,
+        "score": -0.10952380952380936
+      },
+      {
+        "doc_id": "3QYNYDHSUZB4RB3J2AWHNRYN4E_0",
+        "original_rank": 18,
+        "new_rank": 19,
+        "score": 0.052631578947368474
+      },
+      {
+        "doc_id": "46AULCE3UUI6VIVTLQ7S2FMG34_0",
+        "original_rank": 211,
+        "new_rank": 189,
+        "score": -0.10426540284360175
+      },
+      {
+        "doc_id": "4X3FM2EIABEADDOOGICQOGNCDE_4",
+        "original_rank": 40,
+        "new_rank": 44,
+        "score": 0.09090909090909094
+      },
+      {
+        "doc_id": "AHEZEVCDL4I6XLBKHLAPFOGO5M_2",
+        "original_rank": 27,
+        "new_rank": 27,
+        "score": 0.0
+      },
+      {
+        "doc_id": "CYC3ICSKXQI6XKPUBZTIXF3SXI_4",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "EB5UV6AJR4I6XG7GZ4S7WQU7DI_6",
+        "original_rank": 916,
+        "new_rank": 916,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LDO3W7WGNZCCDKCXPESGYCIW44_5",
+        "original_rank": 88,
+        "new_rank": 88,
+        "score": 0.0
+      },
+      {
+        "doc_id": "MZDPKATOVMI6VMKI4THD7PMFWU_2",
+        "original_rank": 213,
+        "new_rank": 204,
+        "score": -0.04225352112676051
+      },
+      {
+        "doc_id": "OPBP2IHULQI6VPCF4XKIVNCLT4_3",
+        "original_rank": 287,
+        "new_rank": 279,
+        "score": -0.027874564459930307
+      },
+      {
+        "doc_id": "R6FM47FEGII6VNQZH6ITHO5UQI_2",
+        "original_rank": 42,
+        "new_rank": 42,
+        "score": 0.0
+      },
+      {
+        "doc_id": "RJAJJGF6ONAQVGYLROTCTYMGMY_5",
+        "original_rank": 72,
+        "new_rank": 79,
+        "score": 0.08860759493670878
+      },
+      {
+        "doc_id": "XTK63MVAFQI6VNOJK4FJDEL5RU_4",
+        "original_rank": 465,
+        "new_rank": 436,
+        "score": -0.062365591397849474
+      },
+      {
+        "doc_id": "be5ed140-eece-4377-b642-db636ab0f8b8_2",
+        "original_rank": 110,
+        "new_rank": 97,
+        "score": -0.11818181818181817
+      }
+    ],
+    "debug_info": {}
+  },
+  "960": {
+    "rank": 14,
+    "pmrr": -0.01194075857010114,
+    "query": "Find information about a new disease that seems to be emerging with polio-like symptoms.",
+    "instruction": "I'm interested in the states that have children who have been diagnosed with the polio like disease (PLD).  I'm not interested with any other country who has identified children with the PLD.  Interested in experimental trials and research on PLD.  What do we know about this disease?",
+    "full_text": "Find information about a new disease that seems to be emerging with polio-like symptoms. I'm interested in the states that have children who have been diagnosed with the polio like disease (PLD).  I'm not interested with any other country who has identified children with the PLD.  Interested in experimental trials and research on PLD.  What do we know about this disease?",
+    "doc_details": [
+      {
+        "doc_id": "0acec0ae-3eb1-11e4-b0ea-8141703bbf6f_1",
+        "original_rank": 140,
+        "new_rank": 49,
+        "score": -0.6499999999999999
+      },
+      {
+        "doc_id": "6d5ed67273b467d4c8d9a10431e35af6_0",
+        "original_rank": 4,
+        "new_rank": 5,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "75PUPUG66YI6RNZSHRZMX4JR6I_2",
+        "original_rank": 126,
+        "new_rank": 136,
+        "score": 0.07352941176470584
+      },
+      {
+        "doc_id": "7CGZSZWS7UI6RMWS6OLSE62D6A_0",
+        "original_rank": 21,
+        "new_rank": 21,
+        "score": 0.0
+      },
+      {
+        "doc_id": "C6IRJ5WWOUI6VL7WEIG5HIKHIE_0",
+        "original_rank": 13,
+        "new_rank": 23,
+        "score": 0.4347826086956522
+      },
+      {
+        "doc_id": "JZAHMHWRM4I6RA6WFEP45LJKWE_0",
+        "original_rank": 10,
+        "new_rank": 2,
+        "score": -0.8
+      },
+      {
+        "doc_id": "LIN5PB6O5FBHXNPNESTOUEMEN4_0",
+        "original_rank": 1,
+        "new_rank": 4,
+        "score": 0.75
+      },
+      {
+        "doc_id": "MO4YE4XNAII6RBTZSNFCWM56KI_0",
+        "original_rank": 139,
+        "new_rank": 101,
+        "score": -0.27338129496402874
+      },
+      {
+        "doc_id": "O2YVZ2I4PBBSTMWSHJPNO2AJCM_1",
+        "original_rank": 32,
+        "new_rank": 20,
+        "score": -0.375
+      },
+      {
+        "doc_id": "d6df0dcc-a3b9-11e3-a5fa-55f0c77bf39c_2",
+        "original_rank": 3,
+        "new_rank": 8,
+        "score": 0.625
+      },
+      {
+        "doc_id": "e743bdc2-a56e-11e4-a7c2-03d37af98440_0",
+        "original_rank": 129,
+        "new_rank": 114,
+        "score": -0.11627906976744184
+      }
+    ],
+    "debug_info": {}
+  },
+  "937": {
+    "rank": 15,
+    "pmrr": -0.011927543598535793,
+    "query": "What is the Middle East Respiratory Syndrome (MERS)?",
+    "instruction": "China recently discovered a new coronavirus strain that is similar to MERS.  Tell me about the symptoms of MERS, the incubation period for infection, and the lethality rate.  Information on vaccines and treatments is relevant.  Official sources of information on MERS also is relevant.  Information on the origins of MERS is not relevant nor are the specific locations of previous outbreaks.  Editorials are not relevant.",
+    "full_text": "What is the Middle East Respiratory Syndrome (MERS)? China recently discovered a new coronavirus strain that is similar to MERS.  Tell me about the symptoms of MERS, the incubation period for infection, and the lethality rate.  Information on vaccines and treatments is relevant.  Official sources of information on MERS also is relevant.  Information on the origins of MERS is not relevant nor are the specific locations of previous outbreaks.  Editorials are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "00af9842-08bb-11e2-a10c-fa5a255a9258_3",
+        "original_rank": 198,
+        "new_rank": 195,
+        "score": -0.015151515151515027
+      },
+      {
+        "doc_id": "04525228-dace-11e3-b745-87d39690c5c0_0",
+        "original_rank": 18,
+        "new_rank": 30,
+        "score": 0.4
+      },
+      {
+        "doc_id": "2632bf5e-dab5-11e3-b745-87d39690c5c0_2",
+        "original_rank": 86,
+        "new_rank": 95,
+        "score": 0.09473684210526312
+      },
+      {
+        "doc_id": "448870c0-daf1-11e3-bda1-9b46b2066796_1",
+        "original_rank": 135,
+        "new_rank": 130,
+        "score": -0.03703703703703709
+      },
+      {
+        "doc_id": "464ZJ4FYZRALFDJFMES27JLBA4_4",
+        "original_rank": 77,
+        "new_rank": 70,
+        "score": -0.09090909090909083
+      },
+      {
+        "doc_id": "4TKPKFAQ7BGZVCPROFNGV3UYPM_6",
+        "original_rank": 78,
+        "new_rank": 72,
+        "score": -0.07692307692307687
+      },
+      {
+        "doc_id": "63675b71c68348466223463d15463558_0",
+        "original_rank": 16,
+        "new_rank": 15,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "6Q677F6XI5HVVMOM2JPU3BPKGU_4",
+        "original_rank": 54,
+        "new_rank": 58,
+        "score": 0.06896551724137923
+      },
+      {
+        "doc_id": "716531e0-0de1-11e5-a0fe-dccfea4653ee_0",
+        "original_rank": 157,
+        "new_rank": 158,
+        "score": 0.006329113924050667
+      },
+      {
+        "doc_id": "ESIJORB7R4I6VCDSLX3JQ6C2JY_0",
+        "original_rank": 7,
+        "new_rank": 5,
+        "score": -0.2857142857142858
+      },
+      {
+        "doc_id": "M4IVIFSLTII6VP2E6UCD5M4RRI_12",
+        "original_rank": 64,
+        "new_rank": 73,
+        "score": 0.12328767123287676
+      },
+      {
+        "doc_id": "WDCM37C67QI6VMAUJ6X2QZV3QE_5",
+        "original_rank": 257,
+        "new_rank": 246,
+        "score": -0.04280155642023353
+      },
+      {
+        "doc_id": "a179587925171c35ba0fba51ab8cfab0_1",
+        "original_rank": 145,
+        "new_rank": 126,
+        "score": -0.13103448275862062
+      },
+      {
+        "doc_id": "a7a6ec06-d2ed-11e3-8a78-8fe50322a72c_0",
+        "original_rank": 104,
+        "new_rank": 90,
+        "score": -0.13461538461538458
+      },
+      {
+        "doc_id": "b1039237236b0d521ead367f33811580_1",
+        "original_rank": 143,
+        "new_rank": 145,
+        "score": 0.01379310344827589
+      },
+      {
+        "doc_id": "b27673b4-d233-11e3-a6b1-45c4dffb85a6_0",
+        "original_rank": 61,
+        "new_rank": 54,
+        "score": -0.11475409836065564
+      },
+      {
+        "doc_id": "db47b1a98aa783613ea5d2ebbcfab3dd_0",
+        "original_rank": 47,
+        "new_rank": 46,
+        "score": -0.021276595744680882
+      },
+      {
+        "doc_id": "e3f92355fc56884737fc566de2a90414_0",
+        "original_rank": 50,
+        "new_rank": 55,
+        "score": 0.09090909090909094
+      }
+    ],
+    "debug_info": {}
+  },
+  "949": {
+    "rank": 16,
+    "pmrr": -0.005611847792913372,
+    "query": "Compile information on Jamal Khashoggi's family",
+    "instruction": "On the day he was murdered, Saudi journalist Jamal Khashoggi entered the Saudi consulate in Istanbul to obtain the necessary paperwork to marry his second wife.  Of interest is information on his first wife and their children.  Also relevant are details of the relationship the Saudi government has with his children.    Details surrounding Khashoggi's death and subsequent investigations are not relevant.",
+    "full_text": "Compile information on Jamal Khashoggi's family On the day he was murdered, Saudi journalist Jamal Khashoggi entered the Saudi consulate in Istanbul to obtain the necessary paperwork to marry his second wife.  Of interest is information on his first wife and their children.  Also relevant are details of the relationship the Saudi government has with his children.    Details surrounding Khashoggi's death and subsequent investigations are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "2UL7IBWXYQI6RA4EXTCUSL7PJE_3",
+        "original_rank": 94,
+        "new_rank": 108,
+        "score": 0.12962962962962965
+      },
+      {
+        "doc_id": "CHIQTUE4EQI6VLLZ5334242GIE_0",
+        "original_rank": 41,
+        "new_rank": 41,
+        "score": 0.0
+      },
+      {
+        "doc_id": "IOJQ22HRBII6RESA5ABIUYWHEI_1",
+        "original_rank": 202,
+        "new_rank": 192,
+        "score": -0.04950495049504944
+      },
+      {
+        "doc_id": "N4ADKZGYPII6RA4EXTCUSL7PJE_1",
+        "original_rank": 341,
+        "new_rank": 309,
+        "score": -0.09384164222873903
+      },
+      {
+        "doc_id": "NFSX3AHBHII6RORQU7PNATMPVQ_1",
+        "original_rank": 154,
+        "new_rank": 138,
+        "score": -0.10389610389610382
+      },
+      {
+        "doc_id": "RTPAU3HJZQI6RKJZSRU7CFTPTU_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "TAWWEB4DQFF2VFA3MYIZ72E26E_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "WKJLLXBLEEI6TGCNTOH3UAB6QE_3",
+        "original_rank": 299,
+        "new_rank": 276,
+        "score": -0.07692307692307698
+      },
+      {
+        "doc_id": "WNZVNMVAHJFBZB6NDUYUOAVANM_4",
+        "original_rank": 524,
+        "new_rank": 526,
+        "score": 0.0038022813688212143
+      },
+      {
+        "doc_id": "YEUQ6KGKHUI6RLIKBYA67OR4YE_7",
+        "original_rank": 135,
+        "new_rank": 156,
+        "score": 0.1346153846153847
+      }
+    ],
+    "debug_info": {}
+  },
+  "956": {
+    "rank": 17,
+    "pmrr": -0.004087695163482461,
+    "query": "What issues face the approximately 28% of Americans with limited or no access to traditional banks?",
+    "instruction": "Granting retail stores like Walmart, Target, and Safeway bank charters will help the 10 million underbanked Americans unable to afford the costs associated with traditional banks. Studies indicate that the unbanked depend on lower fees offered by prepaid debit cards and/or money orders to pay bills or cash checks instead of the using payday loans or cash checking services. Eliminating some government regulations and having more retail stores offer prepaid debit cards such as Walmart's successful Bluebird American Express card which does not require credit checks will help the underbanked better manage their finances.",
+    "full_text": "What issues face the approximately 28% of Americans with limited or no access to traditional banks? Granting retail stores like Walmart, Target, and Safeway bank charters will help the 10 million underbanked Americans unable to afford the costs associated with traditional banks. Studies indicate that the unbanked depend on lower fees offered by prepaid debit cards and/or money orders to pay bills or cash checks instead of the using payday loans or cash checking services. Eliminating some government regulations and having more retail stores offer prepaid debit cards such as Walmart's successful Bluebird American Express card which does not require credit checks will help the underbanked better manage their finances.",
+    "doc_details": [
+      {
+        "doc_id": "000fbcb6cd2d1e59d6a3a6b1f95fac6d_2",
+        "original_rank": 12,
+        "new_rank": 11,
+        "score": -0.08333333333333337
+      },
+      {
+        "doc_id": "06e916a783e646f83c2b81fb51c500de_0",
+        "original_rank": 358,
+        "new_rank": 376,
+        "score": 0.04787234042553201
+      },
+      {
+        "doc_id": "07b4004abec3a50e974b69dac6f8afaa_0",
+        "original_rank": 82,
+        "new_rank": 76,
+        "score": -0.07317073170731703
+      },
+      {
+        "doc_id": "0f20a930-a438-11e1-9e73-f4e3879b34a3_0",
+        "original_rank": 38,
+        "new_rank": 38,
+        "score": 0.0
+      },
+      {
+        "doc_id": "28d99dd6-963c-11e2-894a-b984cbdff2e6_0",
+        "original_rank": 9,
+        "new_rank": 9,
+        "score": 0.0
+      },
+      {
+        "doc_id": "2c6ed9e3f0720224d3f1e40ed2b9e209_1",
+        "original_rank": 87,
+        "new_rank": 87,
+        "score": 0.0
+      },
+      {
+        "doc_id": "2e34f6a4-782e-11e1-862c-76c4e0e725cd_8",
+        "original_rank": 66,
+        "new_rank": 63,
+        "score": -0.045454545454545414
+      },
+      {
+        "doc_id": "366e8d459f5a7b035aec58b711174764_1",
+        "original_rank": 122,
+        "new_rank": 117,
+        "score": -0.040983606557377095
+      },
+      {
+        "doc_id": "38a5aa5e650d50232c3b5ca5c04fcb39_0",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "3abffdec-13e1-11e3-a100-66fa8fd9a50c_3",
+        "original_rank": 348,
+        "new_rank": 318,
+        "score": -0.0862068965517242
+      },
+      {
+        "doc_id": "3d5d5c7a-8d08-11e3-95dd-36ff657a4dae_0",
+        "original_rank": 194,
+        "new_rank": 192,
+        "score": -0.010309278350515427
+      },
+      {
+        "doc_id": "3df8f74a6e7685eecd5598c6403648ae_2",
+        "original_rank": 219,
+        "new_rank": 203,
+        "score": -0.07305936073059371
+      },
+      {
+        "doc_id": "428928e17844190a9daba8a8e69caff2_0",
+        "original_rank": 10,
+        "new_rank": 12,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "4719d2479784efca3ede8de0bb2124ca_4",
+        "original_rank": 136,
+        "new_rank": 129,
+        "score": -0.05147058823529416
+      },
+      {
+        "doc_id": "4f34d3377fd8d89c3978db99fec330f4_0",
+        "original_rank": 76,
+        "new_rank": 75,
+        "score": -0.013157894736842257
+      },
+      {
+        "doc_id": "50b645321a18d25baf4c7f0713248759_0",
+        "original_rank": 179,
+        "new_rank": 196,
+        "score": 0.08673469387755117
+      },
+      {
+        "doc_id": "521fa0aa-9560-11e2-ae32-9ef60436f5c1_0",
+        "original_rank": 7,
+        "new_rank": 8,
+        "score": 0.125
+      },
+      {
+        "doc_id": "53bd34da-4d75-11e4-aa5e-7153e466a02d_7",
+        "original_rank": 255,
+        "new_rank": 261,
+        "score": 0.02298850574712652
+      },
+      {
+        "doc_id": "5785ff7d4685fbf06d3f22bc34919c43_4",
+        "original_rank": 61,
+        "new_rank": 62,
+        "score": 0.016129032258064613
+      },
+      {
+        "doc_id": "5bd974e8-8788-11e3-833c-33098f9e5267_1",
+        "original_rank": 34,
+        "new_rank": 32,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "5e806f00-6b12-11e2-95b3-272d604a10a3_0",
+        "original_rank": 84,
+        "new_rank": 80,
+        "score": -0.04761904761904767
+      },
+      {
+        "doc_id": "6380b986-fcf1-11e1-a31e-804fccb658f9_1",
+        "original_rank": 21,
+        "new_rank": 21,
+        "score": 0.0
+      },
+      {
+        "doc_id": "65083bfb733617c3eb099b67572e10ca_0",
+        "original_rank": 47,
+        "new_rank": 48,
+        "score": 0.02083333333333337
+      },
+      {
+        "doc_id": "68cb95c8-036d-11e7-b9fa-ed727b644a0b_1",
+        "original_rank": 138,
+        "new_rank": 156,
+        "score": 0.11538461538461542
+      },
+      {
+        "doc_id": "69f49240-0778-11e4-bbf1-cc51275e7f8f_0",
+        "original_rank": 27,
+        "new_rank": 25,
+        "score": -0.07407407407407418
+      },
+      {
+        "doc_id": "6b2d3908-c62f-11e3-8b9a-8e0977a24aeb_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "73c7297c-b0f8-11e2-9a98-4be1688d7d84_2",
+        "original_rank": 299,
+        "new_rank": 253,
+        "score": -0.15384615384615385
+      },
+      {
+        "doc_id": "7df37cae-a5da-11e1-853a-2d746a04dab9_0",
+        "original_rank": 40,
+        "new_rank": 43,
+        "score": 0.06976744186046513
+      },
+      {
+        "doc_id": "80488e3e-8442-11e3-8099-9181471f7aaf_2",
+        "original_rank": 54,
+        "new_rank": 52,
+        "score": -0.03703703703703709
+      },
+      {
+        "doc_id": "81d8540c-670f-11e1-a31f-43bfba6ff045_2",
+        "original_rank": 59,
+        "new_rank": 61,
+        "score": 0.032786885245901565
+      },
+      {
+        "doc_id": "922a6686-2480-11e7-b503-9d616bd5a305_2",
+        "original_rank": 24,
+        "new_rank": 24,
+        "score": 0.0
+      },
+      {
+        "doc_id": "9584295234e46a836dfde4f42ba2ca09_1",
+        "original_rank": 365,
+        "new_rank": 400,
+        "score": 0.08750000000000002
+      },
+      {
+        "doc_id": "9a35feae252a8cba32b545a3a8181393_6",
+        "original_rank": 293,
+        "new_rank": 301,
+        "score": 0.02657807308970095
+      },
+      {
+        "doc_id": "9c6bf5fc-d1f5-11e6-a783-cd3fa950f2fd_6",
+        "original_rank": 174,
+        "new_rank": 186,
+        "score": 0.06451612903225801
+      },
+      {
+        "doc_id": "9e8bdf9a-a13f-11e2-be47-b44febada3a8_1",
+        "original_rank": 238,
+        "new_rank": 245,
+        "score": 0.02857142857142847
+      },
+      {
+        "doc_id": "BWEPPBVJARDLHCHI4Z3FB4LHBU_0",
+        "original_rank": 11,
+        "new_rank": 10,
+        "score": -0.09090909090909094
+      },
+      {
+        "doc_id": "L57CM4C55YI6RHXDJHLNJAKMJQ_4",
+        "original_rank": 63,
+        "new_rank": 60,
+        "score": -0.04761904761904767
+      },
+      {
+        "doc_id": "NTVAGTP4BNBWPHNTIZH6FLQ2MM_4",
+        "original_rank": 105,
+        "new_rank": 110,
+        "score": 0.045454545454545636
+      },
+      {
+        "doc_id": "ac6a1cd420f71d3e4f4c75bdbf8bbc10_3",
+        "original_rank": 30,
+        "new_rank": 30,
+        "score": 0.0
+      },
+      {
+        "doc_id": "ad1c643c-d88b-11e4-b3f2-607bd612aeac_0",
+        "original_rank": 8,
+        "new_rank": 7,
+        "score": -0.125
+      },
+      {
+        "doc_id": "adec3c120d8b1bb3d622a21dc0c232dc_3",
+        "original_rank": 15,
+        "new_rank": 15,
+        "score": 0.0
+      },
+      {
+        "doc_id": "afd34976-c0c6-11e3-bcec-b71ee10e9bc3_4",
+        "original_rank": 197,
+        "new_rank": 197,
+        "score": 0.0
+      },
+      {
+        "doc_id": "b54ffc6f7dabd10c10dc8df958b8dc6d_0",
+        "original_rank": 140,
+        "new_rank": 145,
+        "score": 0.03448275862068961
+      },
+      {
+        "doc_id": "b61cbe346443246f04b8febd0b045613_0",
+        "original_rank": 153,
+        "new_rank": 152,
+        "score": -0.006535947712418166
+      },
+      {
+        "doc_id": "b768abc7c99764792cd87dbf336aa8e7_0",
+        "original_rank": 36,
+        "new_rank": 37,
+        "score": 0.027027027027026973
+      },
+      {
+        "doc_id": "bc28f24c-3030-11e3-9ccc-2252bdb14df5_1",
+        "original_rank": 155,
+        "new_rank": 144,
+        "score": -0.07096774193548383
+      },
+      {
+        "doc_id": "d955d4cb8759a6d18048cd4724e661e6_1",
+        "original_rank": 19,
+        "new_rank": 18,
+        "score": -0.052631578947368474
+      },
+      {
+        "doc_id": "dc20022f9181880c66ce1f4ad42ddbdb_2",
+        "original_rank": 29,
+        "new_rank": 29,
+        "score": 0.0
+      },
+      {
+        "doc_id": "e00f9a42-836b-11e3-9dd4-e7278db80d86_1",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "fb6d4272-44ee-11e4-9a15-137aa0153527_2",
+        "original_rank": 251,
+        "new_rank": 256,
+        "score": 0.01953125
+      }
+    ],
+    "debug_info": {}
+  },
+  "954": {
+    "rank": 18,
+    "pmrr": 0.0014200295238685128,
+    "query": "I'm looking for information pertaining to Ethiopia's Abiy Ahmed's winning of the Nobel Peace Prize.",
+    "instruction": "Please provide details explaining what accomplishments and expectations led to Abiy Ahmed being awarded the Nobel Peace Prize. Background information regarding the history of the Ethiopia-Eritrea conflict are relevant. Eritrean reaction to the award and information about current relations between the two countries is relevant as well.",
+    "full_text": "I'm looking for information pertaining to Ethiopia's Abiy Ahmed's winning of the Nobel Peace Prize. Please provide details explaining what accomplishments and expectations led to Abiy Ahmed being awarded the Nobel Peace Prize. Background information regarding the history of the Ethiopia-Eritrea conflict are relevant. Eritrean reaction to the award and information about current relations between the two countries is relevant as well.",
+    "doc_details": [
+      {
+        "doc_id": "2KFH5VEGQQI6RBKTUPHISA3MPA_2",
+        "original_rank": 52,
+        "new_rank": 53,
+        "score": 0.018867924528301994
+      },
+      {
+        "doc_id": "3KOJCTD7XJCHZGZ4MBQ3QKLITM_1",
+        "original_rank": 214,
+        "new_rank": 263,
+        "score": 0.18631178707224327
+      },
+      {
+        "doc_id": "3VGH4FHIEUI6RO63OL637HKP5U_1",
+        "original_rank": 217,
+        "new_rank": 205,
+        "score": -0.055299539170506895
+      },
+      {
+        "doc_id": "3WHXSYUGBII6RBKTUPHISA3MPA_0",
+        "original_rank": 40,
+        "new_rank": 33,
+        "score": -0.17499999999999993
+      },
+      {
+        "doc_id": "5FBYHPRTW4I6VEP5QLKOASR7VQ_0",
+        "original_rank": 2,
+        "new_rank": 1,
+        "score": -0.5
+      },
+      {
+        "doc_id": "6WATSNTI4QI6RHRYETTJHM4GG4_0",
+        "original_rank": 22,
+        "new_rank": 22,
+        "score": 0.0
+      },
+      {
+        "doc_id": "7LB3Z434DFCJBDRIGLMK5WPGUU_2",
+        "original_rank": 320,
+        "new_rank": 374,
+        "score": 0.14438502673796805
+      },
+      {
+        "doc_id": "BECCGZESVUI6RPGVTWIRY6CMHA_0",
+        "original_rank": 71,
+        "new_rank": 77,
+        "score": 0.07792207792207784
+      },
+      {
+        "doc_id": "BQSN4PMP3FAFTOP5OWP6BOP72M_7",
+        "original_rank": 37,
+        "new_rank": 29,
+        "score": -0.21621621621621612
+      },
+      {
+        "doc_id": "BURW4RCHN5HKHHXQHTOYLNN3OI_0",
+        "original_rank": 301,
+        "new_rank": 382,
+        "score": 0.2120418848167539
+      },
+      {
+        "doc_id": "CU2KGOVSSJCRDLALZGR4V23OCU_0",
+        "original_rank": 7,
+        "new_rank": 7,
+        "score": 0.0
+      },
+      {
+        "doc_id": "DDNHLVXPPRBOLO2TE7KBA47DRI_0",
+        "original_rank": 81,
+        "new_rank": 85,
+        "score": 0.04705882352941171
+      },
+      {
+        "doc_id": "EAWZSYMCTVBZVH2SFYHVDJYMK4_3",
+        "original_rank": 75,
+        "new_rank": 75,
+        "score": 0.0
+      },
+      {
+        "doc_id": "F4P2N3DGNEI6RJ3I5UCD4M7R3Q_1",
+        "original_rank": 453,
+        "new_rank": 481,
+        "score": 0.058212058212058104
+      },
+      {
+        "doc_id": "GPYQDPPA6ZG53ECU34FVQXED4Q_0",
+        "original_rank": 72,
+        "new_rank": 76,
+        "score": 0.052631578947368474
+      },
+      {
+        "doc_id": "GUKNHJGYFMI6RIIPWUKUNMIHKY_0",
+        "original_rank": 33,
+        "new_rank": 34,
+        "score": 0.02941176470588236
+      },
+      {
+        "doc_id": "HTIPJKA6SAI6XLKTJQP5USMQPU_1",
+        "original_rank": 19,
+        "new_rank": 19,
+        "score": 0.0
+      },
+      {
+        "doc_id": "J5EXMPDF7RF7JE6DHOV6ZUHLJE_0",
+        "original_rank": 303,
+        "new_rank": 298,
+        "score": -0.01650165016501648
+      },
+      {
+        "doc_id": "JBNZWR3THZBBTARYB76PUMAXXE_3",
+        "original_rank": 96,
+        "new_rank": 103,
+        "score": 0.06796116504854377
+      },
+      {
+        "doc_id": "JDKQAYLJTBHC5ITW553PGNNJQE_0",
+        "original_rank": 42,
+        "new_rank": 44,
+        "score": 0.045454545454545414
+      },
+      {
+        "doc_id": "JXOS3HHK2UI6TIZJON4PX6Q3MM_0",
+        "original_rank": 15,
+        "new_rank": 14,
+        "score": -0.06666666666666665
+      },
+      {
+        "doc_id": "KJ374EQYOEI6VAGW2DFHABZHH4_0",
+        "original_rank": 9,
+        "new_rank": 10,
+        "score": 0.09999999999999987
+      },
+      {
+        "doc_id": "L4FKIOUQHJDWHP672GB7RMXZEU_2",
+        "original_rank": 57,
+        "new_rank": 67,
+        "score": 0.14925373134328357
+      },
+      {
+        "doc_id": "LCXJ7LRSOUI6RCV4EKRWNNZPFU_1",
+        "original_rank": 580,
+        "new_rank": 611,
+        "score": 0.050736497545008086
+      },
+      {
+        "doc_id": "LLZ5S5KN5BBTRGQSES74CKPXPE_0",
+        "original_rank": 17,
+        "new_rank": 16,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "MKVQB3FLWRH6RPAUT4VK7RM6LE_2",
+        "original_rank": 257,
+        "new_rank": 299,
+        "score": 0.14046822742474918
+      },
+      {
+        "doc_id": "MZMSEJBG5FCW5BIGBIPJH3J4NA_3",
+        "original_rank": 194,
+        "new_rank": 221,
+        "score": 0.12217194570135737
+      },
+      {
+        "doc_id": "NIFXMVXYTFA3TMHTACK2ZEEU3E_2",
+        "original_rank": 8,
+        "new_rank": 8,
+        "score": 0.0
+      },
+      {
+        "doc_id": "O3FWJRVDG4I6RI65FIMZD4DV2U_0",
+        "original_rank": 266,
+        "new_rank": 260,
+        "score": -0.022556390977443663
+      },
+      {
+        "doc_id": "Q4A32CV2OQI6RPOASD4BZRMMLU_1",
+        "original_rank": 109,
+        "new_rank": 121,
+        "score": 0.09917355371900827
+      },
+      {
+        "doc_id": "QCZ45NBIJQI6XHBBHTCQDUEYD4_2",
+        "original_rank": 21,
+        "new_rank": 20,
+        "score": -0.04761904761904767
+      },
+      {
+        "doc_id": "QDEEYXDUL4I6RNFXGCCAAJBMFY_3",
+        "original_rank": 168,
+        "new_rank": 172,
+        "score": 0.023255813953488302
+      },
+      {
+        "doc_id": "RJIIG6SFWYI6RMW4WCSAHZDSBI_0",
+        "original_rank": 207,
+        "new_rank": 190,
+        "score": -0.08212560386473433
+      },
+      {
+        "doc_id": "SJI6TPU6ZRC2DIDNSPB2GU23PA_0",
+        "original_rank": 6,
+        "new_rank": 3,
+        "score": -0.5
+      },
+      {
+        "doc_id": "T3JI7RG5XUI6RM7QMJQHFCPP5Y_1",
+        "original_rank": 74,
+        "new_rank": 78,
+        "score": 0.05128205128205132
+      },
+      {
+        "doc_id": "TCY3SXRVVAI6XFUZADJRD4J5FU_0",
+        "original_rank": 49,
+        "new_rank": 52,
+        "score": 0.0576923076923076
+      },
+      {
+        "doc_id": "UEKE7FUCNMI6RONFPYOACP4MGM_0",
+        "original_rank": 36,
+        "new_rank": 35,
+        "score": -0.02777777777777779
+      },
+      {
+        "doc_id": "ULYGELNNTFCAXLRXUH6MLSMCZA_3",
+        "original_rank": 90,
+        "new_rank": 83,
+        "score": -0.07777777777777783
+      },
+      {
+        "doc_id": "UQNT4SUF4MI6RHQGJW2SVRBOAU_0",
+        "original_rank": 44,
+        "new_rank": 41,
+        "score": -0.06818181818181823
+      },
+      {
+        "doc_id": "UZQNUIC6EII6VLCQDBYB4FHANU_0",
+        "original_rank": 16,
+        "new_rank": 17,
+        "score": 0.05882352941176472
+      },
+      {
+        "doc_id": "V7YMDAEADQI6RMHP776KX37ZIY_0",
+        "original_rank": 163,
+        "new_rank": 141,
+        "score": -0.13496932515337423
+      },
+      {
+        "doc_id": "WUAC46WRE4I6RMWS6OLSE62D6A_0",
+        "original_rank": 35,
+        "new_rank": 45,
+        "score": 0.2222222222222222
+      },
+      {
+        "doc_id": "YRLT6WS2JMI6TGGUQRAIRUJV6I_0",
+        "original_rank": 38,
+        "new_rank": 42,
+        "score": 0.09523809523809523
+      }
+    ],
+    "debug_info": {}
+  },
+  "950": {
+    "rank": 19,
+    "pmrr": 0.002975774297258415,
+    "query": "Find information about the popularity of traditional painkillers, anti-anxiety medications and anti-nausea drugs in states that adopted medical marijuana laws.",
+    "instruction": "Studies indicate that medical marijuana is effective in treating chronic pain; PTSD; anxiety; AIDS; and spasms. Overall, most of the same studies report that there has been a decrease in a variety of drugs, especially pain-killers, in states that have adopted medical marijuana laws. Among the older population, medical marijuana is reportedly improving their quality of life, making them less dependent widely prescribed opioid painkillers and other drugs.",
+    "full_text": "Find information about the popularity of traditional painkillers, anti-anxiety medications and anti-nausea drugs in states that adopted medical marijuana laws. Studies indicate that medical marijuana is effective in treating chronic pain; PTSD; anxiety; AIDS; and spasms. Overall, most of the same studies report that there has been a decrease in a variety of drugs, especially pain-killers, in states that have adopted medical marijuana laws. Among the older population, medical marijuana is reportedly improving their quality of life, making them less dependent widely prescribed opioid painkillers and other drugs.",
+    "doc_details": [
+      {
+        "doc_id": "0ae2fc8cf42f39d78cd59d7e491809d2_0",
+        "original_rank": 34,
+        "new_rank": 35,
+        "score": 0.02857142857142858
+      },
+      {
+        "doc_id": "1580942ef5c6740d8ae89b17e25c2ecd_1",
+        "original_rank": 28,
+        "new_rank": 29,
+        "score": 0.03448275862068961
+      },
+      {
+        "doc_id": "179ee5499e9a48d054bb7b426c0f2591_2",
+        "original_rank": 50,
+        "new_rank": 49,
+        "score": -0.019999999999999907
+      },
+      {
+        "doc_id": "1f2688ea421a8d017af10ebd7255a4e6_4",
+        "original_rank": 508,
+        "new_rank": 493,
+        "score": -0.029527559055118058
+      },
+      {
+        "doc_id": "2498ffc8-2259-11e4-8593-da634b334390_2",
+        "original_rank": 172,
+        "new_rank": 200,
+        "score": 0.14
+      },
+      {
+        "doc_id": "26ebc76c6739398e3853813f85f32bba_2",
+        "original_rank": 392,
+        "new_rank": 457,
+        "score": 0.14223194748358858
+      },
+      {
+        "doc_id": "2a15bb1a-0999-11e7-93dc-00f9bdd74ed1_0",
+        "original_rank": 14,
+        "new_rank": 14,
+        "score": 0.0
+      },
+      {
+        "doc_id": "2a5ebbcc-6a2e-11e1-acc6-32fefc7ccd67_1",
+        "original_rank": 58,
+        "new_rank": 56,
+        "score": -0.03448275862068961
+      },
+      {
+        "doc_id": "2a85f060-df29-11e5-846c-10191d1fc4ec_4",
+        "original_rank": 554,
+        "new_rank": 567,
+        "score": 0.022927689594356315
+      },
+      {
+        "doc_id": "42dbbc5a-8e61-11e3-b46a-5a3d0d2130da_5",
+        "original_rank": 783,
+        "new_rank": 774,
+        "score": -0.011494252873563204
+      },
+      {
+        "doc_id": "4d42d63a-acb3-11e4-9c91-e9d2f9fde644_5",
+        "original_rank": 103,
+        "new_rank": 114,
+        "score": 0.0964912280701754
+      },
+      {
+        "doc_id": "4f8c398cc0bb4b682a6b81c86e423837_3",
+        "original_rank": 471,
+        "new_rank": 476,
+        "score": 0.010504201680672343
+      },
+      {
+        "doc_id": "52ecb14589b5045694fa1ae5ae1b124a_1",
+        "original_rank": 134,
+        "new_rank": 116,
+        "score": -0.13432835820895528
+      },
+      {
+        "doc_id": "53bcac2d3634b0866ac45e5662c1cf15_1",
+        "original_rank": 18,
+        "new_rank": 23,
+        "score": 0.21739130434782605
+      },
+      {
+        "doc_id": "5491c708be61f5e8365da06c11f95686_1",
+        "original_rank": 600,
+        "new_rank": 572,
+        "score": -0.046666666666666634
+      },
+      {
+        "doc_id": "580cc2b2b10c7f61fabc2c564ef28dc6_0",
+        "original_rank": 62,
+        "new_rank": 61,
+        "score": -0.016129032258064613
+      },
+      {
+        "doc_id": "5a7f38e4-6a20-11e1-acc6-32fefc7ccd67_0",
+        "original_rank": 888,
+        "new_rank": 925,
+        "score": 0.039999999999999925
+      },
+      {
+        "doc_id": "62ff38f152d809024fb0e9de434b422d_1",
+        "original_rank": 435,
+        "new_rank": 422,
+        "score": -0.029885057471264465
+      },
+      {
+        "doc_id": "676e4e62-2e80-11e7-9534-00e4656c22aa_0",
+        "original_rank": 21,
+        "new_rank": 20,
+        "score": -0.04761904761904767
+      },
+      {
+        "doc_id": "6851dff6eed7154294fb30fbfa4c12f3_1",
+        "original_rank": 120,
+        "new_rank": 127,
+        "score": 0.055118110236220486
+      },
+      {
+        "doc_id": "6NQAUPBOGMI6TBVLLUBBBGXLAE_5",
+        "original_rank": 379,
+        "new_rank": 395,
+        "score": 0.040506329113924044
+      },
+      {
+        "doc_id": "6cb0b4c99c0cba5680b22c1da9ed0700_2",
+        "original_rank": 157,
+        "new_rank": 161,
+        "score": 0.024844720496894568
+      },
+      {
+        "doc_id": "71c497af0f76f601d0929e51aff4ac9d_1",
+        "original_rank": 447,
+        "new_rank": 415,
+        "score": -0.0715883668903804
+      },
+      {
+        "doc_id": "7254957e43d594cac923959ff22f89b3_0",
+        "original_rank": 39,
+        "new_rank": 40,
+        "score": 0.02499999999999991
+      },
+      {
+        "doc_id": "780bd1d45499e0fa3893913c48d46010_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "7caf3d23d19ad894fe8023deac2b3f5e_2",
+        "original_rank": 68,
+        "new_rank": 62,
+        "score": -0.08823529411764708
+      },
+      {
+        "doc_id": "8121908d592742b5d043c143530d7b5b_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "876e3a2be1f9a76a9ee62479150a5c5a_0",
+        "original_rank": 10,
+        "new_rank": 12,
+        "score": 0.16666666666666674
+      },
+      {
+        "doc_id": "937f168f58c7e29c18dc69e564a7960c_1",
+        "original_rank": 52,
+        "new_rank": 52,
+        "score": 0.0
+      },
+      {
+        "doc_id": "9fcc78ff5c51e3cbe5bae2f29fa0670d_2",
+        "original_rank": 810,
+        "new_rank": 841,
+        "score": 0.03686087990487519
+      },
+      {
+        "doc_id": "BALZGHK7BNBGPOAYAE3BUN5GNY_1",
+        "original_rank": 176,
+        "new_rank": 192,
+        "score": 0.08333333333333337
+      },
+      {
+        "doc_id": "BRALHP35P5E2JESC77KGRUN7NY_3",
+        "original_rank": 31,
+        "new_rank": 28,
+        "score": -0.09677419354838712
+      },
+      {
+        "doc_id": "GWOMRWEVWJCQ7N7VO7BWNRCQC4_1",
+        "original_rank": 689,
+        "new_rank": 666,
+        "score": -0.03338171262699563
+      },
+      {
+        "doc_id": "JLWXPEIIJVBT7FYQ6QOLFQCOFE_0",
+        "original_rank": 388,
+        "new_rank": 399,
+        "score": 0.027568922305764465
+      },
+      {
+        "doc_id": "KTKJWYS3A5CWFM5TMB2FHYOVAA_1",
+        "original_rank": 292,
+        "new_rank": 287,
+        "score": -0.017123287671232945
+      },
+      {
+        "doc_id": "L5KJKVWHN5FMLBPR4OCSK6BSKA_1",
+        "original_rank": 8,
+        "new_rank": 7,
+        "score": -0.125
+      },
+      {
+        "doc_id": "MQFMAKSSKRF3PJTB5FSAFMUJS4_1",
+        "original_rank": 6,
+        "new_rank": 5,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "PRXVO6RO2MI6TAJ2BKZPC7RQLM_2",
+        "original_rank": 32,
+        "new_rank": 30,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "RTIPL2UZRYI6RNQLDSEX6F7BQU_0",
+        "original_rank": 83,
+        "new_rank": 93,
+        "score": 0.10752688172043012
+      },
+      {
+        "doc_id": "U3V352R3REI6TN4G22V4XTJBFI_3",
+        "original_rank": 35,
+        "new_rank": 36,
+        "score": 0.02777777777777779
+      },
+      {
+        "doc_id": "X66PDD6EFRCGFFCG73FX6YOOLY_1",
+        "original_rank": 92,
+        "new_rank": 83,
+        "score": -0.09782608695652184
+      },
+      {
+        "doc_id": "XDQ4SJELS4I6TLPT64HXRQKW5A_1",
+        "original_rank": 168,
+        "new_rank": 159,
+        "score": -0.053571428571428714
+      },
+      {
+        "doc_id": "a7551e395dfeee5b6941549b87e28c35_0",
+        "original_rank": 56,
+        "new_rank": 58,
+        "score": 0.03448275862068961
+      },
+      {
+        "doc_id": "ad271b8fc0b290b2c04c56a28f8ef4be_0",
+        "original_rank": 242,
+        "new_rank": 217,
+        "score": -0.10330578512396693
+      },
+      {
+        "doc_id": "b01b1081b8409e6579eb78d8bd2254fa_0",
+        "original_rank": 85,
+        "new_rank": 86,
+        "score": 0.011627906976744207
+      },
+      {
+        "doc_id": "be1a71d8-035a-11e7-ad5b-d22680e18d10_14",
+        "original_rank": 572,
+        "new_rank": 555,
+        "score": -0.029720279720279685
+      },
+      {
+        "doc_id": "c78f54e599bdb092fafb818f86578592_1",
+        "original_rank": 363,
+        "new_rank": 364,
+        "score": 0.0027472527472527375
+      },
+      {
+        "doc_id": "ccae46a6-87f1-11e5-9a07-453018f9a0ec_4",
+        "original_rank": 377,
+        "new_rank": 375,
+        "score": -0.0053050397877983935
+      },
+      {
+        "doc_id": "cd63e3dbc3f888e8a219b474262943b2_3",
+        "original_rank": 5,
+        "new_rank": 4,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "ce58f47340190da8dc97d435e4b3b066_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "daed5fb3f83ec0cf7e98621d1d043297_0",
+        "original_rank": 493,
+        "new_rank": 507,
+        "score": 0.027613412228796763
+      },
+      {
+        "doc_id": "e048d322-baed-11e6-91ee-1adddfe36cbe_5",
+        "original_rank": 384,
+        "new_rank": 430,
+        "score": 0.10697674418604652
+      },
+      {
+        "doc_id": "e83794274df6e2d65f8d8d1fdf6256a0_1",
+        "original_rank": 108,
+        "new_rank": 112,
+        "score": 0.0357142857142857
+      },
+      {
+        "doc_id": "e8f2120437312b1b8d1b66619501d690_0",
+        "original_rank": 88,
+        "new_rank": 101,
+        "score": 0.12871287128712872
+      },
+      {
+        "doc_id": "ed9c69e75b5ea58b944a99fc8eafaa95_2",
+        "original_rank": 51,
+        "new_rank": 53,
+        "score": 0.037735849056603765
+      },
+      {
+        "doc_id": "eda22d03ced472389cbdc39471045fb9_0",
+        "original_rank": 234,
+        "new_rank": 228,
+        "score": -0.02564102564102544
+      }
+    ],
+    "debug_info": {}
+  },
+  "965": {
+    "rank": 20,
+    "pmrr": 0.0038528271151733315,
+    "query": "How has foreign travel been affected by the COVID-19 pandemic?",
+    "instruction": "Due to the COVID-19 pandemic, foreign travel is being severely restricted in an attempt to prevent further spread of the disease.  Travel bans are in place for Americans traveling to certain foreign countries, as well as for foreigners who want to travel to the U.S.  According to research, over 93% of the world's population live in countries with sudden new border restrictions.  It is estimated that at least 140 countries have closed their borders to some or all foreign travelers.  Information about current rules and regulations, as well as indications as to what factors influence those decisions, are relevant.",
+    "full_text": "How has foreign travel been affected by the COVID-19 pandemic? Due to the COVID-19 pandemic, foreign travel is being severely restricted in an attempt to prevent further spread of the disease.  Travel bans are in place for Americans traveling to certain foreign countries, as well as for foreigners who want to travel to the U.S.  According to research, over 93% of the world's population live in countries with sudden new border restrictions.  It is estimated that at least 140 countries have closed their borders to some or all foreign travelers.  Information about current rules and regulations, as well as indications as to what factors influence those decisions, are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "3J25QJSGYBBGBKWSZDT66GCIMQ_1",
+        "original_rank": 100,
+        "new_rank": 102,
+        "score": 0.019607843137254943
+      },
+      {
+        "doc_id": "52WGDNSEFMI6VNIDFMDXYQ3GC4_26",
+        "original_rank": 26,
+        "new_rank": 22,
+        "score": -0.15384615384615385
+      },
+      {
+        "doc_id": "BIL4TCHERNEI5JEQWQVS5XTCDU_7",
+        "original_rank": 31,
+        "new_rank": 34,
+        "score": 0.08823529411764708
+      },
+      {
+        "doc_id": "CNYDPMLMZVAIBNEYMOODSXZGC4_0",
+        "original_rank": 154,
+        "new_rank": 132,
+        "score": -0.1428571428571428
+      },
+      {
+        "doc_id": "GY2NXGSAU4I6VKTKBA6QDM7NDA_21",
+        "original_rank": 177,
+        "new_rank": 186,
+        "score": 0.048387096774193505
+      },
+      {
+        "doc_id": "J7XWXPB5III6VOINKZJIA3B3HI_0",
+        "original_rank": 168,
+        "new_rank": 168,
+        "score": 0.0
+      },
+      {
+        "doc_id": "JUF6OHDKHYI6VMMZHKLZTRKFCI_2",
+        "original_rank": 65,
+        "new_rank": 77,
+        "score": 0.15584415584415579
+      },
+      {
+        "doc_id": "KN2B6LXTOQI6VN4WFXIJSYTETQ_2",
+        "original_rank": 153,
+        "new_rank": 147,
+        "score": -0.039215686274509776
+      },
+      {
+        "doc_id": "LC62WWCWVUI6VK3ICAPM73BFGI_4",
+        "original_rank": 264,
+        "new_rank": 260,
+        "score": -0.015151515151515138
+      },
+      {
+        "doc_id": "QNQUB6DH6II6VMMZHKLZTRKFCI_0",
+        "original_rank": 494,
+        "new_rank": 501,
+        "score": 0.0139720558882237
+      },
+      {
+        "doc_id": "QRAJBUDDXQI6VM74PBAWQ3C4K4_0",
+        "original_rank": 68,
+        "new_rank": 69,
+        "score": 0.01449275362318836
+      },
+      {
+        "doc_id": "RQWWXVTFWII6VLGKQDBCXPXJN4_2",
+        "original_rank": 163,
+        "new_rank": 169,
+        "score": 0.03550295857988173
+      },
+      {
+        "doc_id": "V25JKCS73UI6VMAUJ6X2QZV3QE_6",
+        "original_rank": 20,
+        "new_rank": 20,
+        "score": 0.0
+      },
+      {
+        "doc_id": "XA4O3ZVO5ZFBDIRJ7WMAV3MDP4_0",
+        "original_rank": 56,
+        "new_rank": 59,
+        "score": 0.05084745762711862
+      },
+      {
+        "doc_id": "XYRKASSHX4I6VENLZZBZVJOHYE_2",
+        "original_rank": 906,
+        "new_rank": 894,
+        "score": -0.013245033112582738
+      },
+      {
+        "doc_id": "ZJP52FTBOEI6VLGKQDBCXPXJN4_0",
+        "original_rank": 341,
+        "new_rank": 342,
+        "score": 0.0029239766081872176
+      },
+      {
+        "doc_id": "ZJQDHLJSEFF2XP3M3N23GZ4FOM_1",
+        "original_rank": 54,
+        "new_rank": 54,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "964": {
+    "rank": 21,
+    "pmrr": 0.011608174376253907,
+    "query": "I'm looking for information about an adenovirus outbreak at the University of Maryland and the related death of Olivia Paregol.",
+    "instruction": "I'm looking for information regarding the adenovirus infection and subsequent death of Olivia Paregol at the College Park campus of the University of Maryland. I'm interested in how and when the university administration became aware of a possible outbreak and what steps were taken to inform vulnerable students and their parents of the risk. Details about other students' affected by the virus are relevant.  Administrative repercussions and actions and any steps taken to mitigate and prevent the spread of adenovirus also are relevant.",
+    "full_text": "I'm looking for information about an adenovirus outbreak at the University of Maryland and the related death of Olivia Paregol. I'm looking for information regarding the adenovirus infection and subsequent death of Olivia Paregol at the College Park campus of the University of Maryland. I'm interested in how and when the university administration became aware of a possible outbreak and what steps were taken to inform vulnerable students and their parents of the risk. Details about other students' affected by the virus are relevant.  Administrative repercussions and actions and any steps taken to mitigate and prevent the spread of adenovirus also are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "4BQQRJHGCII6TNAD644ITGMC2I_0",
+        "original_rank": 26,
+        "new_rank": 24,
+        "score": -0.07692307692307687
+      },
+      {
+        "doc_id": "5ZGFAIU3HFC5FMU34TXOA5QNSE_1",
+        "original_rank": 25,
+        "new_rank": 26,
+        "score": 0.038461538461538436
+      },
+      {
+        "doc_id": "6N3ESDXRAII6TBUT6SD6IZ4EVI_2",
+        "original_rank": 11,
+        "new_rank": 13,
+        "score": 0.15384615384615385
+      },
+      {
+        "doc_id": "AVKEFWUC4QI6TPHHIC2BAX34UA_3",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "DMFQW6U2WUI6TDIKL3OX4IBFWE_4",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "EF4RPLT4CAI6TJNTGTZ634JVDY_1",
+        "original_rank": 23,
+        "new_rank": 22,
+        "score": -0.0434782608695653
+      },
+      {
+        "doc_id": "EXLWLID6OAI6TDW66SV7KIPPC4_0",
+        "original_rank": 19,
+        "new_rank": 21,
+        "score": 0.09523809523809523
+      },
+      {
+        "doc_id": "GZTJJWHVEUI6RAGQ67QZJDKV6Q_0",
+        "original_rank": 43,
+        "new_rank": 40,
+        "score": -0.06976744186046513
+      },
+      {
+        "doc_id": "HOE4HSEVYJEKVCUS6SHVBBPKBY_1",
+        "original_rank": 207,
+        "new_rank": 197,
+        "score": -0.048309178743961345
+      },
+      {
+        "doc_id": "KEM47NXSJMI6RLXKXBP5IRCJ6U_0",
+        "original_rank": 5,
+        "new_rank": 7,
+        "score": 0.2857142857142858
+      },
+      {
+        "doc_id": "M2GJ5WAJ7JHH7IWPP23GQOJXLM_7",
+        "original_rank": 7,
+        "new_rank": 4,
+        "score": -0.4285714285714286
+      },
+      {
+        "doc_id": "MARWCAI7PRHMFDQ22H5I5RRRIM_1",
+        "original_rank": 24,
+        "new_rank": 25,
+        "score": 0.039999999999999925
+      },
+      {
+        "doc_id": "MTCUDQEDYQI6TFNJ4LEDBL7CJ4_0",
+        "original_rank": 4,
+        "new_rank": 5,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "P4NT7TGVMRGR5II4LS4FXAFYMQ_1",
+        "original_rank": 14,
+        "new_rank": 14,
+        "score": 0.0
+      },
+      {
+        "doc_id": "PTEPFQODSJGTFIEK6LSZELL5YQ_3",
+        "original_rank": 15,
+        "new_rank": 15,
+        "score": 0.0
+      },
+      {
+        "doc_id": "R4F5SVHNDEI6ROVMFJTU5EKQFM_0",
+        "original_rank": 8,
+        "new_rank": 8,
+        "score": 0.0
+      },
+      {
+        "doc_id": "SMWLMCNGR5GYRFWIFOVHDW5K5A_0",
+        "original_rank": 37,
+        "new_rank": 41,
+        "score": 0.09756097560975607
+      },
+      {
+        "doc_id": "X757DKPFGVESZO5IVY5HEXZF4Q_3",
+        "original_rank": 12,
+        "new_rank": 12,
+        "score": 0.0
+      },
+      {
+        "doc_id": "XNAUDQAGIEI6VAUSYRXORSZ5ZY_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "ZD7TP3CDOFBSFL5NLWKAJ6XZCI_2",
+        "original_rank": 9,
+        "new_rank": 9,
+        "score": 0.0
+      },
+      {
+        "doc_id": "ZEPL2FH5BEI6RBRKW2TPHTUBTE_0",
+        "original_rank": 30,
+        "new_rank": 30,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "969": {
+    "rank": 22,
+    "pmrr": 0.012716632437871522,
+    "query": "Describe US sanctions on Oleg Deripaska",
+    "instruction": "US sanctions against companies owned by Russian oligarch Oleg Deripaska have been lifted.  What prompted imposition of the sanctions?  Why were sanctions lifted?  What Deripaska-owned companies were involved?  What impact did the sanctions have on Deripaska?  European sanctions on Deripaska are not relevant nor are European reactions to US sanctions.  Deripaska's relationship with Paul Manfort and Konstantin Kilimnik are not pertinent.",
+    "full_text": "Describe US sanctions on Oleg Deripaska US sanctions against companies owned by Russian oligarch Oleg Deripaska have been lifted.  What prompted imposition of the sanctions?  Why were sanctions lifted?  What Deripaska-owned companies were involved?  What impact did the sanctions have on Deripaska?  European sanctions on Deripaska are not relevant nor are European reactions to US sanctions.  Deripaska's relationship with Paul Manfort and Konstantin Kilimnik are not pertinent.",
+    "doc_details": [
+      {
+        "doc_id": "2MP4ONJ32FFA7HOUKUKNOU2ASM_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "4BIRPIGZUFANDKNQVRRWWGKE6E_1",
+        "original_rank": 3,
+        "new_rank": 4,
+        "score": 0.25
+      },
+      {
+        "doc_id": "5dba9518-4d4a-11e7-a186-60c031eab644_3",
+        "original_rank": 151,
+        "new_rank": 147,
+        "score": -0.026490066225165476
+      },
+      {
+        "doc_id": "6MIG62WZWZHB3ELY3WFWPDFOVU_1",
+        "original_rank": 28,
+        "new_rank": 30,
+        "score": 0.06666666666666665
+      },
+      {
+        "doc_id": "6ecbaa96-0f0f-11e7-9b0d-d27c98455440_2",
+        "original_rank": 131,
+        "new_rank": 120,
+        "score": -0.08396946564885499
+      },
+      {
+        "doc_id": "A3AMVXCTDRALTNWNDSKGI43OII_1",
+        "original_rank": 34,
+        "new_rank": 33,
+        "score": -0.02941176470588236
+      },
+      {
+        "doc_id": "HQ6TUNQ6RII6TEKFH52AOC55XE_0",
+        "original_rank": 17,
+        "new_rank": 14,
+        "score": -0.17647058823529405
+      },
+      {
+        "doc_id": "JZTJEI5RPFD5PPVAF3LVNM3ROU_2",
+        "original_rank": 84,
+        "new_rank": 87,
+        "score": 0.03448275862068961
+      },
+      {
+        "doc_id": "KWM6XVZKCNCGZPET3XMCGYD5YA_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "LHEFANDYS4I6RAF6NUZODAVDXQ_5",
+        "original_rank": 156,
+        "new_rank": 154,
+        "score": -0.012820512820512886
+      },
+      {
+        "doc_id": "LN4GGJBQ4NBDDKH6BXNTSFMM4E_3",
+        "original_rank": 38,
+        "new_rank": 39,
+        "score": 0.02564102564102566
+      },
+      {
+        "doc_id": "OKEFX5A3GYI6THV7YX7NDN5AQE_0",
+        "original_rank": 24,
+        "new_rank": 24,
+        "score": 0.0
+      },
+      {
+        "doc_id": "OKZG4AFZPQI6TM5UFO3J5DCOHE_9",
+        "original_rank": 19,
+        "new_rank": 20,
+        "score": 0.04999999999999993
+      },
+      {
+        "doc_id": "QAUFMQQTRYI6TNVNTT6WFW5QVA_0",
+        "original_rank": 13,
+        "new_rank": 12,
+        "score": -0.07692307692307687
+      },
+      {
+        "doc_id": "QLQAAOJVS5DXXFED3HGMFSD4HY_7",
+        "original_rank": 629,
+        "new_rank": 656,
+        "score": 0.041158536585365835
+      },
+      {
+        "doc_id": "R2PQTLHWJMI6PPVWZDKIQMGFJU_0",
+        "original_rank": 75,
+        "new_rank": 73,
+        "score": -0.026666666666666505
+      },
+      {
+        "doc_id": "S7PSPARZRYI6RNL4SRC4YTP2LY_0",
+        "original_rank": 8,
+        "new_rank": 9,
+        "score": 0.11111111111111116
+      },
+      {
+        "doc_id": "VZ2A6UFEG5FMHJ2ZR5AGCI4YIY_4",
+        "original_rank": 9,
+        "new_rank": 8,
+        "score": -0.11111111111111116
+      },
+      {
+        "doc_id": "YAHX4EA6MEI6TJ2ZFOCUDO56EA_6",
+        "original_rank": 70,
+        "new_rank": 81,
+        "score": 0.13580246913580252
+      },
+      {
+        "doc_id": "YYYXZ2SJAJELDLP7BYNBGPE7W4_1",
+        "original_rank": 44,
+        "new_rank": 48,
+        "score": 0.08333333333333337
+      }
+    ],
+    "debug_info": {}
+  },
+  "982": {
+    "rank": 23,
+    "pmrr": 0.015332067523027345,
+    "query": "How accurate was the 2020 reporting of COVID-19 in Mexico?",
+    "instruction": "Several factors contributed to under-reporting COVID-related cases and deaths in Mexico.  One factor was that Mexico only included fatalities confirmed with a lab test. Hospitals were understaffed and often people died at home so those deaths were not counted as COVID deaths.  Also, due to Mexico's informal economy where more than 50 per cent of the workforce does not have government benefits meant that this sectors' COVID cases and deaths were under-reported.  Further, understaffed hospitals could not keep up with the massive amount of COVID-patients and the associated documentation.  Although the US-Mexico border was closed to vehicular traffic, air travel to Mexican resorts did not require COVID tests or quarantine time.  Therefore COVID cases associated with these travelers was not reported.",
+    "full_text": "How accurate was the 2020 reporting of COVID-19 in Mexico? Several factors contributed to under-reporting COVID-related cases and deaths in Mexico.  One factor was that Mexico only included fatalities confirmed with a lab test. Hospitals were understaffed and often people died at home so those deaths were not counted as COVID deaths.  Also, due to Mexico's informal economy where more than 50 per cent of the workforce does not have government benefits meant that this sectors' COVID cases and deaths were under-reported.  Further, understaffed hospitals could not keep up with the massive amount of COVID-patients and the associated documentation.  Although the US-Mexico border was closed to vehicular traffic, air travel to Mexican resorts did not require COVID tests or quarantine time.  Therefore COVID cases associated with these travelers was not reported.",
+    "doc_details": [
+      {
+        "doc_id": "4OSOJDT7MYI6VBGCA6JNQWIZCE_0",
+        "original_rank": 14,
+        "new_rank": 14,
+        "score": 0.0
+      },
+      {
+        "doc_id": "4UMUEHSX6RCWJEI2YOGR4BLOEQ_2",
+        "original_rank": 87,
+        "new_rank": 96,
+        "score": 0.09375
+      },
+      {
+        "doc_id": "5VFXKMT7NAI6VBGCA6JNQWIZCE_0",
+        "original_rank": 425,
+        "new_rank": 438,
+        "score": 0.029680365296803624
+      },
+      {
+        "doc_id": "BZRE72TVC4I6VLM3EVHMTGMTXQ_2",
+        "original_rank": 124,
+        "new_rank": 95,
+        "score": -0.2338709677419355
+      },
+      {
+        "doc_id": "CSYY2BEF4EI6VANDS2IMTCARCE_3",
+        "original_rank": 270,
+        "new_rank": 230,
+        "score": -0.14814814814814814
+      },
+      {
+        "doc_id": "D2OKJDWGAUI6VD76G4V6RWBCTA_2",
+        "original_rank": 23,
+        "new_rank": 30,
+        "score": 0.23333333333333328
+      },
+      {
+        "doc_id": "FOVKWPV3XMI6VAFZIDWOTJYB3Q_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "HTFAXJVGEMI6VCMOWINZVA7XSI_0",
+        "original_rank": 3,
+        "new_rank": 4,
+        "score": 0.25
+      },
+      {
+        "doc_id": "NIXM3AXSBMI6VGM4M77XX5VJ2I_3",
+        "original_rank": 92,
+        "new_rank": 111,
+        "score": 0.1711711711711712
+      },
+      {
+        "doc_id": "OYSALBFDPYI6VCMOWINZVA7XSI_0",
+        "original_rank": 116,
+        "new_rank": 129,
+        "score": 0.10077519379844957
+      },
+      {
+        "doc_id": "RTZWGBPGQZHNFIB7ZMZI7SY774_2",
+        "original_rank": 220,
+        "new_rank": 216,
+        "score": -0.018181818181818188
+      },
+      {
+        "doc_id": "U6LVAUK2KBADXMCD2PVU3APE5Y_1",
+        "original_rank": 80,
+        "new_rank": 67,
+        "score": -0.16249999999999998
+      },
+      {
+        "doc_id": "UJITCEEZ4AI6VLLZ5334242GIE_2",
+        "original_rank": 329,
+        "new_rank": 344,
+        "score": 0.043604651162790664
+      },
+      {
+        "doc_id": "XMR7ANP4FBHUPPSKXU2W6VCTAI_0",
+        "original_rank": 105,
+        "new_rank": 120,
+        "score": 0.1250000000000001
+      },
+      {
+        "doc_id": "XS2K2XHG64I6VPDZQNCFIQ42IQ_1",
+        "original_rank": 319,
+        "new_rank": 330,
+        "score": 0.033333333333333326
+      },
+      {
+        "doc_id": "b4b22a8a-558c-4cf5-b0ec-4bfd9ae5b550_0",
+        "original_rank": 419,
+        "new_rank": 391,
+        "score": -0.06682577565632464
+      },
+      {
+        "doc_id": "edaebaa8-338e-4948-95ec-dcd15e31ddf3_0",
+        "original_rank": 42,
+        "new_rank": 34,
+        "score": -0.19047619047619047
+      }
+    ],
+    "debug_info": {}
+  },
+  "948": {
+    "rank": 24,
+    "pmrr": 0.021629963262895867,
+    "query": "Find information about troops who have been accused of war crimes during their service in Afghanistan.",
+    "instruction": "Australian forces are accused of war crimes while on duty in Afghanistan. Some other countries are also investigating what their troops may have done while serving there. There have also been American contractors accused and convicted of war crimes while fighting the War on Terror. The International Criminal Court (ICC) has been investigating these accusations for years, but the US government has not always been cooperative.",
+    "full_text": "Find information about troops who have been accused of war crimes during their service in Afghanistan. Australian forces are accused of war crimes while on duty in Afghanistan. Some other countries are also investigating what their troops may have done while serving there. There have also been American contractors accused and convicted of war crimes while fighting the War on Terror. The International Criminal Court (ICC) has been investigating these accusations for years, but the US government has not always been cooperative.",
+    "doc_details": [
+      {
+        "doc_id": "25KSQOXGNFBLFMT7V7K2ZJCFTQ_0",
+        "original_rank": 187,
+        "new_rank": 206,
+        "score": 0.09223300970873793
+      },
+      {
+        "doc_id": "2O6M7SVVYBC4VBIRF2Z3JCK5KQ_0",
+        "original_rank": 358,
+        "new_rank": 340,
+        "score": -0.05027932960893855
+      },
+      {
+        "doc_id": "3MQKBBQAYMI6VF3XLTKRY37MN4_2",
+        "original_rank": 309,
+        "new_rank": 295,
+        "score": -0.0453074433656957
+      },
+      {
+        "doc_id": "3RV4C5CUIVBJBICMAWU2FNF2TU_0",
+        "original_rank": 45,
+        "new_rank": 52,
+        "score": 0.13461538461538458
+      },
+      {
+        "doc_id": "591168a83398156c6fde08a0523912aa_0",
+        "original_rank": 199,
+        "new_rank": 187,
+        "score": -0.06030150753768837
+      },
+      {
+        "doc_id": "6RAIPVDY35EUVKSY3ELUT2VZWI_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "6TFTXHTFZFCLTIGFFZN6UJURNE_0",
+        "original_rank": 970,
+        "new_rank": 974,
+        "score": 0.004106776180698102
+      },
+      {
+        "doc_id": "7DXK734TIRA2POKCMUCI2T244Q_1",
+        "original_rank": 179,
+        "new_rank": 147,
+        "score": -0.1787709497206703
+      },
+      {
+        "doc_id": "9d6c0dca-1480-11e7-bb16-269934184168_0",
+        "original_rank": 362,
+        "new_rank": 366,
+        "score": 0.010928961748633892
+      },
+      {
+        "doc_id": "B3YMI5V2CUI6VBWVHONTQYZHHM_0",
+        "original_rank": 12,
+        "new_rank": 13,
+        "score": 0.07692307692307687
+      },
+      {
+        "doc_id": "CCU2ECSZJJHGBO4WEOPF6F2IKQ_2",
+        "original_rank": 121,
+        "new_rank": 109,
+        "score": -0.09917355371900827
+      },
+      {
+        "doc_id": "CRP4OUUJPII6VHP5TEHZ3TDR7Q_22",
+        "original_rank": 458,
+        "new_rank": 409,
+        "score": -0.10698689956331886
+      },
+      {
+        "doc_id": "DWE3GZZKMVEHXD77XMIEU67VOE_1",
+        "original_rank": 796,
+        "new_rank": 821,
+        "score": 0.030450669914738215
+      },
+      {
+        "doc_id": "F2LQH7T6I4I6TDW66SV7KIPPC4_0",
+        "original_rank": 83,
+        "new_rank": 63,
+        "score": -0.24096385542168663
+      },
+      {
+        "doc_id": "F46PSVMO7NC7TD676FGQWRRFTI_0",
+        "original_rank": 70,
+        "new_rank": 80,
+        "score": 0.12499999999999989
+      },
+      {
+        "doc_id": "HAOPPW2L5RG4VLB2ZCB6E5P33U_2",
+        "original_rank": 274,
+        "new_rank": 241,
+        "score": -0.12043795620437958
+      },
+      {
+        "doc_id": "KRVCKERSXAI6XFUZADJRD4J5FU_0",
+        "original_rank": 69,
+        "new_rank": 82,
+        "score": 0.1585365853658537
+      },
+      {
+        "doc_id": "KZ77MZDW4NHSPBGTLK2UNIMIKE_0",
+        "original_rank": 153,
+        "new_rank": 122,
+        "score": -0.20261437908496738
+      },
+      {
+        "doc_id": "LTFOQWD5MEI6TJNTGTZ634JVDY_0",
+        "original_rank": 81,
+        "new_rank": 90,
+        "score": 0.09999999999999987
+      },
+      {
+        "doc_id": "MA62D5CEXAI6XITXJGTND6O76E_1",
+        "original_rank": 485,
+        "new_rank": 530,
+        "score": 0.08490566037735847
+      },
+      {
+        "doc_id": "MEH5FNS5JII6TIAOAUG4POBGSM_2",
+        "original_rank": 8,
+        "new_rank": 8,
+        "score": 0.0
+      },
+      {
+        "doc_id": "MEYNPDFL6QI6VEDD42N5MUQJIA_1",
+        "original_rank": 1,
+        "new_rank": 2,
+        "score": 0.5
+      },
+      {
+        "doc_id": "MHCD7P2RLJF33OVX5X5VYJIEDY_4",
+        "original_rank": 208,
+        "new_rank": 221,
+        "score": 0.05882352941176472
+      },
+      {
+        "doc_id": "OKYTZQC6TRBG3LZW6KEGA76LVY_1",
+        "original_rank": 72,
+        "new_rank": 98,
+        "score": 0.26530612244897966
+      },
+      {
+        "doc_id": "PLEBSTFQNFFH3DKAHADS37EK2A_2",
+        "original_rank": 55,
+        "new_rank": 71,
+        "score": 0.22535211267605626
+      },
+      {
+        "doc_id": "Q7ZP35THKNCPXP6PCDBWSQUX4I_0",
+        "original_rank": 4,
+        "new_rank": 5,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "QFJJJ6HFMJEZRI7YZWQWFZVA7Q_1",
+        "original_rank": 122,
+        "new_rank": 112,
+        "score": -0.08196721311475397
+      },
+      {
+        "doc_id": "QKYDTIS64II6VLCQDBYB4FHANU_0",
+        "original_rank": 15,
+        "new_rank": 16,
+        "score": 0.0625
+      },
+      {
+        "doc_id": "QYZLAYLBHVDO7PUCJHO5DI745U_2",
+        "original_rank": 507,
+        "new_rank": 411,
+        "score": -0.18934911242603547
+      },
+      {
+        "doc_id": "SAY5MSY6DRE5ZMDA447FUG5434_0",
+        "original_rank": 21,
+        "new_rank": 14,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "SD3BD33SO5C2XE4GTUSNLK6FQM_0",
+        "original_rank": 73,
+        "new_rank": 84,
+        "score": 0.13095238095238093
+      },
+      {
+        "doc_id": "TXOEEWSXCAI6TAKP4L2GNBAZNY_0",
+        "original_rank": 71,
+        "new_rank": 68,
+        "score": -0.04225352112676051
+      },
+      {
+        "doc_id": "UTG3LMRLV4I6TF5TVZM7XLTZMA_3",
+        "original_rank": 731,
+        "new_rank": 724,
+        "score": -0.009575923392612817
+      },
+      {
+        "doc_id": "W2QMMLQMOUI6VPM5YYUP2SFTUA_6",
+        "original_rank": 181,
+        "new_rank": 227,
+        "score": 0.2026431718061673
+      },
+      {
+        "doc_id": "XBRLOJAEMUI6TNO7LU4HJ4NMGY_5",
+        "original_rank": 140,
+        "new_rank": 210,
+        "score": 0.33333333333333326
+      },
+      {
+        "doc_id": "XNFBD3X7CAI6RLKAZX6Q4DOWLI_0",
+        "original_rank": 31,
+        "new_rank": 19,
+        "score": -0.3870967741935484
+      },
+      {
+        "doc_id": "YO6YW4EJGVHPLJQCBPTFOYYTNM_0",
+        "original_rank": 468,
+        "new_rank": 337,
+        "score": -0.2799145299145299
+      },
+      {
+        "doc_id": "Z2Z54ZQMNUI6VJE7SBTPKFSA6Y_0",
+        "original_rank": 317,
+        "new_rank": 351,
+        "score": 0.09686609686609682
+      },
+      {
+        "doc_id": "ZASUOD2ZLVAVDGRJEFFEWEZA64_2",
+        "original_rank": 496,
+        "new_rank": 390,
+        "score": -0.21370967741935487
+      },
+      {
+        "doc_id": "ZZXJ45D66EI6RJR7PNOSVOT2YU_1",
+        "original_rank": 6,
+        "new_rank": 9,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "aeafe183a117a67afe100dafb7b0abe0_0",
+        "original_rank": 177,
+        "new_rank": 228,
+        "score": 0.22368421052631582
+      },
+      {
+        "doc_id": "cb9bf5da-96f7-11e2-97cd-3d8c1afe4f0f_5",
+        "original_rank": 9,
+        "new_rank": 10,
+        "score": 0.09999999999999987
+      }
+    ],
+    "debug_info": {}
+  },
+  "944": {
+    "rank": 25,
+    "pmrr": 0.022757576651223632,
+    "query": "Find information on homebrewing beer and its increasing popularity.",
+    "instruction": "Homebrewing beer has been legal in the United States since the 1970's. It's popularity increases each year. Some brewers have been using locally grown ingredients and have increased their output so much that they have turned their former hobby into profitable businesses. The Capitol region is a thriving area for homebrewers and microbrewers.  Find information on the growth of homebrewing.",
+    "full_text": "Find information on homebrewing beer and its increasing popularity. Homebrewing beer has been legal in the United States since the 1970's. It's popularity increases each year. Some brewers have been using locally grown ingredients and have increased their output so much that they have turned their former hobby into profitable businesses. The Capitol region is a thriving area for homebrewers and microbrewers.  Find information on the growth of homebrewing.",
+    "doc_details": [
+      {
+        "doc_id": "0d03f6e6-adf3-11e2-8bf6-e70cb6ae066e_0",
+        "original_rank": 42,
+        "new_rank": 35,
+        "score": -0.16666666666666674
+      },
+      {
+        "doc_id": "63cfe459d49798aaad76921afbd3a156_2",
+        "original_rank": 158,
+        "new_rank": 163,
+        "score": 0.030674846625766805
+      },
+      {
+        "doc_id": "755d0a9b15780d59fca0c4bf08277be7_1",
+        "original_rank": 284,
+        "new_rank": 307,
+        "score": 0.07491856677524433
+      },
+      {
+        "doc_id": "O7RAQLG3GEI6VAE6XC7FPOTBNY_8",
+        "original_rank": 262,
+        "new_rank": 309,
+        "score": 0.15210355987055013
+      }
+    ],
+    "debug_info": {}
+  },
+  "966": {
+    "rank": 26,
+    "pmrr": 0.06309766217880526,
+    "query": "When will there be a lunar eclipse visible from DC?",
+    "instruction": "I'm interested in what opportunities there are to view a lunar eclipse in the next ten years.  I'm less interested in past events except for the most recent last event.  Information on lunar eclipses is relevant, especially about how to best view them.",
+    "full_text": "When will there be a lunar eclipse visible from DC? I'm interested in what opportunities there are to view a lunar eclipse in the next ten years.  I'm less interested in past events except for the most recent last event.  Information on lunar eclipses is relevant, especially about how to best view them.",
+    "doc_details": [
+      {
+        "doc_id": "20102bdc-64b3-11e5-b38e-06883aacba64_0",
+        "original_rank": 44,
+        "new_rank": 78,
+        "score": 0.4358974358974359
+      },
+      {
+        "doc_id": "2499a1fa-73a3-11e7-8f39-eeb7d3a2d304_0",
+        "original_rank": 47,
+        "new_rank": 36,
+        "score": -0.23404255319148937
+      },
+      {
+        "doc_id": "2VDTU34TVZFSTMKSKG3X44RZHE_0",
+        "original_rank": 50,
+        "new_rank": 56,
+        "score": 0.1071428571428572
+      },
+      {
+        "doc_id": "32977e20-dcb0-11e5-925f-1d10062cc82d_0",
+        "original_rank": 226,
+        "new_rank": 176,
+        "score": -0.22123893805309736
+      },
+      {
+        "doc_id": "3f206762-ea27-11e6-bf6f-301b6b443624_0",
+        "original_rank": 185,
+        "new_rank": 174,
+        "score": -0.05945945945945941
+      },
+      {
+        "doc_id": "418f065f0b4f1fdd263d5a95f03ecf37_0",
+        "original_rank": 15,
+        "new_rank": 12,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "43d57c20-6ba6-11e6-ba32-5a4bf5aad4fa_1",
+        "original_rank": 133,
+        "new_rank": 147,
+        "score": 0.09523809523809523
+      },
+      {
+        "doc_id": "4ef943289efbf5a1fe6b0cfa2479d385_1",
+        "original_rank": 110,
+        "new_rank": 97,
+        "score": -0.11818181818181817
+      },
+      {
+        "doc_id": "59f489e774523dd797b36f3a77af7071_0",
+        "original_rank": 20,
+        "new_rank": 26,
+        "score": 0.23076923076923073
+      },
+      {
+        "doc_id": "5ed454eee1d50d7378ba68fcddafbbe1_2",
+        "original_rank": 144,
+        "new_rank": 145,
+        "score": 0.006896551724137945
+      },
+      {
+        "doc_id": "74d0609dd870c8735a3e54daaa577006_0",
+        "original_rank": 35,
+        "new_rank": 48,
+        "score": 0.27083333333333337
+      },
+      {
+        "doc_id": "8580746a-6338-11e7-8adc-fea80e32bf47_0",
+        "original_rank": 31,
+        "new_rank": 50,
+        "score": 0.38
+      },
+      {
+        "doc_id": "8ed1631a-658a-11e5-8325-a42b5a459b1e_0",
+        "original_rank": 16,
+        "new_rank": 27,
+        "score": 0.40740740740740744
+      },
+      {
+        "doc_id": "908b4060597f54b4c9a277f3413db064_1",
+        "original_rank": 5,
+        "new_rank": 5,
+        "score": 0.0
+      },
+      {
+        "doc_id": "92e73aa0ab4350cf9e46bbfac9b086fa_0",
+        "original_rank": 33,
+        "new_rank": 53,
+        "score": 0.37735849056603776
+      },
+      {
+        "doc_id": "973a9766-5da3-11e7-9fc6-c7ef4bc58d13_1",
+        "original_rank": 122,
+        "new_rank": 94,
+        "score": -0.2295081967213114
+      },
+      {
+        "doc_id": "BRCIAN3I7BC5VIMTTDMKT7ZQNY_2",
+        "original_rank": 39,
+        "new_rank": 61,
+        "score": 0.360655737704918
+      },
+      {
+        "doc_id": "EN7BTYASYAI6VHGXUG7MXSBPLY_0",
+        "original_rank": 476,
+        "new_rank": 473,
+        "score": -0.00630252100840345
+      },
+      {
+        "doc_id": "FIISLVAKW4I6TBNWIHAP4DC3R4_1",
+        "original_rank": 192,
+        "new_rank": 141,
+        "score": -0.265625
+      },
+      {
+        "doc_id": "JSY4WRABFII6ROYDOITWSRKPQI_0",
+        "original_rank": 174,
+        "new_rank": 208,
+        "score": 0.16346153846153844
+      },
+      {
+        "doc_id": "LERLTGQFL4I6RB3XFICZ6FUN2I_0",
+        "original_rank": 143,
+        "new_rank": 173,
+        "score": 0.17341040462427748
+      },
+      {
+        "doc_id": "LPCUPGOGWNA6FBDRGMRICHR67U_1",
+        "original_rank": 152,
+        "new_rank": 131,
+        "score": -0.13815789473684215
+      },
+      {
+        "doc_id": "MXT77I2SVZC2XI5NM52OHFJATE_0",
+        "original_rank": 170,
+        "new_rank": 150,
+        "score": -0.11764705882352944
+      },
+      {
+        "doc_id": "NGUK3PQ5FYI6TC2ZBIUPEGIRGE_0",
+        "original_rank": 109,
+        "new_rank": 151,
+        "score": 0.2781456953642385
+      },
+      {
+        "doc_id": "NWQSKJFBX4I6VAN3YL3Q6AIDJM_2",
+        "original_rank": 186,
+        "new_rank": 163,
+        "score": -0.12365591397849462
+      },
+      {
+        "doc_id": "OETTCKW7GJGLLCNTGY3QAIM3DQ_0",
+        "original_rank": 218,
+        "new_rank": 248,
+        "score": 0.12096774193548399
+      },
+      {
+        "doc_id": "Q6XJHKKNU5FXPKYAJX44A4TXUQ_0",
+        "original_rank": 146,
+        "new_rank": 172,
+        "score": 0.15116279069767435
+      },
+      {
+        "doc_id": "VIGSMZT3VMI6RAF6NUZODAVDXQ_0",
+        "original_rank": 316,
+        "new_rank": 335,
+        "score": 0.05671641791044779
+      },
+      {
+        "doc_id": "WU2JAQCSJRGKBH4FCCSKYER77Y_1",
+        "original_rank": 548,
+        "new_rank": 559,
+        "score": 0.019677996422182487
+      },
+      {
+        "doc_id": "XLFMCOA3SMI6TCH67H3XUO6LNQ_0",
+        "original_rank": 106,
+        "new_rank": 121,
+        "score": 0.12396694214876025
+      },
+      {
+        "doc_id": "ZC4ZDHBIXUI6VLLTF7JJIUQOS4_2",
+        "original_rank": 89,
+        "new_rank": 76,
+        "score": -0.1460674157303371
+      },
+      {
+        "doc_id": "aa43e702-b68c-11e3-a7c6-70cf2db17781_0",
+        "original_rank": 196,
+        "new_rank": 192,
+        "score": -0.020408163265306145
+      },
+      {
+        "doc_id": "ac90802c-3d8f-11e3-b6a9-da62c264f40e_0",
+        "original_rank": 82,
+        "new_rank": 102,
+        "score": 0.1960784313725491
+      },
+      {
+        "doc_id": "bd45ebf8-4a47-11e4-891d-713f052086a0_0",
+        "original_rank": 45,
+        "new_rank": 65,
+        "score": 0.3076923076923077
+      },
+      {
+        "doc_id": "cc6cf13b72c061de3d2dbcd3faa18bf6_0",
+        "original_rank": 26,
+        "new_rank": 14,
+        "score": -0.46153846153846145
+      },
+      {
+        "doc_id": "cccbf5717f95677b5281f20aff0fb072_0",
+        "original_rank": 4,
+        "new_rank": 7,
+        "score": 0.4285714285714286
+      },
+      {
+        "doc_id": "d416b56a-9077-11e1-8317-bc55e8fdd4a2_1",
+        "original_rank": 244,
+        "new_rank": 272,
+        "score": 0.10294117647058831
+      },
+      {
+        "doc_id": "d59112ef9cf2e4061b5a3dc8175e197d_2",
+        "original_rank": 379,
+        "new_rank": 363,
+        "score": -0.04221635883905017
+      },
+      {
+        "doc_id": "de8930872343622e1f8425b5251b50d0_2",
+        "original_rank": 150,
+        "new_rank": 162,
+        "score": 0.07407407407407418
+      },
+      {
+        "doc_id": "e111c74365943b4d2bc7b77c33aeca86_0",
+        "original_rank": 7,
+        "new_rank": 17,
+        "score": 0.588235294117647
+      },
+      {
+        "doc_id": "e8c511a99112e5fd1f1f6feb63788c37_0",
+        "original_rank": 105,
+        "new_rank": 100,
+        "score": -0.04761904761904756
+      },
+      {
+        "doc_id": "eee9d1e227e0fb3c4778eff7369969e9_2",
+        "original_rank": 85,
+        "new_rank": 87,
+        "score": 0.02298850574712641
+      },
+      {
+        "doc_id": "f7dc2906-4990-11e4-891d-713f052086a0_0",
+        "original_rank": 160,
+        "new_rank": 164,
+        "score": 0.024390243902439046
+      },
+      {
+        "doc_id": "f9d05892-a355-11e1-aef3-06a23666ac1d_1",
+        "original_rank": 302,
+        "new_rank": 318,
+        "score": 0.05031446540880502
+      },
+      {
+        "doc_id": "fc78353589dfe886e98dc98311f2c954_2",
+        "original_rank": 299,
+        "new_rank": 312,
+        "score": 0.04166666666666663
+      },
+      {
+        "doc_id": "fe68a5a6-4d95-11e5-bfb9-9736d04fc8e4_0",
+        "original_rank": 80,
+        "new_rank": 59,
+        "score": -0.26249999999999996
+      }
+    ],
+    "debug_info": {}
+  },
+  "962": {
+    "rank": 27,
+    "pmrr": 0.06505137977335268,
+    "query": "How did the postponement of the 2020 Olympics affect athletes?",
+    "instruction": "For Olympic athletes, a one-year postponement of the Tokyo 2020 Olympics presented numerous challenges in terms of training and eligibility.  During the global pandemic, athletes' training was severely limited as their training sites were closed. Given that the Olympics are every four years meant that in one year, an athlete could blossom, suffer a career-ending injury, an aging veteran could age out, and specifically for female gymnasts whose competitive life span is brief, the impact was significant.  Other effects of postponing the Olympics, such as on construction or businesses, are not relevant.",
+    "full_text": "How did the postponement of the 2020 Olympics affect athletes? For Olympic athletes, a one-year postponement of the Tokyo 2020 Olympics presented numerous challenges in terms of training and eligibility.  During the global pandemic, athletes' training was severely limited as their training sites were closed. Given that the Olympics are every four years meant that in one year, an athlete could blossom, suffer a career-ending injury, an aging veteran could age out, and specifically for female gymnasts whose competitive life span is brief, the impact was significant.  Other effects of postponing the Olympics, such as on construction or businesses, are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "3W2YT7TEPRENJLDVIZCLSWNEOU_0",
+        "original_rank": 66,
+        "new_rank": 85,
+        "score": 0.22352941176470587
+      },
+      {
+        "doc_id": "4E6KC3GONNEDHD77XYRC6KHOJA_2",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "5SRGFQ5RQVA3LN4M3ABTFUJ2OA_2",
+        "original_rank": 38,
+        "new_rank": 41,
+        "score": 0.07317073170731703
+      },
+      {
+        "doc_id": "6V2XL63PTRD67MY2D6OJG7AHOI_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "BHJ6PWANZZDDHCQM4LJ424SMBI_3",
+        "original_rank": 207,
+        "new_rank": 245,
+        "score": 0.1551020408163264
+      },
+      {
+        "doc_id": "CIG6IY7YHBCFPHNQGW7AHYGZNE_1",
+        "original_rank": 121,
+        "new_rank": 121,
+        "score": 0.0
+      },
+      {
+        "doc_id": "CSGCBSPPGFHFNBYICHQDAAPR6U_1",
+        "original_rank": 7,
+        "new_rank": 11,
+        "score": 0.36363636363636354
+      },
+      {
+        "doc_id": "D3EGP64UCRGXXIKGZAL5JABOCA_1",
+        "original_rank": 51,
+        "new_rank": 82,
+        "score": 0.3780487804878049
+      },
+      {
+        "doc_id": "IN5H2NT5GZHWZLQXZNDGEJ75UM_2",
+        "original_rank": 37,
+        "new_rank": 40,
+        "score": 0.07499999999999996
+      },
+      {
+        "doc_id": "NVUCQI47M5ADVM3YVH5OP2TL3Q_2",
+        "original_rank": 75,
+        "new_rank": 83,
+        "score": 0.09638554216867468
+      },
+      {
+        "doc_id": "OUPGGHK6ZVFY5AZLXHPG5A3VTA_2",
+        "original_rank": 108,
+        "new_rank": 110,
+        "score": 0.018181818181818188
+      },
+      {
+        "doc_id": "WMBCYKIXINAZZOQNN3PGOBRVRE_1",
+        "original_rank": 5,
+        "new_rank": 5,
+        "score": 0.0
+      },
+      {
+        "doc_id": "XBEVDCFVPVHBNBGUY54DV667BU_0",
+        "original_rank": 175,
+        "new_rank": 184,
+        "score": 0.048913043478260865
+      },
+      {
+        "doc_id": "XTVCJ2CJHZF7PEP3JMH2SFZD54_8",
+        "original_rank": 18,
+        "new_rank": 24,
+        "score": 0.25
+      },
+      {
+        "doc_id": "YET7XZDZ6FELNAS7LVNB63MBGI_0",
+        "original_rank": 27,
+        "new_rank": 22,
+        "score": -0.18518518518518523
+      },
+      {
+        "doc_id": "Z7WMSUWWAVFP3KEFF4LNZUNONE_1",
+        "original_rank": 11,
+        "new_rank": 10,
+        "score": -0.09090909090909094
+      },
+      {
+        "doc_id": "ZNYFJU2ALND7ZERSYHRUVLC54U_0",
+        "original_rank": 10,
+        "new_rank": 7,
+        "score": -0.29999999999999993
+      }
+    ],
+    "debug_info": {}
+  },
+  "952": {
+    "rank": 28,
+    "pmrr": 0.08985585249246347,
+    "query": "Describe a specific geoengineering technique to manage climate change.",
+    "instruction": "Describe solar radiation management as a technique to reduce global warming.  Other geoengineering techniques, such as carbon dioxide reduction, are not relevant.",
+    "full_text": "Describe a specific geoengineering technique to manage climate change. Describe solar radiation management as a technique to reduce global warming.  Other geoengineering techniques, such as carbon dioxide reduction, are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "07bbe150-ac6e-11e4-9c91-e9d2f9fde644_2",
+        "original_rank": 4,
+        "new_rank": 2,
+        "score": -0.5
+      },
+      {
+        "doc_id": "09a4ac6425af5f0e03369cf2d2840db1_4",
+        "original_rank": 2,
+        "new_rank": 1,
+        "score": -0.5
+      },
+      {
+        "doc_id": "0b5ab88024ea4ebaa77ac46bd0b810aa_0",
+        "original_rank": 57,
+        "new_rank": 86,
+        "score": 0.33720930232558133
+      },
+      {
+        "doc_id": "11bd6e01fff27902a5f3ab0f09999b06_0",
+        "original_rank": 78,
+        "new_rank": 81,
+        "score": 0.03703703703703709
+      },
+      {
+        "doc_id": "1e404ceecf979473272c4e81d0e8c282_3",
+        "original_rank": 572,
+        "new_rank": 527,
+        "score": -0.07867132867132864
+      },
+      {
+        "doc_id": "5087295e815af5a15fb0ca9f38a19c1c_2",
+        "original_rank": 15,
+        "new_rank": 12,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "814161513443afca0dc74759b2b2c79a_6",
+        "original_rank": 70,
+        "new_rank": 117,
+        "score": 0.4017094017094016
+      },
+      {
+        "doc_id": "8ad58698e15574ec530096fdf177540c_1",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "EXDEQJC76VDO5EP23CJ4DLQJUM_0",
+        "original_rank": 1,
+        "new_rank": 5,
+        "score": 0.8
+      },
+      {
+        "doc_id": "a01d57f485ea0cd090571fb1062ec879_1",
+        "original_rank": 40,
+        "new_rank": 63,
+        "score": 0.3650793650793651
+      },
+      {
+        "doc_id": "aef1c418-073d-11e2-858a-5311df86ab04_0",
+        "original_rank": 64,
+        "new_rank": 98,
+        "score": 0.34693877551020413
+      },
+      {
+        "doc_id": "cfb9def8-170c-11e3-be6e-dc6ae8a5b3a8_1",
+        "original_rank": 16,
+        "new_rank": 17,
+        "score": 0.05882352941176472
+      },
+      {
+        "doc_id": "daed423522d33dc5861fdea059acf7d6_0",
+        "original_rank": 9,
+        "new_rank": 10,
+        "score": 0.09999999999999987
+      }
+    ],
+    "debug_info": {}
+  },
+  "947": {
+    "rank": 29,
+    "pmrr": 0.09692059567849994,
+    "query": "How do the Hubble and James Webb space telescopes compare?",
+    "instruction": "The Hubble space telescope was launched in 1990 and is providing the world with dazzling images of the universe as well as creating breakthroughs in astrophysics.  It is nearing the end of its usable life and is set to be replaced by the James Webb space telescope, which is bigger and will be located in a darker part of space than Hubble, enabling it to capture images of the faintest galaxies.  It will also be able to observe the universe in infrared wavelengths of light, which the Hubble can't.",
+    "full_text": "How do the Hubble and James Webb space telescopes compare? The Hubble space telescope was launched in 1990 and is providing the world with dazzling images of the universe as well as creating breakthroughs in astrophysics.  It is nearing the end of its usable life and is set to be replaced by the James Webb space telescope, which is bigger and will be located in a darker part of space than Hubble, enabling it to capture images of the faintest galaxies.  It will also be able to observe the universe in infrared wavelengths of light, which the Hubble can't.",
+    "doc_details": [
+      {
+        "doc_id": "497d86daa7aa01c42ba4918d31ba2ff3_1",
+        "original_rank": 184,
+        "new_rank": 207,
+        "score": 0.11111111111111116
+      },
+      {
+        "doc_id": "4b04bd9675ade20631e189ca73a27b64_2",
+        "original_rank": 66,
+        "new_rank": 61,
+        "score": -0.0757575757575758
+      },
+      {
+        "doc_id": "5GPQP3MKAFDWVLIQEUSQ5PT6HA_0",
+        "original_rank": 21,
+        "new_rank": 29,
+        "score": 0.27586206896551724
+      },
+      {
+        "doc_id": "5c343cb2-6863-11e5-8325-a42b5a459b1e_1",
+        "original_rank": 247,
+        "new_rank": 285,
+        "score": 0.1333333333333333
+      },
+      {
+        "doc_id": "5ed5906e-f9fe-11e6-be05-1a3817ac21a5_3",
+        "original_rank": 16,
+        "new_rank": 18,
+        "score": 0.11111111111111116
+      },
+      {
+        "doc_id": "7bcfac0dd15bf1c8f09fd1cbd8008d21_1",
+        "original_rank": 329,
+        "new_rank": 342,
+        "score": 0.03801169590643283
+      },
+      {
+        "doc_id": "7fb2b3af732a77a05100c05cdea523a5_1",
+        "original_rank": 11,
+        "new_rank": 13,
+        "score": 0.15384615384615385
+      },
+      {
+        "doc_id": "812c2314-858a-11e6-ac72-a29979381495_2",
+        "original_rank": 31,
+        "new_rank": 34,
+        "score": 0.08823529411764708
+      },
+      {
+        "doc_id": "9184867e3f82eb49adb7e3e16eda169b_0",
+        "original_rank": 401,
+        "new_rank": 409,
+        "score": 0.019559902200488977
+      },
+      {
+        "doc_id": "91ed893f47637bd88396ebc2ff13cbb1_0",
+        "original_rank": 208,
+        "new_rank": 258,
+        "score": 0.1937984496124031
+      },
+      {
+        "doc_id": "989ea3526a1dc63102c85dbce3bf8c9d_0",
+        "original_rank": 112,
+        "new_rank": 120,
+        "score": 0.06666666666666665
+      },
+      {
+        "doc_id": "BWK7H7Q7JBFHHFGNVERRMBMPSM_3",
+        "original_rank": 52,
+        "new_rank": 59,
+        "score": 0.11864406779661019
+      },
+      {
+        "doc_id": "E5QA7ITJAFFCFNYOJKBSX7C7MM_1",
+        "original_rank": 28,
+        "new_rank": 38,
+        "score": 0.26315789473684215
+      },
+      {
+        "doc_id": "EEBCM6U2TQI6VIUCHBXVNVLZ4Y_2",
+        "original_rank": 159,
+        "new_rank": 181,
+        "score": 0.12154696132596698
+      },
+      {
+        "doc_id": "GH6EFZHTKMI6TDHQJTEZ65GRE4_0",
+        "original_rank": 465,
+        "new_rank": 531,
+        "score": 0.12429378531073454
+      },
+      {
+        "doc_id": "KACUFRN2RBABXM4UQDJEMN5RBI_0",
+        "original_rank": 26,
+        "new_rank": 24,
+        "score": -0.07692307692307687
+      },
+      {
+        "doc_id": "OM46PXGGIFF5LM5AFX72DY24AQ_2",
+        "original_rank": 15,
+        "new_rank": 15,
+        "score": 0.0
+      },
+      {
+        "doc_id": "OQXRPVEOSMI6RAZCWVECX5PA6U_1",
+        "original_rank": 235,
+        "new_rank": 302,
+        "score": 0.2218543046357616
+      },
+      {
+        "doc_id": "RD375FAKJQI6TCHDTCND4RLIEA_2",
+        "original_rank": 185,
+        "new_rank": 213,
+        "score": 0.13145539906103287
+      },
+      {
+        "doc_id": "UJWCISFFY5FRTDXNDON3LHG7GY_0",
+        "original_rank": 14,
+        "new_rank": 14,
+        "score": 0.0
+      },
+      {
+        "doc_id": "XV6SYECUDREC7NGAHQ43GGGBDU_0",
+        "original_rank": 399,
+        "new_rank": 445,
+        "score": 0.10337078651685383
+      },
+      {
+        "doc_id": "YI2FBROLMZAZDOG26N4HRTZHNI_1",
+        "original_rank": 63,
+        "new_rank": 76,
+        "score": 0.17105263157894735
+      },
+      {
+        "doc_id": "YJ3OHX37BFF7FBYJ4XW435R76A_3",
+        "original_rank": 8,
+        "new_rank": 9,
+        "score": 0.11111111111111116
+      },
+      {
+        "doc_id": "YKRGD2BOLBB6NNN6SROM3JPN3A_16",
+        "original_rank": 78,
+        "new_rank": 88,
+        "score": 0.11363636363636354
+      },
+      {
+        "doc_id": "c24caae68b61f2bad372fd49bbe68255_1",
+        "original_rank": 47,
+        "new_rank": 53,
+        "score": 0.1132075471698113
+      },
+      {
+        "doc_id": "d6c21850-adfc-11e3-9627-c65021d6d572_0",
+        "original_rank": 239,
+        "new_rank": 284,
+        "score": 0.158450704225352
+      },
+      {
+        "doc_id": "f921da1fb02998024334b57611074cf5_0",
+        "original_rank": 651,
+        "new_rank": 697,
+        "score": 0.06599713055954082
+      },
+      {
+        "doc_id": "febec4c0-dcbb-11e1-9974-5c975ae4810f_2",
+        "original_rank": 7,
+        "new_rank": 6,
+        "score": -0.1428571428571429
+      }
+    ],
+    "debug_info": {}
+  },
+  "957": {
+    "rank": 30,
+    "pmrr": 0.09801827310524816,
+    "query": "Find information about increasing numbers of coyotes in suburban Maryland and any impacts on other species.",
+    "instruction": "As coyotes have moved into the area other animals such as feral cats have been driven out. This can lead to the downturn of the number of birds killed by the cats. While coyotes are natural predators, which get rid of rodents, they also have an impact by attacking people and their pets.  Find information on the growing coyote population in Maryland and its impact on other species.",
+    "full_text": "Find information about increasing numbers of coyotes in suburban Maryland and any impacts on other species. As coyotes have moved into the area other animals such as feral cats have been driven out. This can lead to the downturn of the number of birds killed by the cats. While coyotes are natural predators, which get rid of rodents, they also have an impact by attacking people and their pets.  Find information on the growing coyote population in Maryland and its impact on other species.",
+    "doc_details": [
+      {
+        "doc_id": "38dd7f20-76d6-11e2-95e4-6148e45d7adb_1",
+        "original_rank": 43,
+        "new_rank": 54,
+        "score": 0.20370370370370372
+      },
+      {
+        "doc_id": "4NQXA26DLJAP3MOVP46M6Q2ZPQ_1",
+        "original_rank": 18,
+        "new_rank": 17,
+        "score": -0.05555555555555558
+      },
+      {
+        "doc_id": "73d1a284-77a5-11e3-a647-a19deaf575b3_0",
+        "original_rank": 39,
+        "new_rank": 35,
+        "score": -0.10256410256410253
+      },
+      {
+        "doc_id": "87036f015c6b9a2d5fad142e1f4bf8f3_2",
+        "original_rank": 136,
+        "new_rank": 161,
+        "score": 0.15527950310559013
+      },
+      {
+        "doc_id": "A352XSC6GFB27MDXP2WMY4HDHM_8",
+        "original_rank": 339,
+        "new_rank": 356,
+        "score": 0.047752808988764106
+      },
+      {
+        "doc_id": "CZVEKYC4IJHOTJA7GXZJ36HPVE_2",
+        "original_rank": 4,
+        "new_rank": 4,
+        "score": 0.0
+      },
+      {
+        "doc_id": "DDTDPRHWBBE53CFUBRFIFLKOR4_3",
+        "original_rank": 94,
+        "new_rank": 94,
+        "score": 0.0
+      },
+      {
+        "doc_id": "NOFZ372K6JDT3NQ6OVSUR2G4BM_1",
+        "original_rank": 44,
+        "new_rank": 50,
+        "score": 0.12
+      },
+      {
+        "doc_id": "P3LIGPCN25AR3MLRDI5O6FEXPE_2",
+        "original_rank": 68,
+        "new_rank": 74,
+        "score": 0.08108108108108103
+      },
+      {
+        "doc_id": "QX5LXHCQWQI6TI7XPC3VEWUNL4_4",
+        "original_rank": 100,
+        "new_rank": 124,
+        "score": 0.19354838709677424
+      },
+      {
+        "doc_id": "VA6YKMWVGUI6PNRN3E2FZ3MJNU_10",
+        "original_rank": 322,
+        "new_rank": 317,
+        "score": -0.015527950310559091
+      },
+      {
+        "doc_id": "c54de2b4-a7f9-11e4-a7c2-03d37af98440_2",
+        "original_rank": 143,
+        "new_rank": 177,
+        "score": 0.192090395480226
+      },
+      {
+        "doc_id": "c749b3b2-5e8b-11e3-bc56-c6ca94801fac_5",
+        "original_rank": 7,
+        "new_rank": 13,
+        "score": 0.46153846153846145
+      },
+      {
+        "doc_id": "ee7224cd7a3ba27989b32aac13907974_0",
+        "original_rank": 40,
+        "new_rank": 44,
+        "score": 0.09090909090909094
+      }
+    ],
+    "debug_info": {}
+  },
+  "985": {
+    "rank": 31,
+    "pmrr": 0.11197912908733276,
+    "query": "Describe how best to protect insect pollinators like bees and butterflies.",
+    "instruction": "There continues to be a significant loss of pollinators, like bees and butterflies, that are critical to our food supply.  They need to be protected to ensure sustainability of food production systems, to avoid additional economic impact and to protect the health of the environment.  Bees and butterflies are particularly threatened by neonicotinoid pesticides.  People can help by planting bee and butterfly-friendly plants, like nectar-rich flowers, milkweed and dill, and not using harmful pesticides.",
+    "full_text": "Describe how best to protect insect pollinators like bees and butterflies. There continues to be a significant loss of pollinators, like bees and butterflies, that are critical to our food supply.  They need to be protected to ensure sustainability of food production systems, to avoid additional economic impact and to protect the health of the environment.  Bees and butterflies are particularly threatened by neonicotinoid pesticides.  People can help by planting bee and butterfly-friendly plants, like nectar-rich flowers, milkweed and dill, and not using harmful pesticides.",
+    "doc_details": [
+      {
+        "doc_id": "0118f6d6-1b0a-11e3-8685-5021e0c41964_5",
+        "original_rank": 247,
+        "new_rank": 263,
+        "score": 0.06083650190114065
+      },
+      {
+        "doc_id": "0152ec3aeedf276289d8441683ac6338_1",
+        "original_rank": 100,
+        "new_rank": 108,
+        "score": 0.07407407407407418
+      },
+      {
+        "doc_id": "07ccdb18-edaf-11e4-8abc-d6aa3bad79dd_1",
+        "original_rank": 96,
+        "new_rank": 115,
+        "score": 0.16521739130434776
+      },
+      {
+        "doc_id": "134d3949876eca300b19b9f8693c39a3_1",
+        "original_rank": 108,
+        "new_rank": 124,
+        "score": 0.12903225806451613
+      },
+      {
+        "doc_id": "1711d9673c70270aa36c0cefb58694b1_3",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "19924026-0bff-11e6-a6b6-2e6de3695b0e_2",
+        "original_rank": 145,
+        "new_rank": 165,
+        "score": 0.12121212121212122
+      },
+      {
+        "doc_id": "21db34a833c01713a28472a6b258726f_1",
+        "original_rank": 320,
+        "new_rank": 356,
+        "score": 0.101123595505618
+      },
+      {
+        "doc_id": "2306d824-a8f9-11e5-bff5-905b92f5f94b_3",
+        "original_rank": 60,
+        "new_rank": 67,
+        "score": 0.10447761194029848
+      },
+      {
+        "doc_id": "26eb1d6c-0e49-11e3-bdf6-e4fc677d94a1_1",
+        "original_rank": 175,
+        "new_rank": 187,
+        "score": 0.06417112299465244
+      },
+      {
+        "doc_id": "2b041be3c0ee80f59c86359dadf6f2ce_0",
+        "original_rank": 7,
+        "new_rank": 8,
+        "score": 0.125
+      },
+      {
+        "doc_id": "2c9d4add64756f9835de157520ad9278_2",
+        "original_rank": 104,
+        "new_rank": 109,
+        "score": 0.04587155963302747
+      },
+      {
+        "doc_id": "2d0241d2-79ab-11e1-9362-cd989ac6bfb2_1",
+        "original_rank": 55,
+        "new_rank": 64,
+        "score": 0.140625
+      },
+      {
+        "doc_id": "33ca7a7e-6a0c-11e6-8225-fbb8a6fc65bc_5",
+        "original_rank": 62,
+        "new_rank": 74,
+        "score": 0.16216216216216206
+      },
+      {
+        "doc_id": "4313b91155ee9106aae46e829a0548f8_3",
+        "original_rank": 117,
+        "new_rank": 139,
+        "score": 0.15827338129496404
+      },
+      {
+        "doc_id": "4ae8cd288cf8693976711b31cf3124aa_0",
+        "original_rank": 126,
+        "new_rank": 147,
+        "score": 0.1428571428571428
+      },
+      {
+        "doc_id": "4e15c41e-7773-11e1-8ca7-e7ce935c8941_3",
+        "original_rank": 238,
+        "new_rank": 258,
+        "score": 0.07751937984496127
+      },
+      {
+        "doc_id": "54212213f4dbfaaf89bfa8d5a44bb241_1",
+        "original_rank": 142,
+        "new_rank": 168,
+        "score": 0.15476190476190488
+      },
+      {
+        "doc_id": "65b5a3a91df2a4324f443afd0afd3a88_0",
+        "original_rank": 904,
+        "new_rank": 904,
+        "score": 0.0
+      },
+      {
+        "doc_id": "68c33a80-dd15-11e3-b745-87d39690c5c0_0",
+        "original_rank": 132,
+        "new_rank": 157,
+        "score": 0.15923566878980888
+      },
+      {
+        "doc_id": "7346a80c-6835-11e3-8b5b-a77187b716a3_2",
+        "original_rank": 144,
+        "new_rank": 166,
+        "score": 0.13253012048192758
+      },
+      {
+        "doc_id": "7dd07e9271c6155feba33f35f5b951a5_1",
+        "original_rank": 74,
+        "new_rank": 84,
+        "score": 0.11904761904761918
+      },
+      {
+        "doc_id": "8663781a-ea64-11e2-8f22-de4bd2a2bd39_0",
+        "original_rank": 245,
+        "new_rank": 272,
+        "score": 0.09926470588235303
+      },
+      {
+        "doc_id": "89b7d614-b350-11e2-baf7-5bc2a9dc6f44_0",
+        "original_rank": 29,
+        "new_rank": 51,
+        "score": 0.43137254901960786
+      },
+      {
+        "doc_id": "9079ecd8-3a05-11e5-9c2d-ed991d848c48_1",
+        "original_rank": 275,
+        "new_rank": 280,
+        "score": 0.017857142857142905
+      },
+      {
+        "doc_id": "9a74045f3528371aec25c9d520d0cf5e_0",
+        "original_rank": 177,
+        "new_rank": 161,
+        "score": -0.09039548022598864
+      },
+      {
+        "doc_id": "AB2RKKUMPYI6TMEOZ7MJXU3NJY_5",
+        "original_rank": 59,
+        "new_rank": 49,
+        "score": -0.1694915254237287
+      },
+      {
+        "doc_id": "GYHSW6NI2RFDNPKQBKZTGR556M_5",
+        "original_rank": 14,
+        "new_rank": 15,
+        "score": 0.06666666666666665
+      },
+      {
+        "doc_id": "MKYKCLCNDAI6VNZBT5GNZEF4DQ_3",
+        "original_rank": 20,
+        "new_rank": 29,
+        "score": 0.31034482758620696
+      },
+      {
+        "doc_id": "PKZGPLCAVNAC3IQ5ISF3D525AY_0",
+        "original_rank": 301,
+        "new_rank": 314,
+        "score": 0.04140127388535031
+      },
+      {
+        "doc_id": "REXNJBUDWEI6RHUAIA5CEGKGU4_5",
+        "original_rank": 40,
+        "new_rank": 52,
+        "score": 0.23076923076923073
+      },
+      {
+        "doc_id": "TJGC57GWHMI6TE2DIDNVPT3KXU_5",
+        "original_rank": 91,
+        "new_rank": 101,
+        "score": 0.0990099009900991
+      },
+      {
+        "doc_id": "UHA3QVF4SYI6VPNPUEU7SIICN4_0",
+        "original_rank": 52,
+        "new_rank": 63,
+        "score": 0.17460317460317465
+      },
+      {
+        "doc_id": "UN2LORDD4II6VLGKQDBCXPXJN4_0",
+        "original_rank": 153,
+        "new_rank": 176,
+        "score": 0.13068181818181823
+      },
+      {
+        "doc_id": "a3a6b5217c6cdf6e82b95a098fd01281_3",
+        "original_rank": 105,
+        "new_rank": 116,
+        "score": 0.09482758620689669
+      },
+      {
+        "doc_id": "bcfcba16-ed62-11e2-bb32-725c8351a69e_1",
+        "original_rank": 94,
+        "new_rank": 99,
+        "score": 0.050505050505050386
+      },
+      {
+        "doc_id": "cd81a75c-ffcb-11e4-805c-c3f407e5a9e9_1",
+        "original_rank": 11,
+        "new_rank": 5,
+        "score": -0.5454545454545454
+      },
+      {
+        "doc_id": "d1376c2e15c8d03ca7a37b2da3a20251_1",
+        "original_rank": 103,
+        "new_rank": 122,
+        "score": 0.15573770491803263
+      },
+      {
+        "doc_id": "d57dc8be-959c-11e2-b6f0-a5150a247b6a_2",
+        "original_rank": 35,
+        "new_rank": 55,
+        "score": 0.36363636363636365
+      },
+      {
+        "doc_id": "d987d32d8838421dd1fedde478a674fb_0",
+        "original_rank": 30,
+        "new_rank": 47,
+        "score": 0.36170212765957444
+      },
+      {
+        "doc_id": "d9984d43107e29962a3ee664c2dff085_0",
+        "original_rank": 213,
+        "new_rank": 236,
+        "score": 0.09745762711864414
+      },
+      {
+        "doc_id": "d9a1efec-a56d-11e3-a5fa-55f0c77bf39c_3",
+        "original_rank": 434,
+        "new_rank": 460,
+        "score": 0.05652173913043479
+      },
+      {
+        "doc_id": "dbc031a9de02f250cf983e384a0e9673_2",
+        "original_rank": 65,
+        "new_rank": 77,
+        "score": 0.15584415584415579
+      },
+      {
+        "doc_id": "e71b83042a4444a2facbe9325a76d4d7_1",
+        "original_rank": 49,
+        "new_rank": 40,
+        "score": -0.1836734693877552
+      },
+      {
+        "doc_id": "e88cb2899a4a0e61ffbbfb0e0a1f69b5_0",
+        "original_rank": 43,
+        "new_rank": 56,
+        "score": 0.2321428571428572
+      },
+      {
+        "doc_id": "e9077d84b24b4bc1c6014d6bd25c0b55_0",
+        "original_rank": 440,
+        "new_rank": 477,
+        "score": 0.07756813417190767
+      },
+      {
+        "doc_id": "ebd93568-fbd4-11e3-b8bf-54b8afb537b6_0",
+        "original_rank": 4,
+        "new_rank": 10,
+        "score": 0.6
+      },
+      {
+        "doc_id": "f2a2266c-0df2-11e5-adec-e82f8395c032_1",
+        "original_rank": 135,
+        "new_rank": 171,
+        "score": 0.21052631578947378
+      },
+      {
+        "doc_id": "f4b5e679081a4e79277c44553bd270dc_2",
+        "original_rank": 162,
+        "new_rank": 175,
+        "score": 0.07428571428571429
+      },
+      {
+        "doc_id": "f58185c4-062e-11e5-bc72-f3e16bf50bb6_1",
+        "original_rank": 134,
+        "new_rank": 159,
+        "score": 0.1572327044025157
+      },
+      {
+        "doc_id": "f7feda3d35b3e933a51272c582adbfda_0",
+        "original_rank": 107,
+        "new_rank": 104,
+        "score": -0.028037383177570208
+      },
+      {
+        "doc_id": "ff5d574f4783923892878a52d9a0abee_2",
+        "original_rank": 56,
+        "new_rank": 70,
+        "score": 0.19999999999999996
+      }
+    ],
+    "debug_info": {}
+  },
+  "959": {
+    "rank": 32,
+    "pmrr": 0.15422759679098177,
+    "query": "Tell me about the situation pertaining to the lock out of musicians of the Baltimore Symphony Orchestra.",
+    "instruction": "Musicians of the Baltimore Symphony Orchestra have been officially locked out. I'm looking for details about the possible causes of the orchestra's financial troubles. What specifically led to the lock out, negotiation efforts, and state funding issues are all relevant. Actions and reactions of the musicians, donors and community also are relevant. I am also interested in any plans or actions to rescue the ailing orchestra.",
+    "full_text": "Tell me about the situation pertaining to the lock out of musicians of the Baltimore Symphony Orchestra. Musicians of the Baltimore Symphony Orchestra have been officially locked out. I'm looking for details about the possible causes of the orchestra's financial troubles. What specifically led to the lock out, negotiation efforts, and state funding issues are all relevant. Actions and reactions of the musicians, donors and community also are relevant. I am also interested in any plans or actions to rescue the ailing orchestra.",
+    "doc_details": [
+      {
+        "doc_id": "56XOMHUJOQI6TKDQXHCBDXCDCI_0",
+        "original_rank": 85,
+        "new_rank": 112,
+        "score": 0.2410714285714286
+      },
+      {
+        "doc_id": "7U3JFZXMCII6RC2HXUEXL7LBTE_0",
+        "original_rank": 82,
+        "new_rank": 78,
+        "score": -0.04878048780487798
+      },
+      {
+        "doc_id": "7YSGKTHC34I6TNAD644ITGMC2I_0",
+        "original_rank": 2,
+        "new_rank": 4,
+        "score": 0.5
+      },
+      {
+        "doc_id": "FLIBAMBZDEI6TIDMH3EO2UE5CU_0",
+        "original_rank": 113,
+        "new_rank": 120,
+        "score": 0.05833333333333335
+      },
+      {
+        "doc_id": "QJO53IUDDAI6TFNJ4LEDBL7CJ4_2",
+        "original_rank": 9,
+        "new_rank": 13,
+        "score": 0.3076923076923076
+      },
+      {
+        "doc_id": "SRMJKMCY3MI6VB2TOPMWAAH2VY_0",
+        "original_rank": 11,
+        "new_rank": 11,
+        "score": 0.0
+      },
+      {
+        "doc_id": "VX44LLDMYEI6RP4GUI2RWXWOTE_0",
+        "original_rank": 46,
+        "new_rank": 47,
+        "score": 0.021276595744680882
+      }
+    ],
+    "debug_info": {}
+  }
+}

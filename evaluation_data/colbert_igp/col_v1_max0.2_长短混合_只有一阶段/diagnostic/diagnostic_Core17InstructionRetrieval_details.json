@@ -1,0 +1,2818 @@
+{
+  "404": {
+    "rank": 1,
+    "pmrr": -0.15379193242797412,
+    "query": "How often were the peace talks in Ireland delayed or disrupted as a result of acts of violence?",
+    "instruction": "Any interruptions to the peace process not directly attributable to acts of violence are not relevant.",
+    "full_text": "How often were the peace talks in Ireland delayed or disrupted as a result of acts of violence? Any interruptions to the peace process not directly attributable to acts of violence are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1401123_0",
+        "original_rank": 671,
+        "new_rank": 473,
+        "score": -0.29508196721311475
+      },
+      {
+        "doc_id": "491070_2",
+        "original_rank": 269,
+        "new_rank": 164,
+        "score": -0.39033457249070636
+      },
+      {
+        "doc_id": "499488_0",
+        "original_rank": 835,
+        "new_rank": 618,
+        "score": -0.2598802395209582
+      },
+      {
+        "doc_id": "599171_1",
+        "original_rank": 731,
+        "new_rank": 601,
+        "score": -0.17783857729138175
+      },
+      {
+        "doc_id": "644645_0",
+        "original_rank": 280,
+        "new_rank": 403,
+        "score": 0.3052109181141439
+      },
+      {
+        "doc_id": "673633_1",
+        "original_rank": 465,
+        "new_rank": 379,
+        "score": -0.18494623655913978
+      },
+      {
+        "doc_id": "674491_0",
+        "original_rank": 45,
+        "new_rank": 64,
+        "score": 0.296875
+      },
+      {
+        "doc_id": "828989_1",
+        "original_rank": 416,
+        "new_rank": 389,
+        "score": -0.06490384615384603
+      },
+      {
+        "doc_id": "829310_1",
+        "original_rank": 451,
+        "new_rank": 348,
+        "score": -0.22838137472283815
+      },
+      {
+        "doc_id": "829349_0",
+        "original_rank": 792,
+        "new_rank": 643,
+        "score": -0.18813131313131304
+      },
+      {
+        "doc_id": "829361_4",
+        "original_rank": 311,
+        "new_rank": 301,
+        "score": -0.032154340836012874
+      },
+      {
+        "doc_id": "829538_2",
+        "original_rank": 117,
+        "new_rank": 155,
+        "score": 0.24516129032258072
+      },
+      {
+        "doc_id": "831509_0",
+        "original_rank": 866,
+        "new_rank": 883,
+        "score": 0.01925254813137023
+      },
+      {
+        "doc_id": "833242_0",
+        "original_rank": 40,
+        "new_rank": 61,
+        "score": 0.34426229508196726
+      },
+      {
+        "doc_id": "833426_1",
+        "original_rank": 25,
+        "new_rank": 12,
+        "score": -0.52
+      },
+      {
+        "doc_id": "858413_2",
+        "original_rank": 100,
+        "new_rank": 106,
+        "score": 0.05660377358490576
+      },
+      {
+        "doc_id": "858531_1",
+        "original_rank": 161,
+        "new_rank": 127,
+        "score": -0.21118012422360255
+      },
+      {
+        "doc_id": "858788_1",
+        "original_rank": 380,
+        "new_rank": 510,
+        "score": 0.2549019607843137
+      },
+      {
+        "doc_id": "865048_0",
+        "original_rank": 79,
+        "new_rank": 75,
+        "score": -0.05063291139240511
+      },
+      {
+        "doc_id": "868466_0",
+        "original_rank": 167,
+        "new_rank": 87,
+        "score": -0.47904191616766467
+      },
+      {
+        "doc_id": "879199_1",
+        "original_rank": 591,
+        "new_rank": 417,
+        "score": -0.29441624365482233
+      },
+      {
+        "doc_id": "879334_0",
+        "original_rank": 199,
+        "new_rank": 47,
+        "score": -0.7638190954773869
+      },
+      {
+        "doc_id": "892027_0",
+        "original_rank": 44,
+        "new_rank": 39,
+        "score": -0.11363636363636354
+      },
+      {
+        "doc_id": "901668_1",
+        "original_rank": 571,
+        "new_rank": 282,
+        "score": -0.5061295971978984
+      },
+      {
+        "doc_id": "918903_0",
+        "original_rank": 366,
+        "new_rank": 144,
+        "score": -0.6065573770491803
+      }
+    ],
+    "debug_info": {}
+  },
+  "677": {
+    "rank": 2,
+    "pmrr": -0.12224390836748342,
+    "query": "What efforts have been made to stabilize the Leaning Tower of Pisa, and how successful have the efforts been?",
+    "instruction": "Relevant documents provide discussions of the current condition of the tower, describe reinforcement measures taken, and/or provide measurements reflecting change in the tower.",
+    "full_text": "What efforts have been made to stabilize the Leaning Tower of Pisa, and how successful have the efforts been? Relevant documents provide discussions of the current condition of the tower, describe reinforcement measures taken, and/or provide measurements reflecting change in the tower.",
+    "doc_details": [
+      {
+        "doc_id": "1325286_0",
+        "original_rank": 5,
+        "new_rank": 7,
+        "score": 0.2857142857142858
+      },
+      {
+        "doc_id": "1351564_0",
+        "original_rank": 33,
+        "new_rank": 23,
+        "score": -0.303030303030303
+      },
+      {
+        "doc_id": "1555171_0",
+        "original_rank": 19,
+        "new_rank": 11,
+        "score": -0.42105263157894746
+      },
+      {
+        "doc_id": "538867_4",
+        "original_rank": 16,
+        "new_rank": 15,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "645300_2",
+        "original_rank": 10,
+        "new_rank": 10,
+        "score": 0.0
+      },
+      {
+        "doc_id": "766777_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "985739_2",
+        "original_rank": 93,
+        "new_rank": 60,
+        "score": -0.35483870967741926
+      }
+    ],
+    "debug_info": {}
+  },
+  "400": {
+    "rank": 3,
+    "pmrr": -0.10156371998481337,
+    "query": "What measures are being taken by local South American authorities to preserve the Amazon tropical rain forest?",
+    "instruction": "Relevant documents may identify: the official organizations, institutions, and individuals of the countries included in the Amazon rain forest; the measures being taken by them to preserve the rain forest; and indications of degrees of success in these endeavors.",
+    "full_text": "What measures are being taken by local South American authorities to preserve the Amazon tropical rain forest? Relevant documents may identify: the official organizations, institutions, and individuals of the countries included in the Amazon rain forest; the measures being taken by them to preserve the rain forest; and indications of degrees of success in these endeavors.",
+    "doc_details": [
+      {
+        "doc_id": "1013546_0",
+        "original_rank": 194,
+        "new_rank": 196,
+        "score": 0.010204081632653073
+      },
+      {
+        "doc_id": "1073784_1",
+        "original_rank": 70,
+        "new_rank": 112,
+        "score": 0.375
+      },
+      {
+        "doc_id": "1100695_4",
+        "original_rank": 432,
+        "new_rank": 479,
+        "score": 0.09812108559498955
+      },
+      {
+        "doc_id": "1333032_3",
+        "original_rank": 522,
+        "new_rank": 611,
+        "score": 0.1456628477905073
+      },
+      {
+        "doc_id": "1417960_0",
+        "original_rank": 269,
+        "new_rank": 363,
+        "score": 0.2589531680440771
+      },
+      {
+        "doc_id": "1426050_1",
+        "original_rank": 889,
+        "new_rank": 843,
+        "score": -0.05174353205849269
+      },
+      {
+        "doc_id": "1523132_6",
+        "original_rank": 709,
+        "new_rank": 723,
+        "score": 0.019363762102351245
+      },
+      {
+        "doc_id": "1541941_0",
+        "original_rank": 22,
+        "new_rank": 14,
+        "score": -0.36363636363636354
+      },
+      {
+        "doc_id": "175257_1",
+        "original_rank": 387,
+        "new_rank": 379,
+        "score": -0.02067183462532296
+      },
+      {
+        "doc_id": "1815191_0",
+        "original_rank": 105,
+        "new_rank": 76,
+        "score": -0.2761904761904761
+      },
+      {
+        "doc_id": "1818922_0",
+        "original_rank": 55,
+        "new_rank": 93,
+        "score": 0.4086021505376344
+      },
+      {
+        "doc_id": "186922_1",
+        "original_rank": 108,
+        "new_rank": 113,
+        "score": 0.04424778761061943
+      },
+      {
+        "doc_id": "187470_0",
+        "original_rank": 18,
+        "new_rank": 27,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "189126_0",
+        "original_rank": 240,
+        "new_rank": 169,
+        "score": -0.2958333333333333
+      },
+      {
+        "doc_id": "209093_0",
+        "original_rank": 161,
+        "new_rank": 205,
+        "score": 0.21463414634146338
+      },
+      {
+        "doc_id": "209944_0",
+        "original_rank": 150,
+        "new_rank": 117,
+        "score": -0.21999999999999997
+      },
+      {
+        "doc_id": "216415_0",
+        "original_rank": 37,
+        "new_rank": 29,
+        "score": -0.21621621621621612
+      },
+      {
+        "doc_id": "224951_2",
+        "original_rank": 81,
+        "new_rank": 116,
+        "score": 0.3017241379310345
+      },
+      {
+        "doc_id": "226800_0",
+        "original_rank": 206,
+        "new_rank": 126,
+        "score": -0.38834951456310685
+      },
+      {
+        "doc_id": "239426_0",
+        "original_rank": 213,
+        "new_rank": 237,
+        "score": 0.10126582278481022
+      },
+      {
+        "doc_id": "311952_1",
+        "original_rank": 199,
+        "new_rank": 181,
+        "score": -0.09045226130653261
+      },
+      {
+        "doc_id": "323354_1",
+        "original_rank": 29,
+        "new_rank": 12,
+        "score": -0.5862068965517242
+      },
+      {
+        "doc_id": "325851_0",
+        "original_rank": 124,
+        "new_rank": 72,
+        "score": -0.4193548387096774
+      },
+      {
+        "doc_id": "329931_0",
+        "original_rank": 228,
+        "new_rank": 144,
+        "score": -0.368421052631579
+      },
+      {
+        "doc_id": "332359_0",
+        "original_rank": 274,
+        "new_rank": 217,
+        "score": -0.208029197080292
+      },
+      {
+        "doc_id": "426266_0",
+        "original_rank": 65,
+        "new_rank": 45,
+        "score": -0.3076923076923077
+      },
+      {
+        "doc_id": "455470_0",
+        "original_rank": 95,
+        "new_rank": 70,
+        "score": -0.26315789473684215
+      },
+      {
+        "doc_id": "487920_0",
+        "original_rank": 78,
+        "new_rank": 56,
+        "score": -0.28205128205128205
+      },
+      {
+        "doc_id": "490717_0",
+        "original_rank": 176,
+        "new_rank": 165,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "554709_0",
+        "original_rank": 30,
+        "new_rank": 19,
+        "score": -0.3666666666666666
+      },
+      {
+        "doc_id": "56507_1",
+        "original_rank": 262,
+        "new_rank": 269,
+        "score": 0.026022304832713727
+      },
+      {
+        "doc_id": "878545_1",
+        "original_rank": 20,
+        "new_rank": 4,
+        "score": -0.8
+      }
+    ],
+    "debug_info": {}
+  },
+  "355": {
+    "rank": 4,
+    "pmrr": -0.07126679051818015,
+    "query": "Identify documents discussing the development and application of space-borne ocean remote sensing.",
+    "instruction": "Documents discussing the development and application of space-borne ocean remote sensing in oceanography, seabed prospecting and mining, or any marine-science activity are relevant. Documents that discuss the application of satellite remote sensing in geography, agriculture, forestry, mining and mineral prospecting or any land-bound science are not relevant, nor are references to international marketing or promotional advertising of any remote-sensing technology. Synthetic aperture radar (SAR) employed in ocean remote sensing is relevant.",
+    "full_text": "Identify documents discussing the development and application of space-borne ocean remote sensing. Documents discussing the development and application of space-borne ocean remote sensing in oceanography, seabed prospecting and mining, or any marine-science activity are relevant. Documents that discuss the application of satellite remote sensing in geography, agriculture, forestry, mining and mineral prospecting or any land-bound science are not relevant, nor are references to international marketing or promotional advertising of any remote-sensing technology. Synthetic aperture radar (SAR) employed in ocean remote sensing is relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1016114_0",
+        "original_rank": 82,
+        "new_rank": 80,
+        "score": -0.024390243902439046
+      },
+      {
+        "doc_id": "1057319_5",
+        "original_rank": 388,
+        "new_rank": 376,
+        "score": -0.030927835051546393
+      },
+      {
+        "doc_id": "1127471_7",
+        "original_rank": 116,
+        "new_rank": 128,
+        "score": 0.09375
+      },
+      {
+        "doc_id": "1148259_1",
+        "original_rank": 152,
+        "new_rank": 129,
+        "score": -0.1513157894736843
+      },
+      {
+        "doc_id": "1170012_3",
+        "original_rank": 614,
+        "new_rank": 612,
+        "score": -0.0032573289902280145
+      },
+      {
+        "doc_id": "117471_2",
+        "original_rank": 257,
+        "new_rank": 205,
+        "score": -0.2023346303501945
+      },
+      {
+        "doc_id": "1226107_4",
+        "original_rank": 80,
+        "new_rank": 78,
+        "score": -0.02499999999999991
+      },
+      {
+        "doc_id": "1231777_1",
+        "original_rank": 219,
+        "new_rank": 167,
+        "score": -0.23744292237442932
+      },
+      {
+        "doc_id": "1388295_3",
+        "original_rank": 248,
+        "new_rank": 201,
+        "score": -0.18951612903225812
+      },
+      {
+        "doc_id": "1390169_0",
+        "original_rank": 216,
+        "new_rank": 200,
+        "score": -0.07407407407407418
+      },
+      {
+        "doc_id": "1396682_0",
+        "original_rank": 150,
+        "new_rank": 142,
+        "score": -0.053333333333333344
+      },
+      {
+        "doc_id": "1527120_1",
+        "original_rank": 229,
+        "new_rank": 213,
+        "score": -0.06986899563318782
+      },
+      {
+        "doc_id": "1673912_1",
+        "original_rank": 287,
+        "new_rank": 229,
+        "score": -0.20209059233449478
+      },
+      {
+        "doc_id": "1746933_1",
+        "original_rank": 441,
+        "new_rank": 428,
+        "score": -0.02947845804988647
+      },
+      {
+        "doc_id": "1789859_0",
+        "original_rank": 382,
+        "new_rank": 384,
+        "score": 0.005208333333333481
+      },
+      {
+        "doc_id": "220667_1",
+        "original_rank": 71,
+        "new_rank": 63,
+        "score": -0.11267605633802813
+      },
+      {
+        "doc_id": "243638_1",
+        "original_rank": 385,
+        "new_rank": 355,
+        "score": -0.07792207792207795
+      },
+      {
+        "doc_id": "269079_1",
+        "original_rank": 13,
+        "new_rank": 12,
+        "score": -0.07692307692307687
+      },
+      {
+        "doc_id": "362356_11",
+        "original_rank": 26,
+        "new_rank": 27,
+        "score": 0.03703703703703709
+      },
+      {
+        "doc_id": "407762_2",
+        "original_rank": 401,
+        "new_rank": 380,
+        "score": -0.052369077306733125
+      },
+      {
+        "doc_id": "443639_3",
+        "original_rank": 528,
+        "new_rank": 514,
+        "score": -0.02651515151515149
+      },
+      {
+        "doc_id": "457376_1",
+        "original_rank": 480,
+        "new_rank": 464,
+        "score": -0.033333333333333326
+      },
+      {
+        "doc_id": "574133_1",
+        "original_rank": 140,
+        "new_rank": 132,
+        "score": -0.05714285714285716
+      },
+      {
+        "doc_id": "593327_1",
+        "original_rank": 204,
+        "new_rank": 192,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "60625_6",
+        "original_rank": 105,
+        "new_rank": 87,
+        "score": -0.17142857142857137
+      },
+      {
+        "doc_id": "705224_1",
+        "original_rank": 146,
+        "new_rank": 138,
+        "score": -0.05479452054794531
+      },
+      {
+        "doc_id": "732462_0",
+        "original_rank": 61,
+        "new_rank": 60,
+        "score": -0.016393442622950727
+      },
+      {
+        "doc_id": "812042_6",
+        "original_rank": 24,
+        "new_rank": 21,
+        "score": -0.125
+      },
+      {
+        "doc_id": "973928_0",
+        "original_rank": 187,
+        "new_rank": 165,
+        "score": -0.11764705882352944
+      },
+      {
+        "doc_id": "996006_3",
+        "original_rank": 28,
+        "new_rank": 28,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "310": {
+    "rank": 5,
+    "pmrr": -0.05113003898949998,
+    "query": "Evidence that radio waves from radio towers or car (mobile) phones affect brain cancer occurrence.",
+    "instruction": "Persons living near radio towers and more recently persons using car (mobile) phones have been diagnosed with brain cancer. The argument rages regarding the direct association of one with the other. The incidence of cancer among the groups cited is considered, by some, to be higher than that found in the normal population. A relevant document includes any experiment with animals, statistical study, articles, news items which report on the incidence of brain cancer being higher/lower/same as those persons who live near a radio tower and those using car (mobile) phones as compared to those in the general population.",
+    "full_text": "Evidence that radio waves from radio towers or car (mobile) phones affect brain cancer occurrence. Persons living near radio towers and more recently persons using car (mobile) phones have been diagnosed with brain cancer. The argument rages regarding the direct association of one with the other. The incidence of cancer among the groups cited is considered, by some, to be higher than that found in the normal population. A relevant document includes any experiment with animals, statistical study, articles, news items which report on the incidence of brain cancer being higher/lower/same as those persons who live near a radio tower and those using car (mobile) phones as compared to those in the general population.",
+    "doc_details": [
+      {
+        "doc_id": "1125613_1",
+        "original_rank": 538,
+        "new_rank": 521,
+        "score": -0.03159851301115246
+      },
+      {
+        "doc_id": "1270299_0",
+        "original_rank": 102,
+        "new_rank": 98,
+        "score": -0.039215686274509776
+      },
+      {
+        "doc_id": "1285003_3",
+        "original_rank": 520,
+        "new_rank": 501,
+        "score": -0.03653846153846141
+      },
+      {
+        "doc_id": "183017_2",
+        "original_rank": 95,
+        "new_rank": 94,
+        "score": -0.010526315789473717
+      },
+      {
+        "doc_id": "259990_1",
+        "original_rank": 19,
+        "new_rank": 16,
+        "score": -0.1578947368421053
+      },
+      {
+        "doc_id": "305369_0",
+        "original_rank": 23,
+        "new_rank": 24,
+        "score": 0.04166666666666674
+      },
+      {
+        "doc_id": "355867_1",
+        "original_rank": 72,
+        "new_rank": 72,
+        "score": 0.0
+      },
+      {
+        "doc_id": "366680_3",
+        "original_rank": 35,
+        "new_rank": 32,
+        "score": -0.08571428571428574
+      },
+      {
+        "doc_id": "408546_2",
+        "original_rank": 31,
+        "new_rank": 33,
+        "score": 0.06060606060606055
+      },
+      {
+        "doc_id": "419885_1",
+        "original_rank": 56,
+        "new_rank": 55,
+        "score": -0.017857142857142905
+      },
+      {
+        "doc_id": "421195_0",
+        "original_rank": 77,
+        "new_rank": 64,
+        "score": -0.16883116883116878
+      },
+      {
+        "doc_id": "455411_5",
+        "original_rank": 48,
+        "new_rank": 39,
+        "score": -0.1875
+      },
+      {
+        "doc_id": "55294_0",
+        "original_rank": 9,
+        "new_rank": 9,
+        "score": 0.0
+      },
+      {
+        "doc_id": "587372_5",
+        "original_rank": 11,
+        "new_rank": 10,
+        "score": -0.09090909090909094
+      },
+      {
+        "doc_id": "621004_2",
+        "original_rank": 158,
+        "new_rank": 140,
+        "score": -0.11392405063291133
+      },
+      {
+        "doc_id": "622233_0",
+        "original_rank": 97,
+        "new_rank": 85,
+        "score": -0.12371134020618557
+      },
+      {
+        "doc_id": "660319_6",
+        "original_rank": 681,
+        "new_rank": 681,
+        "score": 0.0
+      },
+      {
+        "doc_id": "711410_0",
+        "original_rank": 146,
+        "new_rank": 135,
+        "score": -0.07534246575342474
+      },
+      {
+        "doc_id": "736417_0",
+        "original_rank": 6,
+        "new_rank": 7,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "762398_0",
+        "original_rank": 134,
+        "new_rank": 120,
+        "score": -0.10447761194029848
+      },
+      {
+        "doc_id": "763736_0",
+        "original_rank": 33,
+        "new_rank": 30,
+        "score": -0.09090909090909083
+      },
+      {
+        "doc_id": "768607_0",
+        "original_rank": 116,
+        "new_rank": 117,
+        "score": 0.008547008547008406
+      },
+      {
+        "doc_id": "886957_0",
+        "original_rank": 32,
+        "new_rank": 34,
+        "score": 0.05882352941176472
+      },
+      {
+        "doc_id": "887029_1",
+        "original_rank": 888,
+        "new_rank": 813,
+        "score": -0.08445945945945954
+      },
+      {
+        "doc_id": "887619_0",
+        "original_rank": 180,
+        "new_rank": 163,
+        "score": -0.09444444444444444
+      },
+      {
+        "doc_id": "890551_0",
+        "original_rank": 86,
+        "new_rank": 79,
+        "score": -0.08139534883720934
+      },
+      {
+        "doc_id": "890674_0",
+        "original_rank": 100,
+        "new_rank": 92,
+        "score": -0.07999999999999996
+      },
+      {
+        "doc_id": "941313_5",
+        "original_rank": 977,
+        "new_rank": 977,
+        "score": 0.0
+      },
+      {
+        "doc_id": "941315_4",
+        "original_rank": 224,
+        "new_rank": 205,
+        "score": -0.0848214285714286
+      },
+      {
+        "doc_id": "942049_1",
+        "original_rank": 139,
+        "new_rank": 127,
+        "score": -0.08633093525179847
+      }
+    ],
+    "debug_info": {}
+  },
+  "367": {
+    "rank": 6,
+    "pmrr": -0.03055468753111309,
+    "query": "What modern instances have there been of old fashioned piracy, the boarding or taking control of boats?",
+    "instruction": "Documents discussing piracy on any body of water are relevant. Documents discussing the legal taking of ships or their contents by a national authority are non-relevant. Clashes between fishing vessels over fishing are not relevant, unless one vessel is boarded.",
+    "full_text": "What modern instances have there been of old fashioned piracy, the boarding or taking control of boats? Documents discussing piracy on any body of water are relevant. Documents discussing the legal taking of ships or their contents by a national authority are non-relevant. Clashes between fishing vessels over fishing are not relevant, unless one vessel is boarded.",
+    "doc_details": [
+      {
+        "doc_id": "1172162_1",
+        "original_rank": 291,
+        "new_rank": 244,
+        "score": -0.16151202749140903
+      },
+      {
+        "doc_id": "1223777_12",
+        "original_rank": 20,
+        "new_rank": 26,
+        "score": 0.23076923076923073
+      },
+      {
+        "doc_id": "1229636_0",
+        "original_rank": 693,
+        "new_rank": 706,
+        "score": 0.018413597733710985
+      },
+      {
+        "doc_id": "1321217_0",
+        "original_rank": 992,
+        "new_rank": 991,
+        "score": -0.0010080645161291146
+      },
+      {
+        "doc_id": "1349153_1",
+        "original_rank": 63,
+        "new_rank": 62,
+        "score": -0.015873015873015928
+      },
+      {
+        "doc_id": "1349160_2",
+        "original_rank": 893,
+        "new_rank": 912,
+        "score": 0.02083333333333337
+      },
+      {
+        "doc_id": "1349398_2",
+        "original_rank": 670,
+        "new_rank": 643,
+        "score": -0.040298507462686595
+      },
+      {
+        "doc_id": "141199_5",
+        "original_rank": 42,
+        "new_rank": 46,
+        "score": 0.08695652173913038
+      },
+      {
+        "doc_id": "1451974_6",
+        "original_rank": 905,
+        "new_rank": 924,
+        "score": 0.02056277056277067
+      },
+      {
+        "doc_id": "1702546_0",
+        "original_rank": 266,
+        "new_rank": 219,
+        "score": -0.17669172932330823
+      },
+      {
+        "doc_id": "1704600_0",
+        "original_rank": 982,
+        "new_rank": 974,
+        "score": -0.008146639511201759
+      },
+      {
+        "doc_id": "1707215_0",
+        "original_rank": 799,
+        "new_rank": 775,
+        "score": -0.030037546933667003
+      },
+      {
+        "doc_id": "1709373_0",
+        "original_rank": 876,
+        "new_rank": 834,
+        "score": -0.047945205479452024
+      },
+      {
+        "doc_id": "1717015_0",
+        "original_rank": 100,
+        "new_rank": 90,
+        "score": -0.09999999999999998
+      },
+      {
+        "doc_id": "1773531_2",
+        "original_rank": 9,
+        "new_rank": 10,
+        "score": 0.09999999999999987
+      },
+      {
+        "doc_id": "1773567_0",
+        "original_rank": 262,
+        "new_rank": 240,
+        "score": -0.08396946564885499
+      },
+      {
+        "doc_id": "1814722_0",
+        "original_rank": 948,
+        "new_rank": 928,
+        "score": -0.021097046413502185
+      },
+      {
+        "doc_id": "1838909_0",
+        "original_rank": 288,
+        "new_rank": 256,
+        "score": -0.11111111111111116
+      },
+      {
+        "doc_id": "247683_1",
+        "original_rank": 36,
+        "new_rank": 34,
+        "score": -0.05555555555555558
+      },
+      {
+        "doc_id": "254029_0",
+        "original_rank": 177,
+        "new_rank": 159,
+        "score": -0.10169491525423735
+      },
+      {
+        "doc_id": "273784_0",
+        "original_rank": 539,
+        "new_rank": 505,
+        "score": -0.06307977736549164
+      },
+      {
+        "doc_id": "2906_0",
+        "original_rank": 977,
+        "new_rank": 970,
+        "score": -0.007164790174002067
+      },
+      {
+        "doc_id": "46941_0",
+        "original_rank": 61,
+        "new_rank": 59,
+        "score": -0.032786885245901565
+      },
+      {
+        "doc_id": "475926_0",
+        "original_rank": 945,
+        "new_rank": 915,
+        "score": -0.03174603174603163
+      },
+      {
+        "doc_id": "499563_0",
+        "original_rank": 104,
+        "new_rank": 94,
+        "score": -0.09615384615384603
+      },
+      {
+        "doc_id": "622016_0",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "705515_3",
+        "original_rank": 154,
+        "new_rank": 118,
+        "score": -0.23376623376623373
+      },
+      {
+        "doc_id": "748251_0",
+        "original_rank": 55,
+        "new_rank": 45,
+        "score": -0.18181818181818188
+      },
+      {
+        "doc_id": "824165_0",
+        "original_rank": 991,
+        "new_rank": 992,
+        "score": 0.0010080645161291146
+      },
+      {
+        "doc_id": "920908_0",
+        "original_rank": 391,
+        "new_rank": 413,
+        "score": 0.053268765133171914
+      },
+      {
+        "doc_id": "924343_2",
+        "original_rank": 43,
+        "new_rank": 49,
+        "score": 0.12244897959183676
+      }
+    ],
+    "debug_info": {}
+  },
+  "419": {
+    "rank": 7,
+    "pmrr": -0.013860101989513226,
+    "query": "What new uses have been developed for old automobile tires as a means of tire recycling?",
+    "instruction": "A relevant document must show advantageous uses of recycled tires, such as: destructive distillation of scrap rubber for valuable chemicals, reef building for fish habitats, filler or binder in asphalt roadway mixes, and burning in a controlled environment for heat generation.",
+    "full_text": "What new uses have been developed for old automobile tires as a means of tire recycling? A relevant document must show advantageous uses of recycled tires, such as: destructive distillation of scrap rubber for valuable chemicals, reef building for fish habitats, filler or binder in asphalt roadway mixes, and burning in a controlled environment for heat generation.",
+    "doc_details": [
+      {
+        "doc_id": "116995_0",
+        "original_rank": 22,
+        "new_rank": 17,
+        "score": -0.2272727272727273
+      },
+      {
+        "doc_id": "1225746_0",
+        "original_rank": 4,
+        "new_rank": 4,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1397341_0",
+        "original_rank": 28,
+        "new_rank": 23,
+        "score": -0.1785714285714286
+      },
+      {
+        "doc_id": "1492464_0",
+        "original_rank": 719,
+        "new_rank": 709,
+        "score": -0.013908205841446475
+      },
+      {
+        "doc_id": "183279_0",
+        "original_rank": 2,
+        "new_rank": 2,
+        "score": 0.0
+      },
+      {
+        "doc_id": "291113_5",
+        "original_rank": 16,
+        "new_rank": 16,
+        "score": 0.0
+      },
+      {
+        "doc_id": "351776_1",
+        "original_rank": 5,
+        "new_rank": 5,
+        "score": 0.0
+      },
+      {
+        "doc_id": "487452_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "579369_2",
+        "original_rank": 23,
+        "new_rank": 31,
+        "score": 0.25806451612903225
+      },
+      {
+        "doc_id": "629687_3",
+        "original_rank": 52,
+        "new_rank": 47,
+        "score": -0.09615384615384603
+      },
+      {
+        "doc_id": "633040_1",
+        "original_rank": 124,
+        "new_rank": 171,
+        "score": 0.2748538011695907
+      },
+      {
+        "doc_id": "727934_0",
+        "original_rank": 60,
+        "new_rank": 49,
+        "score": -0.18333333333333324
+      }
+    ],
+    "debug_info": {}
+  },
+  "614": {
+    "rank": 8,
+    "pmrr": -0.0002003205128205185,
+    "query": "Find information about the first genetically modified food product to go on the market, Flavr Savr (also Flavor Saver) Tomato developed by Calgene.",
+    "instruction": "Documents about genetically engineered food in general are not relevant; relevant documents must include specifics regarding the Flavr Savr tomato.",
+    "full_text": "Find information about the first genetically modified food product to go on the market, Flavr Savr (also Flavor Saver) Tomato developed by Calgene. Documents about genetically engineered food in general are not relevant; relevant documents must include specifics regarding the Flavr Savr tomato.",
+    "doc_details": [
+      {
+        "doc_id": "1150372_6",
+        "original_rank": 22,
+        "new_rank": 20,
+        "score": -0.09090909090909094
+      },
+      {
+        "doc_id": "1150491_6",
+        "original_rank": 21,
+        "new_rank": 19,
+        "score": -0.09523809523809523
+      },
+      {
+        "doc_id": "1256481_0",
+        "original_rank": 25,
+        "new_rank": 25,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1265658_16",
+        "original_rank": 18,
+        "new_rank": 18,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1266995_0",
+        "original_rank": 17,
+        "new_rank": 16,
+        "score": -0.05882352941176472
+      },
+      {
+        "doc_id": "1553466_1",
+        "original_rank": 19,
+        "new_rank": 21,
+        "score": 0.09523809523809523
+      },
+      {
+        "doc_id": "1583106_6",
+        "original_rank": 10,
+        "new_rank": 10,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1644796_0",
+        "original_rank": 11,
+        "new_rank": 11,
+        "score": 0.0
+      },
+      {
+        "doc_id": "532453_0",
+        "original_rank": 23,
+        "new_rank": 23,
+        "score": 0.0
+      },
+      {
+        "doc_id": "536654_3",
+        "original_rank": 32,
+        "new_rank": 32,
+        "score": 0.0
+      },
+      {
+        "doc_id": "542584_0",
+        "original_rank": 9,
+        "new_rank": 9,
+        "score": 0.0
+      },
+      {
+        "doc_id": "581098_0",
+        "original_rank": 7,
+        "new_rank": 7,
+        "score": 0.0
+      },
+      {
+        "doc_id": "582354_1",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "585923_0",
+        "original_rank": 28,
+        "new_rank": 28,
+        "score": 0.0
+      },
+      {
+        "doc_id": "616992_1",
+        "original_rank": 15,
+        "new_rank": 15,
+        "score": 0.0
+      },
+      {
+        "doc_id": "647567_2",
+        "original_rank": 6,
+        "new_rank": 6,
+        "score": 0.0
+      },
+      {
+        "doc_id": "679243_1",
+        "original_rank": 24,
+        "new_rank": 24,
+        "score": 0.0
+      },
+      {
+        "doc_id": "679258_0",
+        "original_rank": 1,
+        "new_rank": 2,
+        "score": 0.5
+      },
+      {
+        "doc_id": "688180_0",
+        "original_rank": 2,
+        "new_rank": 1,
+        "score": -0.5
+      },
+      {
+        "doc_id": "688200_0",
+        "original_rank": 4,
+        "new_rank": 5,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "688224_0",
+        "original_rank": 26,
+        "new_rank": 26,
+        "score": 0.0
+      },
+      {
+        "doc_id": "689070_0",
+        "original_rank": 5,
+        "new_rank": 4,
+        "score": -0.19999999999999996
+      },
+      {
+        "doc_id": "718697_1",
+        "original_rank": 960,
+        "new_rank": 955,
+        "score": -0.005208333333333481
+      },
+      {
+        "doc_id": "733154_8",
+        "original_rank": 20,
+        "new_rank": 22,
+        "score": 0.09090909090909094
+      },
+      {
+        "doc_id": "771942_0",
+        "original_rank": 12,
+        "new_rank": 12,
+        "score": 0.0
+      },
+      {
+        "doc_id": "827299_0",
+        "original_rank": 16,
+        "new_rank": 17,
+        "score": 0.05882352941176472
+      }
+    ],
+    "debug_info": {}
+  },
+  "344": {
+    "rank": 9,
+    "pmrr": 0.006197548121908941,
+    "query": "The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses. What steps have been taken world-wide by those bearing the cost of E-mail to prevent excesses?",
+    "instruction": "To be relevant, a document will concern dissatisfaction by an entity paying for the cost of electronic mail. Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.",
+    "full_text": "The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses. What steps have been taken world-wide by those bearing the cost of E-mail to prevent excesses? To be relevant, a document will concern dissatisfaction by an entity paying for the cost of electronic mail. Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.",
+    "doc_details": [
+      {
+        "doc_id": "1003897_3",
+        "original_rank": 388,
+        "new_rank": 425,
+        "score": 0.08705882352941186
+      },
+      {
+        "doc_id": "1032975_5",
+        "original_rank": 971,
+        "new_rank": 972,
+        "score": 0.0010288065843619965
+      },
+      {
+        "doc_id": "1100347_0",
+        "original_rank": 283,
+        "new_rank": 283,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1132680_1",
+        "original_rank": 28,
+        "new_rank": 35,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "1157432_0",
+        "original_rank": 619,
+        "new_rank": 571,
+        "score": -0.07754442649434568
+      },
+      {
+        "doc_id": "1196424_1",
+        "original_rank": 993,
+        "new_rank": 992,
+        "score": -0.001007049345417954
+      },
+      {
+        "doc_id": "1295464_1",
+        "original_rank": 923,
+        "new_rank": 927,
+        "score": 0.004314994606256728
+      },
+      {
+        "doc_id": "1295823_0",
+        "original_rank": 1000,
+        "new_rank": 998,
+        "score": -0.0019999999999998908
+      },
+      {
+        "doc_id": "1309604_0",
+        "original_rank": 497,
+        "new_rank": 475,
+        "score": -0.044265593561368055
+      },
+      {
+        "doc_id": "1315573_4",
+        "original_rank": 473,
+        "new_rank": 474,
+        "score": 0.0021097046413502962
+      },
+      {
+        "doc_id": "1342324_0",
+        "original_rank": 225,
+        "new_rank": 204,
+        "score": -0.09333333333333327
+      },
+      {
+        "doc_id": "1501317_0",
+        "original_rank": 469,
+        "new_rank": 442,
+        "score": -0.05756929637526664
+      },
+      {
+        "doc_id": "1818097_0",
+        "original_rank": 815,
+        "new_rank": 830,
+        "score": 0.01807228915662651
+      },
+      {
+        "doc_id": "744697_0",
+        "original_rank": 708,
+        "new_rank": 675,
+        "score": -0.04661016949152541
+      },
+      {
+        "doc_id": "785935_0",
+        "original_rank": 980,
+        "new_rank": 971,
+        "score": -0.009183673469387643
+      },
+      {
+        "doc_id": "846919_2",
+        "original_rank": 60,
+        "new_rank": 69,
+        "score": 0.13043478260869568
+      },
+      {
+        "doc_id": "993890_7",
+        "original_rank": 976,
+        "new_rank": 970,
+        "score": -0.006147540983606481
+      }
+    ],
+    "debug_info": {}
+  },
+  "341": {
+    "rank": 10,
+    "pmrr": 0.042767121654333023,
+    "query": "A relevant document would discuss the effectiveness of efforts to better scrutinize passengers and luggage on all flights, but particularly international flights.",
+    "instruction": "A relevant document would contain reports on what steps airports worldwide have taken to better scrutinize passengers and their luggage on domestic and international flights and to step up screening of all carry-on baggage. With increased concerns about terrorism, articles on airport security relating in particular to additional steps taken by airports to increase flight safety would be relevant. The mere mention of enhanced security does not constitute relevance. Additional steps refer to something beyond just passenger and carry-on screening using the normal methods. Examples of new steps would be additional personnel, automated screening processes, sophisticated monitoring and screening devices, whole body imaging techniques, and extraordinary measures to screen luggage in the baggage compartment.",
+    "full_text": "A relevant document would discuss the effectiveness of efforts to better scrutinize passengers and luggage on all flights, but particularly international flights. A relevant document would contain reports on what steps airports worldwide have taken to better scrutinize passengers and their luggage on domestic and international flights and to step up screening of all carry-on baggage. With increased concerns about terrorism, articles on airport security relating in particular to additional steps taken by airports to increase flight safety would be relevant. The mere mention of enhanced security does not constitute relevance. Additional steps refer to something beyond just passenger and carry-on screening using the normal methods. Examples of new steps would be additional personnel, automated screening processes, sophisticated monitoring and screening devices, whole body imaging techniques, and extraordinary measures to screen luggage in the baggage compartment.",
+    "doc_details": [
+      {
+        "doc_id": "1005585_0",
+        "original_rank": 13,
+        "new_rank": 16,
+        "score": 0.1875
+      },
+      {
+        "doc_id": "102753_2",
+        "original_rank": 65,
+        "new_rank": 70,
+        "score": 0.07142857142857151
+      },
+      {
+        "doc_id": "1349453_2",
+        "original_rank": 276,
+        "new_rank": 295,
+        "score": 0.06440677966101693
+      },
+      {
+        "doc_id": "1357252_2",
+        "original_rank": 390,
+        "new_rank": 409,
+        "score": 0.04645476772616142
+      },
+      {
+        "doc_id": "1381242_1",
+        "original_rank": 290,
+        "new_rank": 313,
+        "score": 0.07348242811501604
+      },
+      {
+        "doc_id": "1381874_0",
+        "original_rank": 176,
+        "new_rank": 183,
+        "score": 0.03825136612021862
+      },
+      {
+        "doc_id": "1402669_3",
+        "original_rank": 431,
+        "new_rank": 449,
+        "score": 0.04008908685968815
+      },
+      {
+        "doc_id": "1409198_0",
+        "original_rank": 831,
+        "new_rank": 831,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1424628_1",
+        "original_rank": 478,
+        "new_rank": 497,
+        "score": 0.03822937625754508
+      },
+      {
+        "doc_id": "1425140_1",
+        "original_rank": 18,
+        "new_rank": 20,
+        "score": 0.09999999999999987
+      },
+      {
+        "doc_id": "1592406_2",
+        "original_rank": 562,
+        "new_rank": 579,
+        "score": 0.029360967184801412
+      },
+      {
+        "doc_id": "1655127_4",
+        "original_rank": 465,
+        "new_rank": 491,
+        "score": 0.052953156822810654
+      },
+      {
+        "doc_id": "1756946_1",
+        "original_rank": 243,
+        "new_rank": 244,
+        "score": 0.004098360655737765
+      },
+      {
+        "doc_id": "1807882_0",
+        "original_rank": 867,
+        "new_rank": 872,
+        "score": 0.005733944954128378
+      },
+      {
+        "doc_id": "1808077_0",
+        "original_rank": 921,
+        "new_rank": 924,
+        "score": 0.0032467532467532756
+      },
+      {
+        "doc_id": "1819323_0",
+        "original_rank": 949,
+        "new_rank": 952,
+        "score": 0.0031512605042016695
+      },
+      {
+        "doc_id": "1828416_2",
+        "original_rank": 269,
+        "new_rank": 288,
+        "score": 0.06597222222222221
+      },
+      {
+        "doc_id": "210177_0",
+        "original_rank": 10,
+        "new_rank": 11,
+        "score": 0.09090909090909094
+      },
+      {
+        "doc_id": "211760_1",
+        "original_rank": 101,
+        "new_rank": 103,
+        "score": 0.019417475728155442
+      },
+      {
+        "doc_id": "264188_0",
+        "original_rank": 919,
+        "new_rank": 911,
+        "score": -0.008705114254624613
+      },
+      {
+        "doc_id": "286662_1",
+        "original_rank": 227,
+        "new_rank": 237,
+        "score": 0.04219409282700437
+      },
+      {
+        "doc_id": "384513_0",
+        "original_rank": 580,
+        "new_rank": 566,
+        "score": -0.024137931034482807
+      },
+      {
+        "doc_id": "570601_1",
+        "original_rank": 177,
+        "new_rank": 188,
+        "score": 0.0585106382978724
+      },
+      {
+        "doc_id": "693059_0",
+        "original_rank": 174,
+        "new_rank": 172,
+        "score": -0.011494252873563204
+      },
+      {
+        "doc_id": "884635_0",
+        "original_rank": 59,
+        "new_rank": 64,
+        "score": 0.078125
+      }
+    ],
+    "debug_info": {}
+  },
+  "435": {
+    "rank": 11,
+    "pmrr": 0.04361087741656152,
+    "query": "What measures have been taken worldwide and what countries have been effective in curbing population growth?",
+    "instruction": "A relevant document must describe an actual case in which population measures have been taken and their results are known. The reduction measures must have been actively pursued; that is, passive events such as disease or famine involuntarily reducing the population are not relevant.",
+    "full_text": "What measures have been taken worldwide and what countries have been effective in curbing population growth? A relevant document must describe an actual case in which population measures have been taken and their results are known. The reduction measures must have been actively pursued; that is, passive events such as disease or famine involuntarily reducing the population are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "101896_1",
+        "original_rank": 534,
+        "new_rank": 529,
+        "score": -0.009363295880149836
+      },
+      {
+        "doc_id": "1115149_0",
+        "original_rank": 911,
+        "new_rank": 908,
+        "score": -0.003293084522502765
+      },
+      {
+        "doc_id": "1474096_0",
+        "original_rank": 166,
+        "new_rank": 178,
+        "score": 0.0674157303370787
+      },
+      {
+        "doc_id": "1474684_4",
+        "original_rank": 616,
+        "new_rank": 602,
+        "score": -0.022727272727272707
+      },
+      {
+        "doc_id": "1696393_4",
+        "original_rank": 596,
+        "new_rank": 626,
+        "score": 0.04792332268370614
+      },
+      {
+        "doc_id": "281931_1",
+        "original_rank": 24,
+        "new_rank": 34,
+        "score": 0.2941176470588235
+      },
+      {
+        "doc_id": "309411_0",
+        "original_rank": 514,
+        "new_rank": 514,
+        "score": 0.0
+      },
+      {
+        "doc_id": "398768_0",
+        "original_rank": 149,
+        "new_rank": 164,
+        "score": 0.09146341463414631
+      },
+      {
+        "doc_id": "41741_2",
+        "original_rank": 301,
+        "new_rank": 331,
+        "score": 0.09063444108761332
+      },
+      {
+        "doc_id": "51237_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "661419_0",
+        "original_rank": 156,
+        "new_rank": 183,
+        "score": 0.14754098360655732
+      },
+      {
+        "doc_id": "709708_0",
+        "original_rank": 177,
+        "new_rank": 206,
+        "score": 0.14077669902912626
+      },
+      {
+        "doc_id": "710623_3",
+        "original_rank": 196,
+        "new_rank": 198,
+        "score": 0.010101010101009944
+      },
+      {
+        "doc_id": "711782_2",
+        "original_rank": 86,
+        "new_rank": 82,
+        "score": -0.04651162790697683
+      },
+      {
+        "doc_id": "716481_0",
+        "original_rank": 213,
+        "new_rank": 191,
+        "score": -0.10328638497652587
+      },
+      {
+        "doc_id": "876226_4",
+        "original_rank": 285,
+        "new_rank": 283,
+        "score": -0.007017543859649145
+      }
+    ],
+    "debug_info": {}
+  },
+  "336": {
+    "rank": 12,
+    "pmrr": 0.050407284856527894,
+    "query": "A relevant document would discuss the frequency of vicious black bear attacks worldwide and the possible causes for this savage behavior.",
+    "instruction": "It has been reported that food or cosmetics sometimes attract hungry black bears, causing them to viciously attack humans. Relevant documents would include the aforementioned causes as well as speculation preferably from the scientific community as to other possible causes of vicious attacks by black bears. A relevant document would also detail steps taken or new methods devised by wildlife officials to control and/or modify the savageness of the black bear.",
+    "full_text": "A relevant document would discuss the frequency of vicious black bear attacks worldwide and the possible causes for this savage behavior. It has been reported that food or cosmetics sometimes attract hungry black bears, causing them to viciously attack humans. Relevant documents would include the aforementioned causes as well as speculation preferably from the scientific community as to other possible causes of vicious attacks by black bears. A relevant document would also detail steps taken or new methods devised by wildlife officials to control and/or modify the savageness of the black bear.",
+    "doc_details": [
+      {
+        "doc_id": "1012549_0",
+        "original_rank": 16,
+        "new_rank": 15,
+        "score": -0.0625
+      },
+      {
+        "doc_id": "1039895_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1203456_4",
+        "original_rank": 3,
+        "new_rank": 8,
+        "score": 0.625
+      },
+      {
+        "doc_id": "1205254_0",
+        "original_rank": 30,
+        "new_rank": 35,
+        "score": 0.1428571428571429
+      },
+      {
+        "doc_id": "1205987_0",
+        "original_rank": 135,
+        "new_rank": 131,
+        "score": -0.02962962962962956
+      },
+      {
+        "doc_id": "1229011_3",
+        "original_rank": 78,
+        "new_rank": 74,
+        "score": -0.05128205128205132
+      },
+      {
+        "doc_id": "1230221_1",
+        "original_rank": 137,
+        "new_rank": 132,
+        "score": -0.03649635036496357
+      },
+      {
+        "doc_id": "1235031_9",
+        "original_rank": 141,
+        "new_rank": 138,
+        "score": -0.021276595744680882
+      },
+      {
+        "doc_id": "1319228_0",
+        "original_rank": 377,
+        "new_rank": 473,
+        "score": 0.20295983086680758
+      },
+      {
+        "doc_id": "1319652_1",
+        "original_rank": 247,
+        "new_rank": 267,
+        "score": 0.07490636704119846
+      },
+      {
+        "doc_id": "134475_0",
+        "original_rank": 739,
+        "new_rank": 739,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1417304_0",
+        "original_rank": 690,
+        "new_rank": 686,
+        "score": -0.005797101449275366
+      },
+      {
+        "doc_id": "1417346_0",
+        "original_rank": 70,
+        "new_rank": 85,
+        "score": 0.17647058823529416
+      },
+      {
+        "doc_id": "1417534_1",
+        "original_rank": 703,
+        "new_rank": 706,
+        "score": 0.004249291784702569
+      },
+      {
+        "doc_id": "1504366_0",
+        "original_rank": 493,
+        "new_rank": 514,
+        "score": 0.040856031128404635
+      },
+      {
+        "doc_id": "1506068_0",
+        "original_rank": 199,
+        "new_rank": 193,
+        "score": -0.03015075376884424
+      },
+      {
+        "doc_id": "1513280_0",
+        "original_rank": 596,
+        "new_rank": 625,
+        "score": 0.046399999999999886
+      },
+      {
+        "doc_id": "1522511_1",
+        "original_rank": 353,
+        "new_rank": 348,
+        "score": -0.014164305949008416
+      },
+      {
+        "doc_id": "1540442_0",
+        "original_rank": 557,
+        "new_rank": 547,
+        "score": -0.01795332136445238
+      },
+      {
+        "doc_id": "1543234_0",
+        "original_rank": 238,
+        "new_rank": 231,
+        "score": -0.02941176470588236
+      },
+      {
+        "doc_id": "1545807_1",
+        "original_rank": 57,
+        "new_rank": 62,
+        "score": 0.08064516129032251
+      },
+      {
+        "doc_id": "1625519_3",
+        "original_rank": 75,
+        "new_rank": 73,
+        "score": -0.026666666666666505
+      },
+      {
+        "doc_id": "1629286_1",
+        "original_rank": 122,
+        "new_rank": 122,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1631689_1",
+        "original_rank": 129,
+        "new_rank": 126,
+        "score": -0.023255813953488302
+      },
+      {
+        "doc_id": "1673457_0",
+        "original_rank": 128,
+        "new_rank": 116,
+        "score": -0.09375
+      },
+      {
+        "doc_id": "1697947_3",
+        "original_rank": 64,
+        "new_rank": 67,
+        "score": 0.04477611940298509
+      },
+      {
+        "doc_id": "1707062_0",
+        "original_rank": 7,
+        "new_rank": 9,
+        "score": 0.2222222222222222
+      },
+      {
+        "doc_id": "1724499_0",
+        "original_rank": 583,
+        "new_rank": 598,
+        "score": 0.025083612040133763
+      },
+      {
+        "doc_id": "1754536_1",
+        "original_rank": 83,
+        "new_rank": 90,
+        "score": 0.07777777777777783
+      },
+      {
+        "doc_id": "1760805_0",
+        "original_rank": 237,
+        "new_rank": 253,
+        "score": 0.06324110671936756
+      },
+      {
+        "doc_id": "634674_0",
+        "original_rank": 5,
+        "new_rank": 7,
+        "score": 0.2857142857142858
+      },
+      {
+        "doc_id": "869669_0",
+        "original_rank": 487,
+        "new_rank": 488,
+        "score": 0.002049180327868827
+      },
+      {
+        "doc_id": "976920_1",
+        "original_rank": 212,
+        "new_rank": 210,
+        "score": -0.009433962264151052
+      }
+    ],
+    "debug_info": {}
+  },
+  "416": {
+    "rank": 13,
+    "pmrr": 0.05334581133228457,
+    "query": "What is the ongoing status of The Three Gorges Project?",
+    "instruction": "A relevant document will provide the projected or actual date of completion of the project, its estimated or actual total cost, or the estimated or ongoing electrical output of the finished project. Discussions of the social, political, or ecological impact of the project are not relevant.",
+    "full_text": "What is the ongoing status of The Three Gorges Project? A relevant document will provide the projected or actual date of completion of the project, its estimated or actual total cost, or the estimated or ongoing electrical output of the finished project. Discussions of the social, political, or ecological impact of the project are not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1001536_1",
+        "original_rank": 36,
+        "new_rank": 41,
+        "score": 0.12195121951219501
+      },
+      {
+        "doc_id": "1017282_3",
+        "original_rank": 512,
+        "new_rank": 563,
+        "score": 0.09058614564831258
+      },
+      {
+        "doc_id": "1041188_0",
+        "original_rank": 14,
+        "new_rank": 23,
+        "score": 0.3913043478260869
+      },
+      {
+        "doc_id": "1068306_2",
+        "original_rank": 55,
+        "new_rank": 39,
+        "score": -0.2909090909090909
+      },
+      {
+        "doc_id": "1090186_0",
+        "original_rank": 679,
+        "new_rank": 667,
+        "score": -0.01767304860088359
+      },
+      {
+        "doc_id": "1093387_3",
+        "original_rank": 60,
+        "new_rank": 42,
+        "score": -0.29999999999999993
+      },
+      {
+        "doc_id": "1096171_0",
+        "original_rank": 37,
+        "new_rank": 48,
+        "score": 0.22916666666666674
+      },
+      {
+        "doc_id": "1110169_2",
+        "original_rank": 21,
+        "new_rank": 14,
+        "score": -0.33333333333333337
+      },
+      {
+        "doc_id": "1111014_0",
+        "original_rank": 310,
+        "new_rank": 240,
+        "score": -0.22580645161290325
+      },
+      {
+        "doc_id": "1180275_3",
+        "original_rank": 526,
+        "new_rank": 393,
+        "score": -0.2528517110266161
+      },
+      {
+        "doc_id": "1239484_1",
+        "original_rank": 56,
+        "new_rank": 62,
+        "score": 0.09677419354838712
+      },
+      {
+        "doc_id": "1241952_0",
+        "original_rank": 31,
+        "new_rank": 21,
+        "score": -0.32258064516129026
+      },
+      {
+        "doc_id": "1248807_0",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1259393_0",
+        "original_rank": 212,
+        "new_rank": 256,
+        "score": 0.171875
+      },
+      {
+        "doc_id": "1343336_1",
+        "original_rank": 20,
+        "new_rank": 9,
+        "score": -0.5499999999999999
+      },
+      {
+        "doc_id": "1419015_1",
+        "original_rank": 107,
+        "new_rank": 53,
+        "score": -0.5046728971962617
+      },
+      {
+        "doc_id": "1426221_0",
+        "original_rank": 998,
+        "new_rank": 998,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1438673_0",
+        "original_rank": 304,
+        "new_rank": 571,
+        "score": 0.46760070052539404
+      },
+      {
+        "doc_id": "1448982_0",
+        "original_rank": 353,
+        "new_rank": 427,
+        "score": 0.17330210772833732
+      },
+      {
+        "doc_id": "1493435_0",
+        "original_rank": 9,
+        "new_rank": 24,
+        "score": 0.625
+      },
+      {
+        "doc_id": "1495612_6",
+        "original_rank": 176,
+        "new_rank": 198,
+        "score": 0.11111111111111105
+      },
+      {
+        "doc_id": "1499895_0",
+        "original_rank": 33,
+        "new_rank": 32,
+        "score": -0.030303030303030276
+      },
+      {
+        "doc_id": "1515831_0",
+        "original_rank": 202,
+        "new_rank": 359,
+        "score": 0.43732590529247917
+      },
+      {
+        "doc_id": "1547906_1",
+        "original_rank": 921,
+        "new_rank": 899,
+        "score": -0.023887079261671995
+      },
+      {
+        "doc_id": "1565215_0",
+        "original_rank": 41,
+        "new_rank": 34,
+        "score": -0.1707317073170731
+      },
+      {
+        "doc_id": "1638597_10",
+        "original_rank": 866,
+        "new_rank": 894,
+        "score": 0.031319910514541416
+      },
+      {
+        "doc_id": "1789228_2",
+        "original_rank": 898,
+        "new_rank": 880,
+        "score": -0.020044543429844075
+      },
+      {
+        "doc_id": "1792169_0",
+        "original_rank": 141,
+        "new_rank": 301,
+        "score": 0.5315614617940199
+      },
+      {
+        "doc_id": "1808025_1",
+        "original_rank": 713,
+        "new_rank": 736,
+        "score": 0.03125
+      },
+      {
+        "doc_id": "241240_4",
+        "original_rank": 67,
+        "new_rank": 54,
+        "score": -0.19402985074626866
+      },
+      {
+        "doc_id": "502113_8",
+        "original_rank": 81,
+        "new_rank": 106,
+        "score": 0.23584905660377353
+      },
+      {
+        "doc_id": "506069_0",
+        "original_rank": 22,
+        "new_rank": 7,
+        "score": -0.6818181818181818
+      },
+      {
+        "doc_id": "581036_1",
+        "original_rank": 16,
+        "new_rank": 8,
+        "score": -0.5
+      },
+      {
+        "doc_id": "617046_0",
+        "original_rank": 111,
+        "new_rank": 173,
+        "score": 0.35838150289017345
+      },
+      {
+        "doc_id": "711107_0",
+        "original_rank": 49,
+        "new_rank": 80,
+        "score": 0.38749999999999996
+      },
+      {
+        "doc_id": "711217_8",
+        "original_rank": 115,
+        "new_rank": 124,
+        "score": 0.07258064516129037
+      },
+      {
+        "doc_id": "733642_1",
+        "original_rank": 15,
+        "new_rank": 19,
+        "score": 0.21052631578947367
+      },
+      {
+        "doc_id": "746919_2",
+        "original_rank": 145,
+        "new_rank": 248,
+        "score": 0.41532258064516125
+      },
+      {
+        "doc_id": "797579_2",
+        "original_rank": 10,
+        "new_rank": 13,
+        "score": 0.23076923076923073
+      },
+      {
+        "doc_id": "797878_2",
+        "original_rank": 11,
+        "new_rank": 12,
+        "score": 0.08333333333333337
+      },
+      {
+        "doc_id": "822936_8",
+        "original_rank": 174,
+        "new_rank": 200,
+        "score": 0.13
+      },
+      {
+        "doc_id": "824521_0",
+        "original_rank": 3,
+        "new_rank": 3,
+        "score": 0.0
+      },
+      {
+        "doc_id": "854307_0",
+        "original_rank": 12,
+        "new_rank": 15,
+        "score": 0.19999999999999996
+      },
+      {
+        "doc_id": "881765_0",
+        "original_rank": 4,
+        "new_rank": 6,
+        "score": 0.33333333333333337
+      },
+      {
+        "doc_id": "971660_1",
+        "original_rank": 6,
+        "new_rank": 17,
+        "score": 0.6470588235294117
+      },
+      {
+        "doc_id": "973026_1",
+        "original_rank": 2,
+        "new_rank": 4,
+        "score": 0.5
+      },
+      {
+        "doc_id": "973400_1",
+        "original_rank": 18,
+        "new_rank": 11,
+        "score": -0.38888888888888895
+      }
+    ],
+    "debug_info": {}
+  },
+  "356": {
+    "rank": 14,
+    "pmrr": 0.09273182957393485,
+    "query": "Identify documents discussing the use of estrogen by postmenopausal women in Britain.",
+    "instruction": "The use of hormone replacement therapy outside of the United Kingdom is not relevant. United Kingdom and British development and marketing of estrogen suppressing drugs are relevant.",
+    "full_text": "Identify documents discussing the use of estrogen by postmenopausal women in Britain. The use of hormone replacement therapy outside of the United Kingdom is not relevant. United Kingdom and British development and marketing of estrogen suppressing drugs are relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1510420_0",
+        "original_rank": 11,
+        "new_rank": 19,
+        "score": 0.42105263157894746
+      },
+      {
+        "doc_id": "1587072_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "684835_4",
+        "original_rank": 21,
+        "new_rank": 18,
+        "score": -0.1428571428571429
+      }
+    ],
+    "debug_info": {}
+  },
+  "690": {
+    "rank": 15,
+    "pmrr": 0.11573648666236226,
+    "query": "Find documents which describe an advantage in hiring potential or increased income for graduates of U.S. colleges.",
+    "instruction": "Relevant documents cite some advantage of a college education for job opportunities. Documents citing better opportunities for non-college vocational-training is not relevant.",
+    "full_text": "Find documents which describe an advantage in hiring potential or increased income for graduates of U.S. colleges. Relevant documents cite some advantage of a college education for job opportunities. Documents citing better opportunities for non-college vocational-training is not relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1019570_0",
+        "original_rank": 338,
+        "new_rank": 248,
+        "score": -0.26627218934911245
+      },
+      {
+        "doc_id": "1024650_6",
+        "original_rank": 917,
+        "new_rank": 909,
+        "score": -0.00872410032715365
+      },
+      {
+        "doc_id": "1115504_0",
+        "original_rank": 23,
+        "new_rank": 33,
+        "score": 0.303030303030303
+      },
+      {
+        "doc_id": "1120249_2",
+        "original_rank": 107,
+        "new_rank": 26,
+        "score": -0.7570093457943925
+      },
+      {
+        "doc_id": "1204828_0",
+        "original_rank": 134,
+        "new_rank": 98,
+        "score": -0.26865671641791045
+      },
+      {
+        "doc_id": "1217145_3",
+        "original_rank": 170,
+        "new_rank": 480,
+        "score": 0.6458333333333333
+      },
+      {
+        "doc_id": "1351420_4",
+        "original_rank": 287,
+        "new_rank": 442,
+        "score": 0.3506787330316742
+      },
+      {
+        "doc_id": "1351578_4",
+        "original_rank": 286,
+        "new_rank": 443,
+        "score": 0.35440180586907455
+      },
+      {
+        "doc_id": "521233_1",
+        "original_rank": 965,
+        "new_rank": 958,
+        "score": -0.007253886010362587
+      },
+      {
+        "doc_id": "548257_4",
+        "original_rank": 60,
+        "new_rank": 201,
+        "score": 0.7014925373134329
+      },
+      {
+        "doc_id": "756148_1",
+        "original_rank": 110,
+        "new_rank": 167,
+        "score": 0.341317365269461
+      },
+      {
+        "doc_id": "835331_0",
+        "original_rank": 382,
+        "new_rank": 382,
+        "score": 0.0
+      }
+    ],
+    "debug_info": {}
+  },
+  "379": {
+    "rank": 16,
+    "pmrr": 0.18229199676050656,
+    "query": "Identify documents that discuss mainstreaming children with physical or mental impairments.",
+    "instruction": "A relevant document will include the pros and cons of mainstreaming children with physical or mental impairments, the benefits to the impaired child, as well as the attitude, beliefs and concerns of teachers and school administrators with regard to taking time away from the \"normal children\".",
+    "full_text": "Identify documents that discuss mainstreaming children with physical or mental impairments. A relevant document will include the pros and cons of mainstreaming children with physical or mental impairments, the benefits to the impaired child, as well as the attitude, beliefs and concerns of teachers and school administrators with regard to taking time away from the \"normal children\".",
+    "doc_details": [
+      {
+        "doc_id": "1058563_0",
+        "original_rank": 573,
+        "new_rank": 709,
+        "score": 0.19181946403385053
+      },
+      {
+        "doc_id": "1128203_0",
+        "original_rank": 32,
+        "new_rank": 21,
+        "score": -0.34375
+      },
+      {
+        "doc_id": "1188545_3",
+        "original_rank": 661,
+        "new_rank": 785,
+        "score": 0.15796178343949052
+      },
+      {
+        "doc_id": "1464360_2",
+        "original_rank": 461,
+        "new_rank": 558,
+        "score": 0.1738351254480287
+      },
+      {
+        "doc_id": "1503163_0",
+        "original_rank": 155,
+        "new_rank": 234,
+        "score": 0.3376068376068375
+      },
+      {
+        "doc_id": "1533742_4",
+        "original_rank": 63,
+        "new_rank": 65,
+        "score": 0.03076923076923066
+      },
+      {
+        "doc_id": "1533748_0",
+        "original_rank": 636,
+        "new_rank": 719,
+        "score": 0.1154381084840056
+      },
+      {
+        "doc_id": "1610650_2",
+        "original_rank": 18,
+        "new_rank": 73,
+        "score": 0.7534246575342466
+      },
+      {
+        "doc_id": "1612826_2",
+        "original_rank": 133,
+        "new_rank": 219,
+        "score": 0.3926940639269406
+      },
+      {
+        "doc_id": "1652847_2",
+        "original_rank": 301,
+        "new_rank": 368,
+        "score": 0.18206521739130443
+      },
+      {
+        "doc_id": "173978_0",
+        "original_rank": 17,
+        "new_rank": 56,
+        "score": 0.6964285714285714
+      },
+      {
+        "doc_id": "1802258_3",
+        "original_rank": 19,
+        "new_rank": 34,
+        "score": 0.4411764705882353
+      },
+      {
+        "doc_id": "195163_1",
+        "original_rank": 527,
+        "new_rank": 624,
+        "score": 0.15544871794871795
+      },
+      {
+        "doc_id": "283963_0",
+        "original_rank": 36,
+        "new_rank": 88,
+        "score": 0.5909090909090908
+      },
+      {
+        "doc_id": "290304_3",
+        "original_rank": 164,
+        "new_rank": 331,
+        "score": 0.5045317220543807
+      },
+      {
+        "doc_id": "552301_1",
+        "original_rank": 346,
+        "new_rank": 361,
+        "score": 0.04155124653739606
+      },
+      {
+        "doc_id": "610055_0",
+        "original_rank": 128,
+        "new_rank": 183,
+        "score": 0.3005464480874317
+      },
+      {
+        "doc_id": "704519_3",
+        "original_rank": 317,
+        "new_rank": 400,
+        "score": 0.2074999999999999
+      },
+      {
+        "doc_id": "733289_0",
+        "original_rank": 371,
+        "new_rank": 366,
+        "score": -0.013477088948786964
+      },
+      {
+        "doc_id": "794900_3",
+        "original_rank": 131,
+        "new_rank": 115,
+        "score": -0.12213740458015276
+      },
+      {
+        "doc_id": "795045_3",
+        "original_rank": 132,
+        "new_rank": 116,
+        "score": -0.12121212121212122
+      },
+      {
+        "doc_id": "800103_0",
+        "original_rank": 511,
+        "new_rank": 561,
+        "score": 0.089126559714795
+      },
+      {
+        "doc_id": "800288_0",
+        "original_rank": 510,
+        "new_rank": 560,
+        "score": 0.0892857142857143
+      },
+      {
+        "doc_id": "870597_0",
+        "original_rank": 274,
+        "new_rank": 445,
+        "score": 0.38426966292134823
+      },
+      {
+        "doc_id": "87446_1",
+        "original_rank": 397,
+        "new_rank": 534,
+        "score": 0.25655430711610483
+      },
+      {
+        "doc_id": "892030_1",
+        "original_rank": 125,
+        "new_rank": 66,
+        "score": -0.472
+      },
+      {
+        "doc_id": "901545_1",
+        "original_rank": 7,
+        "new_rank": 6,
+        "score": -0.1428571428571429
+      },
+      {
+        "doc_id": "959127_0",
+        "original_rank": 58,
+        "new_rank": 75,
+        "score": 0.22666666666666657
+      }
+    ],
+    "debug_info": {}
+  },
+  "445": {
+    "rank": 17,
+    "pmrr": 0.18973312097841508,
+    "query": "What other countries besides the United States are considering or have approved women as clergy persons?",
+    "instruction": "To be relevant, a document must indicate either a country where a woman has been installed as clergy or a country that is considering such an installation. The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).",
+    "full_text": "What other countries besides the United States are considering or have approved women as clergy persons? To be relevant, a document must indicate either a country where a woman has been installed as clergy or a country that is considering such an installation. The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).",
+    "doc_details": [
+      {
+        "doc_id": "1120477_1",
+        "original_rank": 695,
+        "new_rank": 634,
+        "score": -0.08776978417266179
+      },
+      {
+        "doc_id": "1410595_2",
+        "original_rank": 798,
+        "new_rank": 917,
+        "score": 0.1297709923664121
+      },
+      {
+        "doc_id": "1468434_1",
+        "original_rank": 378,
+        "new_rank": 326,
+        "score": -0.13756613756613767
+      },
+      {
+        "doc_id": "1524891_1",
+        "original_rank": 392,
+        "new_rank": 445,
+        "score": 0.11910112359550551
+      },
+      {
+        "doc_id": "159258_0",
+        "original_rank": 5,
+        "new_rank": 9,
+        "score": 0.44444444444444453
+      },
+      {
+        "doc_id": "170884_1",
+        "original_rank": 67,
+        "new_rank": 75,
+        "score": 0.10666666666666658
+      },
+      {
+        "doc_id": "1770344_0",
+        "original_rank": 266,
+        "new_rank": 343,
+        "score": 0.22448979591836726
+      },
+      {
+        "doc_id": "1806972_0",
+        "original_rank": 324,
+        "new_rank": 344,
+        "score": 0.05813953488372092
+      },
+      {
+        "doc_id": "195806_1",
+        "original_rank": 34,
+        "new_rank": 70,
+        "score": 0.5142857142857142
+      },
+      {
+        "doc_id": "217270_2",
+        "original_rank": 154,
+        "new_rank": 222,
+        "score": 0.3063063063063064
+      },
+      {
+        "doc_id": "287609_0",
+        "original_rank": 78,
+        "new_rank": 84,
+        "score": 0.0714285714285714
+      },
+      {
+        "doc_id": "371662_1",
+        "original_rank": 579,
+        "new_rank": 698,
+        "score": 0.17048710601719197
+      },
+      {
+        "doc_id": "428748_2",
+        "original_rank": 63,
+        "new_rank": 111,
+        "score": 0.43243243243243246
+      },
+      {
+        "doc_id": "466038_0",
+        "original_rank": 143,
+        "new_rank": 205,
+        "score": 0.30243902439024395
+      },
+      {
+        "doc_id": "647771_1",
+        "original_rank": 475,
+        "new_rank": 612,
+        "score": 0.22385620915032678
+      },
+      {
+        "doc_id": "703818_1",
+        "original_rank": 295,
+        "new_rank": 210,
+        "score": -0.2881355932203391
+      },
+      {
+        "doc_id": "788414_1",
+        "original_rank": 697,
+        "new_rank": 742,
+        "score": 0.06064690026954178
+      },
+      {
+        "doc_id": "810160_0",
+        "original_rank": 68,
+        "new_rank": 159,
+        "score": 0.5723270440251572
+      },
+      {
+        "doc_id": "893778_0",
+        "original_rank": 188,
+        "new_rank": 304,
+        "score": 0.381578947368421
+      }
+    ],
+    "debug_info": {}
+  },
+  "433": {
+    "rank": 18,
+    "pmrr": 0.21287373467028156,
+    "query": "Is there contemporary interest in the Greek philosophy of stoicism?",
+    "instruction": "Actual references to the philosophy or philosophers, productions of Greek stoic plays, and new \"stoic\" artistic productions are all relevant.",
+    "full_text": "Is there contemporary interest in the Greek philosophy of stoicism? Actual references to the philosophy or philosophers, productions of Greek stoic plays, and new \"stoic\" artistic productions are all relevant.",
+    "doc_details": [
+      {
+        "doc_id": "1159308_0",
+        "original_rank": 19,
+        "new_rank": 42,
+        "score": 0.5476190476190477
+      },
+      {
+        "doc_id": "1231072_1",
+        "original_rank": 1,
+        "new_rank": 1,
+        "score": 0.0
+      },
+      {
+        "doc_id": "1321746_4",
+        "original_rank": 894,
+        "new_rank": 920,
+        "score": 0.02826086956521734
+      },
+      {
+        "doc_id": "1330883_9",
+        "original_rank": 76,
+        "new_rank": 166,
+        "score": 0.5421686746987951
+      },
+      {
+        "doc_id": "1364373_1",
+        "original_rank": 953,
+        "new_rank": 964,
+        "score": 0.011410788381742809
+      },
+      {
+        "doc_id": "1500130_3",
+        "original_rank": 17,
+        "new_rank": 31,
+        "score": 0.4516129032258065
+      },
+      {
+        "doc_id": "1828645_3",
+        "original_rank": 270,
+        "new_rank": 291,
+        "score": 0.07216494845360832
+      },
+      {
+        "doc_id": "328199_0",
+        "original_rank": 102,
+        "new_rank": 145,
+        "score": 0.29655172413793107
+      },
+      {
+        "doc_id": "467402_3",
+        "original_rank": 229,
+        "new_rank": 171,
+        "score": -0.2532751091703057
+      },
+      {
+        "doc_id": "563114_1",
+        "original_rank": 316,
+        "new_rank": 463,
+        "score": 0.3174946004319654
+      },
+      {
+        "doc_id": "614077_0",
+        "original_rank": 909,
+        "new_rank": 958,
+        "score": 0.051148225469728636
+      },
+      {
+        "doc_id": "62085_3",
+        "original_rank": 2,
+        "new_rank": 8,
+        "score": 0.75
+      },
+      {
+        "doc_id": "755442_2",
+        "original_rank": 254,
+        "new_rank": 170,
+        "score": -0.3307086614173228
+      },
+      {
+        "doc_id": "847343_0",
+        "original_rank": 246,
+        "new_rank": 252,
+        "score": 0.023809523809523947
+      },
+      {
+        "doc_id": "859192_1",
+        "original_rank": 52,
+        "new_rank": 165,
+        "score": 0.6848484848484848
+      }
+    ],
+    "debug_info": {}
+  },
+  "414": {
+    "rank": 19,
+    "pmrr": 0.37243558299278345,
+    "query": "How much sugar does Cuba export and which countries import it?",
+    "instruction": "A relevant document will provide information regarding Cuba's sugar trade. Sugar production statistics are not relevant unless exports are mentioned explicitly.",
+    "full_text": "How much sugar does Cuba export and which countries import it? A relevant document will provide information regarding Cuba's sugar trade. Sugar production statistics are not relevant unless exports are mentioned explicitly.",
+    "doc_details": [
+      {
+        "doc_id": "1430341_2",
+        "original_rank": 5,
+        "new_rank": 27,
+        "score": 0.8148148148148149
+      },
+      {
+        "doc_id": "202721_0",
+        "original_rank": 109,
+        "new_rank": 183,
+        "score": 0.40437158469945356
+      },
+      {
+        "doc_id": "223328_0",
+        "original_rank": 63,
+        "new_rank": 142,
+        "score": 0.556338028169014
+      },
+      {
+        "doc_id": "232355_0",
+        "original_rank": 157,
+        "new_rank": 280,
+        "score": 0.4392857142857143
+      },
+      {
+        "doc_id": "239688_2",
+        "original_rank": 120,
+        "new_rank": 166,
+        "score": 0.27710843373493976
+      },
+      {
+        "doc_id": "314870_0",
+        "original_rank": 94,
+        "new_rank": 211,
+        "score": 0.5545023696682464
+      },
+      {
+        "doc_id": "346145_2",
+        "original_rank": 597,
+        "new_rank": 678,
+        "score": 0.11946902654867264
+      },
+      {
+        "doc_id": "346480_0",
+        "original_rank": 116,
+        "new_rank": 179,
+        "score": 0.35195530726256985
+      },
+      {
+        "doc_id": "471905_1",
+        "original_rank": 736,
+        "new_rank": 731,
+        "score": -0.006793478260869623
+      },
+      {
+        "doc_id": "658645_6",
+        "original_rank": 321,
+        "new_rank": 366,
+        "score": 0.12295081967213117
+      },
+      {
+        "doc_id": "742306_0",
+        "original_rank": 261,
+        "new_rank": 296,
+        "score": 0.1182432432432432
+      },
+      {
+        "doc_id": "764420_1",
+        "original_rank": 15,
+        "new_rank": 53,
+        "score": 0.7169811320754718
+      }
+    ],
+    "debug_info": {}
+  },
+  "620": {
+    "rank": 20,
+    "pmrr": 0.4179983991145822,
+    "query": "How did France respond to protests against its nuclear testing in the South Pacific?",
+    "instruction": "A document containing information regarding any type of protest by any one is relevant as long as France's response is also included in the document.",
+    "full_text": "How did France respond to protests against its nuclear testing in the South Pacific? A document containing information regarding any type of protest by any one is relevant as long as France's response is also included in the document.",
+    "doc_details": [
+      {
+        "doc_id": "1616604_2",
+        "original_rank": 582,
+        "new_rank": 672,
+        "score": 0.1339285714285715
+      },
+      {
+        "doc_id": "520073_0",
+        "original_rank": 177,
+        "new_rank": 393,
+        "score": 0.549618320610687
+      },
+      {
+        "doc_id": "533575_0",
+        "original_rank": 101,
+        "new_rank": 133,
+        "score": 0.2406015037593986
+      },
+      {
+        "doc_id": "773499_1",
+        "original_rank": 82,
+        "new_rank": 220,
+        "score": 0.6272727272727273
+      },
+      {
+        "doc_id": "774164_0",
+        "original_rank": 193,
+        "new_rank": 287,
+        "score": 0.32752613240418116
+      },
+      {
+        "doc_id": "775546_0",
+        "original_rank": 2,
+        "new_rank": 74,
+        "score": 0.972972972972973
+      },
+      {
+        "doc_id": "783968_0",
+        "original_rank": 20,
+        "new_rank": 124,
+        "score": 0.8387096774193549
+      },
+      {
+        "doc_id": "786106_0",
+        "original_rank": 92,
+        "new_rank": 212,
+        "score": 0.5660377358490566
+      },
+      {
+        "doc_id": "787130_0",
+        "original_rank": 6,
+        "new_rank": 84,
+        "score": 0.9285714285714286
+      },
+      {
+        "doc_id": "787297_0",
+        "original_rank": 51,
+        "new_rank": 6,
+        "score": -0.8823529411764706
+      },
+      {
+        "doc_id": "787433_0",
+        "original_rank": 577,
+        "new_rank": 866,
+        "score": 0.33371824480369516
+      },
+      {
+        "doc_id": "794967_0",
+        "original_rank": 64,
+        "new_rank": 189,
+        "score": 0.6613756613756614
+      },
+      {
+        "doc_id": "795678_0",
+        "original_rank": 65,
+        "new_rank": 188,
+        "score": 0.6542553191489362
+      },
+      {
+        "doc_id": "797592_0",
+        "original_rank": 37,
+        "new_rank": 15,
+        "score": -0.5945945945945945
+      },
+      {
+        "doc_id": "801761_0",
+        "original_rank": 41,
+        "new_rank": 201,
+        "score": 0.7960199004975125
+      },
+      {
+        "doc_id": "814067_0",
+        "original_rank": 190,
+        "new_rank": 408,
+        "score": 0.5343137254901961
+      }
+    ],
+    "debug_info": {}
+  }
+}

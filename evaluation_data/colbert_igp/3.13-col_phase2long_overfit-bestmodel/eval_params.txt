@@ -1,0 +1,11 @@
+============================================================
+ColBERT-IGP 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2long_overfit/phase2/best_model_phase2_20260313_142203
+数据集: Core17InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/colbert_igp/3.13-col_phase2long_overfit-bestmodel
+GPU设备: cuda:1
+评估时间: 2026-03-13 20:43:23
+备注: col_phase2long_overfit-直接从初始化开始用测试集的抽取训练phase2的模型-bestmodel
+============================================================

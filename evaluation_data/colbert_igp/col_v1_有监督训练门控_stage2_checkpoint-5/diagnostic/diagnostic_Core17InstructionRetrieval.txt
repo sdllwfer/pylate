@@ -1,0 +1,1219 @@
+====================================================================================================
+📋 FollowIR 诊断报告 - 按 p-MRR 排序 (低到高)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+【排名 1】查询ID: 404 | p-MRR: -0.101778
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How often were the peace talks in Ireland delayed or disrupted as a result of acts of violence?
+
+📌 指令内容:
+   Any interruptions to the peace process not directly attributable to acts of violence are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   How often were the peace talks in Ireland delayed or disrupted as a result of acts of violence? Any interruptions to the peace process not directly attributable to acts of violence are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1401123_0
+      原始排名: 620 -> 新排名: 449 | 得分: -0.2758
+   文档ID: 491070_2
+      原始排名: 336 -> 新排名: 221 | 得分: -0.3423
+   文档ID: 499488_0
+      原始排名: 834 -> 新排名: 662 | 得分: -0.2062
+   文档ID: 599171_1
+      原始排名: 723 -> 新排名: 609 | 得分: -0.1577
+   文档ID: 644645_0
+      原始排名: 514 -> 新排名: 619 | 得分: 0.1696
+   文档ID: 673633_1
+      原始排名: 477 -> 新排名: 403 | 得分: -0.1551
+   文档ID: 674491_0
+      原始排名: 44 -> 新排名: 75 | 得分: 0.4133
+   文档ID: 828989_1
+      原始排名: 447 -> 新排名: 422 | 得分: -0.0559
+   文档ID: 829310_1
+      原始排名: 542 -> 新排名: 436 | 得分: -0.1956
+   文档ID: 829349_0
+      原始排名: 820 -> 新排名: 708 | 得分: -0.1366
+   文档ID: 829361_4
+      原始排名: 363 -> 新排名: 356 | 得分: -0.0193
+   文档ID: 829538_2
+      原始排名: 54 -> 新排名: 101 | 得分: 0.4653
+   文档ID: 831509_0
+      原始排名: 831 -> 新排名: 871 | 得分: 0.0459
+   文档ID: 833242_0
+      原始排名: 33 -> 新排名: 58 | 得分: 0.4310
+   文档ID: 833426_1
+      原始排名: 32 -> 新排名: 15 | 得分: -0.5312
+   文档ID: 858413_2
+      原始排名: 115 -> 新排名: 165 | 得分: 0.3030
+   文档ID: 858531_1
+      原始排名: 300 -> 新排名: 249 | 得分: -0.1700
+   文档ID: 858788_1
+      原始排名: 269 -> 新排名: 425 | 得分: 0.3671
+   文档ID: 865048_0
+      原始排名: 117 -> 新排名: 125 | 得分: 0.0640
+   文档ID: 868466_0
+      原始排名: 257 -> 新排名: 147 | 得分: -0.4280
+   文档ID: 879199_1
+      原始排名: 607 -> 新排名: 398 | 得分: -0.3443
+   文档ID: 879334_0
+      原始排名: 156 -> 新排名: 38 | 得分: -0.7564
+   文档ID: 892027_0
+      原始排名: 47 -> 新排名: 48 | 得分: 0.0208
+   文档ID: 901668_1
+      原始排名: 579 -> 新排名: 295 | 得分: -0.4905
+   文档ID: 918903_0
+      原始排名: 352 -> 新排名: 155 | 得分: -0.5597
+
+📌 所有发生相关性变化的文档: ['1401123_0', '491070_2', '499488_0', '599171_1', '644645_0', '673633_1', '674491_0', '828989_1', '829310_1', '829349_0', '829361_4', '829538_2', '831509_0', '833242_0', '833426_1', '858413_2', '858531_1', '858788_1', '865048_0', '868466_0', '879199_1', '879334_0', '892027_0', '901668_1', '918903_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 2】查询ID: 677 | p-MRR: -0.101411
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What efforts have been made to stabilize the Leaning Tower of Pisa, and how successful have the efforts been?
+
+📌 指令内容:
+   Relevant documents provide discussions of the current condition of the tower, describe reinforcement measures taken, and/or provide measurements reflecting change in the tower.
+
+📌 完整查询 (Query + Instruction):
+   What efforts have been made to stabilize the Leaning Tower of Pisa, and how successful have the efforts been? Relevant documents provide discussions of the current condition of the tower, describe reinforcement measures taken, and/or provide measurements reflecting change in the tower.
+
+📌 相关文档变化详情:
+   文档ID: 1325286_0
+      原始排名: 9 -> 新排名: 11 | 得分: 0.1818
+   文档ID: 1351564_0
+      原始排名: 101 -> 新排名: 76 | 得分: -0.2475
+   文档ID: 1555171_0
+      原始排名: 11 -> 新排名: 8 | 得分: -0.2727
+   文档ID: 538867_4
+      原始排名: 83 -> 新排名: 69 | 得分: -0.1687
+   文档ID: 645300_2
+      原始排名: 14 -> 新排名: 14 | 得分: 0.0000
+   文档ID: 766777_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: 985739_2
+      原始排名: 217 -> 新排名: 173 | 得分: -0.2028
+
+📌 所有发生相关性变化的文档: ['1325286_0', '1351564_0', '1555171_0', '538867_4', '645300_2', '766777_0', '985739_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 3】查询ID: 400 | p-MRR: -0.073383
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What measures are being taken by local South American authorities to preserve the Amazon tropical rain forest?
+
+📌 指令内容:
+   Relevant documents may identify: the official organizations, institutions, and individuals of the countries included in the Amazon rain forest; the measures being taken by them to preserve the rain forest; and indications of degrees of success in these endeavors.
+
+📌 完整查询 (Query + Instruction):
+   What measures are being taken by local South American authorities to preserve the Amazon tropical rain forest? Relevant documents may identify: the official organizations, institutions, and individuals of the countries included in the Amazon rain forest; the measures being taken by them to preserve the rain forest; and indications of degrees of success in these endeavors.
+
+📌 相关文档变化详情:
+   文档ID: 1013546_0
+      原始排名: 191 -> 新排名: 175 | 得分: -0.0838
+   文档ID: 1073784_1
+      原始排名: 85 -> 新排名: 127 | 得分: 0.3307
+   文档ID: 1100695_4
+      原始排名: 562 -> 新排名: 651 | 得分: 0.1367
+   文档ID: 1333032_3
+      原始排名: 646 -> 新排名: 734 | 得分: 0.1199
+   文档ID: 1417960_0
+      原始排名: 393 -> 新排名: 527 | 得分: 0.2543
+   文档ID: 1426050_1
+      原始排名: 881 -> 新排名: 806 | 得分: -0.0851
+   文档ID: 1523132_6
+      原始排名: 717 -> 新排名: 746 | 得分: 0.0389
+   文档ID: 1541941_0
+      原始排名: 27 -> 新排名: 24 | 得分: -0.1111
+   文档ID: 175257_1
+      原始排名: 475 -> 新排名: 467 | 得分: -0.0168
+   文档ID: 1815191_0
+      原始排名: 155 -> 新排名: 129 | 得分: -0.1677
+   文档ID: 1818922_0
+      原始排名: 70 -> 新排名: 122 | 得分: 0.4262
+   文档ID: 186922_1
+      原始排名: 153 -> 新排名: 194 | 得分: 0.2113
+   文档ID: 187470_0
+      原始排名: 24 -> 新排名: 37 | 得分: 0.3514
+   文档ID: 189126_0
+      原始排名: 341 -> 新排名: 255 | 得分: -0.2522
+   文档ID: 209093_0
+      原始排名: 216 -> 新排名: 264 | 得分: 0.1818
+   文档ID: 209944_0
+      原始排名: 195 -> 新排名: 139 | 得分: -0.2872
+   文档ID: 216415_0
+      原始排名: 48 -> 新排名: 39 | 得分: -0.1875
+   文档ID: 224951_2
+      原始排名: 149 -> 新排名: 211 | 得分: 0.2938
+   文档ID: 226800_0
+      原始排名: 240 -> 新排名: 159 | 得分: -0.3375
+   文档ID: 239426_0
+      原始排名: 171 -> 新排名: 185 | 得分: 0.0757
+   文档ID: 311952_1
+      原始排名: 152 -> 新排名: 117 | 得分: -0.2303
+   文档ID: 323354_1
+      原始排名: 29 -> 新排名: 17 | 得分: -0.4138
+   文档ID: 325851_0
+      原始排名: 76 -> 新排名: 45 | 得分: -0.4079
+   文档ID: 329931_0
+      原始排名: 251 -> 新排名: 166 | 得分: -0.3386
+   文档ID: 332359_0
+      原始排名: 210 -> 新排名: 148 | 得分: -0.2952
+   文档ID: 426266_0
+      原始排名: 115 -> 新排名: 102 | 得分: -0.1130
+   文档ID: 455470_0
+      原始排名: 133 -> 新排名: 113 | 得分: -0.1504
+   文档ID: 487920_0
+      原始排名: 79 -> 新排名: 70 | 得分: -0.1139
+   文档ID: 490717_0
+      原始排名: 198 -> 新排名: 178 | 得分: -0.1010
+   文档ID: 554709_0
+      原始排名: 37 -> 新排名: 28 | 得分: -0.2432
+   文档ID: 56507_1
+      原始排名: 292 -> 新排名: 276 | 得分: -0.0548
+   文档ID: 878545_1
+      原始排名: 18 -> 新排名: 4 | 得分: -0.7778
+
+📌 所有发生相关性变化的文档: ['1013546_0', '1073784_1', '1100695_4', '1333032_3', '1417960_0', '1426050_1', '1523132_6', '1541941_0', '175257_1', '1815191_0', '1818922_0', '186922_1', '187470_0', '189126_0', '209093_0', '209944_0', '216415_0', '224951_2', '226800_0', '239426_0', '311952_1', '323354_1', '325851_0', '329931_0', '332359_0', '426266_0', '455470_0', '487920_0', '490717_0', '554709_0', '56507_1', '878545_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 4】查询ID: 310 | p-MRR: -0.071033
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Evidence that radio waves from radio towers or car (mobile) phones affect brain cancer occurrence.
+
+📌 指令内容:
+   Persons living near radio towers and more recently persons using car (mobile) phones have been diagnosed with brain cancer. The argument rages regarding the direct association of one with the other. The incidence of cancer among the groups cited is considered, by some, to be higher than that found in the normal population. A relevant document includes any experiment with animals, statistical study, articles, news items which report on the incidence of brain cancer being higher/lower/same as those persons who live near a radio tower and those using car (mobile) phones as compared to those in the general population.
+
+📌 完整查询 (Query + Instruction):
+   Evidence that radio waves from radio towers or car (mobile) phones affect brain cancer occurrence. Persons living near radio towers and more recently persons using car (mobile) phones have been diagnosed with brain cancer. The argument rages regarding the direct association of one with the other. The incidence of cancer among the groups cited is considered, by some, to be higher than that found in the normal population. A relevant document includes any experiment with animals, statistical study, articles, news items which report on the incidence of brain cancer being higher/lower/same as those persons who live near a radio tower and those using car (mobile) phones as compared to those in the general population.
+
+📌 相关文档变化详情:
+   文档ID: 1125613_1
+      原始排名: 499 -> 新排名: 489 | 得分: -0.0200
+   文档ID: 1270299_0
+      原始排名: 97 -> 新排名: 81 | 得分: -0.1649
+   文档ID: 1285003_3
+      原始排名: 559 -> 新排名: 537 | 得分: -0.0394
+   文档ID: 183017_2
+      原始排名: 117 -> 新排名: 115 | 得分: -0.0171
+   文档ID: 259990_1
+      原始排名: 15 -> 新排名: 14 | 得分: -0.0667
+   文档ID: 305369_0
+      原始排名: 16 -> 新排名: 16 | 得分: 0.0000
+   文档ID: 355867_1
+      原始排名: 81 -> 新排名: 86 | 得分: 0.0581
+   文档ID: 366680_3
+      原始排名: 41 -> 新排名: 30 | 得分: -0.2683
+   文档ID: 408546_2
+      原始排名: 28 -> 新排名: 27 | 得分: -0.0357
+   文档ID: 419885_1
+      原始排名: 84 -> 新排名: 84 | 得分: 0.0000
+   文档ID: 421195_0
+      原始排名: 91 -> 新排名: 79 | 得分: -0.1319
+   文档ID: 455411_5
+      原始排名: 72 -> 新排名: 71 | 得分: -0.0139
+   文档ID: 55294_0
+      原始排名: 8 -> 新排名: 7 | 得分: -0.1250
+   文档ID: 587372_5
+      原始排名: 23 -> 新排名: 20 | 得分: -0.1304
+   文档ID: 621004_2
+      原始排名: 152 -> 新排名: 137 | 得分: -0.0987
+   文档ID: 622233_0
+      原始排名: 94 -> 新排名: 73 | 得分: -0.2234
+   文档ID: 660319_6
+      原始排名: 606 -> 新排名: 634 | 得分: 0.0442
+   文档ID: 711410_0
+      原始排名: 209 -> 新排名: 196 | 得分: -0.0622
+   文档ID: 736417_0
+      原始排名: 6 -> 新排名: 6 | 得分: 0.0000
+   文档ID: 762398_0
+      原始排名: 177 -> 新排名: 164 | 得分: -0.0734
+   文档ID: 763736_0
+      原始排名: 24 -> 新排名: 21 | 得分: -0.1250
+   文档ID: 768607_0
+      原始排名: 114 -> 新排名: 122 | 得分: 0.0656
+   文档ID: 886957_0
+      原始排名: 35 -> 新排名: 28 | 得分: -0.2000
+   文档ID: 887029_1
+      原始排名: 921 -> 新排名: 885 | 得分: -0.0391
+   文档ID: 887619_0
+      原始排名: 274 -> 新排名: 245 | 得分: -0.1058
+   文档ID: 890551_0
+      原始排名: 83 -> 新排名: 68 | 得分: -0.1807
+   文档ID: 890674_0
+      原始排名: 77 -> 新排名: 72 | 得分: -0.0649
+   文档ID: 941313_5
+      原始排名: 975 -> 新排名: 978 | 得分: 0.0031
+   文档ID: 941315_4
+      原始排名: 238 -> 新排名: 223 | 得分: -0.0630
+   文档ID: 942049_1
+      原始排名: 153 -> 新排名: 145 | 得分: -0.0523
+
+📌 所有发生相关性变化的文档: ['1125613_1', '1270299_0', '1285003_3', '183017_2', '259990_1', '305369_0', '355867_1', '366680_3', '408546_2', '419885_1', '421195_0', '455411_5', '55294_0', '587372_5', '621004_2', '622233_0', '660319_6', '711410_0', '736417_0', '762398_0', '763736_0', '768607_0', '886957_0', '887029_1', '887619_0', '890551_0', '890674_0', '941313_5', '941315_4', '942049_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 5】查询ID: 355 | p-MRR: -0.066724
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify documents discussing the development and application of space-borne ocean remote sensing.
+
+📌 指令内容:
+   Documents discussing the development and application of space-borne ocean remote sensing in oceanography, seabed prospecting and mining, or any marine-science activity are relevant. Documents that discuss the application of satellite remote sensing in geography, agriculture, forestry, mining and mineral prospecting or any land-bound science are not relevant, nor are references to international marketing or promotional advertising of any remote-sensing technology. Synthetic aperture radar (SAR) employed in ocean remote sensing is relevant.
+
+📌 完整查询 (Query + Instruction):
+   Identify documents discussing the development and application of space-borne ocean remote sensing. Documents discussing the development and application of space-borne ocean remote sensing in oceanography, seabed prospecting and mining, or any marine-science activity are relevant. Documents that discuss the application of satellite remote sensing in geography, agriculture, forestry, mining and mineral prospecting or any land-bound science are not relevant, nor are references to international marketing or promotional advertising of any remote-sensing technology. Synthetic aperture radar (SAR) employed in ocean remote sensing is relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1016114_0
+      原始排名: 66 -> 新排名: 67 | 得分: 0.0149
+   文档ID: 1057319_5
+      原始排名: 321 -> 新排名: 309 | 得分: -0.0374
+   文档ID: 1127471_7
+      原始排名: 173 -> 新排名: 198 | 得分: 0.1263
+   文档ID: 1148259_1
+      原始排名: 165 -> 新排名: 142 | 得分: -0.1394
+   文档ID: 1170012_3
+      原始排名: 639 -> 新排名: 643 | 得分: 0.0062
+   文档ID: 117471_2
+      原始排名: 253 -> 新排名: 210 | 得分: -0.1700
+   文档ID: 1226107_4
+      原始排名: 86 -> 新排名: 87 | 得分: 0.0115
+   文档ID: 1231777_1
+      原始排名: 177 -> 新排名: 149 | 得分: -0.1582
+   文档ID: 1388295_3
+      原始排名: 152 -> 新排名: 113 | 得分: -0.2566
+   文档ID: 1390169_0
+      原始排名: 267 -> 新排名: 253 | 得分: -0.0524
+   文档ID: 1396682_0
+      原始排名: 113 -> 新排名: 98 | 得分: -0.1327
+   文档ID: 1527120_1
+      原始排名: 275 -> 新排名: 259 | 得分: -0.0582
+   文档ID: 1673912_1
+      原始排名: 343 -> 新排名: 281 | 得分: -0.1808
+   文档ID: 1746933_1
+      原始排名: 430 -> 新排名: 424 | 得分: -0.0140
+   文档ID: 1789859_0
+      原始排名: 360 -> 新排名: 354 | 得分: -0.0167
+   文档ID: 220667_1
+      原始排名: 71 -> 新排名: 71 | 得分: 0.0000
+   文档ID: 243638_1
+      原始排名: 305 -> 新排名: 274 | 得分: -0.1016
+   文档ID: 269079_1
+      原始排名: 15 -> 新排名: 11 | 得分: -0.2667
+   文档ID: 362356_11
+      原始排名: 19 -> 新排名: 20 | 得分: 0.0500
+   文档ID: 407762_2
+      原始排名: 380 -> 新排名: 351 | 得分: -0.0763
+   文档ID: 443639_3
+      原始排名: 489 -> 新排名: 489 | 得分: 0.0000
+   文档ID: 457376_1
+      原始排名: 476 -> 新排名: 463 | 得分: -0.0273
+   文档ID: 574133_1
+      原始排名: 210 -> 新排名: 201 | 得分: -0.0429
+   文档ID: 593327_1
+      原始排名: 180 -> 新排名: 159 | 得分: -0.1167
+   文档ID: 60625_6
+      原始排名: 98 -> 新排名: 85 | 得分: -0.1327
+   文档ID: 705224_1
+      原始排名: 117 -> 新排名: 107 | 得分: -0.0855
+   文档ID: 732462_0
+      原始排名: 51 -> 新排名: 53 | 得分: 0.0377
+   文档ID: 812042_6
+      原始排名: 21 -> 新排名: 17 | 得分: -0.1905
+   文档ID: 973928_0
+      原始排名: 87 -> 新排名: 81 | 得分: -0.0690
+   文档ID: 996006_3
+      原始排名: 24 -> 新排名: 26 | 得分: 0.0769
+
+📌 所有发生相关性变化的文档: ['1016114_0', '1057319_5', '1127471_7', '1148259_1', '1170012_3', '117471_2', '1226107_4', '1231777_1', '1388295_3', '1390169_0', '1396682_0', '1527120_1', '1673912_1', '1746933_1', '1789859_0', '220667_1', '243638_1', '269079_1', '362356_11', '407762_2', '443639_3', '457376_1', '574133_1', '593327_1', '60625_6', '705224_1', '732462_0', '812042_6', '973928_0', '996006_3']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 6】查询ID: 435 | p-MRR: -0.040526
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What measures have been taken worldwide and what countries have been effective in curbing population growth?
+
+📌 指令内容:
+   A relevant document must describe an actual case in which population measures have been taken and their results are known. The reduction measures must have been actively pursued; that is, passive events such as disease or famine involuntarily reducing the population are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What measures have been taken worldwide and what countries have been effective in curbing population growth? A relevant document must describe an actual case in which population measures have been taken and their results are known. The reduction measures must have been actively pursued; that is, passive events such as disease or famine involuntarily reducing the population are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: 101896_1
+      原始排名: 434 -> 新排名: 428 | 得分: -0.0138
+   文档ID: 1115149_0
+      原始排名: 925 -> 新排名: 921 | 得分: -0.0043
+   文档ID: 1474096_0
+      原始排名: 246 -> 新排名: 245 | 得分: -0.0041
+   文档ID: 1474684_4
+      原始排名: 589 -> 新排名: 532 | 得分: -0.0968
+   文档ID: 1696393_4
+      原始排名: 671 -> 新排名: 702 | 得分: 0.0442
+   文档ID: 281931_1
+      原始排名: 16 -> 新排名: 13 | 得分: -0.1875
+   文档ID: 309411_0
+      原始排名: 398 -> 新排名: 384 | 得分: -0.0352
+   文档ID: 398768_0
+      原始排名: 306 -> 新排名: 313 | 得分: 0.0224
+   文档ID: 41741_2
+      原始排名: 330 -> 新排名: 346 | 得分: 0.0462
+   文档ID: 51237_0
+      原始排名: 4 -> 新排名: 3 | 得分: -0.2500
+   文档ID: 661419_0
+      原始排名: 175 -> 新排名: 184 | 得分: 0.0489
+   文档ID: 709708_0
+      原始排名: 334 -> 新排名: 360 | 得分: 0.0722
+   文档ID: 710623_3
+      原始排名: 179 -> 新排名: 162 | 得分: -0.0950
+   文档ID: 711782_2
+      原始排名: 116 -> 新排名: 120 | 得分: 0.0333
+   文档ID: 716481_0
+      原始排名: 131 -> 新排名: 101 | 得分: -0.2290
+   文档ID: 876226_4
+      原始排名: 242 -> 新排名: 242 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['101896_1', '1115149_0', '1474096_0', '1474684_4', '1696393_4', '281931_1', '309411_0', '398768_0', '41741_2', '51237_0', '661419_0', '709708_0', '710623_3', '711782_2', '716481_0', '876226_4']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 7】查询ID: 344 | p-MRR: -0.027142
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses. What steps have been taken world-wide by those bearing the cost of E-mail to prevent excesses?
+
+📌 指令内容:
+   To be relevant, a document will concern dissatisfaction by an entity paying for the cost of electronic mail. Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.
+
+📌 完整查询 (Query + Instruction):
+   The availability of E-mail to many people through their job or school affiliation has allowed for many efficiencies in communications but also has provided the opportunity for abuses. What steps have been taken world-wide by those bearing the cost of E-mail to prevent excesses? To be relevant, a document will concern dissatisfaction by an entity paying for the cost of electronic mail. Particularly sought are items which relate to system users (such as employees) who abuse the system by engaging in communications of the type not related to the payer's desired use of the system.
+
+📌 相关文档变化详情:
+   文档ID: 1003897_3
+      原始排名: 497 -> 新排名: 508 | 得分: 0.0217
+   文档ID: 1032975_5
+      原始排名: 972 -> 新排名: 972 | 得分: 0.0000
+   文档ID: 1100347_0
+      原始排名: 269 -> 新排名: 265 | 得分: -0.0149
+   文档ID: 1132680_1
+      原始排名: 44 -> 新排名: 46 | 得分: 0.0435
+   文档ID: 1157432_0
+      原始排名: 692 -> 新排名: 644 | 得分: -0.0694
+   文档ID: 1196424_1
+      原始排名: 989 -> 新排名: 988 | 得分: -0.0010
+   文档ID: 1295464_1
+      原始排名: 887 -> 新排名: 903 | 得分: 0.0177
+   文档ID: 1295823_0
+      原始排名: 1000 -> 新排名: 1000 | 得分: 0.0000
+   文档ID: 1309604_0
+      原始排名: 577 -> 新排名: 527 | 得分: -0.0867
+   文档ID: 1315573_4
+      原始排名: 464 -> 新排名: 439 | 得分: -0.0539
+   文档ID: 1342324_0
+      原始排名: 158 -> 新排名: 131 | 得分: -0.1709
+   文档ID: 1501317_0
+      原始排名: 487 -> 新排名: 423 | 得分: -0.1314
+   文档ID: 1818097_0
+      原始排名: 788 -> 新排名: 789 | 得分: 0.0013
+   文档ID: 744697_0
+      原始排名: 554 -> 新排名: 524 | 得分: -0.0542
+   文档ID: 785935_0
+      原始排名: 981 -> 新排名: 974 | 得分: -0.0071
+   文档ID: 846919_2
+      原始排名: 145 -> 新排名: 153 | 得分: 0.0523
+   文档ID: 993890_7
+      原始排名: 947 -> 新排名: 939 | 得分: -0.0084
+
+📌 所有发生相关性变化的文档: ['1003897_3', '1032975_5', '1100347_0', '1132680_1', '1157432_0', '1196424_1', '1295464_1', '1295823_0', '1309604_0', '1315573_4', '1342324_0', '1501317_0', '1818097_0', '744697_0', '785935_0', '846919_2', '993890_7']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 8】查询ID: 367 | p-MRR: -0.016323
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What modern instances have there been of old fashioned piracy, the boarding or taking control of boats?
+
+📌 指令内容:
+   Documents discussing piracy on any body of water are relevant. Documents discussing the legal taking of ships or their contents by a national authority are non-relevant. Clashes between fishing vessels over fishing are not relevant, unless one vessel is boarded.
+
+📌 完整查询 (Query + Instruction):
+   What modern instances have there been of old fashioned piracy, the boarding or taking control of boats? Documents discussing piracy on any body of water are relevant. Documents discussing the legal taking of ships or their contents by a national authority are non-relevant. Clashes between fishing vessels over fishing are not relevant, unless one vessel is boarded.
+
+📌 相关文档变化详情:
+   文档ID: 1172162_1
+      原始排名: 476 -> 新排名: 435 | 得分: -0.0861
+   文档ID: 1223777_12
+      原始排名: 64 -> 新排名: 68 | 得分: 0.0588
+   文档ID: 1229636_0
+      原始排名: 839 -> 新排名: 849 | 得分: 0.0118
+   文档ID: 1321217_0
+      原始排名: 993 -> 新排名: 993 | 得分: 0.0000
+   文档ID: 1349153_1
+      原始排名: 101 -> 新排名: 111 | 得分: 0.0901
+   文档ID: 1349160_2
+      原始排名: 940 -> 新排名: 950 | 得分: 0.0105
+   文档ID: 1349398_2
+      原始排名: 805 -> 新排名: 788 | 得分: -0.0211
+   文档ID: 141199_5
+      原始排名: 42 -> 新排名: 45 | 得分: 0.0667
+   文档ID: 1451974_6
+      原始排名: 821 -> 新排名: 838 | 得分: 0.0203
+   文档ID: 1702546_0
+      原始排名: 553 -> 新排名: 511 | 得分: -0.0759
+   文档ID: 1704600_0
+      原始排名: 985 -> 新排名: 985 | 得分: 0.0000
+   文档ID: 1707215_0
+      原始排名: 906 -> 新排名: 892 | 得分: -0.0155
+   文档ID: 1709373_0
+      原始排名: 944 -> 新排名: 930 | 得分: -0.0148
+   文档ID: 1717015_0
+      原始排名: 78 -> 新排名: 66 | 得分: -0.1538
+   文档ID: 1773531_2
+      原始排名: 12 -> 新排名: 14 | 得分: 0.1429
+   文档ID: 1773567_0
+      原始排名: 373 -> 新排名: 335 | 得分: -0.1019
+   文档ID: 1814722_0
+      原始排名: 968 -> 新排名: 961 | 得分: -0.0072
+   文档ID: 1838909_0
+      原始排名: 223 -> 新排名: 184 | 得分: -0.1749
+   文档ID: 247683_1
+      原始排名: 16 -> 新排名: 16 | 得分: 0.0000
+   文档ID: 254029_0
+      原始排名: 182 -> 新排名: 165 | 得分: -0.0934
+   文档ID: 273784_0
+      原始排名: 713 -> 新排名: 676 | 得分: -0.0519
+   文档ID: 2906_0
+      原始排名: 983 -> 新排名: 982 | 得分: -0.0010
+   文档ID: 46941_0
+      原始排名: 45 -> 新排名: 41 | 得分: -0.0889
+   文档ID: 475926_0
+      原始排名: 975 -> 新排名: 969 | 得分: -0.0062
+   文档ID: 499563_0
+      原始排名: 79 -> 新排名: 67 | 得分: -0.1519
+   文档ID: 622016_0
+      原始排名: 5 -> 新排名: 8 | 得分: 0.3750
+   文档ID: 705515_3
+      原始排名: 173 -> 新排名: 133 | 得分: -0.2312
+   文档ID: 748251_0
+      原始排名: 62 -> 新排名: 52 | 得分: -0.1613
+   文档ID: 824165_0
+      原始排名: 992 -> 新排名: 991 | 得分: -0.0010
+   文档ID: 920908_0
+      原始排名: 350 -> 新排名: 368 | 得分: 0.0489
+   文档ID: 924343_2
+      原始排名: 75 -> 新排名: 84 | 得分: 0.1071
+
+📌 所有发生相关性变化的文档: ['1172162_1', '1223777_12', '1229636_0', '1321217_0', '1349153_1', '1349160_2', '1349398_2', '141199_5', '1451974_6', '1702546_0', '1704600_0', '1707215_0', '1709373_0', '1717015_0', '1773531_2', '1773567_0', '1814722_0', '1838909_0', '247683_1', '254029_0', '273784_0', '2906_0', '46941_0', '475926_0', '499563_0', '622016_0', '705515_3', '748251_0', '824165_0', '920908_0', '924343_2']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 9】查询ID: 614 | p-MRR: -0.006009
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find information about the first genetically modified food product to go on the market, Flavr Savr (also Flavor Saver) Tomato developed by Calgene.
+
+📌 指令内容:
+   Documents about genetically engineered food in general are not relevant; relevant documents must include specifics regarding the Flavr Savr tomato.
+
+📌 完整查询 (Query + Instruction):
+   Find information about the first genetically modified food product to go on the market, Flavr Savr (also Flavor Saver) Tomato developed by Calgene. Documents about genetically engineered food in general are not relevant; relevant documents must include specifics regarding the Flavr Savr tomato.
+
+📌 相关文档变化详情:
+   文档ID: 1150372_6
+      原始排名: 23 -> 新排名: 22 | 得分: -0.0435
+   文档ID: 1150491_6
+      原始排名: 22 -> 新排名: 23 | 得分: 0.0435
+   文档ID: 1256481_0
+      原始排名: 18 -> 新排名: 19 | 得分: 0.0526
+   文档ID: 1265658_16
+      原始排名: 17 -> 新排名: 16 | 得分: -0.0588
+   文档ID: 1266995_0
+      原始排名: 15 -> 新排名: 15 | 得分: 0.0000
+   文档ID: 1553466_1
+      原始排名: 20 -> 新排名: 20 | 得分: 0.0000
+   文档ID: 1583106_6
+      原始排名: 12 -> 新排名: 10 | 得分: -0.1667
+   文档ID: 1644796_0
+      原始排名: 9 -> 新排名: 9 | 得分: 0.0000
+   文档ID: 532453_0
+      原始排名: 24 -> 新排名: 24 | 得分: 0.0000
+   文档ID: 536654_3
+      原始排名: 32 -> 新排名: 32 | 得分: 0.0000
+   文档ID: 542584_0
+      原始排名: 13 -> 新排名: 13 | 得分: 0.0000
+   文档ID: 581098_0
+      原始排名: 5 -> 新排名: 5 | 得分: 0.0000
+   文档ID: 582354_1
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: 585923_0
+      原始排名: 29 -> 新排名: 29 | 得分: 0.0000
+   文档ID: 616992_1
+      原始排名: 16 -> 新排名: 17 | 得分: 0.0588
+   文档ID: 647567_2
+      原始排名: 6 -> 新排名: 7 | 得分: 0.1429
+   文档ID: 679243_1
+      原始排名: 26 -> 新排名: 25 | 得分: -0.0385
+   文档ID: 679258_0
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: 688180_0
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+   文档ID: 688200_0
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+   文档ID: 688224_0
+      原始排名: 28 -> 新排名: 27 | 得分: -0.0357
+   文档ID: 689070_0
+      原始排名: 7 -> 新排名: 6 | 得分: -0.1429
+   文档ID: 718697_1
+      原始排名: 953 -> 新排名: 947 | 得分: -0.0063
+   文档ID: 733154_8
+      原始排名: 19 -> 新排名: 18 | 得分: -0.0526
+   文档ID: 771942_0
+      原始排名: 10 -> 新排名: 11 | 得分: 0.0909
+   文档ID: 827299_0
+      原始排名: 21 -> 新排名: 21 | 得分: 0.0000
+
+📌 所有发生相关性变化的文档: ['1150372_6', '1150491_6', '1256481_0', '1265658_16', '1266995_0', '1553466_1', '1583106_6', '1644796_0', '532453_0', '536654_3', '542584_0', '581098_0', '582354_1', '585923_0', '616992_1', '647567_2', '679243_1', '679258_0', '688180_0', '688200_0', '688224_0', '689070_0', '718697_1', '733154_8', '771942_0', '827299_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 10】查询ID: 419 | p-MRR: 0.020701
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What new uses have been developed for old automobile tires as a means of tire recycling?
+
+📌 指令内容:
+   A relevant document must show advantageous uses of recycled tires, such as: destructive distillation of scrap rubber for valuable chemicals, reef building for fish habitats, filler or binder in asphalt roadway mixes, and burning in a controlled environment for heat generation.
+
+📌 完整查询 (Query + Instruction):
+   What new uses have been developed for old automobile tires as a means of tire recycling? A relevant document must show advantageous uses of recycled tires, such as: destructive distillation of scrap rubber for valuable chemicals, reef building for fish habitats, filler or binder in asphalt roadway mixes, and burning in a controlled environment for heat generation.
+
+📌 相关文档变化详情:
+   文档ID: 116995_0
+      原始排名: 34 -> 新排名: 28 | 得分: -0.1765
+   文档ID: 1225746_0
+      原始排名: 4 -> 新排名: 4 | 得分: 0.0000
+   文档ID: 1397341_0
+      原始排名: 40 -> 新排名: 38 | 得分: -0.0500
+   文档ID: 1492464_0
+      原始排名: 799 -> 新排名: 795 | 得分: -0.0050
+   文档ID: 183279_0
+      原始排名: 3 -> 新排名: 3 | 得分: 0.0000
+   文档ID: 291113_5
+      原始排名: 15 -> 新排名: 18 | 得分: 0.1667
+   文档ID: 351776_1
+      原始排名: 5 -> 新排名: 6 | 得分: 0.1667
+   文档ID: 487452_0
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: 579369_2
+      原始排名: 44 -> 新排名: 58 | 得分: 0.2414
+   文档ID: 629687_3
+      原始排名: 51 -> 新排名: 43 | 得分: -0.1569
+   文档ID: 633040_1
+      原始排名: 160 -> 新排名: 236 | 得分: 0.3220
+   文档ID: 727934_0
+      原始排名: 50 -> 新排名: 37 | 得分: -0.2600
+
+📌 所有发生相关性变化的文档: ['116995_0', '1225746_0', '1397341_0', '1492464_0', '183279_0', '291113_5', '351776_1', '487452_0', '579369_2', '629687_3', '633040_1', '727934_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 11】查询ID: 336 | p-MRR: 0.037476
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   A relevant document would discuss the frequency of vicious black bear attacks worldwide and the possible causes for this savage behavior.
+
+📌 指令内容:
+   It has been reported that food or cosmetics sometimes attract hungry black bears, causing them to viciously attack humans. Relevant documents would include the aforementioned causes as well as speculation preferably from the scientific community as to other possible causes of vicious attacks by black bears. A relevant document would also detail steps taken or new methods devised by wildlife officials to control and/or modify the savageness of the black bear.
+
+📌 完整查询 (Query + Instruction):
+   A relevant document would discuss the frequency of vicious black bear attacks worldwide and the possible causes for this savage behavior. It has been reported that food or cosmetics sometimes attract hungry black bears, causing them to viciously attack humans. Relevant documents would include the aforementioned causes as well as speculation preferably from the scientific community as to other possible causes of vicious attacks by black bears. A relevant document would also detail steps taken or new methods devised by wildlife officials to control and/or modify the savageness of the black bear.
+
+📌 相关文档变化详情:
+   文档ID: 1012549_0
+      原始排名: 15 -> 新排名: 16 | 得分: 0.0625
+   文档ID: 1039895_0
+      原始排名: 3 -> 新排名: 8 | 得分: 0.6250
+   文档ID: 1203456_4
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: 1205254_0
+      原始排名: 51 -> 新排名: 56 | 得分: 0.0893
+   文档ID: 1205987_0
+      原始排名: 271 -> 新排名: 263 | 得分: -0.0295
+   文档ID: 1229011_3
+      原始排名: 98 -> 新排名: 93 | 得分: -0.0510
+   文档ID: 1230221_1
+      原始排名: 171 -> 新排名: 195 | 得分: 0.1231
+   文档ID: 1235031_9
+      原始排名: 204 -> 新排名: 210 | 得分: 0.0286
+   文档ID: 1319228_0
+      原始排名: 623 -> 新排名: 670 | 得分: 0.0701
+   文档ID: 1319652_1
+      原始排名: 373 -> 新排名: 404 | 得分: 0.0767
+   文档ID: 134475_0
+      原始排名: 744 -> 新排名: 744 | 得分: 0.0000
+   文档ID: 1417304_0
+      原始排名: 715 -> 新排名: 711 | 得分: -0.0056
+   文档ID: 1417346_0
+      原始排名: 143 -> 新排名: 174 | 得分: 0.1782
+   文档ID: 1417534_1
+      原始排名: 700 -> 新排名: 700 | 得分: 0.0000
+   文档ID: 1504366_0
+      原始排名: 660 -> 新排名: 668 | 得分: 0.0120
+   文档ID: 1506068_0
+      原始排名: 310 -> 新排名: 300 | 得分: -0.0323
+   文档ID: 1513280_0
+      原始排名: 727 -> 新排名: 732 | 得分: 0.0068
+   文档ID: 1522511_1
+      原始排名: 405 -> 新排名: 399 | 得分: -0.0148
+   文档ID: 1540442_0
+      原始排名: 629 -> 新排名: 622 | 得分: -0.0111
+   文档ID: 1543234_0
+      原始排名: 452 -> 新排名: 443 | 得分: -0.0199
+   文档ID: 1545807_1
+      原始排名: 34 -> 新排名: 46 | 得分: 0.2609
+   文档ID: 1625519_3
+      原始排名: 118 -> 新排名: 114 | 得分: -0.0339
+   文档ID: 1629286_1
+      原始排名: 126 -> 新排名: 132 | 得分: 0.0455
+   文档ID: 1631689_1
+      原始排名: 150 -> 新排名: 152 | 得分: 0.0132
+   文档ID: 1673457_0
+      原始排名: 185 -> 新排名: 176 | 得分: -0.0486
+   文档ID: 1697947_3
+      原始排名: 71 -> 新排名: 78 | 得分: 0.0897
+   文档ID: 1707062_0
+      原始排名: 4 -> 新排名: 3 | 得分: -0.2500
+   文档ID: 1724499_0
+      原始排名: 668 -> 新排名: 669 | 得分: 0.0015
+   文档ID: 1754536_1
+      原始排名: 160 -> 新排名: 180 | 得分: 0.1111
+   文档ID: 1760805_0
+      原始排名: 451 -> 新排名: 478 | 得分: 0.0565
+   文档ID: 634674_0
+      原始排名: 7 -> 新排名: 6 | 得分: -0.1429
+   文档ID: 869669_0
+      原始排名: 568 -> 新排名: 571 | 得分: 0.0053
+   文档ID: 976920_1
+      原始排名: 382 -> 新排名: 390 | 得分: 0.0205
+
+📌 所有发生相关性变化的文档: ['1012549_0', '1039895_0', '1203456_4', '1205254_0', '1205987_0', '1229011_3', '1230221_1', '1235031_9', '1319228_0', '1319652_1', '134475_0', '1417304_0', '1417346_0', '1417534_1', '1504366_0', '1506068_0', '1513280_0', '1522511_1', '1540442_0', '1543234_0', '1545807_1', '1625519_3', '1629286_1', '1631689_1', '1673457_0', '1697947_3', '1707062_0', '1724499_0', '1754536_1', '1760805_0', '634674_0', '869669_0', '976920_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 12】查询ID: 341 | p-MRR: 0.044827
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   A relevant document would discuss the effectiveness of efforts to better scrutinize passengers and luggage on all flights, but particularly international flights.
+
+📌 指令内容:
+   A relevant document would contain reports on what steps airports worldwide have taken to better scrutinize passengers and their luggage on domestic and international flights and to step up screening of all carry-on baggage. With increased concerns about terrorism, articles on airport security relating in particular to additional steps taken by airports to increase flight safety would be relevant. The mere mention of enhanced security does not constitute relevance. Additional steps refer to something beyond just passenger and carry-on screening using the normal methods. Examples of new steps would be additional personnel, automated screening processes, sophisticated monitoring and screening devices, whole body imaging techniques, and extraordinary measures to screen luggage in the baggage compartment.
+
+📌 完整查询 (Query + Instruction):
+   A relevant document would discuss the effectiveness of efforts to better scrutinize passengers and luggage on all flights, but particularly international flights. A relevant document would contain reports on what steps airports worldwide have taken to better scrutinize passengers and their luggage on domestic and international flights and to step up screening of all carry-on baggage. With increased concerns about terrorism, articles on airport security relating in particular to additional steps taken by airports to increase flight safety would be relevant. The mere mention of enhanced security does not constitute relevance. Additional steps refer to something beyond just passenger and carry-on screening using the normal methods. Examples of new steps would be additional personnel, automated screening processes, sophisticated monitoring and screening devices, whole body imaging techniques, and extraordinary measures to screen luggage in the baggage compartment.
+
+📌 相关文档变化详情:
+   文档ID: 1005585_0
+      原始排名: 13 -> 新排名: 17 | 得分: 0.2353
+   文档ID: 102753_2
+      原始排名: 75 -> 新排名: 74 | 得分: -0.0133
+   文档ID: 1349453_2
+      原始排名: 258 -> 新排名: 285 | 得分: 0.0947
+   文档ID: 1357252_2
+      原始排名: 375 -> 新排名: 378 | 得分: 0.0079
+   文档ID: 1381242_1
+      原始排名: 248 -> 新排名: 265 | 得分: 0.0642
+   文档ID: 1381874_0
+      原始排名: 171 -> 新排名: 178 | 得分: 0.0393
+   文档ID: 1402669_3
+      原始排名: 480 -> 新排名: 505 | 得分: 0.0495
+   文档ID: 1409198_0
+      原始排名: 850 -> 新排名: 846 | 得分: -0.0047
+   文档ID: 1424628_1
+      原始排名: 495 -> 新排名: 516 | 得分: 0.0407
+   文档ID: 1425140_1
+      原始排名: 22 -> 新排名: 23 | 得分: 0.0435
+   文档ID: 1592406_2
+      原始排名: 526 -> 新排名: 538 | 得分: 0.0223
+   文档ID: 1655127_4
+      原始排名: 415 -> 新排名: 436 | 得分: 0.0482
+   文档ID: 1756946_1
+      原始排名: 212 -> 新排名: 226 | 得分: 0.0619
+   文档ID: 1807882_0
+      原始排名: 846 -> 新排名: 850 | 得分: 0.0047
+   文档ID: 1808077_0
+      原始排名: 914 -> 新排名: 913 | 得分: -0.0011
+   文档ID: 1819323_0
+      原始排名: 966 -> 新排名: 968 | 得分: 0.0021
+   文档ID: 1828416_2
+      原始排名: 340 -> 新排名: 373 | 得分: 0.0885
+   文档ID: 210177_0
+      原始排名: 8 -> 新排名: 8 | 得分: 0.0000
+   文档ID: 211760_1
+      原始排名: 91 -> 新排名: 91 | 得分: 0.0000
+   文档ID: 264188_0
+      原始排名: 939 -> 新排名: 937 | 得分: -0.0021
+   文档ID: 286662_1
+      原始排名: 161 -> 新排名: 170 | 得分: 0.0529
+   文档ID: 384513_0
+      原始排名: 530 -> 新排名: 527 | 得分: -0.0057
+   文档ID: 570601_1
+      原始排名: 174 -> 新排名: 186 | 得分: 0.0645
+   文档ID: 693059_0
+      原始排名: 135 -> 新排名: 137 | 得分: 0.0146
+   文档ID: 884635_0
+      原始排名: 37 -> 新排名: 47 | 得分: 0.2128
+
+📌 所有发生相关性变化的文档: ['1005585_0', '102753_2', '1349453_2', '1357252_2', '1381242_1', '1381874_0', '1402669_3', '1409198_0', '1424628_1', '1425140_1', '1592406_2', '1655127_4', '1756946_1', '1807882_0', '1808077_0', '1819323_0', '1828416_2', '210177_0', '211760_1', '264188_0', '286662_1', '384513_0', '570601_1', '693059_0', '884635_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 13】查询ID: 416 | p-MRR: 0.094551
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What is the ongoing status of The Three Gorges Project?
+
+📌 指令内容:
+   A relevant document will provide the projected or actual date of completion of the project, its estimated or actual total cost, or the estimated or ongoing electrical output of the finished project. Discussions of the social, political, or ecological impact of the project are not relevant.
+
+📌 完整查询 (Query + Instruction):
+   What is the ongoing status of The Three Gorges Project? A relevant document will provide the projected or actual date of completion of the project, its estimated or actual total cost, or the estimated or ongoing electrical output of the finished project. Discussions of the social, political, or ecological impact of the project are not relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1001536_1
+      原始排名: 32 -> 新排名: 45 | 得分: 0.2889
+   文档ID: 1017282_3
+      原始排名: 505 -> 新排名: 491 | 得分: -0.0277
+   文档ID: 1041188_0
+      原始排名: 24 -> 新排名: 33 | 得分: 0.2727
+   文档ID: 1068306_2
+      原始排名: 76 -> 新排名: 73 | 得分: -0.0395
+   文档ID: 1090186_0
+      原始排名: 717 -> 新排名: 703 | 得分: -0.0195
+   文档ID: 1093387_3
+      原始排名: 59 -> 新排名: 43 | 得分: -0.2712
+   文档ID: 1096171_0
+      原始排名: 70 -> 新排名: 96 | 得分: 0.2708
+   文档ID: 1110169_2
+      原始排名: 27 -> 新排名: 21 | 得分: -0.2222
+   文档ID: 1111014_0
+      原始排名: 441 -> 新排名: 376 | 得分: -0.1474
+   文档ID: 1180275_3
+      原始排名: 492 -> 新排名: 368 | 得分: -0.2520
+   文档ID: 1239484_1
+      原始排名: 61 -> 新排名: 59 | 得分: -0.0328
+   文档ID: 1241952_0
+      原始排名: 30 -> 新排名: 22 | 得分: -0.2667
+   文档ID: 1248807_0
+      原始排名: 1 -> 新排名: 2 | 得分: 0.5000
+   文档ID: 1259393_0
+      原始排名: 196 -> 新排名: 252 | 得分: 0.2222
+   文档ID: 1343336_1
+      原始排名: 22 -> 新排名: 13 | 得分: -0.4091
+   文档ID: 1419015_1
+      原始排名: 119 -> 新排名: 60 | 得分: -0.4958
+   文档ID: 1426221_0
+      原始排名: 1000 -> 新排名: 1000 | 得分: 0.0000
+   文档ID: 1438673_0
+      原始排名: 579 -> 新排名: 760 | 得分: 0.2382
+   文档ID: 1448982_0
+      原始排名: 435 -> 新排名: 534 | 得分: 0.1854
+   文档ID: 1493435_0
+      原始排名: 31 -> 新排名: 80 | 得分: 0.6125
+   文档ID: 1495612_6
+      原始排名: 207 -> 新排名: 247 | 得分: 0.1619
+   文档ID: 1499895_0
+      原始排名: 37 -> 新排名: 41 | 得分: 0.0976
+   文档ID: 1515831_0
+      原始排名: 344 -> 新排名: 541 | 得分: 0.3641
+   文档ID: 1547906_1
+      原始排名: 894 -> 新排名: 879 | 得分: -0.0168
+   文档ID: 1565215_0
+      原始排名: 47 -> 新排名: 51 | 得分: 0.0784
+   文档ID: 1638597_10
+      原始排名: 914 -> 新排名: 936 | 得分: 0.0235
+   文档ID: 1789228_2
+      原始排名: 840 -> 新排名: 825 | 得分: -0.0179
+   文档ID: 1792169_0
+      原始排名: 217 -> 新排名: 382 | 得分: 0.4319
+   文档ID: 1808025_1
+      原始排名: 619 -> 新排名: 656 | 得分: 0.0564
+   文档ID: 241240_4
+      原始排名: 71 -> 新排名: 66 | 得分: -0.0704
+   文档ID: 502113_8
+      原始排名: 168 -> 新排名: 199 | 得分: 0.1558
+   文档ID: 506069_0
+      原始排名: 19 -> 新排名: 7 | 得分: -0.6316
+   文档ID: 581036_1
+      原始排名: 11 -> 新排名: 6 | 得分: -0.4545
+   文档ID: 617046_0
+      原始排名: 224 -> 新排名: 314 | 得分: 0.2866
+   文档ID: 711107_0
+      原始排名: 85 -> 新排名: 170 | 得分: 0.5000
+   文档ID: 711217_8
+      原始排名: 167 -> 新排名: 175 | 得分: 0.0457
+   文档ID: 733642_1
+      原始排名: 16 -> 新排名: 16 | 得分: 0.0000
+   文档ID: 746919_2
+      原始排名: 255 -> 新排名: 359 | 得分: 0.2897
+   文档ID: 797579_2
+      原始排名: 13 -> 新排名: 18 | 得分: 0.2778
+   文档ID: 797878_2
+      原始排名: 12 -> 新排名: 19 | 得分: 0.3684
+   文档ID: 822936_8
+      原始排名: 261 -> 新排名: 300 | 得分: 0.1300
+   文档ID: 824521_0
+      原始排名: 2 -> 新排名: 3 | 得分: 0.3333
+   文档ID: 854307_0
+      原始排名: 6 -> 新排名: 14 | 得分: 0.5714
+   文档ID: 881765_0
+      原始排名: 5 -> 新排名: 8 | 得分: 0.3750
+   文档ID: 971660_1
+      原始排名: 20 -> 新排名: 40 | 得分: 0.5000
+   文档ID: 973026_1
+      原始排名: 4 -> 新排名: 9 | 得分: 0.5556
+   文档ID: 973400_1
+      原始排名: 8 -> 新排名: 5 | 得分: -0.3750
+
+📌 所有发生相关性变化的文档: ['1001536_1', '1017282_3', '1041188_0', '1068306_2', '1090186_0', '1093387_3', '1096171_0', '1110169_2', '1111014_0', '1180275_3', '1239484_1', '1241952_0', '1248807_0', '1259393_0', '1343336_1', '1419015_1', '1426221_0', '1438673_0', '1448982_0', '1493435_0', '1495612_6', '1499895_0', '1515831_0', '1547906_1', '1565215_0', '1638597_10', '1789228_2', '1792169_0', '1808025_1', '241240_4', '502113_8', '506069_0', '581036_1', '617046_0', '711107_0', '711217_8', '733642_1', '746919_2', '797579_2', '797878_2', '822936_8', '824521_0', '854307_0', '881765_0', '971660_1', '973026_1', '973400_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 14】查询ID: 356 | p-MRR: 0.098224
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify documents discussing the use of estrogen by postmenopausal women in Britain.
+
+📌 指令内容:
+   The use of hormone replacement therapy outside of the United Kingdom is not relevant. United Kingdom and British development and marketing of estrogen suppressing drugs are relevant.
+
+📌 完整查询 (Query + Instruction):
+   Identify documents discussing the use of estrogen by postmenopausal women in Britain. The use of hormone replacement therapy outside of the United Kingdom is not relevant. United Kingdom and British development and marketing of estrogen suppressing drugs are relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1510420_0
+      原始排名: 7 -> 新排名: 11 | 得分: 0.3636
+   文档ID: 1587072_1
+      原始排名: 2 -> 新排名: 2 | 得分: 0.0000
+   文档ID: 684835_4
+      原始排名: 29 -> 新排名: 27 | 得分: -0.0690
+
+📌 所有发生相关性变化的文档: ['1510420_0', '1587072_1', '684835_4']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 15】查询ID: 690 | p-MRR: 0.118890
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Find documents which describe an advantage in hiring potential or increased income for graduates of U.S. colleges.
+
+📌 指令内容:
+   Relevant documents cite some advantage of a college education for job opportunities. Documents citing better opportunities for non-college vocational-training is not relevant.
+
+📌 完整查询 (Query + Instruction):
+   Find documents which describe an advantage in hiring potential or increased income for graduates of U.S. colleges. Relevant documents cite some advantage of a college education for job opportunities. Documents citing better opportunities for non-college vocational-training is not relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1019570_0
+      原始排名: 391 -> 新排名: 284 | 得分: -0.2737
+   文档ID: 1024650_6
+      原始排名: 914 -> 新排名: 897 | 得分: -0.0186
+   文档ID: 1115504_0
+      原始排名: 27 -> 新排名: 76 | 得分: 0.6447
+   文档ID: 1120249_2
+      原始排名: 54 -> 新排名: 16 | 得分: -0.7037
+   文档ID: 1204828_0
+      原始排名: 170 -> 新排名: 138 | 得分: -0.1882
+   文档ID: 1217145_3
+      原始排名: 322 -> 新排名: 735 | 得分: 0.5619
+   文档ID: 1351420_4
+      原始排名: 299 -> 新排名: 451 | 得分: 0.3370
+   文档ID: 1351578_4
+      原始排名: 300 -> 新排名: 452 | 得分: 0.3363
+   文档ID: 521233_1
+      原始排名: 973 -> 新排名: 966 | 得分: -0.0072
+   文档ID: 548257_4
+      原始排名: 180 -> 新排名: 315 | 得分: 0.4286
+   文档ID: 756148_1
+      原始排名: 248 -> 新排名: 337 | 得分: 0.2641
+   文档ID: 835331_0
+      原始排名: 420 -> 新排名: 440 | 得分: 0.0455
+
+📌 所有发生相关性变化的文档: ['1019570_0', '1024650_6', '1115504_0', '1120249_2', '1204828_0', '1217145_3', '1351420_4', '1351578_4', '521233_1', '548257_4', '756148_1', '835331_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 16】查询ID: 445 | p-MRR: 0.180897
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   What other countries besides the United States are considering or have approved women as clergy persons?
+
+📌 指令内容:
+   To be relevant, a document must indicate either a country where a woman has been installed as clergy or a country that is considering such an installation. The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).
+
+📌 完整查询 (Query + Instruction):
+   What other countries besides the United States are considering or have approved women as clergy persons? To be relevant, a document must indicate either a country where a woman has been installed as clergy or a country that is considering such an installation. The clergy position must be as church pastor rather than some other church capacity (e.g., nun or choir member).
+
+📌 相关文档变化详情:
+   文档ID: 1120477_1
+      原始排名: 718 -> 新排名: 632 | 得分: -0.1198
+   文档ID: 1410595_2
+      原始排名: 767 -> 新排名: 906 | 得分: 0.1534
+   文档ID: 1468434_1
+      原始排名: 419 -> 新排名: 379 | 得分: -0.0955
+   文档ID: 1524891_1
+      原始排名: 443 -> 新排名: 505 | 得分: 0.1228
+   文档ID: 159258_0
+      原始排名: 4 -> 新排名: 12 | 得分: 0.6667
+   文档ID: 170884_1
+      原始排名: 70 -> 新排名: 70 | 得分: 0.0000
+   文档ID: 1770344_0
+      原始排名: 254 -> 新排名: 298 | 得分: 0.1477
+   文档ID: 1806972_0
+      原始排名: 349 -> 新排名: 347 | 得分: -0.0057
+   文档ID: 195806_1
+      原始排名: 48 -> 新排名: 108 | 得分: 0.5556
+   文档ID: 217270_2
+      原始排名: 231 -> 新排名: 356 | 得分: 0.3511
+   文档ID: 287609_0
+      原始排名: 72 -> 新排名: 81 | 得分: 0.1111
+   文档ID: 371662_1
+      原始排名: 570 -> 新排名: 692 | 得分: 0.1763
+   文档ID: 428748_2
+      原始排名: 49 -> 新排名: 74 | 得分: 0.3378
+   文档ID: 466038_0
+      原始排名: 233 -> 新排名: 313 | 得分: 0.2556
+   文档ID: 647771_1
+      原始排名: 514 -> 新排名: 655 | 得分: 0.2153
+   文档ID: 703818_1
+      原始排名: 316 -> 新排名: 256 | 得分: -0.1899
+   文档ID: 788414_1
+      原始排名: 785 -> 新排名: 811 | 得分: 0.0321
+   文档ID: 810160_0
+      原始排名: 90 -> 新排名: 185 | 得分: 0.5135
+   文档ID: 893778_0
+      原始排名: 333 -> 新排名: 421 | 得分: 0.2090
+
+📌 所有发生相关性变化的文档: ['1120477_1', '1410595_2', '1468434_1', '1524891_1', '159258_0', '170884_1', '1770344_0', '1806972_0', '195806_1', '217270_2', '287609_0', '371662_1', '428748_2', '466038_0', '647771_1', '703818_1', '788414_1', '810160_0', '893778_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 17】查询ID: 433 | p-MRR: 0.184865
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Is there contemporary interest in the Greek philosophy of stoicism?
+
+📌 指令内容:
+   Actual references to the philosophy or philosophers, productions of Greek stoic plays, and new "stoic" artistic productions are all relevant.
+
+📌 完整查询 (Query + Instruction):
+   Is there contemporary interest in the Greek philosophy of stoicism? Actual references to the philosophy or philosophers, productions of Greek stoic plays, and new "stoic" artistic productions are all relevant.
+
+📌 相关文档变化详情:
+   文档ID: 1159308_0
+      原始排名: 33 -> 新排名: 65 | 得分: 0.4923
+   文档ID: 1231072_1
+      原始排名: 1 -> 新排名: 1 | 得分: 0.0000
+   文档ID: 1321746_4
+      原始排名: 761 -> 新排名: 795 | 得分: 0.0428
+   文档ID: 1330883_9
+      原始排名: 146 -> 新排名: 269 | 得分: 0.4572
+   文档ID: 1364373_1
+      原始排名: 939 -> 新排名: 959 | 得分: 0.0209
+   文档ID: 1500130_3
+      原始排名: 25 -> 新排名: 37 | 得分: 0.3243
+   文档ID: 1828645_3
+      原始排名: 413 -> 新排名: 383 | 得分: -0.0726
+   文档ID: 328199_0
+      原始排名: 96 -> 新排名: 141 | 得分: 0.3191
+   文档ID: 467402_3
+      原始排名: 271 -> 新排名: 207 | 得分: -0.2362
+   文档ID: 563114_1
+      原始排名: 377 -> 新排名: 492 | 得分: 0.2337
+   文档ID: 614077_0
+      原始排名: 928 -> 新排名: 969 | 得分: 0.0423
+   文档ID: 62085_3
+      原始排名: 2 -> 新排名: 9 | 得分: 0.7778
+   文档ID: 755442_2
+      原始排名: 486 -> 新排名: 340 | 得分: -0.3004
+   文档ID: 847343_0
+      原始排名: 554 -> 新排名: 510 | 得分: -0.0794
+   文档ID: 859192_1
+      原始排名: 55 -> 新排名: 221 | 得分: 0.7511
+
+📌 所有发生相关性变化的文档: ['1159308_0', '1231072_1', '1321746_4', '1330883_9', '1364373_1', '1500130_3', '1828645_3', '328199_0', '467402_3', '563114_1', '614077_0', '62085_3', '755442_2', '847343_0', '859192_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 18】查询ID: 379 | p-MRR: 0.211493
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   Identify documents that discuss mainstreaming children with physical or mental impairments.
+
+📌 指令内容:
+   A relevant document will include the pros and cons of mainstreaming children with physical or mental impairments, the benefits to the impaired child, as well as the attitude, beliefs and concerns of teachers and school administrators with regard to taking time away from the "normal children".
+
+📌 完整查询 (Query + Instruction):
+   Identify documents that discuss mainstreaming children with physical or mental impairments. A relevant document will include the pros and cons of mainstreaming children with physical or mental impairments, the benefits to the impaired child, as well as the attitude, beliefs and concerns of teachers and school administrators with regard to taking time away from the "normal children".
+
+📌 相关文档变化详情:
+   文档ID: 1058563_0
+      原始排名: 556 -> 新排名: 702 | 得分: 0.2080
+   文档ID: 1128203_0
+      原始排名: 75 -> 新排名: 71 | 得分: -0.0533
+   文档ID: 1188545_3
+      原始排名: 643 -> 新排名: 757 | 得分: 0.1506
+   文档ID: 1464360_2
+      原始排名: 415 -> 新排名: 537 | 得分: 0.2272
+   文档ID: 1503163_0
+      原始排名: 127 -> 新排名: 189 | 得分: 0.3280
+   文档ID: 1533742_4
+      原始排名: 143 -> 新排名: 129 | 得分: -0.0979
+   文档ID: 1533748_0
+      原始排名: 559 -> 新排名: 640 | 得分: 0.1266
+   文档ID: 1610650_2
+      原始排名: 28 -> 新排名: 96 | 得分: 0.7083
+   文档ID: 1612826_2
+      原始排名: 92 -> 新排名: 186 | 得分: 0.5054
+   文档ID: 1652847_2
+      原始排名: 407 -> 新排名: 461 | 得分: 0.1171
+   文档ID: 173978_0
+      原始排名: 22 -> 新排名: 61 | 得分: 0.6393
+   文档ID: 1802258_3
+      原始排名: 37 -> 新排名: 63 | 得分: 0.4127
+   文档ID: 195163_1
+      原始排名: 602 -> 新排名: 720 | 得分: 0.1639
+   文档ID: 283963_0
+      原始排名: 8 -> 新排名: 24 | 得分: 0.6667
+   文档ID: 290304_3
+      原始排名: 219 -> 新排名: 414 | 得分: 0.4710
+   文档ID: 552301_1
+      原始排名: 426 -> 新排名: 450 | 得分: 0.0533
+   文档ID: 610055_0
+      原始排名: 215 -> 新排名: 304 | 得分: 0.2928
+   文档ID: 704519_3
+      原始排名: 370 -> 新排名: 476 | 得分: 0.2227
+   文档ID: 733289_0
+      原始排名: 195 -> 新排名: 207 | 得分: 0.0580
+   文档ID: 794900_3
+      原始排名: 112 -> 新排名: 115 | 得分: 0.0261
+   文档ID: 795045_3
+      原始排名: 113 -> 新排名: 116 | 得分: 0.0259
+   文档ID: 800103_0
+      原始排名: 382 -> 新排名: 439 | 得分: 0.1298
+   文档ID: 800288_0
+      原始排名: 381 -> 新排名: 438 | 得分: 0.1301
+   文档ID: 870597_0
+      原始排名: 216 -> 新排名: 381 | 得分: 0.4331
+   文档ID: 87446_1
+      原始排名: 359 -> 新排名: 509 | 得分: 0.2947
+   文档ID: 892030_1
+      原始排名: 146 -> 新排名: 93 | 得分: -0.3630
+   文档ID: 901545_1
+      原始排名: 11 -> 新排名: 11 | 得分: 0.0000
+   文档ID: 959127_0
+      原始排名: 192 -> 新排名: 201 | 得分: 0.0448
+
+📌 所有发生相关性变化的文档: ['1058563_0', '1128203_0', '1188545_3', '1464360_2', '1503163_0', '1533742_4', '1533748_0', '1610650_2', '1612826_2', '1652847_2', '173978_0', '1802258_3', '195163_1', '283963_0', '290304_3', '552301_1', '610055_0', '704519_3', '733289_0', '794900_3', '795045_3', '800103_0', '800288_0', '870597_0', '87446_1', '892030_1', '901545_1', '959127_0']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 19】查询ID: 414 | p-MRR: 0.313755
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How much sugar does Cuba export and which countries import it?
+
+📌 指令内容:
+   A relevant document will provide information regarding Cuba's sugar trade. Sugar production statistics are not relevant unless exports are mentioned explicitly.
+
+📌 完整查询 (Query + Instruction):
+   How much sugar does Cuba export and which countries import it? A relevant document will provide information regarding Cuba's sugar trade. Sugar production statistics are not relevant unless exports are mentioned explicitly.
+
+📌 相关文档变化详情:
+   文档ID: 1430341_2
+      原始排名: 14 -> 新排名: 38 | 得分: 0.6316
+   文档ID: 202721_0
+      原始排名: 105 -> 新排名: 181 | 得分: 0.4199
+   文档ID: 223328_0
+      原始排名: 321 -> 新排名: 416 | 得分: 0.2284
+   文档ID: 232355_0
+      原始排名: 117 -> 新排名: 213 | 得分: 0.4507
+   文档ID: 239688_2
+      原始排名: 90 -> 新排名: 143 | 得分: 0.3706
+   文档ID: 314870_0
+      原始排名: 52 -> 新排名: 128 | 得分: 0.5938
+   文档ID: 346145_2
+      原始排名: 526 -> 新排名: 601 | 得分: 0.1248
+   文档ID: 346480_0
+      原始排名: 177 -> 新排名: 225 | 得分: 0.2133
+   文档ID: 471905_1
+      原始排名: 554 -> 新排名: 622 | 得分: 0.1093
+   文档ID: 658645_6
+      原始排名: 382 -> 新排名: 415 | 得分: 0.0795
+   文档ID: 742306_0
+      原始排名: 403 -> 新排名: 376 | 得分: -0.0670
+   文档ID: 764420_1
+      原始排名: 23 -> 新排名: 59 | 得分: 0.6102
+
+📌 所有发生相关性变化的文档: ['1430341_2', '202721_0', '223328_0', '232355_0', '239688_2', '314870_0', '346145_2', '346480_0', '471905_1', '658645_6', '742306_0', '764420_1']
+
+
+----------------------------------------------------------------------------------------------------
+【排名 20】查询ID: 620 | p-MRR: 0.355528
+----------------------------------------------------------------------------------------------------
+📌 查询内容:
+   How did France respond to protests against its nuclear testing in the South Pacific?
+
+📌 指令内容:
+   A document containing information regarding any type of protest by any one is relevant as long as France's response is also included in the document.
+
+📌 完整查询 (Query + Instruction):
+   How did France respond to protests against its nuclear testing in the South Pacific? A document containing information regarding any type of protest by any one is relevant as long as France's response is also included in the document.
+
+📌 相关文档变化详情:
+   文档ID: 1616604_2
+      原始排名: 630 -> 新排名: 711 | 得分: 0.1139
+   文档ID: 520073_0
+      原始排名: 244 -> 新排名: 444 | 得分: 0.4505
+   文档ID: 533575_0
+      原始排名: 121 -> 新排名: 145 | 得分: 0.1655
+   文档ID: 773499_1
+      原始排名: 115 -> 新排名: 291 | 得分: 0.6048
+   文档ID: 774164_0
+      原始排名: 250 -> 新排名: 308 | 得分: 0.1883
+   文档ID: 775546_0
+      原始排名: 1 -> 新排名: 87 | 得分: 0.9885
+   文档ID: 783968_0
+      原始排名: 30 -> 新排名: 160 | 得分: 0.8125
+   文档ID: 786106_0
+      原始排名: 107 -> 新排名: 219 | 得分: 0.5114
+   文档ID: 787130_0
+      原始排名: 6 -> 新排名: 79 | 得分: 0.9241
+   文档ID: 787297_0
+      原始排名: 74 -> 新排名: 9 | 得分: -0.8784
+   文档ID: 787433_0
+      原始排名: 801 -> 新排名: 935 | 得分: 0.1433
+   文档ID: 794967_0
+      原始排名: 64 -> 新排名: 201 | 得分: 0.6816
+   文档ID: 795678_0
+      原始排名: 63 -> 新排名: 200 | 得分: 0.6850
+   文档ID: 797592_0
+      原始排名: 24 -> 新排名: 6 | 得分: -0.7500
+   文档ID: 801761_0
+      原始排名: 73 -> 新排名: 265 | 得分: 0.7245
+   文档ID: 814067_0
+      原始排名: 411 -> 新排名: 607 | 得分: 0.3229
+
+📌 所有发生相关性变化的文档: ['1616604_2', '520073_0', '533575_0', '773499_1', '774164_0', '775546_0', '783968_0', '786106_0', '787130_0', '787297_0', '787433_0', '794967_0', '795678_0', '797592_0', '801761_0', '814067_0']
+
+
+----------------------------------------------------------------------------------------------------
+总计     20           平均 p-MRR: 0.057844
+====================================================================================================

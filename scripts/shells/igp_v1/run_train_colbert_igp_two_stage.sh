@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置 CUDA 设备（在 conda activate 之前）
-export CUDA_VISIBLE_DEVICES="0"
+export CUDA_VISIBLE_DEVICES="1"
 
 # 激活 conda 环境
 eval "$(conda shell.bash hook)"
@@ -27,20 +27,20 @@ MODEL_NAME="lightonai/ColBERT-Zero"
 # SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/igp_hard_synthetic_dataset/final_hard_easy_mixed_train_augmented_instrmask.jsonl"
 # SHORT_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase1_short_long_mixed.jsonl"
 SHORT_TRAIN_DATA="dataset/colbert_data/mixed_short_long/mixed_short50%_long50%.jsonl"
-SHORT_EPOCHS=60
-SHORT_BATCH_SIZE=128
+SHORT_EPOCHS=8
+SHORT_BATCH_SIZE=256
 
 # 阶段2: 长数据集（端到端学习）
-# LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/train_data_igp.jsonl"
-LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/overfit_test_data/train_overfit_mixed_instructions.jsonl"
+LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/FollowIR_train/train_data_igp.jsonl"
+# LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/overfit_test_data/train_overfit_mixed_instructions.jsonl"
 # LONG_TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/two_stage_mixed_v2/phase2_long_only.jsonl"
-LONG_EPOCHS=100
-LONG_BATCH_SIZE=64
+LONG_EPOCHS=30
+LONG_BATCH_SIZE=128
 
 # 输出目录
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控-overfit"
-NOTE="v1-两阶段训练-短指令增强数据集先训练，再单纯长数据集-MAX_RATIO=0.2-数据增强加上无指令版本-动态门控V3-修复显存差距过大的原因-probe增加为三层-根据查询是否包含指令（有监督信号）自动调整门控强度-第二阶段改成测试集的有指令无指令混合"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/3.14-col_v1_之前的长指令超过配置-stage2重新训练长指令"
+NOTE="v1-两阶段训练-短指令增强数据集先训练，再单纯长数据集-MAX_RATIO=0.2-数据增强加上无指令版本-动态门控V3-修复显存差距过大的原因-probe增加为三层-根据查询是否包含指令（有监督信号）自动调整门控强度-发现之前的长指令超过配置32了-stage2设置为长指令重新训练"
 
 # ============================
 # IGP 模块参数

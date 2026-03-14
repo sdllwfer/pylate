@@ -24,18 +24,15 @@ MODEL_NAME="lightonai/ColBERT-Zero"
 TRAIN_DATA="/home/luwa/Documents/pylate/dataset/colbert_data/overfit_test_data/train_overfit_mixed_instructions.jsonl"
 # 输出目录 (基础目录，会在此目录下创建时间戳子目录)
 OUTPUT_BASE_DIR="/home/luwa/Documents/pylate/output/colbert_igp_train"
-CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2long_overfit"
+CUSTOM_OUTPUT_PATH="/home/luwa/Documents/pylate/output/colbert_igp_train/col_phase2_test_overfit_v2"
 NOTE="ColBERT-Zero-门控最大比例0.2-bs64-在原来的第二阶段长指令训练的最佳模型继续在测试集的抽取数据集上训练"
 # GPU 设备编号 (0, 1, 2, 3)
 CUDA_VISIBLE_DEVICES="1"
 # ============================
 # IGP 模块参数
 # ============================
-# 是否启用 InstructionProbe (true/false)
 ENABLE_PROBE=true
-# 是否启用 IGPAdapter (true/false)  
 ENABLE_ADAPTER=true
-# 是否启用 RatioGate (true/false)
 ENABLE_GATE=true
 # 门控最大比率 (防止指令破坏原语义，建议 0.1-0.3)
 MAX_RATIO=0.2
@@ -58,7 +55,7 @@ ENABLE_PHASE2=true
 # PHASE1_CHECKPOINT="/home/luwa/Documents/pylate/output/colbert_igp_train/short_instruction/phase1/best_model_phase1_20260228_224521"
 PHASE1_CHECKPOINT=""
 # Phase 2 检查点路径 (为空则从头训练)
-PHASE2_CHECKPOINT=""
+PHASE2_CHECKPOINT="/home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控/stage2_long_data/phase2/best_model_phase2_20260311_063541"
 # Phase 1 训练轮数 (Probe Warm-up)
 PHASE1_EPOCHS=10
 # Phase 2 训练轮数 (Joint Training)

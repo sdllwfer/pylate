@@ -1,0 +1,80 @@
+{
+  "Core17InstructionRetrieval": {
+    "task": "Core17InstructionRetrieval",
+    "p-MRR": 0.06083072877554698,
+    "original": {
+      "ndcg_at_1": 0.375,
+      "ndcg_at_3": 0.36944,
+      "ndcg_at_5": 0.36827,
+      "ndcg_at_10": 0.32821,
+      "ndcg_at_100": 0.39833,
+      "map_at_1": 0.01864,
+      "map_at_3": 0.03244,
+      "map_at_5": 0.04497,
+      "map_at_10": 0.06814
+    },
+    "changed": {
+      "ndcg_at_1": 0.275,
+      "ndcg_at_3": 0.22039,
+      "ndcg_at_5": 0.21816,
+      "ndcg_at_10": 0.21069,
+      "ndcg_at_100": 0.33483,
+      "map_at_1": 0.01329,
+      "map_at_3": 0.02229,
+      "map_at_5": 0.03399,
+      "map_at_10": 0.05144
+    }
+  },
+  "Robust04InstructionRetrieval": {
+    "task": "Robust04InstructionRetrieval",
+    "p-MRR": -0.05151630377504057,
+    "original": {
+      "ndcg_at_1": 0.29808,
+      "ndcg_at_3": 0.27704,
+      "ndcg_at_5": 0.27835,
+      "ndcg_at_10": 0.27516,
+      "ndcg_at_100": 0.34242,
+      "map_at_1": 0.02297,
+      "map_at_3": 0.04513,
+      "map_at_5": 0.0618,
+      "map_at_10": 0.08867
+    },
+    "changed": {
+      "ndcg_at_1": 0.22115,
+      "ndcg_at_3": 0.21098,
+      "ndcg_at_5": 0.20109,
+      "ndcg_at_10": 0.20631,
+      "ndcg_at_100": 0.30565,
+      "map_at_1": 0.02798,
+      "map_at_3": 0.06117,
+      "map_at_5": 0.0758,
+      "map_at_10": 0.09671
+    }
+  },
+  "News21InstructionRetrieval": {
+    "task": "News21InstructionRetrieval",
+    "p-MRR": -0.020456072503295883,
+    "original": {
+      "ndcg_at_1": 0.38281,
+      "ndcg_at_3": 0.34922,
+      "ndcg_at_5": 0.36554,
+      "ndcg_at_10": 0.38609,
+      "ndcg_at_100": 0.52408,
+      "map_at_1": 0.02417,
+      "map_at_3": 0.06279,
+      "map_at_5": 0.09972,
+      "map_at_10": 0.16777
+    },
+    "changed": {
+      "ndcg_at_1": 0.13281,
+      "ndcg_at_3": 0.13595,
+      "ndcg_at_5": 0.16285,
+      "ndcg_at_10": 0.20755,
+      "ndcg_at_100": 0.37361,
+      "map_at_1": 0.00868,
+      "map_at_3": 0.03615,
+      "map_at_5": 0.05883,
+      "map_at_10": 0.09662
+    }
+  }
+}

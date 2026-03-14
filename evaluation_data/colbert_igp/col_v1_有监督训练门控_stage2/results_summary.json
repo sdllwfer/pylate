@@ -1,0 +1,54 @@
+{
+  "Core17InstructionRetrieval": {
+    "task": "Core17InstructionRetrieval",
+    "p-MRR": 0.05752515532834794,
+    "original": {
+      "ndcg_at_1": 0.45,
+      "ndcg_at_3": 0.41022,
+      "ndcg_at_5": 0.40673,
+      "ndcg_at_10": 0.36292,
+      "ndcg_at_100": 0.42015,
+      "map_at_1": 0.02018,
+      "map_at_3": 0.03377,
+      "map_at_5": 0.05145,
+      "map_at_10": 0.07478
+    },
+    "changed": {
+      "ndcg_at_1": 0.275,
+      "ndcg_at_3": 0.21511,
+      "ndcg_at_5": 0.21648,
+      "ndcg_at_10": 0.22686,
+      "ndcg_at_100": 0.34474,
+      "map_at_1": 0.01329,
+      "map_at_3": 0.02565,
+      "map_at_5": 0.03434,
+      "map_at_10": 0.05491
+    }
+  },
+  "Robust04InstructionRetrieval": {
+    "task": "Robust04InstructionRetrieval",
+    "p-MRR": -0.05040723588693917,
+    "original": {
+      "ndcg_at_1": 0.30769,
+      "ndcg_at_3": 0.34438,
+      "ndcg_at_5": 0.32283,
+      "ndcg_at_10": 0.31127,
+      "ndcg_at_100": 0.377,
+      "map_at_1": 0.02576,
+      "map_at_3": 0.0609,
+      "map_at_5": 0.0761,
+      "map_at_10": 0.10513
+    },
+    "changed": {
+      "ndcg_at_1": 0.26923,
+      "ndcg_at_3": 0.24854,
+      "ndcg_at_5": 0.22886,
+      "ndcg_at_10": 0.23921,
+      "ndcg_at_100": 0.33286,
+      "map_at_1": 0.04211,
+      "map_at_3": 0.07555,
+      "map_at_5": 0.08985,
+      "map_at_10": 0.11506
+    }
+  }
+}

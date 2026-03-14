@@ -1,0 +1,11 @@
+============================================================
+ColBERT-IGP 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_有监督训练门控/stage2_long_data/phase2/best_model_phase2_20260311_063541
+数据集: Robust04InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_有监督训练门控_stage2
+GPU设备: cuda:0
+评估时间: 2026-03-11 23:01:33
+备注: 端到端模型评测-v1-有监督训练门控-stage2的最佳模型
+============================================================

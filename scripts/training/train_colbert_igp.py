@@ -1232,7 +1232,7 @@ class IGPTrainer:
         dataset = DataLoader.add_instruction_masks(
             dataset,
             tokenizer=self.base_model.tokenizer,
-            max_query_length=32,
+            max_query_length=512,
         )
         
         splits = dataset.train_test_split(test_size=self.eval_ratio)
@@ -1253,7 +1253,21 @@ class IGPTrainer:
     def load_model(self):
         """加载基础模型"""
         print(f"📥 加载基础模型: {self.model_name} on {self.device}")
-        self.base_model = models.ColBERT(model_name_or_path=self.model_name, device=self.device)
+        # 使用更大的 query_length 和 document_length 以避免截断
+        self.base_model = models.ColBERT(
+            model_name_or_path=self.model_name,
+            device=self.device,
+            query_length=512,  # 覆盖默认的 39，支持更长的 query + instruction
+            document_length=2048,  # 支持长文档（测试集最大约2000 tokens）
+        )
+        
+        # 关键：设置 Transformer 的 max_seq_length 和 tokenizer 的 model_max_length
+        # 否则训练时会出现截断警告
+        max_seq_length = max(512, 2048) + 10  # 加10作为余量
+        self.base_model._first_module().max_seq_length = max_seq_length
+        # 同时设置 tokenizer 的 model_max_length，这是警告的真正来源
+        self.base_model.tokenizer.model_max_length = max_seq_length
+        print(f"   设置 max_seq_length = {max_seq_length} (避免截断警告)")
         
         # 重置 IGP 模块状态，确保重新初始化
         self.probe = None
@@ -1357,8 +1371,19 @@ class IGPTrainer:
         
         # 加载模型
         try:
-            self.base_model = models.ColBERT(checkpoint_path, device=self.device)
+            self.base_model = models.ColBERT(
+                checkpoint_path,
+                device=self.device,
+                query_length=512,  # 覆盖默认的 39，支持更长的 query + instruction
+                document_length=2048,  # 支持长文档（测试集最大约2000 tokens）
+            )
+            # 关键：设置 Transformer 的 max_seq_length 和 tokenizer 的 model_max_length
+            max_seq_length = max(512, 2048) + 10  # 加10作为余量
+            self.base_model._first_module().max_seq_length = max_seq_length
+            # 同时设置 tokenizer 的 model_max_length，这是警告的真正来源
+            self.base_model.tokenizer.model_max_length = max_seq_length
             print(f"✅ 检查点模型已加载到 {self.device}")
+            print(f"   设置 max_seq_length = {max_seq_length} (避免截断警告)")
         except Exception as e:
             print(f"❌ 检查点加载失败: 模型加载错误")
             print(f"   错误: {str(e)}")
@@ -1572,6 +1597,12 @@ class IGPTrainer:
         )
         igp_model.set_phase1_mode()  # 设置 Phase 1 的梯度状态
         
+        # 关键：再次确保 base_model 的 max_seq_length 和 tokenizer 的 model_max_length 设置正确
+        max_seq_length = max(512, 2048) + 10
+        self.base_model._first_module().max_seq_length = max_seq_length
+        self.base_model.tokenizer.model_max_length = max_seq_length
+        print(f"   [Phase 1] 确认 max_seq_length = {max_seq_length}")
+        
         # 配置训练参数
         training_args = SentenceTransformerTrainingArguments(
             output_dir=os.path.join(self.output_dir, "phase1"),
@@ -1655,9 +1686,10 @@ class IGPTrainer:
         # 创建 Data Collator
         data_collator = IGPColBERTCollator(
             tokenizer=self.base_model.tokenizer,
-            max_query_length=32,
+            max_query_length=512,
+            max_doc_length=2048,  # 支持长文档
         )
-        
+
         trainer = IGPColBERTTrainer(
             model=igp_model,  # 使用 IGPColBERTWrapper 作为模型
             args=training_args,
@@ -1733,6 +1765,13 @@ class IGPTrainer:
             gate=self.gate,
         )
         igp_model.set_phase2_mode()  # 设置 Phase 2 的梯度状态
+        
+        # 关键：再次确保 base_model 的 max_seq_length 和 tokenizer 的 model_max_length 设置正确
+        # 因为 IGPColBERTWrapper 可能会影响 base_model 的状态
+        max_seq_length = max(512, 2048) + 10
+        self.base_model._first_module().max_seq_length = max_seq_length
+        self.base_model.tokenizer.model_max_length = max_seq_length
+        print(f"   [Phase 2] 确认 max_seq_length = {max_seq_length}")
         
         # 基础损失
         base_loss = losses.Contrastive(model=self.base_model)
@@ -1817,9 +1856,10 @@ class IGPTrainer:
         # 创建 Data Collator
         data_collator = IGPColBERTCollator(
             tokenizer=self.base_model.tokenizer,
-            max_query_length=32,
+            max_query_length=512,
+            max_doc_length=2048,  # 支持长文档
         )
-        
+
         # 创建训练器
         # 注意：传入 igp_model 作为模型，它会调用 IGP 模块
         # 通过 optimizers 参数传递自定义优化器，避免被覆盖
@@ -1924,11 +1964,13 @@ class IGPTrainer:
                 print(f"\n📂 从检查点恢复 Phase 2: {self.phase2_checkpoint}")
                 try:
                     self.load_checkpoint(self.phase2_checkpoint, phase="phase2")
-                    print(f"⏭ 已跳过 Phase 2 训练 (从检查点恢复)")
+                    print(f"✅ 检查点加载完成，将继续训练 Phase 2")
                 except Exception as e:
                     print(f"❌ 加载 Phase 2 检查点失败: {str(e)}")
                     raise
-                phase2_best_loss = None
+                
+                print("\n⏩ Phase 2 从检查点继续训练")
+                phase2_best_loss = self.train_phase2()
             else:
                 # 检查是否需要从 Phase 1 检查点加载
                 # 如果已经预加载过了，就跳过

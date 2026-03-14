@@ -31,15 +31,21 @@ class IGPColBERTCollator:
         self,
         tokenizer,
         max_query_length: int = 32,
+        max_doc_length: int = 2048,
     ):
         """
         Args:
             tokenizer: ColBERT 模型的 tokenizer
             max_query_length: query 的最大长度
+            max_doc_length: 文档的最大长度（正例和负例）
         """
         self.tokenizer = tokenizer
         self.max_query_length = max_query_length
+        self.max_doc_length = max_doc_length
         self.valid_label_columns = None
+        
+        # 用于记录是否已经输出过截断警告
+        self._warned_truncation = {"pos": False, "neg": False}
     
     def __call__(self, features: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
         """将数据批次转换为模型输入
@@ -113,8 +119,27 @@ class IGPColBERTCollator:
                 has_instruction_list.append(0.0)
         has_instruction_labels = torch.tensor(has_instruction_list, dtype=torch.float).unsqueeze(-1)
         
-        pos_tokens = self.tokenizer(positives, padding=True, truncation=True, max_length=512, return_tensors='pt')
-        neg_tokens = self.tokenizer(negatives, padding=True, truncation=True, max_length=512, return_tensors='pt')
+        # 检查文档长度并输出警告
+        for i, doc in enumerate(positives):
+            doc_len = len(self.tokenizer.encode(doc, add_special_tokens=False))
+            if doc_len > self.max_doc_length:
+                if not self._warned_truncation["pos"]:
+                    print(f"⚠️  警告: 正例文档被截断! 长度 {doc_len} > {self.max_doc_length}")
+                    print(f"   示例: {doc[:100]}...")
+                    self._warned_truncation["pos"] = True
+                break
+        
+        for i, doc in enumerate(negatives):
+            doc_len = len(self.tokenizer.encode(doc, add_special_tokens=False))
+            if doc_len > self.max_doc_length:
+                if not self._warned_truncation["neg"]:
+                    print(f"⚠️  警告: 负例文档被截断! 长度 {doc_len} > {self.max_doc_length}")
+                    print(f"   示例: {doc[:100]}...")
+                    self._warned_truncation["neg"] = True
+                break
+        
+        pos_tokens = self.tokenizer(positives, padding=True, truncation=True, max_length=self.max_doc_length, return_tensors='pt')
+        neg_tokens = self.tokenizer(negatives, padding=True, truncation=True, max_length=self.max_doc_length, return_tensors='pt')
         
         # 使用 SentenceTransformerTrainer 期望的格式
         # sentence_0 = query (with instruction), sentence_1 = positive, sentence_2 = negative

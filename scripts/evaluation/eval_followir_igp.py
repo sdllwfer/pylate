@@ -48,7 +48,12 @@ def load_igp_model(model_path: str, device: str = "cuda", probe_num_layers: int 
     import time
     start = time.time()
 
-    base_model = models.ColBERT(model_name_or_path=model_path, device=device)
+    base_model = models.ColBERT(
+        model_name_or_path=model_path,
+        device=device,
+        query_length=512,  # 支持长 query + instruction
+        document_length=2048,  # 支持长文档
+    )
     
     igp_probe = None
     igp_adapter = None

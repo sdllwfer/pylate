@@ -1,0 +1,11 @@
+============================================================
+ColBERT-IGP 评估参数
+============================================================
+
+模型: /home/luwa/Documents/pylate/output/colbert_igp_train/col_v1_max0.2_长短混合_两阶段/stage1_short_data/phase2/best_model_phase2_20260308_222534
+数据集: Robust04InstructionRetrieval
+输出目录: /home/luwa/Documents/pylate/evaluation_data/colbert_igp/col_v1_max0.2_长短混合_只有一阶段
+GPU设备: cuda:1
+评估时间: 2026-03-09 12:02:46
+备注: 端到端模型评测-v1-短长混合-bestmodel-max0.2-只有第一阶段训练
+============================================================
