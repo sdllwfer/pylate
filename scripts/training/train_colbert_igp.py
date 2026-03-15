@@ -261,6 +261,16 @@ class IGPColBERTTrainer(SentenceTransformerTrainer):
         # 使用父类的 collect_features 方法处理输入
         features, labels = self.collect_features(inputs)
         loss = self.loss(features, labels)
+        
+        # 获取各项详细损失并存储，供回调函数使用
+        if hasattr(self.loss, 'get_last_losses'):
+            last_losses = self.loss.get_last_losses()
+            if last_losses:
+                # 存储到 model 的 state 中，供 on_log 回调使用
+                if not hasattr(self, '_last_loss_dict'):
+                    self._last_loss_dict = {}
+                self._last_loss_dict.update(last_losses)
+        
         return (loss, {}) if return_outputs else loss
     
     def prediction_step(self, model, inputs, prediction_loss_only=False, ignore_keys=None):
@@ -340,24 +350,37 @@ class LossTracker(TrainerCallback):
                     self.epoch_loss_sum += loss_val
                 self.epoch_loss_count += 1
                 
-                if 'step' in logs:
-                    step = logs.get('step', self.current_step)
-                    self.batch_losses.append({
+                # 使用 logs 中的 step 或 state.global_step
+                step = logs.get('step', state.global_step if state else self.current_step)
+                
+                # 从 trainer 获取详细损失信息
+                rank_loss = 0.0
+                aux_loss = 0.0
+                reg_loss = 0.0
+                gate_ratio = 0.0
+                if self.trainer is not None and hasattr(self.trainer, '_last_loss_dict'):
+                    last_losses = self.trainer._last_loss_dict
+                    rank_loss = last_losses.get('rank_loss', 0.0)
+                    aux_loss = last_losses.get('aux_loss', 0.0)
+                    reg_loss = last_losses.get('reg_loss', 0.0)
+                    gate_ratio = last_losses.get('gate_ratio', 0.0)
+                
+                self.batch_losses.append({
+                    'step': step,
+                    'train_loss': self.current_train_loss,
+                    'phase': self.phase_name,
+                    # 记录各项损失
+                    'rank_loss': rank_loss,
+                    'aux_loss': aux_loss,
+                    'reg_loss': reg_loss,
+                    'gate_ratio': gate_ratio,
+                })
+                if self.log_interval > 0 and step % self.log_interval == 0:
+                    self.sampled_losses.append({
                         'step': step,
                         'train_loss': self.current_train_loss,
-                        'phase': self.phase_name,
-                        # 记录各项损失
-                        'rank_loss': logs.get('rank_loss', 0.0),
-                        'aux_loss': logs.get('aux_loss', 0.0),
-                        'reg_loss': logs.get('reg_loss', 0.0),
-                        'gate_ratio': logs.get('gate_ratio', 0.0),
+                        'phase': self.phase_name
                     })
-                    if self.log_interval > 0 and step % self.log_interval == 0:
-                        self.sampled_losses.append({
-                            'step': step,
-                            'train_loss': self.current_train_loss,
-                            'phase': self.phase_name
-                        })
     
     def on_train_begin(self, args, state, control, **kwargs):
         self.current_step = 0
@@ -365,8 +388,16 @@ class LossTracker(TrainerCallback):
         self.sampled_losses = []
     
     def on_step_end(self, args, state, control, outputs=None, **kwargs):
-        if outputs is not None and hasattr(outputs, 'loss'):
-            loss = outputs.loss.item() if hasattr(outputs.loss, 'item') else outputs.loss
+        # 处理不同格式的 outputs
+        loss = None
+        if outputs is not None:
+            if hasattr(outputs, 'loss'):
+                loss = outputs.loss.item() if hasattr(outputs.loss, 'item') else outputs.loss
+            elif isinstance(outputs, dict) and 'loss' in outputs:
+                loss_val = outputs['loss']
+                loss = loss_val.item() if hasattr(loss_val, 'item') else loss_val
+        
+        if loss is not None:
             self.current_step = state.global_step
             
             self.batch_losses.append({
@@ -385,20 +416,27 @@ class LossTracker(TrainerCallback):
     def on_evaluate(self, args, state, control, metrics=None, **kwargs):
         if metrics is not None and 'eval_loss' in metrics:
             eval_loss = metrics.get('eval_loss')
-            epoch = int(state.epoch) if state.epoch else 0
-            
             eval_step = state.global_step
             
-            while len(self.eval_losses) < epoch:
-                self.eval_losses.append(None)
-                self.eval_steps.append(None)
-            
+            # 支持按 steps 评估（当使用 max_steps 时）
+            # 直接追加到列表，不依赖 epoch 索引
             self.eval_losses.append(eval_loss)
             self.eval_steps.append(eval_step)
             
+            # 确保在评估点也记录训练损失（用于绘制曲线）
+            if self.current_train_loss is not None:
+                # 检查是否已经有这个 step 的记录
+                if not self.sampled_losses or self.sampled_losses[-1]['step'] != eval_step:
+                    self.sampled_losses.append({
+                        'step': eval_step,
+                        'train_loss': self.current_train_loss,
+                        'phase': self.phase_name
+                    })
+            
             self._save_history()
             self._plot_losses()
-            print(f"\n📊 验证损失已记录: step={eval_step}, epoch={epoch}, eval_loss={eval_loss:.6f}")
+            epoch_info = f", epoch={state.epoch:.2f}" if state.epoch else ""
+            print(f"\n📊 验证损失已记录: step={eval_step}{epoch_info}, eval_loss={eval_loss:.6f}")
     
     def on_epoch_end(self, args, state, control, **kwargs):
         epoch = int(state.epoch) if state.epoch else (len(self.epochs) + 1)
@@ -494,13 +532,13 @@ class LossTracker(TrainerCallback):
         fig, ax = plt.subplots(figsize=(14, 7))
         
         if batch_losses:
-            ax.plot(batch_steps, batch_losses, 'b-', alpha=0.3, label='Training Loss (per step)', linewidth=0.8)
+            ax.plot(batch_steps, batch_losses, color='darkblue', alpha=0.6, label='Training Loss (per step)', linewidth=1.0)
             if len(batch_steps) > 10:
                 window = min(50, len(batch_losses) // 10)
                 if window > 1:
                     smoothed = np.convolve(batch_losses, np.ones(window)/window, mode='valid')
                     smoothed_steps = batch_steps[window-1:]
-                    ax.plot(smoothed_steps, smoothed, 'b-', label=f'Smoothed (window={window})', linewidth=2)
+                    ax.plot(smoothed_steps, smoothed, color='navy', label=f'Smoothed (window={window})', linewidth=2.5)
         
         if eval_steps and eval_losses_filtered:
             ax.plot(eval_steps, eval_losses_filtered, 'r-o', label='Validation Loss', linewidth=2, markersize=8)
@@ -527,13 +565,37 @@ class LossTracker(TrainerCallback):
         
         epochs = list(range(1, len(self.train_losses) + 1))
         eval_losses_filtered = [l for l in self.eval_losses if l is not None]
+        eval_steps_filtered = [s for s, l in zip(self.eval_steps, self.eval_losses) if l is not None]
         
         ax.plot(epochs, self.train_losses, 'b-o', 
                 label='Training Loss', linewidth=2, markersize=8, markerfacecolor='blue')
         
-        if len(eval_losses_filtered) == len(self.train_losses):
-            ax.plot(epochs, eval_losses_filtered, 'r-s', 
-                    label='Validation Loss', linewidth=2, markersize=8, markerfacecolor='red')
+        # 当有 eval_steps 时，使用 steps 作为 x 轴；否则使用 epoch 索引
+        if eval_losses_filtered:
+            if eval_steps_filtered and len(eval_steps_filtered) == len(eval_losses_filtered):
+                # 按 steps 评估的情况：将每个 epoch 内的所有验证损失取平均
+                # 找到每个 eval step 对应的 epoch，然后按 epoch 分组求平均
+                epoch_eval_losses = {}  # epoch -> list of losses
+                for step, loss in zip(eval_steps_filtered, eval_losses_filtered):
+                    # 找到最接近的 train_step 对应的 epoch
+                    closest_epoch = 1
+                    for i, train_step in enumerate(self.train_steps):
+                        if step <= train_step:
+                            closest_epoch = i + 1
+                            break
+                    if closest_epoch not in epoch_eval_losses:
+                        epoch_eval_losses[closest_epoch] = []
+                    epoch_eval_losses[closest_epoch].append(loss)
+                
+                # 计算每个 epoch 的平均验证损失
+                eval_epochs = sorted(epoch_eval_losses.keys())
+                avg_eval_losses = [sum(epoch_eval_losses[e]) / len(epoch_eval_losses[e]) for e in eval_epochs]
+                ax.plot(eval_epochs, avg_eval_losses, 'r-s', 
+                        label='Validation Loss', linewidth=2, markersize=8, markerfacecolor='red')
+            elif len(eval_losses_filtered) == len(self.train_losses):
+                # 传统的按 epoch 评估
+                ax.plot(epochs, eval_losses_filtered, 'r-s', 
+                        label='Validation Loss', linewidth=2, markersize=8, markerfacecolor='red')
             
             if len(self.train_losses) > 1:
                 train_gap = self.train_losses[0] - self.train_losses[-1]
@@ -1154,6 +1216,7 @@ class IGPTrainer:
         device: str = 'cuda:0',
         phase1_epochs: int = 2,
         phase2_epochs: int = 3,
+        phase2_max_steps: int = None,  # Phase 2 最大训练步数（优先级高于 epochs）
         batch_size: int = 16,
         eval_ratio: float = 0.1,
         base_lr: float = 1e-5,
@@ -1168,6 +1231,7 @@ class IGPTrainer:
         bottleneck_dim: int = 64,
         probe_num_layers: int = 2,
         aux_loss_weight: float = 0.1,
+        reg_coeff: float = 0.05,  # 正则化损失系数
         gate_l1_coeff: float = 0.01,  # 兼容旧参数，实际不再使用
         lambda_gate: float = 1.0,  # 门控监督损失权重
         phase2_patience: int = 3,
@@ -1184,6 +1248,7 @@ class IGPTrainer:
         self.device = device
         self.phase1_epochs = phase1_epochs
         self.phase2_epochs = phase2_epochs
+        self.phase2_max_steps = phase2_max_steps
         self.batch_size = batch_size
         self.eval_ratio = eval_ratio
         self.base_lr = base_lr
@@ -1199,6 +1264,7 @@ class IGPTrainer:
         self.bottleneck_dim = bottleneck_dim
         self.probe_num_layers = probe_num_layers
         self.aux_loss_weight = aux_loss_weight
+        self.reg_coeff = reg_coeff  # 正则化损失系数
         self.gate_l1_coeff = gate_l1_coeff  # 兼容旧参数，实际不再使用
         self.lambda_gate = lambda_gate  # 门控监督损失权重
         self.phase2_patience = phase2_patience
@@ -1737,24 +1803,47 @@ class IGPTrainer:
         self.unfreeze_all()
         
         # 配置训练参数
-        training_args = SentenceTransformerTrainingArguments(
-            output_dir=os.path.join(self.output_dir, "phase2"),
-            num_train_epochs=self.phase2_epochs,
-            per_device_train_batch_size=self.batch_size,
-            per_device_eval_batch_size=self.batch_size,
-            learning_rate=self.base_lr,
-            fp16=False,
-            bf16=False,
-            logging_steps=10,
-            eval_strategy="epoch",
-            save_strategy="no",  # 禁用自动保存，使用自定义的 EpochCheckpointCallback
-            load_best_model_at_end=False,  # 禁用自动加载最佳模型，避免覆盖训练后的参数
-            metric_for_best_model="eval_loss",
-            greater_is_better=False,
-            warmup_ratio=0.1,
-            dataloader_num_workers=4,
-            gradient_accumulation_steps=getattr(self, 'gradient_accumulation_steps', 1),
-        )
+        # 如果指定了 phase2_max_steps，则使用 max_steps 而不是 num_train_epochs
+        if self.phase2_max_steps is not None:
+            print(f"   [Phase 2] 使用 max_steps={self.phase2_max_steps} 控制训练步数")
+            training_args = SentenceTransformerTrainingArguments(
+                output_dir=os.path.join(self.output_dir, "phase2"),
+                max_steps=self.phase2_max_steps,
+                per_device_train_batch_size=self.batch_size,
+                per_device_eval_batch_size=self.batch_size,
+                learning_rate=self.base_lr,
+                fp16=False,
+                bf16=False,
+                logging_steps=10,
+                eval_strategy="steps",
+                eval_steps=20,  # 每20步评估一次
+                save_strategy="no",
+                load_best_model_at_end=False,
+                metric_for_best_model="eval_loss",
+                greater_is_better=False,
+                warmup_ratio=0.1,
+                dataloader_num_workers=4,
+                gradient_accumulation_steps=getattr(self, 'gradient_accumulation_steps', 1),
+            )
+        else:
+            training_args = SentenceTransformerTrainingArguments(
+                output_dir=os.path.join(self.output_dir, "phase2"),
+                num_train_epochs=self.phase2_epochs,
+                per_device_train_batch_size=self.batch_size,
+                per_device_eval_batch_size=self.batch_size,
+                learning_rate=self.base_lr,
+                fp16=False,
+                bf16=False,
+                logging_steps=10,
+                eval_strategy="epoch",
+                save_strategy="no",
+                load_best_model_at_end=False,
+                metric_for_best_model="eval_loss",
+                greater_is_better=False,
+                warmup_ratio=0.1,
+                dataloader_num_workers=4,
+                gradient_accumulation_steps=getattr(self, 'gradient_accumulation_steps', 1),
+            )
         
         # ========== 创建 IGPColBERTWrapper 作为训练模型 ==========
         # Phase 1: 只训练 Probe，冻结其他所有参数
@@ -1784,6 +1873,7 @@ class IGPTrainer:
             adapter=self.adapter,
             gate=self.gate,
             aux_loss_weight=self.aux_loss_weight,
+            reg_coeff=self.reg_coeff,  # 正则化损失系数
             gate_l1_coeff=self.gate_l1_coeff,  # 兼容旧参数，实际不再使用
             lambda_gate=self.lambda_gate,  # 门控监督损失权重
         )
@@ -1829,7 +1919,11 @@ class IGPTrainer:
         
         # 创建学习率调度器 (warmup + cosine decay)
         from transformers import get_cosine_schedule_with_warmup
-        num_training_steps = len(self.train_dataset) // self.batch_size * self.phase2_epochs
+        # 如果指定了 phase2_max_steps，使用它作为总步数
+        if self.phase2_max_steps is not None:
+            num_training_steps = self.phase2_max_steps
+        else:
+            num_training_steps = len(self.train_dataset) // self.batch_size * self.phase2_epochs
         num_warmup_steps = int(num_training_steps * 0.1)  # 10% warmup
         scheduler = get_cosine_schedule_with_warmup(
             optimizer,
@@ -2095,6 +2189,7 @@ class IGPTrainer:
             "phase2_best_loss": phase2_best_loss,
             "phase1_epochs": self.phase1_epochs,
             "phase2_epochs": self.phase2_epochs,
+            "phase2_max_steps": self.phase2_max_steps,
             "batch_size": self.batch_size,
             "base_lr": self.base_lr,
             "gate_lr": self.gate_lr,
@@ -2124,7 +2219,10 @@ class IGPTrainer:
             else:
                 f.write(f"  Phase 1: 已跳过\n")
             if phase2_best_loss is not None and phase2_best_loss != float('inf'):
-                f.write(f"  Phase 2 (Joint Training): {self.phase2_epochs} epochs, 最佳验证损失: {phase2_best_loss:.6f}\n")
+                if self.phase2_max_steps is not None:
+                    f.write(f"  Phase 2 (Joint Training): {self.phase2_max_steps} steps, 最佳验证损失: {phase2_best_loss:.6f}\n")
+                else:
+                    f.write(f"  Phase 2 (Joint Training): {self.phase2_epochs} epochs, 最佳验证损失: {phase2_best_loss:.6f}\n")
             else:
                 f.write(f"  Phase 2: 已跳过\n")
             f.write("\n模型配置:\n")
@@ -2192,7 +2290,9 @@ def main():
     parser.add_argument('--phase1_epochs', type=int, default=2,
                         help='Phase 1 训练轮数')
     parser.add_argument('--phase2_epochs', type=int, default=3,
-                        help='Phase 2 训练轮数')
+                        help='Phase 2 训练轮数（与 phase2_max_steps 二选一）')
+    parser.add_argument('--phase2_max_steps', type=int, default=None,
+                        help='Phase 2 最大训练步数（优先级高于 phase2_epochs，如设置则按步数训练）')
     parser.add_argument('--batch_size', type=int, default=16,
                         help='批次大小')
     parser.add_argument('--gradient_accumulation_steps', type=int, default=1,
@@ -2225,6 +2325,8 @@ def main():
                         help='InstructionProbe 编码器层数')
     parser.add_argument('--aux_loss_weight', type=float, default=0.1,
                         help='辅助损失权重')
+    parser.add_argument('--reg_coeff', type=float, default=0.05,
+                        help='正则化损失系数，设为0可禁用正则化损失')
     parser.add_argument('--gate_l1_coeff', type=float, default=0.01,
                         help='兼容旧参数，实际不再使用')
     parser.add_argument('--lambda_gate', type=float, default=1.0,
@@ -2281,7 +2383,10 @@ def main():
     print(f"训练数据: {args.train_data}")
     print(f"输出目录: {output_dir}")
     print(f"Phase 1 epochs: {args.phase1_epochs}")
-    print(f"Phase 2 epochs: {args.phase2_epochs}")
+    if args.phase2_max_steps is not None:
+        print(f"Phase 2 max_steps: {args.phase2_max_steps}")
+    else:
+        print(f"Phase 2 epochs: {args.phase2_epochs}")
     print(f"检查点最大保存数: {args.save_total_limit}")
     print(f"批次大小: {args.batch_size}")
     print(f"基础学习率: {args.base_lr}")
@@ -2301,7 +2406,10 @@ def main():
         f.write(f"训练数据: {args.train_data}\n")
         f.write(f"输出目录: {output_dir}\n")
         f.write(f"Phase 1 epochs: {args.phase1_epochs}\n")
-        f.write(f"Phase 2 epochs: {args.phase2_epochs}\n")
+        if args.phase2_max_steps is not None:
+            f.write(f"Phase 2 max_steps: {args.phase2_max_steps}\n")
+        else:
+            f.write(f"Phase 2 epochs: {args.phase2_epochs}\n")
         f.write(f"批次大小: {args.batch_size}\n")
         f.write(f"基础学习率: {args.base_lr}\n")
         f.write(f"门控学习率: {args.gate_lr}\n")
@@ -2311,6 +2419,7 @@ def main():
         f.write(f"门控最大比率: {args.max_ratio}\n")
         f.write(f"Adapter瓶颈维度: {args.bottleneck_dim}\n")
         f.write(f"辅助损失权重: {args.aux_loss_weight}\n")
+        f.write(f"正则化损失系数: {args.reg_coeff}\n")
         f.write(f"GPU设备: {args.device}\n")
         f.write(f"训练时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         if args.note:
@@ -2326,6 +2435,7 @@ def main():
         device=args.device,
         phase1_epochs=args.phase1_epochs,
         phase2_epochs=args.phase2_epochs,
+        phase2_max_steps=args.phase2_max_steps,
         batch_size=args.batch_size,
         eval_ratio=args.eval_ratio,
         base_lr=args.base_lr,
@@ -2340,6 +2450,7 @@ def main():
         bottleneck_dim=args.bottleneck_dim,
         probe_num_layers=args.probe_num_layers,
         aux_loss_weight=args.aux_loss_weight,
+        reg_coeff=args.reg_coeff,  # 正则化损失系数
         gate_l1_coeff=args.gate_l1_coeff,  # 兼容旧参数，实际不再使用
         lambda_gate=args.lambda_gate,  # 门控监督损失权重
         phase2_patience=args.phase2_patience,

@@ -298,9 +298,12 @@ class IGPLoss(nn.Module):
         
         # ========== 4. 计算正则化损失 (Reg Loss) ==========
         # 约束 delta 范数，防止数值爆炸
-        reg_loss = torch.tensor(0.0, device=rank_loss.device, requires_grad=True)
-        # 注意: delta 的计算在 Model.forward 中，这里可以通过梯度惩罚实现
-        # 或者通过 L2 正则化约束 query_embeddings 的变化
+        reg_loss = torch.tensor(0.0, device=rank_loss.device)
+        # 只有当 reg_coeff > 0 时才计算正则化损失
+        if self.reg_coeff > 0:
+            # 这里可以添加具体的正则化计算逻辑
+            # 目前保持为0，因为 delta 的计算在 Model.forward 中
+            pass
         
         # ========== 5. 计算门控监督损失 ==========
         # 使用 wrapper 中计算的 gate_loss (BCEWithLogitsLoss)
@@ -313,12 +316,12 @@ class IGPLoss(nn.Module):
         if inst_vec is not None:
             dummy_loss = torch.norm(inst_vec, p=2).mean() * 0.01
         
-        # 总损失 = Rank_Loss + lambda_gate * gate_loss
+        # 总损失 = Rank_Loss + aux_loss + reg_loss + gate_loss
         # lambda_gate 默认为 1.0
         lambda_gate = getattr(self, 'lambda_gate', 1.0)
         total_loss = (rank_loss + 
                      aux_loss * self.aux_loss_weight + 
-                     reg_loss * self.reg_coeff + 
+                     reg_loss * self.reg_coeff +  # 根据 reg_coeff 决定是否生效
                      gate_loss * lambda_gate +  # 门控监督损失
                      dummy_loss)
         
